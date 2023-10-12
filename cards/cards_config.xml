@@ -510,7 +510,7 @@
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.</desc>
+    <desc>Deal damage to random enemy creatures one damage at a time. This damage does not cause additional effects.</desc>
   </skillType>
   <skillType>
     <id>slow</id>
@@ -675,7 +675,7 @@
     <order>1</order>
     <icon>fury</icon>
     <name>Maelstrom's Fury</name>
-    <desc>After taking Attack damage, deals damage back and permanently increases Attack.</desc>
+    <desc>This creature has Vengeance and half as much Shroud. After taking damage, permanently increase Attack by 1/4 of the damage taken.</desc>
     <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
@@ -776,8 +776,8 @@
     <icon>avian_barrier</icon>
     <name>Anti-Magic Field</name>
     <hidden>1</hidden>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Ward to self and half as much to adjacent ally creatures.</desc>
+    <attributes x="0" y="0" all="0" c="0" s="0" />
+    <desc>This card is immune to debuffs. Opposing card is inflicted with Nullify 99 at the start of its turn.</desc>
   </skillType>
   <!-- TEST SKILLS -->
   <skillType>

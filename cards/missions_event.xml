@@ -68000,4 +68000,916 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 108: ComDev Seafolk - Pharos Temple -->
+  <!-- E108 Node 1: Tides of Void -->
+  <mission>
+    <id>7158</id>
+    <name>Isn't It Neat?</name>
+    <energy>18</energy>
+    <desc>After what feels like an eternity, you awaken alone in a cold, forbidding cave. What looks like a waterfall flows down from the entrance. Fishes flit by.</desc>
+    <commander id="281" />
+    <!-- Dark Coral -->
+    <deck>
+      <card id="1630" />
+      <!-- Monstrous Squid -->
+      <card id="1634" />
+      <!-- Brightshoal Warrior -->
+      <card id="1635" />
+      <!-- Mergoat -->
+      <card id="1637" />
+      <!-- Icy Lake Monster -->
+      <card id="2077" />
+      <!-- Drowner Beetle -->
+      <card id="2104" />
+      <!-- Sharkcrusher -->
+      <card id="2129" />
+      <!-- Pharos Guardian -->
+      <card id="2132" />
+      <!-- Seaweevil -->
+      <card id="2150" />
+      <!-- Glacialhunt Herd -->
+      <card id="2176" mastery_level="2" />
+      <!-- Sinksight Mermaid -->
+      <card id="2198" mastery_level="3" />
+      <!-- Cleaners of the Blue -->
+      <card id="2226" mastery_level="4" />
+      <!-- Noisy Clams -->
+      <card id="2176" mastery_level="5" />
+      <!-- Sinksight Mermaid -->
+      <card id="2198" mastery_level="6" />
+      <!-- Cleaners of the Blue -->
+      <card id="2226" mastery_level="7" />
+      <!-- Noisy Clams -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7159</id>
+    <name>Wall of Wonders</name>
+    <energy>18</energy>
+    <desc>Entranced by the beautiful sight spreading out before you, you gaze beyond the falls. The depths of the Pharos Temple spread out before you. The water smells of something foul.</desc>
+    <commander id="280" />
+    <!-- Void Infected Mermaid -->
+    <deck>
+      <card id="1035" />
+      <!-- Calypsan Heir -->
+      <card id="2076" />
+      <!-- Adorabilis -->
+      <card id="2079" />
+      <!-- Koi Guardian -->
+      <card id="2105" />
+      <!-- Shockscale Eel -->
+      <card id="2148" />
+      <!-- Goctopus -->
+      <card id="2151" />
+      <!-- Armorca -->
+      <card id="2227" />
+      <!-- Glass Snapper -->
+      <card id="5011" />
+      <!-- Sky Whale -->
+      <card id="5041" />
+      <!-- Skylance Raiders -->
+      <card id="5073" mastery_level="2" />
+      <!-- Shell Invader -->
+      <card id="5107" mastery_level="3" />
+      <!-- Thrumming Beacon -->
+      <card id="5108" mastery_level="4" />
+      <!-- Aurora Skimmer -->
+      <card id="5149" mastery_level="5" />
+      <!-- Flatfish Ward -->
+      <card id="5152" mastery_level="6" />
+      <!-- Mermaid Merchant -->
+      <card id="5152" mastery_level="7" />
+      <!-- Mermaid Merchant -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7160</id>
+    <name>She Who Holds the Tide</name>
+    <energy>18</energy>
+    <desc>A fierce-looking woman with blue skin greets you tersely, though she does not look at you. Her hands move with the flow of the waterfall, keeping it intact.</desc>
+    <commander id="287" />
+    <!-- Crab Striker -->
+    <deck>
+      <card id="2070" />
+      <!-- Redclaw Tamer -->
+      <card id="2078" />
+      <!-- Septuamaid -->
+      <card id="2130" />
+      <!-- Sea's Saw -->
+      <card id="2135" />
+      <!-- Primitive Crustavian -->
+      <card id="2175" />
+      <!-- Star of the Red Sea -->
+      <card id="2178" />
+      <!-- Hellcay Draftee -->
+      <card id="2199" />
+      <!-- Love Singer -->
+      <card id="2218" />
+      <!-- Spineworm Delver -->
+      <card id="2242" />
+      <!-- Siegeturtle -->
+      <card id="6108" mastery_level="2" />
+      <!-- Redwater Angler -->
+      <card id="6110" mastery_level="3" />
+      <!-- Sea Mantis -->
+      <card id="6135" mastery_level="4" />
+      <!-- Burnshell -->
+      <card id="6149" mastery_level="5" />
+      <!-- Pufferspine -->
+      <card id="6150" mastery_level="6" />
+      <!-- Deep Dino -->
+      <card id="6150" mastery_level="7" />
+      <!-- Deep Dino -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7161</id>
+    <name>A Protean Proteus</name>
+    <energy>18</energy>
+    <desc>The woman introduces herself as Tethys, but before she can say any more, a dark shape bursts through the falls and swings his sword! You narrowly dodge to find... Proteus?!</desc>
+    <commander id="396" />
+    <!-- King Proteus -->
+    <deck>
+      <card id="7107" />
+      <!-- Hammer Krab -->
+      <card id="7107" />
+      <!-- Hammer Krab -->
+      <card id="7109" />
+      <!-- Clownder -->
+      <card id="7109" />
+      <!-- Clownder -->
+      <card id="7149" />
+      <!-- Trident Merman -->
+      <card id="7149" />
+      <!-- Trident Merman -->
+      <card id="7167" />
+      <!-- Salty Scallywag -->
+      <card id="7167" />
+      <!-- Salty Scallywag -->
+      <card id="7151" />
+      <!-- Sawtooth -->
+      <card id="7151" mastery_level="2" />
+      <!-- Sawtooth -->
+      <card id="7066" mastery_level="3" />
+      <!-- Aquine -->
+      <card id="7066" mastery_level="4" />
+      <!-- Aquine -->
+      <card id="7005" mastery_level="5" />
+      <!-- Tsunamari -->
+      <card id="7005" mastery_level="6" />
+      <!-- Tsunamari -->
+      <card id="4017" mastery_level="7" />
+      <!-- King Proteus -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Kreeeargh! You shall bow before the might of King Proteus!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7162</id>
+    <name>Float Like a Merman, Sting Like a Bird</name>
+    <energy>18</energy>
+    <desc>Proteus&apos; beard is bedraggled. His eyes are wrong. You can feel them trained on you. He cleaves the air, his sword soaring on invisible wings. He shrieks like a hungry hawk.</desc>
+    <commander id="352" />
+    <!-- Brine Bringer -->
+    <deck>
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="7014" mastery_level="2" />
+      <!-- Genbu -->
+      <card id="7014" mastery_level="3" />
+      <!-- Genbu -->
+      <card id="7003" mastery_level="4" />
+      <!-- Kraken -->
+      <card id="7003" mastery_level="5" />
+      <!-- Kraken -->
+      <card id="7054" mastery_level="6" />
+      <!-- The Thing Below -->
+      <card id="4017" mastery_level="7" />
+      <!-- King Proteus -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>For the glory of the ocean! Let the waters swallow Arcantica whole!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>HERETIC!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7163</id>
+    <name>Tethys' Boon</name>
+    <energy>18</energy>
+    <desc>Tethys&apos; arm drops calmly to her side. Summoned by her magic, the fearsome shark warrior Zolmosh headbutts Proteus from behind! He coughs up black ooze, defeated.</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="1045" />
+      <!-- Cloudwhale Rider -->
+      <card id="2200" />
+      <!-- Noble Swordfish -->
+      <card id="5095" />
+      <!-- Silurigon -->
+      <card id="5104" />
+      <!-- Pisces -->
+      <card id="5105" />
+      <!-- Sea Whisperer -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5109" />
+      <!-- Cyclospout -->
+      <card id="6106" mastery_level="2" />
+      <!-- Bailong -->
+      <card id="6107" mastery_level="3" />
+      <!-- Great Lava Crab -->
+      <card id="6109" mastery_level="4" />
+      <!-- Captain Gnaw -->
+      <card id="6127" mastery_level="5" />
+      <!-- Hexapus -->
+      <card id="6148" mastery_level="6" />
+      <!-- Narwhal Spiker -->
+      <card id="7023" mastery_level="7" />
+      <!-- Zolmosh the Fist -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Keee... For the glory of the... ocean...</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Foolish infidel. Lady Scylla yet lives! The Watershaper foretells all!</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>...Squawk... Kaww...</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Now STAY down, Proteus of the Void. You cannot stop our Maelstrom!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E108 Node 2: Starving Off the Maelstrom -->
+  <mission>
+    <id>7164</id>
+    <name>Prophet of the Falls</name>
+    <energy>18</energy>
+    <desc>Tethys congratulates Zolmosh on a job well done, then parts the waterfall. At last, you can see the skies above... A thunderstorm the color of an oil slick roils overhead.</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="7025" />
+      <!-- Webclaw Dragon -->
+      <card id="7083" />
+      <!-- Sludge Spine -->
+      <card id="7091" />
+      <!-- Wave Plunderer -->
+      <card id="7104" />
+      <!-- Croaker of the Deep -->
+      <card id="7105" />
+      <!-- Charybdis -->
+      <card id="7106" />
+      <!-- Octhos, Ruin Baron -->
+      <card id="7108" />
+      <!-- Quetee -->
+      <card id="7150" />
+      <!-- Ika-Roa -->
+      <card id="7152" />
+      <!-- Shellter -->
+      <card id="7153" mastery_level="2" />
+      <!-- Kelpcatcher -->
+      <card id="7154" mastery_level="3" />
+      <!-- Mollusk Snarecaster -->
+      <card id="7180" mastery_level="4" />
+      <!-- Bottlenose Forerunner -->
+      <card id="7194" mastery_level="5" />
+      <!-- Coralscape Grappler -->
+      <card id="7195" mastery_level="6" />
+      <!-- Undine Sprite -->
+      <card id="7196" mastery_level="7" />
+      <!-- Vodnik, Sea's Shield -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Tethys the Watershaper has spoken!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>With the ocean king at bay, the Maelstrom is here at last!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Come to us, Lady Scyll--</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>ARRRRRR!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7165</id>
+    <name>Sea, Meet Sky</name>
+    <energy>18</energy>
+    <desc>In a flash of crimson, the righteous berserker Alyel descends before you can even see her coming! You blink. Tethys has fallen to one knee. The foul, dark sea beyond you stills.</desc>
+    <commander id="337" />
+    <!-- Dark Dweller -->
+    <deck>
+      <card id="7197" />
+      <!-- Surgebend Merman -->
+      <card id="7221" />
+      <!-- Icejaw Turtle -->
+      <card id="7227" />
+      <!-- Five Color Flapper -->
+      <card id="7228" />
+      <!-- Shellcran Catcher -->
+      <card id="7229" />
+      <!-- Crushclaw Waterguard -->
+      <card id="7233" />
+      <!-- Arsenite Pest -->
+      <card id="7235" />
+      <!-- Shell Shaman -->
+      <card id="7260" />
+      <!-- Leviathan Warrior -->
+      <card id="7261" />
+      <!-- Rayren Harpooneer -->
+      <card id="7262" mastery_level="2" />
+      <!-- Gala-Gala Retreat -->
+      <card id="7284" mastery_level="3" />
+      <!-- Werething -->
+      <card id="7285" mastery_level="4" />
+      <!-- Noxious Jellyhead -->
+      <card id="7296" mastery_level="5" />
+      <!-- Reefhogs -->
+      <card id="7306" mastery_level="6" />
+      <!-- Morkan -->
+      <card id="5198" mastery_level="7" />
+      <!-- Sea's Sky Forces -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Even with the Void returned, these freaks still try to summon Scylla back from the dead...</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>I will never understand it.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Come on, adventurer. Let&apos;s regroup in Duskwillow...</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>...once that stupid ship gets here, that is. Why is everyone so slow?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7166</id>
+    <name>Dressed to Plunder</name>
+    <energy>18</energy>
+    <desc>The Undead Armada and the Dragon Family arrive not long after, their fleet of battleships now helmed by a strangely familiar new crew.</desc>
+    <commander id="309" />
+    <!-- Fortune's Favor -->
+    <deck>
+      <card id="6151" />
+      <!-- Cetus -->
+      <card id="6185" />
+      <!-- Heilong -->
+      <card id="6195" />
+      <!-- Magmurchin -->
+      <card id="6198" />
+      <!-- Rattleclank Courtesan -->
+      <card id="6222" />
+      <!-- Mermantra -->
+      <card id="6223" />
+      <!-- Gorgeel -->
+      <card id="6224" />
+      <!-- Azurtitan Sorcerer -->
+      <card id="6225" />
+      <!-- Boilfin Merman -->
+      <card id="6235" />
+      <!-- Mawcroak -->
+      <card id="6259" mastery_level="2" />
+      <!-- Summoned Umibozu -->
+      <card id="6260" mastery_level="3" />
+      <!-- Steamscale Invader -->
+      <card id="6261" mastery_level="4" />
+      <!-- Darkwater Beguiler -->
+      <card id="6278" mastery_level="5" />
+      <!-- Sharkcraft Cadet -->
+      <card id="6626" mastery_level="6" />
+      <!-- The Undead Armada -->
+      <card id="5638" mastery_level="7" />
+      <!-- The Dragon Family -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>0</enemy>
+        <text>So, intel was right. They WERE somewhere near Pharos. But why...?</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh dares not tell an angel.</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh especially dares not tell them this used to be the sacred site of Lady Scylla and Lord Typhoeus!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>But oh, that fool Proteus. He thought he could be king without the blessings of the--</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>*Traps Zolmosh in a bubble*</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>...Shut up. No landlubber wants to hear th&apos; cult of Scylla ramblin&apos;.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7167</id>
+    <name>All Aboard</name>
+    <energy>18</energy>
+    <desc>Your allies welcome you aboard the Undead Armada&apos;s ship. Though it&apos;s unexpected to see angels working side by side with orcs and undead, you can&apos;t help but think Lev would be proud.</desc>
+    <commander id="397" />
+    <!-- Brine Singer -->
+    <deck>
+      <card id="5150" />
+      <!-- Deepspear Warfarer -->
+      <card id="5151" />
+      <!-- Brinebelly -->
+      <card id="5153" />
+      <!-- Octopulse -->
+      <card id="5154" />
+      <!-- Glaucus -->
+      <card id="5197" />
+      <!-- Deepcharge Caller -->
+      <card id="5198" />
+      <!-- Sea's Sky Forces -->
+      <card id="5199" />
+      <!-- Shellscale Entangler -->
+      <card id="5227" />
+      <!-- Mermancer -->
+      <card id="5228" />
+      <!-- Frostclaw Spearhunter -->
+      <card id="5237" mastery_level="2" />
+      <!-- Lanternbulb Hunter -->
+      <card id="5244" mastery_level="3" />
+      <!-- Mutant Scaupus -->
+      <card id="5252" mastery_level="4" />
+      <!-- Twainblood Outcast -->
+      <card id="5257" mastery_level="5" />
+      <!-- Heartsong Harper -->
+      <card id="5258" mastery_level="6" />
+      <!-- Hammerhead Smithy -->
+      <card id="5259" mastery_level="7" />
+      <!-- Brave Soul Sisters -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>We have the Adventurer! Now, to Duskwillow, and to arms!</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>0</enemy>
+        <text>You know, Alyel, you&apos;re almost sounding like a real leader.</text>
+      </line>
+      <line>
+        <commander>Leyla_Portrait</commander>
+        <enemy>0</enemy>
+        <text>Isn&apos;t it a grand thing to share the throne for once? </text>
+      </line>
+      <line>
+        <commander>Leyla_Portrait</commander>
+        <enemy>0</enemy>
+        <text>I don&apos;t know why I never considered it sooner. </text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Aye. Even if the Goblins are fightin&apos;, at least we can have a little peace here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7168</id>
+    <name>Spoken Too Soon</name>
+    <energy>18</energy>
+    <desc>Proteus awakens from his Void sickness. But as you and your uncommon allies; pull away from shore, you have still left Tethys and Zolmosh basically unattended...</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="5261" />
+      <!-- Absolute Monk -->
+      <card id="5283" />
+      <!-- Ice Wreckers -->
+      <card id="5284" />
+      <!-- Tooth Terriers -->
+      <card id="5285" />
+      <!-- Flying Peng -->
+      <card id="5294" />
+      <!-- Kani Defender -->
+      <card id="5298" />
+      <!-- Blessed Sentinel -->
+      <card id="5302" />
+      <!-- Atya -->
+      <card id="6296" />
+      <!-- Pepe -->
+      <card id="6285" />
+      <!-- Starfish Aberration -->
+      <card id="6293" mastery_level="2" />
+      <!-- Emberay -->
+      <card id="7023" mastery_level="3" />
+      <!-- Zolmosh the Fist -->
+      <card id="7023" mastery_level="4" />
+      <!-- Zolmosh the Fist -->
+      <card id="7195" mastery_level="5" />
+      <!-- Undine Sprite -->
+      <card id="7195" mastery_level="6" />
+      <!-- Undine Sprite -->
+      <card id="4017" mastery_level="7" />
+      <!-- King Proteus -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Mother Tethys...? I thought you were retired.</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Things change, &quot;King&quot; Proteus. What&apos;s forgotten cannot stay forgotten forever. Thousands of Brinesouls came together for this! The Maelstrom is here!</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>...Why must you continue to use the serpents like this, Mother? The Void has tainted our waters so thoroughly. Not even Scylla&apos;s full fury could prevent that...</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>I don&apos;t know. I just thought that our line knew better. Those two are wild beasts. Forces of nature. </text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Lord Typhoeus would be ten times the king you are.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>...Silence, raider.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7169</id>
+    <name>The Maelstrom Begins</name>
+    <energy>18</energy>
+    <desc>The Watershaper grimaces. She&apos;s come too far. Tethys raises her arms. The tides rise higher, more violently, until the ocean becomes a cascade that blots out the sky.</desc>
+    <commander id="303" />
+    <!-- Sealed First Order Demon -->
+    <deck>
+      <card id="8022" />
+      <!-- Fortune's Mateys -->
+      <card id="8022" />
+      <!-- Fortune's Mateys -->
+      <card id="8022" />
+      <!-- Fortune's Mateys -->
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7195" />
+      <!-- Undine Sprite -->
+      <card id="7195" />
+      <!-- Undine Sprite -->
+      <card id="7195" />
+      <!-- Undine Sprite -->
+      <card id="8092" mastery_level="2" />
+      <!-- Steelshell Devotee -->
+      <card id="8092" mastery_level="3" />
+      <!-- Steelshell Devotee -->
+      <card id="8092" mastery_level="4" />
+      <!-- Steelshell Devotee -->
+      <card id="8092" mastery_level="5" />
+      <!-- Steelshell Devotee -->
+      <card id="4007" mastery_level="6" />
+      <!-- Typhoeus, Storm Father -->
+      <card id="2074" mastery_level="7" />
+      <!-- Scylla, Sea's Torment -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>So... that is your answer, Mother.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Maybe the Void should have destroyed us after all.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 108: ComDev Seafolk - New Lightning Node -->
+  <mission>
+    <id>2021</id>
+    <name>A New Tide Swells...</name>
+    <energy>7</energy>
+    <desc>Though a bitter memory now, King Proteus remembers the days when Scylla and Typhoeus, the terrible sea serpents, were worshipped like deities. His own mother led the flock.</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="4017" />
+      <!-- King Proteus -->
+      <card id="2077" />
+      <!-- Drowner Beetle -->
+      <card id="2077" />
+      <!-- Drowner Beetle -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5152" />
+      <!-- Mermaid Merchant -->
+      <card id="5152" />
+      <!-- Mermaid Merchant -->
+      <card id="5302" />
+      <!-- Atya -->
+      <card id="7150" mastery_level="2" />
+      <!-- Ika-Roa, Worldshapers -->
+      <card id="7150" mastery_level="3" />
+      <!-- Ika-Roa, Worldshapers -->
+      <card id="5107" mastery_level="4" />
+      <!-- Aided Beacon -->
+      <card id="5107" mastery_level="5" />
+      <!-- Aided Beacon -->
+      <card id="7197" mastery_level="6" />
+      <!-- Surgebend Merman -->
+      <card id="7197" mastery_level="7" />
+      <!-- Surgebend Merman -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2022</id>
+    <name>A New Wave Crashes...</name>
+    <energy>7</energy>
+    <desc>Queen Tethys had mastered elemental magic, using her control over the flow of the ocean to confuse and rend asunder even mighty Blackfins as offerings.</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="2116" mastery_level="2" />
+      <!-- Messina's Choice -->
+      <card id="2116" mastery_level="3" />
+      <!-- Messina's Choice -->
+      <card id="2116" mastery_level="4" />
+      <!-- Messina's Choice -->
+      <card id="2116" mastery_level="5" />
+      <!-- Messina's Choice -->
+      <card id="2116" mastery_level="6" />
+      <!-- Messina's Choice -->
+      <card id="4007" mastery_level="7" />
+      <!-- Typhoeus, Storm Father -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2023</id>
+    <name>A New Thunder Rolls...</name>
+    <energy>7</energy>
+    <desc>The Void, in its liquid form, spread through the oceans faster than any disease. In desperation, Tethys stoked Scylla and Typhoeus&apos; storming rages to bless the sea.</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="4007" />
+      <!-- Typhoeus, Storm Father -->
+      <card id="2176" />
+      <!-- Sinksight Mermaid -->
+      <card id="2198" />
+      <!-- Cleaners of the Blue -->
+      <card id="2227" />
+      <!-- Glass Snapper -->
+      <card id="5294" />
+      <!-- Kani Defender -->
+      <card id="5298" />
+      <!-- Blessed Sentinel -->
+      <card id="6223" />
+      <!-- Gorgeel -->
+      <card id="6224" />
+      <!-- Azurtitan Sorcerer -->
+      <card id="6225" mastery_level="2" />
+      <!-- Boilfin Merman -->
+      <card id="6225" mastery_level="3" />
+      <!-- Boilfin Merman -->
+      <card id="6225" mastery_level="4" />
+      <!-- Boilfin Merman -->
+      <card id="6225" mastery_level="5" />
+      <!-- Boilfin Merman -->
+      <card id="6225" mastery_level="6" />
+      <!-- Boilfin Merman -->
+      <card id="6225" mastery_level="7" />
+      <!-- Boilfin Merman -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2024</id>
+    <name>A New Lightning Flashes...</name>
+    <energy>7</energy>
+    <desc>Perhaps her prayers were answered when a human child, tempest-tossed, washed up in her cradle on the island of the Rhynio. That baby girl would soon grow to become Lev, the Crimson Hero.</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="7005" />
+      <!-- Tsunamari -->
+      <card id="7108" />
+      <!-- Quetee -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="7066" />
+      <!-- Aquine -->
+      <card id="7091" />
+      <!-- Wave Plunderer -->
+      <card id="7194" />
+      <!-- Coralscape Grappler -->
+      <card id="7003" />
+      <!-- Kraken -->
+      <card id="7054" />
+      <!-- The Thing Below -->
+      <card id="5283" mastery_level="2" />
+      <!-- Ice Wreckers -->
+      <card id="7005" mastery_level="3" />
+      <!-- Tsunamari -->
+      <card id="7108" mastery_level="4" />
+      <!-- Quetee -->
+      <card id="2103" mastery_level="5" />
+      <!-- Siren -->
+      <card id="5623" mastery_level="6" />
+      <!-- Shrime, the Frozen -->
+      <card id="5629" mastery_level="7" />
+      <!-- Kandrula, the Sly -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2025</id>
+    <name>The Serpent Reborn Anew...</name>
+    <energy>7</energy>
+    <desc>When Proteus assumed the throne, he had other plans for the Pharos Ocean. Where Tethys saw the lightning of Chaos, Proteus&apos; Wyld heart wept at the sight of Scylla&apos;s anger.</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="5041" />
+      <!-- Skylance Raiders -->
+      <card id="6150" />
+      <!-- Deep Dino -->
+      <card id="2151" />
+      <!-- Armorca -->
+      <card id="2151" />
+      <!-- Armorca -->
+      <card id="5109" />
+      <!-- Cyclospout -->
+      <card id="5244" />
+      <!-- Mutant Scaupus -->
+      <card id="5252" />
+      <!-- Twainblood Outcast -->
+      <card id="2200" />
+      <!-- Noble Swordfish -->
+      <card id="5252" mastery_level="2" />
+      <!-- Twainblood Outcast -->
+      <card id="2116" mastery_level="3" />
+      <!-- Messina's Choice -->
+      <card id="6148" mastery_level="4" />
+      <!-- Narwhal Spiker -->
+      <card id="6607" mastery_level="5" />
+      <!-- The Elder Evil -->
+      <card id="6618" mastery_level="6" />
+      <!-- Jormun, the Ravager -->
+      <card id="6602" mastery_level="7" />
+      <!-- Apex Land Shark -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2026</id>
+    <name>Face the Maelstrom's Fury!</name>
+    <energy>7</energy>
+    <desc>Some say the serpents truly do carry blessings. Some say they are creatures best forgotten by history. But who can reckon with them? Who comprehends the maelstrom&apos;s fury?</desc>
+    <commander id="490" />
+    <!-- Lightning Boss Scylla -->
+    <deck>
+      <card id="2074" />
+      <!-- Scylla, Sea's Torment -->
+      <card id="4028" />
+      <!-- Pirate Hunter Eichiro -->
+      <card id="4039" />
+      <!-- Royal Fighter Lairel -->
+      <card id="4049" />
+      <!-- Morty Ahab, Seaturned -->
+      <card id="4050" />
+      <!-- Illu, Mirage of the Sea -->
+      <card id="4056" />
+      <!-- Moklam, the Sea Colossus -->
+      <card id="4065" />
+      <!-- Lerna, the Mutated -->
+      <card id="5604" />
+      <!-- Mirrormage Ghessela -->
+      <card id="5605" />
+      <!-- Medusozoa, the Immortal -->
+      <card id="5611" mastery_level="2" />
+      <!-- Zhu-Lath, the Hermit -->
+      <card id="5637" mastery_level="3" />
+      <!-- Moby, the Righteous -->
+      <card id="6615" mastery_level="4" />
+      <!-- Stern, the Gladthorn -->
+      <card id="6617" mastery_level="5" />
+      <!-- Domhain, the Fomorian -->
+      <card id="7601" mastery_level="6" />
+      <!-- Nemea, the Lost Regent -->
+      <card id="7615" mastery_level="7" />
+      <!-- Kyviat, the Aquamancer -->
+    </deck>
+  </mission>
 </root>

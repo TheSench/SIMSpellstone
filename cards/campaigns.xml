@@ -8752,7 +8752,8 @@
   <campaign>
     <id>1255</id>
     <name>Return to Karthos</name>
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1595523600</locked_start_time>
     <!--  Thursday, 23 July 2020 17:00:00 -->
     <location_id>30</location_id>
@@ -8788,7 +8789,8 @@
   <campaign>
     <id>1256</id>
     <name>Chaos Power Coil</name>
-    <campaign_req id="1255" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1255" level="1"/> -->
     <locked_start_time>1596733200</locked_start_time>
     <!--  Thursday, 6 August 2020 17:00:00 -->
     <battleground_id>2099</battleground_id>
@@ -8828,7 +8830,8 @@
     <name>Constructing Chaos</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req id="1255" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1255" level="1"/> -->
     <locked_start_time>1596733200</locked_start_time>
     <!--  Thursday, 6 August 2020 17:00:00 -->
     <battleground_id>2100</battleground_id>
@@ -8863,7 +8866,8 @@
   <campaign>
     <id>1258</id>
     <name>Chaos Allegiance</name>
-    <campaign_req id="1256" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1256" level="1"/> -->
     <locked_start_time>1593104400</locked_start_time>
     <!--  Thursday, 20 August 2020 17:00:00 -->
     <battleground_id>2101</battleground_id>
@@ -8900,7 +8904,8 @@
   <campaign>
     <id>1259</id>
     <name>Past Trickery Reveal</name>
-    <campaign_req id="1258" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1258" level="1"/> -->
     <locked_start_time>1599152400</locked_start_time>
     <!--  Thursday, 3 September 2020 17:00:00 -->
     <battleground_id>2102</battleground_id>
@@ -12733,8 +12738,8 @@
     <id>1353</id>
     <name>The Return of a King</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="36" level="1" />
-    <!-- From now on, all ComDev nodes require first 6 maps up to Seastone Citadel to be completed -->
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1692291600</locked_start_time>
     <!--  Thursday, August 17, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -12779,8 +12784,8 @@
     <id>1354</id>
     <name>Warring Factions</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="1353" level="1" />
-    <!-- Require previous node in event -->
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1353" level="1"/> -->
     <locked_start_time>1693501200</locked_start_time>
     <!--  Thursday, August 31, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -12863,7 +12868,7 @@
       <item level="7" id="2802" number="150" />
       <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
     </rewards>
-    <find_item id="3128" drop_per_energy="1.7" />
+    <find_item id="3128" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1697130000</ignore_energy_reduction_until>
     <!-- Thursday, 12 October 2023 at 17:00:00 -->
@@ -12909,10 +12914,95 @@
       <item level="7" id="2802" number="150" />
       <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
     </rewards>
-    <find_item id="3128" drop_per_energy="1.8" />
+    <find_item id="3128" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1697130000</ignore_energy_reduction_until>
     <!-- Thursday, 12 October 2023 at 17:00:00 -->
+  </campaign>
+  <!-- Event 108: ComDev Seafolk - Pharos Temple -->
+  <campaign>
+    <id>1357</id>
+    <name>Tides of Void</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <!-- Comdev nodes require completion of first 6 maps up to Seastone Citadel -->
+    <locked_start_time>1697130000</locked_start_time>
+    <!-- Thursday, 12 October 2023 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>11</location_id>
+    <x>830</x>
+    <y>360</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7158</mission_id>
+      <mission_id>7159</mission_id>
+      <mission_id>7160</mission_id>
+      <mission_id>7161</mission_id>
+      <mission_id>7162</mission_id>
+      <mission_id>7163</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2803" number="50" />
+      <!-- Pharos Temple Super Flask -->
+      <item level="2" id="18" number="500" />
+      <!-- Legendary Pack Fragments -->
+      <card level="3" id="2135" />
+      <!-- Primitive Crustavian -->
+      <card level="4" id="2175" />
+      <!-- Star of the Red Sea -->
+      <card level="5" id="2026" />
+      <!-- Lazarus -->
+      <card level="6" id="2026" />
+      <!-- Lazarus -->
+      <item level="7" id="2803" number="150" />
+      <!-- Pharos Temple Super Flask -->
+    </rewards>
+    <find_item id="3059" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1699549200</ignore_energy_reduction_until>
+    <!-- Thursday, 09 November 2023 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1358</id>
+    <name>Starving Off the Maelstrom</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1357" level="1" />
+    <!-- Require previous node -->
+    <locked_start_time>1698339600</locked_start_time>
+    <!-- Thursday, 26 October 2023 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>11</location_id>
+    <x>415</x>
+    <y>475</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7164</mission_id>
+      <mission_id>7165</mission_id>
+      <mission_id>7166</mission_id>
+      <mission_id>7167</mission_id>
+      <mission_id>7168</mission_id>
+      <mission_id>7169</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2803" number="50" />
+      <!-- Pharos Temple Super Flask -->
+      <item level="2" id="18" number="500" />
+      <!-- Legendary Pack Fragments -->
+      <card level="3" id="2135" />
+      <!-- Primitive Crustavian -->
+      <card level="4" id="2175" />
+      <!-- Star of the Red Sea -->
+      <card level="5" id="2026" />
+      <!-- Lazarus -->
+      <card level="6" id="2026" />
+      <!-- Lazarus -->
+      <item level="7" id="2803" number="150" />
+      <!-- Pharos Temple Super Flask -->
+    </rewards>
+    <find_item id="3059" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1699549200</ignore_energy_reduction_until>
+    <!-- Thursday, 09 November 2023 at 17:00:00 -->
   </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->

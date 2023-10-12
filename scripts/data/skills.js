@@ -20,7 +20,7 @@ var SKILL_DATA = {
 		"type": "passive"
 	},
 	"barrage": {
-		"desc": "Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.",
+		"desc": "Deal damage to random enemy creatures one damage at a time. This damage does not cause additional effects.",
 		"icon": "barrage",
 		"name": "barrage",
 		"type": "earlyActivation"
@@ -164,7 +164,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"fury": {
-		"desc": "After taking Attack damage, deals damage back and permanently increases Attack.",
+		"desc": "This creature has Vengeance and half as much Shroud. After taking damage, permanently increase Attack by 1/4 of the damage taken.",
 		"icon": "fury",
 		"name": "Maelstrom's Fury",
 		"type": "onDamaged"
@@ -236,7 +236,7 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"magicfield": {
-		"desc": "Grants Ward to self and half as much to adjacent ally creatures.",
+		"desc": "This card is immune to debuffs. Opposing card is inflicted with Nullify 99 at the start of its turn.",
 		"icon": "antimagicfield",
 		"name": "Anti-Magic Field",
 		"type": "activation"

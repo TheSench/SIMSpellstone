@@ -20259,6 +20259,147 @@
       <!-- Legendary Health Rune -->
     </reward>
   </achievement>
+  <!-- Event 108: ComDev Seafolk - Pharos Temple -->
+  <!-- E108 Node 1: Tides of Void -->
+  <achievement>
+    <id>3922</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tides of Void</name>
+    <desc>Complete the Tides of Void campaign on Mastery Level 1.</desc>
+    <mission_req>7158</mission_req>
+    <locked_start_time>1697130000</locked_start_time>
+    <req>
+      <campaign>1357</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3059" number="100" />
+      <event_points id="7104" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3923</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tides of Void</name>
+    <desc>Complete the Tides of Void campaign on Mastery Level 2.</desc>
+    <achievement_req>3922</achievement_req>
+    <locked_start_time>1697130000</locked_start_time>
+    <req>
+      <campaign>1357</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3924</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tides of Void</name>
+    <desc>Complete the Tides of Void campaign on Mastery Level 4.</desc>
+    <achievement_req>3923</achievement_req>
+    <locked_start_time>1697130000</locked_start_time>
+    <req>
+      <campaign>1357</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3925</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tides of Void</name>
+    <desc>Complete the Tides of Void campaign on Mastery Level 6.</desc>
+    <achievement_req>3924</achievement_req>
+    <locked_start_time>1697130000</locked_start_time>
+    <req>
+      <campaign>1357</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- E108 Node 2: Tides of Void -->
+  <achievement>
+    <id>3926</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Starving Off the Maelstrom</name>
+    <desc>Complete the Starving Off the Maelstrom campaign on Mastery Level 1.</desc>
+    <mission_req>7164</mission_req>
+    <locked_start_time>1698339600</locked_start_time>
+    <req>
+      <campaign>1358</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3059" number="100" />
+      <event_points id="7104" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3927</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Starving Off the Maelstrom</name>
+    <desc>Complete the Starving Off the Maelstrom campaign on Mastery Level 2.</desc>
+    <achievement_req>3926</achievement_req>
+    <locked_start_time>1698339600</locked_start_time>
+    <req>
+      <campaign>1358</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3928</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Starving Off the Maelstrom</name>
+    <desc>Complete the Starving Off the Maelstrom campaign on Mastery Level 4.</desc>
+    <achievement_req>3927</achievement_req>
+    <locked_start_time>1698339600</locked_start_time>
+    <req>
+      <campaign>1358</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3929</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Starving Off the Maelstrom</name>
+    <desc>Complete the Starving Off the Maelstrom campaign on Mastery Level 6.</desc>
+    <achievement_req>3928</achievement_req>
+    <locked_start_time>1698339600</locked_start_time>
+    <req>
+      <campaign>1358</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>

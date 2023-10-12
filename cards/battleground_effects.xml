@@ -1607,7 +1607,7 @@
   <battleground>
     <id>170</id>
     <name>Eye of the Maelstrom</name>
-    <desc>All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health. This BGE is subject to change.</desc>
+    <desc>All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.15" base="health" y="12" delay="3,4" />
@@ -4605,12 +4605,13 @@
   <!-- Lightning Nodes -->
   <battleground>
     <id>2121</id>
-    <name>Rune Escape</name>
-    <desc>Runes have no effect in this Lightning Boss Node.</desc>
-    <icon>Rune_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
+    <name>Lightning Fast</name>
+    <desc>The Lightning Boss has one Delay removed from the first card they play in this Lightning Boss Node.</desc>
+    <icon>sparkler_BGE</icon>
     <effect>
-      <rune_mult>0</rune_mult>
+      <on_play first_play="1" defender="1">
+        <add_skill id="haste" x="1" />
+      </on_play>
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

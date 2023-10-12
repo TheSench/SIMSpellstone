@@ -756,6 +756,21 @@
     </cards>
   </store_item>
   <store_item>
+    <id>46</id>
+    <name>Legendary Reward Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one ^cE7FFLegendary^cFFFF card from Reward Set!</desc>
+    <priority>1</priority>
+    <asset_prefab>legendary_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>5000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="2000" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>51</id>
     <name>Pile of Gold Coins</name>
     <category>2</category>
@@ -1220,21 +1235,242 @@
       <item id="2524" quantity="150" weight="0.1" />
     </item_pack>
   </store_item>
-  <!--
-	<store_item>
-		<id>97</id>
-		<name>Universal Solvent</name>
-		<category>2</category>
-		<desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
-		<show_desc>1</show_desc>
-		<priority>51</priority>
-		<sc_cost>10000</sc_cost>
-		<asset_prefab>arcane_vapor</asset_prefab>
-		<icon>arcane_vapor</icon>
-		<bundle>17</bundle>
-		<item_req>8030</item_req>
-		<item id='4002' quantity='1' />
-	</store_item>-->
+  <store_item>
+    <id>97</id>
+    <name>Universal Solvent</name>
+    <category>2</category>
+    <desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
+    <show_desc>1</show_desc>
+    <priority>51</priority>
+    <sc_cost>10000</sc_cost>
+    <asset_prefab>rune_bag</asset_prefab>
+    <icon>rubedo_vapor</icon>
+    <bundle>279</bundle>
+    <item_req>8030</item_req>
+    <item id="4002" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>98</id>
+    <name>Random Reward Champion Stones</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains 500 Stones for a random Champion from the Reward Champion set.</desc>
+    <priority>1</priority>
+    <asset_prefab>championStoneBox2</asset_prefab>
+    <bundle>113</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>600</hc_cost>
+    <no_drop_rate>1</no_drop_rate>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="104000" quantity="500" weight="1" />
+      <item id="104001" quantity="500" weight="1" />
+      <item id="104002" quantity="500" weight="1" />
+      <item id="104004" quantity="500" weight="1" />
+      <item id="104005" quantity="500" weight="1" />
+      <item id="104006" quantity="500" weight="1" />
+      <item id="104007" quantity="500" weight="1" />
+      <item id="104008" quantity="500" weight="1" />
+      <item id="104009" quantity="500" weight="1" />
+      <item id="104010" quantity="500" weight="1" />
+      <item id="104011" quantity="500" weight="1" />
+      <item id="104012" quantity="500" weight="1" />
+      <item id="104013" quantity="500" weight="1" />
+      <item id="104014" quantity="500" weight="1" />
+      <item id="104015" quantity="500" weight="1" />
+      <item id="104016" quantity="500" weight="1" />
+      <item id="104017" quantity="500" weight="1" />
+      <item id="104018" quantity="500" weight="1" />
+      <item id="104019" quantity="500" weight="1" />
+      <item id="104020" quantity="500" weight="1" />
+      <item id="104021" quantity="500" weight="1" />
+      <item id="104022" quantity="500" weight="1" />
+      <item id="104023" quantity="500" weight="1" />
+      <item id="104024" quantity="500" weight="1" />
+      <item id="104025" quantity="500" weight="1" />
+      <item id="104026" quantity="500" weight="1" />
+      <item id="104027" quantity="500" weight="1" />
+      <item id="104028" quantity="500" weight="1" />
+      <item id="104029" quantity="500" weight="1" />
+      <item id="104030" quantity="500" weight="1" />
+      <item id="104031" quantity="500" weight="1" />
+      <item id="104032" quantity="500" weight="1" />
+      <item id="104033" quantity="500" weight="1" />
+      <item id="104034" quantity="500" weight="1" />
+      <item id="104035" quantity="500" weight="1" />
+      <item id="104036" quantity="500" weight="1" />
+      <item id="104037" quantity="500" weight="1" />
+      <item id="104038" quantity="500" weight="1" />
+      <item id="104039" quantity="500" weight="1" />
+      <item id="104040" quantity="500" weight="1" />
+      <item id="104041" quantity="500" weight="1" />
+      <item id="104042" quantity="500" weight="1" />
+      <item id="104043" quantity="500" weight="1" />
+      <item id="104044" quantity="500" weight="1" />
+      <item id="104045" quantity="500" weight="1" />
+      <item id="104046" quantity="500" weight="1" />
+      <item id="104047" quantity="500" weight="1" />
+      <item id="104048" quantity="500" weight="1" />
+      <item id="104049" quantity="500" weight="1" />
+      <item id="104050" quantity="500" weight="1" />
+      <item id="104051" quantity="500" weight="1" />
+      <item id="104052" quantity="500" weight="1" />
+      <item id="104053" quantity="500" weight="1" />
+      <item id="104054" quantity="500" weight="1" />
+      <item id="104055" quantity="500" weight="1" />
+      <item id="104056" quantity="500" weight="1" />
+      <item id="104057" quantity="500" weight="1" />
+      <item id="104058" quantity="500" weight="1" />
+      <item id="104059" quantity="500" weight="1" />
+      <item id="104060" quantity="500" weight="1" />
+      <item id="104061" quantity="500" weight="1" />
+      <item id="104062" quantity="500" weight="1" />
+      <item id="104063" quantity="500" weight="1" />
+      <item id="104064" quantity="500" weight="1" />
+      <item id="104065" quantity="500" weight="1" />
+      <item id="104066" quantity="500" weight="1" />
+      <item id="104067" quantity="500" weight="1" />
+      <item id="105640" quantity="500" weight="1" />
+      <item id="104068" quantity="500" weight="1" />
+      <item id="104069" quantity="500" weight="1" />
+      <item id="104070" quantity="500" weight="1" />
+      <item id="104071" quantity="500" weight="1" />
+      <item id="104072" quantity="500" weight="1" />
+      <item id="104073" quantity="500" weight="1" />
+      <item id="104074" quantity="500" weight="1" />
+      <item id="104075" quantity="500" weight="1" />
+      <item id="104076" quantity="500" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>99</id>
+    <name>Random Premium Champion Stones</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains 500 Stones for a random Champion from the Premium Champion set.</desc>
+    <priority>1</priority>
+    <asset_prefab>championStoneBox2</asset_prefab>
+    <bundle>113</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>600</hc_cost>
+    <no_drop_rate>1</no_drop_rate>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105600" quantity="500" weight="1" />
+      <item id="105601" quantity="500" weight="1" />
+      <item id="105602" quantity="500" weight="1" />
+      <item id="105603" quantity="500" weight="1" />
+      <item id="105604" quantity="500" weight="1" />
+      <item id="105605" quantity="500" weight="1" />
+      <item id="105606" quantity="500" weight="1" />
+      <item id="105607" quantity="500" weight="1" />
+      <item id="105608" quantity="500" weight="1" />
+      <item id="105609" quantity="500" weight="1" />
+      <item id="105610" quantity="500" weight="1" />
+      <item id="105611" quantity="500" weight="1" />
+      <item id="105612" quantity="500" weight="1" />
+      <item id="105613" quantity="500" weight="1" />
+      <item id="105614" quantity="500" weight="1" />
+      <item id="105615" quantity="500" weight="1" />
+      <item id="105616" quantity="500" weight="1" />
+      <item id="105617" quantity="500" weight="1" />
+      <item id="105618" quantity="500" weight="1" />
+      <item id="105619" quantity="500" weight="1" />
+      <item id="105620" quantity="500" weight="1" />
+      <item id="105621" quantity="500" weight="1" />
+      <item id="105622" quantity="500" weight="1" />
+      <item id="105623" quantity="500" weight="1" />
+      <item id="105624" quantity="500" weight="1" />
+      <item id="105625" quantity="500" weight="1" />
+      <item id="105626" quantity="500" weight="1" />
+      <item id="105627" quantity="500" weight="1" />
+      <item id="105628" quantity="500" weight="1" />
+      <item id="105629" quantity="500" weight="1" />
+      <item id="105630" quantity="500" weight="1" />
+      <item id="105631" quantity="500" weight="1" />
+      <item id="105632" quantity="500" weight="1" />
+      <item id="105633" quantity="500" weight="1" />
+      <item id="105634" quantity="500" weight="1" />
+      <item id="105635" quantity="500" weight="1" />
+      <item id="105636" quantity="500" weight="1" />
+      <item id="105637" quantity="500" weight="1" />
+      <item id="105638" quantity="500" weight="1" />
+      <item id="105639" quantity="500" weight="1" />
+      <item id="105641" quantity="500" weight="1" />
+      <item id="105642" quantity="500" weight="1" />
+      <item id="105643" quantity="500" weight="1" />
+      <item id="105644" quantity="500" weight="1" />
+      <item id="105645" quantity="500" weight="1" />
+      <item id="105646" quantity="500" weight="1" />
+      <item id="106600" quantity="500" weight="1" />
+      <item id="106601" quantity="500" weight="1" />
+      <item id="106602" quantity="500" weight="1" />
+      <item id="106603" quantity="500" weight="1" />
+      <item id="106604" quantity="500" weight="1" />
+      <item id="106605" quantity="500" weight="1" />
+      <item id="106606" quantity="500" weight="1" />
+      <item id="106607" quantity="500" weight="1" />
+      <item id="106608" quantity="500" weight="1" />
+      <item id="106609" quantity="500" weight="1" />
+      <item id="106610" quantity="500" weight="1" />
+      <item id="106611" quantity="500" weight="1" />
+      <item id="106612" quantity="500" weight="1" />
+      <item id="106613" quantity="500" weight="1" />
+      <item id="106614" quantity="500" weight="1" />
+      <item id="106615" quantity="500" weight="1" />
+      <item id="106616" quantity="500" weight="1" />
+      <item id="106617" quantity="500" weight="1" />
+      <item id="106618" quantity="500" weight="1" />
+      <item id="106619" quantity="500" weight="1" />
+      <item id="106620" quantity="500" weight="1" />
+      <item id="106621" quantity="500" weight="1" />
+      <item id="106622" quantity="500" weight="1" />
+      <item id="106623" quantity="500" weight="1" />
+      <item id="106624" quantity="500" weight="1" />
+      <item id="106625" quantity="500" weight="1" />
+      <item id="106626" quantity="500" weight="1" />
+      <item id="106627" quantity="500" weight="1" />
+      <item id="106628" quantity="500" weight="1" />
+      <item id="106629" quantity="500" weight="1" />
+      <item id="106630" quantity="500" weight="1" />
+      <item id="106631" quantity="500" weight="1" />
+      <item id="106632" quantity="500" weight="1" />
+      <item id="107600" quantity="500" weight="1" />
+      <item id="107601" quantity="500" weight="1" />
+      <item id="107602" quantity="500" weight="1" />
+      <item id="107603" quantity="500" weight="1" />
+      <item id="107604" quantity="500" weight="1" />
+      <item id="107605" quantity="500" weight="1" />
+      <item id="107606" quantity="500" weight="1" />
+      <item id="107607" quantity="500" weight="1" />
+      <item id="107608" quantity="500" weight="1" />
+      <item id="107609" quantity="500" weight="1" />
+      <item id="107610" quantity="500" weight="1" />
+      <item id="107611" quantity="500" weight="1" />
+      <item id="107612" quantity="500" weight="1" />
+      <item id="107613" quantity="500" weight="1" />
+      <item id="107614" quantity="500" weight="1" />
+      <item id="107615" quantity="500" weight="1" />
+      <item id="107616" quantity="500" weight="1" />
+      <item id="107617" quantity="500" weight="1" />
+      <item id="107618" quantity="500" weight="1" />
+      <item id="107619" quantity="500" weight="1" />
+      <item id="107620" quantity="500" weight="1" />
+      <item id="107621" quantity="500" weight="1" />
+      <item id="107622" quantity="500" weight="1" />
+      <item id="107623" quantity="500" weight="1" />
+      <item id="107624" quantity="500" weight="1" />
+      <item id="107625" quantity="500" weight="1" />
+      <item id="107626" quantity="500" weight="1" />
+      <item id="107627" quantity="500" weight="1" />
+      <item id="107628" quantity="500" weight="1" />
+      <item id="107629" quantity="500" weight="1" />
+      <item id="107630" quantity="500" weight="1" />
+      <item id="107631" quantity="500" weight="1" />
+    </item_pack>
+  </store_item>
   <!-- =============================== -->
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
@@ -9801,6 +10037,96 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="7178" display_card_id="7178" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5336</id>
+    <name>Double Legendary Seafolk Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary Seafolk card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5337</id>
+    <name>Mollusk Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMollusk Snarecaster^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7154" display_card_id="7154" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5338</id>
+    <name>Bailong Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBailong^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6106" display_card_id="6106" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5339</id>
+    <name>Lanternbulb Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLanternbulb Hunter^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5237" display_card_id="5237" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5340</id>
+    <name>Boilfin Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBoilfin Merman^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6225" display_card_id="6225" />
     </cards>
   </store_item>
 </root>

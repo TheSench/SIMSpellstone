@@ -12962,7 +12962,7 @@
     <rarity>5</rarity>
     <skill id="enfeeble" x="1" all="1" />
     <skill id="enrage" x="1" all="1" />
-    <type>2</type>
+    <type>3</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -13013,7 +13013,7 @@
     <rarity>5</rarity>
     <skill id="protect" x="1" />
     <skill id="jam" c="9" />
-    <type>2</type>
+    <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -13113,7 +13113,7 @@
     <attack>0</attack>
     <health>88</health>
     <rarity>5</rarity>
-    <type>2</type>
+    <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -13138,6 +13138,58 @@
     <upgrade>
       <level>7</level>
       <health>88</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>490</id>
+    <card_type>1</card_type>
+    <name>Lightning Boss Scylla</name>
+    <portrait>Portrait_Mythic_Seafolk</portrait>
+    <asset_bundle>86</asset_bundle>
+    <attack>0</attack>
+    <health>50</health>
+    <rarity>5</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="jam" c="5" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>50</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>60</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>60</health>
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>75</health>
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="jam" c="3" />
+      <skill id="imbue" s="fury" x="14" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>99</health>
+      <skill id="enfeeble" x="7" all="1" />
+      <skill id="jam" c="2" />
+      <skill id="imbue" s="fury" x="14" />
     </upgrade>
   </unit>
 </root>

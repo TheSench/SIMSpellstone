@@ -2557,7 +2557,7 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Meltdown"
 	},
 	"170": {
-		"desc": "All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health. This BGE is subject to change.",
+		"desc": "All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health.",
 		"effect": [
 			{
 				"base": "health",
@@ -6392,16 +6392,22 @@ var BATTLEGROUNDS = {
 		"starting_level": 0
 	},
 	"2121": {
-		"desc": "Runes have no effect in this Lightning Boss Node.",
+		"desc": "The Lightning Boss has one Delay removed from the first card they play in this Lightning Boss Node.",
 		"effect": [
 			{
-				"effect_type": "runeMultiplier",
-				"mult": 0
+				"defender": 1,
+				"effect": {
+					"effect_type": "add_skill",
+					"id": "haste",
+					"x": 1
+				},
+				"effect_type": "on_play",
+				"first_play": 1
 			}
 		],
 		"hidden": true,
 		"id": "2121",
-		"name": "Rune Escape"
+		"name": "Lightning Fast"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

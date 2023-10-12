@@ -101,10 +101,6 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"30": {
-		"id": "30",
-		"name": "Return to Karthos"
-	},
 	"31": {
 		"id": "31",
 		"name": "Return to Tarragon Peak"
@@ -6319,7 +6315,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1355",
 		"items": {
-			"3128": 1.7
+			"3128": 0.85
 		},
 		"location_id": "34",
 		"missions": [
@@ -6336,7 +6332,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1356",
 		"items": {
-			"3128": 1.8
+			"3128": 0.9
 		},
 		"location_id": "34",
 		"missions": [
@@ -6348,6 +6344,40 @@ var CAMPAIGNS = {
 			"7157"
 		],
 		"name": "Furious Clouds"
+	},
+	"1357": {
+		"battleground_id": "2120",
+		"id": "1357",
+		"items": {
+			"3059": 1.7
+		},
+		"location_id": "11",
+		"missions": [
+			"7158",
+			"7159",
+			"7160",
+			"7161",
+			"7162",
+			"7163"
+		],
+		"name": "Tides of Void"
+	},
+	"1358": {
+		"battleground_id": "2120",
+		"id": "1358",
+		"items": {
+			"3059": 1.8
+		},
+		"location_id": "11",
+		"missions": [
+			"7164",
+			"7165",
+			"7166",
+			"7167",
+			"7168",
+			"7169"
+		],
+		"name": "Starving Off the Maelstrom"
 	},
 	"3000": {
 		"id": "3000",
@@ -17697,6 +17727,366 @@ var MISSIONS = {
 		],
 		"id": "2020",
 		"name": "Celebrating Year 8"
+	},
+	"2021": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "4017"
+			},
+			{
+				"id": "2077"
+			},
+			{
+				"id": "2077"
+			},
+			{
+				"id": "5106"
+			},
+			{
+				"id": "5106"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "5152"
+			},
+			{
+				"id": "5302"
+			},
+			{
+				"id": "7150",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7150",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5107",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5107",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7197",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7197",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2021",
+		"name": "A New Tide Swells..."
+	},
+	"2022": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4007",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2022",
+		"name": "A New Wave Crashes..."
+	},
+	"2023": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "4007"
+			},
+			{
+				"id": "2176"
+			},
+			{
+				"id": "2198"
+			},
+			{
+				"id": "2227"
+			},
+			{
+				"id": "5294"
+			},
+			{
+				"id": "5298"
+			},
+			{
+				"id": "6223"
+			},
+			{
+				"id": "6224"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6225",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2023",
+		"name": "A New Thunder Rolls..."
+	},
+	"2024": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "7005"
+			},
+			{
+				"id": "7108"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "7066"
+			},
+			{
+				"id": "7091"
+			},
+			{
+				"id": "7194"
+			},
+			{
+				"id": "7003"
+			},
+			{
+				"id": "7054"
+			},
+			{
+				"id": "5283",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7005",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7108",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2103",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5623",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5629",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2024",
+		"name": "A New Lightning Flashes..."
+	},
+	"2025": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "5041"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "5109"
+			},
+			{
+				"id": "5244"
+			},
+			{
+				"id": "5252"
+			},
+			{
+				"id": "2200"
+			},
+			{
+				"id": "5252",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2116",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6148",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6607",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6618",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6602",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2025",
+		"name": "The Serpent Reborn Anew..."
+	},
+	"2026": {
+		"commander": {
+			"id": "490"
+		},
+		"deck": [
+			{
+				"id": "2074"
+			},
+			{
+				"id": "4028"
+			},
+			{
+				"id": "4039"
+			},
+			{
+				"id": "4049"
+			},
+			{
+				"id": "4050"
+			},
+			{
+				"id": "4056"
+			},
+			{
+				"id": "4065"
+			},
+			{
+				"id": "5604"
+			},
+			{
+				"id": "5605"
+			},
+			{
+				"id": "5611",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5637",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6615",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6617",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7601",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7615",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2026",
+		"name": "Face the Maelstrom's Fury!"
 	},
 	"3654": {
 		"commander": {
@@ -147350,5 +147740,725 @@ var MISSIONS = {
 		],
 		"id": "7157",
 		"name": "Cataclysm"
+	},
+	"7158": {
+		"commander": {
+			"id": "281"
+		},
+		"deck": [
+			{
+				"id": "1630"
+			},
+			{
+				"id": "1634"
+			},
+			{
+				"id": "1635"
+			},
+			{
+				"id": "1637"
+			},
+			{
+				"id": "2077"
+			},
+			{
+				"id": "2104"
+			},
+			{
+				"id": "2129"
+			},
+			{
+				"id": "2132"
+			},
+			{
+				"id": "2150"
+			},
+			{
+				"id": "2176",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2198",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2226",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2176",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2198",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2226",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7158",
+		"name": "Isn't It Neat?"
+	},
+	"7159": {
+		"commander": {
+			"id": "280"
+		},
+		"deck": [
+			{
+				"id": "1035"
+			},
+			{
+				"id": "2076"
+			},
+			{
+				"id": "2079"
+			},
+			{
+				"id": "2105"
+			},
+			{
+				"id": "2148"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "2227"
+			},
+			{
+				"id": "5011"
+			},
+			{
+				"id": "5041"
+			},
+			{
+				"id": "5073",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5107",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5108",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5149",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5152",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5152",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7159",
+		"name": "Wall of Wonders"
+	},
+	"7160": {
+		"commander": {
+			"id": "287"
+		},
+		"deck": [
+			{
+				"id": "2070"
+			},
+			{
+				"id": "2078"
+			},
+			{
+				"id": "2130"
+			},
+			{
+				"id": "2135"
+			},
+			{
+				"id": "2175"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2199"
+			},
+			{
+				"id": "2218"
+			},
+			{
+				"id": "2242"
+			},
+			{
+				"id": "6108",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6110",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6135",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6149",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7160",
+		"name": "She Who Holds the Tide"
+	},
+	"7161": {
+		"commander": {
+			"id": "396"
+		},
+		"deck": [
+			{
+				"id": "7107"
+			},
+			{
+				"id": "7107"
+			},
+			{
+				"id": "7109"
+			},
+			{
+				"id": "7109"
+			},
+			{
+				"id": "7149"
+			},
+			{
+				"id": "7149"
+			},
+			{
+				"id": "7167"
+			},
+			{
+				"id": "7167"
+			},
+			{
+				"id": "7151"
+			},
+			{
+				"id": "7151",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7066",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7005",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7005",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4017",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7161",
+		"name": "A Protean Proteus"
+	},
+	"7162": {
+		"commander": {
+			"id": "352"
+		},
+		"deck": [
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "2103"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "7014",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7014",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7003",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7003",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7054",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4017",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7162",
+		"name": "Float Like a Merman, Sting Like a Bird"
+	},
+	"7163": {
+		"commander": {
+			"id": "359"
+		},
+		"deck": [
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2116"
+			},
+			{
+				"id": "1045"
+			},
+			{
+				"id": "2200"
+			},
+			{
+				"id": "5095"
+			},
+			{
+				"id": "5104"
+			},
+			{
+				"id": "5105"
+			},
+			{
+				"id": "5106"
+			},
+			{
+				"id": "5109"
+			},
+			{
+				"id": "6106",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6107",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6109",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6127",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6148",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7023",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7163",
+		"name": "Tethys' Boon"
+	},
+	"7164": {
+		"commander": {
+			"id": "359"
+		},
+		"deck": [
+			{
+				"id": "7025"
+			},
+			{
+				"id": "7083"
+			},
+			{
+				"id": "7091"
+			},
+			{
+				"id": "7104"
+			},
+			{
+				"id": "7105"
+			},
+			{
+				"id": "7106"
+			},
+			{
+				"id": "7108"
+			},
+			{
+				"id": "7150"
+			},
+			{
+				"id": "7152"
+			},
+			{
+				"id": "7153",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7154",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7180",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7194",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7195",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7196",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7164",
+		"name": "Prophet of the Falls"
+	},
+	"7165": {
+		"commander": {
+			"id": "337"
+		},
+		"deck": [
+			{
+				"id": "7197"
+			},
+			{
+				"id": "7221"
+			},
+			{
+				"id": "7227"
+			},
+			{
+				"id": "7228"
+			},
+			{
+				"id": "7229"
+			},
+			{
+				"id": "7233"
+			},
+			{
+				"id": "7235"
+			},
+			{
+				"id": "7260"
+			},
+			{
+				"id": "7261"
+			},
+			{
+				"id": "7262",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7284",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7285",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7296",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7306",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5198",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7165",
+		"name": "Sea, Meet Sky"
+	},
+	"7166": {
+		"commander": {
+			"id": "309"
+		},
+		"deck": [
+			{
+				"id": "6151"
+			},
+			{
+				"id": "6185"
+			},
+			{
+				"id": "6195"
+			},
+			{
+				"id": "6198"
+			},
+			{
+				"id": "6222"
+			},
+			{
+				"id": "6223"
+			},
+			{
+				"id": "6224"
+			},
+			{
+				"id": "6225"
+			},
+			{
+				"id": "6235"
+			},
+			{
+				"id": "6259",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6260",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6261",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6278",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6626",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5638",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7166",
+		"name": "Dressed to Plunder"
+	},
+	"7167": {
+		"commander": {
+			"id": "397"
+		},
+		"deck": [
+			{
+				"id": "5150"
+			},
+			{
+				"id": "5151"
+			},
+			{
+				"id": "5153"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5197"
+			},
+			{
+				"id": "5198"
+			},
+			{
+				"id": "5199"
+			},
+			{
+				"id": "5227"
+			},
+			{
+				"id": "5228"
+			},
+			{
+				"id": "5237",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5244",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5252",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5257",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5258",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5259",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7167",
+		"name": "All Aboard"
+	},
+	"7168": {
+		"commander": {
+			"id": "359"
+		},
+		"deck": [
+			{
+				"id": "5261"
+			},
+			{
+				"id": "5283"
+			},
+			{
+				"id": "5284"
+			},
+			{
+				"id": "5285"
+			},
+			{
+				"id": "5294"
+			},
+			{
+				"id": "5298"
+			},
+			{
+				"id": "5302"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6285"
+			},
+			{
+				"id": "6293",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7023",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7023",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7195",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7195",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4017",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7168",
+		"name": "Spoken Too Soon"
+	},
+	"7169": {
+		"commander": {
+			"id": "303"
+		},
+		"deck": [
+			{
+				"id": "8022"
+			},
+			{
+				"id": "8022"
+			},
+			{
+				"id": "8022"
+			},
+			{
+				"id": "7023"
+			},
+			{
+				"id": "7023"
+			},
+			{
+				"id": "7023"
+			},
+			{
+				"id": "7195"
+			},
+			{
+				"id": "7195"
+			},
+			{
+				"id": "7195"
+			},
+			{
+				"id": "8092",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8092",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8092",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8092",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4007",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2074",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7169",
+		"name": "The Maelstrom Begins"
 	}
 };
