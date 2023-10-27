@@ -164,7 +164,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"fury": {
-		"desc": "This creature has Vengeance and half as much Shroud. After taking damage, permanently increase Attack by 1/4 of the damage taken.",
+		"desc": "This creature has Vengeance and half as much Shroud and Enraged.",
 		"icon": "fury",
 		"name": "Maelstrom's Fury",
 		"type": "onDamaged"

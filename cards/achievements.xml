@@ -20400,6 +20400,193 @@
       <!-- Shards -->
     </reward>
   </achievement>
+  <!-- Halloween Special Event 2023 -->
+  <achievement>
+    <id>3930</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 1.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>5005</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3931</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 2.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3930</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3932</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 3.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3931</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>3</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3933</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3932</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3934</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 5.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3933</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3935</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 6.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3934</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3936</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3935</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3937</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 8.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3936</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>8</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3938</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 9.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3937</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>9</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3939</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 10.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3938</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>10</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3940</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Midnight Dreary</name>
+    <desc>Complete the A Midnight Dreary campaign on Mastery Level 11.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3939</achievement_req>
+    <req>
+      <campaign>5005</campaign>
+      <level>11</level>
+    </req>
+    <reward>
+      <pack>4</pack>
+      <!-- Random Reward Epic -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -21889,6 +22076,25 @@
     <reward>
       <item id="2531" number="1" />
       <!-- Inventory expansion -->
+    </reward>
+  </achievement>
+  <!-- Event 108: ComDev Seafolk - Pharos Temple -->
+  <achievement>
+    <id>4062</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Pharos Temple</name>
+    <desc>Complete Mastery Level 7 on all campaigns in Pharos Temple.</desc>
+    <mission_req>7169</mission_req>
+    <locked_start_time>1698339600</locked_start_time>
+    <req>
+      <campaign>1357</campaign>
+      <campaign>1358</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
     </reward>
   </achievement>
   <!-- END Mastery level 7 Achievements on ComDev nodes -->

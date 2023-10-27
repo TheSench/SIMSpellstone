@@ -101,9 +101,9 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
+	"33": {
+		"id": "33",
+		"name": "Skyhaven Assault"
 	},
 	"34": {
 		"id": "34",
@@ -6952,6 +6952,38 @@ var CAMPAIGNS = {
 			"2020"
 		],
 		"name": "Spellstone's 8th Anniversary"
+	},
+	"5004": {
+		"battleground_id": "2121",
+		"id": "5004",
+		"items": {
+			"3059": 0.9
+		},
+		"location_id": "11",
+		"missions": [
+			"2021",
+			"2022",
+			"2023",
+			"2024",
+			"2025",
+			"2026"
+		],
+		"name": "Lightning Boss Scylla"
+	},
+	"5005": {
+		"battleground_id": "557",
+		"id": "5005",
+		"items": {
+			"3059": 0.9
+		},
+		"location_id": "11",
+		"missions": [
+			"2027",
+			"2028",
+			"2029",
+			"2030"
+		],
+		"name": "A Midnight Dreary"
 	}
 };
 var MISSIONS = {
@@ -18087,6 +18119,246 @@ var MISSIONS = {
 		],
 		"id": "2026",
 		"name": "Face the Maelstrom's Fury!"
+	},
+	"2027": {
+		"commander": {
+			"id": "213"
+		},
+		"deck": [
+			{
+				"id": "6102"
+			},
+			{
+				"id": "2024"
+			},
+			{
+				"id": "6029"
+			},
+			{
+				"id": "5016"
+			},
+			{
+				"id": "2135"
+			},
+			{
+				"id": "2115"
+			},
+			{
+				"id": "6020"
+			},
+			{
+				"id": "2054"
+			},
+			{
+				"id": "7098"
+			},
+			{
+				"id": "5084",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2098",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6066",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2090",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2144",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6208",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2027",
+		"name": "Whom the Angels Named Malchior"
+	},
+	"2028": {
+		"commander": {
+			"id": "213"
+		},
+		"deck": [
+			{
+				"id": "5041"
+			},
+			{
+				"id": "6129"
+			},
+			{
+				"id": "7151"
+			},
+			{
+				"id": "2057"
+			},
+			{
+				"id": "2095"
+			},
+			{
+				"id": "2237"
+			},
+			{
+				"id": "2136"
+			},
+			{
+				"id": "2176"
+			},
+			{
+				"id": "2001"
+			},
+			{
+				"id": "2226",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2195",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2159",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7045",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2134",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2028",
+		"name": "This Mystery Explore"
+	},
+	"2029": {
+		"commander": {
+			"id": "491"
+		},
+		"deck": [
+			{
+				"id": "2081"
+			},
+			{
+				"id": "2107"
+			},
+			{
+				"id": "5133"
+			},
+			{
+				"id": "5058"
+			},
+			{
+				"id": "5099"
+			},
+			{
+				"id": "2234"
+			},
+			{
+				"id": "2180"
+			},
+			{
+				"id": "2078"
+			},
+			{
+				"id": "7125"
+			},
+			{
+				"id": "2060",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2063",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1028",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2213",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1634",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6154",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2029",
+		"name": "Bird or Devil?"
+	},
+	"2030": {
+		"commander": {
+			"id": "491"
+		},
+		"deck": [
+			{
+				"id": "7140"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "5146"
+			},
+			{
+				"id": "7181"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "2101"
+			},
+			{
+				"id": "2117"
+			},
+			{
+				"id": "2242"
+			},
+			{
+				"id": "1325"
+			},
+			{
+				"id": "2246",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5113",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2185",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2044",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2248",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2030",
+		"name": "Quoth Eleven, Evermore"
 	},
 	"3654": {
 		"commander": {

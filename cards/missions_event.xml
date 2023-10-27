@@ -68595,7 +68595,7 @@
       <line>
         <commander>Earthquake_Hammer</commander>
         <enemy>1</enemy>
-        <text>Things change, &quot;King&quot; Proteus. What&apos;s forgotten cannot stay forgotten forever. Thousands of Brinesouls came together for this! The Maelstrom is here!</text>
+        <text>Things change, "King" Proteus. What&apos;s forgotten cannot stay forgotten forever. Thousands of Brinesouls came together for this! The Maelstrom is here!</text>
       </line>
       <line>
         <commander>Portraits_Seafolk_King</commander>
@@ -68911,5 +68911,183 @@
       <card id="7615" mastery_level="7" />
       <!-- Kyviat, the Aquamancer -->
     </deck>
+  </mission>
+  <!-- Halloween Special Event 2023 -->
+  <mission>
+    <id>2027</id>
+    <name>Whom the Angels Named Malchior</name>
+    <energy>1</energy>
+    <desc>Once upon a midnight dreary, Malchior pondered, weak and weary, over many a quaint and curious volume of forgotten lore.</desc>
+    <commander id="213" />
+    <!-- Grand Hermit Malchior -->
+    <deck>
+      <card id="6102" />
+      <card id="2024" />
+      <card id="6029" />
+      <card id="5016" />
+      <card id="2135" />
+      <card id="2115" />
+      <card id="6020" />
+      <card id="2054" />
+      <card id="7098" />
+      <card id="5084" mastery_level="2" />
+      <!-- Random Epic Card -->
+      <card id="2098" mastery_level="3" />
+      <!-- Random Epic Card -->
+      <card id="6066" mastery_level="4" />
+      <!-- Random Epic Card -->
+      <card id="2090" mastery_level="5" />
+      <!-- Random Epic Card -->
+      <card id="2144" mastery_level="6" />
+      <!-- Random Epic Card -->
+      <card id="6208" mastery_level="7" />
+      <!-- Random Epic Card -->
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>And to think there&apos;s so much more!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2028</id>
+    <name>This Mystery Explore</name>
+    <energy>1</energy>
+    <desc>While he nodded, nearly napping, suddenly there came a tapping, as of some one gently rapping, rapping at the hermit&apos;s door.</desc>
+    <commander id="213" />
+    <!-- Grand Hermit Malchior -->
+    <deck>
+      <card id="5041" />
+      <card id="6129" />
+      <card id="7151" />
+      <card id="2057" />
+      <card id="2095" />
+      <card id="2237" />
+      <card id="2136" />
+      <card id="2176" />
+      <card id="2001" />
+      <card id="2226" mastery_level="2" />
+      <!-- Random Epic Card -->
+      <card id="2195" mastery_level="3" />
+      <!-- Random Epic Card -->
+      <card id="2159" mastery_level="4" />
+      <!-- Random Epic Card -->
+      <card id="7045" mastery_level="5" />
+      <!-- Random Epic Card -->
+      <card id="2134" mastery_level="6" />
+      <!-- Random Epic Card -->
+      <card id="6112" mastery_level="7" />
+      <!-- Random Epic Card -->
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Tis the wind, and nothing more!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2029</id>
+    <name>Bird or Devil?</name>
+    <energy>1</energy>
+    <desc>Open here he flung the shutter, when, with many a flirt and flutter, in there stepped a stately Raven of the saintly highest heaven.</desc>
+    <commander id="491" />
+    <!-- The Raven -->
+    <deck>
+      <card id="2081" />
+      <card id="2107" />
+      <card id="5133" />
+      <card id="5058" />
+      <card id="5099" />
+      <card id="2234" />
+      <card id="2180" />
+      <card id="2078" />
+      <card id="7125" />
+      <card id="2060" mastery_level="2" />
+      <!-- Random Epic Card -->
+      <card id="2063" mastery_level="3" />
+      <!-- Random Epic Card -->
+      <card id="1028" mastery_level="4" />
+      <!-- Random Epic Card -->
+      <card id="2213" mastery_level="5" />
+      <!-- Random Epic Card -->
+      <card id="1634" mastery_level="6" />
+      <!-- Random Epic Card -->
+      <card id="6154" mastery_level="7" />
+      <!-- Random Epic Card -->
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Darkness there, and nothing mo--</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Who the heck are you?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2030</id>
+    <name>Quoth Eleven, Evermore</name>
+    <energy>1</energy>
+    <desc>Then, he thought, the air grew denser, perfumed from an unseen censer. Swung by Seraphim...... Quoth the Raven thus: &apos;Eleven!&apos;</desc>
+    <commander id="491" />
+    <!-- The Raven -->
+    <deck>
+      <card id="7140" />
+      <card id="1627" />
+      <card id="5146" />
+      <card id="7181" />
+      <card id="1326" />
+      <card id="2101" />
+      <card id="2117" />
+      <card id="2242" />
+      <card id="1325" />
+      <card id="2246" mastery_level="2" />
+      <!-- Random Epic Card -->
+      <card id="5113" mastery_level="3" />
+      <!-- Random Epic Card -->
+      <card id="2185" mastery_level="4" />
+      <!-- Random Epic Card -->
+      <card id="2192" mastery_level="5" />
+      <!-- Random Epic Card -->
+      <card id="2044" mastery_level="6" />
+      <!-- Random Epic Card -->
+      <card id="2248" mastery_level="7" />
+      <!-- Random Epic Card -->
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Wretch!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>By these angels he hath sent thee...</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>SQUAWK!</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>Eleven! Eleven!</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>Error Code 11 - Please restart Spellstone</text>
+      </line>
+    </speech>
   </mission>
 </root>

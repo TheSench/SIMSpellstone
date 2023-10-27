@@ -724,4 +724,122 @@
     </upgrade>
     <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
   </unit>
+  <unit>
+    <id>612</id>
+    <card_type>2</card_type>
+    <name>Summoned Demon</name>
+    <picture>Balrog_A</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>15</sub_type>
+    <sub_type>6</sub_type>
+    <skill id="evade" x="2" />
+    <skill id="legion" x="3" />
+    <rarity>3</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="5" />
+    </upgrade>
+    <desc>Just call him "Fallen Angel"</desc>
+  </unit>
+  <unit>
+    <id>613</id>
+    <card_type>2</card_type>
+    <name>Summoned Demon</name>
+    <picture>Balrog_B</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>15</sub_type>
+    <sub_type>6</sub_type>
+    <skill id="evade" x="3" />
+    <skill id="legion" x="5" />
+    <rarity>4</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <desc>Just call him "Angel of Death"</desc>
+  </unit>
+  <unit>
+    <id>614</id>
+    <card_type>2</card_type>
+    <name>Summoned Demon</name>
+    <picture>Balrog_C</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>15</sub_type>
+    <sub_type>6</sub_type>
+    <skill id="evade" x="3" />
+    <skill id="legion" x="6" />
+    <rarity>5</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <desc>Just call him "Angel of the Mourning"</desc>
+  </unit>
 </root>

@@ -1628,6 +1628,28 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>171</id>
+    <name>Angels and Demons</name>
+    <desc>All Angels gain Vampirism equal to 5% base Health plus 2. When an Angel dies it creates a Summoned Demon token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion based on its rarity. This BGE effect is subject to change.</desc>
+    <icon>filter_angel_64</icon>
+    <effect>
+      <add_skill id="unearth" mult="0.75" rarity="1" y="6" card="612" level="1" />
+      <add_skill id="unearth" mult="0.75" rarity="2" y="6" card="612" level="3" />
+      <add_skill id="unearth" mult="0.75" rarity="3" y="6" card="612" level="5" />
+      <add_skill id="unearth" mult="0.75" rarity="4" y="6" card="613" level="6" />
+      <add_skill id="unearth" mult="0.75" rarity="5" y="6" card="614" level="7" />
+      <add_skill id="vampirism" mult="0.05" base="health" x="2" y="6" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="unearth">
+        <target_effect>
+          <prefab>unearth_actor</prefab>
+          <bundle_id>87</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2499,8 +2521,7 @@
     <id>557</id>
     <name>Epic Madness</name>
     <desc>All Epic cards have their Attack, Health, and all Skills multiplied by 2! Freeze and Dualstrike are not affected.</desc>
-    <icon>Common_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
+    <icon>Epic_Card_Icon</icon>
     <effect>
       <skill id="enlarge" mult="1" all="1" z="3" />
       <!-- mult is based on attack -->
@@ -2523,6 +2544,14 @@
       <skill id="enhance" s="enrage" z="3" mult="1" all="1" />
       <skill id="enhance" s="regenerate" z="3" mult="1" all="1" />
       <skill id="enhance" s="valor" z="3" mult="1" all="1" />
+      <skill id="enhance" s="daze" z="3" mult="1" all="1" />
+      <skill id="enhance" s="backlash" z="3" mult="1" all="1" />
+      <skill id="enhance" s="frost" z="3" mult="1" all="1" />
+      <skill id="enhance" s="stasis" z="3" mult="1" all="1" />
+      <skill id="enhance" s="corrosive" z="3" mult="1" all="1" />
+      <skill id="enhance" s="legion" z="3" mult="1" all="1" />
+      <skill id="enhance" s="fervor" z="3" mult="1" all="1" />
+      <skill id="enhance" s="enfeeble" z="3" mult="1" all="1" />
     </effect>
   </battleground>
   <battleground>
@@ -4612,6 +4641,19 @@
       <on_play first_play="1" defender="1">
         <add_skill id="haste" x="1" />
       </on_play>
+    </effect>
+  </battleground>
+  <!-- Epic Only Nodes -->
+  <battleground>
+    <id>2122</id>
+    <name>Epics Only</name>
+    <desc>All non-Epic cards have their attributes greatly reduced.</desc>
+    <icon>Epic_Card_Icon</icon>
+    <effect>
+      <scale_attributes base_mult="-0.99" rarity="1" />
+      <scale_attributes base_mult="-0.99" rarity="2" />
+      <scale_attributes base_mult="-0.99" rarity="4" />
+      <scale_attributes base_mult="-0.99" rarity="5" />
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

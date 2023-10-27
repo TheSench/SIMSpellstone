@@ -675,7 +675,7 @@
     <order>1</order>
     <icon>fury</icon>
     <name>Maelstrom's Fury</name>
-    <desc>This creature has Vengeance and half as much Shroud. After taking damage, permanently increase Attack by 1/4 of the damage taken.</desc>
+    <desc>This creature has Vengeance and half as much Shroud and Enraged.</desc>
     <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>

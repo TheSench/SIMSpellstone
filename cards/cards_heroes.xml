@@ -13192,4 +13192,54 @@
       <skill id="imbue" s="fury" x="14" />
     </upgrade>
   </unit>
+  <unit>
+    <id>491</id>
+    <card_type>1</card_type>
+    <name>The Raven</name>
+    <desc>"Nevermore."</desc>
+    <portrait>raven</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <rarity>5</rarity>
+    <skill id="counter" x="11" />
+    <skill id="imbue" s="counter" all="1" x="1" c="11" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="2" c="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="3" c="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="5" c="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="7" c="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="9" c="11" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>45</health>
+      <skill id="counter" x="11" />
+      <skill id="imbue" s="counter" all="1" x="11" c="11" />
+    </upgrade>
+  </unit>
 </root>

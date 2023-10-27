@@ -2581,6 +2581,66 @@ var BATTLEGROUNDS = {
 		"id": "170",
 		"name": "Eye of the Maelstrom"
 	},
+	"171": {
+		"desc": "All Angels gain Vampirism equal to 5% base Health plus 2. When an Angel dies it creates a Summoned Demon token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion based on its rarity. This BGE effect is subject to change.",
+		"effect": [
+			{
+				"card": 612,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 1,
+				"mult": 0.75,
+				"rarity": 1,
+				"y": "6"
+			},
+			{
+				"card": 612,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 3,
+				"mult": 0.75,
+				"rarity": 2,
+				"y": "6"
+			},
+			{
+				"card": 612,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 5,
+				"mult": 0.75,
+				"rarity": 3,
+				"y": "6"
+			},
+			{
+				"card": 613,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 6,
+				"mult": 0.75,
+				"rarity": 4,
+				"y": "6"
+			},
+			{
+				"card": 614,
+				"effect_type": "add_skill",
+				"id": "unearth",
+				"level": 7,
+				"mult": 0.75,
+				"rarity": 5,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.05,
+				"x": 2,
+				"y": "6"
+			}
+		],
+		"id": "171",
+		"name": "Angels and Demons"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4251,6 +4311,70 @@ var BATTLEGROUNDS = {
 				"id": "enhance",
 				"mult": 1,
 				"s": "valor",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "daze",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "backlash",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "frost",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "stasis",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "corrosive",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "legion",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "fervor",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 1,
+				"s": "enfeeble",
 				"z": "3"
 			},
 			{
@@ -6408,6 +6532,34 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2121",
 		"name": "Lightning Fast"
+	},
+	"2122": {
+		"desc": "All non-Epic cards have their attributes greatly reduced.",
+		"effect": [
+			{
+				"base_mult": -0.99,
+				"effect_type": "scale_attributes",
+				"rarity": 1
+			},
+			{
+				"base_mult": -0.99,
+				"effect_type": "scale_attributes",
+				"rarity": 2
+			},
+			{
+				"base_mult": -0.99,
+				"effect_type": "scale_attributes",
+				"rarity": 4
+			},
+			{
+				"base_mult": -0.99,
+				"effect_type": "scale_attributes",
+				"rarity": 5
+			}
+		],
+		"hidden": true,
+		"id": "2122",
+		"name": "Epics Only"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
