@@ -20515,8 +20515,8 @@
       <level>7</level>
     </req>
     <reward>
-      <pack>4</pack>
-      <!-- Random Reward Epic -->
+      <item id="532" number="1" />
+      <!-- Special Event Mystery Package -->
     </reward>
   </achievement>
   <achievement>
