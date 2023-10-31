@@ -1041,6 +1041,8 @@ var SIMULATOR = {};
 
 		heartseeker: function (src_card, skill) {
 
+			if (!src_card.hasAttack()) return 0;
+
 			var heartseeker = skill.x;
 
 			var target = getEnemyUnits(src_card, field)[src_card.key];
