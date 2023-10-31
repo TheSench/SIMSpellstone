@@ -360,7 +360,7 @@ var SIMULATOR = {};
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = getEnhancement(src_card, 'burn', scorch);
+			var enhanced = getEnhancement(src_card, skill.id, scorch);
 			scorch += enhanced;
 
 			for (var i = 0; i < targets.length; i++) {
