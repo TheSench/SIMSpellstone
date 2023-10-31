@@ -291,7 +291,7 @@ var SIMULATOR = {};
 		dying.ondeath_triggered = true;
 	}
 
-	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis'];
+	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis', 'regenerate'];
 	function requiresActiveTurn(skillName) {
 		return passiveSkills.indexOf(skillName) === -1;
 	}
