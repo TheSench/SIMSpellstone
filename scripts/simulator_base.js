@@ -1280,8 +1280,10 @@ var SIMULATOR = {};
 		vampirism: function vampirism(sourceCard, enemyAssaults) {
 			var target = enemyAssaults[sourceCard.key];
 			
-			if (target && target.isAlive() && !sourceCard.silenced) {
+			if (target && target.isAlive() && !sourceCard.silenced && sourceCard.isAlive()) {
 				var vampirism = sourceCard.vampirism;
+				var enhanced = getEnhancement(sourceCard, 'vampirism', vampirism);
+				vampirism += enhanced;
 				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true, venom: true });
 				var damageDealt = damageInfo.damage;
 
