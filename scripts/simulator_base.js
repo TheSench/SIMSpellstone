@@ -1692,7 +1692,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
 					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
-					&& (all || target.hasSkill(s))) {
+					&& target.hasSkill(s)) {
 					targets.push(key);
 				}
 			}
@@ -1722,10 +1722,6 @@ var SIMULATOR = {};
 				}
 
 				affected++;
-
-				if (!target.hasSkill(s)) {
-					continue;
-				}
 
 				var enhancements = target.enhanced;
 				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
