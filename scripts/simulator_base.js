@@ -1945,7 +1945,7 @@ var SIMULATOR = {};
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isActive() && !target.isTower()) {
 					var adjustedAttack = target.adjustedAttack();
-					if (!weakest || adjustedAttack < weakest) {
+					if (weakest == null || adjustedAttack < weakest) {
 						targets = [target];
 						weakest = adjustedAttack;
 					} else if (adjustedAttack === weakest) {
