@@ -2509,6 +2509,12 @@ var SIMULATOR = {};
 			if (battleground.ally_only && p !== 'player') continue;
 			battleground.owner = p;
 			doEarlyActivationSkills(battleground);
+		}
+		for (var i = 0; i < battlegrounds.onTurn.length; i++) {
+			var battleground = battlegrounds.onTurn[i];
+			if (battleground.enemy_only && p !== 'cpu') continue;
+			if (battleground.ally_only && p !== 'player') continue;
+			battleground.owner = p;
 			activation_skills(battleground);
 		}
 
