@@ -297,7 +297,7 @@ var SIMULATOR = {};
 	}
 
 	function backlash(attacker, defender) {
-		if (attacker.isAssault() && defender.isAlive()) {
+		if (attacker.isAssault() && attacker.isAlive() && defender.isAlive() && !defender.silenced) {
 			var baseDamage = defender.backlash;
 			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement, true);
