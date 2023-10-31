@@ -3157,7 +3157,7 @@ var SIMULATOR = {};
 				var counterBase = 0 + target.counter;
 				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
-				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement, false);
+				doCounterDamage(current_assault, target, 'Vengeance', counterBase, counterEnhancement, false);
 			}
 
 			// Counterburn
