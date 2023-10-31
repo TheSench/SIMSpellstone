@@ -1691,7 +1691,7 @@ var SIMULATOR = {};
 			for (var key = 0, len = alliedUnits.length; key < len; key++) {
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
-					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
+					&& (!require_active_turn || (target.isActive() && target.isUnjammed()))
 					&& target.hasSkill(s)) {
 					targets.push(key);
 				}
