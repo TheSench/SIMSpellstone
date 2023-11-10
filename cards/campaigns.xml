@@ -9635,8 +9635,8 @@
   <campaign>
     <id>1278</id>
     <name>World Conflux</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1614877200</locked_start_time>
     <!-- Thursday, March 4, 2021 17:00:00 -->
     <location_id>34</location_id>
@@ -9674,8 +9674,8 @@
   <campaign>
     <id>1279</id>
     <name>Dyrnwyn's Judgement</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1278" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1278" level="1"/> -->
     <locked_start_time>1616086800</locked_start_time>
     <!-- Thursday, March 18, 2021 17:00:00	 -->
     <battleground_id>2115</battleground_id>
@@ -9718,8 +9718,8 @@
     <name>Faction Weakness Awakening</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1278" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1278" level="1"/> -->
     <locked_start_time>1616086800</locked_start_time>
     <!--  Thursday, 18 March 2021 0:00:00 -->
     <battleground_id>2116</battleground_id>
@@ -9849,8 +9849,8 @@
   <campaign>
     <id>1284</id>
     <name>Titan Conflux</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1279" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1279" level="1"/> -->
     <locked_start_time>1617296400</locked_start_time>
     <!-- Thursday, April 1, 2021 17:00:00	 -->
     <battleground_id>2117</battleground_id>
@@ -9890,8 +9890,8 @@
   <campaign>
     <id>1285</id>
     <name>Spellstone's End</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1284" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1284" level="1"/> -->
     <locked_start_time>1618506000</locked_start_time>
     <!-- Thursday, April 15, 2021 17:00:00	 -->
     <battleground_id>2118</battleground_id>
@@ -12836,8 +12836,8 @@
     <id>1355</id>
     <name>The Goblins' Conflux</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="36" level="1" />
-    <!-- ComDev nodes require completion of first 6 maps up to Seastone Citadel -->
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1694710800</locked_start_time>
     <!-- Thursday, 14 September 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -12882,8 +12882,8 @@
     <id>1356</id>
     <name>Furious Clouds</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="1355" level="1" />
-    <!-- Require previous node in event -->
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1355" level="1"/> -->
     <locked_start_time>1695920400</locked_start_time>
     <!--  Thursday, 28 September 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -12962,7 +12962,7 @@
       <item level="7" id="2803" number="150" />
       <!-- Pharos Temple Super Flask -->
     </rewards>
-    <find_item id="3059" drop_per_energy="1.7" />
+    <find_item id="3059" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1699549200</ignore_energy_reduction_until>
     <!-- Thursday, 09 November 2023 at 17:00:00 -->
@@ -13004,10 +13004,93 @@
       <item level="7" id="2803" number="150" />
       <!-- Pharos Temple Super Flask -->
     </rewards>
-    <find_item id="3059" drop_per_energy="1.8" />
+    <find_item id="3059" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1699549200</ignore_energy_reduction_until>
     <!-- Thursday, 09 November 2023 at 17:00:00 -->
+  </campaign>
+  <!-- Event 109: ComDev Angel - Skyhaven Assault -->
+  <campaign>
+    <id>1359</id>
+    <name>Nether Legions</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1699549200</locked_start_time>
+    <!-- Thursday, 09 November 2023 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>33</location_id>
+    <x>480</x>
+    <y>130</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7170</mission_id>
+      <mission_id>7171</mission_id>
+      <mission_id>7172</mission_id>
+      <mission_id>7173</mission_id>
+      <mission_id>7174</mission_id>
+      <mission_id>7175</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2816" number="50" />
+      <!-- Skyhaven Assault Super Flask -->
+      <item level="2" id="18" number="500" />
+      <!-- Legendary Pack Fragments -->
+      <card level="3" id="2054" />
+      <!-- Pack Runner -->
+      <card level="4" id="2245" />
+      <!-- Winged Mercenaries -->
+      <card level="5" id="2257" />
+      <!-- Pyra -->
+      <card level="6" id="2257" />
+      <!-- Pyra -->
+      <item level="7" id="2816" number="150" />
+      <!-- Skyhaven Assault Super Flask -->
+    </rewards>
+    <find_item id="3125" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1701968400</ignore_energy_reduction_until>
+    <!-- Thursday, 07 December 2023 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1360</id>
+    <name>Upon Righteous Wings</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1359" level="1" />
+    <locked_start_time>1700758800</locked_start_time>
+    <!-- Thursday, 23 November 2023 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>33</location_id>
+    <x>670</x>
+    <y>390</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7176</mission_id>
+      <mission_id>7177</mission_id>
+      <mission_id>7178</mission_id>
+      <mission_id>7179</mission_id>
+      <mission_id>7180</mission_id>
+      <mission_id>7181</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2816" number="50" />
+      <!-- Skyhaven Assault Super Flask -->
+      <item level="2" id="18" number="500" />
+      <!-- Legendary Pack Fragments -->
+      <card level="3" id="2054" />
+      <!-- Pack Runner -->
+      <card level="4" id="2245" />
+      <!-- Winged Mercenaries -->
+      <card level="5" id="2257" />
+      <!-- Pyra -->
+      <card level="6" id="2257" />
+      <!-- Pyra -->
+      <item level="7" id="2816" number="150" />
+      <!-- Skyhaven Assault Super Flask -->
+    </rewards>
+    <find_item id="3125" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1701968400</ignore_energy_reduction_until>
+    <!-- Thursday, 07 December 2023 at 17:00:00 -->
   </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->
@@ -14371,7 +14454,7 @@
       <mission_id>2026</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="518" number="" />
+      <item level="1" id="518" number="1" />
       <!-- Thank You Crate -->
       <card level="2" id="22031" />
       <!-- Anima Dryad -->
@@ -14427,6 +14510,46 @@
       <!-- Special Event Mystery Package -->
     </rewards>
     <find_item id="3059" drop_per_energy="0.9" />
+    <!-- Matches final node with energy reduction -->
+  </campaign>
+  <!-- Event 109: ComDev Angel - New Lightning Node -->
+  <campaign>
+    <id>5006</id>
+    <name>Lightning Boss Angel</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <exclude_map_bges>1</exclude_map_bges>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2121</battleground_id>
+    <location_id>33</location_id>
+    <x>145</x>
+    <y>345</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>2031</mission_id>
+      <mission_id>2032</mission_id>
+      <mission_id>2033</mission_id>
+      <mission_id>2034</mission_id>
+      <mission_id>2035</mission_id>
+      <mission_id>2036</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="518" number="2" />
+      <!-- Thank You Crate -->
+      <card level="2" id="22029" />
+      <!-- Devilish Critters -->
+      <card level="3" id="22146" />
+      <!-- Holy Truestrike -->
+      <item level="4" id="512" number="1" />
+      <!-- Runecrafter's Chest -->
+      <item level="5" id="104077" number="200" />
+      <!-- Archangel Melkira -->
+      <item level="6" id="4013" number="11" />
+      <!-- Legendary Rune Sliver -->
+      <item level="7" id="2816" number="200" />
+      <!-- Skyhaven Assault Super Flask -->
+    </rewards>
+    <find_item id="3125" drop_per_energy="0.9" />
     <!-- Matches final node with energy reduction -->
   </campaign>
 </root>

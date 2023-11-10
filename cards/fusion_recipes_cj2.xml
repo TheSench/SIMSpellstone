@@ -2883,6 +2883,14 @@
     <card_id>22256</card_id>
     <resource card_id="12256" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12257</card_id>
+    <resource card_id="2257" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22257</card_id>
+    <resource card_id="12257" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->

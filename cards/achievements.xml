@@ -20587,6 +20587,148 @@
       <!-- Random Reward Epic -->
     </reward>
   </achievement>
+  <!-- Event 109: ComDev Angel - Skyhaven Assault -->
+  <!-- E109 Node 1: Nether Legions -->
+  <achievement>
+    <id>3941</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nether Legions</name>
+    <desc>Complete the Nether Legions campaign on Mastery Level 1.</desc>
+    <mission_req>7170</mission_req>
+    <locked_start_time>1699549200</locked_start_time>
+    <req>
+      <campaign>1359</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3125" number="100" />
+      <event_points id="7105" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3942</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nether Legions</name>
+    <desc>Complete the Nether Legions campaign on Mastery Level 2.</desc>
+    <achievement_req>3941</achievement_req>
+    <locked_start_time>1699549200</locked_start_time>
+    <req>
+      <campaign>1359</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3943</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nether Legions</name>
+    <desc>Complete the Nether Legions campaign on Mastery Level 4.</desc>
+    <achievement_req>3942</achievement_req>
+    <locked_start_time>1699549200</locked_start_time>
+    <req>
+      <campaign>1359</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3945</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nether Legions</name>
+    <desc>Complete the Nether Legions campaign on Mastery Level 6.</desc>
+    <achievement_req>3944</achievement_req>
+    <locked_start_time>1699549200</locked_start_time>
+    <req>
+      <campaign>1359</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 109: ComDev Angel - Skyhaven Assault -->
+  <!-- E109 Node 2: Upon Righteous Wings -->
+  <achievement>
+    <id>3946</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Upon Righteous Wings</name>
+    <desc>Complete the Upon Righteous Wings campaign on Mastery Level 1.</desc>
+    <mission_req>7176</mission_req>
+    <locked_start_time>1700758800</locked_start_time>
+    <req>
+      <campaign>1360</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3125" number="100" />
+      <event_points id="7105" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3947</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Upon Righteous Wings</name>
+    <desc>Complete the Upon Righteous Wings campaign on Mastery Level 2.</desc>
+    <achievement_req>3946</achievement_req>
+    <locked_start_time>1700758800</locked_start_time>
+    <req>
+      <campaign>1360</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3948</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Upon Righteous Wings</name>
+    <desc>Complete the Upon Righteous Wings campaign on Mastery Level 4.</desc>
+    <achievement_req>3947</achievement_req>
+    <locked_start_time>1700758800</locked_start_time>
+    <req>
+      <campaign>1360</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>250</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3950</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Upon Righteous Wings</name>
+    <desc>Complete the Upon Righteous Wings campaign on Mastery Level 6.</desc>
+    <achievement_req>3949</achievement_req>
+    <locked_start_time>1700758800</locked_start_time>
+    <req>
+      <campaign>1360</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -22084,12 +22226,31 @@
     <type>2</type>
     <order>661</order>
     <name>Commander of Pharos Temple</name>
-    <desc>Complete Mastery Level 7 on all campaigns in Pharos Temple.</desc>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Pharos Temple.</desc>
     <mission_req>7169</mission_req>
     <locked_start_time>1698339600</locked_start_time>
     <req>
       <campaign>1357</campaign>
       <campaign>1358</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </reward>
+  </achievement>
+  <!-- Event 109: ComDev Angel - Skyhaven Assault -->
+  <achievement>
+    <id>4063</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Skyhaven Assault</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Skyhaven Assault.</desc>
+    <mission_req>7181</mission_req>
+    <locked_start_time>1700758800</locked_start_time>
+    <req>
+      <campaign>1359</campaign>
+      <campaign>1360</campaign>
       <level>7</level>
     </req>
     <reward>

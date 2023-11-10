@@ -1028,7 +1028,7 @@
     <name>Random Legendary Rune</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Creates one random Legendary Rune.</desc>
+    <desc>Creates one random Legendary Rune from the Main set.</desc>
     <priority>1</priority>
     <hc_cost>1000</hc_cost>
     <asset_prefab>rune_empty_legendary</asset_prefab>
@@ -1470,6 +1470,20 @@
       <item id="107630" quantity="500" weight="1" />
       <item id="107631" quantity="500" weight="1" />
     </item_pack>
+  </store_item>
+  <!-- DO NOT USE 101 AS THAT IS RESERVED FOR BUNDLE PACKAGES -->
+  <store_item>
+    <id>100</id>
+    <name>Random Legacy Legendary Rune</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Creates one random Legendary Rune from the Legacy set.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <asset_prefab>rune_empty_legendary</asset_prefab>
+    <icon>rune_empty_legendary</icon>
+    <bundle>34</bundle>
+    <random_rune number="1" min_rarity="4" max_rarity="4" set="3" />
   </store_item>
   <!-- =============================== -->
   <!-- ======= SPECIAL MARKET ======== -->
@@ -3378,11 +3392,11 @@
       <!-- Gold Bar -->
       <item id="1012" quantity="5" weight="0.25" />
       <!-- Gold Bar -->
-      <item id="17" quantity="1000" weight="0.01" />
+      <item id="17" quantity="1000" weight="0.1" />
       <!-- Epic Pack Fragment -->
-      <item id="5" quantity="60" weight="0.03" />
+      <item id="5" quantity="60" weight="0.1" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="10" weight="0.05" />
+      <item id="2524" quantity="10" weight="0.1" />
       <!-- Mythic Item -->
     </item_pack>
   </store_item>
@@ -3406,11 +3420,11 @@
       <!-- Epic Pack Fragment -->
       <item id="2501" quantity="15" weight="0.5" />
       <!-- Blue Fire Soul -->
-      <item id="5" quantity="90" weight="0.05" />
+      <item id="5" quantity="90" weight="0.1" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="20" weight="0.05" />
+      <item id="2524" quantity="20" weight="0.1" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.01" />
+      <item id="17" quantity="1000" weight="0.1" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3430,15 +3444,15 @@
       <!-- Arcane Dust -->
       <item id="4012" quantity="1" weight="0.1" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight="0.05" />
+      <item id="4013" quantity="1" weight="0.1" />
       <!-- Legendary Rune Sliver -->
       <item id="17" quantity="30" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="5" quantity="150" weight="0.05" />
+      <item id="5" quantity="150" weight="0.1" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="30" weight="0.05" />
+      <item id="2524" quantity="30" weight="0.1" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.02" />
+      <item id="17" quantity="1000" weight="0.1" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3454,19 +3468,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="2" weight="1" />
       <!-- Inscription Powder -->
-      <item id="5" quantity="200" weight="0.1" />
+      <item id="5" quantity="200" weight="0.12" />
       <!-- Arena Coins -->
-      <item id="4012" quantity="1" weight="0.1" />
+      <item id="4012" quantity="1" weight="0.12" />
       <!-- Epic Runeshell -->
       <item id="17" quantity="100" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="20" weight="0.2" />
+      <item id="18" quantity="20" weight="0.12" />
       <!-- Legendary Pack Fragment -->
-      <item id="4013" quantity="1" weight="0.07" />
+      <item id="4013" quantity="1" weight="0.12" />
       <!-- Legendary Rune Sliver -->
-      <item id="2524" quantity="80" weight="0.05" />
+      <item id="2524" quantity="80" weight="0.12" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.05" />
+      <item id="17" quantity="1000" weight="0.12" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3482,19 +3496,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="30" weight="1" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="2" weight="0.1" />
+      <item id="4012" quantity="2" weight="0.2" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="2" weight="0.1" />
+      <item id="4013" quantity="2" weight="0.2" />
       <!-- Legendary Rune Sliver -->
       <item id="17" quantity="1000" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="200" weight="0.7" />
+      <item id="18" quantity="200" weight="0.2" />
       <!-- Legendary Pack Fragment -->
       <item id="5" quantity="500" weight="0.2" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="300" weight="0.05" />
+      <item id="2524" quantity="300" weight="0.2" />
       <!-- Mythic Item -->
-      <item id="18" quantity="1000" weight="0.05" />
+      <item id="18" quantity="1000" weight="0.2" />
       <!-- Legendary Pack Fragment -->
     </item_pack>
   </store_item>
@@ -3510,19 +3524,19 @@
       <pulls>1</pulls>
       <item id="4001" quantity="3" weight="1" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="1" weight="0.1" />
+      <item id="4012" quantity="1" weight="0.15" />
       <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight="0.07" />
+      <item id="4013" quantity="1" weight="0.15" />
       <!-- Legendary Rune Sliver -->
       <item id="17" quantity="200" weight="0.5" />
       <!-- Epic Pack Fragment -->
-      <item id="18" quantity="50" weight="0.2" />
+      <item id="18" quantity="50" weight="0.15" />
       <!-- Legendary Pack Fragment -->
-      <item id="5" quantity="300" weight="0.1" />
+      <item id="5" quantity="300" weight="0.15" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="120" weight="0.05" />
+      <item id="2524" quantity="120" weight="0.15" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.05" />
+      <item id="17" quantity="1000" weight="0.15" />
       <!-- Epic Pack Fragment -->
     </item_pack>
   </store_item>
@@ -10127,6 +10141,96 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="6225" display_card_id="6225" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5341</id>
+    <name>Double Legendary Angel Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary Angel card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5342</id>
+    <name>Zuphlas Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFZuphlas^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7218" display_card_id="7218" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5343</id>
+    <name>Erinye Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFErinye of Justice^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6263" display_card_id="6263" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5344</id>
+    <name>Seraph Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFSeraph of Singularities^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5249" display_card_id="5249" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5345</id>
+    <name>Winged Giant Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFWinged Giant^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7039" display_card_id="7039" />
     </cards>
   </store_item>
 </root>

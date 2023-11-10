@@ -842,4 +842,105 @@
     </upgrade>
     <desc>Just call him "Angel of the Mourning"</desc>
   </unit>
+  <unit>
+    <id>615</id>
+    <card_type>2</card_type>
+    <name>Warding Tower</name>
+    <picture>Fortified_Tower_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <skill id="absorb" x="1" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+      <skill id="absorb" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+      <skill id="absorb" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+      <skill id="absorb" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+      <skill id="absorb" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+      <skill id="absorb" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+      <skill id="absorb" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+      <skill id="absorb" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+      <skill id="absorb" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+      <skill id="absorb" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>11</level>
+      <health>11</health>
+      <skill id="absorb" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>12</level>
+      <health>12</health>
+      <skill id="absorb" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>13</level>
+      <health>13</health>
+      <skill id="absorb" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>14</level>
+      <health>14</health>
+      <skill id="absorb" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>15</level>
+      <health>15</health>
+      <skill id="absorb" x="15" />
+    </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+      <skill id="absorb" x="16" />
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+      <skill id="absorb" x="17" />
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+      <skill id="absorb" x="18" />
+    </upgrade>
+    <desc>&quot;The second most effective tower against Vampires after the Holy Water Tower of Arcantica.&quot; - Jarad, Castle Guard</desc>
+  </unit>
 </root>

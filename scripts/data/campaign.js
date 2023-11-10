@@ -105,10 +105,6 @@ var LOCATIONS = {
 		"id": "33",
 		"name": "Skyhaven Assault"
 	},
-	"34": {
-		"id": "34",
-		"name": "Conflux Convergence"
-	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -6349,7 +6345,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1357",
 		"items": {
-			"3059": 1.7
+			"3059": 0.85
 		},
 		"location_id": "11",
 		"missions": [
@@ -6366,7 +6362,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1358",
 		"items": {
-			"3059": 1.8
+			"3059": 0.9
 		},
 		"location_id": "11",
 		"missions": [
@@ -6378,6 +6374,40 @@ var CAMPAIGNS = {
 			"7169"
 		],
 		"name": "Starving Off the Maelstrom"
+	},
+	"1359": {
+		"battleground_id": "2120",
+		"id": "1359",
+		"items": {
+			"3125": 1.7
+		},
+		"location_id": "33",
+		"missions": [
+			"7170",
+			"7171",
+			"7172",
+			"7173",
+			"7174",
+			"7175"
+		],
+		"name": "Nether Legions"
+	},
+	"1360": {
+		"battleground_id": "2120",
+		"id": "1360",
+		"items": {
+			"3125": 1.8
+		},
+		"location_id": "33",
+		"missions": [
+			"7176",
+			"7177",
+			"7178",
+			"7179",
+			"7180",
+			"7181"
+		],
+		"name": "Upon Righteous Wings"
 	},
 	"3000": {
 		"id": "3000",
@@ -6984,6 +7014,23 @@ var CAMPAIGNS = {
 			"2030"
 		],
 		"name": "A Midnight Dreary"
+	},
+	"5006": {
+		"battleground_id": "2121",
+		"id": "5006",
+		"items": {
+			"3125": 0.9
+		},
+		"location_id": "33",
+		"missions": [
+			"2031",
+			"2032",
+			"2033",
+			"2034",
+			"2035",
+			"2036"
+		],
+		"name": "Lightning Boss Angel"
 	}
 };
 var MISSIONS = {
@@ -18359,6 +18406,366 @@ var MISSIONS = {
 		],
 		"id": "2030",
 		"name": "Quoth Eleven, Evermore"
+	},
+	"2031": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "2245"
+			},
+			{
+				"id": "2245"
+			},
+			{
+				"id": "2245"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5145"
+			},
+			{
+				"id": "5145",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2146",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2146",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2146",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6116",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2031",
+		"name": "Demon of Pride"
+	},
+	"2032": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "5274"
+			},
+			{
+				"id": "5274"
+			},
+			{
+				"id": "5274"
+			},
+			{
+				"id": "5298"
+			},
+			{
+				"id": "5298"
+			},
+			{
+				"id": "5298"
+			},
+			{
+				"id": "7222"
+			},
+			{
+				"id": "7222"
+			},
+			{
+				"id": "7222",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7224",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7224",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7224",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6039",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2032",
+		"name": "Demon of Greed"
+	},
+	"2033": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "3"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2033",
+		"name": "Demon of Anger"
+	},
+	"2034": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "7608"
+			},
+			{
+				"id": "7618"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "7069"
+			},
+			{
+				"id": "7069"
+			},
+			{
+				"id": "7074"
+			},
+			{
+				"id": "7074"
+			},
+			{
+				"id": "7120",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7120",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7264",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7264",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4051",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4067",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2034",
+		"name": "Demon of Envy"
+	},
+	"2035": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "4002"
+			},
+			{
+				"id": "4009"
+			},
+			{
+				"id": "4029"
+			},
+			{
+				"id": "5603"
+			},
+			{
+				"id": "5606"
+			},
+			{
+				"id": "5624"
+			},
+			{
+				"id": "5625"
+			},
+			{
+				"id": "5630"
+			},
+			{
+				"id": "5617",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5631",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5639",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2083",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4041",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4067",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2035",
+		"name": "Demon of Gluttony"
+	},
+	"2036": {
+		"commander": {
+			"id": "492"
+		},
+		"deck": [
+			{
+				"id": "6001"
+			},
+			{
+				"id": "4015"
+			},
+			{
+				"id": "6616"
+			},
+			{
+				"id": "6620"
+			},
+			{
+				"id": "6628"
+			},
+			{
+				"id": "6631"
+			},
+			{
+				"id": "7617"
+			},
+			{
+				"id": "6121"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6263",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6120",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6216",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "5"
+			},
+			{
+				"id": "4058",
+				"mastery_level": "6"
+			},
+			{
+				"id": "4067",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2036",
+		"name": "Demon of Sloth"
 	},
 	"3654": {
 		"commander": {
@@ -148732,5 +149139,725 @@ var MISSIONS = {
 		],
 		"id": "7169",
 		"name": "The Maelstrom Begins"
+	},
+	"7170": {
+		"commander": {
+			"id": "306"
+		},
+		"deck": [
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1030"
+			},
+			{
+				"id": "1031"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "2027"
+			},
+			{
+				"id": "2029"
+			},
+			{
+				"id": "2030"
+			},
+			{
+				"id": "2052"
+			},
+			{
+				"id": "2054"
+			},
+			{
+				"id": "2084",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2085",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2121",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2141",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2146",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7170",
+		"name": "A Quick Regroup"
+	},
+	"7171": {
+		"commander": {
+			"id": "317"
+		},
+		"deck": [
+			{
+				"id": "2147"
+			},
+			{
+				"id": "2173"
+			},
+			{
+				"id": "2177"
+			},
+			{
+				"id": "2178"
+			},
+			{
+				"id": "2203"
+			},
+			{
+				"id": "2204"
+			},
+			{
+				"id": "2219"
+			},
+			{
+				"id": "2230"
+			},
+			{
+				"id": "2245"
+			},
+			{
+				"id": "5040",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5117",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5118",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6038",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7171",
+		"name": "A Chill in the Air"
+	},
+	"7172": {
+		"commander": {
+			"id": "258"
+		},
+		"deck": [
+			{
+				"id": "6070"
+			},
+			{
+				"id": "6116"
+			},
+			{
+				"id": "6119"
+			},
+			{
+				"id": "7038"
+			},
+			{
+				"id": "7041"
+			},
+			{
+				"id": "7070"
+			},
+			{
+				"id": "7073"
+			},
+			{
+				"id": "7116"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "1041",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1042",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1341",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2028",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2055",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2083",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7172",
+		"name": "Put on... Ice?"
+	},
+	"7173": {
+		"commander": {
+			"id": "228"
+		},
+		"deck": [
+			{
+				"id": "2086"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "7109"
+			},
+			{
+				"id": "5003"
+			},
+			{
+				"id": "6040"
+			},
+			{
+				"id": "7040"
+			},
+			{
+				"id": "5031"
+			},
+			{
+				"id": "6041"
+			},
+			{
+				"id": "7069",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5039",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6071",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7071",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5043",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6073",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7173",
+		"name": "Giving a Hoot"
+	},
+	"7174": {
+		"commander": {
+			"id": "265"
+		},
+		"deck": [
+			{
+				"id": "7072"
+			},
+			{
+				"id": "5071"
+			},
+			{
+				"id": "6117"
+			},
+			{
+				"id": "7117"
+			},
+			{
+				"id": "5074"
+			},
+			{
+				"id": "6118"
+			},
+			{
+				"id": "7119"
+			},
+			{
+				"id": "5088"
+			},
+			{
+				"id": "6177"
+			},
+			{
+				"id": "7179",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5116",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6180",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7180",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5119",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6213",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7174",
+		"name": "That's No Angel"
+	},
+	"7175": {
+		"commander": {
+			"id": "303"
+		},
+		"deck": [
+			{
+				"id": "7218"
+			},
+			{
+				"id": "5183"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "5184"
+			},
+			{
+				"id": "6294"
+			},
+			{
+				"id": "7222"
+			},
+			{
+				"id": "5206"
+			},
+			{
+				"id": "7254"
+			},
+			{
+				"id": "5217"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7308",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5223",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5295",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5298",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5300",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7175",
+		"name": "City of the Damned"
+	},
+	"7176": {
+		"commander": {
+			"id": "208"
+		},
+		"deck": [
+			{
+				"id": "5303"
+			},
+			{
+				"id": "5303"
+			},
+			{
+				"id": "5303"
+			},
+			{
+				"id": "5111"
+			},
+			{
+				"id": "5111"
+			},
+			{
+				"id": "5111"
+			},
+			{
+				"id": "5186"
+			},
+			{
+				"id": "5186"
+			},
+			{
+				"id": "5186"
+			},
+			{
+				"id": "7039",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7039",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7039",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5262",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5262",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5262",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7176",
+		"name": "Alyel's Pride"
+	},
+	"7177": {
+		"commander": {
+			"id": "331"
+		},
+		"deck": [
+			{
+				"id": "5087"
+			},
+			{
+				"id": "5087"
+			},
+			{
+				"id": "5087"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5249"
+			},
+			{
+				"id": "5249"
+			},
+			{
+				"id": "5249"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6272",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7177",
+		"name": "No Mind to Think?"
+	},
+	"7178": {
+		"commander": {
+			"id": "407"
+		},
+		"deck": [
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6184"
+			},
+			{
+				"id": "6270"
+			},
+			{
+				"id": "6270"
+			},
+			{
+				"id": "6270"
+			},
+			{
+				"id": "6220"
+			},
+			{
+				"id": "6220"
+			},
+			{
+				"id": "6220"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7199",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7263",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7178",
+		"name": "Ascending the Chain of Command"
+	},
+	"7179": {
+		"commander": {
+			"id": "425"
+		},
+		"deck": [
+			{
+				"id": "5076"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "5076"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5136"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "5154"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6100",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5078",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5078",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5078",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7179",
+		"name": "Archangel of Frost"
+	},
+	"7180": {
+		"commander": {
+			"id": "394"
+		},
+		"deck": [
+			{
+				"id": "5184"
+			},
+			{
+				"id": "5184"
+			},
+			{
+				"id": "5184"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "2205"
+			},
+			{
+				"id": "7254"
+			},
+			{
+				"id": "7254"
+			},
+			{
+				"id": "7254"
+			},
+			{
+				"id": "5098",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5098",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5098",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5224",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7180",
+		"name": "Something to Fear"
+	},
+	"7181": {
+		"commander": {
+			"id": "398"
+		},
+		"deck": [
+			{
+				"id": "5071"
+			},
+			{
+				"id": "5071"
+			},
+			{
+				"id": "5071"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "7039"
+			},
+			{
+				"id": "6121"
+			},
+			{
+				"id": "6121"
+			},
+			{
+				"id": "6121"
+			},
+			{
+				"id": "6294",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6294",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6294",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7178",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7178",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7178",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7181",
+		"name": "Clipped Wings"
 	}
 };

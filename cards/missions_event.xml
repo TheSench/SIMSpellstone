@@ -69090,4 +69090,970 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 109: ComDev Angel - Skyhaven Assault -->
+  <!-- E109 Node 1: Nether Legions -->
+  <mission>
+    <id>7170</id>
+    <name>A Quick Regroup</name>
+    <energy>18</energy>
+    <desc>Even with the Seafolk raiders&apos; Maelstrom thwarted, the clouds remain as ominous as ever. Your allies bring you from Pharos to Duskwillow and back to the airship.</desc>
+    <commander id="306" />
+    <!-- Lost Angel -->
+    <deck>
+      <card id="1025" />
+      <!-- Lightbound Archer -->
+      <card id="1030" />
+      <!-- Paladin -->
+      <card id="1031" />
+      <!-- Noble Champion -->
+      <card id="1327" />
+      <!-- Fallen Angel -->
+      <card id="2027" />
+      <!-- Halo Mage -->
+      <card id="2029" />
+      <!-- Sly Critters -->
+      <card id="2030" />
+      <!-- Ebon Duelist -->
+      <card id="2052" />
+      <!-- Protector of Skyhaven -->
+      <card id="2054" />
+      <!-- Pack Runner -->
+      <card id="2084" mastery_level="2" />
+      <!-- Apocalypse Rider -->
+      <card id="2085" mastery_level="3" />
+      <!-- Faithstay Supplier -->
+      <card id="2121" mastery_level="4" />
+      <!-- Chrysalis Angel -->
+      <card id="2122" mastery_level="5" />
+      <!-- Voidlight Tainted -->
+      <card id="2141" mastery_level="6" />
+      <!-- Stormbreak Beast -->
+      <card id="2146" mastery_level="7" />
+      <!-- Noble Truestrike -->
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>I s&apos;pose you&apos;ve got to be confused. The skies went dark during the Goblin Civil War, and it&apos;s drivin&apos; th&apos; world mad!</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>1</enemy>
+        <text>After it happened, Samael petitioned the rulers of Skyhaven to send out a search party.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>1</enemy>
+        <text>You had disappeared completely, Adventurer.</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>0</enemy>
+        <text>We were lucky to find you when we did. You were almost another casualty...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7171</id>
+    <name>A Chill in the Air</name>
+    <energy>18</energy>
+    <desc>The triumvirate of angels steers the ship up past the clouds, to a Skyhaven that looks shrouded in an endless night. Only the city lights are able to illuminate your path.</desc>
+    <commander id="317" />
+    <!-- Raging Hippogrif -->
+    <deck>
+      <card id="2147" />
+      <!-- Leafguard Angel -->
+      <card id="2173" />
+      <!-- Soulstained Reaper -->
+      <card id="2177" />
+      <!-- Featherlight Initiate -->
+      <card id="2178" />
+      <!-- Hellcay Draftee -->
+      <card id="2203" />
+      <!-- Absent Clouds -->
+      <card id="2204" />
+      <!-- Halo Slave -->
+      <card id="2219" />
+      <!-- Freya's Scout -->
+      <card id="2230" />
+      <!-- Vengeful Holyfire -->
+      <card id="2245" />
+      <!-- Winged Mercenaries -->
+      <card id="5040" mastery_level="2" />
+      <!-- Winged Trumpeter -->
+      <card id="5072" mastery_level="3" />
+      <!-- Blind Seer -->
+      <card id="5117" mastery_level="4" />
+      <!-- Spark Chronicler -->
+      <card id="5118" mastery_level="5" />
+      <!-- Chalice Courier -->
+      <card id="5145" mastery_level="6" />
+      <!-- Gobsnout Piercer -->
+      <card id="6038" mastery_level="7" />
+      <!-- Hemlock -->
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Strange, isn&apos;t it? It&apos;s the middle of the day, and yet the Void cloud has covered everything.</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>At least Samael will be relieved to see you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7172</id>
+    <name>Put on... Ice?</name>
+    <energy>18</energy>
+    <desc>As you approach the blackened city, sharp shards of frost zip past your craft. Not wanting a repeat of what happened with Helvius, you take the helm and deftly avoid them!</desc>
+    <commander id="258" />
+    <!-- Winterback Ape -->
+    <deck>
+      <card id="6070" />
+      <!-- Petrifier -->
+      <card id="6116" />
+      <!-- Otherworldly Archer -->
+      <card id="6119" />
+      <!-- Shadowy Muse -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7041" />
+      <!-- Feral Angel -->
+      <card id="7070" />
+      <!-- Laughing Menace -->
+      <card id="7073" />
+      <!-- Heralded Slugger -->
+      <card id="7116" />
+      <!-- Watchful Hexhound -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="1041" mastery_level="2" />
+      <!-- Avenging Angel -->
+      <card id="1042" mastery_level="3" />
+      <!-- Archgeneral -->
+      <card id="1341" mastery_level="4" />
+      <!-- Blood Demon -->
+      <card id="2028" mastery_level="5" />
+      <!-- Infinity -->
+      <card id="2055" mastery_level="6" />
+      <!-- Wrath -->
+      <card id="2083" mastery_level="7" />
+      <!-- Habrok, the Lance -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7173</id>
+    <name>Giving a Hoot</name>
+    <energy>18</energy>
+    <desc>You can&apos;t shake an ominous feeling as you touch down in Skyhaven. After reuniting with Yuriel and Samael, your suspicions are confirmed. The Void is running rampant!</desc>
+    <commander id="228" />
+    <!-- Voidlings -->
+    <deck>
+      <card id="2086" />
+      <!-- Rimelight Crusader -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="2220" />
+      <!-- Frozenbolt Adept -->
+      <card id="7109" />
+      <!-- Clownder -->
+      <card id="5003" />
+      <!-- White Knight -->
+      <card id="6040" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="5031" />
+      <!-- Frostlance Valkyrie -->
+      <card id="6041" />
+      <!-- Reaper -->
+      <card id="7069" mastery_level="2" />
+      <!-- Stoneblade Seraphim -->
+      <card id="5039" mastery_level="3" />
+      <!-- Ethereal Knight -->
+      <card id="6071" mastery_level="4" />
+      <!-- Masked Heraid -->
+      <card id="7071" mastery_level="5" />
+      <!-- Gorilleus -->
+      <card id="5043" mastery_level="6" />
+      <!-- Empyrean -->
+      <card id="6073" mastery_level="7" />
+      <!-- Obsidian -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hoot! There you are! Took you long enough!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, things are as dire as they have ever been. The Void has been unbound.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>It&apos;s been spreading across the world... and the delicate balance of the factions is ruined!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7174</id>
+    <name>That's No Angel</name>
+    <energy>18</energy>
+    <desc>Samael explains that the Void&apos;s newly unleashed power has infected all of Arcantica. Every tribe is behaving completely differently from their usual selves!</desc>
+    <commander id="265" />
+    <!-- Void Warrior -->
+    <deck>
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="5071" />
+      <!-- Stoic Watcher -->
+      <card id="6117" />
+      <!-- Whispering Ophanim -->
+      <card id="7117" />
+      <!-- Rael, Skyhaven Giant -->
+      <card id="5074" />
+      <!-- Godfried the Hunter -->
+      <card id="6118" />
+      <!-- Kindlecrack Demon -->
+      <card id="7119" />
+      <!-- Bunnpaa -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="6177" />
+      <!-- Diabolic Summoner -->
+      <card id="7179" mastery_level="2" />
+      <!-- Battlefield Berserker -->
+      <card id="5116" mastery_level="3" />
+      <!-- Justice -->
+      <card id="6180" mastery_level="4" />
+      <!-- Cloaked Revenapod -->
+      <card id="7180" mastery_level="5" />
+      <!-- Bottlenose Forerunner -->
+      <card id="5119" mastery_level="6" />
+      <!-- Dyrnwyn's Chosen -->
+      <card id="6213" mastery_level="7" />
+      <!-- Stonespeak Devil -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The Seafolk of Pharos and Duskwillow screech and stare like Avians...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The Dragons of Tarragon Peak mount violent barrages like Goblins...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>And the Angels of Skyhaven are--</text>
+      </line>
+      <line>
+        <commander>balrog</commander>
+        <enemy>1</enemy>
+        <text>COME... WITH... US...!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Whooo dares?! Back, you demon! Back!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7175</id>
+    <name>City of the Damned</name>
+    <energy>18</energy>
+    <desc>You repulse the Void underling, only to find the entire city swarming with them. In your brief absence, demons have overrun Skyhaven like an Undead horde!</desc>
+    <commander id="303" />
+    <!-- Sealed First Order Demon -->
+    <deck>
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5183" />
+      <!-- Swordslayer Giant -->
+      <card id="6214" />
+      <!-- Trampling Demon -->
+      <card id="5184" />
+      <!-- Icy Grimkite -->
+      <card id="6294" />
+      <!-- Rogue Seraphim -->
+      <card id="7222" />
+      <!-- Soldier of Retribution -->
+      <card id="5206" />
+      <!-- Scarhawk Avienda -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="5217" />
+      <!-- Azazreal, Herald -->
+      <card id="7297" mastery_level="2" />
+      <!-- Cursed Caserpent -->
+      <card id="7308" mastery_level="3" />
+      <!-- Lonely Militiaman -->
+      <card id="5223" mastery_level="4" />
+      <!-- Syl, Warrior Angel -->
+      <card id="5295" mastery_level="5" />
+      <!-- Holy Constable -->
+      <card id="5298" mastery_level="6" />
+      <!-- Blessed Sentinel -->
+      <card id="5300" mastery_level="7" />
+      <!-- Kinetic Initiate -->
+    </deck>
+    <speech>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>1</enemy>
+        <text>Come, Adventurer. Let us take back the capital of the Angels!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Glory to our sanctified cities!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E109 Node 2: Upon Righteous Wings -->
+  <mission>
+    <id>7176</id>
+    <name>Alyel's Pride</name>
+    <energy>18</energy>
+    <desc>You, Yuriel, and Samael step back out onto the streets of the demon-infested Skyhaven. The three queens have already charged into battle, but one fights well beyond the rest.</desc>
+    <commander id="208" />
+    <!-- Void Minions -->
+    <deck>
+      <card id="5303" />
+      <!-- Angelical Acolyte -->
+      <card id="5303" />
+      <!-- Angelical Acolyte -->
+      <card id="5303" />
+      <!-- Angelical Acolyte -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5186" />
+      <!-- Priestess of Mending -->
+      <card id="5186" />
+      <!-- Priestess of Mending -->
+      <card id="5186" />
+      <!-- Priestess of Mending -->
+      <card id="7039" mastery_level="2" />
+      <!-- Winged Giant -->
+      <card id="7039" mastery_level="3" />
+      <!-- Winged Giant -->
+      <card id="7039" mastery_level="4" />
+      <!-- Winged Giant -->
+      <card id="5262" mastery_level="5" />
+      <!-- Earthbound Martyr -->
+      <card id="5262" mastery_level="6" />
+      <!-- Earthbound Martyr -->
+      <card id="5262" mastery_level="7" />
+      <!-- Earthbound Martyr -->
+    </deck>
+    <speech>
+      <line>
+        <commander>balrog</commander>
+        <enemy>1</enemy>
+        <text>Gnaaargh!</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>HAH, IS THAT ALL YOU&apos;VE GOT?! MAY I HAVE ANOTHER?!?</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Save some demons for the rest of us, sister!</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>BUTT OUT! I&apos;M EARNING THE THRONE FOR REAL THIS TIME!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7177</id>
+    <name>No Mind to Think?</name>
+    <energy>18</energy>
+    <desc>The berserking Alyel tears the demons apart before they can even mount an offense, as quick as the legendary Sword Saint Katto. But when the coast seems clear...</desc>
+    <commander id="331" />
+    <!-- Void Infected General -->
+    <deck>
+      <card id="5087" />
+      <!-- Apollyon -->
+      <card id="5087" />
+      <!-- Apollyon -->
+      <card id="5087" />
+      <!-- Apollyon -->
+      <card id="5174" />
+      <!-- Cloudbreak Elites -->
+      <card id="5174" />
+      <!-- Cloudbreak Elites -->
+      <card id="5174" />
+      <!-- Cloudbreak Elites -->
+      <card id="5249" />
+      <!-- Seraph of Singularities -->
+      <card id="5249" />
+      <!-- Seraph of Singularities -->
+      <card id="5249" />
+      <!-- Seraph of Singularities -->
+      <card id="5260" mastery_level="2" />
+      <!-- Monkey Style Tenshi -->
+      <card id="5260" mastery_level="3" />
+      <!-- Monkey Style Tenshi -->
+      <card id="5260" mastery_level="4" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6272" mastery_level="5" />
+      <!-- Blazemaster Rookie -->
+      <card id="6272" mastery_level="6" />
+      <!-- Blazemaster Rookie -->
+      <card id="6272" mastery_level="7" />
+      <!-- Blazemaster Rookie -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Hmph! A job well done. Once again, I can call myself an ally of all that is good and just.</text>
+      </line>
+      <line>
+        <commander>balrog</commander>
+        <enemy>1</enemy>
+        <text>Pesky Angel... fast! Call for... aid!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7178</id>
+    <name>Ascending the Chain of Command</name>
+    <energy>18</energy>
+    <desc>The demonic legions regroup and coalesce around a now-familiar face: it&apos;s Gobtoh, the angel who had only just served as a pretender to the Goblin throne!</desc>
+    <commander id="407" />
+    <!-- Unsung Guardian Angel -->
+    <deck>
+      <card id="6184" />
+      <!-- Thundering Hellwing -->
+      <card id="6184" />
+      <!-- Thundering Hellwing -->
+      <card id="6184" />
+      <!-- Thundering Hellwing -->
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6220" />
+      <!-- Gobtoh the Risen -->
+      <card id="6220" />
+      <!-- Gobtoh the Risen -->
+      <card id="6220" />
+      <!-- Gobtoh the Risen -->
+      <card id="7199" mastery_level="2" />
+      <!-- Celesti Monstrosity -->
+      <card id="7199" mastery_level="3" />
+      <!-- Celesti Monstrosity -->
+      <card id="7199" mastery_level="4" />
+      <!-- Celesti Monstrosity -->
+      <card id="7263" mastery_level="5" />
+      <!-- Cheggrub -->
+      <card id="7263" mastery_level="6" />
+      <!-- Cheggrub -->
+      <card id="7263" mastery_level="7" />
+      <!-- Cheggrub -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Heh heh, now THIS will be a battle worth remembering!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Even though that stopwatch I hid is still out there somewhere...</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>And these demons, I&apos;m sure you can tell by now, are as weak as water...</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>I, Gobtoh Ascended, shall bring you de--</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7179</id>
+    <name>Archangel of Frost</name>
+    <energy>18</energy>
+    <desc>Before Gobtoh can yammer any more, he is silenced when a sudden chill blunts his every attempt to move. Then a ring of falling icicles fences him in, and he faints from the cold.</desc>
+    <commander id="425" />
+    <!-- Fallen Gladiator -->
+    <deck>
+      <card id="5076" />
+      <!-- Sorath, the Valkyrie -->
+      <card id="5076" />
+      <!-- Sorath, the Valkyrie -->
+      <card id="5076" />
+      <!-- Sorath, the Valkyrie -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5154" />
+      <!-- Glaucus -->
+      <card id="5154" />
+      <!-- Glaucus -->
+      <card id="5154" />
+      <!-- Glaucus -->
+      <card id="6100" mastery_level="2" />
+      <!-- Tiamat -->
+      <card id="6100" mastery_level="3" />
+      <!-- Tiamat -->
+      <card id="6100" mastery_level="4" />
+      <!-- Tiamat -->
+      <card id="5078" mastery_level="5" />
+      <!-- Asariel -->
+      <card id="5078" mastery_level="6" />
+      <!-- Asariel -->
+      <card id="5078" mastery_level="7" />
+      <!-- Asariel -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>1</enemy>
+        <text>Maaaster... come back to us, Master!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hooo! Now that&apos;s what I call a deus ex machina!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>More like deus ex Melkira. A last-minute savior, so it seems. </text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>We have little to fear from the Goblins and their hordes after all.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Be on your guard, everyone. The Void won&apos;t take kindly to this.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>At least, with my incredible speed, you all have nothing to fear!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7180</id>
+    <name>Something to Fear</name>
+    <energy>18</energy>
+    <desc>A Goblin battleship suddenly appears on the horizon, carried on the backs of a thousand dragons, and cuts through the clouds. Xerkahn emerges, holding a stopwatch!</desc>
+    <commander id="394" />
+    <!-- Xerkahn, the Vengeant -->
+    <deck>
+      <card id="5184" />
+      <!-- Icy Grimkite -->
+      <card id="5184" />
+      <!-- Icy Grimkite -->
+      <card id="5184" />
+      <!-- Icy Grimkite -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="5098" mastery_level="2" />
+      <!-- Skybound United -->
+      <card id="5098" mastery_level="3" />
+      <!-- Skybound United -->
+      <card id="5098" mastery_level="4" />
+      <!-- Skybound United -->
+      <card id="5224" mastery_level="5" />
+      <!-- Baaht, Fire Forger -->
+      <card id="5224" mastery_level="6" />
+      <!-- Baaht, Fire Forger -->
+      <card id="5224" mastery_level="7" />
+      <!-- Baaht, Fire Forger -->
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Ah-hahahahaaa! Hear me, my hordes! Destroy the Angels! Overrun them! There is strength in numbers!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>At least if you die, I can always turn back the clock!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>So this is what happened to Remi&apos;s watch after Daknak got hold of it...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>That fool... Respect is earned, not simply given!</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>1</enemy>
+        <text>AND I&apos;LL BE THE ONE TO EARN IT! STAND BACK, EVERYONE!</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>1</enemy>
+        <text>WE ALL YELL FOR ALYEL!!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7181</id>
+    <name>Clipped Wings</name>
+    <energy>18</energy>
+    <desc>With the power of Remi&apos;s watch, Xerkahn unleashes a blast of magic that distorts the flow of time. Alyel fights on, but her movements are sluggish and weak. The Angels realize they&apos;re outnumbered...</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="5071" />
+      <!-- Stoic Watcher -->
+      <card id="5071" />
+      <!-- Stoic Watcher -->
+      <card id="5071" />
+      <!-- Stoic Watcher -->
+      <card id="7039" />
+      <!-- Winged Giant -->
+      <card id="7039" />
+      <!-- Winged Giant -->
+      <card id="7039" />
+      <!-- Winged Giant -->
+      <card id="6121" />
+      <!-- Charon -->
+      <card id="6121" />
+      <!-- Charon -->
+      <card id="6121" />
+      <!-- Charon -->
+      <card id="6294" mastery_level="2" />
+      <!-- Rogue Seraphim -->
+      <card id="6294" mastery_level="3" />
+      <!-- Rogue Seraphim -->
+      <card id="6294" mastery_level="4" />
+      <!-- Rogue Seraphim -->
+      <card id="7178" mastery_level="5" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7178" mastery_level="6" />
+      <!-- Oxylus, Might Warden -->
+      <card id="7178" mastery_level="7" />
+      <!-- Oxylus, Might Warden -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>What... did you... DO to me...?!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Enjoy fighting as slowly as everybody else, Bawl-yel!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Ah-hahahahaaa!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>They&apos;ve stricken down my sister?!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Retreat, everyone! We must retreat!</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Spy_Wyld</commander>
+        <enemy>0</enemy>
+        <text>I&apos;m sure the healers of Golden Crown will be able to cure your sister. Adventurer, take Alyel and run!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 109: ComDev Angel - New Lightning Node -->
+  <mission>
+    <id>2031</id>
+    <name>Demon of Pride</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="2245" />
+      <!-- Winged Mercenaries -->
+      <card id="2245" />
+      <!-- Winged Mercenaries -->
+      <card id="2245" />
+      <!-- Winged Mercenaries -->
+      <card id="5145" />
+      <!-- Gobsnout Piercer -->
+      <card id="5145" />
+      <!-- Gobsnout Piercer -->
+      <card id="5145" mastery_level="2" />
+      <!-- Gobsnout Piercer -->
+      <card id="2146" mastery_level="3" />
+      <!-- Noble Truestrike -->
+      <card id="2146" mastery_level="4" />
+      <!-- Noble Truestrike -->
+      <card id="2146" mastery_level="5" />
+      <!-- Noble Truestrike -->
+      <card id="6116" mastery_level="6" />
+      <!-- Archer of Two Worlds -->
+      <card id="6116" mastery_level="7" />
+      <!-- Archer of Two Worlds -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2032</id>
+    <name>Demon of Greed</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="5298" />
+      <!-- Blessed Sentinel -->
+      <card id="5298" />
+      <!-- Blessed Sentinel -->
+      <card id="5298" />
+      <!-- Blessed Sentinel -->
+      <card id="7222" />
+      <!-- Soldier of Retribution -->
+      <card id="7222" />
+      <!-- Soldier of Retribution -->
+      <card id="7222" mastery_level="2" />
+      <!-- Soldier of Retribution -->
+      <card id="7224" mastery_level="3" />
+      <!-- Floral Sprite -->
+      <card id="7224" mastery_level="4" />
+      <!-- Floral Sprite -->
+      <card id="7224" mastery_level="5" />
+      <!-- Floral Sprite -->
+      <card id="6039" mastery_level="6" />
+      <!-- Auroch -->
+      <card id="6039" mastery_level="7" />
+      <!-- Auroch -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2033</id>
+    <name>Demon of Anger</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="2" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="3" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="4" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="5" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="6" />
+      <!-- Seraphim Reborn -->
+      <card id="8241" mastery_level="7" />
+      <!-- Seraphim Reborn -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2034</id>
+    <name>Demon of Envy</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="7608" />
+      <!-- The Triad of Fortunes -->
+      <card id="7618" />
+      <!-- Caccia, the Lunatic -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="7069" />
+      <!-- Stoneblade Seraphim -->
+      <card id="7069" />
+      <!-- Stoneblade Seraphim -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="7120" mastery_level="2" />
+      <!-- Liliane's Blessing -->
+      <card id="7120" mastery_level="3" />
+      <!-- Liliane's Blessing -->
+      <card id="7264" mastery_level="4" />
+      <!-- Apricot Qilin -->
+      <card id="7264" mastery_level="5" />
+      <!-- Apricot Qilin -->
+      <card id="4051" mastery_level="6" />
+      <!-- Freya, the Landbinder -->
+      <card id="4067" mastery_level="7" />
+      <!-- Uncommon Allies -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2035</id>
+    <name>Demon of Gluttony</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="4002" />
+      <!-- Razi the Fallen Light -->
+      <card id="4009" />
+      <!-- Kachina, the Dreamer -->
+      <card id="4029" />
+      <!-- Cyno, Arbiter of Souls -->
+      <card id="5603" />
+      <!-- Dina the Iridescent -->
+      <card id="5606" />
+      <!-- Volvel, Golden Pride -->
+      <card id="5624" />
+      <!-- Altos, the Implacable -->
+      <card id="5625" />
+      <!-- Aeronwen, the Glider -->
+      <card id="5630" />
+      <!-- Asim, the Lorekeeper -->
+      <card id="5617" mastery_level="2" />
+      <!-- Osyris, Mighty Goddess -->
+      <card id="5631" mastery_level="3" />
+      <!-- Saint Galahad -->
+      <card id="5639" mastery_level="4" />
+      <!-- Zakum, The Destroyer -->
+      <card id="2083" mastery_level="5" />
+      <!-- Habrok, the Lance -->
+      <card id="4041" mastery_level="6" />
+      <!-- Leyla, Queen of Skyhaven -->
+      <card id="4067" mastery_level="7" />
+      <!-- Uncommon Allies -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2036</id>
+    <name>Demon of Sloth</name>
+    <energy>7</energy>
+    <desc>You shall not pass!</desc>
+    <commander id="492" />
+    <!-- Lightning Boss Orobas -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="4015" />
+      <!-- Vindicator Batara -->
+      <card id="6616" />
+      <!-- Mephisto, the Pactmaker -->
+      <card id="6620" />
+      <!-- Abbadon, the Vicious -->
+      <card id="6628" />
+      <!-- Zamriel, the Vengeful -->
+      <card id="6631" />
+      <!-- Skids, Hellfire Liches -->
+      <card id="7617" />
+      <!-- Bashira, the Half-Blooded -->
+      <card id="6121" />
+      <!-- Charon -->
+      <card id="6264" />
+      <!-- Flame Tongue Frog -->
+      <card id="6263" mastery_level="2" />
+      <!-- Erinye of Justice -->
+      <card id="6120" mastery_level="3" />
+      <!-- Oni Blade -->
+      <card id="6216" mastery_level="4" />
+      <!-- Gilgamesh -->
+      <card id="2220" mastery_level="5" />
+      <!-- Frozenbolt Adept -->
+      <card id="4058" mastery_level="6" />
+      <!-- Alyel, Rush of Fury -->
+      <card id="4067" mastery_level="7" />
+      <!-- Uncommon Allies -->
+    </deck>
+  </mission>
 </root>

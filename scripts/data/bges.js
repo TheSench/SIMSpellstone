@@ -2582,7 +2582,7 @@ var BATTLEGROUNDS = {
 		"name": "Eye of the Maelstrom"
 	},
 	"171": {
-		"desc": "All Angels gain Vampirism equal to 5% base Health plus 2. When an Angel dies it creates a Summoned Demon token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion based on its rarity. This BGE effect is subject to change.",
+		"desc": "All Angels gain Vampirism equal to 5% base Health + 2. When an Angel dies it creates a token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion based on its rarity.",
 		"effect": [
 			{
 				"card": 612,
@@ -3932,15 +3932,64 @@ var BATTLEGROUNDS = {
 		"desc": "All cards have their base Attack and base Health doubled.",
 		"effect": [
 			{
-				"all": "1",
 				"base": "attack",
 				"effect_type": "scale_attack",
-				"mult": 1
+				"mult": 1,
+				"y": "0"
+			},
+			{
+				"base": "attack",
+				"effect_type": "scale_attack",
+				"mult": 1,
+				"y": "1"
+			},
+			{
+				"base": "attack",
+				"effect_type": "scale_attack",
+				"mult": 1,
+				"y": "2"
+			},
+			{
+				"base": "attack",
+				"effect_type": "scale_attack",
+				"mult": 1,
+				"y": "3"
+			},
+			{
+				"base": "attack",
+				"effect_type": "scale_attack",
+				"mult": 1,
+				"y": "8"
 			},
 			{
 				"base": "health",
 				"effect_type": "scale_health",
-				"mult": 1
+				"mult": 1,
+				"y": "0"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"y": "1"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"y": "2"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"y": "3"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 1,
+				"y": "8"
 			}
 		],
 		"id": "548",
@@ -4173,6 +4222,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "armored",
 				"z": "3"
@@ -4181,6 +4231,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "counter",
 				"z": "3"
@@ -4189,6 +4240,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "evade",
 				"z": "3"
@@ -4197,6 +4249,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "leech",
 				"z": "3"
@@ -4205,6 +4258,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "pierce",
 				"z": "3"
@@ -4213,6 +4267,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "burn",
 				"z": "3"
@@ -4221,6 +4276,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "poison",
 				"z": "3"
@@ -4229,6 +4285,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "heal",
 				"z": "3"
@@ -4237,6 +4294,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "strike",
 				"z": "3"
@@ -4245,6 +4303,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "weaken",
 				"z": "3"
@@ -4253,6 +4312,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "protect",
 				"z": "3"
@@ -4261,6 +4321,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "rally",
 				"z": "3"
@@ -4269,6 +4330,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "berserk",
 				"z": "3"
@@ -4277,6 +4339,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "absorb",
 				"z": "3"
@@ -4285,6 +4348,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "counterburn",
 				"z": "3"
@@ -4293,6 +4357,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "enrage",
 				"z": "3"
@@ -4301,6 +4366,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "regenerate",
 				"z": "3"
@@ -4309,6 +4375,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "valor",
 				"z": "3"
@@ -4317,6 +4384,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "daze",
 				"z": "3"
@@ -4325,6 +4393,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "backlash",
 				"z": "3"
@@ -4333,6 +4402,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "frost",
 				"z": "3"
@@ -4341,6 +4411,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "stasis",
 				"z": "3"
@@ -4349,6 +4420,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "corrosive",
 				"z": "3"
@@ -4357,6 +4429,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "legion",
 				"z": "3"
@@ -4365,6 +4438,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "fervor",
 				"z": "3"
@@ -4373,6 +4447,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "enfeeble",
 				"z": "3"
@@ -4477,6 +4552,82 @@ var BATTLEGROUNDS = {
 		],
 		"id": "564",
 		"name": "Endless Rage"
+	},
+	"565": {
+		"desc": "All enemies start with a Warding Tower card. The tower evolves with the strongest opponents!",
+		"effect": {
+			"2": {
+				"id": 615,
+				"level": 1
+			},
+			"3": {
+				"id": 615,
+				"level": 2
+			},
+			"4": {
+				"id": 615,
+				"level": 3
+			},
+			"5": {
+				"id": 615,
+				"level": 4
+			},
+			"6": {
+				"id": 615,
+				"level": 5
+			},
+			"7": {
+				"id": 615,
+				"level": 6
+			},
+			"8": {
+				"id": 615,
+				"level": 7
+			},
+			"9": {
+				"id": 615,
+				"level": 8
+			},
+			"10": {
+				"id": 615,
+				"level": 9
+			},
+			"11": {
+				"id": 615,
+				"level": 10
+			},
+			"12": {
+				"id": 615,
+				"level": 11
+			},
+			"13": {
+				"id": 615,
+				"level": 12
+			},
+			"14": {
+				"id": 615,
+				"level": 13
+			},
+			"15": {
+				"id": 615,
+				"level": 14
+			},
+			"16": {
+				"id": 615,
+				"level": 15
+			},
+			"17": {
+				"id": 615,
+				"level": 16
+			},
+			"18": {
+				"id": 615,
+				"level": 17
+			}
+		},
+		"id": "565",
+		"isTower": true,
+		"name": "Warding Tower"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

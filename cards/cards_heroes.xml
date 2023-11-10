@@ -13242,4 +13242,53 @@
       <skill id="imbue" s="counter" all="1" x="11" c="11" />
     </upgrade>
   </unit>
+  <unit>
+    <id>492</id>
+    <card_type>1</card_type>
+    <name>Lightning Boss Orobas</name>
+    <portrait>balrog</portrait>
+    <attack>0</attack>
+    <health>50</health>
+    <rarity>4</rarity>
+    <skill id="weaken" all="1" x="1" />
+    <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="1" />
+    <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>55</health>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="2" />
+      <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>65</health>
+      <skill id="weaken" all="1" x="3" />
+      <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="3" />
+      <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>75</health>
+      <skill id="weaken" all="1" x="5" />
+      <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="5" />
+      <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>85</health>
+      <skill id="weaken" all="1" x="8" />
+      <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="8" />
+      <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="weaken" all="1" x="12" />
+      <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="12" />
+      <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="12" />
+    </upgrade>
+  </unit>
 </root>

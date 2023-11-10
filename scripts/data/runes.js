@@ -45,13 +45,16 @@ var RUNES = {
 	},
 	"5021": {
 		"category": "3",
-		"desc": "Invisibility +50%, rounded up.",
+		"desc": "Invisibility +50%, Health +15%, rounded up.",
 		"icon": "rune_invisibility_legendary",
 		"id": "5021",
 		"name": "Rune of Invisibility",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "evade",
 				"mult": 0.5
@@ -93,13 +96,16 @@ var RUNES = {
 	},
 	"5033": {
 		"category": "3",
-		"desc": "Barrier +75%, rounded up. Minimum +4.",
+		"desc": "Barrier +75%, rounded up. Minimum +4. Health +15%, rounded up.",
 		"icon": "rune_barrier_legendary",
 		"id": "5033",
 		"name": "Rune of Greater Barrier",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "protect",
 				"min_bonus": 4,
@@ -110,13 +116,16 @@ var RUNES = {
 	},
 	"5034": {
 		"category": "3",
-		"desc": "Barrier All +50%, rounded up.",
+		"desc": "Barrier All +50%, rounded up. Health +15%, rounded up.",
 		"icon": "rune_barrier_all_legendary",
 		"id": "5034",
 		"name": "Rune of Mass Barrier",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "protect",
@@ -159,13 +168,16 @@ var RUNES = {
 	},
 	"5043": {
 		"category": "3",
-		"desc": "Healing +75%, rounded up. Minimum +4.",
+		"desc": "Healing +75%, rounded up. Minimum +4. Health +15%, rounded up.",
 		"icon": "rune_heal_legendary",
 		"id": "5043",
 		"name": "Rune of Greater Healing",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "heal",
 				"min_bonus": 4,
@@ -193,13 +205,16 @@ var RUNES = {
 	},
 	"5045": {
 		"category": "3",
-		"desc": "Heal All +50%, rounded up. Minimum +2.",
+		"desc": "Heal All +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_heal_all_legendary",
 		"id": "5045",
 		"name": "Rune of Greater Mass Healing",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "heal",
@@ -243,13 +258,16 @@ var RUNES = {
 	},
 	"5053": {
 		"category": "3",
-		"desc": "Vengeance +50%, rounded up. Minimum +3.",
+		"desc": "Vengeance +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_vengeance_legendary",
 		"id": "5053",
 		"name": "Rune of Greater Vengeance",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "counter",
 				"min_bonus": 3,
@@ -292,13 +310,16 @@ var RUNES = {
 	},
 	"5063": {
 		"category": "3",
-		"desc": "Armored +50%, rounded up. Minimum +3.",
+		"desc": "Armored +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_shield_legendary",
 		"id": "5063",
 		"name": "Rune of Greater Armor",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "armored",
 				"min_bonus": 3,
@@ -341,13 +362,16 @@ var RUNES = {
 	},
 	"5073": {
 		"category": "3",
-		"desc": "Empower +50%, rounded up. Minimum +3.",
+		"desc": "Empower +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_empower_legendary",
 		"id": "5073",
 		"name": "Rune of Greater Empower",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "rally",
 				"min_bonus": 3,
@@ -358,13 +382,16 @@ var RUNES = {
 	},
 	"5074": {
 		"category": "3",
-		"desc": "Empower All +50%, rounded up.",
+		"desc": "Empower All +50%, rounded up. Health +15%, rounded up.",
 		"icon": "rune_empower_all_legendary",
 		"id": "5074",
 		"name": "Rune of Boundless Empower",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "rally",
@@ -391,13 +418,16 @@ var RUNES = {
 	},
 	"5082": {
 		"category": "3",
-		"desc": "Legion +50%, rounded up. Minimum +2.",
+		"desc": "Legion +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_legion_legendary",
 		"id": "5082",
 		"name": "Rune of Greater Legion",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "legion",
 				"min_bonus": 2,
@@ -424,13 +454,16 @@ var RUNES = {
 	},
 	"5092": {
 		"category": "3",
-		"desc": "Fervor +50%, rounded up. Minimum +2.",
+		"desc": "Fervor +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_fervor_legendary",
 		"id": "5092",
 		"name": "Rune of Greater Fervor",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "fervor",
 				"min_bonus": 2,
@@ -473,13 +506,16 @@ var RUNES = {
 	},
 	"5103": {
 		"category": "3",
-		"desc": "Hex +50%, rounded up. Minimum +3.",
+		"desc": "Hex +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_hex_legendary",
 		"id": "5103",
 		"name": "Rune of Greater Hex",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "enfeeble",
 				"min_bonus": 3,
@@ -490,13 +526,16 @@ var RUNES = {
 	},
 	"5104": {
 		"category": "3",
-		"desc": "Hex All +50%, rounded up.",
+		"desc": "Hex All +50%, rounded up. Health +15%, rounded up.",
 		"icon": "rune_hex_all_legendary",
 		"id": "5104",
 		"name": "Rune of Sweeping Hex",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "enfeeble",
@@ -539,13 +578,16 @@ var RUNES = {
 	},
 	"5113": {
 		"category": "3",
-		"desc": "Bolt +50%, rounded up. Minimum +3.",
+		"desc": "Bolt +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_bolt_legendary",
 		"id": "5113",
 		"name": "Rune of Greater Bolt",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "strike",
 				"min_bonus": 3,
@@ -556,13 +598,16 @@ var RUNES = {
 	},
 	"5114": {
 		"category": "3",
-		"desc": "Bolt All +50%, rounded up.",
+		"desc": "Bolt All +50%, rounded up. Health +15%, rounded up.",
 		"icon": "rune_bolt_all_legendary",
 		"id": "5114",
 		"name": "Rune of Storming Bolt",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "strike",
@@ -589,13 +634,16 @@ var RUNES = {
 	},
 	"5122": {
 		"category": "3",
-		"desc": "Scorch +50%, rounded up. Minimum +2.",
+		"desc": "Scorch +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_scorch_legendary",
 		"id": "5122",
 		"name": "Rune of Greater Scorch",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "burn",
 				"min_bonus": 2,
@@ -638,13 +686,16 @@ var RUNES = {
 	},
 	"5153": {
 		"category": "3",
-		"desc": "Weaken +75%, rounded up. Minimum +3.",
+		"desc": "Weaken +75%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_weaken_legendary",
 		"id": "5153",
 		"name": "Rune of Greater Weakening",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "weaken",
 				"min_bonus": 3,
@@ -655,13 +706,16 @@ var RUNES = {
 	},
 	"5154": {
 		"category": "3",
-		"desc": "Weaken All +50%, rounded up.",
+		"desc": "Weaken All +50%, rounded up. Health +15%, rounded up.",
 		"icon": "rune_weaken_all_legendary",
 		"id": "5154",
 		"name": "Rune of Infectious Weakening",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "weaken",
@@ -722,13 +776,16 @@ var RUNES = {
 	},
 	"5172": {
 		"category": "3",
-		"desc": "Poison +50%, rounded up. Minimum +2.",
+		"desc": "Poison +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_poison_legendary",
 		"id": "5172",
 		"name": "Rune of Greater Poison",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "poison",
 				"min_bonus": 2,
@@ -771,13 +828,16 @@ var RUNES = {
 	},
 	"5183": {
 		"category": "3",
-		"desc": "Siphon +75%, rounded up. Minimum +4.",
+		"desc": "Siphon +75%, rounded up. Minimum +4. Health +15%, rounded up.",
 		"icon": "rune_siphon_legendary",
 		"id": "5183",
 		"name": "Rune of Greater Siphoning",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "leech",
 				"min_bonus": 4,
@@ -804,13 +864,16 @@ var RUNES = {
 	},
 	"5185": {
 		"category": "3",
-		"desc": "Berserk +50%, rounded up. Minimum +2.",
+		"desc": "Berserk +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_berserk_legendary",
 		"id": "5185",
 		"name": "Rune of Greater Berserk",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "berserk",
 				"min_bonus": 2,
@@ -837,13 +900,16 @@ var RUNES = {
 	},
 	"5187": {
 		"category": "3",
-		"desc": "Frostbreath +50%, rounded up. Minimum +2.",
+		"desc": "Frostbreath +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_frostbreath_legendary",
 		"id": "5187",
 		"name": "Rune of Greater Frostbreath",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "frost",
 				"min_bonus": 2,
@@ -870,13 +936,16 @@ var RUNES = {
 	},
 	"5192": {
 		"category": "3",
-		"desc": "Valor +50%, rounded up. Minimum +3.",
+		"desc": "Valor +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_valor_legendary",
 		"id": "5192",
 		"name": "Rune of Greater Valor",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "valor",
 				"min_bonus": 3,
@@ -903,13 +972,16 @@ var RUNES = {
 	},
 	"5202": {
 		"category": "3",
-		"desc": "Nullify +50%, rounded up. Minimum +2.",
+		"desc": "Nullify +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_nullify_legendary",
 		"id": "5202",
 		"name": "Rune of Greater Nullification",
 		"rarity": 4,
 		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "nullify",
 				"min_bonus": 2,
@@ -936,13 +1008,16 @@ var RUNES = {
 	},
 	"5212": {
 		"category": "3",
-		"desc": "Corrosive +50%, rounded up. Minimum +2.",
+		"desc": "Corrosive +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_corrosive_legendary",
 		"id": "5212",
 		"name": "Rune of Greater Corrosion",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "corrosive",
 				"min_bonus": 2,
@@ -969,13 +1044,16 @@ var RUNES = {
 	},
 	"5222": {
 		"category": "3",
-		"desc": "Ward +30%, rounded up. Minimum +3.",
+		"desc": "Ward +30%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_ward_legendary",
 		"id": "5222",
 		"name": "Rune of Greater Warding",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "absorb",
 				"min_bonus": 3,
@@ -1067,13 +1145,16 @@ var RUNES = {
 	},
 	"5263": {
 		"category": "3",
-		"desc": "Enrage All +50%, rounded up. Minimum +2.",
+		"desc": "Enrage All +50%, rounded up. Minimum +2. Health +15%, rounded up.",
 		"icon": "rune_enrage_all_legendary",
 		"id": "5263",
 		"name": "Rune of Greater Mass Enrage",
 		"rarity": 4,
 		"set": "1",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"all": "1",
 				"id": "enrage",
@@ -1101,13 +1182,16 @@ var RUNES = {
 	},
 	"5272": {
 		"category": "3",
-		"desc": "Daze +50%, rounded up. Minimum +3.",
+		"desc": "Daze +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_daze_legendary",
 		"id": "5272",
 		"name": "Rune of Greater Dazing",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
+			"health": {
+				"mult": 0.15
+			},
 			"skill": {
 				"id": "daze",
 				"min_bonus": 3,
@@ -1120,7 +1204,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Angels. May not be crafted.",
 		"faction_req": "6",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5501",
 		"name": "Angelic Rune of Health",
 		"rarity": 3,
@@ -1134,7 +1218,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Elementals. May not be crafted.",
 		"faction_req": "5",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5502",
 		"name": "Elemental Rune of Health",
 		"rarity": 3,
@@ -1148,7 +1232,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Undead. May not be crafted.",
 		"faction_req": "7",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5503",
 		"name": "Undead Rune of Health",
 		"rarity": 3,
@@ -1162,7 +1246,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Goblins. May not be crafted.",
 		"faction_req": "11",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5504",
 		"name": "Goblin Rune of Health",
 		"rarity": 3,
@@ -1176,7 +1260,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Dragons. May not be crafted.",
 		"faction_req": "9",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5505",
 		"name": "Dragon Rune of Health",
 		"rarity": 3,
@@ -1190,7 +1274,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Seafolk. May not be crafted.",
 		"faction_req": "12",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5506",
 		"name": "Seafolk Rune of Health",
 		"rarity": 3,
@@ -1204,7 +1288,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Avian. May not be crafted.",
 		"faction_req": "10",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5507",
 		"name": "Avian Rune of Health",
 		"rarity": 3,
@@ -1218,7 +1302,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Frogs. May not be crafted.",
 		"faction_req": "4",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5508",
 		"name": "Frog Rune of Health",
 		"rarity": 3,
@@ -1232,7 +1316,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Mecha. May not be crafted.",
 		"faction_req": "16",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5509",
 		"name": "Mecha Rune of Health",
 		"rarity": 3,
@@ -1246,7 +1330,7 @@ var RUNES = {
 		"category": "3",
 		"desc": "Health +10. May only be embedded on Insect. May not be crafted.",
 		"faction_req": "13",
-		"icon": "rune_health_epic",
+		"icon": "rune_rejuvenate_legendary",
 		"id": "5510",
 		"name": "Insect Rune of Health",
 		"rarity": 3,

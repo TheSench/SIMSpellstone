@@ -9342,4 +9342,57 @@
       <skill id="confuse" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8241</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Seraphim Reborn</name>
+    <picture>Angel_Zealous_Brawler_B</picture>
+    <asset_bundle>232</asset_bundle>
+    <attack>0</attack>
+    <health>25</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="backlash" x="4" />
+    <skill id="counter" x="10" />
+    <skill id="counterburn" x="6" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="10" />
+      <skill id="counterburn" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="11" />
+      <skill id="counterburn" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="backlash" x="5" />
+      <skill id="counter" x="12" />
+      <skill id="counterburn" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="backlash" x="6" />
+      <skill id="counter" x="12" />
+      <skill id="counterburn" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="backlash" x="7" />
+      <skill id="counter" x="13" />
+      <skill id="counterburn" x="10" />
+    </upgrade>
+  </unit>
 </root>
