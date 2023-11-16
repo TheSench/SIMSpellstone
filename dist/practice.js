@@ -2630,13 +2630,13 @@ var SIM_CONTROLLER = (function () {
 		dying.ondeath_triggered = true;
 	}
 
-	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis'];
+	var passiveSkills = ['backlash', 'counter', 'counterburn', 'counterpoison', 'armored', 'evade', 'stasis', 'regenerate'];
 	function requiresActiveTurn(skillName) {
 		return passiveSkills.indexOf(skillName) === -1;
 	}
 
 	function backlash(attacker, defender) {
-		if (attacker.isAssault() && defender.isAlive()) {
+		if (attacker.isAssault() && attacker.isAlive() && defender.isAlive() && !defender.silenced) {
 			var baseDamage = defender.backlash;
 			var enhancement = getEnhancement(defender, 'backlash', baseDamage);
 			doCounterDamage(attacker, defender, 'Backlash', baseDamage, enhancement, true);
@@ -2706,7 +2706,7 @@ var SIM_CONTROLLER = (function () {
 			if (!targets.length) return 0;
 
 			var scorch = skill.x;
-			var enhanced = getEnhancement(src_card, 'burn', scorch);
+			var enhanced = getEnhancement(src_card, skill.id, scorch);
 			scorch += enhanced;
 
 			for (var i = 0; i < targets.length; i++) {
@@ -3387,6 +3387,8 @@ var SIM_CONTROLLER = (function () {
 
 		heartseeker: function (src_card, skill) {
 
+			if (!src_card.hasAttack()) return 0;
+
 			var heartseeker = skill.x;
 
 			var target = getEnemyUnits(src_card, field)[src_card.key];
@@ -3624,8 +3626,10 @@ var SIM_CONTROLLER = (function () {
 		vampirism: function vampirism(sourceCard, enemyAssaults) {
 			var target = enemyAssaults[sourceCard.key];
 			
-			if (target && target.isAlive() && !sourceCard.silenced) {
+			if (target && target.isAlive() && !sourceCard.silenced && sourceCard.isAlive()) {
 				var vampirism = sourceCard.vampirism;
+				var enhanced = getEnhancement(sourceCard, 'vampirism', vampirism);
+				vampirism += enhanced;
 				var damageInfo = modifySkillDamage(target, vampirism, { enfeeble: true, venom: true });
 				var damageDealt = damageInfo.damage;
 
@@ -4037,8 +4041,8 @@ var SIM_CONTROLLER = (function () {
 			for (var key = 0, len = alliedUnits.length; key < len; key++) {
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isInFaction(faction) && target.isTargetRarity(rarity)
-					&& (all || !require_active_turn || (target.isActive() && target.isUnjammed()))
-					&& (all || target.hasSkill(s))) {
+					&& (!require_active_turn || (target.isActive() && target.isUnjammed()))
+					&& target.hasSkill(s)) {
 					targets.push(key);
 				}
 			}
@@ -4068,10 +4072,6 @@ var SIM_CONTROLLER = (function () {
 				}
 
 				affected++;
-
-				if (!target.hasSkill(s)) {
-					continue;
-				}
 
 				var enhancements = target.enhanced;
 				enhancements[s] = enhancements[s] || { x: 0, mult: 0 };
@@ -4296,7 +4296,7 @@ var SIM_CONTROLLER = (function () {
 				var target = alliedUnits[key];
 				if (target.isAlive() && target.isActive() && !target.isTower()) {
 					var adjustedAttack = target.adjustedAttack();
-					if (!weakest || adjustedAttack < weakest) {
+					if (weakest == null || adjustedAttack < weakest) {
 						targets = [target];
 						weakest = adjustedAttack;
 					} else if (adjustedAttack === weakest) {
@@ -4860,6 +4860,12 @@ var SIM_CONTROLLER = (function () {
 			if (battleground.ally_only && p !== 'player') continue;
 			battleground.owner = p;
 			doEarlyActivationSkills(battleground);
+		}
+		for (var i = 0; i < battlegrounds.onTurn.length; i++) {
+			var battleground = battlegrounds.onTurn[i];
+			if (battleground.enemy_only && p !== 'cpu') continue;
+			if (battleground.ally_only && p !== 'player') continue;
+			battleground.owner = p;
 			activation_skills(battleground);
 		}
 
@@ -5508,7 +5514,7 @@ var SIM_CONTROLLER = (function () {
 				var counterBase = 0 + target.counter;
 				var counterEnhancement = getEnhancement(target, 'counter', counterBase);
 
-				doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement, false);
+				doCounterDamage(current_assault, target, 'Vengeance', counterBase, counterEnhancement, false);
 			}
 
 			// Counterburn
