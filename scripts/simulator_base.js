@@ -1903,15 +1903,18 @@ var SIMULATOR = {};
 
 			// Get base card
 			var unearthedUnit = makeUnitInfo((skill.card || dying.id), (skill.level || skill.x));
-			var unearthedCard = get_card_apply_battlegrounds(unearthedUnit, null, true);
-			unearthedCard.isToken = true;
 
+			var token = { newStats: false };
 			var mult = skill.mult;
 			if (mult) {
 				// Unearthed card has scaled stats based on original card
-				unearthedCard.attack = Math.ceil(dying.attack * mult);
-				unearthedCard.health = Math.ceil(dying.health * mult);
+				token.newStats = {};
+				token.newStats.attack = Math.ceil(dying.attack * mult);
+				token.newStats.health = Math.ceil(dying.health * mult);
 			}
+
+			var unearthedCard = get_card_apply_battlegrounds(unearthedUnit, null, token);
+			unearthedCard.isToken = true;
 
 			play_card(unearthedCard, dying.owner, true);
 

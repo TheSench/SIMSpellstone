@@ -275,6 +275,7 @@ var makeUnit = (function() {
                         if (addedSkill.mult) {
                             if (addedSkill.base) {
                                 var base = getStatBeforeRunes(new_card, addedSkill.base);
+                                base = isToken ? new_card[addedSkill.base] : base;
                                 new_skill.x += Math.ceil(addedSkill.mult * base);
                             } else {
                                 new_skill.mult = addedSkill.mult;
@@ -616,6 +617,11 @@ var makeUnit = (function() {
                 if (upgrade.skill.length > 0) original_skills = upgrade.skill;
                 if (key == card.level) break;
             }
+        }
+
+        if (isToken && isToken.newStats) {
+            card.health = isToken.newStats.health;
+            card.attack = isToken.newStats.attack;
         }
 
         card.base_health = card.health;
