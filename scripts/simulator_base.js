@@ -310,7 +310,14 @@ var SIMULATOR = {};
 		} else if (unit.silenced) {
 			return 0;
 		} else {
-			return (unit.stasis || 0);
+			var shroud = 0;
+			if (unit.stasis) {
+				shroud += unit.stasis + getEnhancement(unit, 'stasis', unit.stasis);
+			}
+			if (unit.fury) {
+				shroud += Math.ceil(unit.fury / 2);
+			}
+			return shroud;
 		}
 	}
 
@@ -2670,7 +2677,6 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
-			shrouded += getEnhancement(target, 'stasis', shrouded);
 			damage -= shrouded;
 		}
 
@@ -2985,7 +2991,6 @@ var SIMULATOR = {};
 			}
 		}
 		if (shrouded) {
-			shrouded += getEnhancement(target, 'stasis', shrouded);
 			if (simConfig.debug) {
 				echo += ' Shroud: -' + shrouded;
 			}
@@ -3209,7 +3214,7 @@ var SIMULATOR = {};
 			// Fury
 			// - Target must have received some amount of damage
 			if (target.fury) {
-				var fury = adjustAttackIncrease(target, target.fury);
+				var fury = adjustAttackIncrease(target, Math.ceil(target.fury / 2));
 
 				if (target.isAlive()) {
 					target.attack_berserk += fury;
@@ -3218,7 +3223,7 @@ var SIMULATOR = {};
 					}
 				}
 
-				doCounterDamage(current_assault, target, 'Fury', fury, 0, false);
+				doCounterDamage(current_assault, target, 'Fury', target.fury, 0, false);
 			}
 		}
 		
