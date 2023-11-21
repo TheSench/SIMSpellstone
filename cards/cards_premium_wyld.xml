@@ -28626,7 +28626,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>27</attack>
+      <health>27</health>
       <skill id="rally" x="5" />
       <skill id="rally" x="3" all="1" />
       <skill id="jam" c="3" />
