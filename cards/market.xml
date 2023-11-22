@@ -3319,18 +3319,18 @@
     <category>4</category>
     <vip_level_req>9</vip_level_req>
     <desc>Gives a single copy of the displayed rune. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Rare or Epic rune that can be purchased with shards and cycles every 24 hours! Requires VIP Level 9.</preview_desc>
+    <preview_desc>Unlocks a random Legendary rune that can be purchased with shards and cycles every 24 hours! Requires VIP Level 9.</preview_desc>
     <priority>40</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
-    <rarity2scaling purchase1="100" purchase2="200" scalar="200" />
-    <rarity3scaling purchase1="300" purchase2="500" purchase3="800" scalar="400" />
-    <rarity4scaling purchase1="1000" purchase2="2000" purchase3="4000" scalar="4000" />
+    <rarity2scaling purchase1="100" scalar="20" />
+    <rarity3scaling purchase1="200" scalar="40" />
+    <rarity4scaling purchase1="400" scalar="100" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <items>
-      <item min_rarity="2" max_rarity="3" type="3" set="1" />
+      <item min_rarity="4" max_rarity="4" type="3" set="1,3" />
     </items>
   </store_item>
   <store_item>
@@ -3358,19 +3358,20 @@
     <category>4</category>
     <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFReward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
+    <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFReward card that can be purchased with Arena Trophies and cycles every 24 hours!</preview_desc>
     <priority>10</priority>
-    <icon>icon_blue_crystal</icon>
+    <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
     <cost_type>3</cost_type>
     <!-- Items -->
-    <cost item="5" />
-    <rarity3scaling purchase1="600" purchase2="750" purchase3="900" purchase4="1200" scalar="300" />
+    <cost item="20" />
+    <!-- Arena Trophies -->
+    <rarity4scaling purchase1="4" purchase2="5" purchase3="6" purchase4="7" scalar="44" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="2000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="2000" />
     </cards>
   </store_item>
   <!-- Arena Packs -->
