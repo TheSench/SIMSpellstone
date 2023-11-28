@@ -2582,7 +2582,7 @@ var BATTLEGROUNDS = {
 		"name": "Eye of the Maelstrom"
 	},
 	"171": {
-		"desc": "All Angels gain Vampirism equal to 5% of base Health plus 2. Moreover, when an Angel dies it creates a Summoned Demon token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion values based on its rarity.",
+		"desc": "All Angels gain Vampirism equal to 5% base Health + 2. When an Angel dies it creates a token creature with 75% Attack and Health of the Angel that died. The token has Invisibility and Legion based on its rarity.",
 		"effect": [
 			{
 				"card": 612,
