@@ -3341,6 +3341,166 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <achievement>
+    <id>1391</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XIX</name>
+    <desc>Successfully craft 320 Epic Runes.</desc>
+    <achievement_req>1368</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="320" />
+    </req>
+    <reward>
+      <wb>50</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1392</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XX</name>
+    <desc>Successfully craft 340 Epic Runes.</desc>
+    <achievement_req>1391</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="340" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1393</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXI</name>
+    <desc>Successfully craft 360 Epic Runes.</desc>
+    <achievement_req>1392</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="360" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1394</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXII</name>
+    <desc>Successfully craft 380 Epic Runes.</desc>
+    <achievement_req>1393</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="380" />
+    </req>
+    <reward>
+      <wb>50</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1395</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXIII</name>
+    <desc>Successfully craft 400 Epic Runes.</desc>
+    <achievement_req>1394</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="400" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1396</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXIV</name>
+    <desc>Successfully craft 420 Epic Runes.</desc>
+    <achievement_req>1395</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="420" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1397</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXV</name>
+    <desc>Successfully craft 440 Epic Runes.</desc>
+    <achievement_req>1396</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="440" />
+    </req>
+    <reward>
+      <wb>50</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1398</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXVI</name>
+    <desc>Successfully craft 460 Epic Runes.</desc>
+    <achievement_req>1397</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="460" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1399</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXVII</name>
+    <desc>Successfully craft 480 Epic Runes.</desc>
+    <achievement_req>1398</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="480" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1400</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes XXVIII</name>
+    <desc>Successfully craft 500 Epic Runes.</desc>
+    <achievement_req>1399</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="500" />
+    </req>
+    <reward>
+      <wb>50</wb>
+    </reward>
+  </achievement>
   <!-- LEGENDARY RUNES UPDATE ID 1369 -->
   <!-- RARE RUNES UPDATE BEGIN -->
   <achievement>
@@ -3481,6 +3641,147 @@
     </req>
     <reward>
       <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <!-- RARE RUNES UPDATE BEGIN -->
+  <achievement>
+    <id>1381</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XIX</name>
+    <desc>Successfully craft 320 Rare Runes.</desc>
+    <achievement_req>1358</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="320" />
+    </req>
+    <reward>
+      <wb>20</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1382</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XX</name>
+    <desc>Successfully craft 340 Rare Runes.</desc>
+    <achievement_req>1381</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="340" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1383</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXI</name>
+    <desc>Successfully craft 360 Rare Runes.</desc>
+    <achievement_req>1382</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="360" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1384</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXII</name>
+    <desc>Successfully craft 380 Rare Runes.</desc>
+    <achievement_req>1383</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="380" />
+    </req>
+    <reward>
+      <wb>20</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1385</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXIII</name>
+    <desc>Successfully craft 400 Rare Runes.</desc>
+    <achievement_req>1384</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="400" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1386</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXIV</name>
+    <desc>Successfully craft 420 Rare Runes.</desc>
+    <achievement_req>1385</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="420" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1387</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXV</name>
+    <desc>Successfully craft 440 Rare Runes.</desc>
+    <achievement_req>1386</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="440" />
+    </req>
+    <reward>
+      <wb>20</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1388</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXVI</name>
+    <desc>Successfully craft 460 Rare Runes.</desc>
+    <achievement_req>1387</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="460" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1389</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXVII</name>
+    <desc>Successfully craft 480 Rare Runes.</desc>
+    <achievement_req>1388</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="480" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1390</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes XXVIII</name>
+    <desc>Successfully craft 500 Rare Runes.</desc>
+    <achievement_req>1389</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="500" />
+    </req>
+    <reward>
+      <wb>20</wb>
     </reward>
   </achievement>
   <!-- EPIC RUNES UPDATE BEGIN -->
@@ -3832,6 +4133,151 @@
     <achievement_req>1379</achievement_req>
     <req>
       <craft_rune rarity="4" num="320" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- BEGIN LEGENDARY RUNE UPDATE -->
+  <achievement>
+    <id>1401</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXI</name>
+    <desc>Successfully craft 340 Legendary Runes.</desc>
+    <achievement_req>1380</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="340" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1402</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXII</name>
+    <desc>Successfully craft 360 Legendary Runes.</desc>
+    <achievement_req>1401</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="360" />
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1403</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXIII</name>
+    <desc>Successfully craft 380 Legendary Runes.</desc>
+    <achievement_req>1402</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="380" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1404</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXIV</name>
+    <desc>Successfully craft 400 Legendary Runes.</desc>
+    <achievement_req>1403</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="400" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1405</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXV</name>
+    <desc>Successfully craft 420 Legendary Runes.</desc>
+    <achievement_req>1404</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="420" />
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1406</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXVI</name>
+    <desc>Successfully craft 440 Legendary Runes.</desc>
+    <achievement_req>1405</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="440" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1407</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXVII</name>
+    <desc>Successfully craft 460 Legendary Runes.</desc>
+    <achievement_req>1406</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="460" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1408</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXVIII</name>
+    <desc>Successfully craft 480 Legendary Runes.</desc>
+    <achievement_req>1407</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="480" />
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1409</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXIX</name>
+    <desc>Successfully craft 500 Legendary Runes.</desc>
+    <achievement_req>1408</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="500" />
     </req>
     <reward>
       <pack>13</pack>
