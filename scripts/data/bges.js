@@ -2641,6 +2641,27 @@ var BATTLEGROUNDS = {
 		"id": "171",
 		"name": "Angels and Demons"
 	},
+	"172": {
+		"desc": "All Frogs gain Barrage equal to their base Attack, and Poisonbolt equal to 10% of their base Health. BGE effect is subject to change.",
+		"effect": [
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 1,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "poisonstrike",
+				"mult": 0.1,
+				"y": "4"
+			}
+		],
+		"id": "172",
+		"name": "Frog Toxic Barrage"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -6688,24 +6709,34 @@ var BATTLEGROUNDS = {
 		"desc": "All non-Epic cards have their attributes greatly reduced.",
 		"effect": [
 			{
-				"base_mult": -0.99,
-				"effect_type": "scale_attributes",
-				"rarity": 1
-			},
-			{
-				"base_mult": -0.99,
-				"effect_type": "scale_attributes",
-				"rarity": 2
-			},
-			{
-				"base_mult": -0.99,
-				"effect_type": "scale_attributes",
-				"rarity": 4
-			},
-			{
-				"base_mult": -0.99,
-				"effect_type": "scale_attributes",
-				"rarity": 5
+				"attacker": 1,
+				"effect_type": "on_play",
+				"skill": [
+					{
+						"base": "health",
+						"id": "ambush",
+						"mult": "0.99",
+						"rarity": "1"
+					},
+					{
+						"base": "health",
+						"id": "ambush",
+						"mult": "0.99",
+						"rarity": "2"
+					},
+					{
+						"base": "health",
+						"id": "ambush",
+						"mult": "0.99",
+						"rarity": "4"
+					},
+					{
+						"base": "health",
+						"id": "ambush",
+						"mult": "0.99",
+						"rarity": "5"
+					}
+				]
 			}
 		],
 		"hidden": true,

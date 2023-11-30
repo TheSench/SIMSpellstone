@@ -1650,6 +1650,16 @@
       <!-- </skill> -->
     </effect>
   </battleground>
+  <battleground>
+    <id>172</id>
+    <name>Frog Toxic Barrage</name>
+    <desc>All Frogs gain Barrage equal to their base Attack, and Poisonbolt equal to 10% of their base Health. BGE effect is subject to change.</desc>
+    <icon>filter_frog_64</icon>
+    <effect>
+      <add_skill id="barrage" mult="1" base="attack" y="4" />
+      <add_skill id="poisonstrike" mult="0.1" base="health" y="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -4671,7 +4681,7 @@
     <name>Lightning Fast</name>
     <desc>The Lightning Boss has one Delay removed from the first card they play in this Lightning Boss Node.</desc>
     <icon>sparkler_BGE</icon>
-    <icon_bundle>197</icon_bundle>
+    <icon_bundle>110</icon_bundle>
     <effect>
       <on_play first_play="1" defender="1">
         <add_skill id="haste" x="1" />
@@ -4685,10 +4695,12 @@
     <desc>All non-Epic cards have their attributes greatly reduced.</desc>
     <icon>Epic_Card_Icon</icon>
     <effect>
-      <scale_attributes base_mult="-0.99" rarity="1" />
-      <scale_attributes base_mult="-0.99" rarity="2" />
-      <scale_attributes base_mult="-0.99" rarity="4" />
-      <scale_attributes base_mult="-0.99" rarity="5" />
+      <on_play attacker="1">
+        <skill id="ambush" base="health" mult="0.99" rarity="1" />
+        <skill id="ambush" base="health" mult="0.99" rarity="2" />
+        <skill id="ambush" base="health" mult="0.99" rarity="4" />
+        <skill id="ambush" base="health" mult="0.99" rarity="5" />
+      </on_play>
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->
