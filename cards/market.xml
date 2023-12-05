@@ -82,16 +82,16 @@
   </store_item>
   <store_item>
     <id>4</id>
-    <name>Reward Epic Pack</name>
+    <name>Reward Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFEpic ^cFFFFcard from Reward Set.</desc>
+    <desc>Gives one random card from Reward Set.</desc>
     <priority>15</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="2000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="2000" />
     </cards>
   </store_item>
   <store_item>
@@ -99,7 +99,6 @@
     <name>Dust Pack x10</name>
     <category>1</category>
     <dust_pack>1</dust_pack>
-    <vip_level_req>5</vip_level_req>
     <desc>Gives ten random cards from Standard Set and automatically vaporizes all Common and Rare cards!</desc>
     <priority>-1</priority>
     <asset_prefab>dust_pack_crystal</asset_prefab>
@@ -118,7 +117,6 @@
     <name>Dust Pack x50</name>
     <category>1</category>
     <dust_pack>1</dust_pack>
-    <vip_level_req>9</vip_level_req>
     <desc>Gives fifty random cards from Standard Set and automatically vaporizes all Common and Rare cards!</desc>
     <priority>-2</priority>
     <asset_prefab>dust_pack_crystal</asset_prefab>
@@ -465,10 +463,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -618,10 +616,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -745,7 +743,7 @@
     <name>Double Legendary Reward Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two copies of one ^cE7FFLegendary ^cFFFFcard from Reward set.</desc>
+    <desc>Gives two copies of one ^cE7FFLegendary ^cFFFFcard from Reward Set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_crystal</asset_prefab>
     <bundle>30</bundle>
@@ -863,6 +861,19 @@
     <asset_prefab>dungeon_refill_box</asset_prefab>
     <bundle>31</bundle>
     <event_type_req>8</event_type_req>
+  </store_item>
+  <store_item>
+    <id>80</id>
+    <name>Random Tribe Health Rune</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Creates one random Tribe Rune of Health.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <asset_prefab>rune_empty_legendary</asset_prefab>
+    <icon>rune_rejuvenate_legendary</icon>
+    <bundle>34</bundle>
+    <random_rune number="1" min_rarity="4" max_rarity="4" set="2" />
   </store_item>
   <store_item>
     <id>81</id>
@@ -1235,20 +1246,20 @@
       <item id="2524" quantity="150" weight="0.1" />
     </item_pack>
   </store_item>
-  <store_item>
-    <id>97</id>
-    <name>Universal Solvent</name>
-    <category>2</category>
-    <desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
-    <show_desc>1</show_desc>
-    <priority>51</priority>
-    <sc_cost>10000</sc_cost>
-    <asset_prefab>rune_bag</asset_prefab>
-    <icon>rubedo_vapor</icon>
-    <bundle>279</bundle>
-    <item_req>8030</item_req>
-    <item id="4002" quantity="1" />
-  </store_item>
+  <!--	<store_item>
+		<id>97</id>
+		<name>Universal Solvent</name>
+		<category>2</category>
+		<desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
+		<show_desc>1</show_desc>
+		<priority>51</priority>
+		<sc_cost>10000</sc_cost>
+		<asset_prefab>rune_bag</asset_prefab>
+		<icon>rubedo_vapor</icon>
+		<bundle>279</bundle>
+		<item_req>8030</item_req>
+		<item id="4002" quantity="1"/>
+	</store_item>-->
   <store_item>
     <id>98</id>
     <name>Random Reward Champion Stones</name>
@@ -1341,6 +1352,8 @@
       <item id="104074" quantity="500" weight="1" />
       <item id="104075" quantity="500" weight="1" />
       <item id="104076" quantity="500" weight="1" />
+      <item id="104077" quantity="500" weight="1" />
+      <item id="104078" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1582,10 +1595,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1599,10 +1612,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1616,16 +1629,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1687,10 +1700,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1704,16 +1717,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1760,7 +1773,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1790,7 +1803,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1820,10 +1833,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1928,7 +1941,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1960,10 +1973,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1977,7 +1990,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1991,7 +2004,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2053,7 +2066,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2067,7 +2080,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2081,10 +2094,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2129,7 +2142,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000,4000" fusion_level="1" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
@@ -2162,8 +2175,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2177,10 +2190,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2194,7 +2207,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2208,7 +2221,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2251,7 +2264,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2265,8 +2278,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2280,7 +2293,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2294,7 +2307,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2308,8 +2321,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2323,8 +2336,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2338,7 +2351,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2352,7 +2365,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2366,7 +2379,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2380,7 +2393,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" fusion_level="1" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
@@ -2394,8 +2407,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2409,7 +2422,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2423,7 +2436,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2437,8 +2450,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2452,16 +2465,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2475,16 +2488,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2498,7 +2511,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2512,8 +2525,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2598,7 +2611,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2612,16 +2625,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2635,7 +2648,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2649,7 +2662,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2663,8 +2676,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2678,10 +2691,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2695,7 +2708,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2709,7 +2722,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2723,7 +2736,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2737,16 +2750,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2760,7 +2773,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2774,16 +2787,16 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2797,7 +2810,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2811,7 +2824,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" fusion_level="1" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
@@ -2840,7 +2853,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2854,7 +2867,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2897,7 +2910,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2911,7 +2924,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000,4000" fusion_level="1" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
@@ -2925,7 +2938,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2939,7 +2952,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2953,7 +2966,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2967,7 +2980,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2982,7 +2995,7 @@
     <hc_cost>1000</hc_cost>
     <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -2996,7 +3009,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3011,7 +3024,7 @@
     <hc_cost>1000</hc_cost>
     <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3026,7 +3039,7 @@
     <hc_cost>1000</hc_cost>
     <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3040,7 +3053,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3054,7 +3067,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000,4000" fusion_level="1" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
@@ -3068,7 +3081,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3082,8 +3095,8 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3097,7 +3110,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3111,7 +3124,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3125,7 +3138,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3139,7 +3152,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3153,7 +3166,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3167,7 +3180,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -3181,7 +3194,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3195,7 +3208,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000,4000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" fusion_level="2" />
     </cards>
   </store_item>
   <!-- ======================================= -->
@@ -3258,9 +3271,9 @@
     <id>4002</id>
     <name>Cycling Item</name>
     <category>4</category>
-    <vip_level_req>1</vip_level_req>
+    <vip_level_req>0</vip_level_req>
     <desc>Gives the displayed item. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Item that can be purchased with gold and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
+    <preview_desc>Unlocks a random Item that can be purchased with gold and cycles every 24 hours!</preview_desc>
     <priority>20</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
@@ -3270,24 +3283,25 @@
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <costed_items>
-      <item id="11" number="1" purchase1="800" purchase2="1000" purchase3="1400" purchase4="2000" purchase5="3000" scalar="1500" />
+      <item id="11" number="1" purchase1="80" purchase2="100" purchase3="140" purchase4="200" purchase5="300" scalar="150" />
       <!-- Rare Pack -->
-      <!-- <item id='12' number='1' purchase1='8000' purchase2='16000' purchase3='32000' purchase4='64000' purchase5='96000' scalar='48000' />
+      <!-- <item id='12' number='1' purchase1='800' purchase2='1600' purchase3='3200' purchase4='6400' purchase5='9600' scalar='4800' />
 			<item id='1002' number='1' purchase1='100' purchase2='200' purchase3='400' purchase4='800' purchase5='1200' scalar='600' />
 			<item id='1003' number='1' purchase1='200' purchase2='400' purchase3='800' purchase4='1600' purchase5='2400' scalar='1200' />
 			<item id='1004' number='1' purchase1='400' purchase2='800' purchase3='1600' purchase4='2400' purchase5='3600' scalar='1800' /> -->
-      <item id="4001" number="1" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
+      <item id="4001" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Inscription Powder -->
-      <item id="2001" number="1" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
+      <item id="2001" number="15" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
       <!-- Arcane Fragment -->
-      <item id="2501" number="10" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
+      <item id="2501" number="100" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
       <!-- Blue Fire Soul -->
       <!-- <item id='1021' number='1' purchase1='300' purchase2='600' purchase3='1200' purchase4='1900' purchase5='2900' scalar='1500' /> -->
-      <item id="4011" number="1" purchase1="4000" purchase2="6000" purchase3="10000" purchase4="14000" purchase5="18000" scalar="4000" />
+      <!-- Bounty Refill +1 -->
+      <item id="4011" number="1" purchase1="400" purchase2="600" purchase3="1000" purchase4="1400" purchase5="1800" scalar="400" />
       <!-- Rare Runeshell -->
-      <item id="2515" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+      <item id="2515" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Embersoul -->
-      <item id="2522" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+      <item id="2522" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Brinesoul -->
     </costed_items>
   </store_item>
@@ -3295,9 +3309,9 @@
     <id>4003</id>
     <name>Cycling Card</name>
     <category>4</category>
-    <vip_level_req>5</vip_level_req>
+    <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
-    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFor ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours! Requires VIP Level 5.</preview_desc>
+    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFor ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
     <priority>30</priority>
     <icon>icon_blue_crystal</icon>
     <scale_prices>1</scale_prices>
@@ -3317,9 +3331,9 @@
     <id>4004</id>
     <name>Cycling Rune</name>
     <category>4</category>
-    <vip_level_req>9</vip_level_req>
+    <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed rune. May be purchased multiple times, but the price increases each purchase!</desc>
-    <preview_desc>Unlocks a random Legendary rune that can be purchased with shards and cycles every 24 hours! Requires VIP Level 9.</preview_desc>
+    <preview_desc>Unlocks a random Legendary rune that can be purchased with shards and cycles every 24 hours!</preview_desc>
     <priority>40</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
@@ -3337,9 +3351,9 @@
     <id>4005</id>
     <name>Cycling Card</name>
     <category>4</category>
-    <vip_level_req>13</vip_level_req>
+    <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
-    <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours! Requires VIP Level 13.</preview_desc>
+    <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
     <priority>50</priority>
     <icon>icon_blue_crystal</icon>
     <scale_prices>1</scale_prices>
@@ -3357,7 +3371,7 @@
     <name>Cycling Reward Card</name>
     <category>4</category>
     <vip_level_req>0</vip_level_req>
-    <desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <desc>Gives a single copy of the displayed Reward card. May be purchased up to 4 times, but the price increases each purchase!</desc>
     <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFReward card that can be purchased with Arena Trophies and cycles every 24 hours!</preview_desc>
     <priority>10</priority>
     <icon>icon_purple_crystal</icon>
@@ -9976,7 +9990,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -9987,7 +10001,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMag &quot;The Pebble&quot; Ma^cFFFF! May be purchased four times.</desc>
+    <desc>Gives one copy of a ^cE7FFMag "The Pebble" Ma^cFFFF! May be purchased four times.</desc>
     <background_prefab>legendary_card_banner</background_prefab>
     <bundle>35</bundle>
     <icon>icon_blue_crystal</icon>
@@ -10066,7 +10080,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -10156,7 +10170,7 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000,4000" number="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" number="2" />
     </cards>
   </store_item>
   <store_item>
@@ -10234,5 +10248,133 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="7039" display_card_id="7039" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5346</id>
+    <name>Double Legendary Frog Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary Frog card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5347</id>
+    <name>Gold Crown Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFGold Crown Mayor^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_040_banner_goldencrownmayorfrog</background_prefab>
+    <bundle>134</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7204" display_card_id="7204" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5348</id>
+    <name>Ribbitaksu Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRibbitaksu^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6103" display_card_id="6103" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5349</id>
+    <name>Fuming Beast Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFFuming Beast^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6052" display_card_id="6052" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5350</id>
+    <name>Runecrafter Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRunecrafter Initiate^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5297" display_card_id="5297" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5351</id>
+    <name>Leafsinger Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFLeafsinger^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_040_champion_treemasterfrog</asset_prefab>
+    <background_prefab>event_040_banner_treemasterfrog</background_prefab>
+    <bundle>134</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <item id="107602" quantity="125" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5352</id>
+    <name>Fritz Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFFritz, the Fiddler^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_93_frogfiddler_championpack</asset_prefab>
+    <background_prefab>event_93_frogfiddler_banner</background_prefab>
+    <bundle>253</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <item id="107626" quantity="125" />
+    </item_pack>
   </store_item>
 </root>

@@ -1153,6 +1153,14 @@
     <resource card_id="12032" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>12033</card_id>
+    <resource card_id="2033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22033</card_id>
+    <resource card_id="12033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>12034</card_id>
     <resource card_id="2034" number="2" />
   </fusion_recipe>
@@ -2890,6 +2898,14 @@
   <fusion_recipe>
     <card_id>22257</card_id>
     <resource card_id="12257" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12258</card_id>
+    <resource card_id="2258" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22258</card_id>
+    <resource card_id="12258" number="2" />
   </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->

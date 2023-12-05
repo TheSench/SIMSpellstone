@@ -1360,8 +1360,8 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>5</attack>
-    <health>35</health>
+    <attack>11</attack>
+    <health>46</health>
     <cost>4</cost>
     <rarity>3</rarity>
     <skill id="armored" x="1" />
@@ -1372,31 +1372,23 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>6</attack>
-      <skill id="armored" x="1" />
-      <skill id="heal" x="2" all="1" />
-      <skill id="legion" x="4" />
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>36</health>
-      <skill id="armored" x="1" />
-      <skill id="heal" x="2" all="1" />
-      <skill id="legion" x="4" />
+      <health>47</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
-      <health>37</health>
+      <health>48</health>
       <skill id="armored" x="2" />
       <skill id="heal" x="2" all="1" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
-      <health>38</health>
-      <skill id="armored" x="2" />
+      <health>49</health>
+      <skill id="armored" x="3" />
       <skill id="heal" x="2" all="1" />
       <skill id="legion" x="4" />
     </upgrade>
@@ -1410,47 +1402,43 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>7</attack>
-    <health>40</health>
+    <attack>13</attack>
+    <health>50</health>
     <cost>4</cost>
     <rarity>3</rarity>
-    <skill id="armored" x="2" />
-    <skill id="heal" x="2" all="1" />
+    <skill id="armored" x="3" />
+    <skill id="heal" x="3" all="1" />
     <skill id="legion" x="4" />
     <type>1</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>7</attack>
-      <health>41</health>
-      <skill id="armored" x="2" />
+      <health>51</health>
+      <skill id="armored" x="4" />
       <skill id="heal" x="3" all="1" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
-      <health>42</health>
-      <skill id="armored" x="2" />
+      <health>52</health>
+      <skill id="armored" x="4" />
       <skill id="heal" x="4" all="1" />
       <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>7</attack>
-      <health>43</health>
-      <skill id="armored" x="2" />
+      <health>52</health>
+      <skill id="armored" x="5" />
       <skill id="heal" x="4" all="1" />
       <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>8</attack>
-      <health>46</health>
-      <skill id="armored" x="3" />
+      <health>53</health>
+      <skill id="armored" x="5" />
       <skill id="heal" x="4" all="1" />
-      <skill id="legion" x="5" />
+      <skill id="legion" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -1462,47 +1450,42 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
-    <attack>9</attack>
-    <health>47</health>
+    <attack>14</attack>
+    <health>54</health>
     <cost>4</cost>
     <rarity>3</rarity>
-    <skill id="armored" x="3" />
+    <skill id="armored" x="6" />
     <skill id="heal" x="4" all="1" />
-    <skill id="legion" x="5" />
+    <skill id="legion" x="6" />
     <type>1</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>11</attack>
-      <health>48</health>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="7" />
       <skill id="heal" x="4" all="1" />
-      <skill id="legion" x="5" />
+      <skill id="legion" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>12</attack>
-      <health>49</health>
-      <skill id="armored" x="5" />
+      <health>55</health>
+      <skill id="armored" x="7" />
       <skill id="heal" x="4" all="1" />
-      <skill id="legion" x="5" />
+      <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>13</attack>
-      <health>50</health>
-      <skill id="armored" x="6" />
-      <skill id="heal" x="4" all="1" />
-      <skill id="legion" x="6" />
+      <skill id="armored" x="8" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>14</attack>
-      <health>51</health>
-      <skill id="armored" x="7" />
+      <attack>15</attack>
+      <health>56</health>
+      <skill id="armored" x="8" />
       <skill id="heal" x="5" all="1" />
-      <skill id="legion" x="8" />
+      <skill id="legion" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -1513,33 +1496,33 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>6</attack>
-    <health>11</health>
+    <attack>7</attack>
+    <health>20</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="legion" x="1" />
-    <skill id="weaken" all="1" x="1" />
+    <skill id="legion" x="3" />
+    <skill id="weaken" x="1" all="1" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>15</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <health>23</health>
       <skill id="evade" x="1" />
-      <skill id="legion" x="1" />
-      <skill id="weaken" all="1" x="1" />
+      <skill id="legion" x="3" />
+      <skill id="weaken" x="1" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -1551,33 +1534,33 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>7</attack>
-    <health>19</health>
+    <attack>8</attack>
+    <health>23</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
-    <skill id="legion" x="1" />
-    <skill id="weaken" all="1" x="1" />
+    <skill id="evade" x="2" />
+    <skill id="legion" x="3" />
+    <skill id="weaken" x="2" all="1" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>21</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>23</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="1" />
-      <skill id="legion" x="1" />
-      <skill id="weaken" all="1" x="2" />
+      <skill id="evade" x="2" />
+      <skill id="legion" x="4" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -1589,14 +1572,55 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
-    <attack>8</attack>
-    <health>24</health>
+    <attack>10</attack>
+    <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
-    <skill id="legion" x="2" />
-    <skill id="weaken" all="1" x="2" />
+    <skill id="evade" x="2" />
+    <skill id="legion" x="4" />
+    <skill id="weaken" x="2" all="1" />
     <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="5" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>29</health>
+      <skill id="evade" x="3" />
+      <skill id="legion" x="5" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2013</id>
+    <card_type>2</card_type>
+    <name>Stoneclad Toad</name>
+    <picture>Armored_Rock_Frog_A</picture>
+    <asset_bundle>28</asset_bundle>
+    <desc>"Sticks and stones may break my bones, but toads will never hurt me." - Adventurer's Mantra</desc>
+    <attack>10</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="pierce" x="10" />
+    <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
@@ -1606,58 +1630,22 @@
     <upgrade>
       <level>3</level>
       <health>27</health>
-      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="evade" x="1" />
-      <skill id="legion" x="3" />
-      <skill id="weaken" all="1" x="2" />
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="2" />
-      <skill id="legion" x="4" />
-      <skill id="weaken" all="1" x="3" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>2013</id>
-    <card_type>2</card_type>
-    <name>Stoneclad Toad</name>
-    <picture>Armored_Rock_Frog_A</picture>
-    <asset_bundle>28</asset_bundle>
-    <attack>9</attack>
-    <health>15</health>
-    <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="armored" x="1" />
-    <skill id="pierce" x="10" />
-    <type>3</type>
-    <sub_type>4</sub_type>
-    <set>2000</set>
-    <upgrade>
-      <level>2</level>
-      <health>17</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <attack>10</attack>
-      <health>18</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>20</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="1" />
       <skill id="pierce" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>11</attack>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="1" />
       <skill id="pierce" x="11" />
     </upgrade>
   </unit>
@@ -1669,43 +1657,43 @@
     <picture>Armored_Rock_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
     <attack>12</attack>
-    <health>21</health>
+    <health>28</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="2" />
-    <skill id="corrosive" x="1" />
+    <skill id="armored" x="4" />
+    <skill id="corrosive" x="2" />
     <skill id="pierce" x="12" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>23</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="5" />
       <skill id="corrosive" x="3" />
       <skill id="pierce" x="12" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>23</health>
-      <skill id="armored" x="2" />
+      <health>30</health>
+      <skill id="armored" x="5" />
       <skill id="corrosive" x="4" />
       <skill id="pierce" x="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="6" />
       <skill id="corrosive" x="5" />
       <skill id="pierce" x="12" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>13</attack>
-      <skill id="armored" x="3" />
-      <skill id="corrosive" x="6" />
+      <skill id="armored" x="6" />
+      <skill id="corrosive" x="5" />
       <skill id="pierce" x="13" />
     </upgrade>
   </unit>
@@ -1717,10 +1705,10 @@
     <picture>Armored_Rock_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
     <attack>14</attack>
-    <health>24</health>
+    <health>30</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="4" />
+    <skill id="armored" x="6" />
     <skill id="corrosive" x="6" />
     <skill id="pierce" x="14" />
     <type>3</type>
@@ -1728,30 +1716,30 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="7" />
       <skill id="corrosive" x="7" />
       <skill id="pierce" x="14" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>27</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>28</health>
-      <skill id="armored" x="5" />
+      <attack>15</attack>
+      <skill id="armored" x="7" />
       <skill id="corrosive" x="7" />
-      <skill id="pierce" x="14" />
+      <skill id="pierce" x="15" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>15</attack>
-      <health>29</health>
-      <skill id="armored" x="6" />
+      <health>32</health>
+      <skill id="armored" x="8" />
       <skill id="corrosive" x="8" />
       <skill id="pierce" x="15" />
     </upgrade>
@@ -1764,31 +1752,31 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
-    <attack>3</attack>
-    <health>7</health>
+    <attack>7</attack>
+    <health>22</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="fervor" y="4" x="1" />
+    <skill id="armored" x="2" />
+    <skill id="fervor" x="2" y="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>8</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="armored" x="2" />
-      <skill id="fervor" y="4" x="1" />
+      <skill id="armored" x="3" />
+      <skill id="fervor" x="3" y="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
-      <health>10</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>5</attack>
+      <attack>8</attack>
     </upgrade>
   </unit>
   <unit>
@@ -1800,36 +1788,36 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
-    <attack>5</attack>
-    <health>16</health>
+    <attack>9</attack>
+    <health>24</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
-    <skill id="armored" x="2" />
-    <skill id="fervor" y="4" x="1" />
+    <skill id="armored" x="3" />
+    <skill id="fervor" x="3" y="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="evade" x="1" />
-      <skill id="armored" x="3" />
-      <skill id="fervor" y="4" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="4" y="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>20</health>
-      <skill id="evade" x="1" />
-      <skill id="armored" x="3" />
-      <skill id="fervor" y="4" x="3" />
+      <health>26</health>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="4" y="4" />
     </upgrade>
   </unit>
   <unit>
@@ -1841,41 +1829,39 @@
     <asset_bundle>28</asset_bundle>
     <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
-    <attack>8</attack>
-    <health>24</health>
+    <attack>10</attack>
+    <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
-    <skill id="armored" x="4" />
-    <skill id="fervor" y="4" x="3" />
+    <skill id="evade" x="2" />
+    <skill id="armored" x="5" />
+    <skill id="fervor" x="5" y="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
-      <health>25</health>
+      <attack>11</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
-      <health>26</health>
-      <skill id="evade" x="2" />
+      <health>27</health>
+      <skill id="evade" x="3" />
       <skill id="armored" x="5" />
-      <skill id="fervor" y="4" x="4" />
+      <skill id="fervor" x="5" y="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>11</attack>
-      <health>27</health>
+      <attack>12</attack>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>12</attack>
       <health>28</health>
-      <skill id="evade" x="2" />
+      <skill id="evade" x="3" />
       <skill id="armored" x="6" />
-      <skill id="fervor" y="4" x="5" />
+      <skill id="fervor" x="6" y="4" />
     </upgrade>
   </unit>
   <unit>
@@ -1893,7 +1879,7 @@
     <skill id="poison" x="3" />
     <type>2</type>
     <sub_type>5</sub_type>
-    <set>4000</set>
+    <set>2000</set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -1938,7 +1924,7 @@
     <skill id="poison" x="4" />
     <type>2</type>
     <sub_type>5</sub_type>
-    <set>4000</set>
+    <set>2000</set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -1985,7 +1971,7 @@
     <skill id="poison" x="5" />
     <type>2</type>
     <sub_type>5</sub_type>
-    <set>4000</set>
+    <set>2000</set>
     <upgrade>
       <level>2</level>
       <health>23</health>
@@ -3933,44 +3919,130 @@
     <id>2033</id>
     <card_type>2</card_type>
     <name>Arcblaze Dragon</name>
-    <picture>Promo_Dragon_A</picture>
-    <asset_bundle>53</asset_bundle>
+    <picture>Pax_Dragon_A</picture>
+    <asset_bundle>56</asset_bundle>
     <hidden_until_time>1461344400</hidden_until_time>
     <!-- Fri, 22 Apr 2016 17:00:00 GMT -->
-    <attack>4</attack>
-    <health>13</health>
-    <cost>3</cost>
+    <attack>7</attack>
+    <health>22</health>
+    <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="strike" x="1" />
+    <skill id="strike" x="1" all="1" />
     <skill id="berserk" x="1" />
     <type>2</type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
-      <skill id="strike" x="1" />
+      <health>23</health>
+      <skill id="strike" x="1" all="1" />
       <skill id="burn" x="1" />
       <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
-      <attack>5</attack>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>17</health>
-      <skill id="strike" x="1" />
+      <health>24</health>
+      <skill id="strike" x="1" all="1" />
       <skill id="burn" x="2" />
       <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
-      <level>5</level>
-      <health>19</health>
+      <level>4</level>
       <skill id="strike" x="1" all="1" />
-      <skill id="burn" x="2" />
+      <skill id="burn" x="3" />
       <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="burn" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12033</id>
+    <card_type>2</card_type>
+    <name>Arcaneblaze Dragon</name>
+    <picture>Pax_Dragon_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="burn" x="5" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22033</id>
+    <card_type>2</card_type>
+    <name>Archonblaze Dragon</name>
+    <picture>Pax_Dragon_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <attack>10</attack>
+    <health>28</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="6" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>30</health>
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="7" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -3979,32 +4051,41 @@
     <name>Leap Frog Duo</name>
     <picture>Leap_Frog_Duo_A</picture>
     <asset_bundle>53</asset_bundle>
-    <attack>5</attack>
-    <health>20</health>
+    <desc>One frog is good. Two frogs are better.</desc>
+    <attack>8</attack>
+    <health>36</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="3" />
-    <skill id="rally" x="2" y="4" />
+    <skill id="rally" x="5" y="3" />
+    <skill id="rally" x="5" y="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <skill id="rally" x="6" y="3" />
+      <skill id="rally" x="6" y="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
+      <attack>9</attack>
+      <skill id="rally" x="6" y="3" />
+      <skill id="rally" x="6" y="4" />
+      <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>28</health>
+      <health>37</health>
+      <skill id="rally" x="6" y="3" />
+      <skill id="rally" x="6" y="4" />
+      <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
-      <skill id="rally" x="2" y="3" />
-      <skill id="rally" x="3" y="4" />
+      <health>38</health>
+      <skill id="rally" x="6" y="3" />
+      <skill id="rally" x="6" y="4" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -4014,38 +4095,37 @@
     <name>High Jump Duo</name>
     <picture>Leap_Frog_Duo_A</picture>
     <asset_bundle>53</asset_bundle>
-    <attack>7</attack>
-    <health>30</health>
+    <attack>9</attack>
+    <health>38</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" y="3" />
-    <skill id="rally" x="3" y="4" />
-    <skill id="berserk" x="1" />
+    <skill id="rally" x="7" y="3" />
+    <skill id="rally" x="7" y="4" />
+    <skill id="berserk" x="3" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>31</health>
-      <skill id="rally" x="3" y="3" />
-      <skill id="rally" x="3" y="4" />
-      <skill id="berserk" x="1" />
+      <health>38</health>
+      <skill id="rally" x="7" y="3" />
+      <skill id="rally" x="7" y="4" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>39</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>33</health>
-      <skill id="rally" x="4" y="3" />
-      <skill id="rally" x="4" y="4" />
-      <skill id="berserk" x="2" />
+      <skill id="rally" x="8" y="3" />
+      <skill id="rally" x="8" y="4" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
-      <attack>8</attack>
+      <attack>10</attack>
+      <health>40</health>
     </upgrade>
   </unit>
   <unit>
@@ -4055,37 +4135,37 @@
     <name>Bash Fist Duo</name>
     <picture>Leap_Frog_Duo_B</picture>
     <asset_bundle>53</asset_bundle>
-    <attack>9</attack>
-    <health>37</health>
+    <attack>10</attack>
+    <health>40</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="4" y="3" />
-    <skill id="rally" x="4" y="4" />
-    <skill id="berserk" x="3" />
+    <skill id="rally" x="9" y="3" />
+    <skill id="rally" x="9" y="4" />
+    <skill id="berserk" x="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>38</health>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="rally" x="5" y="3" />
-      <skill id="rally" x="5" y="4" />
+      <skill id="rally" x="10" y="3" />
+      <skill id="rally" x="10" y="4" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>39</health>
-      <attack>10</attack>
+      <attack>11</attack>
+      <health>42</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>11</attack>
-      <health>40</health>
-      <skill id="rally" x="6" y="3" />
-      <skill id="rally" x="6" y="4" />
+      <health>43</health>
+      <skill id="rally" x="10" y="3" />
+      <skill id="rally" x="10" y="4" />
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
@@ -8036,38 +8116,37 @@
     <picture>Frog_Surfer_A</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>4</attack>
-    <health>8</health>
+    <attack>6</attack>
+    <health>21</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="1" y="4" />
-    <skill id="pierce" x="1" />
-    <skill id="leech" x="1" />
+    <skill id="pierce" x="6" />
+    <skill id="leech" x="6" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>9</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>10</health>
+      <health>23</health>
       <skill id="rally" x="2" y="4" />
-      <skill id="pierce" x="1" />
-      <skill id="leech" x="1" />
+      <skill id="pierce" x="6" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>11</health>
-      <attack>5</attack>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>12</health>
+      <health>25</health>
       <skill id="rally" x="3" y="4" />
-      <skill id="pierce" x="1" />
-      <skill id="leech" x="1" />
+      <skill id="pierce" x="6" />
+      <skill id="leech" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -8078,37 +8157,39 @@
     <picture>Frog_Surfer_A</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>5</attack>
-    <health>16</health>
+    <attack>7</attack>
+    <health>25</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="4" y="4" />
-    <skill id="pierce" x="1" />
-    <skill id="leech" x="1" />
+    <skill id="rally" x="3" y="4" />
+    <skill id="pierce" x="7" />
+    <skill id="leech" x="7" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>26</health>
       <skill id="rally" x="4" y="4" />
-      <skill id="pierce" x="2" />
-      <skill id="leech" x="1" />
+      <skill id="pierce" x="7" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
-      <health>20</health>
+      <skill id="rally" x="5" y="4" />
+      <skill id="pierce" x="7" />
+      <skill id="leech" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="4" y="4" />
-      <skill id="pierce" x="5" />
-      <skill id="leech" x="4" />
+      <health>28</health>
+      <skill id="rally" x="6" y="4" />
+      <skill id="pierce" x="7" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -8119,42 +8200,43 @@
     <picture>Frog_Surfer_B</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>6</attack>
-    <health>23</health>
+    <attack>8</attack>
+    <health>28</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="5" y="4" />
-    <skill id="pierce" x="6" />
-    <skill id="leech" x="5" />
+    <skill id="rally" x="6" y="4" />
+    <skill id="pierce" x="8" />
+    <skill id="leech" x="8" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>24</health>
-      <skill id="rally" x="6" y="4" />
-      <skill id="pierce" x="7" />
-      <skill id="leech" x="6" />
+      <health>29</health>
+      <skill id="rally" x="7" y="4" />
+      <skill id="pierce" x="8" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>25</health>
-      <attack>7</attack>
+      <skill id="rally" x="8" y="4" />
+      <skill id="pierce" x="8" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
-      <skill id="rally" x="7" y="4" />
+      <health>30</health>
+      <skill id="rally" x="9" y="4" />
       <skill id="pierce" x="8" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>27</health>
       <attack>9</attack>
-      <skill id="rally" x="8" y="4" />
+      <health>30</health>
+      <skill id="rally" x="9" y="4" />
       <skill id="pierce" x="9" />
-      <skill id="leech" x="8" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -8165,7 +8247,7 @@
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
-    <health>7</health>
+    <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="burn" x="1" />
@@ -8176,22 +8258,22 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>8</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>9</health>
       <attack>5</attack>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>10</health>
+      <health>13</health>
       <skill id="burn" x="2" />
       <skill id="nullify" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>11</health>
+      <health>14</health>
       <skill id="corrosive" x="1" />
       <skill id="burn" x="2" />
       <skill id="nullify" x="1" />
@@ -8206,12 +8288,12 @@
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
     <attack>5</attack>
-    <health>12</health>
+    <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="corrosive" x="1" />
+    <skill id="corrosive" x="2" />
     <skill id="burn" x="2" />
-    <skill id="nullify" x="1" />
+    <skill id="nullify" x="2" />
     <type>2</type>
     <sub_type>4</sub_type>
     <sub_type>12</sub_type>
@@ -8219,24 +8301,24 @@
     <upgrade>
       <level>2</level>
       <attack>6</attack>
-      <health>13</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="corrosive" x="2" />
-      <skill id="burn" x="2" />
-      <skill id="nullify" x="1" />
+      <skill id="corrosive" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
       <attack>7</attack>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="corrosive" x="2" />
-      <skill id="burn" x="2" />
-      <skill id="nullify" x="2" />
+      <skill id="corrosive" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -8247,33 +8329,33 @@
     <picture>Frog_Riding_Lobster_B</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>7</attack>
-    <health>15</health>
+    <attack>8</attack>
+    <health>16</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="corrosive" x="3" />
-    <skill id="burn" x="3" />
-    <skill id="nullify" x="2" />
+    <skill id="corrosive" x="4" />
+    <skill id="burn" x="4" />
+    <skill id="nullify" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
     <sub_type>12</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>18</health>
       <skill id="corrosive" x="4" />
       <skill id="burn" x="4" />
-      <skill id="nullify" x="3" />
+      <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="corrosive" x="5" />
-      <skill id="burn" x="4" />
-      <skill id="nullify" x="3" />
+      <skill id="burn" x="5" />
+      <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -8291,12 +8373,12 @@
     <picture>Rainbringer_A</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>4</attack>
-    <health>14</health>
+    <attack>5</attack>
+    <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="valor" x="1" />
-    <skill id="heal" x="1" all="1" y="4" />
+    <skill id="heal" x="1" all="1" />
     <skill id="strike" x="1" />
     <type>1</type>
     <sub_type>4</sub_type>
@@ -8304,32 +8386,30 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
       <skill id="valor" x="2" />
-      <skill id="heal" x="1" all="1" y="4" />
+      <skill id="heal" x="1" all="1" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>17</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>18</health>
       <skill id="valor" x="3" />
-      <skill id="heal" x="1" all="1" y="4" />
-      <skill id="strike" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="strike" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>19</health>
+      <health>27</health>
       <skill id="valor" x="3" />
-      <skill id="heal" x="2" all="1" y="4" />
-      <skill id="strike" x="2" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="strike" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -8340,48 +8420,48 @@
     <picture>Rainbringer_A</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
-    <attack>4</attack>
-    <health>20</health>
+    <attack>5</attack>
+    <health>27</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="valor" x="3" />
-    <skill id="heal" x="2" all="1" y="4" />
-    <skill id="strike" x="2" />
+    <skill id="valor" x="4" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="strike" x="4" />
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>21</health>
-      <skill id="valor" x="3" />
-      <skill id="heal" x="2" all="1" y="4" />
-      <skill id="strike" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>22</health>
-      <skill id="valor" x="4" />
-      <skill id="heal" x="2" all="1" y="4" />
-      <skill id="strike" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>23</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>24</health>
       <skill id="valor" x="5" />
-      <skill id="heal" x="3" all="1" y="4" />
+      <skill id="heal" x="2" all="1" />
       <skill id="strike" x="5" />
     </upgrade>
     <upgrade>
-      <level>6</level>
-      <health>25</health>
+      <level>3</level>
       <skill id="valor" x="6" />
-      <skill id="heal" x="4" all="1" y="4" />
+      <skill id="heal" x="2" all="1" />
       <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="strike" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -8393,49 +8473,48 @@
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1481821200</hidden_until_time>
     <attack>5</attack>
-    <health>26</health>
+    <health>29</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="valor" x="7" />
-    <skill id="heal" x="4" all="1" y="4" />
-    <skill id="strike" x="7" />
+    <skill id="valor" x="8" />
+    <skill id="heal" x="4" all="1" />
+    <skill id="strike" x="8" />
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
-      <skill id="valor" x="7" />
-      <skill id="heal" x="4" all="1" y="4" />
-      <skill id="strike" x="7" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>28</health>
-      <skill id="valor" x="8" />
-      <skill id="heal" x="4" all="1" y="4" />
-      <skill id="strike" x="8" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>29</health>
       <skill id="valor" x="9" />
-      <skill id="heal" x="4" all="1" y="4" />
+      <skill id="heal" x="4" all="1" />
       <skill id="strike" x="9" />
     </upgrade>
     <upgrade>
-      <level>5</level>
+      <level>3</level>
       <health>30</health>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
       <skill id="valor" x="10" />
-      <skill id="heal" x="5" all="1" y="4" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="strike" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="valor" x="10" />
+      <skill id="heal" x="6" all="1" />
       <skill id="strike" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>5</attack>
       <health>31</health>
       <skill id="valor" x="11" />
-      <skill id="heal" x="6" all="1" y="4" />
+      <skill id="heal" x="6" all="1" />
       <skill id="strike" x="11" />
     </upgrade>
   </unit>
@@ -8793,7 +8872,7 @@
     <hidden_until_time>1482512400</hidden_until_time>
     <salvage_bonus>15</salvage_bonus>
     <attack>0</attack>
-    <health>11</health>
+    <health>15</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <type>1</type>
@@ -8801,21 +8880,22 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>12</health>
+      <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
+      <skill id="legion" x="1" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
       <skill id="legion" x="2" />
+      <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>15</health>
       <skill id="legion" x="3" />
+      <skill id="weaken" x="4" />
     </upgrade>
     <desc>He shows snow mercy.</desc>
   </unit>
@@ -8833,7 +8913,6 @@
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="legion" x="3" />
-    <skill id="jam" c="6" />
     <skill id="weaken" x="5" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -8846,7 +8925,6 @@
       <level>3</level>
       <health>18</health>
       <skill id="legion" x="4" />
-      <skill id="jam" c="5" />
       <skill id="weaken" x="5" />
     </upgrade>
     <upgrade>
@@ -8857,7 +8935,6 @@
       <level>5</level>
       <health>20</health>
       <skill id="legion" x="4" />
-      <skill id="jam" c="5" />
       <skill id="weaken" x="6" />
     </upgrade>
     <desc>He gives snow ground.</desc>
@@ -8876,7 +8953,6 @@
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="legion" x="5" />
-    <skill id="jam" c="4" />
     <skill id="weaken" x="6" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -8888,8 +8964,7 @@
     <upgrade>
       <level>3</level>
       <skill id="legion" x="6" />
-      <skill id="jam" c="4" />
-      <skill id="weaken" x="6" />
+      <skill id="weaken" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -8897,6 +8972,8 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>0</attack>
+      <health>23</health>
       <skill id="legion" x="7" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="7" />
@@ -12612,8 +12689,8 @@
     <picture>Cyborg_Frog_A</picture>
     <asset_bundle>106</asset_bundle>
     <hidden_until_time>1506013200</hidden_until_time>
-    <attack>3</attack>
-    <health>10</health>
+    <attack>5</attack>
+    <health>11</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="1" />
@@ -12625,7 +12702,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -12635,7 +12712,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>12</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -12652,8 +12729,8 @@
     <picture>Cyborg_Frog_A</picture>
     <asset_bundle>106</asset_bundle>
     <hidden_until_time>1506013200</hidden_until_time>
-    <attack>4</attack>
-    <health>12</health>
+    <attack>5</attack>
+    <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
@@ -12665,26 +12742,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>14</health>
+      <health>16</health>
       <skill id="armored" x="3" />
       <skill id="valor" x="4" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="3" />
       <skill id="valor" x="4" />
-      <skill id="strike" x="2" />
+      <skill id="strike" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
       <skill id="valor" x="4" />
-      <skill id="strike" x="3" />
+      <skill id="strike" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -12695,8 +12772,8 @@
     <picture>Cyborg_Frog_B</picture>
     <asset_bundle>106</asset_bundle>
     <hidden_until_time>1506013200</hidden_until_time>
-    <attack>4</attack>
-    <health>16</health>
+    <attack>5</attack>
+    <health>17</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="4" />
@@ -12708,21 +12785,27 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
-      <attack>5</attack>
+      <health>18</health>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="6" />
+      <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>18</health>
+      <health>19</health>
+      <skill id="armored" x="5" />
+      <skill id="valor" x="6" />
+      <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="armored" x="5" />
-      <skill id="valor" x="6" />
+      <skill id="valor" x="7" />
       <skill id="strike" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>5</attack>
       <health>19</health>
       <skill id="armored" x="6" />
       <skill id="valor" x="7" />
@@ -15902,37 +15985,37 @@
     <picture>BruteFrog_A</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>6</attack>
-    <health>26</health>
+    <attack>8</attack>
+    <health>36</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
     <skill id="fervor" x="3" y="4" />
-    <skill id="daze" x="3" />
+    <skill id="daze" x="8" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
-      <attack>7</attack>
+      <health>38</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>9</attack>
       <skill id="armored" x="3" />
       <skill id="fervor" x="3" y="4" />
-      <skill id="daze" x="4" />
+      <skill id="daze" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>29</health>
+      <health>39</health>
       <skill id="armored" x="4" />
       <skill id="fervor" x="3" y="4" />
-      <skill id="daze" x="4" />
+      <skill id="daze" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -15943,36 +16026,43 @@
     <picture>BruteFrog_A</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>8</attack>
-    <health>30</health>
+    <attack>10</attack>
+    <health>39</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="4" />
     <skill id="fervor" x="3" y="4" />
-    <skill id="daze" x="4" />
+    <skill id="daze" x="10" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>31</health>
+      <health>40</health>
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="4" y="4" />
+      <skill id="daze" x="10" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>11</attack>
       <skill id="armored" x="4" />
       <skill id="fervor" x="4" y="4" />
-      <skill id="daze" x="5" />
+      <skill id="daze" x="11" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>32</health>
+      <health>41</health>
       <skill id="armored" x="5" />
       <skill id="fervor" x="4" y="4" />
-      <skill id="daze" x="5" />
+      <skill id="daze" x="11" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>33</health>
+      <health>42</health>
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="5" y="4" />
+      <skill id="daze" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -15983,44 +16073,44 @@
     <picture>BruteFrog_B</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>9</attack>
-    <health>37</health>
+    <attack>12</attack>
+    <health>42</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="armored" x="5" />
-    <skill id="fervor" x="4" y="4" />
-    <skill id="daze" x="6" />
+    <skill id="fervor" x="5" y="4" />
+    <skill id="daze" x="12" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>38</health>
-      <attack>10</attack>
+      <health>43</health>
+      <skill id="armored" x="6" />
+      <skill id="fervor" x="5" y="4" />
+      <skill id="daze" x="12" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>11</attack>
-      <health>39</health>
+      <health>44</health>
       <skill id="armored" x="6" />
-      <skill id="fervor" x="4" y="4" />
-      <skill id="daze" x="7" />
+      <skill id="fervor" x="6" y="4" />
+      <skill id="daze" x="12" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>12</attack>
-      <health>40</health>
+      <attack>13</attack>
       <skill id="armored" x="6" />
-      <skill id="fervor" x="4" y="4" />
-      <skill id="daze" x="8" />
+      <skill id="fervor" x="6" y="4" />
+      <skill id="daze" x="13" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>13</attack>
-      <health>41</health>
-      <skill id="armored" x="6" />
-      <skill id="fervor" x="5" y="4" />
-      <skill id="daze" x="9" />
+      <health>44</health>
+      <skill id="armored" x="7" />
+      <skill id="fervor" x="7" y="4" />
+      <skill id="daze" x="13" />
     </upgrade>
   </unit>
   <unit>
@@ -16030,12 +16120,12 @@
     <picture>Frog_Warrior_Goblin_Mage_A</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>5</attack>
-    <health>18</health>
+    <attack>6</attack>
+    <health>21</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enrage" x="3" y="11" />
-    <skill id="leech" x="5" />
+    <skill id="leech" x="6" />
     <skill id="berserk" x="2" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -16043,27 +16133,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>20</health>
       <skill id="enrage" x="4" y="11" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="6" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
+      <attack>7</attack>
       <skill id="enrage" x="4" y="11" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>21</health>
-      <skill id="enrage" x="4" y="11" />
-      <skill id="leech" x="6" />
+      <health>23</health>
+      <skill id="enrage" x="5" y="11" />
+      <skill id="leech" x="7" />
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
@@ -16075,12 +16164,12 @@
     <picture>Frog_Warrior_Goblin_Mage_A</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>6</attack>
-    <health>22</health>
+    <attack>8</attack>
+    <health>23</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="enrage" x="4" y="11" />
-    <skill id="leech" x="6" />
+    <skill id="enrage" x="5" y="11" />
+    <skill id="leech" x="8" />
     <skill id="berserk" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -16088,27 +16177,26 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>23</health>
-      <skill id="enrage" x="5" y="11" />
-      <skill id="leech" x="6" />
+      <health>24</health>
+      <skill id="enrage" x="6" y="11" />
+      <skill id="leech" x="8" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>24</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>7</attack>
-      <health>25</health>
-      <skill id="enrage" x="5" y="11" />
-      <skill id="leech" x="7" />
+      <health>26</health>
+      <skill id="enrage" x="7" y="11" />
+      <skill id="leech" x="8" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enrage" x="5" y="11" />
-      <skill id="leech" x="7" />
+      <skill id="enrage" x="8" y="11" />
+      <skill id="leech" x="8" />
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
@@ -16120,12 +16208,12 @@
     <picture>Frog_Warrior_Goblin_Mage_B</picture>
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1532624400</hidden_until_time>
-    <attack>7</attack>
+    <attack>9</attack>
     <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="enrage" x="6" y="11" />
-    <skill id="leech" x="7" />
+    <skill id="enrage" x="8" y="11" />
+    <skill id="leech" x="9" />
     <skill id="berserk" x="4" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -16137,23 +16225,23 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>8</attack>
       <health>28</health>
-      <skill id="enrage" x="6" y="11" />
-      <skill id="leech" x="8" />
+      <skill id="enrage" x="9" y="11" />
+      <skill id="leech" x="9" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
-      <skill id="enrage" x="7" y="11" />
+      <skill id="enrage" x="10" y="11" />
       <skill id="leech" x="9" />
-      <skill id="berserk" x="4" />
+      <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enrage" x="8" y="11" />
-      <skill id="leech" x="9" />
+      <attack>10</attack>
+      <health>28</health>
+      <skill id="enrage" x="10" y="11" />
+      <skill id="leech" x="10" />
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
@@ -19050,34 +19138,38 @@
     <picture>Undead_Frog_Zombie_Clubber_A</picture>
     <asset_bundle>162</asset_bundle>
     <hidden_until_time>1559235600</hidden_until_time>
-    <attack>7</attack>
-    <health>18</health>
+    <attack>6</attack>
+    <health>22</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="2" />
     <skill id="poison" x="3" />
-    <skill id="leech" x="5" />
+    <skill id="leech" x="6" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>7</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>20</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>25</health>
       <skill id="backlash" x="2" />
       <skill id="poison" x="4" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>21</health>
+      <attack>7</attack>
+      <skill id="backlash" x="2" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -19089,12 +19181,12 @@
     <asset_bundle>162</asset_bundle>
     <hidden_until_time>1559235600</hidden_until_time>
     <attack>8</attack>
-    <health>22</health>
+    <health>25</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="2" />
     <skill id="poison" x="4" />
-    <skill id="leech" x="6" />
+    <skill id="leech" x="8" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>7</sub_type>
@@ -19102,22 +19194,26 @@
     <upgrade>
       <level>2</level>
       <skill id="backlash" x="3" />
-      <skill id="poison" x="4" />
-      <skill id="leech" x="6" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>9</attack>
       <skill id="backlash" x="3" />
       <skill id="poison" x="5" />
-      <skill id="leech" x="7" />
+      <skill id="leech" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>23</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>24</health>
+      <health>27</health>
+      <skill id="backlash" x="3" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -19128,37 +19224,44 @@
     <picture>Undead_Frog_Zombie_Clubber_B</picture>
     <asset_bundle>162</asset_bundle>
     <hidden_until_time>1559235600</hidden_until_time>
-    <attack>8</attack>
-    <health>24</health>
+    <attack>10</attack>
+    <health>27</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="backlash" x="3" />
     <skill id="poison" x="6" />
-    <skill id="leech" x="8" />
+    <skill id="leech" x="10" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>7</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>28</health>
+      <skill id="backlash" x="3" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
-      <health>27</health>
+      <health>29</health>
+      <skill id="backlash" x="3" />
+      <skill id="poison" x="8" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="backlash" x="4" />
-      <skill id="poison" x="6" />
-      <skill id="leech" x="8" />
+      <skill id="poison" x="9" />
+      <skill id="leech" x="10" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>11</attack>
+      <health>29</health>
       <skill id="backlash" x="4" />
-      <skill id="poison" x="7" />
-      <skill id="leech" x="10" />
+      <skill id="poison" x="9" />
+      <skill id="leech" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -19300,7 +19403,7 @@
     <asset_bundle>164</asset_bundle>
     <hidden_until_time>1561654800</hidden_until_time>
     <attack>8</attack>
-    <health>31</health>
+    <health>35</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="3" />
@@ -19317,16 +19420,16 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
       <attack>9</attack>
+      <health>36</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>33</health>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>34</health>
+      <health>38</health>
       <skill id="absorb" x="4" />
       <skill id="backlash" x="1" />
       <skill id="flurry" c="3" />
@@ -19340,8 +19443,8 @@
     <picture>Frog_Templar_A</picture>
     <asset_bundle>164</asset_bundle>
     <hidden_until_time>1561654800</hidden_until_time>
-    <attack>9</attack>
-    <health>34</health>
+    <attack>10</attack>
+    <health>38</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="4" />
@@ -19352,25 +19455,25 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>10</attack>
-      <health>35</health>
+      <attack>11</attack>
+      <health>39</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="absorb" x="5" />
-      <skill id="backlash" x="2" />
-      <skill id="flurry" c="3" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>36</health>
       <skill id="absorb" x="5" />
       <skill id="backlash" x="3" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="absorb" x="6" />
+      <skill id="backlash" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
       <level>5</level>
-      <health>37</health>
+      <health>41</health>
     </upgrade>
   </unit>
   <unit>
@@ -19381,11 +19484,11 @@
     <picture>Frog_Templar_B</picture>
     <asset_bundle>164</asset_bundle>
     <hidden_until_time>1561654800</hidden_until_time>
-    <attack>11</attack>
-    <health>38</health>
+    <attack>12</attack>
+    <health>41</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="absorb" x="5" />
+    <skill id="absorb" x="7" />
     <skill id="backlash" x="3" />
     <skill id="flurry" c="3" />
     <type>1</type>
@@ -19393,22 +19496,24 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="absorb" x="6" />
+      <skill id="absorb" x="8" />
       <skill id="backlash" x="3" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>39</health>
-      <attack>12</attack>
+      <attack>13</attack>
+      <health>42</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>40</health>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="absorb" x="7" />
+      <attack>13</attack>
+      <health>43</health>
+      <skill id="absorb" x="9" />
       <skill id="backlash" x="4" />
       <skill id="flurry" c="3" />
     </upgrade>
@@ -19424,9 +19529,9 @@
     <health>18</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="absorb" x="2" />
-    <skill id="regenerate" x="2" />
-    <skill id="burn" x="2" />
+    <skill id="absorb" x="3" />
+    <skill id="regenerate" x="3" />
+    <skill id="burn" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>2000</set>
@@ -19438,14 +19543,14 @@
       <level>3</level>
       <health>21</health>
       <skill id="absorb" x="3" />
-      <skill id="regenerate" x="2" />
-      <skill id="burn" x="2" />
+      <skill id="regenerate" x="4" />
+      <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="absorb" x="3" />
-      <skill id="regenerate" x="4" />
-      <skill id="burn" x="2" />
+      <skill id="regenerate" x="5" />
+      <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -19466,7 +19571,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="3" />
-    <skill id="regenerate" x="5" />
+    <skill id="regenerate" x="6" />
     <skill id="burn" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -19474,15 +19579,15 @@
     <upgrade>
       <level>2</level>
       <skill id="absorb" x="4" />
-      <skill id="regenerate" x="5" />
-      <skill id="burn" x="3" />
+      <skill id="regenerate" x="6" />
+      <skill id="burn" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>24</health>
       <skill id="absorb" x="4" />
-      <skill id="regenerate" x="6" />
-      <skill id="burn" x="3" />
+      <skill id="regenerate" x="7" />
+      <skill id="burn" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -19491,9 +19596,9 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="absorb" x="4" />
-      <skill id="regenerate" x="6" />
-      <skill id="burn" x="4" />
+      <skill id="absorb" x="5" />
+      <skill id="regenerate" x="7" />
+      <skill id="burn" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -19509,7 +19614,7 @@
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="absorb" x="5" />
-    <skill id="regenerate" x="6" />
+    <skill id="regenerate" x="7" />
     <skill id="burn" x="5" />
     <type>2</type>
     <sub_type>4</sub_type>
@@ -19529,14 +19634,16 @@
     <upgrade>
       <level>4</level>
       <skill id="absorb" x="7" />
-      <skill id="regenerate" x="7" />
-      <skill id="burn" x="5" />
+      <skill id="regenerate" x="8" />
+      <skill id="burn" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>11</attack>
+      <health>28</health>
       <skill id="absorb" x="8" />
-      <skill id="regenerate" x="8" />
-      <skill id="burn" x="5" />
+      <skill id="regenerate" x="9" />
+      <skill id="burn" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -21848,8 +21955,8 @@
     <picture>Dragon_Frog_Axolotl_Warriors_A</picture>
     <asset_bundle>187</asset_bundle>
     <hidden_until_time>1585846800</hidden_until_time>
-    <attack>4</attack>
-    <health>21</health>
+    <attack>5</attack>
+    <health>23</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="rally" x="1" all="1" y="3" />
@@ -21861,21 +21968,25 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>5</attack>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <attack>6</attack>
       <skill id="rally" x="1" all="1" y="3" />
       <skill id="weaken" x="1" all="1" />
       <skill id="pierce" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>23</health>
+      <attack>7</attack>
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="pierce" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -21886,36 +21997,41 @@
     <picture>Dragon_Frog_Axolotl_Warriors_A</picture>
     <asset_bundle>187</asset_bundle>
     <hidden_until_time>1585846800</hidden_until_time>
-    <attack>6</attack>
-    <health>24</health>
+    <attack>7</attack>
+    <health>25</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="1" all="1" y="3" />
+    <skill id="rally" x="2" all="1" y="3" />
     <skill id="weaken" x="1" all="1" />
-    <skill id="pierce" x="7" />
+    <skill id="pierce" x="9" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="rally" x="2" all="1" y="3" />
-      <skill id="weaken" x="1" all="1" />
-      <skill id="pierce" x="7" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
+      <attack>8</attack>
       <skill id="rally" x="2" all="1" y="3" />
       <skill id="weaken" x="1" all="1" />
       <skill id="pierce" x="10" />
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="pierce" x="10" />
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <health>25</health>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>7</attack>
+      <attack>9</attack>
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="pierce" x="11" />
     </upgrade>
   </unit>
   <unit>
@@ -21926,36 +22042,42 @@
     <picture>Dragon_Frog_Axolotl_Warriors_B</picture>
     <asset_bundle>187</asset_bundle>
     <hidden_until_time>1585846800</hidden_until_time>
-    <attack>8</attack>
-    <health>26</health>
+    <attack>9</attack>
+    <health>27</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="rally" x="2" all="1" y="3" />
-    <skill id="weaken" x="1" all="1" />
-    <skill id="pierce" x="11" />
+    <skill id="rally" x="3" all="1" y="3" />
+    <skill id="weaken" x="3" all="1" />
+    <skill id="pierce" x="12" />
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>9</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
+      <attack>10</attack>
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="pierce" x="13" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>27</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>29</health>
       <skill id="rally" x="3" all="1" y="3" />
-      <skill id="weaken" x="1" all="1" />
-      <skill id="pierce" x="12" />
+      <skill id="weaken" x="3" all="1" />
+      <skill id="pierce" x="13" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>10</attack>
+      <health>29</health>
       <skill id="rally" x="4" all="1" y="3" />
       <skill id="weaken" x="3" all="1" />
-      <skill id="pierce" x="13" />
+      <skill id="pierce" x="14" />
     </upgrade>
   </unit>
   <unit>
@@ -22017,20 +22139,20 @@
     <upgrade>
       <level>2</level>
       <skill id="absorb" x="4" />
-      <skill id="backlash" x="2" />
+      <skill id="backlash" x="3" />
       <skill id="strike" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="absorb" x="4" />
+      <skill id="absorb" x="5" />
       <skill id="backlash" x="3" />
       <skill id="strike" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="5" />
+      <skill id="absorb" x="6" />
       <skill id="backlash" x="3" />
-      <skill id="strike" x="6" />
+      <skill id="strike" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -22045,11 +22167,11 @@
     <picture>Frog_Zap_Mage_B</picture>
     <asset_bundle>190</asset_bundle>
     <hidden_until_time>1588266000</hidden_until_time>
-    <attack>8</attack>
+    <attack>9</attack>
     <health>26</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="absorb" x="5" />
+    <skill id="absorb" x="6" />
     <skill id="backlash" x="3" />
     <skill id="strike" x="7" />
     <type>1</type>
@@ -22058,21 +22180,26 @@
     <upgrade>
       <level>2</level>
       <attack>10</attack>
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>28</health>
+      <skill id="absorb" x="7" />
+      <skill id="backlash" x="3" />
+      <skill id="strike" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>11</attack>
-      <skill id="absorb" x="5" />
+      <skill id="absorb" x="7" />
       <skill id="backlash" x="3" />
       <skill id="strike" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>12</attack>
+      <health>28</health>
       <skill id="absorb" x="7" />
       <skill id="backlash" x="4" />
       <skill id="strike" x="8" />
@@ -22085,8 +22212,8 @@
     <picture>Frog_Croco_Bull_A</picture>
     <asset_bundle>190</asset_bundle>
     <hidden_until_time>1588266000</hidden_until_time>
-    <attack>6</attack>
-    <health>32</health>
+    <attack>9</attack>
+    <health>38</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="2" />
@@ -22097,11 +22224,11 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>7</attack>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>33</health>
+      <health>39</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -22124,8 +22251,8 @@
     <picture>Frog_Croco_Bull_A</picture>
     <asset_bundle>190</asset_bundle>
     <hidden_until_time>1588266000</hidden_until_time>
-    <attack>8</attack>
-    <health>34</health>
+    <attack>10</attack>
+    <health>39</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="3" />
@@ -22136,25 +22263,29 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
+      <attack>11</attack>
       <skill id="stasis" x="3" />
       <skill id="rally" x="8" y="4" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>40</health>
       <skill id="stasis" x="3" />
       <skill id="rally" x="8" y="4" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>41</health>
       <skill id="stasis" x="4" />
       <skill id="rally" x="8" y="4" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>9</attack>
+      <attack>12</attack>
+      <health>42</health>
     </upgrade>
   </unit>
   <unit>
@@ -22165,40 +22296,40 @@
     <picture>Frog_Croco_Bull_B</picture>
     <asset_bundle>190</asset_bundle>
     <hidden_until_time>1588266000</hidden_until_time>
-    <attack>9</attack>
-    <health>37</health>
+    <attack>12</attack>
+    <health>42</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="4" />
     <skill id="rally" x="9" y="4" />
-    <skill id="berserk" x="3" />
+    <skill id="berserk" x="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <attack>10</attack>
-      <health>38</health>
+      <attack>13</attack>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>39</health>
+      <skill id="stasis" x="5" />
+      <skill id="rally" x="9" y="4" />
+      <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>11</attack>
-      <health>40</health>
-      <skill id="stasis" x="5" />
+      <skill id="stasis" x="6" />
       <skill id="rally" x="9" y="4" />
-      <skill id="berserk" x="4" />
+      <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>12</attack>
-      <health>41</health>
-      <skill id="stasis" x="5" />
+      <attack>14</attack>
+      <health>43</health>
+      <skill id="stasis" x="6" />
       <skill id="rally" x="10" y="4" />
-      <skill id="berserk" x="5" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -24845,19 +24976,21 @@
       <level>3</level>
       <skill id="absorb" x="7" />
       <skill id="heal" x="7" y="4" />
-      <skill id="poison" x="6" />
+      <skill id="poison" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="7" />
-      <skill id="heal" x="8" y="4" />
-      <skill id="poison" x="6" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
+      <attack>10</attack>
       <skill id="absorb" x="7" />
       <skill id="heal" x="8" y="4" />
       <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="absorb" x="7" />
+      <skill id="heal" x="8" y="4" />
+      <skill id="poison" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -26090,12 +26223,15 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>41</health>
       <skill id="regenerate" x="9" />
       <skill id="fervor" x="4" y="2" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>10</attack>
+      <health>42</health>
       <skill id="regenerate" x="9" />
       <skill id="fervor" x="5" y="2" />
       <skill id="flurry" c="3" />
@@ -28678,18 +28814,19 @@
     </upgrade>
     <upgrade>
       <level>3</level>
+      <health>36</health>
       <skill id="stasis" x="4" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="protect" x="5" all="1" y="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>36</health>
       <attack>11</attack>
+      <health>37</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>37</health>
+      <health>38</health>
       <skill id="stasis" x="5" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="protect" x="5" all="1" y="4" />
@@ -28704,7 +28841,7 @@
     <asset_bundle>254</asset_bundle>
     <hidden_until_time>1660842000</hidden_until_time>
     <attack>11</attack>
-    <health>38</health>
+    <health>39</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="stasis" x="5" />
@@ -28717,25 +28854,27 @@
     <upgrade>
       <level>2</level>
       <attack>12</attack>
+      <health>40</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>39</health>
       <attack>13</attack>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>40</health>
+      <health>42</health>
       <skill id="stasis" x="6" />
       <skill id="heal" x="5" all="1" y="4" />
       <skill id="protect" x="5" all="1" y="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>41</health>
+      <attack>13</attack>
+      <health>42</health>
       <skill id="stasis" x="6" />
       <skill id="heal" x="6" all="1" y="4" />
-      <skill id="protect" x="5" all="1" y="4" />
+      <skill id="protect" x="6" all="1" y="4" />
     </upgrade>
   </unit>
   <unit>
@@ -30140,13 +30279,13 @@
     <picture>Frog_Tiny_Angry_Squeaking_Frog_A</picture>
     <asset_bundle>270</asset_bundle>
     <hidden_until_time>1680195600</hidden_until_time>
-    <attack>2</attack>
+    <attack>4</attack>
     <health>12</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="counter" x="2" />
     <skill id="valor" x="3" />
-    <skill id="legion" x="3" y="4" />
+    <skill id="legion" x="3" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
@@ -30162,14 +30301,14 @@
       <level>4</level>
       <skill id="counter" x="2" />
       <skill id="valor" x="4" />
-      <skill id="legion" x="3" y="4" />
+      <skill id="legion" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>15</health>
       <skill id="counter" x="3" />
       <skill id="valor" x="4" />
-      <skill id="legion" x="3" y="4" />
+      <skill id="legion" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -30180,13 +30319,13 @@
     <picture>Frog_Tiny_Angry_Squeaking_Frog_A</picture>
     <asset_bundle>270</asset_bundle>
     <hidden_until_time>1680195600</hidden_until_time>
-    <attack>3</attack>
+    <attack>4</attack>
     <health>15</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="counter" x="3" />
     <skill id="valor" x="4" />
-    <skill id="legion" x="3" y="4" />
+    <skill id="legion" x="3" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
@@ -30199,19 +30338,19 @@
       <health>17</health>
       <skill id="counter" x="3" />
       <skill id="valor" x="4" />
-      <skill id="legion" x="4" y="4" />
+      <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="counter" x="3" />
       <skill id="valor" x="5" />
-      <skill id="legion" x="4" y="4" />
+      <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="counter" x="4" />
       <skill id="valor" x="5" />
-      <skill id="legion" x="4" y="4" />
+      <skill id="legion" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -30222,36 +30361,43 @@
     <picture>Frog_Tiny_Angry_Squeaking_Frog_B</picture>
     <asset_bundle>270</asset_bundle>
     <hidden_until_time>1680195600</hidden_until_time>
-    <attack>3</attack>
+    <attack>4</attack>
     <health>18</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="counter" x="4" />
-    <skill id="valor" x="5" />
-    <skill id="legion" x="4" y="4" />
+    <skill id="valor" x="6" />
+    <skill id="legion" x="4" />
     <type>3</type>
     <sub_type>4</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
       <health>19</health>
-      <attack>4</attack>
+      <skill id="counter" x="4" />
+      <skill id="valor" x="7" />
+      <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>20</health>
+      <skill id="counter" x="5" />
+      <skill id="valor" x="7" />
+      <skill id="legion" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="counter" x="4" />
-      <skill id="valor" x="6" />
-      <skill id="legion" x="4" y="4" />
+      <skill id="counter" x="5" />
+      <skill id="valor" x="8" />
+      <skill id="legion" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="5" />
-      <skill id="valor" x="6" />
-      <skill id="legion" x="5" y="4" />
+      <attack>4</attack>
+      <health>20</health>
+      <skill id="counter" x="6" />
+      <skill id="valor" x="9" />
+      <skill id="legion" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -30266,7 +30412,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="2" />
-    <skill id="enrage" x="4" all="1" y="4" />
+    <skill id="enrage" x="4" all="1" />
     <skill id="berserk" x="3" />
     <type>3</type>
     <sub_type>4</sub_type>
@@ -30291,7 +30437,7 @@
     <upgrade>
       <level>6</level>
       <skill id="backlash" x="3" />
-      <skill id="enrage" x="4" all="1" y="4" />
+      <skill id="enrage" x="4" all="1" />
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
@@ -30308,7 +30454,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="3" />
-    <skill id="enrage" x="4" all="1" y="4" />
+    <skill id="enrage" x="4" all="1" />
     <skill id="berserk" x="4" />
     <type>3</type>
     <sub_type>4</sub_type>
@@ -30317,7 +30463,7 @@
       <level>2</level>
       <health>25</health>
       <skill id="backlash" x="3" />
-      <skill id="enrage" x="5" all="1" y="4" />
+      <skill id="enrage" x="5" all="1" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
@@ -30336,7 +30482,7 @@
     <upgrade>
       <level>6</level>
       <skill id="backlash" x="4" />
-      <skill id="enrage" x="5" all="1" y="4" />
+      <skill id="enrage" x="5" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
@@ -30353,7 +30499,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="backlash" x="4" />
-    <skill id="enrage" x="5" all="1" y="4" />
+    <skill id="enrage" x="5" all="1" />
     <skill id="berserk" x="5" />
     <type>3</type>
     <sub_type>4</sub_type>
@@ -30375,13 +30521,15 @@
     <upgrade>
       <level>5</level>
       <skill id="backlash" x="4" />
-      <skill id="enrage" x="6" all="1" y="4" />
+      <skill id="enrage" x="6" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>10</attack>
+      <health>32</health>
       <skill id="backlash" x="5" />
-      <skill id="enrage" x="6" all="1" y="4" />
+      <skill id="enrage" x="6" all="1" />
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>
@@ -31359,6 +31507,179 @@
       <skill id="rally" x="10" y="6" />
       <skill id="burn" x="7" />
       <skill id="leech" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2258</id>
+    <card_type>2</card_type>
+    <name>Painter van Frogh</name>
+    <picture>Frog_Calamity_Artist_A</picture>
+    <asset_bundle>213</asset_bundle>
+    <desc>Unlike his peers, this frog had no interest simply painting watercolors of lilies.</desc>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="5" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>26</health>
+      <skill id="absorb" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>27</health>
+      <skill id="absorb" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>27</health>
+      <skill id="absorb" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <health>28</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>28</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12258</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Artist van Frogh</name>
+    <picture>Frog_Calamity_Artist_A</picture>
+    <asset_bundle>213</asset_bundle>
+    <attack>9</attack>
+    <health>29</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="6" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="weaken" x="2" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+      <health>29</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>30</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>30</health>
+      <skill id="absorb" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="absorb" x="7" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="absorb" x="7" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22258</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Prophet van Frogh</name>
+    <picture>Frog_Calamity_Artist_A</picture>
+    <asset_bundle>213</asset_bundle>
+    <attack>11</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="absorb" x="7" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="weaken" x="3" all="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <health>31</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="absorb" x="8" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>14</attack>
+      <health>32</health>
+      <skill id="absorb" x="9" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>
 </root>
