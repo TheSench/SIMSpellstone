@@ -554,7 +554,7 @@ var BATTLEGROUNDS = {
 		"name": "Day of Dragons"
 	},
 	"133": {
-		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health. ",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health.",
 		"effect": [
 			{
 				"all": "1",
@@ -2642,20 +2642,20 @@ var BATTLEGROUNDS = {
 		"name": "Angels and Demons"
 	},
 	"172": {
-		"desc": "All Frogs gain Barrage equal to their base Attack, and Poisonbolt equal to 10% of their base Health. BGE effect is subject to change.",
+		"desc": "All Frogs gain Barrage equal to 30% of their base Health, and Poisonbolt equal to 20% of their base Health.",
 		"effect": [
 			{
-				"base": "attack",
+				"base": "health",
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 1,
+				"mult": 0.3,
 				"y": "4"
 			},
 			{
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "poisonstrike",
-				"mult": 0.1,
+				"mult": 0.2,
 				"y": "4"
 			}
 		],
@@ -6599,7 +6599,7 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2115",
 		"max_level": 7,
-		"name": "Elemental Funk ",
+		"name": "Elemental Funk",
 		"scale_with_level": true,
 		"starting_level": 5
 	},

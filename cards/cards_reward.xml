@@ -3964,6 +3964,7 @@
     <id>12033</id>
     <card_type>2</card_type>
     <name>Arcaneblaze Dragon</name>
+    <fusion_level>1</fusion_level>
     <picture>Pax_Dragon_A</picture>
     <asset_bundle>56</asset_bundle>
     <attack>7</attack>
@@ -4005,6 +4006,7 @@
   <unit>
     <id>22033</id>
     <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
     <name>Archonblaze Dragon</name>
     <picture>Pax_Dragon_B</picture>
     <asset_bundle>56</asset_bundle>
@@ -31629,7 +31631,7 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Prophet van Frogh</name>
-    <picture>Frog_Calamity_Artist_A</picture>
+    <picture>Frog_Calamity_Artist_B</picture>
     <asset_bundle>213</asset_bundle>
     <attack>11</attack>
     <health>31</health>

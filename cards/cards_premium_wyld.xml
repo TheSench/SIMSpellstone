@@ -10143,7 +10143,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <sub_type>12</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <skill id="evade" x="1" />
@@ -10194,7 +10194,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <sub_type>12</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <attack>11</attack>
@@ -10243,7 +10243,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <sub_type>12</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
       <health>44</health>

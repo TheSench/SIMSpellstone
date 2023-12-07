@@ -1207,7 +1207,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5501",
 		"name": "Angelic Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1221,7 +1221,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5502",
 		"name": "Elemental Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1235,7 +1235,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5503",
 		"name": "Undead Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1249,7 +1249,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5504",
 		"name": "Goblin Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1263,7 +1263,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5505",
 		"name": "Dragon Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1277,7 +1277,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5506",
 		"name": "Seafolk Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1291,7 +1291,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5507",
 		"name": "Avian Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1305,7 +1305,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5508",
 		"name": "Frog Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1319,7 +1319,7 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5509",
 		"name": "Mecha Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10
@@ -1333,7 +1333,21 @@ var RUNES = {
 		"icon": "rune_rejuvenate_legendary",
 		"id": "5510",
 		"name": "Insect Rune of Health",
-		"rarity": 3,
+		"rarity": 4,
+		"set": "2",
+		"stat_boost": {
+			"health": 10
+		},
+		"type": "3"
+	},
+	"5511": {
+		"category": "3",
+		"desc": "Health +10. May only be embedded on Beast. May not be crafted.",
+		"faction_req": "14",
+		"icon": "rune_rejuvenate_legendary",
+		"id": "5511",
+		"name": "Beast Rune of Health",
+		"rarity": 4,
 		"set": "2",
 		"stat_boost": {
 			"health": 10

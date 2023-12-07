@@ -1857,7 +1857,7 @@
     <card_type>1</card_type>
     <name>Decim, Flame Incarnate</name>
     <portrait>flamebender</portrait>
-    <desc></desc>
+    <desc />
     <attack>0</attack>
     <health>18</health>
     <rarity>3</rarity>
@@ -7194,7 +7194,7 @@
       <skill id="imbue" s="nullify" x="2" />
       <skill id="protect" x="2" />
       <skill id="protect" x="1" all="1" />
-      >
+      &gt;
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -9447,7 +9447,7 @@
     <name>Toknight</name>
     <portrait>Portrait_Knight_001</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc></desc>
+    <desc />
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -9480,7 +9480,7 @@
     <name>Knight of Representation</name>
     <portrait>Portrait_Knight_002</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc></desc>
+    <desc />
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -9513,7 +9513,7 @@
     <name>Knight of Vengeance</name>
     <portrait>Portrait_Knight_003</portrait>
     <asset_bundle>109</asset_bundle>
-    <desc></desc>
+    <desc />
     <health>35</health>
     <rarity>4</rarity>
     <type>1</type>
@@ -13289,6 +13289,41 @@
       <skill id="weaken" all="1" x="12" />
       <skill id="imbue" s="armored" all="1" ignore_nullify="1" x="12" />
       <skill id="imbue" s="legion" all="1" ignore_nullify="1" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>493</id>
+    <card_type>1</card_type>
+    <name>Krampus</name>
+    <desc>Krampus has found a list of gifts a true love sent over twelve days and he is trying to make amends.</desc>
+    <portrait>Goblinch_Portrait</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>3</rarity>
+    <skill id="heal" ignore_nullify="1" x="4" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="heal" ignore_nullify="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+      <skill id="heal" ignore_nullify="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="heal" ignore_nullify="1" x="8" />
+      <skill id="heal" ignore_nullify="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="heal" ignore_nullify="1" x="12" />
+      <skill id="heal" ignore_nullify="1" x="12" />
     </upgrade>
   </unit>
 </root>

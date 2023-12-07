@@ -586,7 +586,7 @@
   </battleground>
   <battleground>
     <id>131</id>
-    <name>Lily &#38; Spear Formation</name>
+    <name>Lily &amp; Spear Formation</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health and gain Pierce equal to their base Attack.</desc>
     <icon>filter_frog_64.png</icon>
     <effect>
@@ -616,7 +616,7 @@
   <battleground>
     <id>133</id>
     <name>Elemental Discordance</name>
-    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health. </desc>
+    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -1048,7 +1048,7 @@
   </battleground>
   <battleground>
     <id>146</id>
-    <name>Lily &#38; Vampiric Spear Formation</name>
+    <name>Lily &amp; Vampiric Spear Formation</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce and Siphon equal to their base Attack.</desc>
     <icon>filter_frog_64.png</icon>
     <effect>
@@ -1473,7 +1473,7 @@
   </battleground>
   <battleground>
     <id>164</id>
-    <name>Lily &#38; Vampiric Spear Formation Reinforced</name>
+    <name>Lily &amp; Vampiric Spear Formation Reinforced</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce equal to their base Attack and Siphon as 3 plus their Attack.</desc>
     <icon>filter_frog_64.png</icon>
     <effect>
@@ -1517,7 +1517,7 @@
   </battleground>
   <battleground>
     <id>166</id>
-    <name>Steel&apos;s Edge V2.0</name>
+    <name>Steel's Edge V2.0</name>
     <desc>All Mechas gain base Ward 3 + Delay, and increase their Attack by 15% of their base Health.</desc>
     <icon>filter_mech_64</icon>
     <effect>
@@ -1653,11 +1653,11 @@
   <battleground>
     <id>172</id>
     <name>Frog Toxic Barrage</name>
-    <desc>All Frogs gain Barrage equal to their base Attack, and Poisonbolt equal to 10% of their base Health. BGE effect is subject to change.</desc>
+    <desc>All Frogs gain Barrage equal to 30% of their base Health, and Poisonbolt equal to 20% of their base Health.</desc>
     <icon>filter_frog_64</icon>
     <effect>
-      <add_skill id="barrage" mult="1" base="attack" y="4" />
-      <add_skill id="poisonstrike" mult="0.1" base="health" y="4" />
+      <add_skill id="barrage" mult="0.3" base="health" y="4" />
+      <add_skill id="poisonstrike" mult="0.2" base="health" y="4" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -4578,7 +4578,7 @@
   <!-- Universal EBGE weeks 1-4 Setup -->
   <battleground>
     <id>2115</id>
-    <name>Elemental Funk </name>
+    <name>Elemental Funk</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_elementals_64</icon>
     <enemy_only>1</enemy_only>

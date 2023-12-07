@@ -5173,6 +5173,7 @@ var CAMPAIGNS = {
 		"name": "Spellstone's End"
 	},
 	"1286": {
+		"battleground_id": "2119",
 		"id": "1286",
 		"items": {
 			"3083": 0.4
@@ -5189,7 +5190,7 @@ var CAMPAIGNS = {
 		"name": "A Trip to Tarragon Peak"
 	},
 	"1287": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1287",
 		"items": {
 			"3083": 0.4
@@ -5206,6 +5207,7 @@ var CAMPAIGNS = {
 		"name": "Relaxation by Incineration"
 	},
 	"1288": {
+		"battleground_id": "2119",
 		"id": "1288",
 		"items": {
 			"3056": 0.6
@@ -5222,7 +5224,7 @@ var CAMPAIGNS = {
 		"name": "Deep in Trouble"
 	},
 	"1289": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1289",
 		"items": {
 			"3056": 0.8
@@ -5239,7 +5241,7 @@ var CAMPAIGNS = {
 		"name": "The Swarm Thickens"
 	},
 	"1290": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1290",
 		"items": {
 			"3071": 0.6
@@ -5256,7 +5258,7 @@ var CAMPAIGNS = {
 		"name": "Surprise Goblin Plot"
 	},
 	"1291": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1291",
 		"items": {
 			"3071": 0.8
@@ -5273,7 +5275,7 @@ var CAMPAIGNS = {
 		"name": "Ain't Nobody wants to Thwart This"
 	},
 	"1292": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1292",
 		"items": {
 			"3065": 0.6
@@ -5290,7 +5292,7 @@ var CAMPAIGNS = {
 		"name": "The Stars are Left"
 	},
 	"1293": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1293",
 		"items": {
 			"3065": 0.8
@@ -5307,7 +5309,7 @@ var CAMPAIGNS = {
 		"name": "A not so Unexpected Journey"
 	},
 	"1294": {
-		"battleground_id": "2048",
+		"battleground_id": "2119",
 		"id": "1294",
 		"items": {
 			"3080": 0.6
@@ -5324,7 +5326,7 @@ var CAMPAIGNS = {
 		"name": "Questing for Rest and Peace"
 	},
 	"1295": {
-		"battleground_id": "2048",
+		"battleground_id": "2119",
 		"id": "1295",
 		"items": {
 			"3080": 0.8
@@ -5341,6 +5343,7 @@ var CAMPAIGNS = {
 		"name": "Undying Conflicts"
 	},
 	"1296": {
+		"battleground_id": "2119",
 		"id": "1296",
 		"items": {
 			"3059": 0.6
@@ -5357,7 +5360,7 @@ var CAMPAIGNS = {
 		"name": "Bureaucra-Sea"
 	},
 	"1297": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1297",
 		"items": {
 			"3059": 0.8
@@ -5389,6 +5392,7 @@ var CAMPAIGNS = {
 		"name": "Spellstone's 6th Anniversary"
 	},
 	"1299": {
+		"battleground_id": "2119",
 		"id": "1299",
 		"items": {
 			"3068": 0.6
@@ -5405,7 +5409,7 @@ var CAMPAIGNS = {
 		"name": "The High Journey"
 	},
 	"1300": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1300",
 		"items": {
 			"3068": 0.8
@@ -5422,6 +5426,7 @@ var CAMPAIGNS = {
 		"name": "Winged Conspiracy"
 	},
 	"1301": {
+		"battleground_id": "2119",
 		"id": "1301",
 		"items": {
 			"3062": 0.6
@@ -5438,7 +5443,7 @@ var CAMPAIGNS = {
 		"name": "Wrong Turn"
 	},
 	"1302": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1302",
 		"items": {
 			"3062": 0.8
@@ -5468,6 +5473,7 @@ var CAMPAIGNS = {
 		"name": "False Halloween?"
 	},
 	"1304": {
+		"battleground_id": "2119",
 		"id": "1304",
 		"items": {
 			"3110": 0.6
@@ -5484,7 +5490,7 @@ var CAMPAIGNS = {
 		"name": "Frog Society"
 	},
 	"1305": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1305",
 		"items": {
 			"3110": 0.8
@@ -5516,6 +5522,7 @@ var CAMPAIGNS = {
 		"name": "Tree Champion"
 	},
 	"1307": {
+		"battleground_id": "2119",
 		"id": "1307",
 		"items": {
 			"3104": 0.6
@@ -5532,7 +5539,7 @@ var CAMPAIGNS = {
 		"name": "Goblinball"
 	},
 	"1308": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1308",
 		"items": {
 			"3104": 0.8
@@ -5549,6 +5556,7 @@ var CAMPAIGNS = {
 		"name": "Why Can't We Be Friends?"
 	},
 	"1309": {
+		"battleground_id": "2119",
 		"id": "1309",
 		"items": {
 			"3098": 0.6
@@ -5565,7 +5573,7 @@ var CAMPAIGNS = {
 		"name": "I Hate Portals"
 	},
 	"1310": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1310",
 		"items": {
 			"3098": 0.8
@@ -5582,6 +5590,7 @@ var CAMPAIGNS = {
 		"name": "Elemental Enemies"
 	},
 	"1311": {
+		"battleground_id": "2119",
 		"id": "1311",
 		"items": {
 			"3101": 0.6
@@ -5598,7 +5607,7 @@ var CAMPAIGNS = {
 		"name": "Shipwreck"
 	},
 	"1312": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1312",
 		"items": {
 			"3101": 0.8
@@ -5615,6 +5624,7 @@ var CAMPAIGNS = {
 		"name": "One Shell of a Place"
 	},
 	"1313": {
+		"battleground_id": "2119",
 		"id": "1313",
 		"items": {
 			"3119": 0.6
@@ -5631,7 +5641,7 @@ var CAMPAIGNS = {
 		"name": "Taking a Break"
 	},
 	"1314": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1314",
 		"items": {
 			"3119": 0.8
@@ -5665,6 +5675,7 @@ var CAMPAIGNS = {
 		"name": "Return of the Commons!"
 	},
 	"1316": {
+		"battleground_id": "2119",
 		"id": "1316",
 		"items": {
 			"3107": 0.6
@@ -5681,7 +5692,7 @@ var CAMPAIGNS = {
 		"name": "The Abduction"
 	},
 	"1317": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1317",
 		"items": {
 			"3107": 0.8
@@ -5698,6 +5709,7 @@ var CAMPAIGNS = {
 		"name": "On the Hunt"
 	},
 	"1318": {
+		"battleground_id": "2119",
 		"id": "1318",
 		"items": {
 			"3049": 0.6
@@ -5714,7 +5726,7 @@ var CAMPAIGNS = {
 		"name": "Misleading a Menace"
 	},
 	"1319": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1319",
 		"items": {
 			"3049": 0.8
@@ -5731,6 +5743,7 @@ var CAMPAIGNS = {
 		"name": "The Hunter Has Become the Hunted"
 	},
 	"1320": {
+		"battleground_id": "2119",
 		"id": "1320",
 		"items": {
 			"3074": 0.6
@@ -5747,7 +5760,7 @@ var CAMPAIGNS = {
 		"name": "Call to Adventure"
 	},
 	"1321": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1321",
 		"items": {
 			"3074": 0.8
@@ -5764,6 +5777,7 @@ var CAMPAIGNS = {
 		"name": "In Deep Danger"
 	},
 	"1322": {
+		"battleground_id": "2119",
 		"id": "1322",
 		"items": {
 			"3089": 0.6
@@ -5780,7 +5794,7 @@ var CAMPAIGNS = {
 		"name": "Search Mission"
 	},
 	"1323": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1323",
 		"items": {
 			"3089": 0.8
@@ -5797,6 +5811,7 @@ var CAMPAIGNS = {
 		"name": "A Helping Hand"
 	},
 	"1324": {
+		"battleground_id": "2119",
 		"id": "1324",
 		"items": {
 			"3125": 0.6
@@ -5813,7 +5828,7 @@ var CAMPAIGNS = {
 		"name": "Attack on Skyhaven"
 	},
 	"1325": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1325",
 		"items": {
 			"3125": 0.8
@@ -5830,6 +5845,7 @@ var CAMPAIGNS = {
 		"name": "Throne Room"
 	},
 	"1326": {
+		"battleground_id": "2119",
 		"id": "1326",
 		"items": {
 			"3053": 0.6
@@ -5846,7 +5862,7 @@ var CAMPAIGNS = {
 		"name": "Old Friend"
 	},
 	"1327": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1327",
 		"items": {
 			"3053": 0.8
@@ -5879,6 +5895,7 @@ var CAMPAIGNS = {
 		"name": "Spellstone's 7th Anniversary"
 	},
 	"1329": {
+		"battleground_id": "2119",
 		"id": "1329",
 		"items": {
 			"3095": 0.6
@@ -5895,7 +5912,7 @@ var CAMPAIGNS = {
 		"name": "Tracking a Trickster"
 	},
 	"1330": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1330",
 		"items": {
 			"3095": 0.8
@@ -5925,6 +5942,7 @@ var CAMPAIGNS = {
 		"name": "False Halloween?"
 	},
 	"1332": {
+		"battleground_id": "2119",
 		"id": "1332",
 		"items": {
 			"2522": 0.04,
@@ -5942,7 +5960,7 @@ var CAMPAIGNS = {
 		"name": "Pirate Hunting"
 	},
 	"1333": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1333",
 		"items": {
 			"2522": 0.04,
@@ -5960,6 +5978,7 @@ var CAMPAIGNS = {
 		"name": "No Mans land"
 	},
 	"1334": {
+		"battleground_id": "2119",
 		"id": "1334",
 		"items": {
 			"3077": 0.6
@@ -5976,7 +5995,7 @@ var CAMPAIGNS = {
 		"name": "Void Activity"
 	},
 	"1335": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1335",
 		"items": {
 			"3077": 0.8
@@ -6008,6 +6027,7 @@ var CAMPAIGNS = {
 		"name": "Tree Champion"
 	},
 	"1337": {
+		"battleground_id": "2119",
 		"id": "1337",
 		"items": {
 			"3053": 0.6
@@ -6024,7 +6044,7 @@ var CAMPAIGNS = {
 		"name": "The Menace Returns!"
 	},
 	"1338": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1338",
 		"items": {
 			"3053": 0.8
@@ -6041,6 +6061,7 @@ var CAMPAIGNS = {
 		"name": "The Colossus"
 	},
 	"1339": {
+		"battleground_id": "2119",
 		"id": "1339",
 		"items": {
 			"3056": 0.6
@@ -6057,7 +6078,7 @@ var CAMPAIGNS = {
 		"name": "Gossip About a Hero"
 	},
 	"1340": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1340",
 		"items": {
 			"3056": 0.8
@@ -6074,6 +6095,7 @@ var CAMPAIGNS = {
 		"name": "Unmasking the False Hero"
 	},
 	"1341": {
+		"battleground_id": "2119",
 		"id": "1341",
 		"items": {
 			"3083": 0.6
@@ -6090,7 +6112,7 @@ var CAMPAIGNS = {
 		"name": "Just Rumors?"
 	},
 	"1342": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1342",
 		"items": {
 			"3083": 0.8
@@ -6107,6 +6129,7 @@ var CAMPAIGNS = {
 		"name": "Fire Fruits"
 	},
 	"1343": {
+		"battleground_id": "2119",
 		"id": "1343",
 		"items": {
 			"3095": 0.6
@@ -6123,7 +6146,7 @@ var CAMPAIGNS = {
 		"name": "In Search of the Lost Tribe"
 	},
 	"1344": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1344",
 		"items": {
 			"3095": 0.8
@@ -6140,6 +6163,7 @@ var CAMPAIGNS = {
 		"name": "After the Storm, Comes the Calm?"
 	},
 	"1345": {
+		"battleground_id": "2119",
 		"id": "1345",
 		"items": {
 			"3122": 0.6
@@ -6156,7 +6180,7 @@ var CAMPAIGNS = {
 		"name": "Looking for Glory"
 	},
 	"1346": {
-		"battleground_id": "2053",
+		"battleground_id": "2119",
 		"id": "1346",
 		"items": {
 			"3122": 0.8
@@ -6173,6 +6197,7 @@ var CAMPAIGNS = {
 		"name": "The Betrayal"
 	},
 	"1347": {
+		"battleground_id": "2119",
 		"id": "1347",
 		"items": {
 			"3101": 0.6
@@ -6189,7 +6214,7 @@ var CAMPAIGNS = {
 		"name": "Into the Chaos"
 	},
 	"1348": {
-		"battleground_id": "2019",
+		"battleground_id": "2119",
 		"id": "1348",
 		"items": {
 			"3101": 0.8
@@ -6206,7 +6231,7 @@ var CAMPAIGNS = {
 		"name": "Crazy Chainsaws"
 	},
 	"1349": {
-		"battleground_id": "2097",
+		"battleground_id": "2119",
 		"id": "1349",
 		"items": {
 			"3113": 0.6
@@ -6223,7 +6248,7 @@ var CAMPAIGNS = {
 		"name": "Dark Side of the Science"
 	},
 	"1350": {
-		"battleground_id": "2098",
+		"battleground_id": "2119",
 		"id": "1350",
 		"items": {
 			"3113": 0.8
@@ -6408,6 +6433,40 @@ var CAMPAIGNS = {
 			"7181"
 		],
 		"name": "Upon Righteous Wings"
+	},
+	"1361": {
+		"battleground_id": "2120",
+		"id": "1361",
+		"items": {
+			"3077": 1.7
+		},
+		"location_id": "17",
+		"missions": [
+			"7182",
+			"7183",
+			"7184",
+			"7185",
+			"7186",
+			"7187"
+		],
+		"name": "A Void Sickness"
+	},
+	"1362": {
+		"battleground_id": "2120",
+		"id": "1362",
+		"items": {
+			"3077": 1.8
+		},
+		"location_id": "17",
+		"missions": [
+			"7188",
+			"7189",
+			"7190",
+			"7191",
+			"7192",
+			"7193"
+		],
+		"name": "Leapfrogging the Cure"
 	},
 	"3000": {
 		"id": "3000",
@@ -7030,7 +7089,30 @@ var CAMPAIGNS = {
 			"2035",
 			"2036"
 		],
-		"name": "Lightning Boss Angel"
+		"name": "Lightning Boss Orobas"
+	},
+	"5007": {
+		"battleground_id": "2122",
+		"id": "5007",
+		"items": {
+			"3077": 0.9
+		},
+		"location_id": "17",
+		"missions": [
+			"2037",
+			"2038",
+			"2039",
+			"2040",
+			"2041",
+			"2042",
+			"2043",
+			"2044",
+			"2045",
+			"2046",
+			"2047",
+			"2048"
+		],
+		"name": "Epic Spellstone Xmas"
 	}
 };
 var MISSIONS = {
@@ -18767,6 +18849,726 @@ var MISSIONS = {
 		"id": "2036",
 		"name": "Demon of Sloth"
 	},
+	"2037": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1329"
+			},
+			{
+				"id": "1332"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "5086"
+			},
+			{
+				"id": "5168"
+			},
+			{
+				"id": "6029"
+			},
+			{
+				"id": "6036"
+			},
+			{
+				"id": "2107"
+			},
+			{
+				"id": "6125",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7034",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7035",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7122",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7125",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7170",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2037",
+		"name": "The First Day of Krampus"
+	},
+	"2038": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1634"
+			},
+			{
+				"id": "2076"
+			},
+			{
+				"id": "2079"
+			},
+			{
+				"id": "2104"
+			},
+			{
+				"id": "2150"
+			},
+			{
+				"id": "2151"
+			},
+			{
+				"id": "2199"
+			},
+			{
+				"id": "2227"
+			},
+			{
+				"id": "5011"
+			},
+			{
+				"id": "5073",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1603",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7066",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7109",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7151",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2038",
+		"name": "The Second Day of Krampus"
+	},
+	"2039": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "2011"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2034"
+			},
+			{
+				"id": "2133"
+			},
+			{
+				"id": "2161"
+			},
+			{
+				"id": "2162"
+			},
+			{
+				"id": "2183",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5050",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5155",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6051",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7016",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2039",
+		"name": "The Third Day of Krampus"
+	},
+	"2040": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1027"
+			},
+			{
+				"id": "1034"
+			},
+			{
+				"id": "2040"
+			},
+			{
+				"id": "2041"
+			},
+			{
+				"id": "2165"
+			},
+			{
+				"id": "2185"
+			},
+			{
+				"id": "2202"
+			},
+			{
+				"id": "5016"
+			},
+			{
+				"id": "5114"
+			},
+			{
+				"id": "6054",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6112",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7029",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7057",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7113",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7171",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2040",
+		"name": "The Fourth Day of Krampus"
+	},
+	"2041": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1338"
+			},
+			{
+				"id": "2002"
+			},
+			{
+				"id": "2109"
+			},
+			{
+				"id": "2111"
+			},
+			{
+				"id": "2127"
+			},
+			{
+				"id": "2128"
+			},
+			{
+				"id": "2143"
+			},
+			{
+				"id": "2167",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5161",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5221",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6004",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6158",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7220",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2041",
+		"name": "The Fifth Day of Krampus"
+	},
+	"2042": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1334"
+			},
+			{
+				"id": "1336"
+			},
+			{
+				"id": "1631"
+			},
+			{
+				"id": "2001"
+			},
+			{
+				"id": "2003"
+			},
+			{
+				"id": "2044"
+			},
+			{
+				"id": "2046"
+			},
+			{
+				"id": "2090"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5093",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6061",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6129",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7024",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7095",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2042",
+		"name": "The Sixth Day of Krampus"
+	},
+	"2043": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1025"
+			},
+			{
+				"id": "1327"
+			},
+			{
+				"id": "2054"
+			},
+			{
+				"id": "2084"
+			},
+			{
+				"id": "2085"
+			},
+			{
+				"id": "2122"
+			},
+			{
+				"id": "2146"
+			},
+			{
+				"id": "2203"
+			},
+			{
+				"id": "2219"
+			},
+			{
+				"id": "2245",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5145",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7041",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7070",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7118",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2043",
+		"name": "The Seventh Day of Krampus"
+	},
+	"2044": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "2021"
+			},
+			{
+				"id": "5005"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "5005"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7047",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2021",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5030",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7011",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7047",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2044",
+		"name": "The Eighth Day of Krampus"
+	},
+	"2045": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "1036"
+			},
+			{
+				"id": "1638"
+			},
+			{
+				"id": "2048"
+			},
+			{
+				"id": "2099"
+			},
+			{
+				"id": "2157"
+			},
+			{
+				"id": "2179"
+			},
+			{
+				"id": "2212"
+			},
+			{
+				"id": "2246"
+			},
+			{
+				"id": "2255"
+			},
+			{
+				"id": "5065",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5069",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5141",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6139",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7065",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7140",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2045",
+		"name": "The Ninth Day of Krampus"
+	},
+	"2046": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "5004"
+			},
+			{
+				"id": "1026"
+			},
+			{
+				"id": "1029"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "1629"
+			},
+			{
+				"id": "2009"
+			},
+			{
+				"id": "2032"
+			},
+			{
+				"id": "2058"
+			},
+			{
+				"id": "2075"
+			},
+			{
+				"id": "2189",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2238",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5046",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5135",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6046",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6075",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2046",
+		"name": "The Tenth Day of Krampus"
+	},
+	"2047": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "4066"
+			},
+			{
+				"id": "5147"
+			},
+			{
+				"id": "1333"
+			},
+			{
+				"id": "1335"
+			},
+			{
+				"id": "2064"
+			},
+			{
+				"id": "2102"
+			},
+			{
+				"id": "2171"
+			},
+			{
+				"id": "2195"
+			},
+			{
+				"id": "2243"
+			},
+			{
+				"id": "5089",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6072",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6143",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6144",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7090",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7145",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2047",
+		"name": "The Eleventh Day of Krampus"
+	},
+	"2048": {
+		"commander": {
+			"id": "493"
+		},
+		"deck": [
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500"
+			},
+			{
+				"id": "500",
+				"mastery_level": "2"
+			},
+			{
+				"id": "500",
+				"mastery_level": "3"
+			},
+			{
+				"id": "500",
+				"mastery_level": "4"
+			},
+			{
+				"id": "500",
+				"mastery_level": "5"
+			},
+			{
+				"id": "500",
+				"mastery_level": "6"
+			},
+			{
+				"id": "500",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2048",
+		"name": "The Twelfth Day of Krampus"
+	},
 	"3654": {
 		"commander": {
 			"id": "391"
@@ -22376,7 +23178,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "3333",
+				"id": "2222",
 				"mastery_level": "5"
 			},
 			{
@@ -111378,7 +112180,7 @@ var MISSIONS = {
 				"id": "1027"
 			},
 			{
-				"id": "1023"
+				"id": "1032"
 			},
 			{
 				"id": "1027",
@@ -115687,54 +116489,54 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903"
+				"id": "7251"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "1"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "2"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "3"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "4"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "5"
 			},
 			{
-				"id": "99903",
+				"id": "7251",
 				"mastery_level": "6"
 			}
 		],
@@ -124439,7 +125241,7 @@ var MISSIONS = {
 			}
 		],
 		"id": "6757",
-		"name": "It’s only a game, why do you have to be mad?"
+		"name": "It's only a game, why do you have to be mad?"
 	},
 	"6758": {
 		"commander": {
@@ -136648,10 +137450,10 @@ var MISSIONS = {
 		},
 		"deck": [
 			{
-				"id": "2528"
+				"id": "5228"
 			},
 			{
-				"id": "2528"
+				"id": "5228"
 			},
 			{
 				"id": "1045"
@@ -136739,7 +137541,7 @@ var MISSIONS = {
 				"mastery_level": "2"
 			},
 			{
-				"id": "2528",
+				"id": "5228",
 				"mastery_level": "3"
 			},
 			{
@@ -140351,7 +141153,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "7728",
+				"id": "7228",
 				"mastery_level": "6"
 			},
 			{
@@ -140407,7 +141209,7 @@ var MISSIONS = {
 				"mastery_level": "4"
 			},
 			{
-				"id": "7728",
+				"id": "7228",
 				"mastery_level": "4"
 			},
 			{
@@ -140463,7 +141265,7 @@ var MISSIONS = {
 				"mastery_level": "3"
 			},
 			{
-				"id": "7728",
+				"id": "7228",
 				"mastery_level": "4"
 			},
 			{
@@ -142672,7 +143474,7 @@ var MISSIONS = {
 				"id": "1027"
 			},
 			{
-				"id": "1023"
+				"id": "1032"
 			},
 			{
 				"id": "1027",
@@ -149859,5 +150661,725 @@ var MISSIONS = {
 		],
 		"id": "7181",
 		"name": "Clipped Wings"
+	},
+	"7182": {
+		"commander": {
+			"id": "208"
+		},
+		"deck": [
+			{
+				"id": "1015"
+			},
+			{
+				"id": "1015"
+			},
+			{
+				"id": "1015"
+			},
+			{
+				"id": "1618"
+			},
+			{
+				"id": "1618"
+			},
+			{
+				"id": "1618"
+			},
+			{
+				"id": "5022"
+			},
+			{
+				"id": "5022"
+			},
+			{
+				"id": "5022"
+			},
+			{
+				"id": "1313",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1313",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1313",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6022",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6022",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6022",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7182",
+		"name": "Toil and Trouble"
+	},
+	"7183": {
+		"commander": {
+			"id": "249"
+		},
+		"deck": [
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "2011",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2011",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2011",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2133",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2133",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2133",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7183",
+		"name": "Not Fast but Furious"
+	},
+	"7184": {
+		"commander": {
+			"id": "220"
+		},
+		"deck": [
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2237"
+			},
+			{
+				"id": "2237"
+			},
+			{
+				"id": "2237"
+			},
+			{
+				"id": "2134",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2134",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2134",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2161",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2161",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2161",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7184",
+		"name": "Emergency Village"
+	},
+	"7185": {
+		"commander": {
+			"id": "283"
+		},
+		"deck": [
+			{
+				"id": "5155"
+			},
+			{
+				"id": "5155"
+			},
+			{
+				"id": "5155"
+			},
+			{
+				"id": "6104"
+			},
+			{
+				"id": "6104"
+			},
+			{
+				"id": "6104"
+			},
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7053",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7053",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7053",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7185",
+		"name": "Absolute Corruption"
+	},
+	"7186": {
+		"commander": {
+			"id": "290"
+		},
+		"deck": [
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "6051",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6051",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6051",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2258",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2258",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2258",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7186",
+		"name": "Familiar Tactics"
+	},
+	"7187": {
+		"commander": {
+			"id": "252"
+		},
+		"deck": [
+			{
+				"id": "2013"
+			},
+			{
+				"id": "2013"
+			},
+			{
+				"id": "2013"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2250",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2250",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2250",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7187",
+		"name": "The Emperor Strikes Back"
+	},
+	"7188": {
+		"commander": {
+			"id": "252"
+		},
+		"deck": [
+			{
+				"id": "7204"
+			},
+			{
+				"id": "7204"
+			},
+			{
+				"id": "7204"
+			},
+			{
+				"id": "5205"
+			},
+			{
+				"id": "5205"
+			},
+			{
+				"id": "5205"
+			},
+			{
+				"id": "5018"
+			},
+			{
+				"id": "5018"
+			},
+			{
+				"id": "5018"
+			},
+			{
+				"id": "7241",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7241",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7241",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7018",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7018",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7018",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7188",
+		"name": "Frog Civil War"
+	},
+	"7189": {
+		"commander": {
+			"id": "249"
+		},
+		"deck": [
+			{
+				"id": "7092"
+			},
+			{
+				"id": "7092"
+			},
+			{
+				"id": "7092"
+			},
+			{
+				"id": "7156"
+			},
+			{
+				"id": "7156"
+			},
+			{
+				"id": "7156"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7102",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7102",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7102",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6302",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6302",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6302",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7189",
+		"name": "The Missing Mayor"
+	},
+	"7190": {
+		"commander": {
+			"id": "290"
+		},
+		"deck": [
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7120"
+			},
+			{
+				"id": "7182"
+			},
+			{
+				"id": "7182"
+			},
+			{
+				"id": "7182"
+			},
+			{
+				"id": "7223",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7223",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7223",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7288",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7288",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7288",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7190",
+		"name": "A Veteran's Eye"
+	},
+	"7191": {
+		"commander": {
+			"id": "285"
+		},
+		"deck": [
+			{
+				"id": "5101"
+			},
+			{
+				"id": "5101"
+			},
+			{
+				"id": "5101"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5271"
+			},
+			{
+				"id": "5271"
+			},
+			{
+				"id": "5271"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7242",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7159",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7159",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7159",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7191",
+		"name": "Classically Froggy"
+	},
+	"7192": {
+		"commander": {
+			"id": "386"
+		},
+		"deck": [
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "7249"
+			},
+			{
+				"id": "7249"
+			},
+			{
+				"id": "7249"
+			},
+			{
+				"id": "5230"
+			},
+			{
+				"id": "5230"
+			},
+			{
+				"id": "5230"
+			},
+			{
+				"id": "7050",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7050",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7050",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8077",
+				"mastery_level": "5"
+			},
+			{
+				"id": "8077",
+				"mastery_level": "6"
+			},
+			{
+				"id": "8077",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7192",
+		"name": "Dear Friends..."
+	},
+	"7193": {
+		"commander": {
+			"id": "419"
+		},
+		"deck": [
+			{
+				"id": "6048"
+			},
+			{
+				"id": "6048"
+			},
+			{
+				"id": "6048"
+			},
+			{
+				"id": "5100"
+			},
+			{
+				"id": "5100"
+			},
+			{
+				"id": "5100"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "7302"
+			},
+			{
+				"id": "5143",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5143",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5143",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6133",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6133",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6133",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7193",
+		"name": "Written in the Stones"
 	}
 };
