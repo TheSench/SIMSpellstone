@@ -13157,7 +13157,7 @@
       <!-- Painter van Frogh -->
       <card level="6" id="2258" />
       <!-- Painter van Frogh -->
-      <item level="7" id="429" number="2" />
+      <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
     <find_item id="3077" drop_per_energy="1.7" />
@@ -13198,7 +13198,7 @@
       <!-- Stalker Hextongue -->
       <card level="6" id="2223" />
       <!-- Stalker Hextongue -->
-      <item level="7" id="429" number="2" />
+      <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
     <find_item id="3077" drop_per_energy="1.8" />
