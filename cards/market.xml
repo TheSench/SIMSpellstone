@@ -10355,7 +10355,8 @@
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
     <item_pack>
-      <item id="107602" quantity="125" />
+      <pulls>1</pulls>
+      <item id="107602" quantity="125" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -10374,7 +10375,8 @@
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
     <item_pack>
-      <item id="107626" quantity="125" />
+      <pulls>1</pulls>
+      <item id="107626" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>
