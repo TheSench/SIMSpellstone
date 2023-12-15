@@ -101,6 +101,10 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
+	"31": {
+		"id": "31",
+		"name": "Return to Tarragon Peak"
+	},
 	"33": {
 		"id": "33",
 		"name": "Skyhaven Assault"
@@ -6404,7 +6408,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1359",
 		"items": {
-			"3125": 1.7
+			"3125": 0.85
 		},
 		"location_id": "33",
 		"missions": [
@@ -6421,7 +6425,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1360",
 		"items": {
-			"3125": 1.8
+			"3125": 0.9
 		},
 		"location_id": "33",
 		"missions": [
@@ -6467,6 +6471,40 @@ var CAMPAIGNS = {
 			"7193"
 		],
 		"name": "Leapfrogging the Cure"
+	},
+	"1363": {
+		"battleground_id": "2120",
+		"id": "1363",
+		"items": {
+			"3119": 1.7
+		},
+		"location_id": "31",
+		"missions": [
+			"7194",
+			"7195",
+			"7196",
+			"7197",
+			"7198",
+			"7199"
+		],
+		"name": "Runes in the Ruins"
+	},
+	"1364": {
+		"battleground_id": "2120",
+		"id": "1364",
+		"items": {
+			"3119": 1.8
+		},
+		"location_id": "31",
+		"missions": [
+			"7200",
+			"7201",
+			"7202",
+			"7203",
+			"7204",
+			"7205"
+		],
+		"name": "A Forgotten Hero"
 	},
 	"3000": {
 		"id": "3000",
@@ -7092,7 +7130,7 @@ var CAMPAIGNS = {
 		"name": "Lightning Boss Orobas"
 	},
 	"5007": {
-		"battleground_id": "2122",
+		"battleground_id": "557",
 		"id": "5007",
 		"items": {
 			"3077": 0.9
@@ -151381,5 +151419,725 @@ var MISSIONS = {
 		],
 		"id": "7193",
 		"name": "Written in the Stones"
+	},
+	"7194": {
+		"commander": {
+			"id": "232"
+		},
+		"deck": [
+			{
+				"id": "5012"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "5012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "6012"
+			},
+			{
+				"id": "7012"
+			},
+			{
+				"id": "7012"
+			},
+			{
+				"id": "7012"
+			},
+			{
+				"id": "1334",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1334",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1334",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1631",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1631",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1631",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7194",
+		"name": "You Had A Dream"
+	},
+	"7195": {
+		"commander": {
+			"id": "259"
+		},
+		"deck": [
+			{
+				"id": "1336"
+			},
+			{
+				"id": "1336"
+			},
+			{
+				"id": "1336"
+			},
+			{
+				"id": "2003"
+			},
+			{
+				"id": "2003"
+			},
+			{
+				"id": "2003"
+			},
+			{
+				"id": "2004"
+			},
+			{
+				"id": "2004"
+			},
+			{
+				"id": "2004"
+			},
+			{
+				"id": "2005",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2005",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2046",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2046",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2046",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7195",
+		"name": "Welcome to Tarragon Peak?"
+	},
+	"7196": {
+		"commander": {
+			"id": "264"
+		},
+		"deck": [
+			{
+				"id": "2139"
+			},
+			{
+				"id": "2139"
+			},
+			{
+				"id": "2139"
+			},
+			{
+				"id": "2090"
+			},
+			{
+				"id": "2090"
+			},
+			{
+				"id": "2090"
+			},
+			{
+				"id": "2221"
+			},
+			{
+				"id": "2221"
+			},
+			{
+				"id": "2221"
+			},
+			{
+				"id": "2066",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2066",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2066",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7196",
+		"name": "That's Mine!"
+	},
+	"7197": {
+		"commander": {
+			"id": "354"
+		},
+		"deck": [
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2033",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7197",
+		"name": "An Arcing Blaze"
+	},
+	"7198": {
+		"commander": {
+			"id": "353"
+		},
+		"deck": [
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5024"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "5025"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "5131",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5131",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5131",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5162",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7198",
+		"name": "An Old Friend"
+	},
+	"7199": {
+		"commander": {
+			"id": "422"
+		},
+		"deck": [
+			{
+				"id": "5290"
+			},
+			{
+				"id": "5290"
+			},
+			{
+				"id": "5290"
+			},
+			{
+				"id": "7215"
+			},
+			{
+				"id": "7215"
+			},
+			{
+				"id": "7215"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "6095",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6095",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6095",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7199",
+		"name": "Return of the Adventurer"
+	},
+	"7200": {
+		"commander": {
+			"id": "212"
+		},
+		"deck": [
+			{
+				"id": "1040"
+			},
+			{
+				"id": "1040"
+			},
+			{
+				"id": "1040"
+			},
+			{
+				"id": "1640"
+			},
+			{
+				"id": "1640"
+			},
+			{
+				"id": "1640"
+			},
+			{
+				"id": "1340"
+			},
+			{
+				"id": "1340"
+			},
+			{
+				"id": "1340"
+			},
+			{
+				"id": "2047",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2047",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2047",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2068",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7200",
+		"name": "The Invisible Hand"
+	},
+	"7201": {
+		"commander": {
+			"id": "227"
+		},
+		"deck": [
+			{
+				"id": "2006"
+			},
+			{
+				"id": "2006"
+			},
+			{
+				"id": "2006"
+			},
+			{
+				"id": "6106"
+			},
+			{
+				"id": "6106"
+			},
+			{
+				"id": "6106"
+			},
+			{
+				"id": "6185"
+			},
+			{
+				"id": "6185"
+			},
+			{
+				"id": "6185"
+			},
+			{
+				"id": "6305",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6305",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6305",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7309",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7309",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7309",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7201",
+		"name": "A Mystery Revealed"
+	},
+	"7202": {
+		"commander": {
+			"id": "228"
+		},
+		"deck": [
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "2065"
+			},
+			{
+				"id": "5023"
+			},
+			{
+				"id": "5023"
+			},
+			{
+				"id": "5023"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "6100"
+			},
+			{
+				"id": "5026",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5026",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5026",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6209",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6209",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6209",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7202",
+		"name": "The Growing Void"
+	},
+	"7203": {
+		"commander": {
+			"id": "340"
+		},
+		"deck": [
+			{
+				"id": "6186"
+			},
+			{
+				"id": "6186"
+			},
+			{
+				"id": "6186"
+			},
+			{
+				"id": "5188"
+			},
+			{
+				"id": "5188"
+			},
+			{
+				"id": "5188"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6289"
+			},
+			{
+				"id": "6207",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6207",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6207",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5216",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5216",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5216",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7203",
+		"name": "Mechanical Protection"
+	},
+	"7204": {
+		"commander": {
+			"id": "310"
+		},
+		"deck": [
+			{
+				"id": "2229"
+			},
+			{
+				"id": "2229"
+			},
+			{
+				"id": "2229"
+			},
+			{
+				"id": "6268"
+			},
+			{
+				"id": "6268"
+			},
+			{
+				"id": "6268"
+			},
+			{
+				"id": "7269"
+			},
+			{
+				"id": "7269"
+			},
+			{
+				"id": "7269"
+			},
+			{
+				"id": "5307",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5307",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5307",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6128",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6128",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6128",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7204",
+		"name": "A Forgotten Fusion"
+	},
+	"7205": {
+		"commander": {
+			"id": "370"
+		},
+		"deck": [
+			{
+				"id": "7270"
+			},
+			{
+				"id": "7270"
+			},
+			{
+				"id": "7270"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "7243"
+			},
+			{
+				"id": "6301"
+			},
+			{
+				"id": "6301"
+			},
+			{
+				"id": "6301"
+			},
+			{
+				"id": "7092",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7092",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7092",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7131",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7131",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7131",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7205",
+		"name": "A Forgotten Tribe"
 	}
 };

@@ -69012,6 +69012,758 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
+  <!-- E111 Node 1: Runes in the Ruins -->
+  <mission>
+    <id>7194</id>
+    <name>You Had A Dream</name>
+    <energy>18</energy>
+    <desc>You leave Alyel in Cedric's care and rush to Tarragon Peak, frantically explaining your dream to your allies. Not everyone is convinced by the visions you're having.</desc>
+    <commander id="232" />
+    <!-- Frenzied Dragon -->
+    <deck>
+      <card id="5012" />
+      <!-- Thunder Drake -->
+      <card id="5012" />
+      <!-- Thunder Drake -->
+      <card id="5012" />
+      <!-- Thunder Drake -->
+      <card id="6012" />
+      <!-- Scorching Drake -->
+      <card id="6012" />
+      <!-- Scorching Drake -->
+      <card id="6012" />
+      <!-- Scorching Drake -->
+      <card id="7012" />
+      <!-- Lifeblood Drake -->
+      <card id="7012" />
+      <!-- Lifeblood Drake -->
+      <card id="7012" />
+      <!-- Lifeblood Drake -->
+      <card id="1334" mastery_level="2" />
+      <!-- Ash Drake -->
+      <card id="1334" mastery_level="3" />
+      <!-- Ash Drake -->
+      <card id="1334" mastery_level="4" />
+      <!-- Ash Drake -->
+      <card id="1631" mastery_level="5" />
+      <!-- Tainted Dragon -->
+      <card id="1631" mastery_level="6" />
+      <!-- Tainted Dragon -->
+      <card id="1631" mastery_level="7" />
+      <!-- Tainted Dragon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Have you considered that you might be heading straight into a trap?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7195</id>
+    <name>Welcome to Tarragon Peak?</name>
+    <energy>18</energy>
+    <desc>Arriving in the mountains, you see a familiar face, although she doesn't seem all too happy to see you.</desc>
+    <commander id="259" />
+    <!-- Iceback Dragon -->
+    <deck>
+      <card id="1336" />
+      <!-- Rustscale Wyrm -->
+      <card id="1336" />
+      <!-- Rustscale Wyrm -->
+      <card id="1336" />
+      <!-- Rustscale Wyrm -->
+      <card id="2003" />
+      <!-- Dragon Tamer -->
+      <card id="2003" />
+      <!-- Dragon Tamer -->
+      <card id="2003" />
+      <!-- Dragon Tamer -->
+      <card id="2004" />
+      <!-- Lavatail Dragon -->
+      <card id="2004" />
+      <!-- Lavatail Dragon -->
+      <card id="2004" />
+      <!-- Lavatail Dragon -->
+      <card id="2005" mastery_level="2" />
+      <!-- Sailing Drake -->
+      <card id="2005" mastery_level="3" />
+      <!-- Sailing Drake -->
+      <card id="2005" mastery_level="4" />
+      <!-- Sailing Drake -->
+      <card id="2046" mastery_level="5" />
+      <!-- Leaping Dragon -->
+      <card id="2046" mastery_level="6" />
+      <!-- Leaping Dragon -->
+      <card id="2046" mastery_level="7" />
+      <!-- Leaping Dragon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Oh great, another expedition come to mine and disturb our stones. Just like the bad old days.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Will someone think of the baby dragons?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7196</id>
+    <name>That's Mine!</name>
+    <energy>18</energy>
+    <desc>As Fiona warned, you see miners from all tribes scouring the rocks with their tools. They're so engrossed in their work, they don't even notice you approaching.</desc>
+    <commander id="264" />
+    <!-- Vapor Hunters -->
+    <deck>
+      <card id="2139" />
+      <!-- Skeletal Dragonkin -->
+      <card id="2139" />
+      <!-- Skeletal Dragonkin -->
+      <card id="2139" />
+      <!-- Skeletal Dragonkin -->
+      <card id="2090" />
+      <!-- Terra Dweller -->
+      <card id="2090" />
+      <!-- Terra Dweller -->
+      <card id="2090" />
+      <!-- Terra Dweller -->
+      <card id="2221" />
+      <!-- Toughened Striker -->
+      <card id="2221" />
+      <!-- Toughened Striker -->
+      <card id="2221" />
+      <!-- Toughened Striker -->
+      <card id="2066" mastery_level="2" />
+      <!-- Basalt Dragon -->
+      <card id="2066" mastery_level="3" />
+      <!-- Basalt Dragon -->
+      <card id="2066" mastery_level="4" />
+      <!-- Basalt Dragon -->
+      <card id="5062" mastery_level="5" />
+      <!-- Cliffhanger Wyrm -->
+      <card id="5062" mastery_level="6" />
+      <!-- Cliffhanger Wyrm -->
+      <card id="5062" mastery_level="7" />
+      <!-- Cliffhanger Wyrm -->
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Look at them, taking chunks out of this sacred place and then discarding it as rubble! Makes me so angry!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>1</enemy>
+        <text>Hey I was here first!</text>
+      </line>
+      <line>
+        <commander>royalengineer</commander>
+        <enemy>1</enemy>
+        <text>It's mine now!</text>
+      </line>
+      <line>
+        <commander>Portraits_Tribal_Frog</commander>
+        <enemy>1</enemy>
+        <text>Step aside! I'm going to blast this rock with my explosive bombs!</text>
+      </line>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Huh, who are you? I don't recognise your... LOOK OUT! INCOMING!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7197</id>
+    <name>An Arcing Blaze</name>
+    <energy>18</energy>
+    <desc>Suddenly a blast of fiery energy hits a boulder near you, luckily leaving you unscathed. You see a dragon flying overhead but far from scaring the miners, they all rush towards the ruins.</desc>
+    <commander id="354" />
+    <!-- Skyward Beast -->
+    <deck>
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="2" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="3" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="4" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="5" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="6" />
+      <!-- Arcblaze Dragon -->
+      <card id="2033" mastery_level="7" />
+      <!-- Arcblaze Dragon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! Are you alright? That dragon, that blaze of energy... surely my eyes were deceiving me...</text>
+      </line>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Look! Over there near the blast! The rock is glowing!</text>
+      </line>
+      <line>
+        <commander>Portrait_Magical_Rune_Heart</commander>
+        <enemy>0</enemy>
+        <text>*glows*</text>
+      </line>
+      <line>
+        <commander>undeadscientists</commander>
+        <enemy>1</enemy>
+        <text>It's just like the others said!</text>
+      </line>
+      <line>
+        <commander>mechanicgoblin</commander>
+        <enemy>1</enemy>
+        <text>Out of my way! Deploying mining equipment!</text>
+      </line>
+      <line>
+        <commander>Portraits_Miner_Droid</commander>
+        <enemy>1</enemy>
+        <text>WHIRRRRRR!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7198</id>
+    <name>An Old Friend</name>
+    <energy>18</energy>
+    <desc>Short of any useful leads, you soon realise you will need to seek clues from an old, wise, dragon.</desc>
+    <commander id="353" />
+    <!-- Mechanical Drakes -->
+    <deck>
+      <card id="5024" />
+      <!-- Cloudtop Dragon -->
+      <card id="5024" />
+      <!-- Cloudtop Dragon -->
+      <card id="5024" />
+      <!-- Cloudtop Dragon -->
+      <card id="5025" />
+      <!-- Steelskin Dragon -->
+      <card id="5025" />
+      <!-- Steelskin Dragon -->
+      <card id="5025" />
+      <!-- Steelskin Dragon -->
+      <card id="2124" />
+      <!-- Bulbscale Construct -->
+      <card id="2124" />
+      <!-- Bulbscale Construct -->
+      <card id="2124" />
+      <!-- Bulbscale Construct -->
+      <card id="5131" mastery_level="2" />
+      <!-- Steelscale, Sky's Realm -->
+      <card id="5131" mastery_level="3" />
+      <!-- Steelscale, Sky's Realm -->
+      <card id="5131" mastery_level="4" />
+      <!-- Steelscale, Sky's Realm -->
+      <card id="5162" mastery_level="5" />
+      <!-- Aloier, Dragon Sentinel -->
+      <card id="5162" mastery_level="6" />
+      <!-- Aloier, Dragon Sentinel -->
+      <card id="5162" mastery_level="7" />
+      <!-- Aloier, Dragon Sentinel -->
+    </deck>
+    <speech>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Hey! You all back off! I saw these runes first!</text>
+      </line>
+      <line>
+        <commander>feralbird</commander>
+        <enemy>1</enemy>
+        <text>SQUAWK! Not if I take the slivers before you! SQUAWK!</text>
+      </line>
+      <line>
+        <commander>windupdragons</commander>
+        <enemy>0</enemy>
+        <text>Tribal Discord Detected. Reporting To Base.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Huh, those mechanical drakes appear to heading towards Teroxis' summit...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Well, looks like we're going there too.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7199</id>
+    <name>Return of the Adventurer</name>
+    <energy>18</energy>
+    <desc>You take the short flight up to the peak where Teroxis remains perched. The look on his face tells you that he's been expecting you.</desc>
+    <commander id="422" />
+    <!-- Ancient Dragon -->
+    <deck>
+      <card id="5290" />
+      <!-- Ofidi Ex Machina -->
+      <card id="5290" />
+      <!-- Ofidi Ex Machina -->
+      <card id="5290" />
+      <!-- Ofidi Ex Machina -->
+      <card id="7215" />
+      <!-- Forgewing Whelp -->
+      <card id="7215" />
+      <!-- Forgewing Whelp -->
+      <card id="7215" />
+      <!-- Forgewing Whelp -->
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="6095" mastery_level="2" />
+      <!-- Gearplate Dragon -->
+      <card id="6095" mastery_level="3" />
+      <!-- Gearplate Dragon -->
+      <card id="6095" mastery_level="4" />
+      <!-- Gearplate Dragon -->
+      <card id="6241" mastery_level="5" />
+      <!-- Grimkite Model -->
+      <card id="6241" mastery_level="6" />
+      <!-- Grimkite Model -->
+      <card id="6241" mastery_level="7" />
+      <!-- Grimkite Model -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>My... friends... long time... good... see... again.</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>You must have... questions. Many... questions. Me... tell... all.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Well, I hope you're sitting comfortably, adventurer.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E111 Node 2: A Forgotten Hero -->
+  <mission>
+    <id>7200</id>
+    <name>The Invisible Hand</name>
+    <energy>18</energy>
+    <desc>Mysterious shadows are gathered in a cave, sheltering from the void thunderclaps outside, and in animated conversation</desc>
+    <commander id="212" />
+    <!-- Caverns of Crossing -->
+    <deck>
+      <card id="1040" />
+      <!-- Storm Dragon -->
+      <card id="1040" />
+      <!-- Storm Dragon -->
+      <card id="1040" />
+      <!-- Storm Dragon -->
+      <card id="1640" />
+      <!-- Life Dragon -->
+      <card id="1640" />
+      <!-- Life Dragon -->
+      <card id="1640" />
+      <!-- Life Dragon -->
+      <card id="1340" />
+      <!-- Blazekin Dragon -->
+      <card id="1340" />
+      <!-- Blazekin Dragon -->
+      <card id="1340" />
+      <!-- Blazekin Dragon -->
+      <card id="2047" mastery_level="2" />
+      <!-- Conjured Dragon -->
+      <card id="2047" mastery_level="3" />
+      <!-- Conjured Dragon -->
+      <card id="2047" mastery_level="4" />
+      <!-- Conjured Dragon -->
+      <card id="2068" mastery_level="5" />
+      <!-- Whitesail Wyvern -->
+      <card id="2068" mastery_level="6" />
+      <!-- Whitesail Wyvern -->
+      <card id="2068" mastery_level="7" />
+      <!-- Whitesail Wyvern -->
+    </deck>
+    <speech>
+      <line>
+        <commander>wraithden</commander>
+        <enemy>1</enemy>
+        <text>Double, double toil and trouble. Fire burn and cauldron bubble. Scale of dragon, tooth of...</text>
+      </line>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>0</enemy>
+        <text>You three! Just how long did you think you were going to be able to hide this from me?! What did you do?!</text>
+      </line>
+      <line>
+        <commander>wraithden</commander>
+        <enemy>1</enemy>
+        <text>Why... how... now... you sound angry?</text>
+      </line>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>0</enemy>
+        <text>Are you surprised?! You were supposed to investigate the source of the Void disturbance, not unleash it back into the world!</text>
+      </line>
+      <line>
+        <commander>wraithden</commander>
+        <enemy>1</enemy>
+        <text>We... we... didn't anticipate the goblins would be so reckless...</text>
+      </line>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>0</enemy>
+        <text>Well that's another incident with the Void everyone is going to blame on the Crimsonwings.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7201</id>
+    <name>A Mystery Revealed</name>
+    <energy>18</energy>
+    <desc>The mysterious figure in the cave finally reveals herself...</desc>
+    <commander id="227" />
+    <!-- Wasteland Wraiths -->
+    <deck>
+      <card id="2006" />
+      <!-- Zhulong -->
+      <card id="2006" />
+      <!-- Zhulong -->
+      <card id="2006" />
+      <!-- Zhulong -->
+      <card id="6106" />
+      <!-- Bailong -->
+      <card id="6106" />
+      <!-- Bailong -->
+      <card id="6106" />
+      <!-- Bailong -->
+      <card id="6185" />
+      <!-- Heilong -->
+      <card id="6185" />
+      <!-- Heilong -->
+      <card id="6185" />
+      <!-- Heilong -->
+      <card id="6305" mastery_level="2" />
+      <!-- Laolong, the Ancient -->
+      <card id="6305" mastery_level="3" />
+      <!-- Laolong, the Ancient -->
+      <card id="6305" mastery_level="4" />
+      <!-- Laolong, the Ancient -->
+      <card id="7309" mastery_level="5" />
+      <!-- Dulong, the Fierce -->
+      <card id="7309" mastery_level="6" />
+      <!-- Dulong, the Fierce -->
+      <card id="7309" mastery_level="7" />
+      <!-- Dulong, the Fierce -->
+    </deck>
+    <speech>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>0</enemy>
+        <text>And you can stop acting so mysterious too, Tanit...</text>
+      </line>
+      <line>
+        <commander>Portrait_Avian_Priest</commander>
+        <enemy>0</enemy>
+        <text>Sorry...</text>
+      </line>
+      <line>
+        <commander>Portrait_darksword</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Demon_Samurai</commander>
+        <enemy>0</enemy>
+        <text>I was against the goblin idea from the start...</text>
+      </line>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>0</enemy>
+        <text>Good thing, however, I've been preparing these last few months for just such an eventuality...</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You three better disperse back to your respective tribes before everyone starts to think we've reunited.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7202</id>
+    <name>The Growing Void</name>
+    <energy>18</energy>
+    <desc>Back at Tarragon Peak, Teroxis notes that with the Titans bound to Viracocha, there was almost no resistance to the spreading Void...</desc>
+    <commander id="228" />
+    <!-- Voidlings -->
+    <deck>
+      <card id="2065" />
+      <!-- Pinpin, Dragon Handler -->
+      <card id="2065" />
+      <!-- Pinpin, Dragon Handler -->
+      <card id="2065" />
+      <!-- Pinpin, Dragon Handler -->
+      <card id="5023" />
+      <!-- Nightfall Dragon -->
+      <card id="5023" />
+      <!-- Nightfall Dragon -->
+      <card id="5023" />
+      <!-- Nightfall Dragon -->
+      <card id="6100" />
+      <!-- Tiamat -->
+      <card id="6100" />
+      <!-- Tiamat -->
+      <card id="6100" />
+      <!-- Tiamat -->
+      <card id="5026" mastery_level="2" />
+      <!-- Frostfire Wyrm -->
+      <card id="5026" mastery_level="3" />
+      <!-- Frostfire Wyrm -->
+      <card id="5026" mastery_level="4" />
+      <!-- Frostfire Wyrm -->
+      <card id="6209" mastery_level="5" />
+      <!-- Wyribbit -->
+      <card id="6209" mastery_level="6" />
+      <!-- Wyribbit -->
+      <card id="6209" mastery_level="7" />
+      <!-- Wyribbit -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>She... realised... old factions... cannot fight...</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Needed to find new... allies.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7203</id>
+    <name>Mechanical Protection</name>
+    <energy>18</energy>
+    <desc>... and yet these new mechanical drakes have managed to ward off the Void from his beloved mountain thus far...</desc>
+    <commander id="340" />
+    <!-- Wind-Up Dragons -->
+    <deck>
+      <card id="6186" />
+      <!-- Millidrake Regent -->
+      <card id="6186" />
+      <!-- Millidrake Regent -->
+      <card id="6186" />
+      <!-- Millidrake Regent -->
+      <card id="5188" />
+      <!-- Movra, Dragon Ruler -->
+      <card id="5188" />
+      <!-- Movra, Dragon Ruler -->
+      <card id="5188" />
+      <!-- Movra, Dragon Ruler -->
+      <card id="6289" />
+      <!-- Scalixir Trader -->
+      <card id="6289" />
+      <!-- Scalixir Trader -->
+      <card id="6289" />
+      <!-- Scalixir Trader -->
+      <card id="6207" mastery_level="2" />
+      <!-- Sandlair Dragon -->
+      <card id="6207" mastery_level="3" />
+      <!-- Sandlair Dragon -->
+      <card id="6207" mastery_level="4" />
+      <!-- Sandlair Dragon -->
+      <card id="5216" mastery_level="5" />
+      <!-- Drakon -->
+      <card id="5216" mastery_level="6" />
+      <!-- Drakon -->
+      <card id="5216" mastery_level="7" />
+      <!-- Drakon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Do... you like machine dragon?</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Old friend... her idea... protect Peak.</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Use machines... ward... Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7204</id>
+    <name>A Forgotten Fusion</name>
+    <energy>18</energy>
+    <desc>... and the secret energy was only to be found from a forgotten dragon long thought extinct, only for them to be rediscovered by a forgotten hero.</desc>
+    <commander id="310" />
+    <!-- Ivytail Dragon -->
+    <deck>
+      <card id="2229" />
+      <!-- Terragon -->
+      <card id="2229" />
+      <!-- Terragon -->
+      <card id="2229" />
+      <!-- Terragon -->
+      <card id="6268" />
+      <!-- Wyrmdance Head -->
+      <card id="6268" />
+      <!-- Wyrmdance Head -->
+      <card id="6268" />
+      <!-- Wyrmdance Head -->
+      <card id="7269" />
+      <!-- Wyrmdance Tail -->
+      <card id="7269" />
+      <!-- Wyrmdance Tail -->
+      <card id="7269" />
+      <!-- Wyrmdance Tail -->
+      <card id="5307" mastery_level="2" />
+      <!-- Frost Drakefly -->
+      <card id="5307" mastery_level="3" />
+      <!-- Frost Drakefly -->
+      <card id="5307" mastery_level="4" />
+      <!-- Frost Drakefly -->
+      <card id="6128" mastery_level="5" />
+      <!-- Grimhunt Brood -->
+      <card id="6128" mastery_level="6" />
+      <!-- Grimhunt Brood -->
+      <card id="6128" mastery_level="7" />
+      <!-- Grimhunt Brood -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Also... her idea... found forgotten... Arc... dragon...</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>But... dragon... breath... powerful... magical... we not know...</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Blaze... create magic... runes... powder... fragments... Now... all... tribes here fighting.</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>They damage... mountain. Me... feel sad. Hope... she return soon.</text>
+      </line>
+      <line>
+        <commander>Portrait_Dragon_Sage</commander>
+        <enemy>0</enemy>
+        <text>Me... waiting... Again.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7205</id>
+    <name>A Forgotten Tribe</name>
+    <energy>18</energy>
+    <desc>With Teroxis' story finishing as darkness approaches, you make camp and slowly drift off into another night's sleep filled dream visions.</desc>
+    <commander id="370" />
+    <!-- Spirit of the Beast -->
+    <deck>
+      <card id="7270" />
+      <!-- Elarian Beast -->
+      <card id="7270" />
+      <!-- Elarian Beast -->
+      <card id="7270" />
+      <!-- Elarian Beast -->
+      <card id="7243" />
+      <!-- Moonscale Howler -->
+      <card id="7243" />
+      <!-- Moonscale Howler -->
+      <card id="7243" />
+      <!-- Moonscale Howler -->
+      <card id="6301" />
+      <!-- Vlad -->
+      <card id="6301" />
+      <!-- Vlad -->
+      <card id="6301" />
+      <!-- Vlad -->
+      <card id="7092" mastery_level="2" />
+      <!-- Lord Froggy -->
+      <card id="7092" mastery_level="3" />
+      <!-- Lord Froggy -->
+      <card id="7092" mastery_level="4" />
+      <!-- Lord Froggy -->
+      <card id="7131" mastery_level="5" />
+      <!-- Xovrus, Death's End -->
+      <card id="7131" mastery_level="6" />
+      <!-- Xovrus, Death's End -->
+      <card id="7131" mastery_level="7" />
+      <!-- Xovrus, Death's End -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Avian_Priest</commander>
+        <enemy>0</enemy>
+        <text>We are in your dreams once more.</text>
+      </line>
+      <line>
+        <commander>Portrait_darksword</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Demon_Samurai</commander>
+        <enemy>0</enemy>
+        <text>Go find her. She has found more who were once forgotten.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Come find me. I'm waiting.</text>
+      </line>
+      <line>
+        <commander>wolf</commander>
+        <enemy>0</enemy>
+        <text>So are we.</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

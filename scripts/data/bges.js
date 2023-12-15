@@ -2662,6 +2662,69 @@ var BATTLEGROUNDS = {
 		"id": "172",
 		"name": "Frog Toxic Barrage"
 	},
+	"173": {
+		"desc": "All Dragons gain base Ward 3 + Delay, and extra Health equal to 10% of their base Health. BGE subject to change.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 3,
+				"y": "9"
+			},
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 4,
+				"y": "9"
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 5,
+				"y": "9"
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "9"
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.1,
+				"y": "9"
+			}
+		],
+		"id": "173",
+		"name": "Aegis of Dragons"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

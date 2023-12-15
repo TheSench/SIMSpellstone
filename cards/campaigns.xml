@@ -8949,8 +8949,8 @@
   <campaign>
     <id>1260</id>
     <name>Return to Tarragon Peak</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1600362000</locked_start_time>
     <!-- Thursday, 17 September 2020 17:00:00 -->
     <location_id>31</location_id>
@@ -8986,8 +8986,8 @@
   <campaign>
     <id>1261</id>
     <name>First Order Remnants</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1260" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1260" level="1" />
     <locked_start_time>1601571600</locked_start_time>
     <!-- Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2103</battleground_id>
@@ -9067,8 +9067,8 @@
     <name>Daknak Fight!</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1260" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1260" level="1" />
     <locked_start_time>1601571600</locked_start_time>
     <!--  Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2104</battleground_id>
@@ -9103,8 +9103,8 @@
   <campaign>
     <id>1264</id>
     <name>Seastone Staff Secrets</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1261" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1261" level="1" />
     <locked_start_time>1602781200</locked_start_time>
     <!--  Thursday, 15 October 2020 17:00:00 -->
     <battleground_id>2105</battleground_id>
@@ -9141,8 +9141,8 @@
   <campaign>
     <id>1265</id>
     <name>Missing Spiritual Strength</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1264" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1264" level="1" />
     <locked_start_time>1603990800</locked_start_time>
     <!--  Thursday, 29 October 2020 17:00:00 -->
     <battleground_id>2106</battleground_id>
@@ -11085,8 +11085,8 @@
     <id>1313</id>
     <name>Taking a Break</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1648746000</locked_start_time>
     <!-- Thursday, 31 March 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11128,8 +11128,8 @@
     <id>1314</id>
     <name>Exploring Tarragon Peak</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1313" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1313" level="1" />
     <locked_start_time>1649955600</locked_start_time>
     <!-- Thursday, 14 April 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -13077,7 +13077,7 @@
       <item level="7" id="2816" number="150" />
       <!-- Skyhaven Assault Super Flask -->
     </rewards>
-    <find_item id="3125" drop_per_energy="1.7" />
+    <find_item id="3125" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1701968400</ignore_energy_reduction_until>
     <!-- Thursday, 07 December 2023 at 17:00:00 -->
@@ -13118,7 +13118,7 @@
       <item level="7" id="2816" number="150" />
       <!-- Skyhaven Assault Super Flask -->
     </rewards>
-    <find_item id="3125" drop_per_energy="1.8" />
+    <find_item id="3125" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1701968400</ignore_energy_reduction_until>
     <!-- Thursday, 07 December 2023 at 17:00:00 -->
@@ -13205,6 +13205,89 @@
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1704387600</ignore_energy_reduction_until>
     <!-- Thursday, 04 January 2024 at 17:00:00 -->
+  </campaign>
+  <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
+  <campaign>
+    <id>1363</id>
+    <name>Runes in the Ruins</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1704387600</locked_start_time>
+    <!-- Thursday, 04 January 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>31</location_id>
+    <x>750</x>
+    <y>250</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7194</mission_id>
+      <mission_id>7195</mission_id>
+      <mission_id>7196</mission_id>
+      <mission_id>7197</mission_id>
+      <mission_id>7198</mission_id>
+      <mission_id>7199</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28220" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card level="4" id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card level="5" id="2068" />
+      <!-- Whitesail Wyvern -->
+      <card level="6" id="2068" />
+      <!-- Whitesail Wyvern -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3119" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1706806800</ignore_energy_reduction_until>
+    <!-- Thursday, 01 February 2024 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1364</id>
+    <name>A Forgotten Hero</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1363" level="1" />
+    <locked_start_time>1705597200</locked_start_time>
+    <!-- Thursday, 18 January 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>31</location_id>
+    <x>800</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7200</mission_id>
+      <mission_id>7201</mission_id>
+      <mission_id>7202</mission_id>
+      <mission_id>7203</mission_id>
+      <mission_id>7204</mission_id>
+      <mission_id>7205</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28220" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="104079" number="300" />
+      <!-- New Dragon Champion -->
+      <card level="3" id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card level="4" id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card level="5" id="2068" />
+      <!-- Whitesail Wyvern -->
+      <card level="6" id="2068" />
+      <!-- Whitesail Wyvern -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3119" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1706806800</ignore_energy_reduction_until>
+    <!-- Thursday, 01 February 2024 at 17:00:00 -->
   </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->
@@ -14674,8 +14757,8 @@
     <hidden>1</hidden>
     <type>2</type>
     <icon id="santaHat" bundle="41" />
-    <exclude_global_bge>1</exclude_global_bge>
-    <battleground_id>2122</battleground_id>
+    <exclude_global_bges>1</exclude_global_bges>
+    <battleground_id>557</battleground_id>
     <location_id>17</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>

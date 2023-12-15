@@ -6836,6 +6836,68 @@
       <skill id="enfeeble" x="8" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4079</id>
+    <card_type>2</card_type>
+    <name>Unnamed Dragon Champion</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Treasure_Elemental_A</picture>
+    <asset_bundle>141</asset_bundle>
+    <hidden_until_time>1704387600</hidden_until_time>
+    <!-- Thursday, 04 January 2024 at 17:00:00 -->
+    <desc>Nothing to see here! Honest!</desc>
+    <item_name>Unnnamed Stone</item_name>
+    <item_desc>Collect Unnamed Stones to upgrade Unnamed Dragon Champion!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>8</type>
+    <sub_type>9</sub_type>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <picture>Treasure_Elemental_B</picture>
+      <asset_bundle>141</asset_bundle>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>2</health>
+    </upgrade>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
@@ -12889,7 +12951,7 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Undead_Scorpion_King_A</picture>
     <asset_bundle>250</asset_bundle>
-    -->
+    --&gt;
     <hidden_until_time>1657213200</hidden_until_time>
     <!--Thursday, 7 July 2022 17:00:00	-->
     <item_name>Mortas Stone</item_name>
@@ -12973,7 +13035,7 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Skeleball_A</picture>
     <asset_bundle>252</asset_bundle>
-    -->
+    --&gt;
     <hidden_until_time>1658422800</hidden_until_time>
     <!--Thursday, July 21, 2022 17:00:00	-->
     <item_name>Osseus Stone</item_name>
@@ -13653,7 +13715,7 @@
   <unit>
     <id>6632</id>
     <card_type>2</card_type>
-    <name>Nuri &#38; Nera, Twin Assailants</name>
+    <name>Nuri &amp; Nera, Twin Assailants</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
@@ -13662,7 +13724,7 @@
     <hidden_until_time>1689872400</hidden_until_time>
     <!-- Thursday, July 20, 2023 17:00:00	 -->
     <item_name>Assailants Stone</item_name>
-    <item_desc>Collect Assailants Stones to upgrade Nuri &#38; Nera, Twin Assailants!</item_desc>
+    <item_desc>Collect Assailants Stones to upgrade Nuri &amp; Nera, Twin Assailants!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>

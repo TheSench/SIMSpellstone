@@ -120,8 +120,8 @@
   </feature_lock>
   <feature_lock>
     <id>maxupgrade</id>
-    <vip_req>4</vip_req>
-    <!-- 4 -->
+    <mission_req>24</mission_req>
+    <!-- 24 -->
   </feature_lock>
   <feature_lock>
     <id>kongcrosspromo</id>
@@ -143,18 +143,18 @@
   <!-- ========================== -->
   <feature_lock>
     <id>combatspeed</id>
-    <mission_req>44</mission_req>
-    <!-- 44 -->
+    <mission_req>14</mission_req>
+    <!-- 14 -->
   </feature_lock>
   <feature_lock>
     <id>skip</id>
-    <mission_req>64</mission_req>
-    <!-- 64 -->
+    <mission_req>34</mission_req>
+    <!-- 34 -->
   </feature_lock>
   <feature_lock>
     <id>autoplay</id>
-    <mission_req>104</mission_req>
-    <!-- 104 -->
+    <mission_req>54</mission_req>
+    <!-- 54 -->
   </feature_lock>
   <!-- ========================= -->
   <!-- === DISABLED FEATURES === -->
@@ -985,7 +985,7 @@
   <mission>
     <id>34</id>
     <name>Missing Cache?!</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="223" />
     <veffect>1</veffect>
     <desc>The undead, angels, and pegasus are now running wild in the camp! To make matters worse, the buried cache has disappeared in the chaos!</desc>
@@ -1236,7 +1236,7 @@
   <mission>
     <id>61</id>
     <name>Wind in the Woods</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="201" />
     <desc>As you leave the deepest part of the woods, the wind starts to pick up between the trees. As you come to a clearing, you are attacked by some cyclone elementals.</desc>
     <speech>
@@ -1261,7 +1261,7 @@
   <mission>
     <id>62</id>
     <name>Branching Paths</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="201" />
     <desc>As you leave the deepest part of the woods, you come upon a branching pathway. It appears as if something large was dragged through the soil here recently.</desc>
     <deck>
@@ -1280,7 +1280,7 @@
   <mission>
     <id>63</id>
     <name>Renewed Trail</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="200" level="2" />
     <veffect>1</veffect>
     <desc>At a fork in the forest, you hear the gurgling growl of an undead down the northern path. Following the path, you find a band of undead fighting against Wyld creatures.</desc>
@@ -1320,7 +1320,7 @@
     <id>64</id>
     <name>The Hollow</name>
     <mission_type>2</mission_type>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="219" />
     <veffect>1</veffect>
     <desc>You follow the undead to a small hollow, and there sitting upon the missing cache is a large man. He turns towards you, his eyes etched with the signs of insanity.</desc>
@@ -1358,7 +1358,7 @@
   <mission>
     <id>71</id>
     <name>Woodland Departure</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="203" />
     <desc>Commander Ursurio reveals that the Heart of Blue Fire was never in Elaria, but that the Aether leader Samael knows its location.</desc>
     <speech>
@@ -1391,7 +1391,7 @@
   <mission>
     <id>72</id>
     <name>Land of Light</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="203" />
     <desc>With the unexpected company of Commander Ursurio, you and Elyse travel towards the Aether capital of Luminis. The woods between Luminis and Elaria are dark and full of dangers.</desc>
     <speech>
@@ -1424,7 +1424,7 @@
   <mission>
     <id>73</id>
     <name>Hunted</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="203" />
     <desc>You continue through the forest between the two territories, but begin to get the feeling that you are not alone.</desc>
     <deck>
@@ -1443,7 +1443,7 @@
   <mission>
     <id>74</id>
     <name>Prey Upon</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="203" />
     <desc>The trees begin to thin, light breaking through the canopy of the woods. Growling can be heard as you near the edge of the woods. Suddenly a pack of hungry wolves descends on the party.</desc>
     <speech>
@@ -1472,7 +1472,7 @@
   <mission>
     <id>81</id>
     <name>Ghosts...?</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="204" />
     <desc>It appears as if you have stumbled into a soul wisp gathering deep in the woods on your path to meet the Aether. They've turned hostile to your presence.</desc>
     <speech>
@@ -1507,7 +1507,7 @@
   <mission>
     <id>82</id>
     <name>Soul Wisp Swarm</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="204" />
     <desc>The soul wisps gather around, swarming your party and forcing you to flee their small hollow.</desc>
     <deck>
@@ -1526,7 +1526,7 @@
   <mission>
     <id>83</id>
     <name>Fight or Flight</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="204" />
     <desc>The soul wisps have chased you out of their grove, but they are relentless. Also spooky.</desc>
     <speech>
@@ -1560,7 +1560,7 @@
   <mission>
     <id>84</id>
     <name>Trespassing</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="2" />
     <desc>You have come across an Aether creature that is bent on turning you away. By force if necessary.</desc>
     <speech>
@@ -1591,7 +1591,7 @@
   <mission>
     <id>91</id>
     <name>Finding a Crossing</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="205" />
     <desc>You were able to lose the Owl Mystic after the battle, but you've become lost in the woods. With nothing else to go on, you approach a nearby river.</desc>
     <speech>
@@ -1620,7 +1620,7 @@
   <mission>
     <id>92</id>
     <name>Mage's Decree</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="205" />
     <desc>You manage to find a bridge, the gleam of a city on the horizon. However the denizens of the river seem to be protecting the passage.</desc>
     <speech>
@@ -1655,7 +1655,7 @@
   <mission>
     <id>93</id>
     <name>Water Under the Bridge</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="205" />
     <desc>The denizens of the river are sworn to protect their home, and they have deemed you a threat. You cannot pass the bridge until you defeat them.</desc>
     <deck>
@@ -1674,7 +1674,7 @@
   <mission>
     <id>94</id>
     <name>Wrath of the River</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="205" />
     <desc>The creatures living in the river's waters summon the last of their strength to stop you from crossing the bridge. Overcome their swell of strength to pass through.</desc>
     <speech>
@@ -1700,7 +1700,7 @@
   <mission>
     <id>101</id>
     <name>City of Light</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="2" />
     <desc>You've finally made it to Luminis, but the Owl Mystic Yuriel was waiting for your arrival. You must defeat him to get an audience with the leader of the Aether.</desc>
     <speech>
@@ -1726,7 +1726,7 @@
   <mission>
     <id>102</id>
     <name>Audience</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="2" />
     <desc>After proving your strength against Yuriel, he has decided to allow you entrance to the capital itself.</desc>
     <speech>
@@ -1757,7 +1757,7 @@
   <mission>
     <id>103</id>
     <name>Blind Eye</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="2" level="2" />
     <desc>You've finally been granted access to Luminis, but the Aether leader refuses to listen to your words.</desc>
     <speech>
@@ -1792,7 +1792,7 @@
   <mission>
     <id>104</id>
     <name>Rebuke</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="3" />
     <desc>The Aether refuse to listen to the warnings you brought to them. They have closed their ears and sent their champion after you.</desc>
     <speech>
@@ -1827,7 +1827,7 @@
   <mission>
     <id>111</id>
     <name>Exile</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="2" level="2" />
     <desc>You have been driven from the city of Luminis without a scrap of information. To make matters worse, the Aether forces still follow to assure you do not return.</desc>
     <speech>
@@ -1857,7 +1857,7 @@
   <mission>
     <id>112</id>
     <name>Open Fields</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="218" />
     <veffect>1</veffect>
     <desc>You have momentarily escaped the arm of Luminis and their Aether mages, but the land itself senses that you are not welcome and harrasses you at every turn.</desc>
@@ -1891,7 +1891,7 @@
   <mission>
     <id>113</id>
     <name>Sickness Spreading</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="218" />
     <veffect>1</veffect>
     <desc>While escaping the city of Luminis, you have come across a group of sick animals. It appears to be the same corruption as the Chaos mage.</desc>
@@ -1911,7 +1911,7 @@
   <mission>
     <id>114</id>
     <name>Border's Edge</name>
-    <energy>2</energy>
+    <energy>1</energy>
     <commander id="2" level="2" />
     <desc>The Owl Mystic Yuriel has harried your party to the edges of the land.</desc>
     <speech>
@@ -1937,7 +1937,7 @@
   <mission>
     <id>121</id>
     <name>Shelter</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="203" level="3" />
     <desc>As the sun begins to set you seek shelter. The ordeal in Luminis has left you weary.</desc>
     <speech>
@@ -1970,7 +1970,7 @@
   <mission>
     <id>122</id>
     <name>In The Distance</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="203" level="2" />
     <desc>In the distance, you spot a castle on an outcropping of rock. You've decided to approach it to find shelter and rest.</desc>
     <deck>
@@ -1989,7 +1989,7 @@
   <mission>
     <id>123</id>
     <name>Something's Off...</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="218" level="2" />
     <veffect>1</veffect>
     <desc>As you approach the castle, you can tell something is strange. You are set upon by various creatures, some of which are Chaos.</desc>
@@ -2023,7 +2023,7 @@
   <mission>
     <id>124</id>
     <name>Lightning and Brimstone</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="219" />
     <veffect>1</veffect>
     <desc>At the edge of Luminis you found an abandoned castle in the mountains. Before you can even reach it, you are assaulted by a familiar Chaos mage.</desc>
@@ -2056,7 +2056,7 @@
   <mission>
     <id>131</id>
     <name>Unfamiliar Lands</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="210" />
     <desc>You've taken your airship to meet up with Aria, who was sent to the Chaos home of Karthos in search of the Heart.</desc>
     <speech>
@@ -2094,7 +2094,7 @@
   <mission>
     <id>132</id>
     <name>Lava Crab Gang</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="210" />
     <desc>You've disturbed a nest of Lava Crabs! They come at you with pincers at the ready!</desc>
     <deck>
@@ -2113,7 +2113,7 @@
   <mission>
     <id>133</id>
     <name>Rocks and Lava</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="210" />
     <desc>You follow Aria as you begin your walk towards Karthos. Unfortunately, everything appears to be hostile here and you are quickly attacked.</desc>
     <speech>
@@ -2142,7 +2142,7 @@
   <mission>
     <id>134</id>
     <name>Titans of Fire</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="206" />
     <desc>As you defeat the final Chaos creature, a great roar is heard. A huge titan of fire comes around a cliff, drawn by the sound of battle.</desc>
     <speech>
@@ -2176,7 +2176,7 @@
   <mission>
     <id>141</id>
     <name>Chaotic... Evil?</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="210" />
     <desc>You press towards the capital of Karthos with Aria while she reveals more about the Chaos.</desc>
     <speech>
@@ -2205,7 +2205,7 @@
   <mission>
     <id>142</id>
     <name>Trust</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="210" level="2" />
     <desc>As you near Karthos you can see the lair rising out of the rocks, Aria continues to enlighten you on the nature of the Chaos.</desc>
     <speech>
@@ -2239,7 +2239,7 @@
   <mission>
     <id>143</id>
     <name>Troubling Travels</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="231" />
     <desc>Karthos is larger than you first thought. As you come closer you can hear some kind of disturbance in the distance.</desc>
     <deck>
@@ -2258,7 +2258,7 @@
   <mission>
     <id>144</id>
     <name>Pierce the Siege</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="231" level="2" />
     <desc>A horde of Chaos creatures lay siege to Karthos. There is no path around. You must fight through them to get inside.</desc>
     <speech>
@@ -2292,7 +2292,7 @@
   <mission>
     <id>151</id>
     <name>Within the Walls</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="5" level="2" />
     <desc>You have finally arrived at the Chaos lair of Karthos and broken through the siege.</desc>
     <speech>
@@ -2322,7 +2322,7 @@
   <mission>
     <id>152</id>
     <name>Decim the Firebringer</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="5" level="2" />
     <desc>The fight with Decim spills into the lair itself, filling its halls with fire as his laughter echos off the walls.</desc>
     <speech>
@@ -2357,7 +2357,7 @@
   <mission>
     <id>153</id>
     <name>Contention</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="206" level="2" />
     <desc>As you fight with Decim, the gates of the lair break open and in pour the Chaos that have been sieging the lair.</desc>
     <speech>
@@ -2386,7 +2386,7 @@
   <mission>
     <id>154</id>
     <name>Lord of the Undead</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="207" />
     <desc>You have come face to face with Tarian, leader of the Chaos mages. Before you can ask him what he knows about the Heart of Blue Fire, a figure attacks from the shadows.</desc>
     <speech>
@@ -2420,7 +2420,7 @@
   <mission>
     <id>161</id>
     <name>Path to The Void</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="231" />
     <desc>After stopping the Void Assassin's attempt to kill Tarian you have been charged to travel out of the city of Karthos and towards the Caverns of Crossing.</desc>
     <speech>
@@ -2455,7 +2455,7 @@
   <mission>
     <id>162</id>
     <name>River of Fire</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="231" level="2" />
     <desc>The bridges cross the chasm to get around the river of lava. Aria leads the way, but you can see Chaos creatures all around you.</desc>
     <speech>
@@ -2484,7 +2484,7 @@
   <mission>
     <id>163</id>
     <name>Crossings</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="206" level="2" />
     <desc>Crossing the bridges, you find many Chaos who have taken to living on it and who do not like the presence of Ursurio.</desc>
     <deck>
@@ -2503,7 +2503,7 @@
   <mission>
     <id>164</id>
     <name>Fire Twins</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="222" />
     <desc>On the center island between bridges, you are attacked by a huge group of Chaos creatures lead by a pair of Fire Titans.</desc>
     <speech>
@@ -2541,7 +2541,7 @@
   <mission>
     <id>171</id>
     <name>Exit Strategy</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="206" level="2" />
     <desc>After crossing the river of lava, you come to the far side. Aria notices some strange patterns with the Chaos creatures and decides something must be done.</desc>
     <speech>
@@ -2578,7 +2578,7 @@
   <mission>
     <id>172</id>
     <name>Kicking the Nest</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="211" />
     <desc>Trying to clear out the Chaos near the bridge proves to be harder than thought. There seems to be more than anticipated, and Aria seems to know something that she is not sharing.</desc>
     <speech>
@@ -2611,7 +2611,7 @@
   <mission>
     <id>173</id>
     <name>Purging</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="211" />
     <desc>As the Chaos swarm, you cut through their ranks and follow Aria as she seeks out her goal.</desc>
     <deck>
@@ -2630,7 +2630,7 @@
   <mission>
     <id>174</id>
     <name>Wraith's Den</name>
-    <energy>3</energy>
+    <energy>1</energy>
     <commander id="211" />
     <desc>Clearing the last wave of undead and firey beasts has uncovered the real reason for their gathering. A den of Wraiths has gathered, drawing all nearby creatures to their power. Clear out the den!</desc>
     <speech>
@@ -2663,7 +2663,7 @@
   <mission>
     <id>181</id>
     <name>Pre-emptive Strike</name>
-    <energy>5</energy>
+    <energy>1</energy>
     <commander id="208" />
     <veffect>1</veffect>
     <desc>As you near the Caverns of Crossing, you are ambushed by a group of Void creatures.</desc>
@@ -2693,7 +2693,7 @@
   <mission>
     <id>182</id>
     <name>The Second Wave</name>
-    <energy>5</energy>
+    <energy>1</energy>
     <commander id="208" />
     <veffect>1</veffect>
     <desc>The minions of The Void pull back momentarily, giving you a moment to rest before attacking with a second wave. They seem persistent to stop you from making it to the caverns.</desc>
@@ -2723,7 +2723,7 @@
   <mission>
     <id>183</id>
     <name>Clash</name>
-    <energy>5</energy>
+    <energy>1</energy>
     <commander id="208" />
     <veffect>1</veffect>
     <desc>The second wave crashes down around you. You've survived the initial clash, but they just keep coming.</desc>
@@ -2743,7 +2743,7 @@
   <mission>
     <id>184</id>
     <name>The Void's Champion</name>
-    <energy>5</energy>
+    <energy>1</energy>
     <commander id="209" />
     <veffect>1</veffect>
     <desc>As the second wave retreats in defeat you feel the very earth itself shudder under your feet. A gigantic hand of fire reaches out of the cavern, pulling forth a massive Orobas.</desc>
@@ -2785,7 +2785,7 @@
   <mission>
     <id>191</id>
     <name>Caverns of Crossing</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="212" />
     <desc>After the defeat of Orobos at the entrance to the Caverns of Crossing, you proceed into the dark tunnels themselves.</desc>
     <speech>
@@ -2818,7 +2818,7 @@
   <mission>
     <id>192</id>
     <name>Depths of the World</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="212" />
     <desc>The caverns present many enemies that try to bar your way. As the tunnels twist and turn you find yourself crossing an underground chasm.</desc>
     <deck>
@@ -2837,7 +2837,7 @@
   <mission>
     <id>193</id>
     <name>Deep Tremors</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="212" />
     <desc>Deep tremors shake the caverns as you make your way through them. Aria leads you though the twists and turns, but even she seems unsure of the correct way.</desc>
     <speech>
@@ -2870,7 +2870,7 @@
   <mission>
     <id>194</id>
     <name>Mr. Bear, Tear Down This Wall</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="212" />
     <desc>The caverns have grown dangerous due to the tremors and you've come to a dead end. Aria says this is where the exit should be located.</desc>
     <speech>
@@ -2907,7 +2907,7 @@
   <mission>
     <id>201</id>
     <name>The Ridge</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="220" />
     <desc>After escaping the Caverns of Crossing, you take your first steps into the territory known as The Void. Spotting a nearby ridge, the party approaches it to find out where they are.</desc>
     <speech>
@@ -2936,7 +2936,7 @@
   <mission>
     <id>202</id>
     <name>From the Pits</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="220" />
     <desc>The hike out of the pits near the caverns proves to be more dangerous than first thought.</desc>
     <speech>
@@ -2965,7 +2965,7 @@
   <mission>
     <id>203</id>
     <name>A Strange Man</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="220" />
     <desc>At the top of the ridge overlooking all of The Void is a familiar figure sitting in meditation. He opens an eye as you approach.</desc>
     <speech>
@@ -2998,7 +2998,7 @@
   <mission>
     <id>204</id>
     <name>Malchior, Grand Excavator</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="213" />
     <desc>You follow Oda further up the ridge where you can oversee all of The Void. There you meet the Grand Excavator.</desc>
     <speech>
@@ -3037,7 +3037,7 @@
   <mission>
     <id>211</id>
     <name>Misunderstanding</name>
-    <energy>6</energy>
+    <energy>1</energy>
     <commander id="220" level="2" />
     <desc>After fighting with Malchior, the Grand Hermit has decided that you are indeed not corrupted by The Void. Of course he is still not making much sense.</desc>
     <speech>
@@ -3072,7 +3072,7 @@
   <mission>
     <id>212</id>
     <name>Few Crystals Short of a Load</name>
-    <energy>6</energy>
+    <energy>1</energy>
     <commander id="220" level="2" />
     <desc>As you travel further into The Void, Malchior's ramblings become rather concerning.</desc>
     <speech>
@@ -3109,7 +3109,7 @@
   <mission>
     <id>213</id>
     <name>Rumble Tumble</name>
-    <energy>6</energy>
+    <energy>1</energy>
     <commander id="220" />
     <desc>As you descend down the ridge, the tremors from earlier grow stronger. You seem to be nearing their source.</desc>
     <deck>
@@ -3128,7 +3128,7 @@
   <mission>
     <id>214</id>
     <name>Source of the Tremors</name>
-    <energy>6</energy>
+    <energy>1</energy>
     <commander id="214" />
     <desc>At the base of a massive crater, a gigantic wurm bursts from its den. It sends rock and debris in every direction, before turning its attention towards the party.</desc>
     <speech>
@@ -3169,7 +3169,7 @@
   <mission>
     <id>221</id>
     <name>Gibberish</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="210" level="2" />
     <desc>Malchior reveals that the Void have found the Heart of Blue Fire. The Heart is apparently the source of the corruption that is reaching across the land.</desc>
     <speech>
@@ -3179,7 +3179,7 @@
       </line>
       <line>
         <commander>necromancer</commander>
-        <text>I noticed. Now what did you mean when you said "we can still contain it"?</text>
+        <text>I noticed. Now what did you mean when you said 'we can still contain it'?</text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -3206,7 +3206,7 @@
   <mission>
     <id>222</id>
     <name>Corrupted Lands</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="210" level="2" />
     <desc>At Malchior's lead, the group heads across the crater and towards the Void's Core. Unfortunately the land between here and there is full of creatures already corrupted.</desc>
     <speech>
@@ -3239,7 +3239,7 @@
   <mission>
     <id>223</id>
     <name>Bo Turvar Axis</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="210" level="3" />
     <desc>The creatures you just fought off rise up, attacking again. They seem to be determined to stop you.</desc>
     <speech>
@@ -3276,7 +3276,7 @@
   <mission>
     <id>224</id>
     <name>Press On</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="210" level="3" />
     <desc>The group approaches a series of narrow gorges in The Void that they must pass to get to the lands beyond.</desc>
     <speech>
@@ -3301,7 +3301,7 @@
   <mission>
     <id>231</id>
     <name>Aether Raid</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="221" />
     <desc>As your group passes through a narrow gorge, you are ambushed by a raid of corrupted Aether. You spot them just in time to defend yourself.</desc>
     <speech>
@@ -3339,7 +3339,7 @@
   <mission>
     <id>232</id>
     <name>Falling Feathers</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="221" />
     <desc>The Aether pull back only to collapse upon you a second time, pushing their attack harder.</desc>
     <deck>
@@ -3387,7 +3387,7 @@
   <mission>
     <id>234</id>
     <name>Yuriel's Honor</name>
-    <energy>4</energy>
+    <energy>1</energy>
     <commander id="2" level="3" />
     <desc>Yuriel reveals that the Aether, led by Samael, have come to The Void to harness the power of the Heart of Blue Fire for themselves. They plan to destroy the Chaos once and for all with its power.</desc>
     <speech>
@@ -3427,7 +3427,7 @@
   <mission>
     <id>241</id>
     <name>Mystic's Disgrace</name>
-    <energy>10</energy>
+    <energy>1</energy>
     <commander id="3" level="2" />
     <desc>With the defeat of Yuriel, the party heads into the Void Core. Below where you stand is what appears to be a huge black crystal of immense size. Before it stands Samael, the leader of the Aether.</desc>
     <speech>
@@ -3453,7 +3453,7 @@
   <mission>
     <id>242</id>
     <name>Samael's Deceit</name>
-    <energy>10</energy>
+    <energy>1</energy>
     <commander id="3" level="4" />
     <desc>Samael's plan to take the Heart of Blue Fire for his own ascension comes to a head. You must stop him before he takes that power and uses it to destroy the Chaos and Wyld!</desc>
     <speech>
@@ -3482,7 +3482,7 @@
   <mission>
     <id>243</id>
     <name>Samael's Wrath</name>
-    <energy>10</energy>
+    <energy>1</energy>
     <commander id="3" level="6" />
     <desc>Samael approaches the crystal, energy wrapping around the room as he reaches out to draw energy from the Heart of Blue Fire.</desc>
     <speech>
@@ -3521,7 +3521,7 @@
   <mission>
     <id>244</id>
     <name>The Void</name>
-    <energy>10</energy>
+    <energy>1</energy>
     <commander id="215" />
     <desc>Samael breaks the crystal that holds the Heart of Blue Fire, unsealing a Void monster within. You have one chance at containing it before it escapes.</desc>
     <speech>
@@ -3565,9 +3565,9 @@
   <!-- START The Dawnglow Missions -->
   <mission>
     <id>251</id>
-    <name>Call From the Emperor </name>
-    <energy>6</energy>
-    <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue. </desc>
+    <name>Call From the Emperor</name>
+    <energy>3</energy>
+    <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue.</desc>
     <commander id="280" />
     <deck>
       <card id="8231" name="Werewarg" />
@@ -3606,7 +3606,7 @@
   <mission>
     <id>252</id>
     <name>To the Swamps</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio start their journey to Dawnglow. Groc notices a sickness in the area as soon as they arrive.</desc>
     <commander id="281" />
     <deck>
@@ -3629,7 +3629,7 @@
   <mission>
     <id>253</id>
     <name>Thick Goop</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Dawnglow is in sight. As Groc and Ursurio travel, they notice how much harder it is to progress through the swamp water.</desc>
     <commander id="247" />
     <deck>
@@ -3652,7 +3652,7 @@
   <mission>
     <id>254</id>
     <name>Royal Company</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio have made it just outside of the Kingdom of Dawnglow. They make their way to hear the Emperor's request.</desc>
     <commander id="282" />
     <deck>
@@ -3692,7 +3692,7 @@
   <mission>
     <id>261</id>
     <name>Cloudy Waters</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>The Emperor has given Groc and Ursurio their mission. They head out from Dawnglow to investigate the surrounding swamps.</desc>
     <commander id="280" />
     <deck>
@@ -3715,7 +3715,7 @@
   <mission>
     <id>262</id>
     <name>Fog of War</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>The air is thicker than usual and the smell is noticeably more pungent. Even Ursurio is having a hard time traveling through the swamp.</desc>
     <commander id="281" />
     <deck>
@@ -3738,7 +3738,7 @@
   <mission>
     <id>263</id>
     <name>Marks of the Void</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>The waters are getting darker and more pungent as they travel. The smell is reminiscent of The Void.</desc>
     <commander id="283" />
     <deck>
@@ -3770,7 +3770,7 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>*chomp**chomp* ...hmm? </text>
+        <text>*chomp**chomp* ...hmm?</text>
       </line>
     </speech>
   </mission>
@@ -3778,7 +3778,7 @@
   <mission>
     <id>264</id>
     <name>Bad Fur Day</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Ursurio's fur is starting to get matted with the slime that has developed in the swamp. For the first time, Groc notices a disgusted look on his face.</desc>
     <commander id="284" />
     <deck>
@@ -3801,7 +3801,7 @@
   <mission>
     <id>271</id>
     <name>Rough Roads</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc is starting to slow down as they travel. Whatever is infecting the swamp appears to be strong enough to affect the massive stone leader.</desc>
     <commander id="247" />
     <deck>
@@ -3824,7 +3824,7 @@
   <mission>
     <id>272</id>
     <name>Rabid Wylds</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>The creatures of the swamp are acting strange. They seem more rabid than usual. Whatever is infecting the swamp seems to be spreading fast.</desc>
     <commander id="282" />
     <deck>
@@ -3847,7 +3847,7 @@
   <mission>
     <id>273</id>
     <name>Seeping Toxins</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc must stop to rest a moment. He is starting to have trouble moving his body. The toxins in the environment are making him sick.</desc>
     <commander id="283" />
     <deck>
@@ -3874,7 +3874,7 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>I do not feel well exploring here. I have felt similar sensations while traversing The Void. </text>
+        <text>I do not feel well exploring here. I have felt similar sensations while traversing The Void.</text>
       </line>
     </speech>
   </mission>
@@ -3882,7 +3882,7 @@
   <mission>
     <id>274</id>
     <name>Plod On</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio pick up their pace. With the toxins from the swamp wearing them down, they know they need to find its source quickly.</desc>
     <commander id="284" />
     <deck>
@@ -3905,7 +3905,7 @@
   <mission>
     <id>281</id>
     <name>Unfamiliar Footsteps</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio reach a pond with animal tracks around it. They don't appear to be from any known creatures in the area.</desc>
     <commander id="280" />
     <deck>
@@ -3940,7 +3940,7 @@
   <mission>
     <id>282</id>
     <name>A Step in the Right Direction</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio are able to find a trail of the unusual tracks. The trail is not fresh, but it may be getting them closer to the source of the infection.</desc>
     <commander id="281" />
     <deck>
@@ -3963,7 +3963,7 @@
   <mission>
     <id>283</id>
     <name>Glowing Prints</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>The tracks are growing in number and have been made recently. The fresh tracks have a slight glow to them as they continue through the swamp.</desc>
     <commander id="247" />
     <deck>
@@ -3986,7 +3986,7 @@
   <mission>
     <id>284</id>
     <name>Big Step, Small Step</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Ursurio notices two sizes of prints. A set of large prints and many sets of small ones. Whatever this creature is, it may have a family with it.</desc>
     <commander id="284" />
     <deck>
@@ -4016,7 +4016,7 @@
   <mission>
     <id>291</id>
     <name>A Broken Home</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Freshly torn grass and recently broken sticks are now becoming common around the tracks. Groc and Ursurio are getting closer to finding these beasts.</desc>
     <commander id="280" />
     <deck>
@@ -4039,7 +4039,7 @@
   <mission>
     <id>292</id>
     <name>Filthy Pests</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Large purple fissures in the ground, similar to those found in The Void, now surround the area. The creatures appear to be linked to the infection in the swamp.</desc>
     <commander id="281" />
     <deck>
@@ -4062,7 +4062,7 @@
   <mission>
     <id>293</id>
     <name>Beyond the Bush</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio peer through the bushes to find a nest of tiny beasts up ahead. They appear to be creatures that have escaped from The Void. Before they can investigate, a creature lunges from the water!</desc>
     <commander id="282" />
     <deck>
@@ -4085,7 +4085,7 @@
   <mission>
     <id>294</id>
     <name>Don't Wake the Babies</name>
-    <energy>6</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio creep closer to the nest. Perhaps they can lure these creatures away peacefully?</desc>
     <commander id="285" />
     <deck>
@@ -4120,7 +4120,7 @@
   <mission>
     <id>301</id>
     <name>Cries of the Young</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>The Void babies are startled and begin to screech! They are drawing a lot of attention to the nest...</desc>
     <commander id="247" />
     <deck>
@@ -4143,7 +4143,7 @@
   <mission>
     <id>302</id>
     <name>What Hunger Brings</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio continue to hear rustling in the woods around them. Hungry creatures are coming after the sound of the young.</desc>
     <commander id="283" />
     <deck>
@@ -4166,7 +4166,7 @@
   <mission>
     <id>303</id>
     <name>Last Leg</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>The Void babies are now in a full panic with all the attention they have drawn. They are clawing at anything that comes near them!</desc>
     <commander id="285" />
     <deck>
@@ -4189,7 +4189,7 @@
   <mission>
     <id>304</id>
     <name>Corrupter's Wrath</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>A loud, fast-paced stomping is heard coming toward the nest. Looks like mama has heard the cries of her children...</desc>
     <commander id="286" />
     <deck>
@@ -4230,7 +4230,7 @@
   <mission>
     <id>311</id>
     <name>From the Muck</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Groc and Ursurio come back to the airship covered in muck. Both look exhausted from their time in Dawnglow Swamp. Groc musters up the strength to report their findings.</desc>
     <commander id="298" />
     <deck>
@@ -4269,7 +4269,7 @@
   <mission>
     <id>312</id>
     <name>Lingering Trails</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse can't stop thinking about the symptoms Groc reported earlier. She can't quite place why, but they seem familiar to her. Elyse grabs a book and begins to research.</desc>
     <commander id="299" />
     <deck>
@@ -4291,7 +4291,7 @@
   <mission>
     <id>313</id>
     <name>Thorough Exam</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse has been in her room for days. As she steps out for food, Oda peers inside her room. He is taken aback with the amount of research hung on the walls and scattered around the floor. His eye catches something familiar...</desc>
     <commander id="300" />
     <deck>
@@ -4330,7 +4330,7 @@
   <mission>
     <id>314</id>
     <name>Long Way from Home</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Oda tells Elyse what he knows about the Citadel. He is in disbelief that his Order may have already made its way to Arcantica.</desc>
     <commander id="298" />
     <deck>
@@ -4352,7 +4352,7 @@
   <mission>
     <id>321</id>
     <name>It Takes Two</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Now that Oda has been able to provide more information about the nature of the Citadel, Elyse thinks she may be able to find its location. She is soon back to the books, and this time Oda is joining her.</desc>
     <commander id="299" />
     <deck>
@@ -4374,7 +4374,7 @@
   <mission>
     <id>322</id>
     <name>Precautionary Measures</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse and Oda spend hours putting together clues to the Citadel's location. Elyse sits, staring at a picture of the Citadel, when an epiphany occurs.</desc>
     <commander id="298" />
     <deck>
@@ -4413,7 +4413,7 @@
   <mission>
     <id>323</id>
     <name>Leap of Faith</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse turns the ship towards the east coast. It's a few days untill they reach the other side of Arcantica. Oda spends his time in meditation. He ponders how his Order could have made it to Arcantica without him knowing.</desc>
     <commander id="300" />
     <deck>
@@ -4435,7 +4435,7 @@
   <mission>
     <id>324</id>
     <name>Beach View</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Oda and Elyse make it to the coast. The rocky terrain stretches for miles. They spend hours sweeping the coast, until Oda spots something familiar.</desc>
     <commander id="301" />
     <deck>
@@ -4474,7 +4474,7 @@
   <mission>
     <id>331</id>
     <name>Rocky Road</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse sets the airship down by a safe spot right outside the Citadel. The path forward is rocky and dangerous. They will have to be careful as they traverse.</desc>
     <commander id="299" />
     <deck>
@@ -4495,8 +4495,8 @@
   </mission>
   <mission>
     <id>332</id>
-    <name>The Hidden Citadel </name>
-    <energy>8</energy>
+    <name>The Hidden Citadel</name>
+    <energy>3</energy>
     <desc>The area around the Citadel is wild. Outside of the Citadel the environment looks completely untouched. It's clear that whatever this Citadel holds, it is not meant to be found by others.</desc>
     <commander id="298" />
     <deck>
@@ -4518,7 +4518,7 @@
   <mission>
     <id>333</id>
     <name>Locked Away</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Elyse and Oda make their way to the Citadel's front door. Elyse tries to open it, but it's locked. The door doesn't seem to have an obvious lock on it...</desc>
     <commander id="300" />
     <deck>
@@ -4557,7 +4557,7 @@
   <mission>
     <id>334</id>
     <name>Pop and Unlock</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Oda stands directly in front of the door. He begins to perform a quick ritual, waving his hand and muttering words under his breath. The door makes a clicking noise and begins to slide open, with the heavy sound of rock against rock.</desc>
     <commander id="301" />
     <deck>
@@ -4579,7 +4579,7 @@
   <mission>
     <id>341</id>
     <name>Sleeping on the Job</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Oda and Elyse enter the Citadel. It's dark, only lit by natural light. There is a main entrance hall and giant doors in the back. A single monk can be seen sleeping in the center of the hall.</desc>
     <commander id="299" />
     <deck>
@@ -4601,7 +4601,7 @@
   <mission>
     <id>342</id>
     <name>Up and At'Em</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>The monk is awakened by their arrival. Startled, he sits up quickly and grabs his staff. Magic swirls around him...</desc>
     <commander id="302" />
     <deck>
@@ -4630,7 +4630,7 @@
   <mission>
     <id>343</id>
     <name>Sign of a Friend</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>The monk recognizes the beads around Oda's neck. They are common in their Order. His face turns red as he quickly lays down his staff, bowing in apology. Elyse can start to see a resemblence between the two.</desc>
     <commander id="298" />
     <deck>
@@ -4668,8 +4668,8 @@
   </mission>
   <mission>
     <id>344</id>
-    <name>Hidden Treasures </name>
-    <energy>8</energy>
+    <name>Hidden Treasures</name>
+    <energy>3</energy>
     <desc>The monk looks surprised they know of the artifact. Even within the Order, it was a secret item.</desc>
     <commander id="301" />
     <deck>
@@ -4691,7 +4691,7 @@
   <mission>
     <id>351</id>
     <name>Hesitations of the Holy</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>The monk looks nervous. He is becoming suspicious as to the nature of the questions being asked. He keeps his staff firmly in hand.</desc>
     <commander id="301" />
     <deck>
@@ -4725,7 +4725,7 @@
   <mission>
     <id>352</id>
     <name>Sickness Abound</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>The monk is taken aback. He had no idea The Void has gotten so bad. The Order will not allow him to give the artifact to anyone who is not a Keeper... he looks at Oda and smiles.</desc>
     <commander id="299" />
     <deck>
@@ -4747,7 +4747,7 @@
   <mission>
     <id>353</id>
     <name>One with the Force</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>The monk takes a moment to assess Oda's aura. He can tell Oda is a powerful wielder of magical abilities.</desc>
     <commander id="300" />
     <deck>
@@ -4786,7 +4786,7 @@
   <mission>
     <id>354</id>
     <name>The Test Begins</name>
-    <energy>8</energy>
+    <energy>3</energy>
     <desc>Oda agrees to become a Keeper for the artifact. The monk nods and begins to draw a circle around him. The circle begins to glow...</desc>
     <commander id="301" />
     <deck>
@@ -4808,7 +4808,7 @@
   <mission>
     <id>361</id>
     <name>Circle of Troubles</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>Oda stands in the center of the circle, ready for whatever beasts are about to appear. The edges of the circle begin to widen. Hands rise from the edges.</desc>
     <commander id="261" />
     <deck>
@@ -4837,8 +4837,8 @@
   <mission>
     <id>362</id>
     <name>First Wave</name>
-    <energy>12</energy>
-    <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle. </desc>
+    <energy>3</energy>
+    <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle.</desc>
     <commander id="266" />
     <deck>
       <card id="8231" name="Werewarg" />
@@ -4859,7 +4859,7 @@
   <mission>
     <id>363</id>
     <name>Front Line Worries</name>
-    <energy>12</energy>
+    <energy>3</energy>
     <desc>Another wave rises from the circle. Elyse starts to look worried that Oda must defeat these creatures alone. She glances at the monk who gives a reassuring glance.</desc>
     <commander id="214" />
     <deck>
@@ -4880,8 +4880,8 @@
   </mission>
   <mission>
     <id>364</id>
-    <name>Final Round </name>
-    <energy>12</energy>
+    <name>Final Round</name>
+    <energy>3</energy>
     <desc>Oda is starting to sweat as he defeats another wave of enemies. As he wipes his brow, the ground begins to shake...</desc>
     <commander id="303" />
     <deck>
@@ -5945,7 +5945,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>It's hatching! Finally my ferocious baby boy is here...or girl? I don't know how to tell with this thing! </text>
+        <text>It's hatching! Finally my ferocious baby boy is here...or girl? I don't know how to tell with this thing!</text>
       </line>
       <line>
         <commander>flamebender</commander>
