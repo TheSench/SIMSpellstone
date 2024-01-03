@@ -2663,7 +2663,7 @@ var BATTLEGROUNDS = {
 		"name": "Frog Toxic Barrage"
 	},
 	"173": {
-		"desc": "All Dragons gain base Ward 3 + Delay, and extra Health equal to 10% of their base Health. BGE subject to change.",
+		"desc": "All Dragons gain base Ward 3 + Delay, and extra Health equal to 10% of their base Health.",
 		"effect": [
 			{
 				"all": "1",

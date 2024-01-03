@@ -60,7 +60,7 @@
     <name>Basic Pack x10</name>
     <category>1</category>
     <desc>Gives one random card from Standard Set. Ten times!</desc>
-    <priority>5</priority>
+    <priority>19</priority>
     <asset_prefab>basic_pack</asset_prefab>
     <icon>icon_basic_crystal</icon>
     <sc_cost>1000</sc_cost>
@@ -133,7 +133,8 @@
   <store_item>
     <id>7</id>
     <name>Legacy Basic Pack x10</name>
-    <category>2</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>A pack intended for collectors! This pack gives ten random cards from both the Standard Set and retired cards from the Legacy Set.</desc>
     <priority>51</priority>
     <asset_prefab>legacy_pack_crystal</asset_prefab>
@@ -142,7 +143,6 @@
     <sc_cost>1000</sc_cost>
     <drop_item_id>1</drop_item_id>
     <card_limit>1</card_limit>
-    <level_req>5</level_req>
     <cards>
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000,1100" />
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000,1100" />
@@ -170,7 +170,6 @@
     <icon>icon_basic_crystal</icon>
     <sc_cost>50000</sc_cost>
     <card_limit>1</card_limit>
-    <level_req>5</level_req>
     <cards>
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" num_pulls="500" />
     </cards>
@@ -200,7 +199,7 @@
     <priority>10</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
-    <hc_cost>100</hc_cost>
+    <hc_cost>20</hc_cost>
     <drop_item_id>11</drop_item_id>
     <!-- <banner>1</banner>	 -->
     <!-- has a lowpriority banner slot in the store -->
@@ -769,9 +768,29 @@
     </cards>
   </store_item>
   <store_item>
+    <id>47</id>
+    <name>Gold Premium Card</name>
+    <banner>1</banner>
+    <category>2</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives one copy of a ^cE7FFEl Bronceadon^cFFFF! May be purchased unlimited times.</desc>
+    <show_desc>1</show_desc>
+    <priority>51</priority>
+    <sc_cost>50000</sc_cost>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <no_drop_rate>1</no_drop_rate>
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5308" display_card_id="5308" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>51</id>
     <name>Pile of Gold Coins</name>
-    <category>2</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>200 Gold!</desc>
     <priority>5</priority>
     <asset_prefab>gold_package_1</asset_prefab>
@@ -782,7 +801,8 @@
   <store_item>
     <id>52</id>
     <name>Pouch of Gold Coins</name>
-    <category>2</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>500 Gold!</desc>
     <priority>4</priority>
     <asset_prefab>gold_package_2</asset_prefab>
@@ -793,7 +813,8 @@
   <store_item>
     <id>53</id>
     <name>Stack of Gold Bars</name>
-    <category>2</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>2,500 Gold!</desc>
     <priority>3</priority>
     <asset_prefab>gold_package_3</asset_prefab>
@@ -804,7 +825,8 @@
   <store_item>
     <id>54</id>
     <name>Treasure Trove of Gold</name>
-    <category>2</category>
+    <category>0</category>
+    <hidden>1</hidden>
     <desc>10,000 Gold!</desc>
     <priority>2</priority>
     <asset_prefab>gold_package_4</asset_prefab>
@@ -1138,13 +1160,14 @@
     <id>93</id>
     <name>Mysterious Egg</name>
     <category>2</category>
+    <mission_req>244</mission_req>
     <desc>A mysterious egg our goblin merchant friend picked up during our travels. No one knows where it came from.</desc>
     <show_desc>1</show_desc>
     <priority>50</priority>
     <sc_cost>500</sc_cost>
     <asset_prefab>mythic_dragon_egg</asset_prefab>
     <bundle>30</bundle>
-    <!-- <item id='2516' quantity='1' /> -->
+    <!-- <item id="2516" quantity="1" /> -->
     <limited_buy index="1" sc_cost="500" />
     <cards>
       <card min_level="1" max_level="1" unit_id="2035" />
@@ -3285,17 +3308,17 @@
     <costed_items>
       <item id="11" number="1" purchase1="80" purchase2="100" purchase3="140" purchase4="200" purchase5="300" scalar="150" />
       <!-- Rare Pack -->
-      <!-- <item id='12' number='1' purchase1='800' purchase2='1600' purchase3='3200' purchase4='6400' purchase5='9600' scalar='4800' />
-			<item id='1002' number='1' purchase1='100' purchase2='200' purchase3='400' purchase4='800' purchase5='1200' scalar='600' />
-			<item id='1003' number='1' purchase1='200' purchase2='400' purchase3='800' purchase4='1600' purchase5='2400' scalar='1200' />
-			<item id='1004' number='1' purchase1='400' purchase2='800' purchase3='1600' purchase4='2400' purchase5='3600' scalar='1800' /> -->
+      <!-- <item id="12" number="1" purchase1="800" purchase2="1600" purchase3="3200" purchase4="6400" purchase5="9600" scalar="4800" />
+			<item id="1002" number="1" purchase1="100" purchase2="200" purchase3="400" purchase4="800" purchase5="1200" scalar="600" />
+			<item id="1003" number="1" purchase1="200" purchase2="400" purchase3="800" purchase4="1600" purchase5="2400" scalar="1200" />
+			<item id="1004" number="1" purchase1="400" purchase2="800" purchase3="1600" purchase4="2400" purchase5="3600" scalar="1800" /> -->
       <item id="4001" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Inscription Powder -->
       <item id="2001" number="15" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
       <!-- Arcane Fragment -->
       <item id="2501" number="100" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
       <!-- Blue Fire Soul -->
-      <!-- <item id='1021' number='1' purchase1='300' purchase2='600' purchase3='1200' purchase4='1900' purchase5='2900' scalar='1500' /> -->
+      <!-- <item id="1021" number="1" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" /> -->
       <!-- Bounty Refill +1 -->
       <item id="4011" number="1" purchase1="400" purchase2="600" purchase3="1000" purchase4="1400" purchase5="1800" scalar="400" />
       <!-- Rare Runeshell -->
@@ -3324,7 +3347,7 @@
     <start_offset>61200</start_offset>
     <!-- offset from UTC in seconds -->
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3363,7 +3386,7 @@
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -3388,6 +3411,102 @@
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="2000" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>4008</id>
+    <name>Cycling Stones x10</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives 10 stones of the displayed Reward Champion card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks stones for a random Reward Champion that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>60</priority>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <scale_prices>1</scale_prices>
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <costed_items>
+      <item id="104000" number="10" purchase1="10" scalar="10" />
+      <item id="104001" number="10" purchase1="10" scalar="10" />
+      <item id="104002" number="10" purchase1="10" scalar="10" />
+      <item id="104004" number="10" purchase1="10" scalar="10" />
+      <item id="104005" number="10" purchase1="10" scalar="10" />
+      <item id="104006" number="10" purchase1="10" scalar="10" />
+      <item id="104007" number="10" purchase1="10" scalar="10" />
+      <item id="104008" number="10" purchase1="10" scalar="10" />
+      <item id="104009" number="10" purchase1="10" scalar="10" />
+      <item id="104010" number="10" purchase1="10" scalar="10" />
+      <item id="104011" number="10" purchase1="10" scalar="10" />
+      <item id="104012" number="10" purchase1="10" scalar="10" />
+      <item id="104013" number="10" purchase1="10" scalar="10" />
+      <item id="104014" number="10" purchase1="10" scalar="10" />
+      <item id="104015" number="10" purchase1="10" scalar="10" />
+      <item id="104016" number="10" purchase1="10" scalar="10" />
+      <item id="104017" number="10" purchase1="10" scalar="10" />
+      <item id="104018" number="10" purchase1="10" scalar="10" />
+      <item id="104019" number="10" purchase1="10" scalar="10" />
+      <item id="104020" number="10" purchase1="10" scalar="10" />
+      <item id="104021" number="10" purchase1="10" scalar="10" />
+      <item id="104022" number="10" purchase1="10" scalar="10" />
+      <item id="104023" number="10" purchase1="10" scalar="10" />
+      <item id="104024" number="10" purchase1="10" scalar="10" />
+      <item id="104025" number="10" purchase1="10" scalar="10" />
+      <item id="104026" number="10" purchase1="10" scalar="10" />
+      <item id="104027" number="10" purchase1="10" scalar="10" />
+      <item id="104028" number="10" purchase1="10" scalar="10" />
+      <item id="104029" number="10" purchase1="10" scalar="10" />
+      <item id="104030" number="10" purchase1="10" scalar="10" />
+      <item id="104031" number="10" purchase1="10" scalar="10" />
+      <item id="104032" number="10" purchase1="10" scalar="10" />
+      <item id="104033" number="10" purchase1="10" scalar="10" />
+      <item id="104034" number="10" purchase1="10" scalar="10" />
+      <item id="104035" number="10" purchase1="10" scalar="10" />
+      <item id="104036" number="10" purchase1="10" scalar="10" />
+      <item id="104037" number="10" purchase1="10" scalar="10" />
+      <item id="104038" number="10" purchase1="10" scalar="10" />
+      <item id="104039" number="10" purchase1="10" scalar="10" />
+      <item id="104040" number="10" purchase1="10" scalar="10" />
+      <item id="104041" number="10" purchase1="10" scalar="10" />
+      <item id="104042" number="10" purchase1="10" scalar="10" />
+      <item id="104043" number="10" purchase1="10" scalar="10" />
+      <item id="104044" number="10" purchase1="10" scalar="10" />
+      <item id="104045" number="10" purchase1="10" scalar="10" />
+      <item id="104046" number="10" purchase1="10" scalar="10" />
+      <item id="104047" number="10" purchase1="10" scalar="10" />
+      <item id="104048" number="10" purchase1="10" scalar="10" />
+      <item id="104049" number="10" purchase1="10" scalar="10" />
+      <item id="104050" number="10" purchase1="10" scalar="10" />
+      <item id="104051" number="10" purchase1="10" scalar="10" />
+      <item id="104052" number="10" purchase1="10" scalar="10" />
+      <item id="104053" number="10" purchase1="10" scalar="10" />
+      <item id="104054" number="10" purchase1="10" scalar="10" />
+      <item id="104055" number="10" purchase1="10" scalar="10" />
+      <item id="104056" number="10" purchase1="10" scalar="10" />
+      <item id="104057" number="10" purchase1="10" scalar="10" />
+      <item id="104058" number="10" purchase1="10" scalar="10" />
+      <item id="104059" number="10" purchase1="10" scalar="10" />
+      <item id="104060" number="10" purchase1="10" scalar="10" />
+      <item id="104061" number="10" purchase1="10" scalar="10" />
+      <item id="104062" number="10" purchase1="10" scalar="10" />
+      <item id="104063" number="10" purchase1="10" scalar="10" />
+      <item id="104064" number="10" purchase1="10" scalar="10" />
+      <item id="104065" number="10" purchase1="10" scalar="10" />
+      <item id="104066" number="10" purchase1="10" scalar="10" />
+      <item id="104067" number="10" purchase1="10" scalar="10" />
+      <item id="105640" number="10" purchase1="10" scalar="10" />
+      <item id="104068" number="10" purchase1="10" scalar="10" />
+      <item id="104069" number="10" purchase1="10" scalar="10" />
+      <item id="104070" number="10" purchase1="10" scalar="10" />
+      <item id="104071" number="10" purchase1="10" scalar="10" />
+      <item id="104072" number="10" purchase1="10" scalar="10" />
+      <item id="104073" number="10" purchase1="10" scalar="10" />
+      <item id="104074" number="10" purchase1="10" scalar="10" />
+      <item id="104075" number="10" purchase1="10" scalar="10" />
+      <item id="104076" number="10" purchase1="10" scalar="10" />
+      <item id="104077" number="10" purchase1="10" scalar="10" />
+      <item id="104078" number="10" purchase1="10" scalar="10" />
+    </costed_items>
   </store_item>
   <!-- Arena Packs -->
   <store_item>
@@ -10377,6 +10496,150 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="107626" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5353</id>
+    <name>Double Legendary Dragon Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Dragon card.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5354</id>
+    <name>Double Legendary Mecha Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Mecha card.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5355</id>
+    <name>Drakon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFDrakon^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_044_banner_ghostdragon</background_prefab>
+    <bundle>144</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5216" display_card_id="5216" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5356</id>
+    <name>Vlad Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFVlad^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_92_dragcula_banner</background_prefab>
+    <bundle>251</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6301" display_card_id="6301" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5357</id>
+    <name>Xovrus, Death's End Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFXovrus, Death's End^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_024_banner_chance_w1</background_prefab>
+    <bundle>92</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7131" display_card_id="7131" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5358</id>
+    <name>Sandlair Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFSandlair Dragon^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_044_banner_sandlochnessdragon</background_prefab>
+    <bundle>144</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6207" display_card_id="6207" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5359</id>
+    <name>Trafyr Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFTrafyr, the Rose Warden^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_062_rosewyrm</asset_prefab>
+    <background_prefab>event_062_banner_rosewyrm</background_prefab>
+    <bundle>186</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107610" quantity="129" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5360</id>
+    <name>Worf Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFWorf, Volcano King^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_101_Fragon_championpack</asset_prefab>
+    <background_prefab>event_101_fragon_banner</background_prefab>
+    <bundle>269</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="106629" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>

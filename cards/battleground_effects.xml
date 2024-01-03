@@ -1663,7 +1663,7 @@
   <battleground>
     <id>173</id>
     <name>Aegis of Dragons</name>
-    <desc>All Dragons gain base Ward 3 + Delay, and extra Health equal to 10% of their base Health. BGE subject to change.</desc>
+    <desc>All Dragons gain base Ward 3 + Delay, and extra Health equal to 10% of their base Health.</desc>
     <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="absorb_mecha" x="3" all="1" y="9" delay="0" />
