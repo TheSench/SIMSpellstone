@@ -105,10 +105,6 @@ var LOCATIONS = {
 		"id": "31",
 		"name": "Return to Tarragon Peak"
 	},
-	"33": {
-		"id": "33",
-		"name": "Skyhaven Assault"
-	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -6442,7 +6438,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1361",
 		"items": {
-			"3077": 1.7
+			"3077": 0.85
 		},
 		"location_id": "17",
 		"missions": [
@@ -6459,7 +6455,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1362",
 		"items": {
-			"3077": 1.8
+			"3077": 0.9
 		},
 		"location_id": "17",
 		"missions": [

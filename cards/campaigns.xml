@@ -7297,8 +7297,8 @@
   <campaign>
     <id>1212</id>
     <name>Welcome to the Salt Wastes</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1561654800</locked_start_time>
     <!-- Thu, 27 June 2019 17:00:00 -->
     <location_id>23</location_id>
@@ -7327,8 +7327,8 @@
   <campaign>
     <id>1213</id>
     <name>Temple of Origin</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1212" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1212" level="1"/> -->
     <locked_start_time>1562864400</locked_start_time>
     <!--  Thu, July 11 2019 17:00:00 -->
     <battleground_id>2071</battleground_id>
@@ -7361,8 +7361,8 @@
     <name>Three Valiant Hearts</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1212" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1212" level="1"/> -->
     <locked_start_time>1562864400</locked_start_time>
     <!--  Thu, July 11 2019 17:00:00 -->
     <battleground_id>2072</battleground_id>
@@ -7393,8 +7393,8 @@
   <campaign>
     <id>1215</id>
     <name>Three-Pronged Attack</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1213" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1213" level="1"/> -->
     <locked_start_time>1564074000</locked_start_time>
     <!-- Thu, 25 July 2019 17:00:00 -->
     <battleground_id>2073</battleground_id>
@@ -7424,8 +7424,8 @@
   <campaign>
     <id>1216</id>
     <name>Door of Reckoning</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1215" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1215" level="1"/> -->
     <locked_start_time>1565283600</locked_start_time>
     <!--  Thu, August 8 2019 17:00:00  -->
     <battleground_id>2074</battleground_id>
@@ -9406,8 +9406,8 @@
   <campaign>
     <id>1272</id>
     <name>A Monk's Sanity</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1610038800</locked_start_time>
     <!-- Thursday, 7 January 2021 17:00:00 -->
     <location_id>33</location_id>
@@ -9445,8 +9445,8 @@
   <campaign>
     <id>1273</id>
     <name>Battle for Skyhaven</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1272" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1272" level="1"/> -->
     <locked_start_time>1611248400</locked_start_time>
     <!-- Thursday, 21 January 2021 17:00:00 -->
     <battleground_id>2111</battleground_id>
@@ -9522,8 +9522,8 @@
     <name>Constructing Wyld</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1272" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1272" level="1"/> -->
     <locked_start_time>1611248400</locked_start_time>
     <!--  Thursday, January 21, 2021 17:00:00 -->
     <battleground_id>2112</battleground_id>
@@ -9560,8 +9560,8 @@
   <campaign>
     <id>1276</id>
     <name>Wyld Power Coil</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1273" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1273" level="1"/> -->
     <locked_start_time>1612458000</locked_start_time>
     <!--  Thursday, February 4, 2021 17:00:00 -->
     <battleground_id>2113</battleground_id>
@@ -9600,8 +9600,8 @@
   <campaign>
     <id>1277</id>
     <name>New Hope</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1276" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1276" level="1"/> -->
     <locked_start_time>1613667600</locked_start_time>
     <!--  Thursday, February 18, 2021 17:00:00 -->
     <battleground_id>2114</battleground_id>
@@ -11758,8 +11758,8 @@
     <id>1329</id>
     <name>Tracking a Trickster</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1665680400</locked_start_time>
     <!-- Thursday, 13 October 2022 17:00:00  -->
     <battleground_id>2119</battleground_id>
@@ -11799,8 +11799,8 @@
     <id>1330</id>
     <name>The Void Channeler</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1329" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1329" level="1"/> -->
     <locked_start_time>1666890000</locked_start_time>
     <!-- Thursday, 27 October 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12339,8 +12339,8 @@
     <id>1343</id>
     <name>In Search of the Lost Tribe</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1680195600</locked_start_time>
     <!-- Thursday, 30 March 2023 17:00:00	 -->
     <battleground_id>2119</battleground_id>
@@ -12382,8 +12382,8 @@
     <id>1344</id>
     <name>After the Storm, Comes the Calm?</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1343" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1343" level="1"/> -->
     <locked_start_time>1681405200</locked_start_time>
     <!-- Thursday, 13 April 2023 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -13045,7 +13045,8 @@
     <id>1359</id>
     <name>Nether Legions</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1699549200</locked_start_time>
     <!-- Thursday, 09 November 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13086,7 +13087,8 @@
     <id>1360</id>
     <name>Upon Righteous Wings</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="1359" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1359" level="1"/> -->
     <locked_start_time>1700758800</locked_start_time>
     <!-- Thursday, 23 November 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13160,7 +13162,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3077" drop_per_energy="1.7" />
+    <find_item id="3077" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1704387600</ignore_energy_reduction_until>
     <!-- Thursday, 04 January 2024 at 17:00:00 -->
@@ -13201,7 +13203,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3077" drop_per_energy="1.8" />
+    <find_item id="3077" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1704387600</ignore_energy_reduction_until>
     <!-- Thursday, 04 January 2024 at 17:00:00 -->

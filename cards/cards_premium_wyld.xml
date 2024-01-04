@@ -30716,7 +30716,7 @@
     <id>17226</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name></name>
+    <name>Froblin</name>
     <picture>_Goblin_Frog_A</picture>
     <asset_bundle>151</asset_bundle>
     <cost>3</cost>
@@ -32596,7 +32596,7 @@
     <id>17239</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Froblin</name>
+    <name>Froglefly Spirit</name>
     <picture>Frog_Butterfly_A</picture>
     <asset_bundle>164</asset_bundle>
     <cost>1</cost>
