@@ -13326,4 +13326,87 @@
       <skill id="heal" ignore_nullify="1" x="12" />
     </upgrade>
   </unit>
+  <unit>
+    <id>494</id>
+    <card_type>1</card_type>
+    <name>General Karlson</name>
+    <portrait>event_061_butterflyelephant</portrait>
+    <desc>A veteran of past battles with the Void, and survivor of much crossfire, this tusker now spends his time mulling on theories of the Void</desc>
+    <asset_bundle>184</asset_bundle>
+    <health>75</health>
+    <skill id="rally" all="1" x="1" y="3" />
+    <skill id="protect" all="1" x="1" y="3" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+      <skill id="rally" all="1" x="2" y="3" />
+      <skill id="protect" all="1" x="2" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id="rally" all="1" x="3" y="3" />
+      <skill id="protect" all="1" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id="rally" all="1" x="4" y="3" />
+      <skill id="protect" all="1" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+      <skill id="rally" all="1" x="5" y="3" />
+      <skill id="protect" all="1" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="rally" all="1" x="6" y="3" />
+      <skill id="protect" all="1" x="6" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>495</id>
+    <card_type>1</card_type>
+    <name>Valentine Bluefire</name>
+    <portrait>bluefireVoidDragon</portrait>
+    <desc>Roses are red, Bluefire is blue, we made this commander especially for you</desc>
+    <health>75</health>
+    <skill id="imbue" s="vampirism" all="1" x="1" />
+    <skill id="strike" all="1" x="1" />
+    <rarity>4</rarity>
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+      <skill id="imbue" s="vampirism" all="1" x="2" />
+      <skill id="strike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id="imbue" s="vampirism" all="1" x="3" />
+      <skill id="strike" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>95</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" s="vampirism" all="1" x="4" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+  </unit>
 </root>

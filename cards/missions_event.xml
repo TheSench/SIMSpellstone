@@ -69764,6 +69764,748 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <!-- E112 Node 1: The Memory Palace -->
+  <mission>
+    <id>7206</id>
+    <name>The Invisible Hero</name>
+    <energy>18</energy>
+    <desc>Fresh dreams have directed you to go meet an old ally. The only issue is you have no idea where they are or where to start looking.</desc>
+    <commander id="207" />
+    <!-- Void Assassin -->
+    <deck>
+      <card id="1011" />
+      <!-- Archive Curator -->
+      <card id="1011" />
+      <!-- Archive Curator -->
+      <card id="1011" />
+      <!-- Archive Curator -->
+      <card id="1314" />
+      <!-- Executioner Hound -->
+      <card id="1314" />
+      <!-- Executioner Hound -->
+      <card id="1314" />
+      <!-- Executioner Hound -->
+      <card id="1615" />
+      <!-- Runelock Panther -->
+      <card id="1615" />
+      <!-- Runelock Panther -->
+      <card id="1615" />
+      <!-- Runelock Panther -->
+      <card id="1616" mastery_level="2" />
+      <!-- Werewarg Alpha -->
+      <card id="1616" mastery_level="3" />
+      <!-- Werewarg Alpha -->
+      <card id="1616" mastery_level="4" />
+      <!-- Werewarg Alpha -->
+      <card id="1027" mastery_level="5" />
+      <!-- Castlerock Griffin -->
+      <card id="1027" mastery_level="6" />
+      <!-- Castlerock Griffin -->
+      <card id="1027" mastery_level="7" />
+      <!-- Castlerock Griffin -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>So there was nothing in your dreams to help us find her?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7207</id>
+    <name>Head Hunting</name>
+    <energy>18</energy>
+    <desc>Fortunately, someone has overheard the commotion. Someone with experience tracking down elusive characters.</desc>
+    <commander id="328" />
+    <!-- Plateau Monster -->
+    <deck>
+      <card id="1033" />
+      <!-- Thundersong Charger -->
+      <card id="1033" />
+      <!-- Thundersong Charger -->
+      <card id="1033" />
+      <!-- Thundersong Charger -->
+      <card id="1625" />
+      <!-- Clawkin Elite -->
+      <card id="1625" />
+      <!-- Clawkin Elite -->
+      <card id="1625" />
+      <!-- Clawkin Elite -->
+      <card id="1626" />
+      <!-- Wartusker -->
+      <card id="1626" />
+      <!-- Wartusker -->
+      <card id="1626" />
+      <!-- Wartusker -->
+      <card id="1632" mastery_level="2" />
+      <!-- Shade Rider -->
+      <card id="1632" mastery_level="3" />
+      <!-- Shade Rider -->
+      <card id="1632" mastery_level="4" />
+      <!-- Shade Rider -->
+      <card id="1635" mastery_level="5" />
+      <!-- Cunning Mergoat -->
+      <card id="1635" mastery_level="6" />
+      <!-- Cunning Mergoat -->
+      <card id="1635" mastery_level="7" />
+      <!-- Cunning Mergoat -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>You've been having a lot of dreams recently. Have you thought about whether you should be seeking help instead?</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>This person you're looking for... maybe I could help?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>How much of our conversation have you overheard?!</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>Enough to know it's someone with goggles, a spear and long curly hair...</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, have you not noticed the face on your Arena coins? Or the new Arena trophies you've been collecting? Or that statue over there on the airship?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7208</id>
+    <name>Hiding in Plain Sight</name>
+    <energy>18</energy>
+    <desc>Looking at the arena coins, arena trophies and the statue watching over the gateway to the Arena, you cannot believe the answer was staring at you the entire time.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1343" />
+      <!-- Blazehorn -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1641" />
+      <!-- Heart of the Wyld -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="1642" />
+      <!-- Icestone Demon -->
+      <card id="2089" mastery_level="2" />
+      <!-- Slagspirit Slayer -->
+      <card id="2089" mastery_level="3" />
+      <!-- Slagspirit Slayer -->
+      <card id="2089" mastery_level="4" />
+      <!-- Slagspirit Slayer -->
+      <card id="2022" mastery_level="5" />
+      <!-- Snowcrush Equine -->
+      <card id="2022" mastery_level="6" />
+      <!-- Snowcrush Equine -->
+      <card id="2022" mastery_level="7" />
+      <!-- Snowcrush Equine -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>How can she be the face of the Arena?! Or any Arena? Gladius Arena was turned into a scriptorium long ago!</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>Well I don't know how the adventurer participates in the Arena.</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>All I know is I find them fast asleep in front of that statue and chests somehow appear with treasure inside.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Hold on. We went to Gladius Arena in that shared dream created by Batara. All your Arena battles must also be in the dream world...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>... and Batara was one of Lev's companions. Which means...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>... you're going to have take your dreams back to this Arena and find her there.</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>0</enemy>
+        <text>Well, I'll leave you to do whatever it is you do over there.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7209</id>
+    <name>Searching for Opponent...</name>
+    <energy>18</energy>
+    <desc>You go through the familiar routine you've performed many times prior to reach the Arena. Only this time you're searching for something else...</desc>
+    <commander id="225" />
+    <!-- Wasteland Wolf Pack -->
+    <deck>
+      <card id="2000" />
+      <!-- Wasteland Warrior -->
+      <card id="2000" />
+      <!-- Wasteland Warrior -->
+      <card id="2019" />
+      <!-- Chalirazer -->
+      <card id="2019" />
+      <!-- Chalirazer -->
+      <card id="2021" />
+      <!-- Snowstep Strider -->
+      <card id="2021" />
+      <!-- Snowstep Strider -->
+      <card id="2023" />
+      <!-- Grizzly Despair -->
+      <card id="2023" />
+      <!-- Grizzly Despair -->
+      <card id="2029" />
+      <!-- Devilish Critters -->
+      <card id="2054" mastery_level="2" />
+      <!-- Pack Alpha -->
+      <card id="2054" mastery_level="3" />
+      <!-- Pack Alpha -->
+      <card id="2058" mastery_level="4" />
+      <!-- Bismuth Beast -->
+      <card id="2058" mastery_level="5" />
+      <!-- Bismuth Beast -->
+      <card id="2120" mastery_level="6" />
+      <!-- Bewitched Carbuncle -->
+      <card id="2120" mastery_level="7" />
+      <!-- Bewitched Carbuncle -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Searching for opponent?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>No? Then you've found me at last.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7210</id>
+    <name>So Many Questions</name>
+    <energy>18</energy>
+    <desc>Lev stands before you in surroundings that seem both foreign and familiar. Your mind is filled with curiosity and confusion.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2172" />
+      <!-- Hob and Gob Mob -->
+      <card id="2172" />
+      <!-- Hob and Gob Mob -->
+      <card id="2172" />
+      <!-- Hob and Gob Mob -->
+      <card id="2188" />
+      <!-- Feral Baboons -->
+      <card id="2188" />
+      <!-- Feral Baboons -->
+      <card id="2188" />
+      <!-- Feral Baboons -->
+      <card id="2192" mastery_level="2" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2192" mastery_level="3" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2193" mastery_level="4" />
+      <!-- Iceratops Engine -->
+      <card id="2193" mastery_level="5" />
+      <!-- Iceratops Engine -->
+      <card id="2201" mastery_level="6" />
+      <!-- Delta Griffins -->
+      <card id="2201" mastery_level="7" />
+      <!-- Delta Griffins -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You must have so many questions. What is this place? Is it real? Is it Gladius Arena? How did I get here? Am I here in body as well as in mind?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I'm afraid I'm not certain of those answers myself.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>But this appears to be where the Void banished all the memories and knowledge of who I once was before I defeated it.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>So my face and my likeness appears in the statues, the coins, and now even the trophies from this place. And yet, this place remains forgotten and unreachable.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Unreachable except to those with a special connection to the Void. Like you. I know you've come here countless times, adventurer.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I guess I've always just been... invisible to you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7211</id>
+    <name>A Living Arena</name>
+    <energy>18</energy>
+    <desc>As Lev continues to cast away the mystery, you suddenly feel a light turn on as if you have lived through many lifetimes in this place.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="5030" />
+      <!-- Loxphas Wizard -->
+      <card id="5030" />
+      <!-- Loxphas Wizard -->
+      <card id="5030" />
+      <!-- Loxphas Wizard -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="5163" />
+      <!-- Bark Watchers -->
+      <card id="5163" />
+      <!-- Bark Watchers -->
+      <card id="5163" />
+      <!-- Bark Watchers -->
+      <card id="5000" mastery_level="2" />
+      <!-- Alabaster Sphinx -->
+      <card id="5000" mastery_level="3" />
+      <!-- Alabaster Sphinx -->
+      <card id="5027" mastery_level="4" />
+      <!-- Northern Strife-kin -->
+      <card id="5027" mastery_level="5" />
+      <!-- Northern Strife-kin -->
+      <card id="5036" mastery_level="6" />
+      <!-- Summer Tail -->
+      <card id="5036" mastery_level="7" />
+      <!-- Summer Tail -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Yes adventuer, you've engaged with the memories of countless adventurers in this place.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Witnessed the duels and battles. The highs and lows. The wins and losses.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Those dreams, echoes, visions... they have transcended dimensions, time, and space. All brought here by the Void.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Like you, they seem to come and go from this place as they please. I have no control except to leave a little imprint on the treasure you take from here.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Your connection to the Void is remarkable, adventurer. But I fear that alone won't be enough to defeat it this time.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Come. This way.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E112 Node 2: Power, Growth, Order -->
+  <mission>
+    <id>7212</id>
+    <name>The Belly of the Beast</name>
+    <energy>18</energy>
+    <desc>You emerge from the darkness of the archway into a new but strangely familiar place. Nothing seems unusual... except for the elephant in the room.</desc>
+    <commander id="494" />
+    <!-- General Karlson -->
+    <deck>
+      <card id="6150" />
+      <!-- Fathom Dino -->
+      <card id="6150" />
+      <!-- Fathom Dino -->
+      <card id="6150" />
+      <!-- Fathom Dino -->
+      <card id="6159" />
+      <!-- Solder Sunderer -->
+      <card id="6159" />
+      <!-- Solder Sunderer -->
+      <card id="6159" />
+      <!-- Solder Sunderer -->
+      <card id="6009" />
+      <!-- Ravaging Dragon -->
+      <card id="6009" />
+      <!-- Ravaging Dragon -->
+      <card id="6009" />
+      <!-- Ravaging Dragon -->
+      <card id="6019" mastery_level="2" />
+      <!-- Canopy Terror -->
+      <card id="6019" mastery_level="3" />
+      <!-- Canopy Terror -->
+      <card id="6019" mastery_level="4" />
+      <!-- Canopy Horror -->
+      <card id="6030" mastery_level="5" />
+      <!-- Noveria Abomination -->
+      <card id="6030" mastery_level="6" />
+      <!-- Noveria Abomination -->
+      <card id="6030" mastery_level="7" />
+      <!-- Noveria Abomination -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>So this is the other Void touched adventurer? I'll get ready for the briefing...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7213</id>
+    <name>Since You've Been Gone</name>
+    <energy>18</energy>
+    <desc>Lev fills you in on what she's been up after you freed her from the Void.</desc>
+    <commander id="220" />
+    <!-- Cursed Voidlings -->
+    <deck>
+      <card id="5061" />
+      <!-- Boltfist Rex -->
+      <card id="5061" />
+      <!-- Boltfist Rex -->
+      <card id="5061" />
+      <!-- Boltfist Rex -->
+      <card id="5134" />
+      <!-- Ocotillo Ravager -->
+      <card id="5134" />
+      <!-- Ocotillo Ravager -->
+      <card id="5134" />
+      <!-- Ocotillo Ravager -->
+      <card id="5164" />
+      <!-- Chromium Crusader -->
+      <card id="5164" />
+      <!-- Chromium Crusader -->
+      <card id="5164" />
+      <!-- Chromium Crusader -->
+      <card id="5181" mastery_level="2" />
+      <!-- Himamanav's Essence -->
+      <card id="5181" mastery_level="3" />
+      <!-- Himamanav's Essence -->
+      <card id="5181" mastery_level="4" />
+      <!-- Himamanav's Essence -->
+      <card id="5212" mastery_level="5" />
+      <!-- Thundertail Cirrus -->
+      <card id="5212" mastery_level="6" />
+      <!-- Thundertail Cirrus -->
+      <card id="5212" mastery_level="7" />
+      <!-- Thundertail Cirrus -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Since we last met, I've been traveling places to understand more about Void and its power over memories.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>And I quickly began to encounter more and more creatures who had abandoned their tribe or had lost a great fraction of their true nature.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I soon realised that my legacy wasn't the only one forgotten.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7214</id>
+    <name>A Whole Different Beast</name>
+    <energy>18</energy>
+    <desc>It appears Lev has found new allies to turn the tide of the fight against the Void.</desc>
+    <commander id="215" />
+    <!-- Void Abomination -->
+    <deck>
+      <card id="6060" />
+      <!-- Incensed Pudgytusk -->
+      <card id="6060" />
+      <!-- Incensed Pudgytusk -->
+      <card id="6060" />
+      <!-- Incensed Pudgytusk -->
+      <card id="6134" />
+      <!-- Savage Hearth -->
+      <card id="6134" />
+      <!-- Savage Hearth -->
+      <card id="6134" />
+      <!-- Savage Hearth -->
+      <card id="6161" />
+      <!-- Torero Terror -->
+      <card id="6161" />
+      <!-- Torero Terror -->
+      <card id="6161" />
+      <!-- Torero Terror -->
+      <card id="6204" mastery_level="2" />
+      <!-- Chi-Strike Anubi -->
+      <card id="6204" mastery_level="3" />
+      <!-- Chi-Strike Anubi -->
+      <card id="6204" mastery_level="4" />
+      <!-- Chi-Strike Anubi -->
+      <card id="6205" mastery_level="5" />
+      <!-- Rattleroar Monstrosity -->
+      <card id="6205" mastery_level="6" />
+      <!-- Rattleroar Monstrosity -->
+      <card id="6205" mastery_level="7" />
+      <!-- Rattleroar Monstrosity -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>The Void must have erased all knowledge of this tribe for the same reasons that I was forgotten. They must have previous experience defeating the Void.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>And now the Void has been released once more, they are our best hope.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Although I will admit, I was hoping I wouldn't have needed to call on them, and even then I had hoped to have more time to regain my powers and prepare.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>We must act quickly. This place... it has become more unstable of late.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7215</id>
+    <name>Sensitive Information</name>
+    <energy>18</energy>
+    <desc>Before you and Lev part ways, she leaves you with a word of warning.</desc>
+    <commander id="286" />
+    <!-- Corruptrex -->
+    <deck>
+      <card id="5272" />
+      <!-- Balam Deity -->
+      <card id="5272" />
+      <!-- Balam Deity -->
+      <card id="5272" />
+      <!-- Balam Deity -->
+      <card id="5275" />
+      <!-- Bulgae Hounds -->
+      <card id="5275" />
+      <!-- Bulgae Hounds -->
+      <card id="5275" />
+      <!-- Bulgae Hounds -->
+      <card id="5281" />
+      <!-- Ramming Legion -->
+      <card id="5281" />
+      <!-- Ramming Legion -->
+      <card id="5281" />
+      <!-- Ramming Legion -->
+      <card id="5284" mastery_level="2" />
+      <!-- Piranha Terriers -->
+      <card id="5284" mastery_level="3" />
+      <!-- Piranha Terriers -->
+      <card id="5284" mastery_level="4" />
+      <!-- Piranha Terriers -->
+      <card id="5293" mastery_level="5" />
+      <!-- Unwavering Usher -->
+      <card id="5293" mastery_level="6" />
+      <!-- Unwavering Usher -->
+      <card id="5293" mastery_level="7" />
+      <!-- Unwavering Usher -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, you must be guarded with the information you have just received.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I believe we hold an element of surprise over the Void.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>So thorough were they with the destruction of the knowledge of the Beasts, that the Void itself seems to have forgotten about their existence.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Though the thunderclouds of the Void have swirled around me, I appear to be invisible to it.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>And we beasts seem to have been spared the tribal corruption.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>The Void must not suspect.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7216</id>
+    <name>To Defeat the Void...</name>
+    <energy>18</energy>
+    <desc>You no longer feel Lev's presence and instinctly prepare for battle as a sense of dread seizes you, until you realise you're about to receive a mission briefing.</desc>
+    <commander id="441" />
+    <!-- Memory of Void -->
+    <deck>
+      <card id="6226" />
+      <!-- Inferno Hound -->
+      <card id="6226" />
+      <!-- Inferno Hound -->
+      <card id="6226" />
+      <!-- Inferno Hound -->
+      <card id="6251" />
+      <!-- Lavahorn Monster -->
+      <card id="6251" />
+      <!-- Lavahorn Monster -->
+      <card id="6251" />
+      <!-- Lavahorn Monster -->
+      <card id="6259" />
+      <!-- Apocalyptic Umibozu -->
+      <card id="6259" />
+      <!-- Apocalyptic Umibozu -->
+      <card id="6259" />
+      <!-- Apocalyptic Umibozu -->
+      <card id="6287" mastery_level="2" />
+      <!-- Firehop Fluffle -->
+      <card id="6287" mastery_level="3" />
+      <!-- Firehop Fluffle -->
+      <card id="6287" mastery_level="4" />
+      <!-- Firehop Fluffle -->
+      <card id="6297" mastery_level="5" />
+      <!-- War Drummer -->
+      <card id="6297" mastery_level="6" />
+      <!-- War Drummer -->
+      <card id="6297" mastery_level="7" />
+      <!-- War Drummer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>OK, listen up, adventurer. General Karlson here.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>I've seen this strategy from the Void before. Mimic the factions' traits and use it against them.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>First its sows chaos and conflict, corrupting the tribes with power.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Next, it grows wild, spreading across the land. And finally it seizes control and imposes its own order from the aether.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>The Void may think it has completed the first phase... but this is where we fight back!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7217</id>
+    <name>... First Understand the Void</name>
+    <energy>18</energy>
+    <desc>Through the General's briefing, you now see the Void's machinations: embody each elemental faction and in doing so... consume it.</desc>
+    <commander id="382" />
+    <!-- Bluefire, Mythic Master -->
+    <deck>
+      <card id="6080" />
+      <!-- Refined Titanirous -->
+      <card id="6080" />
+      <!-- Refined Titanirous -->
+      <card id="6080" />
+      <!-- Refined Titanirous -->
+      <card id="6221" />
+      <!-- Desert Blastabond -->
+      <card id="6221" />
+      <!-- Desert Blastabond -->
+      <card id="6221" />
+      <!-- Desert Blastabond -->
+      <card id="6039" />
+      <!-- Auroch the Wicked -->
+      <card id="6039" />
+      <!-- Auroch the Wicked -->
+      <card id="6039" />
+      <!-- Auroch the Wicked -->
+      <card id="6052" mastery_level="2" />
+      <!-- Fuming Horror -->
+      <card id="6052" mastery_level="3" />
+      <!-- Fuming Horror -->
+      <card id="6052" mastery_level="4" />
+      <!-- Fuming Horror -->
+      <card id="5260" mastery_level="5" />
+      <!-- God Style Tenshi -->
+      <card id="5260" mastery_level="6" />
+      <!-- God Style Tenshi -->
+      <card id="5260" mastery_level="7" />
+      <!-- God Style Tenshi -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>You will meet up with us here at this time...</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>
@@ -72207,5 +72949,326 @@
         <text>Quite... let's just say this is one of my best sellers so how about I give you some of this powder and we be on our way?</text>
       </line>
     </speech>
+  </mission>
+  <!-- Valentine's Special Event 2024 -->
+  <mission>
+    <id>2049</id>
+    <name>Epics are Blue</name>
+    <energy>1</energy>
+    <desc>The enemy is only using Epics, maybe you should too?</desc>
+    <commander id="495" />
+    <!-- Valentine Bluefire -->
+    <deck>
+      <card id="1027" />
+      <!-- Castlerock Griffin -->
+      <card id="1033" />
+      <!-- Thundersong Charger -->
+      <card id="1625" />
+      <!-- Clawkin Elite -->
+      <card id="1626" />
+      <!-- Wartusker -->
+      <card id="1632" />
+      <!-- Shade Rider -->
+      <card id="1635" />
+      <!-- Cunning Mergoat -->
+      <card id="5030" />
+      <!-- Loxphas Mage -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="5163" />
+      <!-- Bark Watchers -->
+      <card id="6150" mastery_level="2" />
+      <!-- Fathom Dino -->
+      <card id="6159" mastery_level="3" />
+      <!-- Solder Sunderer -->
+      <card id="2000" mastery_level="4" />
+      <!-- Wasteland Warrior -->
+      <card id="2000" mastery_level="5" />
+      <!-- Wasteland Warrior -->
+      <card id="2019" mastery_level="6" />
+      <!-- Chalirazer -->
+      <card id="2019" mastery_level="7" />
+      <!-- Chalirazer -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2050</id>
+    <name>Bluefire is Blue</name>
+    <energy>1</energy>
+    <desc>You're so special, he gave his heart to you.</desc>
+    <commander id="495" />
+    <!-- Valentine Bluefire -->
+    <deck>
+      <card id="2021" />
+      <!-- Snowstep Strider -->
+      <card id="2023" />
+      <!-- Grizzly Despair -->
+      <card id="2029" />
+      <!-- Devilish Critters -->
+      <card id="2054" />
+      <!-- Pack Alpha -->
+      <card id="2058" />
+      <!-- Bismuth Beast -->
+      <card id="2120" />
+      <!-- Bewitched Carbuncle -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2172" />
+      <!-- Hob and Gob Mob -->
+      <card id="2188" />
+      <!-- Feral Baboons -->
+      <card id="2192" mastery_level="2" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2192" mastery_level="3" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2193" mastery_level="4" />
+      <!-- Iceratops Model -->
+      <card id="2193" mastery_level="5" />
+      <!-- Iceratops Model -->
+      <card id="2201" mastery_level="6" />
+      <!-- Delta Griffins -->
+      <card id="2201" mastery_level="7" />
+      <!-- Delta Griffins -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2051</id>
+    <name>Bluefire is Still Blue</name>
+    <energy>1</energy>
+    <desc>If I had any flasks, I'd use them on you.</desc>
+    <commander id="495" />
+    <!-- Valentine Bluefire -->
+    <deck>
+      <card id="1027" />
+      <!-- Castlerock Griffin -->
+      <card id="1033" />
+      <!-- Thundersong Charger -->
+      <card id="1625" />
+      <!-- Clawkin Elite -->
+      <card id="1626" />
+      <!-- Wartusker -->
+      <card id="1632" />
+      <!-- Shade Rider -->
+      <card id="1635" />
+      <!-- Cunning Mergoat -->
+      <card id="5030" />
+      <!-- Loxphas Mage -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="5163" />
+      <!-- Bark Watchers -->
+      <card id="6150" mastery_level="2" />
+      <!-- Fathom Dino -->
+      <card id="6159" mastery_level="3" />
+      <!-- Solder Sunderer -->
+      <card id="2000" mastery_level="4" />
+      <!-- Wasteland Warrior -->
+      <card id="2000" mastery_level="5" />
+      <!-- Wasteland Warrior -->
+      <card id="2019" mastery_level="6" />
+      <!-- Chalirazer -->
+      <card id="2019" mastery_level="7" />
+      <!-- Chalirazer -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2052</id>
+    <name>Solaron is Blue</name>
+    <energy>1</energy>
+    <desc>No one can compare to the Radiance of you.</desc>
+    <commander id="450" />
+    <!-- Solaron, Likes to Party -->
+    <deck>
+      <card id="5030" />
+      <!-- Loxphas Mage -->
+      <card id="5081" />
+      <!-- Nimbus Brahzee -->
+      <card id="2005" />
+      <!-- Blazing Drake -->
+      <card id="2045" />
+      <!-- Chillbeard Beast -->
+      <card id="2124" />
+      <!-- Bulbscale Construct -->
+      <card id="2141" />
+      <!-- Stormbreak Beast -->
+      <card id="2163" />
+      <!-- Steelwing Fulminator -->
+      <card id="2228" />
+      <!-- Azure Keeper -->
+      <card id="2248" />
+      <!-- Cute Partners -->
+      <card id="5010" mastery_level="2" />
+      <!-- Veiled Dragon -->
+      <card id="5024" mastery_level="3" />
+      <!-- Skytop Dragon -->
+      <card id="5025" mastery_level="4" />
+      <!-- Silverskin Dragon -->
+      <card id="5062" mastery_level="5" />
+      <!-- Cliffgazer Wyrm -->
+      <card id="5093" mastery_level="6" />
+      <!-- Gusty Newborn -->
+      <card id="5096" mastery_level="7" />
+      <!-- Enclave Dragon -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2053</id>
+    <name>Atlas is Green</name>
+    <energy>1</energy>
+    <desc>You Invigorate me even more than caffeine.</desc>
+    <commander id="449" />
+    <!-- Atlas, Party Titan -->
+    <deck>
+      <card id="7011" />
+      <!-- Wolf Queen -->
+      <card id="7015" />
+      <!-- Swamp Aberration -->
+      <card id="7024" />
+      <!-- Grandmane Dragon -->
+      <card id="7034" />
+      <!-- Contagion Elk -->
+      <card id="7035" />
+      <!-- Carrion King -->
+      <card id="7038" />
+      <!-- Sun King -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="7061" />
+      <!-- Cragskin Dragon -->
+      <card id="7070" />
+      <!-- Howling Menace -->
+      <card id="7116" mastery_level="2" />
+      <!-- Hostile Hexhound -->
+      <card id="7118" mastery_level="3" />
+      <!-- Slashfoot Wolper -->
+      <card id="7122" mastery_level="4" />
+      <!-- Satyr Runebearer -->
+      <card id="7125" mastery_level="5" />
+      <!-- Spectral Presence -->
+      <card id="7161" mastery_level="6" />
+      <!-- Alphamech Stalker -->
+      <card id="7164" mastery_level="7" />
+      <!-- Pinegrove Primate -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2054</id>
+    <name>Vulcanos is Red</name>
+    <energy>1</energy>
+    <desc>Your morning Scorchbreath smells worse than Undead.</desc>
+    <commander id="451" />
+    <!-- Vulcanos, Party Titan -->
+    <deck>
+      <card id="6150" />
+      <!-- Fathom Dino -->
+      <card id="6159" />
+      <!-- Solder Sunderer -->
+      <card id="1334" />
+      <!-- Ash Drake -->
+      <card id="1336" />
+      <!-- Rustscale Wyrm -->
+      <card id="2001" />
+      <!-- Dunetooth Rex -->
+      <card id="2004" />
+      <!-- Obsidiantail Dragon -->
+      <card id="2033" />
+      <!-- Arcblaze Dragon -->
+      <card id="2044" />
+      <!-- Spearhide Dragon -->
+      <card id="2066" />
+      <!-- Basalt Geyser -->
+      <card id="2123" mastery_level="2" />
+      <!-- Emberstoke Clawsmith -->
+      <card id="2139" mastery_level="3" />
+      <!-- Returned Dragonkin -->
+      <card id="2142" mastery_level="4" />
+      <!-- Spearbreak Monster -->
+      <card id="2181" mastery_level="5" />
+      <!-- Skullpicker Wyvern -->
+      <card id="2197" mastery_level="6" />
+      <!-- Invoker of Evilness -->
+      <card id="2210" mastery_level="7" />
+      <!-- Wyverasp -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2055</id>
+    <name>The Oops Screen is Black</name>
+    <energy>1</energy>
+    <desc>We're really sorry if you ever lost an attack.</desc>
+    <commander id="495" />
+    <!-- Valentine Bluefire -->
+    <deck>
+      <card id="2021" />
+      <!-- Snowstep Strider -->
+      <card id="2023" />
+      <!-- Grizzly Despair -->
+      <card id="2029" />
+      <!-- Devilish Critters -->
+      <card id="2054" />
+      <!-- Pack Alpha -->
+      <card id="2058" />
+      <!-- Bismuth Beast -->
+      <card id="2120" />
+      <!-- Bewitched Carbuncle -->
+      <card id="2138" />
+      <!-- Magmarch Cougar -->
+      <card id="2172" />
+      <!-- Hob and Gob Mob -->
+      <card id="2188" />
+      <!-- Feral Baboons -->
+      <card id="2192" mastery_level="2" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2192" mastery_level="3" />
+      <!-- Gearmaw Shepherd -->
+      <card id="2193" mastery_level="4" />
+      <!-- Iceratops Model -->
+      <card id="2193" mastery_level="5" />
+      <!-- Iceratops Model -->
+      <card id="2201" mastery_level="6" />
+      <!-- Delta Griffins -->
+      <card id="2201" mastery_level="7" />
+      <!-- Delta Griffins -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2056</id>
+    <name>Violets are Blue</name>
+    <energy>1</energy>
+    <desc>From all of us in ComDev, we'd like to thank you.</desc>
+    <commander id="495" />
+    <!-- Valentine Bluefire -->
+    <deck>
+      <card id="2021" />
+      <!-- Snowstep Ranger -->
+      <card id="5005" />
+      <!-- Storm Giant -->
+      <card id="5030" />
+      <!-- Loxphas Mage -->
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="2021" />
+      <!-- Snowstep Ranger -->
+      <card id="5005" />
+      <!-- Storm Giant -->
+      <card id="5030" />
+      <!-- Loxphas Mage -->
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7047" mastery_level="2" />
+      <!-- Shaman of the Wild -->
+      <card id="2021" mastery_level="3" />
+      <!-- Snowstep Ranger -->
+      <card id="5005" mastery_level="4" />
+      <!-- Storm Giant -->
+      <card id="5030" mastery_level="5" />
+      <!-- Loxphas Mage -->
+      <card id="7011" mastery_level="6" />
+      <!-- Wolf Girl -->
+      <card id="7047" mastery_level="7" />
+      <!-- Shaman of the Wild -->
+    </deck>
   </mission>
 </root>

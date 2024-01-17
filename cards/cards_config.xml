@@ -835,8 +835,8 @@
   <!-- <icon_bundle>	bundle tag -->
   <unitType>
     <id>0</id>
-    <name></name>
-    <icon></icon>
+    <name />
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -923,15 +923,16 @@
   <unitType>
     <id>14</id>
     <tribe>1</tribe>
-    <name>Bear</name>
-    <icon></icon>
-    <hidden>1</hidden>
+    <name>Beast</name>
+    <icon>filter_frostbite_32</icon>
+    <picture>filter_frostbite_32</picture>
+    <picture_bundle>26</picture_bundle>
   </unitType>
   <unitType>
     <id>15</id>
     <tribe>1</tribe>
     <name>Token</name>
-    <icon></icon>
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <unitType>
@@ -944,7 +945,7 @@
     <id>17</id>
     <name>Knight</name>
     <tribe>1</tribe>
-    <icon></icon>
+    <icon />
     <hidden>1</hidden>
   </unitType>
   <!-- =================== -->

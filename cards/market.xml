@@ -3297,7 +3297,7 @@
     <vip_level_req>0</vip_level_req>
     <desc>Gives the displayed item. May be purchased multiple times, but the price increases each purchase!</desc>
     <preview_desc>Unlocks a random Item that can be purchased with gold and cycles every 24 hours!</preview_desc>
-    <priority>20</priority>
+    <priority>25</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
     <cost_type>2</cost_type>
@@ -3308,48 +3308,51 @@
     <costed_items>
       <item id="11" number="1" purchase1="80" purchase2="100" purchase3="140" purchase4="200" purchase5="300" scalar="150" />
       <!-- Rare Pack -->
-      <!-- <item id="12" number="1" purchase1="800" purchase2="1600" purchase3="3200" purchase4="6400" purchase5="9600" scalar="4800" />
-			<item id="1002" number="1" purchase1="100" purchase2="200" purchase3="400" purchase4="800" purchase5="1200" scalar="600" />
-			<item id="1003" number="1" purchase1="200" purchase2="400" purchase3="800" purchase4="1600" purchase5="2400" scalar="1200" />
-			<item id="1004" number="1" purchase1="400" purchase2="800" purchase3="1600" purchase4="2400" purchase5="3600" scalar="1800" /> -->
-      <item id="4001" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
-      <!-- Inscription Powder -->
+      <item id="20" number="1" purchase1="20000" scalar="5000" />
+      <!-- Arena Trophies -->
+      <!-- <item id="12" number="1" purchase1="800" purchase2="1600" purchase3="3200" purchase4="6400" purchase5="9600" scalar="4800" /> -->
+      <!-- Epic Pack -->
+      <!-- <item id="1002" number="1" purchase1="100" purchase2="200" purchase3="400" purchase4="800" purchase5="1200" scalar="600" /> -->
+      <!-- Energy Refill +5 -->
+      <!-- <item id="1003" number="1" purchase1="200" purchase2="400" purchase3="800" purchase4="1600" purchase5="2400" scalar="1200" /> -->
+      <!-- Energy Refill +10 -->
+      <!-- <item id="1004" number="1" purchase1="400" purchase2="800" purchase3="1600" purchase4="2400" purchase5="3600" scalar="1800" /> -->
+      <!-- Energy Refill +20 -->
+      <!-- <item id="1021" number="1" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" /> -->
+      <!-- Bounty Refill +1 -->
       <item id="2001" number="15" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
       <!-- Arcane Fragment -->
       <item id="2501" number="100" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
       <!-- Blue Fire Soul -->
-      <!-- <item id="1021" number="1" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" /> -->
-      <!-- Bounty Refill +1 -->
-      <item id="4011" number="1" purchase1="400" purchase2="600" purchase3="1000" purchase4="1400" purchase5="1800" scalar="400" />
-      <!-- Rare Runeshell -->
       <item id="2515" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Embersoul -->
       <item id="2522" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
       <!-- Brinesoul -->
+      <item id="4001" number="15" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
+      <!-- Inscription Powder -->
+      <item id="4011" number="1" purchase1="400" purchase2="600" purchase3="1000" purchase4="1400" purchase5="1800" scalar="400" />
+      <!-- Rare Runeshell -->
     </costed_items>
   </store_item>
-  <store_item>
-    <id>4003</id>
-    <name>Cycling Card</name>
-    <category>4</category>
-    <vip_level_req>0</vip_level_req>
-    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
-    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFor ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
-    <priority>30</priority>
-    <icon>icon_blue_crystal</icon>
-    <scale_prices>1</scale_prices>
-    <tied_id>4005</tied_id>
-    <rarity3scaling purchase1="60" purchase2="60" purchase3="60" purchase4="60" scalar="40" />
-    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
-    <cycle_cards>1</cycle_cards>
-    <cycle_length>86400</cycle_length>
-    <!-- cycle length in seconds. Keep same per pack or may break everything -->
-    <start_offset>61200</start_offset>
-    <!-- offset from UTC in seconds -->
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
-    </cards>
-  </store_item>
+  <!-- <store_item> -->
+  <!-- <id>4003</id> -->
+  <!-- <name>Cycling Epic Premium Card</name> -->
+  <!-- <category>4</category> -->
+  <!-- <vip_level_req>0</vip_level_req> -->
+  <!-- <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc> -->
+  <!-- <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc> -->
+  <!-- <priority>30</priority> -->
+  <!-- <icon>icon_blue_crystal</icon> -->
+  <!-- <scale_prices>1</scale_prices> -->
+  <!-- <rarity3scaling purchase1="60" purchase2="60" purchase3="60" purchase4="60" scalar="40"/> -->
+  <!-- <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100"/> -->
+  <!-- <cycle_cards>1</cycle_cards> -->
+  <!-- <cycle_length>86400</cycle_length> -->
+  <!-- <start_offset>61200</start_offset> -->
+  <!-- <cards> -->
+  <!-- <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="3000"/> -->
+  <!-- </cards> -->
+  <!-- </store_item> -->
   <store_item>
     <id>4004</id>
     <name>Cycling Rune</name>
@@ -3357,7 +3360,7 @@
     <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed rune. May be purchased multiple times, but the price increases each purchase!</desc>
     <preview_desc>Unlocks a random Legendary rune that can be purchased with shards and cycles every 24 hours!</preview_desc>
-    <priority>40</priority>
+    <priority>35</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
     <rarity2scaling purchase1="100" scalar="20" />
@@ -3370,40 +3373,39 @@
       <item min_rarity="4" max_rarity="4" type="3" set="1,3" />
     </items>
   </store_item>
-  <store_item>
-    <id>4005</id>
-    <name>Cycling Card</name>
-    <category>4</category>
-    <vip_level_req>0</vip_level_req>
-    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
-    <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
-    <priority>50</priority>
-    <icon>icon_blue_crystal</icon>
-    <scale_prices>1</scale_prices>
-    <tied_id>4003</tied_id>
-    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
-    <cycle_cards>1</cycle_cards>
-    <cycle_length>86400</cycle_length>
-    <start_offset>61200</start_offset>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
-    </cards>
-  </store_item>
+  <!-- <store_item> -->
+  <!-- <id>4005</id> -->
+  <!-- <name>Cycling Legendary Premium Card</name> -->
+  <!-- <category>4</category> -->
+  <!-- <vip_level_req>0</vip_level_req> -->
+  <!-- <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc> -->
+  <!-- <preview_desc>Unlocks a random Aether ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc> -->
+  <!-- <priority>40</priority> -->
+  <!-- <icon>icon_purple_crystal</icon> -->
+  <!-- <scale_prices>1</scale_prices> -->
+  <!-- <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100"/> -->
+  <!-- <cycle_cards>1</cycle_cards> -->
+  <!-- <cycle_length>86400</cycle_length> -->
+  <!-- <start_offset>61200</start_offset> -->
+  <!-- <cards> -->
+  <!-- <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="1" set="3000"/> -->
+  <!-- </cards> -->
+  <!-- </store_item> -->
   <store_item>
     <id>4006</id>
-    <name>Cycling Reward Card</name>
+    <name>Cycling Legendary Reward Card</name>
     <category>4</category>
     <vip_level_req>0</vip_level_req>
     <desc>Gives a single copy of the displayed Reward card. May be purchased up to 4 times, but the price increases each purchase!</desc>
     <preview_desc>Unlocks a random ^cE7FFLegendary ^cFFFFReward card that can be purchased with Arena Trophies and cycles every 24 hours!</preview_desc>
-    <priority>10</priority>
+    <priority>20</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
     <cost_type>3</cost_type>
     <!-- Items -->
     <cost item="20" />
     <!-- Arena Trophies -->
-    <rarity3scaling purchase1="1" scalar="1" />
+    <rarity3scaling purchase1="1" scalar="0" />
     <rarity4scaling purchase1="4" purchase2="5" purchase3="6" purchase4="7" scalar="44" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
@@ -3413,13 +3415,35 @@
     </cards>
   </store_item>
   <store_item>
+    <id>4007</id>
+    <name>Cycling Epic Reward Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Reward card. May be purchased multiple times!</desc>
+    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFReward card that can be purchased with Arena Trophies and cycles every 24 hours!</preview_desc>
+    <priority>15</priority>
+    <icon>icon_blue_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <cost_type>3</cost_type>
+    <!-- Items -->
+    <cost item="20" />
+    <!-- Arena Trophies -->
+    <rarity3scaling purchase1="1" scalar="0" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="2000" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>4008</id>
     <name>Cycling Stones x10</name>
     <category>4</category>
     <vip_level_req>0</vip_level_req>
     <desc>Gives 10 stones of the displayed Reward Champion card. May be purchased multiple times, but the price increases each purchase!</desc>
     <preview_desc>Unlocks stones for a random Reward Champion that can be purchased with shards and cycles every 24 hours!</preview_desc>
-    <priority>60</priority>
+    <priority>10</priority>
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <scale_prices>1</scale_prices>
@@ -3507,6 +3531,81 @@
       <item id="104077" number="10" purchase1="10" scalar="10" />
       <item id="104078" number="10" purchase1="10" scalar="10" />
     </costed_items>
+  </store_item>
+  <store_item>
+    <id>4010</id>
+    <name>Cycling Legendary Chaos Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Premium card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random Chaos ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>45</priority>
+    <icon>icon_purple_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="2" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>4011</id>
+    <name>Cycling Legendary Wyld Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Premium card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random Wyld ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>50</priority>
+    <icon>icon_purple_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="3" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>4012</id>
+    <name>Cycling Legendary Aether Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Premium card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random Aether ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>40</priority>
+    <icon>icon_purple_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="1" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>4013</id>
+    <name>Cycling Epic Premium Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Premium card. May be purchased multiple times, but the price increases after 4 purchases!</desc>
+    <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>30</priority>
+    <icon>icon_blue_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <rarity3scaling purchase1="60" purchase2="60" purchase3="60" purchase4="60" scalar="40" />
+    <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <!-- cycle length in seconds. Keep same per pack or may break everything -->
+    <start_offset>61200</start_offset>
+    <!-- offset from UTC in seconds -->
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="3000" />
+    </cards>
   </store_item>
   <!-- Arena Packs -->
   <store_item>

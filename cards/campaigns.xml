@@ -4351,8 +4351,8 @@
   <campaign>
     <id>1124</id>
     <name>Soul Power</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4377,8 +4377,8 @@
   <campaign>
     <id>1125</id>
     <name>The Void Plane</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4413,8 +4413,8 @@
   <campaign>
     <id>1126</id>
     <name>Ruler of The Void</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1125" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1125" level="1" />
     <locked_start_time>1495126800</locked_start_time>
     <!-- Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2010</battleground_id>
@@ -4453,8 +4453,8 @@
     <name>This is the Final Battle</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1125" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1125" level="1" />
     <locked_start_time>1495126800</locked_start_time>
     <!--  Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2011</battleground_id>
@@ -4485,8 +4485,8 @@
   <campaign>
     <id>1128</id>
     <name>The Abyss</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1126" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1126" level="1" />
     <locked_start_time>1496336400</locked_start_time>
     <!-- Thu, 01 June 2017 17:00:00 -->
     <battleground_id>2012</battleground_id>
@@ -4523,8 +4523,8 @@
   <campaign>
     <id>1129</id>
     <name>The Void's Harmony</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1128" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1128" level="1" />
     <locked_start_time>1497546000</locked_start_time>
     <!-- Thu, 15 June 2017 17:00:00 -->
     <battleground_id>2013</battleground_id>
@@ -6763,8 +6763,8 @@
   <campaign>
     <id>1195</id>
     <name>Purity and Corruption</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1547139600</locked_start_time>
     <!-- Thu, Jan 10 2019 17:00:00 -->
     <location_id>20</location_id>
@@ -6793,8 +6793,8 @@
   <campaign>
     <id>1196</id>
     <name>Warrior's Path</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1195" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1195" level="1" />
     <locked_start_time>1548349200</locked_start_time>
     <!--  Thu, Jan 24 2019 17:00:00 -->
     <battleground_id>2057</battleground_id>
@@ -6827,8 +6827,8 @@
     <name>Schism</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1195" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1195" level="1" />
     <locked_start_time>1548349200</locked_start_time>
     <!-- Thu, Jan 24 2019 17:00:00  -->
     <battleground_id>2058</battleground_id>
@@ -6859,8 +6859,8 @@
   <campaign>
     <id>1198</id>
     <name>Shades of the Past</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1196" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1196" level="1" />
     <locked_start_time>1549558800</locked_start_time>
     <!-- Thu, Feb 07 2019 17:00:00 -->
     <battleground_id>2059</battleground_id>
@@ -6890,8 +6890,8 @@
   <campaign>
     <id>1199</id>
     <name>Crimsonwing Foundation</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1198" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1198" level="1" />
     <locked_start_time>1550768400</locked_start_time>
     <!-- Thursday, February 21, 2019  -->
     <battleground_id>2060</battleground_id>
@@ -11634,8 +11634,8 @@
     <id>1326</id>
     <name>Old Friend</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1663261200</locked_start_time>
     <!-- Thursday, 15 September 2022 17:00:00	  -->
     <battleground_id>2119</battleground_id>
@@ -11675,8 +11675,8 @@
     <id>1327</id>
     <name>Battling the Void</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1326" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1326" level="1" />
     <locked_start_time>1664470800</locked_start_time>
     <!-- Thursday, 29 September 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12084,8 +12084,8 @@
     <id>1337</id>
     <name>The Menace Returns!</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1672938000</locked_start_time>
     <!-- Thursday, January 5, 2023 17:00:00	 	  -->
     <battleground_id>2119</battleground_id>
@@ -12125,8 +12125,8 @@
     <id>1338</id>
     <name>The Colossus</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1337" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1337" level="1" />
     <locked_start_time>1674147600</locked_start_time>
     <!-- Thursday, 19 January 2023 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -13290,6 +13290,89 @@
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1706806800</ignore_energy_reduction_until>
     <!-- Thursday, 01 February 2024 at 17:00:00 -->
+  </campaign>
+  <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <campaign>
+    <id>1365</id>
+    <name>The Memory Palace</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1706806800</locked_start_time>
+    <!-- Thursday, 01 February 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>20</location_id>
+    <x>325</x>
+    <y>150</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7206</mission_id>
+      <mission_id>7207</mission_id>
+      <mission_id>7208</mission_id>
+      <mission_id>7209</mission_id>
+      <mission_id>7210</mission_id>
+      <mission_id>7211</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="20" number="2" />
+      <!-- Arena Trophy -->
+      <item level="4" id="104080" number="50" />
+      <!-- Arezzo, the Chimera -->
+      <card level="5" id="2220" />
+      <!-- Frozenbolt Adept -->
+      <card level="6" id="2220" />
+      <!-- Frozenbolt Adept -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3086" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1709226000</ignore_energy_reduction_until>
+    <!-- Thursday, 29 February 2024 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1366</id>
+    <name>Power, Growth, Order</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1365" level="1" />
+    <locked_start_time>1708016400</locked_start_time>
+    <!-- Thursday, 15 February 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>20</location_id>
+    <x>435</x>
+    <y>305</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7212</mission_id>
+      <mission_id>7213</mission_id>
+      <mission_id>7214</mission_id>
+      <mission_id>7215</mission_id>
+      <mission_id>7216</mission_id>
+      <mission_id>7217</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="20" number="2" />
+      <!-- Arena Trophy -->
+      <item level="4" id="104080" number="50" />
+      <!-- Arezzo, the Chimera -->
+      <card level="5" id="2220" />
+      <!-- Frozenbolt Adept -->
+      <card level="6" id="2220" />
+      <!-- Frozenbolt Adept -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3086" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1709226000</ignore_energy_reduction_until>
+    <!-- Thursday, 29 February 2024 at 17:00:00 -->
   </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->
@@ -14798,6 +14881,49 @@
       <!-- Special Event Mystery Package -->
     </rewards>
     <find_item id="3077" drop_per_energy="0.9" />
+    <!-- Matches final node with energy reduction -->
+  </campaign>
+  <!-- Valentine's Special Event 2024 -->
+  <campaign>
+    <id>5008</id>
+    <name>Roses are Red</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="heal_128" />
+    <battleground_id>2122</battleground_id>
+    <location_id>20</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>160</x>
+    <y>150</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>2049</mission_id>
+      <mission_id>2050</mission_id>
+      <mission_id>2051</mission_id>
+      <mission_id>2052</mission_id>
+      <mission_id>2053</mission_id>
+      <mission_id>2054</mission_id>
+      <mission_id>2055</mission_id>
+      <mission_id>2056</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="518" number="2" />
+      <!-- Thank You Crate -->
+      <item level="2" id="4001" number="300" />
+      <!-- Inscription Powder -->
+      <item level="3" id="5045" number="1" />
+      <!-- Legendary Heal All Rune -->
+      <item level="4" id="1045" number="1" />
+      <!-- Dungeon Refill +20 -->
+      <item level="5" id="5013" number="1" />
+      <!-- Legendary Health Rune -->
+      <item level="6" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="7" id="531" number="1" />
+      <!-- Special Event Mystery Package -->
+    </rewards>
+    <find_item id="3086" drop_per_energy="0.9" />
     <!-- Matches final node with energy reduction -->
   </campaign>
 </root>

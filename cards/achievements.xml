@@ -58,11 +58,11 @@
 			</reward>
 
 		ORDER:
-			  1-89 	= FTUE + System Introductions. Highest priority
-			 90-99	= Main Campaign
+			   1-89 = FTUE + System Introductions. Highest priority
+			  90-99 = Main Campaign
 			101-199 = Events
 			201-299 = Upgrades
-			301-399	= Tome of Heroes
+			301-399 = Tome of Heroes
 			401-499 = -Empty-
 			501-599 = Bounties
 			601-699 = Campaign & Map Mastery
@@ -80,7 +80,7 @@
 			701-800 = Card Fusions
 			801-900 = Arcane Dust
 		   901-1000 = <BLANK>
-          1001-1100 = Kongregate Account
+		  1001-1100 = Kongregate Account
 		  1101-1200 = Deck Editting
 		  1201-1300 = <BLANK>
 		  1301-1400 = Rune Crafting
@@ -88,6 +88,7 @@
 		  1501-1600 = Arena Achievements
 		  3001-4000 = Non-Core Maps
 		  4001-4500 = Non-Core Maps Meta
+		  4501-9999 = Non-Core Maps Continued
 	-->
   <!-- 100: Store Quests START -->
   <achievement>
@@ -2663,37 +2664,141 @@
       <!-- 3 Legendary Rune Slivers -->
     </reward>
   </achievement>
-  <!-- Daily Quests -->
-  <!-- <achievement>
-		<id>409</id>
-		<type>4</type>
-		<order>500</order>
-		<name>Daily Hunter</name>
-		<desc>Collect 5 Bounties.</desc>
-		<duration>86400</duration>
-		<req>
-			<pvp_wins>5</pvp_wins>
-		</req>
-		<reward>
-			<gold>50</gold>
-		</reward>
-	</achievement>
-
-	<achievement>
-		<id>410</id>
-		<type>4</type>
-		<order>500</order>
-		<name>Daily Roundup</name>
-		<desc>Collect 10 Bounties.</desc>
-		<duration>86400</duration>
-		<req>
-			<pvp_wins>10</pvp_wins>
-		</req>
-		<reward>
-			<gold>50</gold>
-		</reward>
-	</achievement> -->
-  <!-- END PvP Quests -->
+  <achievement>
+    <id>480</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXIX</name>
+    <desc>Collect 36,500 Bounties.</desc>
+    <achievement_req>479</achievement_req>
+    <req>
+      <pvp_wins>36500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>481</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXX</name>
+    <desc>Collect 37,000 Bounties.</desc>
+    <achievement_req>480</achievement_req>
+    <req>
+      <pvp_wins>37000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>482</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXI</name>
+    <desc>Collect 37,500 Bounties.</desc>
+    <achievement_req>481</achievement_req>
+    <req>
+      <pvp_wins>37500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>483</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXII</name>
+    <desc>Collect 38,000 Bounties.</desc>
+    <achievement_req>482</achievement_req>
+    <req>
+      <pvp_wins>38000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>484</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXIII</name>
+    <desc>Collect 38,500 Bounties.</desc>
+    <achievement_req>483</achievement_req>
+    <req>
+      <pvp_wins>38500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>485</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXIV</name>
+    <desc>Collect 39,000 Bounties.</desc>
+    <achievement_req>484</achievement_req>
+    <req>
+      <pvp_wins>39000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>486</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXV</name>
+    <desc>Collect 39,500 Bounties.</desc>
+    <achievement_req>485</achievement_req>
+    <req>
+      <pvp_wins>39500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>487</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXVI</name>
+    <desc>Collect 40,000 Bounties.</desc>
+    <achievement_req>486</achievement_req>
+    <req>
+      <pvp_wins>40000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>488</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXVII</name>
+    <desc>Collect 40,500 Bounties.</desc>
+    <achievement_req>487</achievement_req>
+    <req>
+      <pvp_wins>40500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
   <!-- 500: Guild Quests START -->
   <achievement>
     <id>501</id>
@@ -21497,6 +21602,49 @@
       <!-- Shards -->
     </reward>
   </achievement>
+  <!-- Valentine's Special Event 2024 -->
+  <achievement>
+    <id>3971</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Valentine Event</name>
+    <desc>Complete the Roses are Red campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>5008</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="104055" number="100" />
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>raven</commander>
+        <text>Frostfire is red, Frostfire is blue...</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <text>Frostfire is generous, here are some stones for you.</text>
+      </line>
+    </speech_complete>
+  </achievement>
+  <achievement>
+    <id>3972</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Valentine Event</name>
+    <desc>Complete the Roses are Red campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3971</achievement_req>
+    <req>
+      <campaign>5008</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -23027,5 +23175,225 @@
       <!-- Inventory Expansion -->
     </reward>
   </achievement>
+  <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <achievement>
+    <id>4066</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Gladius Arena</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Gladius Arena.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7217</mission_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <campaign>1366</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </reward>
+  </achievement>
   <!-- END Mastery level 7 Achievements on ComDev nodes -->
+  <!-- ======================================== -->
+  <!-- 4501+: Non-Core Map Quests Part II START -->
+  <!-- ======================================== -->
+  <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <!-- E112 Node 1: The Memory Palace -->
+  <achievement>
+    <id>4501</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the The Memory Palace campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7211</mission_req>
+    <locked_start_time>1706806800</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3086" number="100" />
+      <event_points id="7108" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4502</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the The Memory Palace campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4501</achievement_req>
+    <locked_start_time>1706806800</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4503</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the The Memory Palace campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4502</achievement_req>
+    <locked_start_time>1706806800</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4504</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the The Memory Palace campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4503</achievement_req>
+    <locked_start_time>1706806800</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4505</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the The Memory Palace campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4504</achievement_req>
+    <locked_start_time>1706806800</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <!-- E112 Node 2: Power, Growth, Order -->
+  <achievement>
+    <id>4506</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the Power, Growth, Order campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7217</mission_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1366</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3086" number="100" />
+      <event_points id="7108" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4507</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the Power, Growth, Order campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4506</achievement_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1366</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4508</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the Power, Growth, Order campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4507</achievement_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1366</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4509</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the Power, Growth, Order campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4508</achievement_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1366</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4510</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Gladius Arena</name>
+    <desc>Complete the Power, Growth, Order campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4509</achievement_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1366</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- END Non-Core Map Quests Part II -->
 </root>

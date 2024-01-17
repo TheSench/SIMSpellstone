@@ -1683,6 +1683,26 @@
       <scale_health base="health" mult="0.1" yy="9" />
     </effect>
   </battleground>
+  <battleground>
+    <id>174</id>
+    <name>Beast Mode</name>
+    <desc>All Beasts gain Armor, Berserk and Enrage equal to 10% of their base Health.</desc>
+    <icon>filter_frostbite_64</icon>
+    <effect>
+      <add_skill id="armored" mult="0.1" base="health" y="14" />
+      <add_skill id="berserk" mult="0.1" base="health" y="14" />
+      <skill id="enrage" ignore_nullify="1" mult="0.1" all="1" base="health" y="14" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>175</id>
+    <name>Power of Chaos</name>
+    <desc>All Chaos gain Enrage equal to 10% of their base Health.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <skill id="enrage" ignore_nullify="1" mult="0.1" all="1" base="health" y="2" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -4714,16 +4734,14 @@
   <!-- Epic Only Nodes -->
   <battleground>
     <id>2122</id>
-    <name>Epics Only</name>
-    <desc>All non-Epic cards have their attributes greatly reduced.</desc>
-    <icon>Epic_Card_Icon</icon>
+    <name>No Legendary Zone</name>
+    <desc>All Legendary cards have their Health greatly reduced. They also Weaken an ally and Freeze themselves.</desc>
+    <icon>Heal_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
     <effect>
-      <on_play attacker="1">
-        <skill id="ambush" base="health" mult="0.99" rarity="1" />
-        <skill id="ambush" base="health" mult="0.99" rarity="2" />
-        <skill id="ambush" base="health" mult="0.99" rarity="4" />
-        <skill id="ambush" base="health" mult="0.99" rarity="5" />
-      </on_play>
+      <scale_health base="health" mult="-0.99" rarity="4" />
+      <add_skill id="weakenself" mult="1" base="attack" all="1" rarity="4" />
+      <add_skill id="jamself" c="1" all="1" rarity="4" />
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

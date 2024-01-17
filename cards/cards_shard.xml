@@ -6933,6 +6933,58 @@
       <skill id="counterburn" x="10" />
     </upgrade>
   </unit>
+  <unit>
+    <id>4080</id>
+    <card_type>2</card_type>
+    <name>Unnamed Champ</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dragon_Lion_Wyvern_B</picture>
+    <asset_bundle>187</asset_bundle>
+    <hidden_until_time>1706806800</hidden_until_time>
+    <item_name>Unnamed Stone</item_name>
+    <item_desc>Collect Unnamed Stones!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <upgrade>
+      <level>2</level>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>1</attack>
+      <health>1</health>
+    </upgrade>
+    <desc>Nothing to see here.</desc>
+  </unit>
   <!-- Reward End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->

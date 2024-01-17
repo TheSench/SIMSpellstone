@@ -2725,6 +2725,52 @@ var BATTLEGROUNDS = {
 		"id": "173",
 		"name": "Aegis of Dragons"
 	},
+	"174": {
+		"desc": "All Beasts gain Armor, Berserk and Enrage equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.1,
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "enrage",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"y": "14"
+			}
+		],
+		"id": "174",
+		"name": "Beast Mode"
+	},
+	"175": {
+		"desc": "All Chaos gain Enrage equal to 10% of their base Health.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "enrage",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"y": "2"
+			}
+		],
+		"id": "175",
+		"name": "Power of Chaos"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -6769,42 +6815,33 @@ var BATTLEGROUNDS = {
 		"name": "Lightning Fast"
 	},
 	"2122": {
-		"desc": "All non-Epic cards have their attributes greatly reduced.",
+		"desc": "All Legendary cards have their Health greatly reduced. They also Weaken an ally and Freeze themselves.",
 		"effect": [
 			{
-				"attacker": 1,
-				"effect_type": "on_play",
-				"skill": [
-					{
-						"base": "health",
-						"id": "ambush",
-						"mult": "0.99",
-						"rarity": "1"
-					},
-					{
-						"base": "health",
-						"id": "ambush",
-						"mult": "0.99",
-						"rarity": "2"
-					},
-					{
-						"base": "health",
-						"id": "ambush",
-						"mult": "0.99",
-						"rarity": "4"
-					},
-					{
-						"base": "health",
-						"id": "ambush",
-						"mult": "0.99",
-						"rarity": "5"
-					}
-				]
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": -0.99,
+				"rarity": 4
+			},
+			{
+				"all": "1",
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "weakenself",
+				"mult": 1,
+				"rarity": 4
+			},
+			{
+				"all": "1",
+				"c": "1",
+				"effect_type": "add_skill",
+				"id": "jamself",
+				"rarity": 4
 			}
 		],
 		"hidden": true,
 		"id": "2122",
-		"name": "Epics Only"
+		"name": "No Legendary Zone"
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

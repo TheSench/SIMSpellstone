@@ -6502,6 +6502,40 @@ var CAMPAIGNS = {
 		],
 		"name": "A Forgotten Hero"
 	},
+	"1365": {
+		"battleground_id": "2120",
+		"id": "1365",
+		"items": {
+			"3086": 1.7
+		},
+		"location_id": "20",
+		"missions": [
+			"7206",
+			"7207",
+			"7208",
+			"7209",
+			"7210",
+			"7211"
+		],
+		"name": "The Memory Palace"
+	},
+	"1366": {
+		"battleground_id": "2120",
+		"id": "1366",
+		"items": {
+			"3086": 1.8
+		},
+		"location_id": "20",
+		"missions": [
+			"7212",
+			"7213",
+			"7214",
+			"7215",
+			"7216",
+			"7217"
+		],
+		"name": "Power, Growth, Order"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -7147,6 +7181,25 @@ var CAMPAIGNS = {
 			"2048"
 		],
 		"name": "Epic Spellstone Xmas"
+	},
+	"5008": {
+		"battleground_id": "2122",
+		"id": "5008",
+		"items": {
+			"3086": 0.9
+		},
+		"location_id": "20",
+		"missions": [
+			"2049",
+			"2050",
+			"2051",
+			"2052",
+			"2053",
+			"2054",
+			"2055",
+			"2056"
+		],
+		"name": "Roses are Red"
 	}
 };
 var MISSIONS = {
@@ -19602,6 +19655,486 @@ var MISSIONS = {
 		],
 		"id": "2048",
 		"name": "The Twelfth Day of Krampus"
+	},
+	"2049": {
+		"commander": {
+			"id": "495"
+		},
+		"deck": [
+			{
+				"id": "1027"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "1635"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5163"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6159",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2049",
+		"name": "Epics are Blue"
+	},
+	"2050": {
+		"commander": {
+			"id": "495"
+		},
+		"deck": [
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2029"
+			},
+			{
+				"id": "2054"
+			},
+			{
+				"id": "2058"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2188"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2050",
+		"name": "Bluefire is Blue"
+	},
+	"2051": {
+		"commander": {
+			"id": "495"
+		},
+		"deck": [
+			{
+				"id": "1027"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1632"
+			},
+			{
+				"id": "1635"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5163"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6159",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2051",
+		"name": "Bluefire is Still Blue"
+	},
+	"2052": {
+		"commander": {
+			"id": "450"
+		},
+		"deck": [
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "2005"
+			},
+			{
+				"id": "2045"
+			},
+			{
+				"id": "2124"
+			},
+			{
+				"id": "2141"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2228"
+			},
+			{
+				"id": "2248"
+			},
+			{
+				"id": "5010",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5024",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5025",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5062",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5093",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5096",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2052",
+		"name": "Solaron is Blue"
+	},
+	"2053": {
+		"commander": {
+			"id": "449"
+		},
+		"deck": [
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7015"
+			},
+			{
+				"id": "7024"
+			},
+			{
+				"id": "7034"
+			},
+			{
+				"id": "7035"
+			},
+			{
+				"id": "7038"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "7061"
+			},
+			{
+				"id": "7070"
+			},
+			{
+				"id": "7116",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7118",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7122",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7125",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7164",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2053",
+		"name": "Atlas is Green"
+	},
+	"2054": {
+		"commander": {
+			"id": "451"
+		},
+		"deck": [
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6159"
+			},
+			{
+				"id": "1334"
+			},
+			{
+				"id": "1336"
+			},
+			{
+				"id": "2001"
+			},
+			{
+				"id": "2004"
+			},
+			{
+				"id": "2033"
+			},
+			{
+				"id": "2044"
+			},
+			{
+				"id": "2066"
+			},
+			{
+				"id": "2123",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2139",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2142",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2181",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2197",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2210",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2054",
+		"name": "Vulcanos is Red"
+	},
+	"2055": {
+		"commander": {
+			"id": "495"
+		},
+		"deck": [
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2029"
+			},
+			{
+				"id": "2054"
+			},
+			{
+				"id": "2058"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2188"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2055",
+		"name": "The Oops Screen is Black"
+	},
+	"2056": {
+		"commander": {
+			"id": "495"
+		},
+		"deck": [
+			{
+				"id": "2021"
+			},
+			{
+				"id": "5005"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "5005"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7047",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2021",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5005",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5030",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7011",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7047",
+				"mastery_level": "7"
+			}
+		],
+		"id": "2056",
+		"name": "Violets are Blue"
 	},
 	"3654": {
 		"commander": {
@@ -152135,5 +152668,725 @@ var MISSIONS = {
 		],
 		"id": "7205",
 		"name": "A Forgotten Tribe"
+	},
+	"7206": {
+		"commander": {
+			"id": "207"
+		},
+		"deck": [
+			{
+				"id": "1011"
+			},
+			{
+				"id": "1011"
+			},
+			{
+				"id": "1011"
+			},
+			{
+				"id": "1314"
+			},
+			{
+				"id": "1314"
+			},
+			{
+				"id": "1314"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1616",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1616",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1616",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1027",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1027",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1027",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7206",
+		"name": "The Invisible Hero"
+	},
+	"7207": {
+		"commander": {
+			"id": "328"
+		},
+		"deck": [
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7207",
+		"name": "Head Hunting"
+	},
+	"7208": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "2089",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2089",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2089",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7208",
+		"name": "Hiding in Plain Sight"
+	},
+	"7209": {
+		"commander": {
+			"id": "225"
+		},
+		"deck": [
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2029"
+			},
+			{
+				"id": "2054",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2054",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2058",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2058",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2120",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2120",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7209",
+		"name": "Searching for Opponent..."
+	},
+	"7210": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2188"
+			},
+			{
+				"id": "2188"
+			},
+			{
+				"id": "2188"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2201",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7210",
+		"name": "So Many Questions"
+	},
+	"7211": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5081"
+			},
+			{
+				"id": "5163"
+			},
+			{
+				"id": "5163"
+			},
+			{
+				"id": "5163"
+			},
+			{
+				"id": "5000",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5000",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5027",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5027",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5036",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5036",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7211",
+		"name": "A Living Arena"
+	},
+	"7212": {
+		"commander": {
+			"id": "494"
+		},
+		"deck": [
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6159"
+			},
+			{
+				"id": "6159"
+			},
+			{
+				"id": "6159"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "6019",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6019",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6019",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7212",
+		"name": "The Belly of the Beast"
+	},
+	"7213": {
+		"commander": {
+			"id": "220"
+		},
+		"deck": [
+			{
+				"id": "5061"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "5061"
+			},
+			{
+				"id": "5134"
+			},
+			{
+				"id": "5134"
+			},
+			{
+				"id": "5134"
+			},
+			{
+				"id": "5164"
+			},
+			{
+				"id": "5164"
+			},
+			{
+				"id": "5164"
+			},
+			{
+				"id": "5181",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5181",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5181",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5212",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5212",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5212",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7213",
+		"name": "Since You've Been Gone"
+	},
+	"7214": {
+		"commander": {
+			"id": "215"
+		},
+		"deck": [
+			{
+				"id": "6060"
+			},
+			{
+				"id": "6060"
+			},
+			{
+				"id": "6060"
+			},
+			{
+				"id": "6134"
+			},
+			{
+				"id": "6134"
+			},
+			{
+				"id": "6134"
+			},
+			{
+				"id": "6161"
+			},
+			{
+				"id": "6161"
+			},
+			{
+				"id": "6161"
+			},
+			{
+				"id": "6204",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6204",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6204",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6205",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6205",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6205",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7214",
+		"name": "A Whole Different Beast"
+	},
+	"7215": {
+		"commander": {
+			"id": "286"
+		},
+		"deck": [
+			{
+				"id": "5272"
+			},
+			{
+				"id": "5272"
+			},
+			{
+				"id": "5272"
+			},
+			{
+				"id": "5275"
+			},
+			{
+				"id": "5275"
+			},
+			{
+				"id": "5275"
+			},
+			{
+				"id": "5281"
+			},
+			{
+				"id": "5281"
+			},
+			{
+				"id": "5281"
+			},
+			{
+				"id": "5284",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5284",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5284",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5293",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5293",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5293",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7215",
+		"name": "Sensitive Information"
+	},
+	"7216": {
+		"commander": {
+			"id": "441"
+		},
+		"deck": [
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6251"
+			},
+			{
+				"id": "6251"
+			},
+			{
+				"id": "6251"
+			},
+			{
+				"id": "6259"
+			},
+			{
+				"id": "6259"
+			},
+			{
+				"id": "6259"
+			},
+			{
+				"id": "6287",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6287",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6287",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6297",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6297",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6297",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7216",
+		"name": "To Defeat the Void..."
+	},
+	"7217": {
+		"commander": {
+			"id": "382"
+		},
+		"deck": [
+			{
+				"id": "6080"
+			},
+			{
+				"id": "6080"
+			},
+			{
+				"id": "6080"
+			},
+			{
+				"id": "6221"
+			},
+			{
+				"id": "6221"
+			},
+			{
+				"id": "6221"
+			},
+			{
+				"id": "6039"
+			},
+			{
+				"id": "6039"
+			},
+			{
+				"id": "6039"
+			},
+			{
+				"id": "6052",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6052",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6052",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5260",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7217",
+		"name": "... First Understand the Void"
 	}
 };
