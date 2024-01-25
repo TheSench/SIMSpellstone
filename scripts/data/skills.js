@@ -22,7 +22,7 @@ var SKILL_DATA = {
 	"barrage": {
 		"desc": "Deal damage to random enemy creatures one damage at a time. This damage does not cause additional effects.",
 		"icon": "barrage",
-		"name": "barrage",
+		"name": "Barrage",
 		"type": "earlyActivation"
 	},
 	"bash": {
@@ -62,7 +62,7 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"confuse": {
-		"desc": "Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally.",
+		"desc": "Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally. On-hit effects also apply.",
 		"icon": "confuse",
 		"name": "Confusion",
 		"type": "activation"
@@ -266,7 +266,7 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"poisonstrike": {
-		"desc": "Deals bolt damage to a random enemy creature and leaves poison",
+		"desc": "Deals bolt damage to a random enemy creature and leaves poison.",
 		"icon": "poison_bolt",
 		"name": "Poisonbolt",
 		"type": "activation"
@@ -386,7 +386,7 @@ var SKILL_DATA = {
 		"type": "passive"
 	},
 	"venom": {
-		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn",
+		"desc": "Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn.",
 		"icon": "venom",
 		"name": "Venom",
 		"type": "onAttack"

@@ -10718,7 +10718,7 @@
     <hc_cost>150</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="107610" quantity="129" weight="1" />
+      <item id="107610" quantity="125" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -10739,6 +10739,136 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="106629" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5361</id>
+    <name>Double Legendary Beast Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Beast card from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="14" set="3000" number="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5362</id>
+    <name>Monkey Style Tenshi Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMonkey Style Tenshi^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_060_banner_angelmartialartist</background_prefab>
+    <bundle>181</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5260" display_card_id="5260" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5363</id>
+    <name>Rattleroar Chimera Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRattleroar Chimera^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_043_banner_zombiechimera</background_prefab>
+    <bundle>142</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6205" display_card_id="6205" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5364</id>
+    <name>Lavahorn Monster Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLavahorn Monster^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_056_banner_magmarhino</background_prefab>
+    <bundle>173</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6251" display_card_id="6251" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5365</id>
+    <name>Honey Burglar Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFHoney Burglar^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_91_honeythief_banner</background_prefab>
+    <bundle>249</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7300" display_card_id="7300" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5366</id>
+    <name>Kabuto Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFKabuto, Samurai Myth^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_039_champion_samuraibug</asset_prefab>
+    <background_prefab>event_038_banner_samuraibug</background_prefab>
+    <bundle>131</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="106603" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5367</id>
+    <name>Bashira Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFBashira, the Half-Blooded^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_072_halfoni</asset_prefab>
+    <background_prefab>event_072_banner_halfoni</background_prefab>
+    <bundle>210</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107617" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>

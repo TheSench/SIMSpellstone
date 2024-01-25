@@ -3023,6 +3023,90 @@
       <pack>12</pack>
     </reward>
   </achievement>
+  <achievement>
+    <id>809</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer IX</name>
+    <desc>Collect a total of 50,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>808</achievement_req>
+    <req>
+      <total_sp>50000</total_sp>
+    </req>
+    <reward>
+      <item id="4001" number="25" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>810</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer X</name>
+    <desc>Collect a total of 100,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>809</achievement_req>
+    <req>
+      <total_sp>100000</total_sp>
+    </req>
+    <reward>
+      <wb>60</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>811</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XI</name>
+    <desc>Collect a total of 200,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>810</achievement_req>
+    <req>
+      <total_sp>200000</total_sp>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>812</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XII</name>
+    <desc>Collect a total of 300,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>811</achievement_req>
+    <req>
+      <total_sp>300000</total_sp>
+    </req>
+    <reward>
+      <item id="4001" number="60" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>813</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XIII</name>
+    <desc>Collect a total of 400,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>812</achievement_req>
+    <req>
+      <total_sp>400000</total_sp>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>814</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XIV</name>
+    <desc>Collect a total of 500,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>813</achievement_req>
+    <req>
+      <total_sp>500000</total_sp>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
   <!-- END Salvage Quests -->
   <!-- 900: Currency Quests START -->
   <!--<achievement>

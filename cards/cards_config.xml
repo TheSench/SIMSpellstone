@@ -456,8 +456,8 @@
     <order>300</order>
     <icon>confuse</icon>
     <name>Confusion</name>
-    <desc>Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally.</desc>
-    <desc_all>Every {c} turns, inflicts Confuse on a random enemy creature. On the enemy turn it will be forced to Attack an adjacent ally, on-hit effects also apply.</desc_all>
+    <desc>Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally. On-hit effects also apply.</desc>
+    <desc_all>Every {c} turns, inflicts Confuse on all enemy creatures, forcing them to Attack an adjacent ally. On-hit effects also apply.</desc_all>
     <status_flag>confused</status_flag>
     <status_flag>confuse_countdown</status_flag>
     <attributes x="0" y="0" all="1" c="1" s="0" />
@@ -496,17 +496,17 @@
     <order>500</order>
     <icon>poison_bolt</icon>
     <name>Poisonbolt</name>
-    <desc>Deals bolt damage to a random enemy creature and leaves poison</desc>
-    <desc_all>Deals bolt damage to all enemy creatures and leaves poison</desc_all>
-    <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison</desc_faction>
-    <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison</desc_all_faction>
+    <desc>Deals bolt damage to a random enemy creature and leaves poison.</desc>
+    <desc_all>Deals bolt damage to all enemy creatures and leaves poison.</desc_all>
+    <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison.</desc_faction>
+    <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
   </skillType>
   <skillType>
     <id>barrage</id>
     <order>155</order>
     <icon>barrage</icon>
-    <name>barrage</name>
+    <name>Barrage</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -556,7 +556,7 @@
     <icon>venom</icon>
     <name>Venom</name>
     <status_flag>venom</status_flag>
-    <desc>Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn</desc>
+    <desc>Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>
   </skillType>
@@ -964,7 +964,7 @@
   <cardSet>
     <id>1100</id>
     <name>Legacy</name>
-    <visible>1</visible>
+    <visible>0</visible>
     <icon>set_icon_legacy</icon>
     <picture>set_icon_legacy</picture>
   </cardSet>
