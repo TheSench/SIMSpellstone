@@ -6472,7 +6472,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1363",
 		"items": {
-			"3119": 1.7
+			"3119": 0.85
 		},
 		"location_id": "31",
 		"missions": [
@@ -6489,7 +6489,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1364",
 		"items": {
-			"3119": 1.8
+			"3119": 0.9
 		},
 		"location_id": "31",
 		"missions": [

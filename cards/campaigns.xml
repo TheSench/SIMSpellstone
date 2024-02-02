@@ -6178,8 +6178,8 @@
   <campaign>
     <id>1177</id>
     <name>Golden Leaves</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1532624400</locked_start_time>
     <!-- Thu, July 26 2018 17:00:00 -->
     <location_id>17</location_id>
@@ -6204,8 +6204,8 @@
   <campaign>
     <id>1178</id>
     <name>Crash Site</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1532624400</locked_start_time>
     <!-- Thu, July 26 2018 17:00:00 -->
     <location_id>17</location_id>
@@ -6240,8 +6240,8 @@
   <campaign>
     <id>1179</id>
     <name>Village Center</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1178" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1178" level="1"/> -->
     <locked_start_time>1533834000</locked_start_time>
     <!-- Thu, Aug 09 2018 17:00:00 -->
     <battleground_id>2044</battleground_id>
@@ -6280,8 +6280,8 @@
     <name>Dream Awakened</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1178" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1178" level="1"/> -->
     <locked_start_time>1533834000</locked_start_time>
     <!-- Thu, Aug 09 2018 17:00:00 -->
     <battleground_id>2045</battleground_id>
@@ -6312,8 +6312,8 @@
   <campaign>
     <id>1181</id>
     <name>Village Outskirts</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1179" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1179" level="1"/> -->
     <locked_start_time>1535043600</locked_start_time>
     <!-- Thu, Aug 23 2018 17:00:00 -->
     <battleground_id>2046</battleground_id>
@@ -6350,8 +6350,8 @@
   <campaign>
     <id>1182</id>
     <name>The Dream's Depths</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1181" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1181" level="1"/> -->
     <locked_start_time>1536253200</locked_start_time>
     <!-- Thu, Sept 06 2018 17:00:00 -->
     <battleground_id>2047</battleground_id>
@@ -11968,8 +11968,8 @@
     <id>1334</id>
     <name>Void Activity</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1670518800</locked_start_time>
     <!-- Thursday, 8 December 2022 17:00:00	 	  -->
     <battleground_id>2119</battleground_id>
@@ -12009,8 +12009,8 @@
     <id>1335</id>
     <name>The Teleporter</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1334" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1334" level="1"/> -->
     <locked_start_time>1671728400</locked_start_time>
     <!-- Thursday, 22 December 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12889,8 +12889,8 @@
       <mission_id>7151</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2802" number="50" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="1" id="28180" number="50" />
+      <!-- Elemental Super Flask -->
       <card level="2" id="2009" />
       <!-- Sapling -->
       <card level="3" id="2010" />
@@ -12901,8 +12901,8 @@
       <!-- Platinum Golum Reward Legendary -->
       <card level="6" id="2007" />
       <!-- Platinum Golum Reward Legendary -->
-      <item level="7" id="2802" number="150" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="7" id="28180" number="150" />
+      <!-- Elemental Super Flask -->
     </rewards>
     <find_item id="3128" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
@@ -12935,8 +12935,8 @@
       <mission_id>7157</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2802" number="50" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="1" id="28180" number="50" />
+      <!-- Elemental Super Flask -->
       <card level="2" id="2009" />
       <!-- Sapling -->
       <card level="3" id="2010" />
@@ -12947,8 +12947,8 @@
       <!-- Platinum Golum Reward Legendary -->
       <card level="6" id="2007" />
       <!-- Platinum Golum Reward Legendary -->
-      <item level="7" id="2802" number="150" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="7" id="28180" number="150" />
+      <!-- Elemental Super Flask -->
     </rewards>
     <find_item id="3128" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
@@ -12978,8 +12978,8 @@
       <mission_id>7163</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2803" number="50" />
-      <!-- Pharos Temple Super Flask -->
+      <item level="1" id="28250" number="50" />
+      <!-- Seafolk Super Flask -->
       <item level="2" id="18" number="500" />
       <!-- Legendary Pack Fragments -->
       <card level="3" id="2135" />
@@ -12990,8 +12990,8 @@
       <!-- Lazarus -->
       <card level="6" id="2026" />
       <!-- Lazarus -->
-      <item level="7" id="2803" number="150" />
-      <!-- Pharos Temple Super Flask -->
+      <item level="7" id="28250" number="150" />
+      <!-- Seafolk Super Flask -->
     </rewards>
     <find_item id="3059" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
@@ -13020,8 +13020,8 @@
       <mission_id>7169</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2803" number="50" />
-      <!-- Pharos Temple Super Flask -->
+      <item level="1" id="28250" number="50" />
+      <!-- Seafolk Super Flask -->
       <item level="2" id="18" number="500" />
       <!-- Legendary Pack Fragments -->
       <card level="3" id="2135" />
@@ -13032,8 +13032,8 @@
       <!-- Lazarus -->
       <card level="6" id="2026" />
       <!-- Lazarus -->
-      <item level="7" id="2803" number="150" />
-      <!-- Pharos Temple Super Flask -->
+      <item level="7" id="28250" number="150" />
+      <!-- Seafolk Super Flask -->
     </rewards>
     <find_item id="3059" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
@@ -13063,8 +13063,8 @@
       <mission_id>7175</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2816" number="50" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="1" id="28190" number="50" />
+      <!-- Angel Super Flask -->
       <item level="2" id="18" number="500" />
       <!-- Legendary Pack Fragments -->
       <card level="3" id="2054" />
@@ -13075,8 +13075,8 @@
       <!-- Pyra -->
       <card level="6" id="2257" />
       <!-- Pyra -->
-      <item level="7" id="2816" number="150" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="7" id="28190" number="150" />
+      <!-- Angel Super Flask -->
     </rewards>
     <find_item id="3125" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
@@ -13105,8 +13105,8 @@
       <mission_id>7181</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2816" number="50" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="1" id="28190" number="50" />
+      <!-- Angel Super Flask -->
       <item level="2" id="18" number="500" />
       <!-- Legendary Pack Fragments -->
       <card level="3" id="2054" />
@@ -13117,8 +13117,8 @@
       <!-- Pyra -->
       <card level="6" id="2257" />
       <!-- Pyra -->
-      <item level="7" id="2816" number="150" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="7" id="28190" number="150" />
+      <!-- Angel Super Flask -->
     </rewards>
     <find_item id="3125" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
@@ -13130,7 +13130,8 @@
     <id>1361</id>
     <name>A Void Sickness</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1701968400</locked_start_time>
     <!-- Thursday, 07 December 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13171,7 +13172,8 @@
     <id>1362</id>
     <name>Leapfrogging the Cure</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="1361" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1361" level="1"/> -->
     <locked_start_time>1703178000</locked_start_time>
     <!-- Thursday, 21 December 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13245,7 +13247,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3119" drop_per_energy="1.7" />
+    <find_item id="3119" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1706806800</ignore_energy_reduction_until>
     <!-- Thursday, 01 February 2024 at 17:00:00 -->
@@ -13286,7 +13288,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3119" drop_per_energy="1.8" />
+    <find_item id="3119" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1706806800</ignore_energy_reduction_until>
     <!-- Thursday, 01 February 2024 at 17:00:00 -->
@@ -14665,10 +14667,10 @@
       <!-- Kluum -->
       <item level="5" id="104075" number="75" />
       <!-- Kluum -->
-      <item level="6" id="2802" number="50" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
-      <item level="7" id="2802" number="100" />
-      <!-- New Conflux Convergence Super Flask in items_dsvn3j.xml -->
+      <item level="6" id="28180" number="50" />
+      <!-- Elemental Super Flask -->
+      <item level="7" id="28180" number="100" />
+      <!-- Elemental Super Flask -->
     </rewards>
     <find_item id="3128" drop_per_energy="0.9" />
     <!-- Matches final node (with energy reduction) -->
@@ -14748,8 +14750,8 @@
       <!-- Tethys -->
       <card level="6" id="22227" />
       <!-- Crystal Snapper -->
-      <item level="7" id="2803" number="200" />
-      <!-- Pharos Temple Super Flask -->
+      <item level="7" id="28250" number="200" />
+      <!-- Seafolk Super Flask -->
     </rewards>
     <find_item id="3059" drop_per_energy="0.9" />
     <!-- Matches final node with energy reduction -->
@@ -14828,8 +14830,8 @@
       <!-- Archangel Melkira -->
       <item level="6" id="4013" number="11" />
       <!-- Legendary Rune Sliver -->
-      <item level="7" id="2816" number="200" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="7" id="28190" number="200" />
+      <!-- Angel Super Flask -->
     </rewards>
     <find_item id="3125" drop_per_energy="0.9" />
     <!-- Matches final node with energy reduction -->
@@ -14871,12 +14873,12 @@
       <!-- Thank You Crate -->
       <item level="3" id="20" number="12" />
       <!-- Arena Trophy -->
-      <item level="4" id="2802" number="200" />
-      <!-- Conflux Convergence Super Flask -->
-      <item level="5" id="2803" number="200" />
-      <!-- Pharos Temple Super Flask -->
-      <item level="6" id="2816" number="200" />
-      <!-- Skyhaven Assault Super Flask -->
+      <item level="4" id="28180" number="200" />
+      <!-- Elemental Super Flask -->
+      <item level="5" id="28250" number="200" />
+      <!-- Seafolk Super Flask -->
+      <item level="6" id="28190" number="200" />
+      <!-- Angel Super Flask -->
       <item level="7" id="531" number="1" />
       <!-- Special Event Mystery Package -->
     </rewards>

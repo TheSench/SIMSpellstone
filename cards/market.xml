@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!--   1-100  for Market
 		 101-1000 for Bundle Packages
@@ -3618,20 +3617,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4" quantity="5" weight="1" />
-      <!-- Arcane Dust -->
-      <item id="2501" quantity="4" weight="1" />
+      <item id="1012" quantity="5" weight="0.15" />
+      <!-- Gold Bar -->
+      <item id="2501" quantity="5" weight="0.15" />
       <!-- Blue Fire Soul -->
-      <item id="1012" quantity="2" weight="1" />
-      <!-- Gold Bar -->
-      <item id="1012" quantity="5" weight="0.25" />
-      <!-- Gold Bar -->
-      <item id="17" quantity="1000" weight="0.1" />
-      <!-- Epic Pack Fragment -->
-      <item id="5" quantity="60" weight="0.1" />
+      <item id="4" quantity="15" weight="0.15" />
+      <!-- Arcane Dust -->
+      <item id="5" quantity="75" weight="0.10" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="10" weight="0.1" />
+      <item id="2524" quantity="15" weight="0.10" />
       <!-- Mythic Item -->
+      <item id="17" quantity="500" weight="0.15" />
+      <!-- Epic Pack Fragment -->
+      <item id="18" quantity="250" weight="0.05" />
+      <!-- Legendary Pack Fragment -->
+      <item id="4011" quantity="1" weight="0.15" />
+      <!-- Rare Runeshell -->
     </item_pack>
   </store_item>
   <store_item>
@@ -3644,22 +3645,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4" quantity="8" weight="1" />
+      <item id="1012" quantity="10" weight="0.15" />
+      <!-- Gold Bar -->
+      <item id="2501" quantity="10" weight="0.15" />
+      <!-- Blue Fire Soul -->
+      <item id="4" quantity="25" weight="0.15" />
       <!-- Arcane Dust -->
-      <item id="2501" quantity="6" weight="1" />
-      <!-- Blue Fire Soul -->
-      <item id="4012" quantity="1" weight="0.1" />
-      <!-- Epic Runeshell -->
-      <item id="17" quantity="15" weight="0.4" />
-      <!-- Epic Pack Fragment -->
-      <item id="2501" quantity="15" weight="0.5" />
-      <!-- Blue Fire Soul -->
-      <item id="5" quantity="90" weight="0.1" />
+      <item id="5" quantity="100" weight="0.10" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="20" weight="0.1" />
+      <item id="2524" quantity="25" weight="0.10" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.1" />
+      <item id="17" quantity="1000" weight="0.15" />
       <!-- Epic Pack Fragment -->
+      <item id="18" quantity="250" weight="0.15" />
+      <!-- Legendary Pack Fragment -->
+      <item id="4012" quantity="1" weight="0.05" />
+      <!-- Epic Runeshell -->
     </item_pack>
   </store_item>
   <store_item>
@@ -3672,22 +3673,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4001" quantity="1" weight="1" />
-      <!-- Inscription Powder -->
-      <item id="4" quantity="10" weight="1" />
+      <item id="4" quantity="50" weight="0.15" />
       <!-- Arcane Dust -->
-      <item id="4012" quantity="1" weight="0.1" />
-      <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight="0.1" />
-      <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="30" weight="0.5" />
-      <!-- Epic Pack Fragment -->
-      <item id="5" quantity="150" weight="0.1" />
+      <item id="4001" quantity="3" weight="0.3" />
+      <!-- Inscription Powder -->
+      <item id="5" quantity="150" weight="0.10" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="30" weight="0.1" />
+      <item id="2524" quantity="40" weight="0.10" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.1" />
+      <item id="17" quantity="1500" weight="0.10" />
       <!-- Epic Pack Fragment -->
+      <item id="18" quantity="500" weight="0.10" />
+      <!-- Legendary Pack Fragment -->
+      <item id="4012" quantity="1" weight="0.14" />
+      <!-- Epic Runeshell -->
+      <item id="4013" quantity="1" weight="0.01" />
+      <!-- Legendary Rune Sliver -->
     </item_pack>
   </store_item>
   <store_item>
@@ -3700,22 +3701,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4001" quantity="2" weight="1" />
+      <item id="4001" quantity="5" weight="0.3" />
       <!-- Inscription Powder -->
-      <item id="5" quantity="200" weight="0.12" />
+      <item id="5" quantity="200" weight="0.13" />
       <!-- Arena Coins -->
-      <item id="4012" quantity="1" weight="0.12" />
-      <!-- Epic Runeshell -->
-      <item id="17" quantity="100" weight="0.5" />
-      <!-- Epic Pack Fragment -->
-      <item id="18" quantity="20" weight="0.12" />
-      <!-- Legendary Pack Fragment -->
-      <item id="4013" quantity="1" weight="0.12" />
-      <!-- Legendary Rune Sliver -->
-      <item id="2524" quantity="80" weight="0.12" />
+      <item id="2524" quantity="80" weight="0.13" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.12" />
+      <item id="17" quantity="2000" weight="0.20" />
       <!-- Epic Pack Fragment -->
+      <item id="18" quantity="750" weight="0.20" />
+      <!-- Legendary Pack Fragment -->
+      <item id="20" quantity="1" weight="0.01" />
+      <!-- Arena Trophy -->
+      <item id="523" quantity="1" weight="0.01" />
+      <!-- Random Legendary Rune -->
+      <item id="4013" quantity="1" weight="0.02" />
+      <!-- Legendary Rune Sliver -->
     </item_pack>
   </store_item>
   <store_item>
@@ -3728,22 +3729,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4001" quantity="30" weight="1" />
+      <item id="4001" quantity="30" weight="0.3" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="2" weight="0.2" />
-      <!-- Epic Runeshell -->
-      <item id="4013" quantity="2" weight="0.2" />
-      <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="1000" weight="0.5" />
-      <!-- Epic Pack Fragment -->
-      <item id="18" quantity="200" weight="0.2" />
-      <!-- Legendary Pack Fragment -->
-      <item id="5" quantity="500" weight="0.2" />
+      <item id="5" quantity="500" weight="0.20" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="300" weight="0.2" />
+      <item id="2524" quantity="300" weight="0.20" />
       <!-- Mythic Item -->
-      <item id="18" quantity="1000" weight="0.2" />
-      <!-- Legendary Pack Fragment -->
+      <item id="20" quantity="1" weight="0.04" />
+      <!-- Arena Trophy -->
+      <item id="20" quantity="2" weight="0.01" />
+      <!-- Arena Trophy -->
+      <item id="523" quantity="1" weight="0.05" />
+      <!-- Random Legendary Rune -->
+      <item id="4013" quantity="1" weight="0.16" />
+      <!-- Legendary Rune Sliver -->
+      <item id="4013" quantity="2" weight="0.04" />
+      <!-- Legendary Rune Sliver -->
     </item_pack>
   </store_item>
   <store_item>
@@ -3756,22 +3757,22 @@
     <hc_cost>1000</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="4001" quantity="3" weight="1" />
+      <item id="4001" quantity="10" weight="0.3" />
       <!-- Inscription Powder -->
-      <item id="4012" quantity="1" weight="0.15" />
-      <!-- Epic Runeshell -->
-      <item id="4013" quantity="1" weight="0.15" />
-      <!-- Legendary Rune Sliver -->
-      <item id="17" quantity="200" weight="0.5" />
-      <!-- Epic Pack Fragment -->
-      <item id="18" quantity="50" weight="0.15" />
-      <!-- Legendary Pack Fragment -->
-      <item id="5" quantity="300" weight="0.15" />
+      <item id="5" quantity="300" weight="0.16" />
       <!-- Arena Coins -->
-      <item id="2524" quantity="120" weight="0.15" />
+      <item id="2524" quantity="120" weight="0.16" />
       <!-- Mythic Item -->
-      <item id="17" quantity="1000" weight="0.15" />
-      <!-- Epic Pack Fragment -->
+      <item id="18" quantity="1000" weight="0.24" />
+      <!-- Legendary Pack Fragment -->
+      <item id="20" quantity="1" weight="0.02" />
+      <!-- Arena Trophy -->
+      <item id="523" quantity="1" weight="0.02" />
+      <!-- Random Legendary Rune -->
+      <item id="4013" quantity="1" weight="0.08" />
+      <!-- Legendary Rune Sliver -->
+      <item id="4013" quantity="2" weight="0.02" />
+      <!-- Legendary Rune Sliver -->
     </item_pack>
   </store_item>
   <!-- =============================== -->
