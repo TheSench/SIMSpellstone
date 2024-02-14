@@ -1703,6 +1703,15 @@
       <skill id="enrage" ignore_nullify="1" mult="0.1" all="1" base="health" y="2" />
     </effect>
   </battleground>
+  <battleground>
+    <id>176</id>
+    <name>Growth of Wyld</name>
+    <desc>All Wyld gain Berserk equal to 10% of their base Health.</desc>
+    <icon>filter_wyld_64</icon>
+    <effect>
+      <add_skill id="berserk" mult="0.1" base="health" y="3" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2709,6 +2718,17 @@
       <starting_card id="615" level="15" pvp_rank="16" />
       <starting_card id="615" level="16" pvp_rank="17" />
       <starting_card id="615" level="17" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>566</id>
+    <name>Tree of Eternity</name>
+    <desc>All enemies start with a Tree of Eternity card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>tree_of_life_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <starting_card id="616" />
     </effect>
   </battleground>
   <!-- ============================= -->

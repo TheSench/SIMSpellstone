@@ -70506,6 +70506,596 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 113: ComDev Beast - Return to Elaria -->
+  <!-- E113 Node 1: The Counteroffensive Begins -->
+  <mission>
+    <id>7218</id>
+    <name>The Stage is Set</name>
+    <energy>18</energy>
+    <desc>As agreed, you go to where Karlson has chosen to mount his offensive again the Void: Elaria, where your adventures began all that time ago.</desc>
+    <commander id="225" />
+    <!-- Wasteland Wolf Pack -->
+    <deck>
+      <card id="1615" />
+      <!-- Rune Panther -->
+      <card id="1615" />
+      <!-- Rune Panther -->
+      <card id="1615" />
+      <!-- Rune Panther -->
+      <card id="1625" />
+      <!-- Ferocious Clawkin -->
+      <card id="1625" />
+      <!-- Ferocious Clawkin -->
+      <card id="1625" />
+      <!-- Ferocious Clawkin -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1632" mastery_level="2" />
+      <!-- Shadow Rider -->
+      <card id="1632" mastery_level="3" />
+      <!-- Shadow Rider -->
+      <card id="1632" mastery_level="4" />
+      <!-- Shadow Rider -->
+      <card id="1635" mastery_level="5" />
+      <!-- Mergoat -->
+      <card id="1635" mastery_level="6" />
+      <!-- Mergoat -->
+      <card id="1635" mastery_level="7" />
+      <!-- Mergoat -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>How funny that we've come full circle. Me, standing by your side to fight the Void here in Elaria.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7219</id>
+    <name>A Final Inspection</name>
+    <energy>18</energy>
+    <desc>Arrayed before you is an impressive force of beasts and their commanders, when suddenly you see a familiar face.</desc>
+    <commander id="228" />
+    <!-- Voidlings -->
+    <deck>
+      <card id="2000" />
+      <!-- Wasteland Nomad -->
+      <card id="2000" />
+      <!-- Wasteland Nomad -->
+      <card id="2000" />
+      <!-- Wasteland Nomad -->
+      <card id="2019" />
+      <!-- Chalistomper -->
+      <card id="2019" />
+      <!-- Chalistomper -->
+      <card id="2019" />
+      <!-- Chalistomper -->
+      <card id="2023" />
+      <!-- Grizzly Terror -->
+      <card id="2023" />
+      <!-- Grizzly Terror -->
+      <card id="2023" />
+      <!-- Grizzly Terror -->
+      <card id="2029" mastery_level="2" />
+      <!-- Sly Critters -->
+      <card id="2029" mastery_level="3" />
+      <!-- Sly Critters -->
+      <card id="2029" mastery_level="4" />
+      <!-- Sly Critters -->
+      <card id="2054" mastery_level="5" />
+      <!-- Pack Runner -->
+      <card id="2054" mastery_level="6" />
+      <!-- Pack Runner -->
+      <card id="2054" mastery_level="7" />
+      <!-- Pack Runner -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>And I want the rations to be double and triple checked!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>An army marches on its stomach!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Ursurio?</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Ah, so you know our quartermaster general?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7220</id>
+    <name>Mission Accepted</name>
+    <energy>18</energy>
+    <desc>Your orders are simple enough: take a small force on a flanking maneuver, strike quickly, dispel the corruption, show no mercy. </desc>
+    <commander id="220" />
+    <!-- Cursed Voidlings -->
+    <deck>
+      <card id="2120" />
+      <!-- Emerald Carbuncle -->
+      <card id="2120" />
+      <!-- Emerald Carbuncle -->
+      <card id="2120" />
+      <!-- Emerald Carbuncle -->
+      <card id="2172" />
+      <!-- Hob and Gob Duo -->
+      <card id="2172" />
+      <!-- Hob and Gob Duo -->
+      <card id="2172" />
+      <!-- Hob and Gob Duo -->
+      <card id="2184" />
+      <!-- Frohemot Monster -->
+      <card id="2184" />
+      <!-- Frohemot Monster -->
+      <card id="2184" />
+      <!-- Frohemot Monster -->
+      <card id="2188" mastery_level="2" />
+      <!-- Jungle Baboons -->
+      <card id="2188" mastery_level="3" />
+      <!-- Jungle Baboons -->
+      <card id="2188" mastery_level="4" />
+      <!-- Jungle Baboons -->
+      <card id="2193" mastery_level="5" />
+      <!-- Iceratops Model -->
+      <card id="2193" mastery_level="6" />
+      <!-- Iceratops Model -->
+      <card id="2193" mastery_level="7" />
+      <!-- Iceratops Model -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7221</id>
+    <name>Looking for an Opening</name>
+    <energy>18</energy>
+    <desc>You circle the enemy territory scanning for a weakness with your experienced eyes, trained from many a battle with the Void.</desc>
+    <commander id="337" />
+    <!-- Dark Dweller -->
+    <deck>
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7011" />
+      <!-- Wolf Girl -->
+      <card id="7015" />
+      <!-- Bog Aberration -->
+      <card id="7015" />
+      <!-- Bog Aberration -->
+      <card id="7015" />
+      <!-- Bog Aberration -->
+      <card id="7024" />
+      <!-- Woolmane Dragon -->
+      <card id="7024" />
+      <!-- Woolmane Dragon -->
+      <card id="7024" />
+      <!-- Woolmane Dragon -->
+      <card id="7034" mastery_level="2" />
+      <!-- Spore Elk -->
+      <card id="7034" mastery_level="3" />
+      <!-- Spore Elk -->
+      <card id="7034" mastery_level="4" />
+      <!-- Spore Elk -->
+      <card id="7035" mastery_level="5" />
+      <!-- Carrion Tiger -->
+      <card id="7035" mastery_level="6" />
+      <!-- Carrion Tiger -->
+      <card id="7035" mastery_level="7" />
+      <!-- Carrion Tiger -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7222</id>
+    <name>Charge!</name>
+    <energy>18</energy>
+    <desc>Seeing the perfect vulnerability, you give the order. Your allies immediately advance and go about their work, using the cleansing techniques they've learnt from Lev.</desc>
+    <commander id="283" />
+    <!-- Void Viper -->
+    <deck>
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7038" />
+      <!-- Sol King -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="7047" />
+      <!-- Shaman of the Wild -->
+      <card id="7061" />
+      <!-- Thickskin Dragon -->
+      <card id="7061" />
+      <!-- Thickskin Dragon -->
+      <card id="7061" />
+      <!-- Thickskin Dragon -->
+      <card id="7070" mastery_level="2" />
+      <!-- Laughing Menace -->
+      <card id="7070" mastery_level="3" />
+      <!-- Laughing Menace -->
+      <card id="7070" mastery_level="4" />
+      <!-- Laughing Menace -->
+      <card id="7116" mastery_level="5" />
+      <!-- Watchful Hexhound -->
+      <card id="7116" mastery_level="6" />
+      <!-- Watchful Hexhound -->
+      <card id="7116" mastery_level="7" />
+      <!-- Watchful Hexhound -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7223</id>
+    <name>Cleansing the Corruption</name>
+    <energy>18</energy>
+    <desc>The corrupted voidlings are taken completely off-guard and scatter, the beasts making short work of any stragglers. You sense the corrupting Void energy already starting to dissipate.</desc>
+    <commander id="285" />
+    <!-- Corruptlings -->
+    <deck>
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7122" />
+      <!-- Satyr Runebearer -->
+      <card id="7122" />
+      <!-- Satyr Runebearer -->
+      <card id="7122" />
+      <!-- Satyr Runebearer -->
+      <card id="7125" />
+      <!-- Spectral Presence -->
+      <card id="7125" />
+      <!-- Spectral Presence -->
+      <card id="7125" />
+      <!-- Spectral Presence -->
+      <card id="7161" mastery_level="2" />
+      <!-- Alphamech Stalker -->
+      <card id="7161" mastery_level="3" />
+      <!-- Alphamech Stalker -->
+      <card id="7161" mastery_level="4" />
+      <!-- Alphamech Stalker -->
+      <card id="7164" mastery_level="5" />
+      <!-- Pinegrove Primate -->
+      <card id="7164" mastery_level="6" />
+      <!-- Pinegrove Primate -->
+      <card id="7164" mastery_level="7" />
+      <!-- Pinegrove Primate -->
+    </deck>
+  </mission>
+  <!-- E113 Node 2: The Entropy of Victory -->
+  <mission>
+    <id>7224</id>
+    <name>Maintaining Momentum</name>
+    <energy>18</energy>
+    <desc>The voidlings are reeling from your initial assault, but the clouds swirl and concentrate further behind the lines. You realise you must not let them gather and regroup.</desc>
+    <commander id="459" />
+    <!-- Rampaging Minions -->
+    <deck>
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+      <card id="1642" mastery_level="2" />
+      <!-- Icestone Beast -->
+      <card id="2022" mastery_level="3" />
+      <!-- Avalanche Equine -->
+      <card id="2022" mastery_level="4" />
+      <!-- Avalanche Equine -->
+      <card id="2022" mastery_level="5" />
+      <!-- Avalanche Equine -->
+      <card id="2022" mastery_level="6" />
+      <!-- Avalanche Equine -->
+      <card id="2022" mastery_level="7" />
+      <!-- Avalanche Equine -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7225</id>
+    <name>A Virtuous Cycle</name>
+    <energy>18</energy>
+    <desc>You notice the once corrupted beasts are joining the fight on your side after being cleansed. Your numbers begin to swell and you decide to press home your advantage. </desc>
+    <commander id="385" />
+    <!-- Glowtooth Pack -->
+    <deck>
+      <card id="7009" />
+      <!-- Rhino Beast -->
+      <card id="7009" />
+      <!-- Rhino Beast -->
+      <card id="7009" />
+      <!-- Rhino Beast -->
+      <card id="7027" />
+      <!-- Kitsune -->
+      <card id="7027" />
+      <!-- Kitsune -->
+      <card id="7027" />
+      <!-- Kitsune -->
+      <card id="7031" />
+      <!-- Saberjaw Elite -->
+      <card id="7031" />
+      <!-- Saberjaw Elite -->
+      <card id="7031" />
+      <!-- Saberjaw Elite -->
+      <card id="7032" mastery_level="2" />
+      <!-- Nidhogg -->
+      <card id="7032" mastery_level="3" />
+      <!-- Nidhogg -->
+      <card id="7032" mastery_level="4" />
+      <!-- Nidhogg -->
+      <card id="7250" mastery_level="5" />
+      <!-- Lumberbuck Ranger -->
+      <card id="7250" mastery_level="6" />
+      <!-- Lumberbuck Ranger -->
+      <card id="7250" mastery_level="7" />
+      <!-- Lumberbuck Ranger -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7226</id>
+    <name>Coalescing to Victory</name>
+    <energy>18</energy>
+    <desc>As the Void recedes, the original wildlife of the jungle sprouts back. Soon you spot another pocket of pristine jungle and realize you have joined up with the bulk of the allied forces.</desc>
+    <commander id="286" />
+    <!-- Corruptrex -->
+    <deck>
+      <card id="7071" />
+      <!-- Gorilleus -->
+      <card id="7071" />
+      <!-- Gorilleus -->
+      <card id="7071" />
+      <!-- Gorilleus -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7072" />
+      <!-- Murabi -->
+      <card id="7076" />
+      <!-- Avalanche Fiend -->
+      <card id="7076" />
+      <!-- Avalanche Fiend -->
+      <card id="7076" />
+      <!-- Avalanche Fiend -->
+      <card id="7079" mastery_level="2" />
+      <!-- Carina -->
+      <card id="7079" mastery_level="3" />
+      <!-- Carina -->
+      <card id="7079" mastery_level="4" />
+      <!-- Carina -->
+      <card id="7085" mastery_level="5" />
+      <!-- Moonlit Scavenger -->
+      <card id="7085" mastery_level="6" />
+      <!-- Moonlit Scavenger -->
+      <card id="7085" mastery_level="7" />
+      <!-- Moonlit Scavenger -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! Looks like you did more than just distract the Void!</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Quite, we've had nothing but reports of unmitigated success on all fronts. Just shows you what perfect preparation can achieve!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7227</id>
+    <name>The Binding of the Void</name>
+    <energy>18</energy>
+    <desc>Your forces have surrounded the strongest, angriest cloud. Shaking off an uneasy stirring in your mind, you and your allies prepare to push decisively against the Void. </desc>
+    <commander id="389" />
+    <!-- Void's Shadow -->
+    <deck>
+      <card id="7088" />
+      <!-- Jubjub -->
+      <card id="7088" />
+      <!-- Jubjub -->
+      <card id="7088" />
+      <!-- Jubjub -->
+      <card id="7119" />
+      <!-- Bunnpaa -->
+      <card id="7119" />
+      <!-- Bunnpaa -->
+      <card id="7119" />
+      <!-- Bunnpaa -->
+      <card id="7124" />
+      <!-- Enduring Appetite -->
+      <card id="7124" />
+      <!-- Enduring Appetite -->
+      <card id="7124" />
+      <!-- Enduring Appetite -->
+      <card id="7143" mastery_level="2" />
+      <!-- Hog Bronco -->
+      <card id="7143" mastery_level="3" />
+      <!-- Hog Bronco -->
+      <card id="7143" mastery_level="4" />
+      <!-- Hog Bronco -->
+      <card id="7168" mastery_level="5" />
+      <!-- Werefang the Howler -->
+      <card id="7168" mastery_level="6" />
+      <!-- Werefang the Howler -->
+      <card id="7168" mastery_level="7" />
+      <!-- Werefang the Howler -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>This is it. The source of the darkness.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Remember your training. Stay hidden. Seek out the heart, and let the Void collapse in on itself. Use its own poison against it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7228</id>
+    <name>That Was Easy...</name>
+    <energy>18</energy>
+    <desc>With the Void in full retreat, Karlson is ready to declare victory. Lev, once forgotten, is hailed and celebrated as a savior of Elaria, a title you don't begrudge her for.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="7206" />
+      <!-- Twigform Mystic -->
+      <card id="7206" />
+      <!-- Twigform Mystic -->
+      <card id="7206" />
+      <!-- Twigform Mystic -->
+      <card id="7209" />
+      <!-- Blossom Mare -->
+      <card id="7209" />
+      <!-- Blossom Mare -->
+      <card id="7209" />
+      <!-- Blossom Mare -->
+      <card id="7264" />
+      <!-- Apricot Qilin -->
+      <card id="7264" />
+      <!-- Apricot Qilin -->
+      <card id="7264" />
+      <!-- Apricot Qilin -->
+      <card id="7219" mastery_level="2" />
+      <!-- Hoggernaut MK I -->
+      <card id="7219" mastery_level="3" />
+      <!-- Hoggernaut MK I -->
+      <card id="7219" mastery_level="4" />
+      <!-- Hoggernaut MK I -->
+      <card id="7236" mastery_level="5" />
+      <!-- Unicorn Phantom -->
+      <card id="7236" mastery_level="6" />
+      <!-- Unicorn Phantom -->
+      <card id="7236" mastery_level="7" />
+      <!-- Unicorn Phantom -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>We did it! Elaria is saved! The world is saved!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>All hail Lev! No longer the Forgotten One! A hearty dinner for all tonight!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Something's not right. That was over too quickly.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>Huh? What's going on? What are you up to?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7229</id>
+    <name>... Almost Too Easy...</name>
+    <energy>18</energy>
+    <desc>Despite the plaudits, Lev looks concerned. She appears uneasy and unhappy despite the seemingly decisive victory over the Void, all of which does not please Karlson.</desc>
+    <commander id="494" />
+    <!-- General Karlson -->
+    <deck>
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="7277" />
+      <!-- Avalantooth Yeti -->
+      <card id="7277" />
+      <!-- Avalantooth Yeti -->
+      <card id="7277" />
+      <!-- Avalantooth Yeti -->
+      <card id="7278" />
+      <!-- Petroleum Ravager -->
+      <card id="7278" />
+      <!-- Petroleum Ravager -->
+      <card id="7278" />
+      <!-- Petroleum Ravager -->
+      <card id="7297" mastery_level="2" />
+      <!-- Cursed Caserpent -->
+      <card id="7297" mastery_level="3" />
+      <!-- Cursed Caserpent -->
+      <card id="7297" mastery_level="4" />
+      <!-- Cursed Caserpent -->
+      <card id="7300" mastery_level="5" />
+      <!-- Honey Burglar -->
+      <card id="7300" mastery_level="6" />
+      <!-- Honey Burglar -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I need to take a force somewhere else to investigate. This fight isn't yet over.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>How? Look around you! The cloud has gone! What do you mean it's not over? The Void has been defeated!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I feel like somehow this victory was... intentional, a mere diversion. We have to stay on high alert.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>Oh, I see what's going on now! Now that you're the Celebrated One, you just don't want to give up your command.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Enough. We have to find where the Void has gone.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>No. We need to rebuild Elaria. We Wyld beasts won't be coming. We need to look after our own first.</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

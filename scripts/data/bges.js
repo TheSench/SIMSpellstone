@@ -2771,6 +2771,20 @@ var BATTLEGROUNDS = {
 		"id": "175",
 		"name": "Power of Chaos"
 	},
+	"176": {
+		"desc": "All Wyld gain Berserk equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.1,
+				"y": "3"
+			}
+		],
+		"id": "176",
+		"name": "Growth of Wyld"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4758,6 +4772,18 @@ var BATTLEGROUNDS = {
 		"id": "565",
 		"isTower": true,
 		"name": "Warding Tower"
+	},
+	"566": {
+		"desc": "All enemies start with a Tree of Eternity card.",
+		"effect": {
+			"undefined": {
+				"id": null,
+				"level": null
+			}
+		},
+		"id": "566",
+		"isTower": true,
+		"name": "Tree of Eternity"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

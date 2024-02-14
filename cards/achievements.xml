@@ -58,16 +58,26 @@
 			</reward>
 
 		ORDER:
-			   1-89 = FTUE + System Introductions. Highest priority
-			  90-99 = Main Campaign
-			101-199 = Events
-			201-299 = Upgrades
-			301-399 = Tome of Heroes
-			401-499 = -Empty-
-			501-599 = Bounties
-			601-699 = Campaign & Map Mastery
-			701-799 = Vaporizer
-			801-899 = Runes
+			  5-10 = FTUE + System Introductions. Highest priority
+				15 = Upgrades
+				16 = Fusion
+				20 = Kongregate
+				25 = Edit Deck
+				30 = Vaporizer
+				35 = Treasury
+				40 = Arena Rank
+				45 = Bounties
+				50 = Guild
+				55 = Star Collector
+				61 = Rare Runes
+				62 = Epic Runes
+				63 = Legendary Runes
+			 300-3 = Tome of Heroes
+			   600 - Starting Missions
+			   601 = Main Series Missions
+			   602 = Gold Node Missions
+			   603 = ComDev Node Missions
+			  617+ = Mastery Quests
 
 		ID's
 			101-200 = Store
@@ -79,10 +89,10 @@
 			601-700 = Heroes
 			701-800 = Card Fusions
 			801-900 = Arcane Dust
-		   901-1000 = <BLANK>
+		   901-1000 = Gold
 		  1001-1100 = Kongregate Account
 		  1101-1200 = Deck Editting
-		  1201-1300 = <BLANK>
+		  1201-1300 = Bounties Continued
 		  1301-1400 = Rune Crafting
 		  1401-1500 = <BLANK>
 		  1501-1600 = Arena Achievements
@@ -2799,6 +2809,141 @@
       <!-- 3 Legendary Rune Slivers -->
     </reward>
   </achievement>
+  <achievement>
+    <id>489</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXVIII</name>
+    <desc>Collect 41,000 Bounties.</desc>
+    <achievement_req>488</achievement_req>
+    <req>
+      <pvp_wins>41000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>490</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter LXXXIX</name>
+    <desc>Collect 41,500 Bounties.</desc>
+    <achievement_req>489</achievement_req>
+    <req>
+      <pvp_wins>41500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>491</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XC</name>
+    <desc>Collect 42,000 Bounties.</desc>
+    <achievement_req>490</achievement_req>
+    <req>
+      <pvp_wins>42000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>492</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCI</name>
+    <desc>Collect 42,500 Bounties.</desc>
+    <achievement_req>491</achievement_req>
+    <req>
+      <pvp_wins>42500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>493</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCII</name>
+    <desc>Collect 43,000 Bounties.</desc>
+    <achievement_req>492</achievement_req>
+    <req>
+      <pvp_wins>43000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>494</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCIII</name>
+    <desc>Collect 43,500 Bounties.</desc>
+    <achievement_req>493</achievement_req>
+    <req>
+      <pvp_wins>43500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>495</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCIV</name>
+    <desc>Collect 44,000 Bounties.</desc>
+    <achievement_req>494</achievement_req>
+    <req>
+      <pvp_wins>44000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>496</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCV</name>
+    <desc>Collect 44,500 Bounties.</desc>
+    <achievement_req>495</achievement_req>
+    <req>
+      <pvp_wins>44500</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>497</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCVI</name>
+    <desc>Collect 45,000 Bounties.</desc>
+    <achievement_req>496</achievement_req>
+    <req>
+      <pvp_wins>45000</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+      <!-- 3 Legendary Rune Slivers -->
+    </reward>
+  </achievement>
   <!-- 500: Guild Quests START -->
   <achievement>
     <id>501</id>
@@ -2972,7 +3117,7 @@
     <type>8</type>
     <order>30</order>
     <name>Vaporizer V</name>
-    <desc>Collect a total of 2000 Arcane Dust from Vaporized cards.</desc>
+    <desc>Collect a total of 2,000 Arcane Dust from Vaporized cards.</desc>
     <achievement_req>804</achievement_req>
     <req>
       <total_sp>2000</total_sp>
@@ -3107,20 +3252,90 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
+  <achievement>
+    <id>815</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XV</name>
+    <desc>Collect a total of 600,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>814</achievement_req>
+    <req>
+      <total_sp>600000</total_sp>
+    </req>
+    <reward>
+      <item id="4001" number="60" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>816</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XVI</name>
+    <desc>Collect a total of 700,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>815</achievement_req>
+    <req>
+      <total_sp>700000</total_sp>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>817</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XVII</name>
+    <desc>Collect a total of 800,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>816</achievement_req>
+    <req>
+      <total_sp>800000</total_sp>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>818</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XVIII</name>
+    <desc>Collect a total of 900,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>817</achievement_req>
+    <req>
+      <total_sp>900000</total_sp>
+    </req>
+    <reward>
+      <item id="4001" number="60" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>819</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XIX</name>
+    <desc>Collect a total of 1,000,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>818</achievement_req>
+    <req>
+      <total_sp>1000000</total_sp>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- END Salvage Quests -->
   <!-- 900: Currency Quests START -->
   <!--<achievement>
 		<id>901</id>
 		<type>9</type>
-		<order>720</order>
+		<order>35</order>
 		<name>Treasury</name>
-		<desc>Collect 10,000 Lifetime Gold.</desc>
+		<desc>Collect 100,000 Lifetime Gold.</desc>
 		<level_req>8</level_req>
 		<req>
-			<total_currency>10000</total_currency>
+			<total_currency>100000</total_currency>
 		</req>
 		<reward>
-			<sp>20</sp>
+			<sp>300</sp>
 		</reward>
 	</achievement>
 
@@ -3129,10 +3344,10 @@
 		<type>9</type>
 		<order>721</order>
 		<name>Treasury II</name>
-		<desc>Collect 25,000 Lifetime Gold.</desc>
+		<desc>Collect 250,000 Lifetime Gold.</desc>
 		<achievement_req>901</achievement_req>
 		<req>
-			<total_currency>25000</total_currency>
+			<total_currency>250000</total_currency>
 		</req>
 		<reward>
 			<sp>40</sp>
@@ -3144,10 +3359,10 @@
 		<type>9</type>
 		<order>722</order>
 		<name>Treasury III</name>
-		<desc>Collect 50,000 Lifetime Gold.</desc>
+		<desc>Collect 500,000 Lifetime Gold.</desc>
 		<achievement_req>902</achievement_req>
 		<req>
-			<total_currency>50000</total_currency>
+			<total_currency>500000</total_currency>
 		</req>
 		<reward>
 			<sp>60</sp>
@@ -3159,10 +3374,10 @@
 		<type>9</type>
 		<order>723</order>
 		<name>Treasury IV</name>
-		<desc>Collect 100,000 Lifetime Gold.</desc>
+		<desc>Collect 1,000,000 Lifetime Gold.</desc>
 		<achievement_req>903</achievement_req>
 		<req>
-			<total_currency>100000</total_currency>
+			<total_currency>1000000</total_currency>
 		</req>
 		<reward>
 			<pack>1000</pack>
@@ -23279,6 +23494,26 @@
       <!-- Inventory Expansion -->
     </reward>
   </achievement>
+  <!-- Event 113: ComDev Beast - Return to Elaria -->
+  <achievement>
+    <id>4068</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Return to Elaria</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Return to Elaria.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7229</mission_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <campaign>1368</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </reward>
+  </achievement>
   <!-- END Mastery level 7 Achievements on ComDev nodes -->
   <!-- ======================================== -->
   <!-- 4501+: Non-Core Map Quests Part II START -->
@@ -23472,6 +23707,202 @@
     <locked_start_time>1708016400</locked_start_time>
     <req>
       <campaign>1366</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 113: ComDev Beast - Return to Elaria -->
+  <!-- E113 Node 1: The Counteroffensive Begins -->
+  <achievement>
+    <id>4511</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Counteroffensive Begins campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7223</mission_req>
+    <locked_start_time>1709226000</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3107" number="100" />
+      <event_points id="7109" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4512</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Counteroffensive Begins campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4511</achievement_req>
+    <locked_start_time>1709226000</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4513</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Counteroffensive Begins campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4512</achievement_req>
+    <locked_start_time>1709226000</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4514</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Counteroffensive Begins campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4513</achievement_req>
+    <locked_start_time>1709226000</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4515</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Counteroffensive Begins campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4514</achievement_req>
+    <locked_start_time>1709226000</locked_start_time>
+    <req>
+      <campaign>1367</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 113: ComDev Beast - Return to Elaria -->
+  <!-- E113 Node 2: The Entropy of Victory -->
+  <achievement>
+    <id>4516</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Entropy of Victory campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7229</mission_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1368</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3107" number="100" />
+      <event_points id="7109" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4517</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Entropy of Victory campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4516</achievement_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1368</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4518</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Entropy of Victory campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4517</achievement_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1368</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4519</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Entropy of Victory campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4518</achievement_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1368</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4520</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Return to Elaria</name>
+    <desc>Complete the The Entropy of Victory campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4519</achievement_req>
+    <locked_start_time>1710435600</locked_start_time>
+    <req>
+      <campaign>1368</campaign>
       <level>6</level>
     </req>
     <reward>

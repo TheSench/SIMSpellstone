@@ -8092,8 +8092,8 @@
   <campaign>
     <id>1234</id>
     <name>Return to Elaria</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1581008400</locked_start_time>
     <!--  Thursday, 6 February 2020 17:00:00 -->
     <location_id>27</location_id>
@@ -8129,8 +8129,8 @@
   <campaign>
     <id>1235</id>
     <name>Wyld Lands</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1234" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1234" level="1" />
     <locked_start_time>1582218000</locked_start_time>
     <!--  Thursday, 20 February 2020 17:00:00 -->
     <battleground_id>2087</battleground_id>
@@ -8170,8 +8170,8 @@
     <name>Wyld Uprising</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1234" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1234" level="1" />
     <locked_start_time>1582218000</locked_start_time>
     <!--  Thursday, 20 February 2020 17:00:00 -->
     <battleground_id>2088</battleground_id>
@@ -8206,8 +8206,8 @@
   <campaign>
     <id>1237</id>
     <name>Atlas, the Enduring</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1235" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1235" level="1" />
     <locked_start_time>1583427600</locked_start_time>
     <!--  Thursday, 5 March 2020 17:00:00 -->
     <battleground_id>2089</battleground_id>
@@ -8244,8 +8244,8 @@
   <campaign>
     <id>1238</id>
     <name>Angelic Catastrophe</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1237" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1237" level="1" />
     <locked_start_time>1584637200</locked_start_time>
     <!--  Thursday, 19 March 2020 17:00:00 -->
     <battleground_id>2090</battleground_id>
@@ -11207,8 +11207,8 @@
     <id>1316</id>
     <name>The Abduction</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1651165200</locked_start_time>
     <!-- Thursday, 28 April 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11250,8 +11250,8 @@
     <id>1317</id>
     <name>On the Hunt</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1316" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1316" level="1" />
     <locked_start_time>1652374800</locked_start_time>
     <!-- Thursday, 12 May 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -13375,6 +13375,89 @@
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1709226000</ignore_energy_reduction_until>
     <!-- Thursday, 29 February 2024 at 17:00:00 -->
+  </campaign>
+  <!-- Event 113: ComDev Beast - Return to Elaria -->
+  <campaign>
+    <id>1367</id>
+    <name>The Counteroffensive Begins</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1709226000</locked_start_time>
+    <!-- Thursday, 29 February 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>27</location_id>
+    <x>100</x>
+    <y>250</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7218</mission_id>
+      <mission_id>7219</mission_id>
+      <mission_id>7220</mission_id>
+      <mission_id>7221</mission_id>
+      <mission_id>7222</mission_id>
+      <mission_id>7223</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104081" number="50" />
+      <!-- General Karlson -->
+      <card level="5" id="2022" />
+      <!-- Avalanche Equine -->
+      <card level="6" id="2022" />
+      <!-- Avalanche Equine -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3107" drop_per_energy="1.7" />
+    <!-- Halve to 0.85 after end of BGE -->
+    <ignore_energy_reduction_until>1711645200</ignore_energy_reduction_until>
+    <!-- Thursday, 28 March 2024 at 17:00:00 -->
+  </campaign>
+  <campaign>
+    <id>1368</id>
+    <name>The Entropy of Victory</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1367" level="1" />
+    <locked_start_time>1710435600</locked_start_time>
+    <!-- Thursday, 14 March 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>27</location_id>
+    <x>625</x>
+    <y>535</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>7224</mission_id>
+      <mission_id>7225</mission_id>
+      <mission_id>7226</mission_id>
+      <mission_id>7227</mission_id>
+      <mission_id>7228</mission_id>
+      <mission_id>7229</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104081" number="50" />
+      <!-- General Karlson -->
+      <card level="5" id="2022" />
+      <!-- Avalanche Equine -->
+      <card level="6" id="2022" />
+      <!-- Avalanche Equine -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3107" drop_per_energy="1.8" />
+    <!-- Halve to 0.9 after end of BGE -->
+    <ignore_energy_reduction_until>1711645200</ignore_energy_reduction_until>
+    <!-- Thursday, 28 March 2024 at 17:00:00 -->
   </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->

@@ -101,6 +101,10 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
+	"27": {
+		"id": "27",
+		"name": "Return to Elaria"
+	},
 	"31": {
 		"id": "31",
 		"name": "Return to Tarragon Peak"
@@ -6535,6 +6539,40 @@ var CAMPAIGNS = {
 			"7217"
 		],
 		"name": "Power, Growth, Order"
+	},
+	"1367": {
+		"battleground_id": "2120",
+		"id": "1367",
+		"items": {
+			"3107": 1.7
+		},
+		"location_id": "27",
+		"missions": [
+			"7218",
+			"7219",
+			"7220",
+			"7221",
+			"7222",
+			"7223"
+		],
+		"name": "The Counteroffensive Begins"
+	},
+	"1368": {
+		"battleground_id": "2120",
+		"id": "1368",
+		"items": {
+			"3107": 1.8
+		},
+		"location_id": "27",
+		"missions": [
+			"7224",
+			"7225",
+			"7226",
+			"7227",
+			"7228",
+			"7229"
+		],
+		"name": "The Entropy of Victory"
 	},
 	"3000": {
 		"id": "3000",
@@ -153388,5 +153426,725 @@ var MISSIONS = {
 		],
 		"id": "7217",
 		"name": "... First Understand the Void"
+	},
+	"7218": {
+		"commander": {
+			"id": "225"
+		},
+		"deck": [
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1615"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1632",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7218",
+		"name": "The Stage is Set"
+	},
+	"7219": {
+		"commander": {
+			"id": "228"
+		},
+		"deck": [
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2023"
+			},
+			{
+				"id": "2029",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2029",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2029",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2054",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2054",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2054",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7219",
+		"name": "A Final Inspection"
+	},
+	"7220": {
+		"commander": {
+			"id": "220"
+		},
+		"deck": [
+			{
+				"id": "2120"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "2120"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2172"
+			},
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2184"
+			},
+			{
+				"id": "2188",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2188",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2188",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2193",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7220",
+		"name": "Mission Accepted"
+	},
+	"7221": {
+		"commander": {
+			"id": "337"
+		},
+		"deck": [
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7011"
+			},
+			{
+				"id": "7015"
+			},
+			{
+				"id": "7015"
+			},
+			{
+				"id": "7015"
+			},
+			{
+				"id": "7024"
+			},
+			{
+				"id": "7024"
+			},
+			{
+				"id": "7024"
+			},
+			{
+				"id": "7034",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7034",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7034",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7035",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7035",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7035",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7221",
+		"name": "Looking for an Opening"
+	},
+	"7222": {
+		"commander": {
+			"id": "283"
+		},
+		"deck": [
+			{
+				"id": "7038"
+			},
+			{
+				"id": "7038"
+			},
+			{
+				"id": "7038"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "7047"
+			},
+			{
+				"id": "7061"
+			},
+			{
+				"id": "7061"
+			},
+			{
+				"id": "7061"
+			},
+			{
+				"id": "7070",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7070",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7070",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7116",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7116",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7116",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7222",
+		"name": "Charge!"
+	},
+	"7223": {
+		"commander": {
+			"id": "285"
+		},
+		"deck": [
+			{
+				"id": "7118"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "7118"
+			},
+			{
+				"id": "7122"
+			},
+			{
+				"id": "7122"
+			},
+			{
+				"id": "7122"
+			},
+			{
+				"id": "7125"
+			},
+			{
+				"id": "7125"
+			},
+			{
+				"id": "7125"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7164",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7164",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7164",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7223",
+		"name": "Cleansing the Corruption"
+	},
+	"7224": {
+		"commander": {
+			"id": "459"
+		},
+		"deck": [
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1642",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2022",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7224",
+		"name": "Maintaining Momentum"
+	},
+	"7225": {
+		"commander": {
+			"id": "385"
+		},
+		"deck": [
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7032",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7032",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7032",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7250",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7250",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7250",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7225",
+		"name": "A Virtuous Cycle"
+	},
+	"7226": {
+		"commander": {
+			"id": "286"
+		},
+		"deck": [
+			{
+				"id": "7071"
+			},
+			{
+				"id": "7071"
+			},
+			{
+				"id": "7071"
+			},
+			{
+				"id": "7072"
+			},
+			{
+				"id": "7072"
+			},
+			{
+				"id": "7072"
+			},
+			{
+				"id": "7076"
+			},
+			{
+				"id": "7076"
+			},
+			{
+				"id": "7076"
+			},
+			{
+				"id": "7079",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7079",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7079",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7085",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7085",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7085",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7226",
+		"name": "Coalescing to Victory"
+	},
+	"7227": {
+		"commander": {
+			"id": "389"
+		},
+		"deck": [
+			{
+				"id": "7088"
+			},
+			{
+				"id": "7088"
+			},
+			{
+				"id": "7088"
+			},
+			{
+				"id": "7119"
+			},
+			{
+				"id": "7119"
+			},
+			{
+				"id": "7119"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "7143",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7143",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7143",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7168",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7168",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7168",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7227",
+		"name": "The Binding of the Void"
+	},
+	"7228": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "7206"
+			},
+			{
+				"id": "7206"
+			},
+			{
+				"id": "7206"
+			},
+			{
+				"id": "7209"
+			},
+			{
+				"id": "7209"
+			},
+			{
+				"id": "7209"
+			},
+			{
+				"id": "7264"
+			},
+			{
+				"id": "7264"
+			},
+			{
+				"id": "7264"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7236",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7236",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7236",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7228",
+		"name": "That Was Easy..."
+	},
+	"7229": {
+		"commander": {
+			"id": "494"
+		},
+		"deck": [
+			{
+				"id": "7255"
+			},
+			{
+				"id": "7255"
+			},
+			{
+				"id": "7255"
+			},
+			{
+				"id": "7277"
+			},
+			{
+				"id": "7277"
+			},
+			{
+				"id": "7277"
+			},
+			{
+				"id": "7278"
+			},
+			{
+				"id": "7278"
+			},
+			{
+				"id": "7278"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7297",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7300",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7300",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7300",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7229",
+		"name": "... Almost Too Easy..."
 	}
 };

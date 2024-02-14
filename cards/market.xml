@@ -6360,7 +6360,7 @@
     <background_prefab>banner_epic</background_prefab>
     <bundle>15</bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>65</hc_cost>
+    <hc_cost>30</hc_cost>
     <!-- Stuff to give -->
     <item id="4" quantity="100" />
   </store_item>

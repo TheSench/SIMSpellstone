@@ -943,4 +943,22 @@
     </upgrade>
     <desc>&quot;The second most effective tower against Vampires after the Holy Water Tower of Arcantica.&quot; - Jarad, Castle Guard</desc>
   </unit>
+  <unit>
+    <id>616</id>
+    <card_type>2</card_type>
+    <name>Tree of Eternity</name>
+    <picture>Tree_of_Life_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <tower_card>1</tower_card>
+    <attack>0</attack>
+    <health>99</health>
+    <cost>99</cost>
+    <type>0</type>
+    <skill id="absorb" x="99" />
+    <skill id="stasis" x="99" />
+    <skill id="regenerate" x="99" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <desc>&quot;This tree has been here for as long as I remember.&quot; - Jarad, Castle Guard</desc>
+  </unit>
 </root>
