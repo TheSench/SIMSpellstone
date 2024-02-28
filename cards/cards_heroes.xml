@@ -13409,4 +13409,61 @@
       <skill id="strike" all="1" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>496</id>
+    <card_type>1</card_type>
+    <name>Sullen Mossbones</name>
+    <portrait>nethergore</portrait>
+    <asset_bundle>42</asset_bundle>
+    <attack>0</attack>
+    <health>72</health>
+    <rarity>5</rarity>
+    <skill id="imbue" x="4" all="1" s="valor" />
+    <skill id="invigorate" x="2" all="1" />
+    <skill id="enrage" x="2" y="3" all="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>76</health>
+      <skill id="imbue" x="5" all="1" s="valor" />
+      <skill id="invigorate" x="3" all="1" />
+      <skill id="enrage" x="3" y="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>81</health>
+      <skill id="imbue" x="6" all="1" s="valor" />
+      <skill id="invigorate" x="3" all="1" />
+      <skill id="enrage" x="3" y="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>86</health>
+      <skill id="imbue" x="7" all="1" s="valor" />
+      <skill id="invigorate" x="4" all="1" />
+      <skill id="enrage" x="4" y="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+      <skill id="imbue" x="8" all="1" s="valor" />
+      <skill id="invigorate" x="4" all="1" />
+      <skill id="enrage" x="4" y="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>94</health>
+      <skill id="imbue" x="9" all="1" s="valor" />
+      <skill id="invigorate" x="5" all="1" />
+      <skill id="enrage" x="5" y="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>99</health>
+      <skill id="imbue" x="10" all="1" s="valor" />
+      <skill id="invigorate" x="6" all="1" />
+      <skill id="enrage" x="6" y="3" all="1" />
+    </upgrade>
+  </unit>
 </root>

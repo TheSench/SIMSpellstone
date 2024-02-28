@@ -4776,14 +4776,105 @@ var BATTLEGROUNDS = {
 	"566": {
 		"desc": "All enemies start with a Tree of Eternity card.",
 		"effect": {
-			"undefined": {
-				"id": null,
-				"level": null
+			"1": {
+				"id": 616,
+				"level": 1
+			},
+			"2": {
+				"id": 616,
+				"level": 1
+			},
+			"3": {
+				"id": 616,
+				"level": 1
+			},
+			"4": {
+				"id": 616,
+				"level": 1
+			},
+			"5": {
+				"id": 616,
+				"level": 1
+			},
+			"6": {
+				"id": 616,
+				"level": 1
+			},
+			"7": {
+				"id": 616,
+				"level": 1
+			},
+			"8": {
+				"id": 616,
+				"level": 1
+			},
+			"9": {
+				"id": 616,
+				"level": 1
+			},
+			"10": {
+				"id": 616,
+				"level": 1
+			},
+			"11": {
+				"id": 616,
+				"level": 1
+			},
+			"12": {
+				"id": 616,
+				"level": 1
+			},
+			"13": {
+				"id": 616,
+				"level": 1
+			},
+			"14": {
+				"id": 616,
+				"level": 1
+			},
+			"15": {
+				"id": 616,
+				"level": 1
+			},
+			"16": {
+				"id": 616,
+				"level": 1
+			},
+			"17": {
+				"id": 616,
+				"level": 1
+			},
+			"18": {
+				"id": 616,
+				"level": 1
 			}
 		},
 		"id": "566",
 		"isTower": true,
 		"name": "Tree of Eternity"
+	},
+	"567": {
+		"desc": "Raid's Retribution Heals and Empowers all the enemy creatures, increasing in strength as the raid level increases.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "heal",
+				"x": 1.2
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "rally",
+				"x": 0.7
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "567",
+		"name": "Raid's Retribution",
+		"scale_with_level": true,
+		"starting_level": 26
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

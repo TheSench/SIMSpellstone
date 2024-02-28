@@ -4867,6 +4867,7 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>12</sub_type>
+    <sub_type>14</sub_type>
     <attack>20</attack>
     <health>62</health>
     <cost>4</cost>
@@ -7031,20 +7032,117 @@
   <unit>
     <id>4081</id>
     <card_type>2</card_type>
-    <name>Unnamed Champ</name>
+    <name>General Karlson</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Butterfly_Elephant_A</picture>
     <asset_bundle>185</asset_bundle>
     <hidden_until_time>1709226000</hidden_until_time>
-    <item_name>Unnamed Stone</item_name>
-    <item_desc>Collect Unnamed Stones!</item_desc>
+    <item_name>Karlson Stone</item_name>
+    <item_desc>Collect Karlson Stones to upgrade General Karlson!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>14</sub_type>
+    <attack>10</attack>
+    <health>30</health>
+    <skill id="protect" x="2" y="14" all="1" />
+    <skill id="enrage" x="2" all="1" />
+    <skill id="flurry" c="4" />
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>30</health>
+      <skill id="protect" x="3" y="14" all="1" />
+      <skill id="enrage" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="protect" x="3" y="14" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>32</health>
+      <skill id="protect" x="3" y="14" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="protect" x="4" y="14" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="protect" x="5" y="14" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>13</attack>
+      <health>33</health>
+      <skill id="protect" x="5" y="14" all="1" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <health>33</health>
+      <skill id="protect" x="6" y="14" all="1" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>14</attack>
+      <health>34</health>
+      <skill id="protect" x="6" y="14" all="1" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <health>35</health>
+      <skill id="protect" x="6" y="14" all="1" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4082</id>
+    <card_type>2</card_type>
+    <name>Placeholder Champion</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dust_Mite</picture>
+    <asset_bundle>1</asset_bundle>
+    <hidden_until_time>1711645200</hidden_until_time>
+    <item_name>Placeholder Stone</item_name>
+    <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>0</type>
+    <sub_type>10</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -7078,7 +7176,7 @@
       <attack>1</attack>
       <health>1</health>
     </upgrade>
-    <desc>Nothing to see here.</desc>
+    <desc>Placeholder for next champion.</desc>
   </unit>
   <!-- Reward End -->
   <!-- =============================== -->
@@ -8931,6 +9029,7 @@
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>9</sub_type>
+    <sub_type>14</sub_type>
     <attack>4</attack>
     <health>31</health>
     <cost>2</cost>

@@ -3362,9 +3362,9 @@
     <priority>35</priority>
     <icon>icon_purple_crystal</icon>
     <scale_prices>1</scale_prices>
-    <rarity2scaling purchase1="100" scalar="20" />
-    <rarity3scaling purchase1="200" scalar="40" />
-    <rarity4scaling purchase1="400" scalar="100" />
+    <rarity2scaling purchase1="50" scalar="10" />
+    <rarity3scaling purchase1="100" scalar="20" />
+    <rarity4scaling purchase1="250" scalar="50" />
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
@@ -4490,14 +4490,14 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives 80 Arcane Dust! May be purchased an unlimited number of times!</desc>
+    <desc>Gives 200 Arcane Dust! May be purchased an unlimited number of times!</desc>
     <asset_prefab>dust_package_2</asset_prefab>
     <background_prefab>banner_epic</background_prefab>
     <bundle>15</bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>65</hc_cost>
+    <hc_cost>30</hc_cost>
     <!-- Stuff to give -->
-    <item id="4" quantity="80" />
+    <item id="4" quantity="200" />
   </store_item>
   <store_item>
     <id>5039</id>
@@ -6355,14 +6355,14 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives 100 Arcane Dust! May be purchased an unlimited number of times!</desc>
+    <desc>Gives 400 Arcane Dust! May be purchased an unlimited number of times!</desc>
     <asset_prefab>dust_package_3</asset_prefab>
     <background_prefab>banner_epic</background_prefab>
     <bundle>15</bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>30</hc_cost>
+    <hc_cost>60</hc_cost>
     <!-- Stuff to give -->
-    <item id="4" quantity="100" />
+    <item id="4" quantity="400" />
   </store_item>
   <store_item>
     <id>5139</id>
@@ -10870,6 +10870,122 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="107617" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5368</id>
+    <name>Moonscale Drake Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFMoonscale Drake^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_053_banner_dragonwolf</background_prefab>
+    <bundle>165</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7243" display_card_id="7243" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5369</id>
+    <name>Werefang the Howler Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFWerefang the Howler^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_031_banner_w2</background_prefab>
+    <bundle>111</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7168" display_card_id="7168" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5370</id>
+    <name>Deceitful Wybat Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFDeceitful Wybat^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_069_banner_wyvernbat</background_prefab>
+    <bundle>203</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7283" display_card_id="7283" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5371</id>
+    <name>Avalantooth Yeti Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFAvalantooth Yeti^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_065_banner_yetirider</background_prefab>
+    <bundle>193</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7277" display_card_id="7277" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5372</id>
+    <name>Puzzlemud Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFPuzzlemud's Body^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_055_tinyarmorgolem</asset_prefab>
+    <background_prefab>event_055_banner_tinyarmorgolem</background_prefab>
+    <bundle>171</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107606" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5373</id>
+    <name>Coldsteel Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFColdsteel Hunter^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_104_thehunter_championpack</asset_prefab>
+    <background_prefab>event_104_thehunter_banner</background_prefab>
+    <bundle>275</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107631" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>

@@ -4560,6 +4560,190 @@ var RAIDS = {
 		"type": "Raid",
 		"upgradeLevels": "22"
 	},
+	"24028": {
+		"bge": "567",
+		"commander": {
+			"id": "496"
+		},
+		"deck": {
+			"card": [
+				{
+					"id": "7037"
+				},
+				{
+					"id": "1625",
+					"remove_mastery_level": "5"
+				},
+				{
+					"id": "1314",
+					"remove_mastery_level": "8"
+				},
+				{
+					"id": "7122",
+					"remove_mastery_level": "9"
+				},
+				{
+					"id": "1615",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "1616",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "2023",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "7007",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "1314",
+					"remove_mastery_level": "11"
+				},
+				{
+					"id": "7118",
+					"remove_mastery_level": "23"
+				},
+				{
+					"id": "1632",
+					"mastery_level": "3",
+					"remove_mastery_level": "10"
+				},
+				{
+					"id": "2029",
+					"mastery_level": "4",
+					"remove_mastery_level": "12"
+				},
+				{
+					"id": "7034",
+					"mastery_level": "5",
+					"remove_mastery_level": "13"
+				},
+				{
+					"id": "7116",
+					"mastery_level": "6",
+					"remove_mastery_level": "17"
+				},
+				{
+					"id": "7125",
+					"mastery_level": "7",
+					"remove_mastery_level": "19"
+				},
+				{
+					"id": "1626",
+					"mastery_level": "8",
+					"remove_mastery_level": "20"
+				},
+				{
+					"id": "7035",
+					"mastery_level": "9",
+					"remove_mastery_level": "21"
+				},
+				{
+					"id": "7122",
+					"mastery_level": "9",
+					"remove_mastery_level": "22"
+				},
+				{
+					"id": "7085",
+					"mastery_level": "10"
+				},
+				{
+					"id": "7047",
+					"mastery_level": "10",
+					"remove_mastery_level": "14"
+				},
+				{
+					"id": "7124",
+					"mastery_level": "10",
+					"remove_mastery_level": "15"
+				},
+				{
+					"id": "7002",
+					"mastery_level": "11",
+					"remove_mastery_level": "16"
+				},
+				{
+					"id": "7257",
+					"mastery_level": "11"
+				},
+				{
+					"id": "7168",
+					"mastery_level": "11"
+				},
+				{
+					"id": "7009",
+					"mastery_level": "12",
+					"remove_mastery_level": "18"
+				},
+				{
+					"id": "7027",
+					"mastery_level": "13",
+					"remove_mastery_level": "19"
+				},
+				{
+					"id": "7031",
+					"mastery_level": "14",
+					"remove_mastery_level": "24"
+				},
+				{
+					"id": "7257",
+					"mastery_level": "15",
+					"remove_mastery_level": "25"
+				},
+				{
+					"id": "7126",
+					"mastery_level": "16"
+				},
+				{
+					"id": "7032",
+					"mastery_level": "17"
+				},
+				{
+					"id": "7085",
+					"mastery_level": "18"
+				},
+				{
+					"id": "7037",
+					"mastery_level": "19"
+				},
+				{
+					"id": "7211",
+					"mastery_level": "19"
+				},
+				{
+					"id": "7212",
+					"mastery_level": "20"
+				},
+				{
+					"id": "7076",
+					"mastery_level": "21"
+				},
+				{
+					"id": "7278",
+					"mastery_level": "22"
+				},
+				{
+					"id": "7083",
+					"mastery_level": "23"
+				},
+				{
+					"id": "7297",
+					"mastery_level": "24"
+				},
+				{
+					"id": "8031",
+					"mastery_level": "25"
+				}
+			]
+		},
+		"id": "24028",
+		"name": "Sullen Mossbones Raid",
+		"type": "Raid",
+		"upgradeLevels": "22"
+	},
 	"28001": {
 		"bge": "510",
 		"commander": {

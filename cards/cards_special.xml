@@ -954,7 +954,6 @@
     <health>99</health>
     <cost>99</cost>
     <type>0</type>
-    <skill id="absorb" x="99" />
     <skill id="stasis" x="99" />
     <skill id="regenerate" x="99" />
     <rarity>0</rarity>

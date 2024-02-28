@@ -2944,6 +2944,36 @@
       <!-- 3 Legendary Rune Slivers -->
     </reward>
   </achievement>
+  <achievement>
+    <id>498</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCVII</name>
+    <desc>Collect 46,000 Bounties.</desc>
+    <achievement_req>497</achievement_req>
+    <req>
+      <pvp_wins>46000</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- 500 Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>499</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCVIII</name>
+    <desc>Collect 47,000 Bounties.</desc>
+    <achievement_req>498</achievement_req>
+    <req>
+      <pvp_wins>47000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+      <!-- 100 Shards -->
+    </reward>
+  </achievement>
   <!-- 500: Guild Quests START -->
   <achievement>
     <id>501</id>
@@ -3322,20 +3352,48 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <achievement>
+    <id>820</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XX</name>
+    <desc>Collect a total of 1,250,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>819</achievement_req>
+    <req>
+      <total_sp>1250000</total_sp>
+    </req>
+    <reward>
+      <item id="4001" number="60" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>821</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XXI</name>
+    <desc>Collect a total of 1,500,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>820</achievement_req>
+    <req>
+      <total_sp>1500000</total_sp>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- END Salvage Quests -->
   <!-- 900: Currency Quests START -->
   <!--<achievement>
 		<id>901</id>
 		<type>9</type>
 		<order>35</order>
-		<name>Treasury</name>
-		<desc>Collect 100,000 Lifetime Gold.</desc>
-		<level_req>8</level_req>
+		<name>Gold Hoarder</name>
+		<desc>Have 250,000 Gold to hand in your Treasury.</desc>
+		<level_req>40</level_req>
 		<req>
-			<total_currency>100000</total_currency>
+			<total_currency>250000</total_currency>
 		</req>
 		<reward>
-			<sp>300</sp>
+			<wb>100</wb>
 		</reward>
 	</achievement>
 
@@ -3416,6 +3474,38 @@
     </reward>
   </achievement>
   <!-- END Deck Quests  -->
+  <!-- 1200: Bounty Quests Part 2 START -->
+  <achievement>
+    <id>1200</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter XCIX</name>
+    <desc>Collect 48,000 Bounties.</desc>
+    <achievement_collected_req>499</achievement_collected_req>
+    <req>
+      <pvp_wins>48000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1201</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter C</name>
+    <desc>Collect 50,000 Bounties.</desc>
+    <achievement_collected_req>1200</achievement_collected_req>
+    <req>
+      <pvp_wins>50000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <!-- END Bounty Part 2 Quests  -->
   <!-- 1300: Runes Quests START -->
   <achievement>
     <id>1301</id>

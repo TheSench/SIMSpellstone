@@ -70396,7 +70396,7 @@
     <id>7216</id>
     <name>To Defeat the Void...</name>
     <energy>18</energy>
-    <desc>You no longer feel Lev's presence and instinctly prepare for battle as a sense of dread seizes you, until you realise you're about to receive a mission briefing.</desc>
+    <desc>You no longer feel Lev's presence and instinctively prepare for battle as a sense of dread seizes you, until you realise you're about to receive a mission briefing.</desc>
     <commander id="441" />
     <!-- Memory of Void -->
     <deck>
@@ -70512,7 +70512,7 @@
     <id>7218</id>
     <name>The Stage is Set</name>
     <energy>18</energy>
-    <desc>As agreed, you go to where Karlson has chosen to mount his offensive again the Void: Elaria, where your adventures began all that time ago.</desc>
+    <desc>As agreed, you go to where Karlson has chosen to mount his offensive against the Void: Elaria, where your adventures began all that time ago.</desc>
     <commander id="225" />
     <!-- Wasteland Wolf Pack -->
     <deck>
@@ -70559,7 +70559,7 @@
     <id>7219</id>
     <name>A Final Inspection</name>
     <energy>18</energy>
-    <desc>Arrayed before you is an impressive force of beasts and their commanders, when suddenly you see a familiar face.</desc>
+    <desc>Arrayed before you is an impressive force of beasts and their commanders. Suddenly you see a familiar face.</desc>
     <commander id="228" />
     <!-- Voidlings -->
     <deck>
@@ -70966,7 +70966,7 @@
     <id>7228</id>
     <name>That Was Easy...</name>
     <energy>18</energy>
-    <desc>With the Void in full retreat, Karlson is ready to declare victory. Lev, once forgotten, is hailed and celebrated as a savior of Elaria, a title you don't begrudge her for.</desc>
+    <desc>With the Void in full retreat, Karlson is ready to declare victory. Lev, once forgotten, is hailed and celebrated as a savior of Elaria, a title you don't begrudge her.</desc>
     <commander id="437" />
     <!-- Hero's Shadow -->
     <deck>

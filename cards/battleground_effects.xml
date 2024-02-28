@@ -2728,7 +2728,39 @@
     <icon>tree_of_life_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
-      <starting_card id="616" />
+      <starting_card id="616" level="1" pvp_rank="1" />
+      <starting_card id="616" level="1" pvp_rank="2" />
+      <starting_card id="616" level="1" pvp_rank="3" />
+      <starting_card id="616" level="1" pvp_rank="4" />
+      <starting_card id="616" level="1" pvp_rank="5" />
+      <starting_card id="616" level="1" pvp_rank="6" />
+      <starting_card id="616" level="1" pvp_rank="7" />
+      <starting_card id="616" level="1" pvp_rank="8" />
+      <starting_card id="616" level="1" pvp_rank="9" />
+      <starting_card id="616" level="1" pvp_rank="10" />
+      <starting_card id="616" level="1" pvp_rank="11" />
+      <starting_card id="616" level="1" pvp_rank="12" />
+      <starting_card id="616" level="1" pvp_rank="13" />
+      <starting_card id="616" level="1" pvp_rank="14" />
+      <starting_card id="616" level="1" pvp_rank="15" />
+      <starting_card id="616" level="1" pvp_rank="16" />
+      <starting_card id="616" level="1" pvp_rank="17" />
+      <starting_card id="616" level="1" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>567</id>
+    <name>Raid's Retribution</name>
+    <desc>Raid's Retribution Heals and Empowers all the enemy creatures, increasing in strength as the raid level increases.</desc>
+    <icon>undead_raid_badge_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>26</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x="1.2" all="1" />
+      <skill id="rally" x="0.7" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->
