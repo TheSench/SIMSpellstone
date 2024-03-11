@@ -171,7 +171,7 @@
     <order>75</order>
     <icon>poisonhide</icon>
     <name>Poisonhide</name>
-    <desc>When damaged by an attack, Poison the attacker.</desc>
+    <desc>After taking Attack damage, inflicts Poison back.</desc>
     <status_flag>poison</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>
@@ -203,7 +203,7 @@
     <order>100</order>
     <icon>valor</icon>
     <name>Valor</name>
-    <desc>At start of turn, permanently increases Attack if opposing creature has more Attack, even while on delay.</desc>
+    <desc>At start of each turn, permanently increases Attack if opposing creature has more Attack, even while on delay.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
@@ -279,8 +279,8 @@
     <order>160</order>
     <icon>hex</icon>
     <name>Hex</name>
-    <desc>Inflicts Hex on a random enemy creature, causing it to take extra damage each time it is damaged.</desc>
-    <desc_all>Inflicts Hex on all enemy creatures, causing them to take extra damage each time they are damaged.</desc_all>
+    <desc>Inflicts Hex on a random enemy creature, causing it to take extra damage from Attacks and Skills.</desc>
+    <desc_all>Inflicts Hex on all enemy creatures, causing them to take extra damage from Attacks and Skills.</desc_all>
     <status_flag>enfeeble</status_flag>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <vfx_location>center</vfx_location>
@@ -314,7 +314,7 @@
     <order>190</order>
     <icon>burn</icon>
     <name>Scorch</name>
-    <desc>Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
+    <desc>Inflicts Scorch on the opposing creature. Stacks and deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -326,7 +326,7 @@
     <order>191</order>
     <icon>burn</icon>
     <name>Scorch 2</name>
-    <desc>Inflicts Scorch on the opposing creature. Scorch deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
+    <desc>Inflicts Scorch on the opposing creature. Stacks and deals damage at end of turn until Scorch is not inflicted for a turn.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -556,7 +556,7 @@
     <icon>venom</icon>
     <name>Venom</name>
     <status_flag>venom</status_flag>
-    <desc>Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn.</desc>
+    <desc>After dealing Attack damage, permanently inflicts Venom, increasing damage taken. Deals damage at the end of each turn.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>center</vfx_location>
   </skillType>
@@ -575,7 +575,7 @@
     <order>1</order>
     <icon>berserk</icon>
     <name>Swarm</name>
-    <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature</desc>
+    <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
     <hidden>1</hidden>
@@ -650,7 +650,7 @@
     <order>500</order>
     <icon>burn</icon>
     <name>Scorch Self</name>
-    <desc>Deals stacking damage to this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <desc>Inflicts Scorch on self. Wears off if not reapplied for a turn.</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -662,7 +662,7 @@
     <order>500</order>
     <icon>freeze</icon>
     <name>Freeze Self</name>
-    <desc>This creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
+    <desc>Freezes self. Activates every {c} turns.</desc>
     <status_flag>jammed</status_flag>
     <status_flag>jam_countdown</status_flag>
     <attributes x="0" y="0" all="1" c="1" s="0" />
@@ -777,7 +777,7 @@
     <name>Anti-Magic Field</name>
     <hidden>1</hidden>
     <attributes x="0" y="0" all="0" c="0" s="0" />
-    <desc>This card is immune to debuffs. Opposing card is inflicted with Nullify 99 at the start of its turn.</desc>
+    <desc>This card is immune to debuffs. Opposing card is immune to any positve effects.</desc>
   </skillType>
   <!-- TEST SKILLS -->
   <skillType>
@@ -785,7 +785,7 @@
     <order>500</order>
     <icon>intensify</icon>
     <name>Intensify</name>
-    <desc>Increases the value of Scorch or Poison on an enemy creature</desc>
+    <desc>Increases the value of Scorch or Poison on an enemy creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
     <hidden>1</hidden>
@@ -795,7 +795,7 @@
     <order>500</order>
     <icon>ignite</icon>
     <name>Ignite</name>
-    <desc>Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature</desc>
+    <desc>Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
     <hidden>1</hidden>

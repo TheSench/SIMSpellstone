@@ -72,13 +72,13 @@
     <id>107</id>
     <category>1</category>
     <name>Skills</name>
-    <description>Many cards have one or more Skills. Each skill has very different effects. Mastering Skills is necessary to become a successful Adventurer!</description>
+    <description>Many cards have one or more Skills. Each Skill has very different effects. Mastering Skills is necessary to become a successful Adventurer!</description>
   </guide>
   <guide>
     <id>108</id>
     <category>1</category>
     <name>Skill Targeting</name>
-    <description>Skills can have several different targets. In some cases, skills may target random friendly or enemy cards. Other skills may target all cards. Others still can target specific types of cards - like Wyld or Frogs.</description>
+    <description>Skills can have several different targets. In some cases, Skills may target random friendly or enemy cards. Other Skills may target all cards. Others still can target specific types of cards - like Wyld or Frogs.</description>
   </guide>
   <!-- Deck Building -->
   <guide>

@@ -7869,8 +7869,8 @@
   <campaign>
     <id>1228</id>
     <name>World's Center</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1576170000</locked_start_time>
     <!--  Thursday, 12 December 2019 17:00:00 -->
     <location_id>26</location_id>
@@ -7906,8 +7906,8 @@
   <campaign>
     <id>1229</id>
     <name>Shack of Mysteries</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1228" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1228" level="1" />
     <locked_start_time>1577379600</locked_start_time>
     <!--  Thursday, 26 December 2019 17:00:00 -->
     <battleground_id>2083</battleground_id>
@@ -7979,8 +7979,8 @@
     <name>Scyer the Haywire</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1228" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1228" level="1" />
     <locked_start_time>1577379600</locked_start_time>
     <!--  Thursday, 26 December 2019 17:00:00 -->
     <battleground_id>2084</battleground_id>
@@ -8015,8 +8015,8 @@
   <campaign>
     <id>1232</id>
     <name>Silent Night</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1229" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1229" level="1" />
     <locked_start_time>1578589200</locked_start_time>
     <!--  Thursday, 9 January 2020 17:00:00 -->
     <battleground_id>2084</battleground_id>
@@ -8053,8 +8053,8 @@
   <campaign>
     <id>1233</id>
     <name>Vulcanos's Warning</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1232" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1232" level="1" />
     <locked_start_time>1579798800</locked_start_time>
     <!--  Thursday, 23 January 2020 17:00:00 -->
     <battleground_id>2085</battleground_id>
@@ -8949,8 +8949,8 @@
   <campaign>
     <id>1260</id>
     <name>Return to Tarragon Peak</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1600362000</locked_start_time>
     <!-- Thursday, 17 September 2020 17:00:00 -->
     <location_id>31</location_id>
@@ -8986,8 +8986,8 @@
   <campaign>
     <id>1261</id>
     <name>First Order Remnants</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1260" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1260" level="1"/> -->
     <locked_start_time>1601571600</locked_start_time>
     <!-- Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2103</battleground_id>
@@ -9067,8 +9067,8 @@
     <name>Daknak Fight!</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1260" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1260" level="1"/> -->
     <locked_start_time>1601571600</locked_start_time>
     <!--  Thursday, 1 October 2020 17:00:00 -->
     <battleground_id>2104</battleground_id>
@@ -9103,8 +9103,8 @@
   <campaign>
     <id>1264</id>
     <name>Seastone Staff Secrets</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1261" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1261" level="1"/> -->
     <locked_start_time>1602781200</locked_start_time>
     <!--  Thursday, 15 October 2020 17:00:00 -->
     <battleground_id>2105</battleground_id>
@@ -9141,8 +9141,8 @@
   <campaign>
     <id>1265</id>
     <name>Missing Spiritual Strength</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1264" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1264" level="1"/> -->
     <locked_start_time>1603990800</locked_start_time>
     <!--  Thursday, 29 October 2020 17:00:00 -->
     <battleground_id>2106</battleground_id>
@@ -10824,8 +10824,8 @@
     <id>1307</id>
     <name>Goblinball</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1641488400</locked_start_time>
     <!-- Thursday, 6 January 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10867,8 +10867,8 @@
     <id>1308</id>
     <name>Why Can't We Be Friends?</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1307" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1307" level="1" />
     <locked_start_time>1642698000</locked_start_time>
     <!-- Thursday, 20 January 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11085,8 +11085,8 @@
     <id>1313</id>
     <name>Taking a Break</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1648746000</locked_start_time>
     <!-- Thursday, 31 March 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11128,8 +11128,8 @@
     <id>1314</id>
     <name>Exploring Tarragon Peak</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1313" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1313" level="1"/> -->
     <locked_start_time>1649955600</locked_start_time>
     <!-- Thursday, 14 April 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -13215,7 +13215,8 @@
     <id>1363</id>
     <name>Runes in the Ruins</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1704387600</locked_start_time>
     <!-- Thursday, 04 January 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13256,7 +13257,8 @@
     <id>1364</id>
     <name>A Forgotten Hero</name>
     <icon id="machine_parts_200" bundle="17" />
-    <campaign_req id="1363" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1363" level="1"/> -->
     <locked_start_time>1705597200</locked_start_time>
     <!-- Thursday, 18 January 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13330,7 +13332,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3086" drop_per_energy="1.7" />
+    <find_item id="3086" drop_per_energy="0.85" />
     <!-- Halve to 0.85 after end of BGE -->
     <ignore_energy_reduction_until>1709226000</ignore_energy_reduction_until>
     <!-- Thursday, 29 February 2024 at 17:00:00 -->
@@ -13371,7 +13373,7 @@
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
-    <find_item id="3086" drop_per_energy="1.8" />
+    <find_item id="3086" drop_per_energy="0.9" />
     <!-- Halve to 0.9 after end of BGE -->
     <ignore_energy_reduction_until>1709226000</ignore_energy_reduction_until>
     <!-- Thursday, 29 February 2024 at 17:00:00 -->

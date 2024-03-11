@@ -101,13 +101,13 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
+	"26": {
+		"id": "26",
+		"name": "World's Center"
+	},
 	"27": {
 		"id": "27",
 		"name": "Return to Elaria"
-	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
 	},
 	"100": {
 		"id": "100",
@@ -6510,7 +6510,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1365",
 		"items": {
-			"3086": 1.7
+			"3086": 0.85
 		},
 		"location_id": "20",
 		"missions": [
@@ -6527,7 +6527,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1366",
 		"items": {
-			"3086": 1.8
+			"3086": 0.9
 		},
 		"location_id": "20",
 		"missions": [

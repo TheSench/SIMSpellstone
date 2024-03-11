@@ -64,7 +64,7 @@
       <message>
         <line>
           <commander>raven</commander>
-          <text>Many cards have a delay. It will take this number of turns for the card to activate and attack.</text>
+          <text>Many cards have a Delay. It will take this number of turns for the card to activate and Attack.</text>
           <icon>tutorial_delay</icon>
         </line>
       </message>
@@ -594,7 +594,7 @@
         <line>
           <skill>heal</skill>
           <commander>raven</commander>
-          <text>This creature is using Heal, which will return the missing health of an allied creature.</text>
+          <text>This creature is using Heal, which will return the missing Health of an allied creature.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -613,7 +613,7 @@
         <line>
           <skill>armored</skill>
           <commander>raven</commander>
-          <text>This creature has Armor, which will prevent a portion of attack damage dealt to it.</text>
+          <text>This creature has Armor, which will prevent a portion of Attack damage dealt to it.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -651,7 +651,7 @@
         <line>
           <skill>rally</skill>
           <commander>raven</commander>
-          <text>This creature has Empower, which will temporarily increase an allied creature's attack.</text>
+          <text>This creature has Empower, which will temporarily increase an allied creature's Attack.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -670,7 +670,7 @@
         <line>
           <skill>counter</skill>
           <commander>raven</commander>
-          <text>This creature has Vengeance; it deals damage back to a creature that attacks it.</text>
+          <text>This creature has Vengeance; it deals damage back to a creature that deals Attack damage to it.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -689,7 +689,7 @@
         <line>
           <skill>weaken</skill>
           <commander>raven</commander>
-          <text>This creature has Weaken, which will temporarily decrease an enemy creature's attack.</text>
+          <text>This creature has Weaken, which will temporarily decrease an enemy creature's Attack.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -746,7 +746,7 @@
         <line>
           <skill>leech</skill>
           <commander>raven</commander>
-          <text>This creature has Siphon; it will heal when it deals attack damage.</text>
+          <text>This creature has Siphon; it will heal when it deals Attack damage.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -765,7 +765,7 @@
         <line>
           <skill>evade</skill>
           <commander>raven</commander>
-          <text>This creature has Invisibility; it will avoid a number of enemy skills.</text>
+          <text>This creature has Invisibility; it will avoid a number of enemy Skills.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -822,7 +822,7 @@
         <line>
           <skill>enhance</skill>
           <commander>raven</commander>
-          <text>This creature has Enhance, which will increase the effect of the skill it is enhancing.</text>
+          <text>This creature has Enhance, which will increase the effect of the Skill it is enhancing.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -841,7 +841,7 @@
         <line>
           <skill>jam</skill>
           <commander>raven</commander>
-          <text>This creature has Freeze, which will prevent an enemy creature from attacking or activating skills for a turn.</text>
+          <text>This creature has Freeze, which will prevent an enemy creature from Attacking or activating Skills for a turn.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -860,7 +860,7 @@
         <line>
           <skill>flurry</skill>
           <commander>raven</commander>
-          <text>This creature has Dualstrike; it will attack twice in a single turn.</text>
+          <text>This creature has Dualstrike; it will Attack twice in a single turn.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -917,7 +917,7 @@
         <line>
           <skill>imbue</skill>
           <commander>raven</commander>
-          <text>This creature has Imbue; it will give a random enemy creature the skill indicated.</text>
+          <text>This creature has Imbue; it will give a random enemy creature the Skill indicated.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -936,7 +936,7 @@
         <line>
           <skill>berserk</skill>
           <commander>raven</commander>
-          <text>This creature has Berserk; its attack increases every time it successfully deals attack damage.</text>
+          <text>This creature has Berserk; its Attack increases every time it successfully deals Attack damage.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1012,7 +1012,7 @@
         <line>
           <skill>nullify</skill>
           <commander>raven</commander>
-          <text>This creature has Nullify; creatures damaged by this cannot benefit from a number of allied skills.</text>
+          <text>This creature has Nullify; creatures damaged by this cannot benefit from a number of allied Skills.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1031,7 +1031,7 @@
         <line>
           <skill>corrosive</skill>
           <commander>raven</commander>
-          <text>This creature has Corrosive. Creatures attacking it have their attack lowered. This effect can stack, but wears off if not re-applied.</text>
+          <text>This creature has Corrosive. Creatures dealing Attack damage to it have their Attack lowered. This effect can stack, but wears off if not re-applied.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1050,7 +1050,7 @@
         <line>
           <skill>enrage</skill>
           <commander>raven</commander>
-          <text>This creature has Enrage; anytime this creature is damaged from an attack, its attack increases.</text>
+          <text>This creature has Enrage; anytime this creature is damaged from an Attack, its Attack increases.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1069,7 +1069,7 @@
         <line>
           <skill>counterburn</skill>
           <commander>raven</commander>
-          <text>This creature has Emberhide, which deals Scorch damage back to a creature that attacks it.</text>
+          <text>This creature has Emberhide, which deals Scorch damage back to a creature that deals Attack damage to it.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1107,7 +1107,7 @@
         <line>
           <skill>daze</skill>
           <commander>raven</commander>
-          <text>This creature has Daze, which will reduce the attack of enemy creatures that it damages.</text>
+          <text>This creature has Daze, which will reduce the Attack of enemy creatures that it damages.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1145,7 +1145,7 @@
         <line>
           <skill>taunt</skill>
           <commander>raven</commander>
-          <text>This creature has Taunt; it will take attack damage for its adjacent allies.</text>
+          <text>This creature has Taunt; it will take Attack damage for its adjacent allies.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1164,7 +1164,7 @@
         <line>
           <skill>silence</skill>
           <commander>raven</commander>
-          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily. </text>
+          <text>This creature has Silence; enemy creatures dealt damage by it have all of their skills removed temporarily.</text>
         </line>
       </message>
       <confirm>1</confirm>
@@ -1183,7 +1183,7 @@
         <line>
           <skill>fury</skill>
           <commander>raven</commander>
-          <text>This creature has Maelstrom's Fury; when damaged it will deal damage back to the attacker and gain Attack permanently.</text>
+          <text>This creature has Maelstrom's Fury; which combines Vengeance with Enrage and Shroud.</text>
         </line>
       </message>
       <confirm>1</confirm>
