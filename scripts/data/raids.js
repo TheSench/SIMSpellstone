@@ -4702,19 +4702,19 @@ var RAIDS = {
 					"mastery_level": "17"
 				},
 				{
-					"id": "7085",
+					"id": "8243",
 					"mastery_level": "18"
 				},
 				{
-					"id": "7037",
+					"id": "8101",
 					"mastery_level": "19"
 				},
 				{
-					"id": "7211",
+					"id": "8244",
 					"mastery_level": "19"
 				},
 				{
-					"id": "7212",
+					"id": "8245",
 					"mastery_level": "20"
 				},
 				{
@@ -4722,11 +4722,11 @@ var RAIDS = {
 					"mastery_level": "21"
 				},
 				{
-					"id": "7278",
+					"id": "8243",
 					"mastery_level": "22"
 				},
 				{
-					"id": "7083",
+					"id": "8244",
 					"mastery_level": "23"
 				},
 				{

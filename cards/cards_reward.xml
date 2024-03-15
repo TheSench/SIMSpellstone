@@ -6955,6 +6955,7 @@
     <rarity>3</rarity>
     <type>1</type>
     <sub_type>5</sub_type>
+    <sub_type>14</sub_type>
     <set>2000</set>
     <hidden_until_time>1471885200</hidden_until_time>
     <upgrade>
@@ -6963,14 +6964,13 @@
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>5</attack>
       <health>16</health>
-      <skill id="rally" all="1" x="1" y="5" />
-      <skill id="weaken" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
       <health>17</health>
+      <skill id="rally" all="1" x="2" y="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -6990,32 +6990,34 @@
     <cost>2</cost>
     <attack>5</attack>
     <health>19</health>
-    <skill id="armored" x="1" />
-    <skill id="rally" all="1" x="2" y="5" />
+    <skill id="rally" all="1" x="3" y="5" />
     <skill id="weaken" all="1" x="1" />
     <rarity>3</rarity>
     <type>1</type>
     <sub_type>5</sub_type>
+    <sub_type>14</sub_type>
     <set>2000</set>
     <hidden_until_time>1471885200</hidden_until_time>
     <upgrade>
       <level>2</level>
       <health>20</health>
-      <skill id="armored" x="2" />
-      <skill id="rally" all="1" x="2" y="5" />
+      <skill id="armored" x="1" />
+      <skill id="rally" all="1" x="3" y="5" />
       <skill id="weaken" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
       <health>21</health>
+      <skill id="armored" x="2" />
+      <skill id="rally" all="1" x="3" y="5" />
+      <skill id="weaken" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>22</health>
       <skill id="armored" x="3" />
       <skill id="rally" all="1" x="3" y="5" />
-      <skill id="weaken" all="1" x="1" />
+      <skill id="weaken" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -7034,32 +7036,32 @@
     <picture>Bismuth_Beast_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
     <cost>2</cost>
-    <attack>6</attack>
+    <attack>7</attack>
     <health>24</health>
-    <skill id="armored" x="5" />
+    <skill id="armored" x="4" />
     <skill id="rally" all="1" x="3" y="5" />
     <skill id="weaken" all="1" x="2" />
     <rarity>3</rarity>
     <type>1</type>
     <sub_type>5</sub_type>
+    <sub_type>14</sub_type>
     <set>2000</set>
     <hidden_until_time>1472144400</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <attack>7</attack>
+      <attack>8</attack>
       <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>8</attack>
+      <attack>9</attack>
       <health>26</health>
-      <skill id="armored" x="5" />
+      <skill id="armored" x="4" />
       <skill id="rally" all="1" x="3" y="5" />
       <skill id="weaken" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>9</attack>
       <health>27</health>
       <skill id="armored" x="5" />
       <skill id="rally" all="1" x="4" y="5" />

@@ -4860,13 +4860,13 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "heal",
-				"x": 1.2
+				"x": 1.1
 			},
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "rally",
-				"x": 0.7
+				"x": 0.6
 			}
 		],
 		"enemy_only": true,
@@ -4874,7 +4874,7 @@ var BATTLEGROUNDS = {
 		"id": "567",
 		"name": "Raid's Retribution",
 		"scale_with_level": true,
-		"starting_level": 26
+		"starting_level": 22
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
