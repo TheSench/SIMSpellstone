@@ -67,6 +67,7 @@ async function getCampaignsJson() {
 function addMission(missions) {
   const addToMissions = addToMap(missions);
   return function ([name, element]) {
+    element.deck.card = Array.isArray(element.deck.card) ? element.deck.card : [element.deck.card];
     addToMissions({
       id: element.id.toString(),
       name: element.name,
