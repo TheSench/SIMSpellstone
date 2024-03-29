@@ -39,7 +39,7 @@ describe('Deck Tests', function() {
     testDeck('(1/3/1) vs (1/1/1 and 1/2/0) ', 'QpLQAIjowA', 'QpLQA4DowAgCJoB', 50);
 
     testDeck('(1/3/1 armor 1) vs (1/6/0) ', 'QpLQAIFMQB', 'QpLQAQcHQB', 100);
-    testDeck('(1/3/1 bolt 1) vs (1/3/1 armor 1) ', 'QpLQAoKOoB', 'QpLQAIFMQB', 100);
+    testDeck('(2/3/1 bolt 1) vs (1/5/1 armor 1) ', 'QpLQAQaOoB', 'QpLQAwUMQB', 100);
     testDeck('(1/4/1 weaken 1) vs (1/8/0) ', 'QpLQAY7soB', 'QpLQAA6IQB', 100);
     testDeck('(3/6/1 hex 2,pierce 2) vs (3/5/0) ', 'QpLQAIjRpB', 'QpLQAIPLoB', 100);
     testDeck('(3/6/1 hex 2,pierce 2) vs (3/9/2 poison 3) ', 'QpLQAIjRpB', 'QpLQAwMXoB', 100);
@@ -50,7 +50,7 @@ describe('Deck Tests', function() {
 
     describe('Bash', function() {
         testDeck('Increases attack', 'QpLQAQDjAC', 'QpLQAQtroB', 100, 'DC');
-        testDeck('Bash triggers each turn', 'QpLQA4SjAC', 'QpLQA4UcoB', 100, 'DC');
+        testDeck('Bash triggers each turn', 'QpLQA4SjAC', 'QpLQAo1boB', 100, 'DC');
         // TODO: Dualstrike test
     });
 });
