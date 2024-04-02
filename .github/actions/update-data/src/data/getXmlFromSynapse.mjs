@@ -37,6 +37,7 @@ export async function getXmlFromSynapse(filename) {
       });
 
       response.on('end', () => {
+        console.log(`Retrieved ${filename} (${data.length} bytes)`);
         const xml = xmlFormat(data, {
           collapseContent: true,
           indentation: '  ',

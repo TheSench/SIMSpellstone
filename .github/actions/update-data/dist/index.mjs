@@ -8521,6 +8521,7 @@ async function getXmlFromSynapse(filename) {
       });
 
       response.on('end', () => {
+        console.log(`Retrieved ${filename} (${data.length} bytes)`);
         const xml = cjs(data, {
           collapseContent: true,
           indentation: '  ',
