@@ -9,8 +9,3 @@ export function getScriptFromGithub(scriptName) {
     const scriptPath = join(scriptDir, scriptName);
     return readFileSync(scriptPath, 'utf8');
 }
-
-export function getXmlFromGithub(xmlName) {
-    const xmlPath = join(xmlDir, xmlName);
-    return readFileSync(xmlPath, 'utf8');
-}

@@ -1712,6 +1712,41 @@
       <add_skill id="berserk" mult="0.1" base="health" y="3" />
     </effect>
   </battleground>
+  <battleground>
+    <id>177</id>
+    <name>Order of Aether</name>
+    <desc>All Aether gain Armor equal to 10% of their base Health.</desc>
+    <icon>filter_aether_64</icon>
+    <effect>
+      <add_skill id="armored" mult="0.1" base="health" y="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>178</id>
+    <name>Invisible Mark</name>
+    <desc>All Avians gain Mark equal to 15% base health. 2-4D Avians also gain Invisibility equal to Delay minus 1.</desc>
+    <icon>filter_avian_64.png</icon>
+    <effect>
+      <add_skill id="mark" mult="0.15" base="health" y="10" />
+      <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
+      <add_skill id="evade" x="1" y="10" delay="2" />
+      <add_skill id="evade" x="2" y="10" delay="3" />
+      <add_skill id="evade" x="3" y="10" delay="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2391,28 +2426,28 @@
   <battleground>
     <id>547</id>
     <name>Common Fireworks</name>
-    <desc>All Common cards have their Health and all Skills multiplied by 5! In addition, they gain Barrage equal to 5 times their base Attack!</desc>
+    <desc>All Common cards have their Health and all Skills multiplied by 6! In addition, they gain Barrage equal to 6 times their base Attack!</desc>
     <icon>Common_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <add_skill id="barrage" mult="4" base="attack" all="1" rarity="1" />
+      <add_skill id="barrage" mult="5" base="attack" all="1" rarity="1" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="4" rarity="1" />
-      <skill id="enhance" s="armored" z="1" mult="4" all="1" />
-      <skill id="enhance" s="counter" z="1" mult="4" all="1" />
-      <skill id="enhance" s="evade" z="1" mult="4" all="1" />
-      <skill id="enhance" s="leech" z="1" mult="4" all="1" />
-      <skill id="enhance" s="pierce" z="1" mult="4" all="1" />
-      <skill id="enhance" s="burn" z="1" mult="4" all="1" />
-      <skill id="enhance" s="poison" z="1" mult="4" all="1" />
-      <skill id="enhance" s="heal" z="1" mult="4" all="1" />
-      <skill id="enhance" s="strike" z="1" mult="4" all="1" />
-      <skill id="enhance" s="weaken" z="1" mult="4" all="1" />
-      <skill id="enhance" s="protect" z="1" mult="4" all="1" />
-      <skill id="enhance" s="rally" z="1" mult="4" all="1" />
-      <skill id="enhance" s="berserk" z="1" mult="4" all="1" />
-      <skill id="enhance" s="absorb" z="1" mult="4" all="1" />
-      <skill id="enhance" s="counterburn" z="1" mult="4" all="1" />
+      <scale_health base="health" mult="5" rarity="1" />
+      <skill id="enhance" s="armored" z="1" mult="5" all="1" />
+      <skill id="enhance" s="counter" z="1" mult="5" all="1" />
+      <skill id="enhance" s="evade" z="1" mult="5" all="1" />
+      <skill id="enhance" s="leech" z="1" mult="5" all="1" />
+      <skill id="enhance" s="pierce" z="1" mult="5" all="1" />
+      <skill id="enhance" s="burn" z="1" mult="5" all="1" />
+      <skill id="enhance" s="poison" z="1" mult="5" all="1" />
+      <skill id="enhance" s="heal" z="1" mult="5" all="1" />
+      <skill id="enhance" s="strike" z="1" mult="5" all="1" />
+      <skill id="enhance" s="weaken" z="1" mult="5" all="1" />
+      <skill id="enhance" s="protect" z="1" mult="5" all="1" />
+      <skill id="enhance" s="rally" z="1" mult="5" all="1" />
+      <skill id="enhance" s="berserk" z="1" mult="5" all="1" />
+      <skill id="enhance" s="absorb" z="1" mult="5" all="1" />
+      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" />
       <skill id="displayEffect" trigger="onSkill" s="barrage">
         <projectile_effect>
           <prefab>Firework_Projectile</prefab>

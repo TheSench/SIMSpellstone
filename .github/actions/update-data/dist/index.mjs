@@ -8429,19 +8429,6 @@ function xmlRootsToJson(xml, options) {
   return collection;
 }
 
-function xmlCollectionToJson(xml, options, propName) {
-  var collection = [];
-  xml.getChildren().forEach(function (element) {
-    if (!options.filteredProps[element.getName()]) {
-      collection.push(xmlToJson(element, options, propName));
-    }
-  });
-
-  return convertedValue(xml.getName(),
-    collection,
-    options);
-}
-
 function xmlToJson([name, element], options, propName) {
   var value = xmlToJsonInner([name, element], options, propName);
   return convertedValue(name, value, options);
@@ -8534,6 +8521,7 @@ async function getXmlFromSynapse(filename) {
       });
 
       response.on('end', () => {
+        console.log(`Retrieved ${filename} (${data.length} bytes)`);
         const xml = cjs(data, {
           collapseContent: true,
           indentation: '  ',
@@ -8934,7 +8922,7 @@ async function getCampaignsJson() {
   };
   var options = {
     rootNodes: ['location', 'mission', 'campaign'],
-    arrayRoots: { 'find_item': 'find_item', 'mission_id': 'mission_id' },
+    arrayRoots: { 'find_item': 'find_item', 'mission_id': 'mission_id', 'card': 'card' },
     rawRootMaps: {
       location: addLocation(locations),
       campaign: addCampaign(campaigns),
@@ -9359,7 +9347,7 @@ try {
   await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .updateData */ .V)();
   await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .getXmlChanges */ .$)();
 } catch (error) {
-  console.error(error.message);
+  console.error(error);
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
 __webpack_async_result__();

@@ -13461,6 +13461,87 @@
     <ignore_energy_reduction_until>1711645200</ignore_energy_reduction_until>
     <!-- Thursday, 28 March 2024 at 17:00:00 -->
   </campaign>
+  <!-- Event 114: ComDev Avian - Red Feather Valley -->
+  <campaign>
+    <id>1369</id>
+    <name>Heart of Gale</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1711645200</locked_start_time>
+    <!-- Thursday, 28 March 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>36</location_id>
+    <x>150</x>
+    <y>150</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7230</mission_id>
+      <mission_id>7231</mission_id>
+      <mission_id>7232</mission_id>
+      <mission_id>7233</mission_id>
+      <mission_id>7234</mission_id>
+      <mission_id>7235</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104082" number="50" />
+      <!-- Little Kawosha -->
+      <card level="5" id="2083" />
+      <!-- Habrok, the Lance -->
+      <card level="6" id="2083" />
+      <!-- Habrok, the Lance -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1370</id>
+    <name>A New Order</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1369" level="1" />
+    <locked_start_time>1712854800</locked_start_time>
+    <!-- Thursday, 11 April 2024 at 17:00:00 -->
+    <battleground_id>2120</battleground_id>
+    <location_id>36</location_id>
+    <x>270</x>
+    <y>200</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7236</mission_id>
+      <mission_id>7237</mission_id>
+      <mission_id>7238</mission_id>
+      <mission_id>7239</mission_id>
+      <mission_id>7240</mission_id>
+      <mission_id>7241</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104082" number="50" />
+      <!-- Little Kawosha -->
+      <card level="5" id="2083" />
+      <!-- Habrok, the Lance -->
+      <card level="6" id="2083" />
+      <!-- Habrok, the Lance -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
   <!-- End normal campaign events -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
@@ -15012,5 +15093,128 @@
     </rewards>
     <find_item id="3086" drop_per_energy="0.9" />
     <!-- Matches final node with energy reduction -->
+  </campaign>
+  <!-- April Fool's Special Event 2024 -->
+  <campaign>
+    <id>5009</id>
+    <name>Coming Soon!</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <type>2</type>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <battleground_id>546</battleground_id>
+    <location_id>36</location_id>
+    <x>100</x>
+    <y>550</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>2057</mission_id>
+      <mission_id>2058</mission_id>
+      <mission_id>2059</mission_id>
+      <mission_id>2060</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="2" id="2152" />
+      <!-- Bomblet -->
+      <card level="3" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="4" id="2152" />
+      <!-- Bomblet -->
+      <card level="5" id="12153" />
+      <!-- Angry Chicken -->
+      <card level="6" id="12152" />
+      <!-- Bomblet -->
+      <card level="7" id="22153" />
+      <!-- Angry Chicken -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>5010</id>
+    <name>Coming Very Soon!!</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <type>2</type>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <battleground_id>546</battleground_id>
+    <campaign_req id="5009" level="1" />
+    <location_id>36</location_id>
+    <x>210</x>
+    <y>550</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>2061</mission_id>
+      <mission_id>2062</mission_id>
+      <mission_id>2063</mission_id>
+      <mission_id>2064</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="2" id="2152" />
+      <!-- Bomblet -->
+      <card level="3" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="4" id="2152" />
+      <!-- Bomblet -->
+      <card level="5" id="12153" />
+      <!-- Angry Chicken -->
+      <card level="6" id="12152" />
+      <!-- Bomblet -->
+      <card level="7" id="22152" />
+      <!-- Bomblet -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>5011</id>
+    <name>Coming Real Soon (TM) Now!!!</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <type>2</type>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <battleground_id>546</battleground_id>
+    <campaign_req id="5009" level="2" />
+    <location_id>36</location_id>
+    <x>320</x>
+    <y>550</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>2065</mission_id>
+      <mission_id>2066</mission_id>
+      <mission_id>2067</mission_id>
+      <mission_id>2068</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="2" id="2152" />
+      <!-- Bomblet -->
+      <card level="3" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="4" id="2152" />
+      <!-- Bomblet -->
+      <card level="5" id="12153" />
+      <!-- Angry Chicken -->
+      <card level="6" id="12152" />
+      <!-- Bomblet -->
+      <item level="7" id="531" number="1" />
+      <!-- Special Event Mystery Package -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
   </campaign>
 </root>

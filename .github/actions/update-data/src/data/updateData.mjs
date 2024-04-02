@@ -4,7 +4,7 @@ import { getBgesJs } from './bges.mjs';
 import { getCardsJs } from './cards.mjs';
 import { getCommonJs } from './common.mjs';
 import { getFusionsJs } from './fusions.mjs';
-import { getScriptFromGithub, getXmlFromGithub } from './getScriptFromGithub.mjs';
+import { getScriptFromGithub } from './getScriptFromGithub.mjs';
 import { getXmlFromSynapse } from './getXmlFromSynapse.mjs';
 import { getMapBgesJs } from './mapBges.mjs';
 import { getCampaignJs } from './missionsAndLocations.mjs';

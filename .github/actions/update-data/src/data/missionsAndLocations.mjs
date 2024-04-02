@@ -46,7 +46,7 @@ async function getCampaignsJson() {
   };
   var options = {
     rootNodes: ['location', 'mission', 'campaign'],
-    arrayRoots: { 'find_item': 'find_item', 'mission_id': 'mission_id' },
+    arrayRoots: { 'find_item': 'find_item', 'mission_id': 'mission_id', 'card': 'card' },
     rawRootMaps: {
       location: addLocation(locations),
       campaign: addCampaign(campaigns),
