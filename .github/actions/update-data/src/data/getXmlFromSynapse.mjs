@@ -4,8 +4,6 @@ import { join } from 'path';
 import xmlFormat from 'xml-formatter';
 import { getRootDir } from '../../../common/rootDir.mjs';
 import { xmlDocToJson } from './xmlToJson.mjs';
-import { getXmlFromGithub } from './getScriptFromGithub.mjs';
-
 
 const xmlDir = join(getRootDir(), './cards/');
 
