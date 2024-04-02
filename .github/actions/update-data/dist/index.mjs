@@ -9359,7 +9359,7 @@ try {
   await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .updateData */ .V)();
   await (0,_data_updateData_mjs__WEBPACK_IMPORTED_MODULE_2__/* .getXmlChanges */ .$)();
 } catch (error) {
-  console.error(error.message);
+  console.error(error);
   _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error.message);
 }
 __webpack_async_result__();
