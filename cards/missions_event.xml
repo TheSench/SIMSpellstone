@@ -71096,6 +71096,679 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 114: ComDev Avian - Red Feather Valley -->
+  <!-- E114 Node 1: Heart of Gale -->
+  <mission>
+    <id>7230</id>
+    <name>The Fellowship of Lev</name>
+    <energy>24</energy>
+    <desc>Lev handpicks you for a small party to accompany her on a search for clues. You follow her to a place you haven't visited in a long time: Red Feather Valley.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="1018" />
+      <!-- Armored Eagle -->
+      <card id="1018" />
+      <!-- Armored Eagle -->
+      <card id="1018" />
+      <!-- Armored Eagle -->
+      <card id="1027" />
+      <!-- Griffin Knight -->
+      <card id="1027" />
+      <!-- Griffin Knight -->
+      <card id="1027" />
+      <!-- Griffin Knight -->
+      <card id="1032" />
+      <!-- Lunar Elemental -->
+      <card id="1032" />
+      <!-- Lunar Elemental -->
+      <card id="1032" />
+      <!-- Lunar Elemental -->
+      <card id="1047" mastery_level="2" />
+      <!-- Moonlit Garuda -->
+      <card id="1047" mastery_level="3" />
+      <!-- Moonlit Garuda -->
+      <card id="1047" mastery_level="4" />
+      <!-- Moonlit Garuda -->
+      <card id="1034" mastery_level="5" />
+      <!-- Winged Warrior -->
+      <card id="1034" mastery_level="6" />
+      <!-- Winged Warrior -->
+      <card id="1034" mastery_level="7" />
+      <!-- Winged Warrior -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>Anyone who goes with you, Lev, is a going on a fool's errand. Look around you. The Void is no more.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Hang on, Karlson, maybe you should have more faith in her.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>1</enemy>
+        <text>Heh. What do you know about faith, Ursurio? You just go where the food tastes best.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7231</id>
+    <name>No Fly Zone</name>
+    <energy>24</energy>
+    <desc>You're somewhat crestfallen as Lev insists on proceeding without the airship, to avoid drawing attention. The Valley was, after all, one of the first places the Void ravaged.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="1636" />
+      <!-- Nectar Gatherer -->
+      <card id="1636" />
+      <!-- Nectar Gatherer -->
+      <card id="1636" />
+      <!-- Nectar Gatherer -->
+      <card id="2136" />
+      <!-- Grazna, Beetle Tamer -->
+      <card id="2136" />
+      <!-- Grazna, Beetle Tamer -->
+      <card id="2136" />
+      <!-- Grazna, Beetle Tamer -->
+      <card id="2118" />
+      <!-- Luminescent Heron -->
+      <card id="2118" />
+      <!-- Luminescent Heron -->
+      <card id="2118" />
+      <!-- Luminescent Heron -->
+      <card id="2166" mastery_level="2" />
+      <!-- Minstrel of Owls -->
+      <card id="2166" mastery_level="3" />
+      <!-- Minstrel of Owls -->
+      <card id="2166" mastery_level="4" />
+      <!-- Minstrel of Owls -->
+      <card id="2041" mastery_level="5" />
+      <!-- Sharpwing -->
+      <card id="2041" mastery_level="6" />
+      <!-- Sharpwing -->
+      <card id="2041" mastery_level="7" />
+      <!-- Sharpwing -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>No airship? But we don't have the supplies!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You, me, and the adventurer. We won't need much.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Samael, not coming along?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Not this time old friend. Even if Lev is right, the Void seems to have mostly gone. I better head back to Skyhaven and help the cleanup.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I hope that's the last I'll ever see of those demons.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7232</id>
+    <name>Catching Up</name>
+    <energy>24</energy>
+    <desc>The journey is long but you find yourself passing time chatting with Ursurio about what he's been up to... in between his snacking of course!</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="2119" />
+      <!-- Flaming Hailwing -->
+      <card id="2119" />
+      <!-- Flaming Hailwing -->
+      <card id="2119" />
+      <!-- Flaming Hailwing -->
+      <card id="2125" />
+      <!-- Fowl Page Bezoar -->
+      <card id="2125" />
+      <!-- Fowl Page Bezoar -->
+      <card id="2125" />
+      <!-- Fowl Page Bezoar -->
+      <card id="2231" mastery_level="2" />
+      <!-- Blades of Auron -->
+      <card id="2231" mastery_level="3" />
+      <!-- Blades of Auron -->
+      <card id="2231" mastery_level="4" />
+      <!-- Blades of Auron -->
+      <card id="2251" mastery_level="5" />
+      <!-- Panicked Dodo -->
+      <card id="2251" mastery_level="6" />
+      <!-- Panicked Dodo -->
+      <card id="2251" mastery_level="7" />
+      <!-- Panicked Dodo -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>... and that's how I ended up as the Quartermaster General.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>It was a decent posting, I guess, working with Karlson. It had its ups and downs. Mostly ups.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Still, I've never known a tusker be as opinionated about frozen foods as he was.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7233</id>
+    <name>Not So Desolate</name>
+    <energy>24</energy>
+    <desc>Finally arriving in the valley, you are surprised to find it teeming with life. Nests and eggs dot the valley and avians fly overhead, all unaware of your presence.</desc>
+    <commander id="294" />
+    <!-- Avian Soldiers -->
+    <deck>
+      <card id="2081" />
+      <!-- Starstriker -->
+      <card id="2081" />
+      <!-- Starstriker -->
+      <card id="2081" />
+      <!-- Starstriker -->
+      <card id="2043" />
+      <!-- Eos -->
+      <card id="2043" />
+      <!-- Eos -->
+      <card id="2043" />
+      <!-- Eos -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="2068" mastery_level="2" />
+      <!-- Whitesail Wyvern -->
+      <card id="2068" mastery_level="3" />
+      <!-- Whitesail Wyvern -->
+      <card id="2068" mastery_level="4" />
+      <!-- Whitesail Wyvern -->
+      <card id="2083" mastery_level="5" />
+      <!-- Habrok, the Lance -->
+      <card id="2083" mastery_level="6" />
+      <!-- Habrok, the Lance -->
+      <card id="2083" mastery_level="7" />
+      <!-- Habrok, the Lance -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Oh no, this isn't right...</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>What do you mean not right? Isn't it a good thing that this valley isn't a desolate Void wasteland?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>This isn't at all what I was expecting...</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Um, this might not be the right time, but is it wrong for me to be eating chicken here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7234</id>
+    <name>Recovery When?</name>
+    <energy>24</energy>
+    <desc>Did the Avians rebuild before this most recent Void scourge? Or is this all linked to the seemingly decisive victory you just won at Elaria?</desc>
+    <commander id="308" />
+    <!-- Red Feather Magistrate -->
+    <deck>
+      <card id="5110" />
+      <!-- Alectryon -->
+      <card id="5110" />
+      <!-- Alectryon -->
+      <card id="5110" />
+      <!-- Alectryon -->
+      <card id="5001" />
+      <!-- Aven Skypiercer -->
+      <card id="5001" />
+      <!-- Aven Skypiercer -->
+      <card id="5001" />
+      <!-- Aven Skypiercer -->
+      <card id="5287" />
+      <!-- Baby Delivery Stork -->
+      <card id="5287" />
+      <!-- Baby Delivery Stork -->
+      <card id="5287" />
+      <!-- Baby Delivery Stork -->
+      <card id="5285" mastery_level="2" />
+      <!-- Flying Peng -->
+      <card id="5285" mastery_level="3" />
+      <!-- Flying Peng -->
+      <card id="5285" mastery_level="4" />
+      <!-- Flying Peng -->
+      <card id="5176" mastery_level="5" />
+      <!-- Raywing -->
+      <card id="5176" mastery_level="6" />
+      <!-- Raywing -->
+      <card id="5176" mastery_level="7" />
+      <!-- Raywing -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7235</id>
+    <name>A Champion Appears</name>
+    <energy>24</energy>
+    <desc>Before you can answer these questions, you are suddenly caught off-guard. Something has spotted you and surprised you. Luckily it seems this Avian knows Lev...</desc>
+    <commander id="497" />
+    <!-- Verus -->
+    <deck>
+      <card id="5198" />
+      <!-- Sea's Sky Forces -->
+      <card id="5198" />
+      <!-- Sea's Sky Forces -->
+      <card id="5198" />
+      <!-- Sea's Sky Forces -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5111" />
+      <!-- Bennu -->
+      <card id="5209" />
+      <!-- Fowlmaster -->
+      <card id="5209" />
+      <!-- Fowlmaster -->
+      <card id="5209" />
+      <!-- Fowlmaster -->
+      <card id="5207" mastery_level="2" />
+      <!-- Hazrat Suma -->
+      <card id="5207" mastery_level="3" />
+      <!-- Hazrat Suma -->
+      <card id="5207" mastery_level="4" />
+      <!-- Hazrat Suma -->
+      <card id="5014" mastery_level="5" />
+      <!-- Winged Raptor -->
+      <card id="5014" mastery_level="6" />
+      <!-- Winged Raptor -->
+      <card id="5014" mastery_level="7" />
+      <!-- Winged Raptor -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Ha! I shoulda known y'all were gonna show up right 'bout now.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Old friend. It's good to see you again. I'm sure you can probably guess why I'm here.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E114 Node 2: A New Order -->
+  <mission>
+    <id>7236</id>
+    <name>The Arena Connection</name>
+    <energy>24</energy>
+    <desc>It all makes sense to you now: why Lev has come to Red Feather Valley, and who she has come here to meet.</desc>
+    <commander id="291" />
+    <!-- Feral Bird -->
+    <deck>
+      <card id="5113" />
+      <!-- Bishop Rook -->
+      <card id="5113" />
+      <!-- Bishop Rook -->
+      <card id="5113" />
+      <!-- Bishop Rook -->
+      <card id="5158" />
+      <!-- Chilltide Stormtender -->
+      <card id="5158" />
+      <!-- Chilltide Stormtender -->
+      <card id="5158" />
+      <!-- Chilltide Stormtender -->
+      <card id="5016" />
+      <!-- Fowl Swarm -->
+      <card id="5016" />
+      <!-- Fowl Swarm -->
+      <card id="5016" />
+      <!-- Fowl Swarm -->
+      <card id="5060" mastery_level="2" />
+      <!-- Quack Apprentice -->
+      <card id="5060" mastery_level="3" />
+      <!-- Quack Apprentice -->
+      <card id="5060" mastery_level="4" />
+      <!-- Quack Apprentice -->
+      <card id="5044" mastery_level="5" />
+      <!-- Telepathic Magi -->
+      <card id="5044" mastery_level="6" />
+      <!-- Telepathic Magi -->
+      <card id="5044" mastery_level="7" />
+      <!-- Telepathic Magi -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>So why ya here with tha' there bear and that other one? I'da thought you'd be with ya Crimsons?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>No. They've been dismissed. Especially after they went and delegated the original search to the goblins of all tribes.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>That explains all the recent Void nonsense. I guess I got y'all to thank for clearin' it all up then?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>So all this recovery is new?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7237</id>
+    <name>Suspicions Confirmed</name>
+    <energy>24</energy>
+    <desc>Verus is pleased with the Valley's recent rebirth, albeit shocked by how quick the recovery has been. Somehow, this news leaves Lev uneasy.</desc>
+    <commander id="497" />
+    <!-- Verus -->
+    <deck>
+      <card id="5058" />
+      <!-- Crescent Moon Owl -->
+      <card id="5058" />
+      <!-- Crescent Moon Owl -->
+      <card id="5058" />
+      <!-- Crescent Moon Owl -->
+      <card id="5130" />
+      <!-- Drakeling Fosterer -->
+      <card id="5130" />
+      <!-- Drakeling Fosterer -->
+      <card id="5130" />
+      <!-- Drakeling Fosterer -->
+      <card id="5166" />
+      <!-- Hoarfrost Buzzard -->
+      <card id="5166" />
+      <!-- Hoarfrost Buzzard -->
+      <card id="5166" />
+      <!-- Hoarfrost Buzzard -->
+      <card id="5114" mastery_level="2" />
+      <!-- Wingward -->
+      <card id="5114" mastery_level="3" />
+      <!-- Wingward -->
+      <card id="5114" mastery_level="4" />
+      <!-- Wingward -->
+      <card id="5001" mastery_level="5" />
+      <!-- Aven Skypiercer -->
+      <card id="5001" mastery_level="6" />
+      <!-- Aven Skypiercer -->
+      <card id="5001" mastery_level="7" />
+      <!-- Aven Skypiercer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>This all makes no sense. Defeating the Void in Elaria should have had no effect here.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Why not? Happens all the time in the stories? Defeat the Big Bad and it's happily ever after!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>That's why they're stories, dear General.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Maybe this here is all part of the Void's plan? Ya know, like a feint?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Wait... I see it now. Order. From the ether. The Void must have gone even further into the shadows...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7238</id>
+    <name>Not Yet Over</name>
+    <energy>24</energy>
+    <desc>Lev explains her worst fear has come true: the Void is still at large but has transformed into a 'Deep Void'.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="6112" />
+      <!-- Fire Hawk -->
+      <card id="6112" />
+      <!-- Fire Hawk -->
+      <card id="6112" />
+      <!-- Fire Hawk -->
+      <card id="6056" />
+      <!-- Potoo -->
+      <card id="6056" />
+      <!-- Potoo -->
+      <card id="6056" />
+      <!-- Potoo -->
+      <card id="6054" />
+      <!-- Shadowcrafter -->
+      <card id="6054" />
+      <!-- Shadowcrafter -->
+      <card id="6054" />
+      <!-- Shadowcrafter -->
+      <card id="6115" mastery_level="2" />
+      <!-- Spelltalon -->
+      <card id="6115" mastery_level="3" />
+      <!-- Spelltalon -->
+      <card id="6115" mastery_level="4" />
+      <!-- Spelltalon -->
+      <card id="6172" mastery_level="5" />
+      <!-- Steel Plover -->
+      <card id="6172" mastery_level="6" />
+      <!-- Steel Plover -->
+      <card id="6172" mastery_level="7" />
+      <!-- Steel Plover -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Those goblins and that blasted pocket watch. They've let the Void seep into the very fabric of time.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>During my struggles with Bluefire, I had vague notions of this... 'Deep Void' but I never thought it to be more than scare tactics.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7239</id>
+    <name>Here, There, Everywhere</name>
+    <energy>24</energy>
+    <desc>To prove her point, she asks you to close your eyes. You feel yourself drifting off only to awaken in the Arena! Startled, you jolt up to find yourself back on your airship!</desc>
+    <commander id="389" />
+    <!-- Void's Shadow -->
+    <deck>
+      <card id="7030" />
+      <!-- Arctic Ambusher -->
+      <card id="7030" />
+      <!-- Arctic Ambusher -->
+      <card id="7030" />
+      <!-- Arctic Ambusher -->
+      <card id="7057" />
+      <!-- Bill Crasher -->
+      <card id="7057" />
+      <!-- Bill Crasher -->
+      <card id="7057" />
+      <!-- Bill Crasher -->
+      <card id="7171" />
+      <!-- Warpwood Warlock -->
+      <card id="7171" />
+      <!-- Warpwood Warlock -->
+      <card id="7171" />
+      <!-- Warpwood Warlock -->
+      <card id="7110" mastery_level="2" />
+      <!-- Toxin Glider -->
+      <card id="7110" mastery_level="3" />
+      <!-- Toxin Glider -->
+      <card id="7110" mastery_level="4" />
+      <!-- Toxin Glider -->
+      <card id="7247" mastery_level="5" />
+      <!-- Timberglide Striker -->
+      <card id="7247" mastery_level="6" />
+      <!-- Timberglide Striker -->
+      <card id="7247" mastery_level="7" />
+      <!-- Timberglide Striker -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7240</id>
+    <name>A Deep Sleep</name>
+    <energy>24</energy>
+    <desc>Realising you might still be dreaming, you close your eyes again to find yourself back camped in Red Feather Valley. The fading light suggests hours must have passed.</desc>
+    <commander id="305" />
+    <!-- Red Feather Hippogriff -->
+    <deck>
+      <card id="7113" />
+      <!-- Revenge from Above -->
+      <card id="7113" />
+      <!-- Revenge from Above -->
+      <card id="7113" />
+      <!-- Revenge from Above -->
+      <card id="7055" />
+      <!-- Valley Strider -->
+      <card id="7055" />
+      <!-- Valley Strider -->
+      <card id="7055" />
+      <!-- Valley Strider -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="7115" />
+      <!-- Airborne Battalion -->
+      <card id="7287" mastery_level="2" />
+      <!-- Rhipi-Dura Spear -->
+      <card id="7287" mastery_level="3" />
+      <!-- Rhipi-Dura Spear -->
+      <card id="7287" mastery_level="4" />
+      <!-- Rhipi-Dura Spear -->
+      <card id="7298" mastery_level="5" />
+      <!-- Mindtis -->
+      <card id="7298" mastery_level="6" />
+      <!-- Mindtis -->
+      <card id="7298" mastery_level="7" />
+      <!-- Mindtis -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! Are you OK? You've been sleeping a while. Was it something you ate?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>No, it's fine. This is proof the Void is still out there.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7241</id>
+    <name>Make Yourself at Home</name>
+    <energy>24</energy>
+    <desc>It seems you're going to be here in this Valley for a while as your group slowly uncovers the mysteries of the Deep Void.</desc>
+    <commander id="441" />
+    <!-- Memory of Void -->
+    <deck>
+      <card id="5148" />
+      <!-- Gribmalda of Wings -->
+      <card id="5148" />
+      <!-- Gribmalda of Wings -->
+      <card id="5148" />
+      <!-- Gribmalda of Wings -->
+      <card id="5286" />
+      <!-- Eyespot Noble -->
+      <card id="5286" />
+      <!-- Eyespot Noble -->
+      <card id="5286" />
+      <!-- Eyespot Noble -->
+      <card id="5177" />
+      <!-- Thunderbird -->
+      <card id="5177" />
+      <!-- Thunderbird -->
+      <card id="5177" />
+      <!-- Thunderbird -->
+      <card id="5059" mastery_level="2" />
+      <!-- Bemola -->
+      <card id="5059" mastery_level="3" />
+      <!-- Bemola -->
+      <card id="5059" mastery_level="4" />
+      <!-- Bemola -->
+      <card id="5187" mastery_level="5" />
+      <!-- Star Chaser -->
+      <card id="5187" mastery_level="6" />
+      <!-- Star Chaser -->
+      <card id="5187" mastery_level="7" />
+      <!-- Star Chaser -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Well if we're going to be here for the long haul, we better get some food. I hope you don't mind if I get some chicken.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Imma be honest, big bear, I'm beginnin' to doubt if this here place is even real.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Whoa, what do you mean not real?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Verus is right. This might all be a shared dream. Or a vision. Or even a window into the past.</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>
@@ -73860,5 +74533,727 @@
       <card id="7047" mastery_level="7" />
       <!-- Shaman of the Wild -->
     </deck>
+  </mission>
+  <!-- April Fool's Special Event 2024 -->
+  <mission>
+    <id>2057</id>
+    <name>The Truth is Out There</name>
+    <energy>1</energy>
+    <desc>The investigative tusker Karlson believes he's found secret ComDev emails that were leaked to him by an inside source. This April, he's going to tell everyone what's coming up in Spellstone.</desc>
+    <commander id="494" />
+    <!-- General Karlson -->
+    <deck>
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="1626" />
+      <!-- Tusker -->
+      <card id="8028" mastery_level="2" />
+      <!-- Grizzly Bones -->
+      <card id="8028" mastery_level="3" />
+      <!-- Grizzly Bones -->
+      <card id="8028" mastery_level="4" />
+      <!-- Grizzly Bones -->
+      <card id="8028" mastery_level="5" />
+      <!-- Grizzly Bones -->
+      <card id="8028" mastery_level="6" />
+      <!-- Grizzly Bones -->
+      <card id="4081" mastery_level="7" />
+      <!-- General Karlson -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>I also discovered all their story ideas.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>And what they plan to do is make you read the story.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>That's right. Lots of dialog.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Really annoying dialog.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>And then you're going to be tested on it.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Just like in school.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Is this getting annoying yet?</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>No?</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>I bet it is.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Get used to it.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>You're going to have to earn these free rewards.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>OK, last dialog.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>I promise.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>No really.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Fine. I can sense this joke is getting old.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Maybe I'll have more to say next mission...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2058</id>
+    <name>Buff to Freeze!</name>
+    <energy>1</energy>
+    <desc>Freeze All on 0 Delay cards! Clarification on how Freeze targeting really works!</desc>
+    <commander id="442" />
+    <!-- Kensho, the Aeromaster -->
+    <deck>
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8230" />
+      <!-- Wyldwood Panther -->
+      <card id="8128" mastery_level="2" />
+      <!-- Big Leaf Frog -->
+      <card id="8128" mastery_level="3" />
+      <!-- Big Leaf Frog -->
+      <card id="8128" mastery_level="4" />
+      <!-- Big Leaf Frog -->
+      <card id="8128" mastery_level="5" />
+      <!-- Big Leaf Frog -->
+      <card id="8128" mastery_level="6" />
+      <!-- Big Leaf Frog -->
+      <card id="4018" mastery_level="7" />
+      <!-- Kensho, the Aeromaster -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Freeze All? Doesn't affect me then.</text>
+      </line>
+      <line>
+        <commander>decimupgrade</commander>
+        <enemy>1</enemy>
+        <text>Buffs to Barrage!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>OK, I need Invisibility 99!</text>
+      </line>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>0</enemy>
+        <text>I knew it! My Freeze always targets the right card when I'm in the enemy deck.</text>
+      </line>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>0</enemy>
+        <text>And it always targets the tower or an Invisible card when I'm in your deck!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2059</id>
+    <name>New Runes!</name>
+    <energy>1</energy>
+    <desc>New Legendary Runes for Freeze, Dualstrike and Emberhide! Now with extra Health!</desc>
+    <commander id="416" />
+    <!-- Cave Writings -->
+    <deck>
+      <card id="2039" />
+      <!-- Narix, Dragonlord -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8207" />
+      <!-- Luminis Eagle -->
+      <card id="8099" mastery_level="2" />
+      <!-- Prototype Cybot Beta -->
+      <card id="8099" mastery_level="3" />
+      <!-- Prototype Cybot Beta -->
+      <card id="8099" mastery_level="4" />
+      <!-- Prototype Cybot Beta -->
+      <card id="8099" mastery_level="5" />
+      <!-- Prototype Cybot Beta -->
+      <card id="8099" mastery_level="6" />
+      <!-- Prototype Cybot Beta -->
+      <card id="4018" mastery_level="7" />
+      <!-- Kensho, the Aeromaster -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Elemental_Air_Monk_Sage</commander>
+        <enemy>1</enemy>
+        <text>I agree with a Freeze rune!</text>
+      </line>
+      <line>
+        <commander>narix</commander>
+        <enemy>0</enemy>
+        <text>Dualstrike every 1!</text>
+      </line>
+      <line>
+        <commander>narix</commander>
+        <enemy>1</enemy>
+        <text>Dualstrike every 1!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Ahem. Where's my Heartseeker rune?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2060</id>
+    <name>Daze Rework!</name>
+    <energy>1</energy>
+    <desc>Daze will be reworked! Whichever player has the card with the highest Daze value will cause the other player to...</desc>
+    <commander id="221" />
+    <!-- Alpha Wisp -->
+    <deck>
+      <card id="1000" />
+      <!-- Pegasus -->
+      <card id="1001" />
+      <!-- Angelic Knight -->
+      <card id="1002" />
+      <!-- Windstorm Elemental -->
+      <card id="1003" />
+      <!-- Kestrel -->
+      <card id="1004" />
+      <!-- Wind Sprite -->
+      <card id="1005" />
+      <!-- Angelic Brawler -->
+      <card id="1006" />
+      <!-- Soul Wisp -->
+      <card id="1007" />
+      <!-- Fox Trickster -->
+      <card id="1000" />
+      <!-- Pegasus -->
+      <card id="1001" mastery_level="2" />
+      <!-- Angelic Knight -->
+      <card id="1002" mastery_level="3" />
+      <!-- Windstorm Elemental -->
+      <card id="1003" mastery_level="4" />
+      <!-- Kestrel -->
+      <card id="1004" mastery_level="5" />
+      <!-- Wind Sprite -->
+      <card id="1005" mastery_level="6" />
+      <!-- Angelic Brawler -->
+      <card id="1006" mastery_level="7" />
+      <!-- Soul Wisp -->
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>Oops! Something expected happened!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2061</id>
+    <name>Common Get Some!!</name>
+    <energy>1</energy>
+    <desc>HUGE Buffs to Common Cards!! Extra stars in Challenges for using only Commons! Get 138 out of 135 challenge stars!!</desc>
+    <commander id="287" />
+    <!-- Crab Striker -->
+    <deck>
+      <card id="1300" />
+      <!-- Skeleton Warrior -->
+      <card id="1301" />
+      <!-- Flame Spirit -->
+      <card id="1302" />
+      <!-- Phase Imp -->
+      <card id="1303" />
+      <!-- Undead Brute -->
+      <card id="1304" />
+      <!-- Goblin Rogue -->
+      <card id="1305" />
+      <!-- Smoldering Elemental -->
+      <card id="1306" />
+      <!-- Lava Crab -->
+      <card id="1307" />
+      <!-- Horned Rakken -->
+      <card id="1300" />
+      <!-- Skeleton Warrior -->
+      <card id="1301" mastery_level="2" />
+      <!-- Flame Spirit -->
+      <card id="1302" mastery_level="3" />
+      <!-- Phase Imp -->
+      <card id="1303" mastery_level="4" />
+      <!-- Undead Brute -->
+      <card id="1304" mastery_level="5" />
+      <!-- Goblin Rogue -->
+      <card id="1305" mastery_level="6" />
+      <!-- Smoldering Elemental -->
+      <card id="1306" mastery_level="7" />
+      <!-- Lava Crab -->
+    </deck>
+    <speech>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>0</enemy>
+        <text>I'm going to be buffed like Oxylus!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2062</id>
+    <name>New Arena BGE!!</name>
+    <energy>1</energy>
+    <desc>No more +2 delay!! Instead, Deathtouch!! Also no duplicates of any card!!</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="2" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="3" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="4" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="5" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="6" />
+      <!-- Fleetfoot Wolper -->
+      <card id="7118" mastery_level="7" />
+      <!-- Fleetfoot Wolper -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Oh yeah! I love Deathtouch!</text>
+      </line>
+      <line>
+        <commander>steampunk_scarab</commander>
+        <enemy>1</enemy>
+        <text>No duplicates?! How are people going to play spam decks now?!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Doesn't matter for enemies. I've still got 15 Wolpers waiting for you in this node!</text>
+      </line>
+      <line>
+        <commander>bgeboss</commander>
+        <enemy>0</enemy>
+        <text>Sorry, this node is using the Common BGE. We didn't turn Deathtouch on.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Wait... I need to change my deck...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2063</id>
+    <name>Champion Ascension!!</name>
+    <energy>1</energy>
+    <desc>Every other game seems to do this: sacrifice all your Champion Levels for a boost and a chance to repurchase all the stones again!!</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="8242" />
+      <!-- Alyel, Before ComDev -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>My ascended version better take my delay back to 0!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>We're never going to do this though, right?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Right?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2064</id>
+    <name>Guild War Matchmaking!!</name>
+    <energy>1</energy>
+    <desc>Streamlined matchmaking for Guild War!! Top two guilds face each other nine times!! All other guilds fighting for third place!!</desc>
+    <commander id="221" />
+    <!-- Alpha Wisp -->
+    <deck>
+      <card id="1000" />
+      <!-- Pegasus -->
+      <card id="1001" />
+      <!-- Angelic Knight -->
+      <card id="1002" />
+      <!-- Windstorm Elemental -->
+      <card id="1003" />
+      <!-- Kestrel -->
+      <card id="1004" />
+      <!-- Wind Sprite -->
+      <card id="1005" />
+      <!-- Angelic Brawler -->
+      <card id="1006" />
+      <!-- Soul Wisp -->
+      <card id="1007" />
+      <!-- Fox Trickster -->
+      <card id="1000" />
+      <!-- Pegasus -->
+      <card id="1001" mastery_level="2" />
+      <!-- Angelic Knight -->
+      <card id="1002" mastery_level="3" />
+      <!-- Windstorm Elemental -->
+      <card id="1003" mastery_level="4" />
+      <!-- Kestrel -->
+      <card id="1004" mastery_level="5" />
+      <!-- Wind Sprite -->
+      <card id="1005" mastery_level="6" />
+      <!-- Angelic Brawler -->
+      <card id="1006" mastery_level="7" />
+      <!-- Soul Wisp -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>There are rumors that Guild Wars will be replaced altogether by just the Guild War Placements.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Oh and guild sizes being reduced down to 5.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2065</id>
+    <name>Artwork Tweaks!!!</name>
+    <energy>1</energy>
+    <desc>To match the Kongregate website design, all artwork will be slightly off center by about 20 pixels!!!</desc>
+    <commander id="295" />
+    <!-- Thing In The Lake -->
+    <deck>
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8018" />
+      <!-- Doom Tentacle -->
+      <card id="8017" mastery_level="2" />
+      <!-- Doomsday -->
+      <card id="8017" mastery_level="3" />
+      <!-- Doomsday -->
+      <card id="8017" mastery_level="4" />
+      <!-- Doomsday -->
+      <card id="8017" mastery_level="5" />
+      <!-- Doomsday -->
+      <card id="8017" mastery_level="6" />
+      <!-- Doomsday -->
+      <card id="8017" mastery_level="7" />
+      <!-- Doomsday -->
+    </deck>
+    <speech>
+      <line>
+        <commander>void</commander>
+        <enemy>0</enemy>
+        <text>Does this mean my Champion card portrait size is getting fixed in Steam?</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Let's say... maybe?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2066</id>
+    <name>Account Security!!!</name>
+    <energy>1</energy>
+    <desc>All accounts will require full identity confirmation to ensure every player is genuine and unique!!!</desc>
+    <commander id="315" />
+    <!-- Ravaging Canine -->
+    <deck>
+      <card id="1600" />
+      <!-- Woodland Fairy -->
+      <card id="1601" />
+      <!-- Moss Golem -->
+      <card id="1602" />
+      <!-- Dire Wolf -->
+      <card id="1603" />
+      <!-- Mermaid Mage -->
+      <card id="1604" />
+      <!-- Toad Warrior -->
+      <card id="1605" />
+      <!-- Flying Squirrel -->
+      <card id="1606" />
+      <!-- Angler Fish -->
+      <card id="1607" />
+      <!-- Turtle Tamer -->
+      <card id="1600" />
+      <!-- Woodland Fairy -->
+      <card id="1601" mastery_level="2" />
+      <!-- Moss Golem -->
+      <card id="1602" mastery_level="3" />
+      <!-- Dire Wolf -->
+      <card id="1603" mastery_level="4" />
+      <!-- Mermaid Mage -->
+      <card id="1604" mastery_level="5" />
+      <!-- Toad Warrior -->
+      <card id="1605" mastery_level="6" />
+      <!-- Flying Squirrel -->
+      <card id="1606" mastery_level="7" />
+      <!-- Angler Fish -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>For even more security, the next step is to require you to stream the game whilst you play.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2067</id>
+    <name>Spellstone: Idle Game!!!</name>
+    <energy>1</energy>
+    <desc>Full Autoplay! New quality of life setting to automatically find your strongest deck and autoplay all your challenges, events and Arena!!!</desc>
+    <commander id="413" />
+    <!-- Mechanical Giant -->
+    <deck>
+      <card id="5279" />
+      <!-- Autobattler Buckler -->
+      <card id="6279" />
+      <!-- Autobattler Sword -->
+      <card id="5279" />
+      <!-- Autobattler Buckler -->
+      <card id="6279" />
+      <!-- Autobattler Sword -->
+      <card id="5279" />
+      <!-- Autobattler Buckler -->
+      <card id="6279" />
+      <!-- Autobattler Sword -->
+      <card id="5279" />
+      <!-- Autobattler Buckler -->
+      <card id="6279" />
+      <!-- Autobattler Sword -->
+      <card id="5279" />
+      <!-- Autobattler Buckler -->
+      <card id="5073" mastery_level="2" />
+      <!-- Shell Invader -->
+      <card id="5073" mastery_level="3" />
+      <!-- Shell Invader -->
+      <card id="5073" mastery_level="4" />
+      <!-- Shell Invader -->
+      <card id="7152" mastery_level="5" />
+      <!-- Toxite Shellter -->
+      <card id="7152" mastery_level="6" />
+      <!-- Toxite Shellter -->
+      <card id="7152" mastery_level="7" />
+      <!-- Toxite Shellter -->
+    </deck>
+    <speech>
+      <line>
+        <commander>giantMechaBoss</commander>
+        <enemy>0</enemy>
+        <text>Full automation? Cool, so it's almost like you're a bo---</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Don't say that word!</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Besides, the correct word is Mecha.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2068</id>
+    <name>Spellstone 2: Match 3 Boogaloo!!!</name>
+    <energy>1</energy>
+    <desc>A sequel to Spellstone cashing in on the Match 3 craze with the Spellstone simulator as an unlockable mini game!!!1!!!</desc>
+    <commander id="296" />
+    <!-- The Maddest Bomber -->
+    <deck>
+      <card id="2152" />
+      <!-- Bomblet -->
+      <card id="8058" />
+      <!-- Extremely Okay Ice Cube -->
+      <card id="8132" />
+      <!-- Vindi-caterer Karna -->
+      <card id="8059" />
+      <!-- Sleepy Bear -->
+      <card id="8130" />
+      <!-- Lack'thor -->
+      <card id="8142" />
+      <!-- Tanky Chicken -->
+      <card id="8143" />
+      <!-- The Six Million Dollar Bear -->
+      <card id="8139" />
+      <!-- The Hero Previously Known as Lev -->
+      <card id="8140" />
+      <!-- Six Wings Under -->
+      <card id="8143" mastery_level="2" />
+      <!-- The Six Million Dollar Bear -->
+      <card id="2152" mastery_level="3" />
+      <!-- Bomblet -->
+      <card id="8058" mastery_level="4" />
+      <!-- Extremely Okay Ice Cube -->
+      <card id="8132" mastery_level="5" />
+      <!-- Vindi-caterer Karna -->
+      <card id="8059" mastery_level="6" />
+      <!-- Sleepy Bear -->
+      <card id="8130" mastery_level="7" />
+      <!-- Lack'thor -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>OK, I'll admit that my source for all this information probably wasn't very reliable.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>It was probably all made up.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>Like the reasons I have such an odd skill set.</text>
+      </line>
+      <line>
+        <commander>event_061_butterflyelephant</commander>
+        <enemy>0</enemy>
+        <text>And this dialog. I bet you're hoping I won't keep---</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>0</enemy>
+        <text>Error! Too much squawking!</text>
+      </line>
+    </speech>
   </mission>
 </root>

@@ -2785,6 +2785,61 @@ var BATTLEGROUNDS = {
 		"id": "176",
 		"name": "Growth of Wyld"
 	},
+	"177": {
+		"desc": "All Aether gain Armor equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "1"
+			}
+		],
+		"id": "177",
+		"name": "Order of Aether"
+	},
+	"178": {
+		"desc": "All Avians gain Mark equal to 15% base health. 2-4D Avians also gain Invisibility equal to Delay minus 1.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "mark",
+				"mult": 0.15,
+				"y": "10"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 1,
+				"y": "10"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 2,
+				"y": "10"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 3,
+				"y": "10"
+			}
+		],
+		"id": "178",
+		"name": "Invisible Mark"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -3932,27 +3987,27 @@ var BATTLEGROUNDS = {
 		"name": "Common Revenge"
 	},
 	"547": {
-		"desc": "All Common cards have their Health and all Skills multiplied by 5! In addition, they gain Barrage equal to 5 times their base Attack!",
+		"desc": "All Common cards have their Health and all Skills multiplied by 6! In addition, they gain Barrage equal to 6 times their base Attack!",
 		"effect": [
 			{
 				"all": "1",
 				"base": "attack",
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 4,
+				"mult": 5,
 				"rarity": 1
 			},
 			{
 				"base": "health",
 				"effect_type": "scale_health",
-				"mult": 4,
+				"mult": 5,
 				"rarity": 1
 			},
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "armored",
 				"z": "1"
 			},
@@ -3960,7 +4015,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "counter",
 				"z": "1"
 			},
@@ -3968,7 +4023,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "evade",
 				"z": "1"
 			},
@@ -3976,7 +4031,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "leech",
 				"z": "1"
 			},
@@ -3984,7 +4039,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "pierce",
 				"z": "1"
 			},
@@ -3992,7 +4047,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "burn",
 				"z": "1"
 			},
@@ -4000,7 +4055,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "poison",
 				"z": "1"
 			},
@@ -4008,7 +4063,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "heal",
 				"z": "1"
 			},
@@ -4016,7 +4071,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "strike",
 				"z": "1"
 			},
@@ -4024,7 +4079,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "weaken",
 				"z": "1"
 			},
@@ -4032,7 +4087,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "protect",
 				"z": "1"
 			},
@@ -4040,7 +4095,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "rally",
 				"z": "1"
 			},
@@ -4048,7 +4103,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "berserk",
 				"z": "1"
 			},
@@ -4056,7 +4111,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "absorb",
 				"z": "1"
 			},
@@ -4064,7 +4119,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
-				"mult": 4,
+				"mult": 5,
 				"s": "counterburn",
 				"z": "1"
 			}

@@ -3382,65 +3382,84 @@
   </achievement>
   <!-- END Salvage Quests -->
   <!-- 900: Currency Quests START -->
-  <!--<achievement>
-		<id>901</id>
-		<type>9</type>
-		<order>35</order>
-		<name>Gold Hoarder</name>
-		<desc>Have 250,000 Gold to hand in your Treasury.</desc>
-		<level_req>40</level_req>
-		<req>
-			<total_currency>250000</total_currency>
-		</req>
-		<reward>
-			<wb>100</wb>
-		</reward>
-	</achievement>
-
-	<achievement>
-		<id>902</id>
-		<type>9</type>
-		<order>721</order>
-		<name>Treasury II</name>
-		<desc>Collect 250,000 Lifetime Gold.</desc>
-		<achievement_req>901</achievement_req>
-		<req>
-			<total_currency>250000</total_currency>
-		</req>
-		<reward>
-			<sp>40</sp>
-		</reward>
-	</achievement>
-
-	<achievement>
-		<id>903</id>
-		<type>9</type>
-		<order>722</order>
-		<name>Treasury III</name>
-		<desc>Collect 500,000 Lifetime Gold.</desc>
-		<achievement_req>902</achievement_req>
-		<req>
-			<total_currency>500000</total_currency>
-		</req>
-		<reward>
-			<sp>60</sp>
-		</reward>
-	</achievement>
-
-	<achievement>
-		<id>904</id>
-		<type>9</type>
-		<order>723</order>
-		<name>Treasury IV</name>
-		<desc>Collect 1,000,000 Lifetime Gold.</desc>
-		<achievement_req>903</achievement_req>
-		<req>
-			<total_currency>1000000</total_currency>
-		</req>
-		<reward>
-			<pack>1000</pack>
-		</reward>
-	</achievement>-->
+  <achievement>
+    <id>901</id>
+    <type>9</type>
+    <order>35</order>
+    <name>Gold Hoarder</name>
+    <desc>Have 50,000 Gold to hand in your Treasury.</desc>
+    <level_req>30</level_req>
+    <req>
+      <total_currency>50000</total_currency>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>902</id>
+    <type>9</type>
+    <order>35</order>
+    <name>Gold Hoarder II</name>
+    <desc>Have 100,000 Gold to hand in your Treasury.</desc>
+    <achievement_collected_req>901</achievement_collected_req>
+    <req>
+      <total_currency>100000</total_currency>
+    </req>
+    <reward>
+      <wb>60</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>903</id>
+    <type>9</type>
+    <order>35</order>
+    <name>Gold Hoarder III</name>
+    <desc>Have 200,000 Gold to hand in your Treasury.</desc>
+    <achievement_collected_req>902</achievement_collected_req>
+    <req>
+      <total_currency>200000</total_currency>
+    </req>
+    <reward>
+      <item id="2002" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>904</id>
+    <type>9</type>
+    <order>35</order>
+    <name>Gold Hoarder IV</name>
+    <desc>Have 400,000 Gold to hand in your Treasury.</desc>
+    <achievement_collected_req>903</achievement_collected_req>
+    <req>
+      <total_currency>400000</total_currency>
+    </req>
+    <reward>
+      <item id="8030" number="1" />
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>raven</commander>
+        <text>SQUAK! What is this book?</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <text>Looks like some sort of reverse alchemical instruction manual.</text>
+      </line>
+      <line>
+        <commander>goblinmerchant</commander>
+        <text>There appear to be recipes for turning the magical items we found on our expeditions into Universal Extract.</text>
+      </line>
+      <line>
+        <commander>goblinmerchant</commander>
+        <text>The Universal Extract can be used to turn gold into Spellstones!</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <text>SQUAK! You should check out your list of recipes in the crafting table!</text>
+      </line>
+    </speech_complete>
+  </achievement>
   <!-- END Currency Quests  -->
   <!-- 1000: Kongregate Quests START -->
   <achievement>
@@ -3499,6 +3518,81 @@
     <achievement_collected_req>1200</achievement_collected_req>
     <req>
       <pvp_wins>50000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1202</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CI</name>
+    <desc>Collect 52,000 Bounties.</desc>
+    <achievement_collected_req>1201</achievement_collected_req>
+    <req>
+      <pvp_wins>52000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1203</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CII</name>
+    <desc>Collect 54,000 Bounties.</desc>
+    <achievement_collected_req>1202</achievement_collected_req>
+    <req>
+      <pvp_wins>54000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1204</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CIII</name>
+    <desc>Collect 56,000 Bounties.</desc>
+    <achievement_collected_req>1203</achievement_collected_req>
+    <req>
+      <pvp_wins>56000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1205</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CIV</name>
+    <desc>Collect 58,000 Bounties.</desc>
+    <achievement_collected_req>1204</achievement_collected_req>
+    <req>
+      <pvp_wins>58000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1206</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CV</name>
+    <desc>Collect 60,000 Bounties.</desc>
+    <achievement_collected_req>1205</achievement_collected_req>
+    <req>
+      <pvp_wins>60000</pvp_wins>
     </req>
     <reward>
       <wb>120</wb>
@@ -22034,6 +22128,64 @@
       <!-- Random Reward Legendary -->
     </reward>
   </achievement>
+  <!-- April Fool's Special Event 2024 -->
+  <achievement>
+    <id>3973</id>
+    <type>2</type>
+    <order>603</order>
+    <name>April Fool's Event</name>
+    <desc>Complete the Coming Soon! campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <icon>aprilfoolsMissionNode</icon>
+    <icon_bundle>52</icon_bundle>
+    <mission_req>2060</mission_req>
+    <req>
+      <campaign>5009</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3974</id>
+    <type>2</type>
+    <order>603</order>
+    <name>April Fool's Event</name>
+    <desc>Complete the Coming Very Soon!! campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <icon>aprilfoolsMissionNode</icon>
+    <icon_bundle>52</icon_bundle>
+    <mission_req>2064</mission_req>
+    <req>
+      <campaign>5010</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3975</id>
+    <type>2</type>
+    <order>603</order>
+    <name>April Fool's Event</name>
+    <desc>Complete the Coming Real Soon (TM) Now!!! campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <icon>aprilfoolsMissionNode</icon>
+    <icon_bundle>52</icon_bundle>
+    <mission_req>2068</mission_req>
+    <req>
+      <campaign>5011</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -23993,6 +24145,202 @@
     <locked_start_time>1710435600</locked_start_time>
     <req>
       <campaign>1368</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 114: ComDev Avian - Red Feather Valley -->
+  <!-- E114 Node 1: Heart of Gale -->
+  <achievement>
+    <id>4521</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Heart of Gale campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7235</mission_req>
+    <locked_start_time>1711645200</locked_start_time>
+    <req>
+      <campaign>1369</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7110" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4522</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Heart of Gale campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4521</achievement_req>
+    <locked_start_time>1711645200</locked_start_time>
+    <req>
+      <campaign>1369</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4523</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Heart of Gale campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4522</achievement_req>
+    <locked_start_time>1711645200</locked_start_time>
+    <req>
+      <campaign>1369</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4524</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Heart of Gale campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4523</achievement_req>
+    <locked_start_time>1711645200</locked_start_time>
+    <req>
+      <campaign>1369</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4525</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Heart of Gale campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4524</achievement_req>
+    <locked_start_time>1711645200</locked_start_time>
+    <req>
+      <campaign>1369</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 114: ComDev Avian - Red Feather Valley -->
+  <!-- E114 Node 2: A New Order -->
+  <achievement>
+    <id>4526</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the A New Order campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7241</mission_req>
+    <locked_start_time>1712854800</locked_start_time>
+    <req>
+      <campaign>1370</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7110" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4527</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the A New Order campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4526</achievement_req>
+    <locked_start_time>1712854800</locked_start_time>
+    <req>
+      <campaign>1370</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4528</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the A New Order campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4527</achievement_req>
+    <locked_start_time>1712854800</locked_start_time>
+    <req>
+      <campaign>1370</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4529</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the A New Order campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4528</achievement_req>
+    <locked_start_time>1712854800</locked_start_time>
+    <req>
+      <campaign>1370</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4530</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the A New Order campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4529</achievement_req>
+    <locked_start_time>1712854800</locked_start_time>
+    <req>
+      <campaign>1370</campaign>
       <level>6</level>
     </req>
     <reward>

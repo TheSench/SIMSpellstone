@@ -1,28 +1,28 @@
 <root>
   <!--   1-100  for Market
-		 101-1000 for Bundle Packages
-		1001-3000 for Boxes & Chance Packs
-		3001-4000 for Special Market
-		4001-5000 for Emporium & Arena
-		5001-6000 for Shard Bundle Packages
-		6001-7000 for Reward Boxes
+	101-1000 for Bundle Packages
+	1001-3000 for Boxes & Chance Packs
+	3001-4000 for Special Market
+	4001-5000 for Emporium & Arena
+	5001-6000 for Shard Bundle Packages
+	6001-7000 for Reward Boxes
 
-		Rarity Colors
-			^c8E5F		Rare
-			^c0DFF		Epic
-			^cE7FF		Legendary
-			^cF90F		Mythic
-			^cCC1F		Items
-			^c	takes hex [RGBA]
-			^C	takes double hex [RRGGBBAA]
-			^g	takes two hex back to back to make gradient [RGBARGBA]
-			^G	takes two double hex back to back to make gradient [RRGGBBAARRGGBBAA]
+	Rarity Colors
+	^c8E5F		Rare
+	^c0DFF		Epic
+	^cE7FF		Legendary
+	^cF90F		Mythic
+	^cCC1F		Items
+	^c	takes hex [RGBA]
+	^C	takes double hex [RRGGBBAA]
+	^g	takes two hex back to back to make gradient [RGBARGBA]
+	^G	takes two double hex back to back to make gradient [RRGGBBAARRGGBBAA]
 
-		<card_limit>1</card_limit>		Prevents this from being opened if it would exceed card cap.
-	 	<drop_item_id>					ID for
+	<card_limit>1</card_limit>		Prevents this from being opened if it would exceed card cap.
+	<drop_item_id>					ID for
 
-	 	Market Items get NO BONUS to <priority>
-	 -->
+		Market Items get NO BONUS to <priority>
+	-->
   <!-- Basic Pack -->
   <store_item>
     <id>1</id>
@@ -1268,20 +1268,6 @@
       <item id="2524" quantity="150" weight="0.1" />
     </item_pack>
   </store_item>
-  <!--	<store_item>
-		<id>97</id>
-		<name>Universal Solvent</name>
-		<category>2</category>
-		<desc>Craft with Expedition Items to get a Double ^cE7FFLegendary ^cFFFFReward Pack!</desc>
-		<show_desc>1</show_desc>
-		<priority>51</priority>
-		<sc_cost>10000</sc_cost>
-		<asset_prefab>rune_bag</asset_prefab>
-		<icon>rubedo_vapor</icon>
-		<bundle>279</bundle>
-		<item_req>8030</item_req>
-		<item id="4002" quantity="1"/>
-	</store_item>-->
   <store_item>
     <id>98</id>
     <name>Random Reward Champion Stones</name>
@@ -10986,6 +10972,122 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="107631" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5374</id>
+    <name>Fowlmaster Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFFowlmaster^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_041_banner_goblinbirdmaster</background_prefab>
+    <bundle>136</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5209" display_card_id="5209" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5375</id>
+    <name>Cute Chef Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFCute Chef^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_102_eyecook_banner</background_prefab>
+    <bundle>271</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7311" display_card_id="7311" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5376</id>
+    <name>Bennu Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBennu^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_021_banner_chance_w3</background_prefab>
+    <bundle>84</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5111" display_card_id="5111" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5377</id>
+    <name>Squire Gorger Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFSquire Gorger^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_011_banner_chance_w2</background_prefab>
+    <bundle>59</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6053" display_card_id="6053" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5378</id>
+    <name>Saucy Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFSaucy, Lady of the Cauldron^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_079_turkeywitch_championpack</asset_prefab>
+    <background_prefab>event_079_turkeywitch_banner</background_prefab>
+    <bundle>225</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107621" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5379</id>
+    <name>Altos Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAltos, the Implacable^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_82_eternalguardian_championpack</asset_prefab>
+    <background_prefab>event_82_eternalguardian_banner</background_prefab>
+    <bundle>231</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105624" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>
