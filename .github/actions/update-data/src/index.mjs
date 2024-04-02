@@ -7,6 +7,6 @@ try {
   await updateData();
   await getXmlChanges();
 } catch (error) {
-  console.error(error.message);
+  console.error(error);
   core.setFailed(error.message);
 }
