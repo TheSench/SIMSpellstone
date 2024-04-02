@@ -8429,19 +8429,6 @@ function xmlRootsToJson(xml, options) {
   return collection;
 }
 
-function xmlCollectionToJson(xml, options, propName) {
-  var collection = [];
-  xml.getChildren().forEach(function (element) {
-    if (!options.filteredProps[element.getName()]) {
-      collection.push(xmlToJson(element, options, propName));
-    }
-  });
-
-  return convertedValue(xml.getName(),
-    collection,
-    options);
-}
-
 function xmlToJson([name, element], options, propName) {
   var value = xmlToJsonInner([name, element], options, propName);
   return convertedValue(name, value, options);
@@ -8534,6 +8521,7 @@ async function getXmlFromSynapse(filename) {
       });
 
       response.on('end', () => {
+        console.log(`Retrieved ${filename} (${data.length} bytes)`);
         const xml = cjs(data, {
           collapseContent: true,
           indentation: '  ',
