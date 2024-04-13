@@ -51,8 +51,8 @@ if (function (type) {
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
             storageAPI.onUpdateDecks = function (savedDecks) {
-                cachedOnUpdate();
                 storageAPI.setField(SaveFields.decks, "savedDecks", savedDecks);
+                cachedOnUpdate();
             };
 
             var cachedSetShowTutorial = storageAPI.setShowTutorial;
