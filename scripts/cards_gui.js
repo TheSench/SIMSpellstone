@@ -614,7 +614,7 @@ var CARD_GUI = {};
         3000: "Premium",
         4000: "BoxOnly",
         5000: "Champion",
-        5100: "Champion",
+        5100: "PremiumChampion",
         5200: "Champion",
         9999: "StoryElements"
     };

@@ -1986,7 +1986,7 @@ var factions = {
         11: 'Goblin',
         12: 'Seafolk',
         13: 'Insect',
-        14: 'Bear',
+        14: 'Beast',
         15: 'Token',
         16: 'Mecha',
         17: 'Knight',
@@ -2008,7 +2008,7 @@ var factions = {
         Goblin: 11,
         Seafolk: 12,
         Insect: 13,
-        Bear: 14,
+        Beast: 14,
         Token: 15,
         Mecha: 16,
         Knight: 17,
@@ -6093,8 +6093,8 @@ if (function (type) {
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
             storageAPI.onUpdateDecks = function (savedDecks) {
-                cachedOnUpdate();
                 storageAPI.setField(SaveFields.decks, "savedDecks", savedDecks);
+                cachedOnUpdate();
             };
 
             var cachedSetShowTutorial = storageAPI.setShowTutorial;
@@ -7780,7 +7780,7 @@ var CARD_GUI = {};
         3000: "Premium",
         4000: "BoxOnly",
         5000: "Champion",
-        5100: "Champion",
+        5100: "PremiumChampion",
         5200: "Champion",
         9999: "StoryElements"
     };
