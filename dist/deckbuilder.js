@@ -1986,7 +1986,7 @@ var factions = {
         11: 'Goblin',
         12: 'Seafolk',
         13: 'Insect',
-        14: 'Bear',
+        14: 'Beast',
         15: 'Token',
         16: 'Mecha',
         17: 'Knight',
@@ -2008,7 +2008,7 @@ var factions = {
         Goblin: 11,
         Seafolk: 12,
         Insect: 13,
-        Bear: 14,
+        Beast: 14,
         Token: 15,
         Mecha: 16,
         Knight: 17,
@@ -2632,7 +2632,7 @@ var CARD_GUI = {};
         3000: "Premium",
         4000: "BoxOnly",
         5000: "Champion",
-        5100: "Champion",
+        5100: "PremiumChampion",
         5200: "Champion",
         9999: "StoryElements"
     };
@@ -4305,6 +4305,7 @@ var showAdvancedFilters = function (skill) {
 		case 'counter':
 		case 'counterburn':
 		case 'counterpoison':
+		case 'daze':
 		case 'evade':
 		case 'evadebarrier':
 		case 'frost':
@@ -4321,6 +4322,8 @@ var showAdvancedFilters = function (skill) {
 		case 'stasis':
 		case 'taunt':
 		case 'valor':
+		case 'vampirism':
+		case 'venom':
 			$("div#amount").show();
 			break;
 
@@ -4389,6 +4392,7 @@ var showAdvancedFilters = function (skill) {
 			$("div#amount").show();
 			$("label[for=all]").show();
 			$("div#faction").show();
+			break;
 		default:
 			return null;
 	}
@@ -5059,8 +5063,8 @@ if (function (type) {
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
             storageAPI.onUpdateDecks = function (savedDecks) {
-                cachedOnUpdate();
                 storageAPI.setField(SaveFields.decks, "savedDecks", savedDecks);
+                cachedOnUpdate();
             };
 
             var cachedSetShowTutorial = storageAPI.setShowTutorial;
@@ -5390,10 +5394,15 @@ if (function (type) {
 
     var setNames = {
       1000: "Basic",
+      1100: "Legacy",
       7000: "Basic",
       2000: "Reward",
+      2100: "Reward",
       3000: "Premium",
       4000: "BoxOnly",
+      5000: "Champion",
+      5100: "PremiumChampion",
+      5200: "Champion",
       9999: "StoryElements"
     };
     $scope.getSetIcon = function () {
@@ -5472,7 +5481,7 @@ if (function (type) {
       'berserk',
       'burn',
       //'burn2',
-      'cleanse',
+      //'cleanse',
       'confuse',
       'corrosive',
       'counter',
@@ -5491,7 +5500,7 @@ if (function (type) {
       'fury',
       'heal',
       'heartseeker',
-      'ignite',
+      //'ignite',
       'imbue',
       //'intensify',
       'invigorate',
@@ -5499,7 +5508,7 @@ if (function (type) {
       'leech',
       'legion',
       //'mark',
-      'magicfield',
+      //'magicfield',
       'nullify',
       'pierce',
       'poison',
@@ -5519,7 +5528,8 @@ if (function (type) {
       'strike',
       'taunt',
       'valor',
-      //'venom',
+      'vampirism',
+      'venom',
       'weaken',
       'weakenself'
     ].sort(function (idA, idB) {

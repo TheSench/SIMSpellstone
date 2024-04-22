@@ -17,7 +17,7 @@
     <script src="lib/chartist/chartist-plugin-tooltip.min.js?24e510baa29a8430"></script>
     
     <script src="dist/data.min.js"></script>
-    <script src="dist/deckbuilder.min.js?81d290579a3bb373"></script>
+    <script src="dist/deckbuilder.min.js?c877f2cd1c286876"></script>
 </head>
 <body onload="initDeckBuilder()" ng-controller="DeckBuilderCtrl">
     <header style="display:none" id="header"></header>
@@ -91,12 +91,13 @@
                     <fieldset>
                         <span>Set:</span>
                         <input type="image" name="set" data-filter="1000,7000" title="Basic" src="res/cardAssets/Basic.png" />
-                        <input type="image" name="set" data-filter="1100" title="Legacy" src="res/cardAssets/Legacy.png" />
+                        <!-- <input type="image" name="set" data-filter="1100" title="Legacy" src="res/cardAssets/Legacy.png" /> -->
                         <input type="image" name="set" data-filter="2000,2100" title="Reward" src="res/cardAssets/Reward.png" />
                         <input type="image" name="set" data-filter="3000" title="Premium" src="res/cardAssets/Premium.png" />
-                        <input type="image" name="set" data-filter="4000" title="Chance" src="res/cardAssets/BoxOnly.png" />
-                        <input type="image" name="set" data-filter="5000,5100,5200" title="Champion" src="res/cardAssets/Champion.png" />
-                        <input type="image" name="set" data-filter="8000" title="Fortress" src="res/factions/Tower.png" />
+                        <!-- <input type="image" name="set" data-filter="4000" title="Chance" src="res/cardAssets/BoxOnly.png" /> -->
+                        <input type="image" name="set" data-filter="5000,5200" title="Champion" src="res/cardAssets/Champion.png" />
+                        <input type="image" name="set" data-filter="5100" title="Premium Champion" src="res/cardAssets/PremiumChampion.png" />
+                        <!-- <input type="image" name="set" data-filter="8000" title="Fortress" src="res/factions/Tower.png" /> -->
                         <input type="image" name="set" data-filter="9999" title="Story Elements" src="res/cardAssets/StoryElements.png" />
                     </fieldset>
                     <fieldset>
@@ -118,14 +119,15 @@
                         <span>Tribe:</span>
                         <input type="image" name="subfaction" data-filter="Angel" title="Angel" src="res/factions/Angel.png" />
                         <input type="image" name="subfaction" data-filter="Avian" title="Avian" src="res/factions/Avian.png" />
+                        <input type="image" name="subfaction" data-filter="Beast" title="Beast" src="res/factions/Beast.png" />
                         <input type="image" name="subfaction" data-filter="Dragon" title="Dragon" src="res/factions/Dragon.png" />
                         <input type="image" name="subfaction" data-filter="Elemental" title="Elemental" src="res/factions/Elemental.png" />
                         <input type="image" name="subfaction" data-filter="Frog" title="Frog" src="res/factions/Frog.png" />
-                        <input type="image" name="subfaction" data-filter="Undead" title="Undead" src="res/factions/Undead.png" />
                         <input type="image" name="subfaction" data-filter="Goblin" title="Goblin" src="res/factions/Goblin.png" />
-                        <input type="image" name="subfaction" data-filter="Seafolk" title="Seafolk" src="res/factions/Seafolk.png" />
                         <input type="image" name="subfaction" data-filter="Insect" title="Insect" src="res/factions/Insect.png" />
                         <input type="image" name="subfaction" data-filter="Mecha" title="Mecha" src="res/factions/Mecha.png" />
+                        <input type="image" name="subfaction" data-filter="Seafolk" title="Seafolk" src="res/factions/Seafolk.png" />
+                        <input type="image" name="subfaction" data-filter="Undead" title="Undead" src="res/factions/Undead.png" />
                         <input type="image" name="subfaction" data-filter="Towers/Trap" title="Towers/Traps" src="res/factions/Tower.png" />
                         <input type="image" name="subfaction" data-filter="None" title="None" src="res/factions/Factionless.png" />
                         <input type="image" id="dualfaction" title="Dual-Faction" src="res/factions/DualFaction.png" />
@@ -261,9 +263,14 @@
                             <option value="Wyld">Wyld</option>
                             <option value="Angel">Angel</option>
                             <option value="Avian">Avian</option>
+                            <option value="Beast">Beast</option>
                             <option value="Dragon">Dragon</option>
                             <option value="Elemental">Elemental</option>
                             <option value="Frog">Frog</option>
+                            <option value="Goblin">Goblin</option>
+                            <option value="Insect">Insect</option>
+                            <option value="Mecha">Mecha</option>
+                            <option value="Seafolk">Seafolk</option>
                             <option value="Undead">Undead</option>
                         </select>
                     </div>
@@ -273,18 +280,20 @@
                         <select name="skill" id="skill" class="ui-widget-content ui-corner-all">
                             <option value=""></option>
                             <option value="armored">Armor</option>
-                            <option value="payback">Backlash</option>
+                            <option value="backlash">Backlash</option>
+                            <option value="barrage">Barrage</option>
                             <option value="protect">Barrier</option>
                             <option value="berserk">Berserk</option>
                             <option value="strike">Bolt</option>
+                            <option value="confuse">Confuse</option>
                             <option value="corrosive">Corrosive</option>
                             <option value="daze">Daze</option>
-                            <option value="dualstrike">Dualstrike</option>
+                            <option value="flurry">Dualstrike</option>
                             <option value="counterburn">Emberhide</option>
                             <option value="rally">Empower</option>
                             <option value="enrage">Enrage</option>
                             <option value="fervor">Fervor</option>
-                            <option value="freeze">Freeze</option>
+                            <option value="jam">Freeze</option>
                             <option value="frost">Frostbreath</option>
                             <option value="heal">Heal</option>
                             <option value="enfeeble">Hex</option>
@@ -294,15 +303,19 @@
                             <option value="pierce">Pierce</option>
                             <option value="poison">Poison</option>
                             <option value="poisonstrike">Poisonbolt</option>
+                            <option value="counterpoison">Poisonhide</option>
+                            <option value="regenerate">Regenerate</option>
                             <option value="burn">Scorch</option>
                             <option value="stasis">Shroud</option>
                             <option value="silence">Silence</option>
                             <option value="leech">Siphon</option>
-                            <option value="strike">Taunt</option>
+                            <option value="taunt">Taunt</option>
+                            <option value="valor">Valor</option>
+                            <option value="vampirism">Vampirism</option>
                             <option value="counter">Vengeance</option>
+                            <option value="venom">Venom</option>
                             <option value="absorb">Ward</option>
                             <option value="weaken">Weaken</option>
-                            <option value="valor">Valor</option>
                         </select>
                     </div>
 
