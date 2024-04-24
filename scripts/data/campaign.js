@@ -101,14 +101,6 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"26": {
-		"id": "26",
-		"name": "World's Center"
-	},
-	"27": {
-		"id": "27",
-		"name": "Return to Elaria"
-	},
 	"36": {
 		"id": "36",
 		"name": "Red Feather Valley"
@@ -6548,7 +6540,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1367",
 		"items": {
-			"3107": 1.7
+			"3107": 0.85
 		},
 		"location_id": "27",
 		"missions": [
@@ -6565,7 +6557,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1368",
 		"items": {
-			"3107": 1.8
+			"3107": 0.9
 		},
 		"location_id": "27",
 		"missions": [
@@ -6579,7 +6571,7 @@ var CAMPAIGNS = {
 		"name": "The Entropy of Victory"
 	},
 	"1369": {
-		"battleground_id": "2120",
+		"battleground_id": "2123",
 		"id": "1369",
 		"items": {
 			"2524": 0.2,
@@ -6597,7 +6589,7 @@ var CAMPAIGNS = {
 		"name": "Heart of Gale"
 	},
 	"1370": {
-		"battleground_id": "2120",
+		"battleground_id": "2123",
 		"id": "1370",
 		"items": {
 			"2524": 0.2,
@@ -6613,6 +6605,42 @@ var CAMPAIGNS = {
 			"7241"
 		],
 		"name": "A New Order"
+	},
+	"1371": {
+		"battleground_id": "2123",
+		"id": "1371",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7242",
+			"7243",
+			"7244",
+			"7245",
+			"7246",
+			"7247"
+		],
+		"name": "Artificial Reality"
+	},
+	"1372": {
+		"battleground_id": "2123",
+		"id": "1372",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7248",
+			"7249",
+			"7250",
+			"7251",
+			"7252",
+			"7253"
+		],
+		"name": "Creeping Doubts"
 	},
 	"3000": {
 		"id": "3000",
@@ -155626,5 +155654,725 @@ var MISSIONS = {
 		],
 		"id": "7241",
 		"name": "Make Yourself at Home"
+	},
+	"7242": {
+		"commander": {
+			"id": "220"
+		},
+		"deck": [
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1338"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1338"
+			},
+			{
+				"id": "1033"
+			},
+			{
+				"id": "1037"
+			},
+			{
+				"id": "1338"
+			},
+			{
+				"id": "1033",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1037",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1338",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1033",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1037",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1338",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7242",
+		"name": "Deep Mistrust"
+	},
+	"7243": {
+		"commander": {
+			"id": "285"
+		},
+		"deck": [
+			{
+				"id": "2192"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "7286"
+			},
+			{
+				"id": "2192"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "7286"
+			},
+			{
+				"id": "2192"
+			},
+			{
+				"id": "6248"
+			},
+			{
+				"id": "7286"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6248",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7286",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2192",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6248",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7286",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7243",
+		"name": "Suspicious Minds"
+	},
+	"7244": {
+		"commander": {
+			"id": "286"
+		},
+		"deck": [
+			{
+				"id": "7161"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2241"
+			},
+			{
+				"id": "7161"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2241"
+			},
+			{
+				"id": "7161"
+			},
+			{
+				"id": "2106"
+			},
+			{
+				"id": "2241"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2241",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7161",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2106",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2241",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7244",
+		"name": "A Reassuring Look"
+	},
+	"7245": {
+		"commander": {
+			"id": "386"
+		},
+		"deck": [
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2256"
+			},
+			{
+				"id": "2240"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2256"
+			},
+			{
+				"id": "2240"
+			},
+			{
+				"id": "2163"
+			},
+			{
+				"id": "2256"
+			},
+			{
+				"id": "2240"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2256",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2240",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2163",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2256",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2240",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7245",
+		"name": "Tomorrow is Another Day"
+	},
+	"7246": {
+		"commander": {
+			"id": "369"
+		},
+		"deck": [
+			{
+				"id": "1345"
+			},
+			{
+				"id": "2117"
+			},
+			{
+				"id": "7247"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "2117"
+			},
+			{
+				"id": "7247"
+			},
+			{
+				"id": "1345"
+			},
+			{
+				"id": "2117"
+			},
+			{
+				"id": "7247"
+			},
+			{
+				"id": "1345",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2117",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7247",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1345",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2117",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7247",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7246",
+		"name": "Sudden Awakening"
+	},
+	"7247": {
+		"commander": {
+			"id": "369"
+		},
+		"deck": [
+			{
+				"id": "5195"
+			},
+			{
+				"id": "6170"
+			},
+			{
+				"id": "6246"
+			},
+			{
+				"id": "5195"
+			},
+			{
+				"id": "6170"
+			},
+			{
+				"id": "6246"
+			},
+			{
+				"id": "5195"
+			},
+			{
+				"id": "6170"
+			},
+			{
+				"id": "6246"
+			},
+			{
+				"id": "5195",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6170",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6246",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5195",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6170",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6246",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7247",
+		"name": "Gone Like a Flash"
+	},
+	"7248": {
+		"commander": {
+			"id": "369"
+		},
+		"deck": [
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "7312"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "7312"
+			},
+			{
+				"id": "6295"
+			},
+			{
+				"id": "5142"
+			},
+			{
+				"id": "7312"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7312",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6295",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5142",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7312",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7248",
+		"name": "Steadfast Recall"
+	},
+	"7249": {
+		"commander": {
+			"id": "369"
+		},
+		"deck": [
+			{
+				"id": "5042"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "7218"
+			},
+			{
+				"id": "5042"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "7218"
+			},
+			{
+				"id": "5042"
+			},
+			{
+				"id": "6214"
+			},
+			{
+				"id": "7218"
+			},
+			{
+				"id": "5042",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6214",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7218",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5042",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6214",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7218",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7249",
+		"name": "Touching the Void"
+	},
+	"7250": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "5247"
+			},
+			{
+				"id": "5306"
+			},
+			{
+				"id": "5079"
+			},
+			{
+				"id": "5247"
+			},
+			{
+				"id": "5306"
+			},
+			{
+				"id": "5079"
+			},
+			{
+				"id": "5247"
+			},
+			{
+				"id": "5306"
+			},
+			{
+				"id": "5079"
+			},
+			{
+				"id": "5247",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5306",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5079",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5247",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5306",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5079",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7250",
+		"name": "An Old Trick of the Mind"
+	},
+	"7251": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "6210"
+			},
+			{
+				"id": "6178"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6178",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6013",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6210",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6178",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6013",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7251",
+		"name": "Deep Dive into the Void"
+	},
+	"7252": {
+		"commander": {
+			"id": "446"
+		},
+		"deck": [
+			{
+				"id": "7248"
+			},
+			{
+				"id": "7166"
+			},
+			{
+				"id": "7305"
+			},
+			{
+				"id": "7248"
+			},
+			{
+				"id": "7166"
+			},
+			{
+				"id": "7305"
+			},
+			{
+				"id": "7248"
+			},
+			{
+				"id": "7166"
+			},
+			{
+				"id": "7305"
+			},
+			{
+				"id": "7248",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7166",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7305",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7248",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7166",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7305",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7252",
+		"name": "Power Imbalance"
+	},
+	"7253": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "5219"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5219"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5219"
+			},
+			{
+				"id": "6288"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5219",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5219",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6288",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7253",
+		"name": "More Suspicious Minds"
 	}
 };

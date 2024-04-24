@@ -43923,7 +43923,7 @@
     <id>6397</id>
     <name>Mission: Impossible</name>
     <energy>2</energy>
-    <desc>The BGE Conflux wrote this: &quot;Don't play this mission! It is impossible to beat! Just retreat and play a normal node. Don't you need to beat Atlas or something?&quot;</desc>
+    <desc>The BGE Conflux wrote this: "Don't play this mission! It is impossible to beat! Just retreat and play a normal node. Don't you need to beat Atlas or something?"</desc>
     <commander id="210" />
     <deck>
       <card id="1306" />
@@ -51631,7 +51631,7 @@
       <line>
         <commander>obyto14</commander>
         <enemy>1</enemy>
-        <text>So now our plan is to just redo what we did last year, but adding some questionable &quot;new&quot; content!</text>
+        <text>So now our plan is to just redo what we did last year, but adding some questionable "new" content!</text>
       </line>
       <line>
         <commander>obyto14</commander>
@@ -51729,7 +51729,7 @@
     <id>6613</id>
     <name>Mission: Impossible</name>
     <energy>2</energy>
-    <desc>The BGE Conflux wrote this: &quot;Don't play this mission! It is impossible to beat! Just retreat and play a normal node. Don't you need to beat Atlas or something?&quot;</desc>
+    <desc>The BGE Conflux wrote this: "Don't play this mission! It is impossible to beat! Just retreat and play a normal node. Don't you need to beat Atlas or something?"</desc>
     <commander id="210" />
     <deck>
       <card id="1306" />
@@ -55530,7 +55530,7 @@
     <id>6743</id>
     <name>Meet the Froggsters</name>
     <energy>18</energy>
-    <desc>After you get rid of the possessed frogs you continue following the frog mobsters, or for short &quot;Froggsters&quot;. They go into a wooden warehouse and you spot from a window a glimpse of their operation. You decide to go in when a guard stops you.</desc>
+    <desc>After you get rid of the possessed frogs you continue following the frog mobsters, or for short "Froggsters". They go into a wooden warehouse and you spot from a window a glimpse of their operation. You decide to go in when a guard stops you.</desc>
     <commander id="252" />
     <deck>
       <card id="8072" name="Atlas' Sage" />
@@ -55852,7 +55852,7 @@
     <id>6754</id>
     <name>Squash the beef</name>
     <energy>18</energy>
-    <desc>After apologizing to the goblins they decide to invite you to play their version of basketball called &quot;Goblinball&quot;. Not very creative these devs, I mean goblins, yeah let's blame it on them.</desc>
+    <desc>After apologizing to the goblins they decide to invite you to play their version of basketball called "Goblinball". Not very creative these devs, I mean goblins, yeah let's blame it on them.</desc>
     <commander id="312" />
     <deck>
       <card id="8086" name="Gobatron's Brutalizer" />
@@ -56093,7 +56093,7 @@
     <id>6764</id>
     <name>Frenemies</name>
     <energy>18</energy>
-    <desc>You have had enough and propose the goblins with a truce. You don't have to be friends but you don't have to be enemies either. As from now on the goblins are officially your &quot;Frenemies&quot;.</desc>
+    <desc>You have had enough and propose the goblins with a truce. You don't have to be friends but you don't have to be enemies either. As from now on the goblins are officially your "Frenemies".</desc>
     <commander id="341" />
     <deck>
       <card id="8091" name="Cannon Bomber" />
@@ -56237,7 +56237,7 @@
     <id>6770</id>
     <name>The Reveal</name>
     <energy>18</energy>
-    <desc>Before anybody can notice, the goblin heads straight towards the center of the party where a huge birthday cake is being displayed and immediately trashes it. &quot;My name is Remi!&quot; he shouts out loudly. &quot;This is for not inviting me to the birthday party!&quot;.</desc>
+    <desc>Before anybody can notice, the goblin heads straight towards the center of the party where a huge birthday cake is being displayed and immediately trashes it. "My name is Remi!" he shouts out loudly. "This is for not inviting me to the birthday party!".</desc>
     <commander id="285" />
     <deck>
       <card id="1026" name="Glass Colossus" />
@@ -71766,6 +71766,682 @@
         <commander>Portrait_mythic_wyld</commander>
         <enemy>0</enemy>
         <text>Verus is right. This might all be a shared dream. Or a vision. Or even a window into the past.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 115: ComDev Mecha - Red Feather Valley -->
+  <!-- E115 Node 1: Artificial Reality -->
+  <mission>
+    <id>7242</id>
+    <name>Deep Mistrust</name>
+    <energy>24</energy>
+    <desc>There's nothing quite as disconcerting as realising your whole reality might be a construct of the Deep Void. You look around your companions, not sure who or what you can trust anymore.</desc>
+    <commander id="220" />
+    <!-- Cursed Voidlings -->
+    <deck>
+      <card id="1033" />
+      <!-- Valiant Charger -->
+      <card id="1037" />
+      <!-- Steambelly Digger -->
+      <card id="1338" />
+      <!-- Trashling Seeker -->
+      <card id="1033" />
+      <!-- Valiant Charger -->
+      <card id="1037" />
+      <!-- Steambelly Digger -->
+      <card id="1338" />
+      <!-- Trashling Seeker -->
+      <card id="1033" />
+      <!-- Valiant Charger -->
+      <card id="1037" />
+      <!-- Steambelly Digger -->
+      <card id="1338" />
+      <!-- Trashling Seeker -->
+      <card id="1033" mastery_level="2" />
+      <!-- Valiant Charger -->
+      <card id="1037" mastery_level="3" />
+      <!-- Steambelly Digger -->
+      <card id="1338" mastery_level="4" />
+      <!-- Trashling Seeker -->
+      <card id="1033" mastery_level="5" />
+      <!-- Valiant Charger -->
+      <card id="1037" mastery_level="6" />
+      <!-- Steambelly Digger -->
+      <card id="1338" mastery_level="7" />
+      <!-- Trashling Seeker -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7243</id>
+    <name>Suspicious Minds</name>
+    <energy>24</energy>
+    <desc>The Void has caught you in a trap, and you can't walk out. Will the others even believe a word you say?</desc>
+    <commander id="285" />
+    <!-- Corruptlings -->
+    <deck>
+      <card id="2192" />
+      <!-- Gear Shepherd -->
+      <card id="6248" />
+      <!-- Cybot Centurion -->
+      <card id="7286" />
+      <!-- Featherwood Idol -->
+      <card id="2192" />
+      <!-- Gear Shepherd -->
+      <card id="6248" />
+      <!-- Cybot Centurion -->
+      <card id="7286" />
+      <!-- Featherwood Idol -->
+      <card id="2192" />
+      <!-- Gear Shepherd -->
+      <card id="6248" />
+      <!-- Cybot Centurion -->
+      <card id="7286" />
+      <!-- Featherwood Idol -->
+      <card id="2192" mastery_level="2" />
+      <!-- Gear Shepherd -->
+      <card id="6248" mastery_level="3" />
+      <!-- Cybot Centurion -->
+      <card id="7286" mastery_level="4" />
+      <!-- Featherwood Idol -->
+      <card id="2192" mastery_level="5" />
+      <!-- Gear Shepherd -->
+      <card id="6248" mastery_level="6" />
+      <!-- Cybot Centurion -->
+      <card id="7286" mastery_level="7" />
+      <!-- Featherwood Idol -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>1</enemy>
+        <text>Say, ya been awfully quiet about all this Deep Void stuff, adventurer.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>1</enemy>
+        <text>Why don't ya speak up? Hidin' somethin'? </text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Easy now, Verus. The adventurer has always been the strong, silent type. Let's not pressure anyone.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Besides, it's a lot for all of us to take in.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7244</id>
+    <name>A Reassuring Look</name>
+    <energy>24</energy>
+    <desc>You are thankful for Lev's intervention and catch a glimpse of her eyes. They seem to be peering into your very being, with a warmth telling you ''it'll be all fine''.</desc>
+    <commander id="286" />
+    <!-- Corruptrex -->
+    <deck>
+      <card id="7161" />
+      <!-- Alphamecha -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2241" />
+      <!-- Gargobots -->
+      <card id="7161" />
+      <!-- Alphamecha -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2241" />
+      <!-- Gargobots -->
+      <card id="7161" />
+      <!-- Alphamecha -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2241" />
+      <!-- Gargobots -->
+      <card id="7161" mastery_level="2" />
+      <!-- Alphamecha -->
+      <card id="2106" mastery_level="3" />
+      <!-- Pharite Snapjaw -->
+      <card id="2241" mastery_level="4" />
+      <!-- Gargobots -->
+      <card id="7161" mastery_level="5" />
+      <!-- Alphamecha -->
+      <card id="2106" mastery_level="6" />
+      <!-- Pharite Snapjaw -->
+      <card id="2241" mastery_level="7" />
+      <!-- Gargobots -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Don't mind Verus, adventurer. He means well.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7245</id>
+    <name>Tomorrow is Another Day</name>
+    <energy>24</energy>
+    <desc>Your mind now at rest, you settle for the night with a determination to uncover the truth in the morning. Or perhaps even in a dream inside this apparent dream.</desc>
+    <commander id="386" />
+    <!-- Stompglow Beast -->
+    <deck>
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="2256" />
+      <!-- Circuit Burster -->
+      <card id="2240" />
+      <!-- Void Prototype -->
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="2256" />
+      <!-- Circuit Burster -->
+      <card id="2240" />
+      <!-- Void Prototype -->
+      <card id="2163" />
+      <!-- Ringwing Fulminator -->
+      <card id="2256" />
+      <!-- Circuit Burster -->
+      <card id="2240" />
+      <!-- Void Prototype -->
+      <card id="2163" mastery_level="2" />
+      <!-- Ringwing Fulminator -->
+      <card id="2256" mastery_level="3" />
+      <!-- Circuit Burster -->
+      <card id="2240" mastery_level="4" />
+      <!-- Void Prototype -->
+      <card id="2163" mastery_level="5" />
+      <!-- Ringwing Fulminator -->
+      <card id="2256" mastery_level="6" />
+      <!-- Circuit Burster -->
+      <card id="2240" mastery_level="7" />
+      <!-- Void Prototype -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7246</id>
+    <name>Sudden Awakening</name>
+    <energy>24</energy>
+    <desc>Your slumber is rudely interrupted by a loud crash as a mechanical flying object lands nearby, just barely missing you. Looking up, you see a swarm of similar flying machines. </desc>
+    <commander id="369" />
+    <!-- Guardian Constructs -->
+    <deck>
+      <card id="1345" />
+      <!-- Owltron -->
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="1345" />
+      <!-- Owltron -->
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="1345" />
+      <!-- Owltron -->
+      <card id="2117" />
+      <!-- Aero Enforcer -->
+      <card id="7247" />
+      <!-- Timberglide Striker -->
+      <card id="1345" mastery_level="2" />
+      <!-- Owltron -->
+      <card id="2117" mastery_level="3" />
+      <!-- Aero Enforcer -->
+      <card id="7247" mastery_level="4" />
+      <!-- Timberglide Striker -->
+      <card id="1345" mastery_level="5" />
+      <!-- Owltron -->
+      <card id="2117" mastery_level="6" />
+      <!-- Aero Enforcer -->
+      <card id="7247" mastery_level="7" />
+      <!-- Timberglide Striker -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Wake up! We're under attack!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>1</enemy>
+        <text>Gottem!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>1</enemy>
+        <text>Lev, cover me as I get the others over there!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7247</id>
+    <name>Gone Like a Flash</name>
+    <energy>24</energy>
+    <desc>Instinctively, you prepare for combat when, abruptly, the machines all scatter off in every direction. Concerned and confused, you look around for the cause.</desc>
+    <commander id="369" />
+    <!-- Guardian Constructs -->
+    <deck>
+      <card id="5195" />
+      <!-- Owlnaut Z-3 -->
+      <card id="6170" />
+      <!-- Ostromech Stepclaw -->
+      <card id="6246" />
+      <!-- Chicken Besieger -->
+      <card id="5195" />
+      <!-- Owlnaut Z-3 -->
+      <card id="6170" />
+      <!-- Ostromech Stepclaw -->
+      <card id="6246" />
+      <!-- Chicken Besieger -->
+      <card id="5195" />
+      <!-- Owlnaut Z-3 -->
+      <card id="6170" />
+      <!-- Ostromech Stepclaw -->
+      <card id="6246" />
+      <!-- Chicken Besieger -->
+      <card id="5195" mastery_level="2" />
+      <!-- Owlnaut Z-3 -->
+      <card id="6170" mastery_level="3" />
+      <!-- Ostromech Stepclaw -->
+      <card id="6246" mastery_level="4" />
+      <!-- Chicken Besieger -->
+      <card id="5195" mastery_level="5" />
+      <!-- Owlnaut Z-3 -->
+      <card id="6170" mastery_level="6" />
+      <!-- Ostromech Stepclaw -->
+      <card id="6246" mastery_level="7" />
+      <!-- Chicken Besieger -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Keep those eagle eyes focussed!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Looks like it's all clear. They must have received instructions to disengage.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>This day jus' keeps gettin' stranger and stranger...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E115 Node 2: Creeping Doubts -->
+  <mission>
+    <id>7248</id>
+    <name>Steadfast Recall</name>
+    <energy>24</energy>
+    <desc>You remember seeing similar flying machines in Tarragon Peak. Those belonged to Teroxis and seemingly protected the peak from the effects of the Void. Perhaps the same is true here?</desc>
+    <commander id="369" />
+    <!-- Guardian Constructs -->
+    <deck>
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="7312" />
+      <!-- Clockwork Moth -->
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="7312" />
+      <!-- Clockwork Moth -->
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="7312" />
+      <!-- Clockwork Moth -->
+      <card id="6295" mastery_level="2" />
+      <!-- Creeperbots -->
+      <card id="5142" mastery_level="3" />
+      <!-- Buzzblade -->
+      <card id="7312" mastery_level="4" />
+      <!-- Clockwork Moth -->
+      <card id="6295" mastery_level="5" />
+      <!-- Creeperbots -->
+      <card id="5142" mastery_level="6" />
+      <!-- Buzzblade -->
+      <card id="7312" mastery_level="7" />
+      <!-- Clockwork Moth -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7249</id>
+    <name>Touching the Void</name>
+    <energy>24</energy>
+    <desc>You examine the wreckage of the crashed machine by your camp. Just as you touch a metal cog, a vision suddenly appears. It seems to be able to read and answer your own thoughts.</desc>
+    <commander id="369" />
+    <!-- Guardian Constructs -->
+    <deck>
+      <card id="5042" />
+      <!-- Tinkerer -->
+      <card id="6214" />
+      <!-- Trampling Demon -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5042" />
+      <!-- Tinkerer -->
+      <card id="6214" />
+      <!-- Trampling Demon -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5042" />
+      <!-- Tinkerer -->
+      <card id="6214" />
+      <!-- Trampling Demon -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5042" mastery_level="2" />
+      <!-- Tinkerer -->
+      <card id="6214" mastery_level="3" />
+      <!-- Trampling Demon -->
+      <card id="7218" mastery_level="4" />
+      <!-- Zuphlas -->
+      <card id="5042" mastery_level="5" />
+      <!-- Tinkerer -->
+      <card id="6214" mastery_level="6" />
+      <!-- Trampling Demon -->
+      <card id="7218" mastery_level="7" />
+      <!-- Zuphlas -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Yes, this machine was following my instructions.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>You can all chase these Mecha instead of chasing Void shadows.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Don't keep making the same mistakes.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Stop trying to eradicate the Void. The Void is...</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>... essential.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7250</id>
+    <name>An Old Trick of the Mind</name>
+    <energy>24</energy>
+    <desc>The machines were messenger vessels for none other than Viracocha! Your mind is brimming with questions, all of which the Titan preempts... not unlike how Lev used to do it.</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="5247" />
+      <!-- Arrow of the Twofold -->
+      <card id="5306" />
+      <!-- Blizzpunk -->
+      <card id="5079" />
+      <!-- Cyclopnid -->
+      <card id="5247" />
+      <!-- Arrow of the Twofold -->
+      <card id="5306" />
+      <!-- Blizzpunk -->
+      <card id="5079" />
+      <!-- Cyclopnid -->
+      <card id="5247" />
+      <!-- Arrow of the Twofold -->
+      <card id="5306" />
+      <!-- Blizzpunk -->
+      <card id="5079" />
+      <!-- Cyclopnid -->
+      <card id="5247" mastery_level="2" />
+      <!-- Arrow of the Twofold -->
+      <card id="5306" mastery_level="3" />
+      <!-- Blizzpunk -->
+      <card id="5079" mastery_level="4" />
+      <!-- Cyclopnid -->
+      <card id="5247" mastery_level="5" />
+      <!-- Arrow of the Twofold -->
+      <card id="5306" mastery_level="6" />
+      <!-- Blizzpunk -->
+      <card id="5079" mastery_level="7" />
+      <!-- Cyclopnid -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Yes. This place is... artificial. It was created. </text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Is it real? Depends on your definition of reality. Your companions are all sharing in this same ''reality''.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Did the Void create this? Yes and no.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Like every other tribe, the Mecha felt the return of the Void. But so did the Factions and the Titans.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Together, we all helped in our own way to create what you are currently seeing and experiencing.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! I assume you've heard the same things as we all have!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7251</id>
+    <name>Deep Dive into the Void</name>
+    <energy>24</energy>
+    <desc>A long philosophical discussion on the ontological nature and metaphysics of the Void with a mechanical Titan was certainly not on your to do list at the start of the day!</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="6210" />
+      <!-- Burning Blade -->
+      <card id="6178" />
+      <!-- Bitumen Elemental -->
+      <card id="6013" />
+      <!-- Rust Goliath -->
+      <card id="6210" />
+      <!-- Burning Blade -->
+      <card id="6178" />
+      <!-- Bitumen Elemental -->
+      <card id="6013" />
+      <!-- Rust Goliath -->
+      <card id="6210" />
+      <!-- Burning Blade -->
+      <card id="6178" />
+      <!-- Bitumen Elemental -->
+      <card id="6013" />
+      <!-- Rust Goliath -->
+      <card id="6210" mastery_level="2" />
+      <!-- Burning Blade -->
+      <card id="6178" mastery_level="3" />
+      <!-- Bitumen Elemental -->
+      <card id="6013" mastery_level="4" />
+      <!-- Rust Goliath -->
+      <card id="6210" mastery_level="5" />
+      <!-- Burning Blade -->
+      <card id="6178" mastery_level="6" />
+      <!-- Bitumen Elemental -->
+      <card id="6013" mastery_level="7" />
+      <!-- Rust Goliath -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>I once too thought that the absence of the Factions was the Void. I was wrong.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>The Void is not the absence of Aether, Chaos, Wyld. That is just... absence.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>The Void cannot be destroyed, only contained.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Annihilating the Void would only bring imbalance.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7252</id>
+    <name>Power Imbalance</name>
+    <energy>24</energy>
+    <desc>The message from Viracocha is a warning: do not attempt to annihilate the Void. Anything that can defeat the Void would itself need to be defeated. Thus starting a neverending cycle of power.</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="7248" />
+      <!-- Amanita Carrier -->
+      <card id="7166" />
+      <!-- Rejuvenation Acolyte -->
+      <card id="7305" />
+      <!-- Assistance Droid -->
+      <card id="7248" />
+      <!-- Amanita Carrier -->
+      <card id="7166" />
+      <!-- Rejuvenation Acolyte -->
+      <card id="7305" />
+      <!-- Assistance Droid -->
+      <card id="7248" />
+      <!-- Amanita Carrier -->
+      <card id="7166" />
+      <!-- Rejuvenation Acolyte -->
+      <card id="7305" />
+      <!-- Assistance Droid -->
+      <card id="7248" mastery_level="2" />
+      <!-- Amanita Carrier -->
+      <card id="7166" mastery_level="3" />
+      <!-- Rejuvenation Acolyte -->
+      <card id="7305" mastery_level="4" />
+      <!-- Assistance Droid -->
+      <card id="7248" mastery_level="5" />
+      <!-- Amanita Carrier -->
+      <card id="7166" mastery_level="6" />
+      <!-- Rejuvenation Acolyte -->
+      <card id="7305" mastery_level="7" />
+      <!-- Assistance Droid -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You're wrong Titan! The Void is the imbalance.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>It is insiduous and grows its power through corruption. Whatever defeats it does not have to share those qualities.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>0</enemy>
+        <text>Spoken like a Factional hero, who's been gaining her power recently.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7253</id>
+    <name>More Suspicious Minds</name>
+    <energy>24</energy>
+    <desc>All the revelations have not allayed any suspicions, and only seems to have undermined whatever shared reality or dream you are all currently experiencing.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="5219" />
+      <!-- Null Archer -->
+      <card id="6288" />
+      <!-- Ashen Cavalier -->
+      <card id="7219" />
+      <!-- Hoggernaut MK I -->
+      <card id="5219" />
+      <!-- Null Archer -->
+      <card id="6288" />
+      <!-- Ashen Cavalier -->
+      <card id="7219" />
+      <!-- Hoggernaut MK I -->
+      <card id="5219" />
+      <!-- Null Archer -->
+      <card id="6288" />
+      <!-- Ashen Cavalier -->
+      <card id="7219" />
+      <!-- Hoggernaut MK I -->
+      <card id="5219" mastery_level="2" />
+      <!-- Null Archer -->
+      <card id="6288" mastery_level="3" />
+      <!-- Ashen Cavalier -->
+      <card id="7219" mastery_level="4" />
+      <!-- Hoggernaut MK I -->
+      <card id="5219" mastery_level="5" />
+      <!-- Null Archer -->
+      <card id="6288" mastery_level="6" />
+      <!-- Ashen Cavalier -->
+      <card id="7219" mastery_level="7" />
+      <!-- Hoggernaut MK I -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>I don't believe a word that Titan says. He might be corrupted by the Void for all we know.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>I'mma be honest, Lev. I don't think we can go on together.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Verus, we're meant to be all in this together!</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Sure, but if this here is some shared dream reality... we ain't buildin' on a foundation of suspicion.</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Y'all take care now.</text>
       </line>
     </speech>
   </mission>

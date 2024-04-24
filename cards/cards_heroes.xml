@@ -18,18 +18,18 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="heal" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>36</health>
       <skill id="imbue" s="counter" all="1" x="1" />
       <skill id="heal" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>36</health>
+      <health>42</health>
       <skill id="imbue" s="counter" all="1" x="2" />
       <skill id="heal" x="4" />
     </upgrade>
@@ -41,30 +41,30 @@
     <portrait>owlmystic</portrait>
     <desc>The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.</desc>
     <attack>0</attack>
-    <health>36</health>
+    <health>42</health>
     <skill id="imbue" s="absorb" x="1" />
     <rarity>3</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>41</health>
+      <health>48</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
-      <skill id="imbue" s="absorb" x="2" />
+      <health>54</health>
       <skill id="imbue" s="nullify" x="1" />
+      <skill id="imbue" s="absorb" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>51</health>
+      <health>60</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>56</health>
-      <skill id="imbue" s="absorb" x="3" />
+      <health>66</health>
       <skill id="imbue" s="nullify" x="2" />
+      <skill id="imbue" s="absorb" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -74,36 +74,36 @@
     <portrait>seraph</portrait>
     <desc>Samael is the powerful and stoic leader of the Aether faction of magic. Don't ask him about the difference between bird wings and angel wings.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="legion" all="1" x="1" />
     <rarity>4</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="legion" all="1" x="1" />
       <skill id="weaken" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="legion" all="1" x="1" />
       <skill id="weaken" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="legion" all="1" x="2" />
       <skill id="weaken" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="legion" all="1" x="3" />
       <skill id="weaken" all="1" x="2" />
     </upgrade>
@@ -122,17 +122,17 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>36</health>
       <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>36</health>
+      <health>42</health>
       <skill id="weaken" x="3" />
       <skill id="imbue" s="berserk" all="1" x="1" />
     </upgrade>
@@ -144,30 +144,30 @@
     <portrait>flamebender</portrait>
     <desc>Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.</desc>
     <attack>0</attack>
-    <health>36</health>
+    <health>42</health>
     <skill id="barrage" x="1" />
     <rarity>3</rarity>
     <type>2</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>41</health>
+      <health>48</health>
       <skill id="barrage" x="1" />
       <skill id="strike" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
+      <health>54</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>51</health>
+      <health>60</health>
       <skill id="barrage" x="2" />
       <skill id="strike" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>56</health>
+      <health>66</health>
       <skill id="barrage" x="2" />
       <skill id="strike" x="2" />
     </upgrade>
@@ -179,7 +179,7 @@
     <portrait>lichking</portrait>
     <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton after all.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="leech" all="1" x="1" />
     <skill id="imbue" s="vampirism" x="1" />
     <rarity>4</rarity>
@@ -187,31 +187,31 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="imbue" s="leech" all="1" x="2" />
       <skill id="imbue" s="vampirism" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="leech" all="1" x="2" />
       <skill id="imbue" s="vampirism" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="leech" all="1" x="3" />
       <skill id="imbue" s="vampirism" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="leech" all="1" x="3" />
       <skill id="imbue" s="vampirism" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="leech" all="1" x="4" />
       <skill id="imbue" s="vampirism" all="1" x="2" />
     </upgrade>
@@ -230,18 +230,18 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>28</health>
+      <health>30</health>
       <skill id="heal" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>36</health>
       <skill id="imbue" s="poison" all="1" x="1" />
       <skill id="heal" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>36</health>
+      <health>42</health>
       <skill id="imbue" s="poison" all="1" x="2" />
       <skill id="heal" x="4" />
     </upgrade>
@@ -253,28 +253,28 @@
     <portrait>bearcommander</portrait>
     <desc>Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.</desc>
     <attack>0</attack>
-    <health>36</health>
+    <health>42</health>
     <skill id="imbue" s="pierce" x="1" />
     <rarity>3</rarity>
     <type>3</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>41</health>
+      <health>48</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>46</health>
+      <health>54</health>
       <skill id="imbue" s="pierce" x="2" />
       <skill id="rally" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>51</health>
+      <health>60</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>56</health>
+      <health>66</health>
       <skill id="imbue" s="pierce" x="3" />
       <skill id="rally" all="1" x="2" />
     </upgrade>
@@ -286,34 +286,34 @@
     <portrait>groc</portrait>
     <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="evade" x="1" />
     <rarity>4</rarity>
     <type>3</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="evade" all="1" x="1" />
       <skill id="enhance" s="stasis" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="evade" all="1" x="1" />
       <skill id="enhance" s="stasis" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="evade" all="1" x="1" />
       <skill id="enhance" s="stasis" all="1" x="3" />
     </upgrade>
@@ -325,36 +325,36 @@
     <portrait>elementalhero</portrait>
     <desc>A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="protect" all="1" x="1" />
     <rarity>4</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="frost" x="1" />
       <skill id="protect" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="frost" x="1" />
       <skill id="protect" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="frost" x="2" />
       <skill id="protect" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="frost" x="2" />
       <skill id="protect" all="1" x="3" />
     </upgrade>
@@ -366,38 +366,38 @@
     <portrait>orchero</portrait>
     <desc>A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="enfeeble" x="2" />
     <rarity>4</rarity>
     <type>2</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="enfeeble" all="1" x="1" />
       <skill id="strike" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="enfeeble" all="1" x="1" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="enfeeble" all="1" x="1" />
       <skill id="strike" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="enfeeble" all="1" x="1" />
       <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="enfeeble" all="1" x="2" />
       <skill id="strike" x="4" />
     </upgrade>
@@ -409,7 +409,7 @@
     <portrait>froghero</portrait>
     <desc>Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" all="1" s="corrosive" x="1" />
     <skill id="heal" x="3" />
     <rarity>4</rarity>
@@ -417,31 +417,31 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="imbue" all="1" s="corrosive" x="1" />
       <skill id="heal" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" all="1" s="corrosive" x="1" />
       <skill id="heal" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" all="1" s="corrosive" x="2" />
       <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" all="1" s="corrosive" x="2" />
       <skill id="heal" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" all="1" s="corrosive" x="3" />
       <skill id="heal" x="8" />
     </upgrade>
@@ -453,7 +453,7 @@
     <portrait>odaupgrade</portrait>
     <desc>Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="counter" x="2" />
     <skill id="heal" x="4" />
     <rarity>4</rarity>
@@ -461,31 +461,31 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="imbue" s="counter" all="1" x="1" />
       <skill id="heal" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="counter" all="1" x="1" />
       <skill id="heal" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="counter" all="1" x="1" />
       <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="counter" all="1" x="2" />
       <skill id="heal" x="7" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="counter" all="1" x="3" />
       <skill id="heal" x="8" />
     </upgrade>
@@ -497,39 +497,37 @@
     <portrait>yurielupgrade</portrait>
     <desc>The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.</desc>
     <attack>0</attack>
-    <health>56</health>
-    <skill id="imbue" s="absorb" all="1" x="2" />
+    <health>66</health>
     <skill id="imbue" s="nullify" x="2" />
+    <skill id="imbue" s="absorb" all="1" x="2" />
     <rarity>4</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
-      <skill id="imbue" s="absorb" all="1" x="3" />
+      <health>78</health>
       <skill id="imbue" s="nullify" x="2" />
+      <skill id="imbue" s="absorb" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
-      <skill id="imbue" s="absorb" all="1" x="3" />
+      <health>90</health>
       <skill id="imbue" s="nullify" all="1" x="1" />
-      <skill id="imbue" s="nullify" x="1" />
+      <skill id="imbue" s="absorb" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
-      <skill id="imbue" s="absorb" all="1" x="4" />
+      <health>96</health>
       <skill id="imbue" s="nullify" all="1" x="1" />
-      <skill id="imbue" s="nullify" x="1" />
+      <skill id="imbue" s="absorb" all="1" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -539,37 +537,37 @@
     <portrait>ariaupgrade</portrait>
     <desc>Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="weaken" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="berserk" all="1" x="1" />
       <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="berserk" all="1" x="1" />
       <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="berserk" all="1" x="2" />
       <skill id="weaken" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="berserk" all="1" x="3" />
       <skill id="weaken" x="6" />
     </upgrade>
@@ -581,7 +579,7 @@
     <portrait>decimupgrade</portrait>
     <desc>Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="barrage" x="2" />
     <skill id="strike" x="2" />
     <rarity>4</rarity>
@@ -589,29 +587,29 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="barrage" x="3" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="barrage" x="4" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="barrage" x="4" />
       <skill id="strike" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="barrage" x="4" />
       <skill id="strike" all="1" x="2" />
     </upgrade>
@@ -623,7 +621,7 @@
     <portrait>elyseupgrade</portrait>
     <desc>Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="venom" all="1" x="1" />
     <skill id="heal" all="1" x="2" />
     <rarity>4</rarity>
@@ -631,25 +629,25 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="venom" all="1" x="2" />
       <skill id="heal" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="venom" all="1" x="2" />
       <skill id="heal" all="1" x="3" />
     </upgrade>
@@ -661,7 +659,7 @@
     <portrait>ursurioupgrade</portrait>
     <desc>After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="imbue" s="pierce" x="4" />
     <skill id="rally" all="1" x="2" />
     <rarity>4</rarity>
@@ -669,31 +667,31 @@
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="imbue" s="pierce" x="4" />
       <skill id="rally" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="pierce" all="1" x="4" />
       <skill id="rally" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
       <skill id="imbue" s="pierce" all="1" x="4" />
       <skill id="rally" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="pierce" all="1" x="5" />
       <skill id="rally" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="pierce" all="1" x="5" />
       <skill id="rally" all="1" x="3" />
     </upgrade>
@@ -705,36 +703,36 @@
     <portrait>Portrait_Chaos_Mecha_Hero</portrait>
     <desc>Once a smelter of steel, this Mecha learned how to feel. What he found was endless rage, so it was war he came to wage. Now with his mind restored, he fights of his own accord.</desc>
     <attack>0</attack>
-    <health>56</health>
+    <health>66</health>
     <skill id="enrage" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
-      <health>62</health>
+      <health>72</health>
       <skill id="imbue" s="burn" all="1" x="1" />
       <skill id="enrage" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>68</health>
+      <health>78</health>
       <skill id="imbue" s="burn" all="1" x="2" />
       <skill id="enrage" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>74</health>
+      <health>84</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>80</health>
+      <health>90</health>
       <skill id="imbue" s="burn" all="1" x="2" />
       <skill id="enrage" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>86</health>
+      <health>96</health>
       <skill id="imbue" s="burn" all="1" x="3" />
       <skill id="enrage" all="1" x="2" />
     </upgrade>
@@ -4845,35 +4843,35 @@
     <name>Skyward Bird</name>
     <portrait>feralbird</portrait>
     <health>45</health>
-    <skill id="imbue" s="evade" x="2" />
     <skill id="counter" x="1" />
+    <skill id="imbue" s="evade" x="2" />
     <rarity>3</rarity>
     <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>50</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="counter" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>55</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="counter" x="3" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>60</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="counter" x="4" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>65</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="counter" x="5" />
       <skill id="heal" x="5" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -6246,46 +6244,46 @@
     <portrait>octopusmonster</portrait>
     <desc>No one understands what lurks in the furthest depths of the earth. Things beyond imagination. - Arcanists Scrolls of Prophecy</desc>
     <health>65</health>
-    <skill id="imbue" s="evade" x="2" />
     <skill id="weaken" all="1" x="3" c="4" />
     <skill id="enfeeble" x="2" />
+    <skill id="imbue" s="evade" x="2" />
     <rarity>4</rarity>
     <type>3</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>75</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="3" c="4" />
       <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="4" c="4" />
       <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="4" c="3" />
       <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="evade" x="3" />
       <skill id="weaken" all="1" x="5" c="3" />
       <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="4" />
       <skill id="weaken" all="1" x="5" c="2" />
       <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -6961,16 +6959,16 @@
     <upgrade>
       <level>2</level>
       <health>75</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="heal" x="1" />
       <skill id="jam" c="5" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="heal" x="2" />
       <skill id="jam" c="4" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -6979,16 +6977,16 @@
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="heal" x="3" />
       <skill id="jam" c="3" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="3" />
       <skill id="heal" x="4" />
       <skill id="jam" c="2" />
+      <skill id="imbue" s="evade" x="3" />
     </upgrade>
   </unit>
   <!-- Dungeon Commanders -->
@@ -8560,30 +8558,30 @@
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="evade" all="1" x="1" />
       <skill id="weaken" all="1" x="2" />
       <skill id="jam" c="5" />
+      <skill id="imbue" s="evade" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" all="1" x="1" />
       <skill id="weaken" all="1" x="2" />
       <skill id="jam" c="4" />
+      <skill id="imbue" s="evade" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="evade" all="1" x="2" />
       <skill id="weaken" all="1" x="3" />
       <skill id="jam" c="4" />
+      <skill id="imbue" s="evade" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" all="1" x="2" />
       <skill id="weaken" all="1" x="3" />
       <skill id="jam" c="3" />
+      <skill id="imbue" s="evade" all="1" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -9248,9 +9246,9 @@
     <portrait>giantMechaBoss</portrait>
     <asset_bundle>109</asset_bundle>
     <health>76</health>
-    <skill id="imbue" s="evade" x="2" />
     <skill id="strike" all="1" x="4" />
     <skill id="weaken" all="1" x="1" />
+    <skill id="imbue" s="evade" x="2" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
@@ -9261,16 +9259,16 @@
     <upgrade>
       <level>3</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="strike" all="1" x="4" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>89</health>
-      <skill id="imbue" s="evade" x="3" />
       <skill id="strike" all="1" x="5" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -9279,9 +9277,9 @@
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="4" />
       <skill id="strike" all="1" x="5" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -9291,9 +9289,9 @@
     <portrait>giantMechaBoss</portrait>
     <asset_bundle>109</asset_bundle>
     <health>65</health>
-    <skill id="imbue" s="evade" x="1" />
     <skill id="strike" all="1" x="1" />
     <skill id="weaken" all="1" x="1" />
+    <skill id="imbue" s="evade" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
@@ -9304,30 +9302,30 @@
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="strike" all="1" x="1" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="strike" all="1" x="1" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="strike" all="1" x="2" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="strike" all="1" x="2" />
       <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -10153,8 +10151,8 @@
     <portrait>Portrait_Angel_Demon_Samurai</portrait>
     <desc>I was not the one who started the war, but I will be the one to end it.</desc>
     <health>90</health>
-    <skill id="imbue" s="absorb" all="1" x="23" />
     <skill id="imbue" s="poison" all="1" x="10" />
+    <skill id="imbue" s="absorb" all="1" x="23" />
     <skill id="enhance" s="backlash" x="42" />
     <rarity>4</rarity>
     <type>2</type>
@@ -10166,8 +10164,8 @@
     <upgrade>
       <level>3</level>
       <health>93</health>
-      <skill id="imbue" s="absorb" all="1" x="24" />
       <skill id="imbue" s="poison" all="1" x="10" />
+      <skill id="imbue" s="absorb" all="1" x="24" />
       <skill id="enhance" s="backlash" x="43" />
     </upgrade>
     <upgrade>
@@ -10177,15 +10175,15 @@
     <upgrade>
       <level>5</level>
       <health>97</health>
-      <skill id="imbue" s="absorb" all="1" x="25" />
       <skill id="imbue" s="poison" all="1" x="10" />
+      <skill id="imbue" s="absorb" all="1" x="25" />
       <skill id="enhance" s="backlash" x="44" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="absorb" all="1" x="25" />
       <skill id="imbue" s="poison" all="1" x="10" />
+      <skill id="imbue" s="absorb" all="1" x="25" />
       <skill id="enhance" s="backlash" x="44" />
     </upgrade>
   </unit>
@@ -10318,8 +10316,8 @@
     <name>Luck Based Frog</name>
     <portrait>Lucky_Frog_Portrait</portrait>
     <health>65</health>
-    <skill id="imbue" s="evade" x="1" />
     <skill id="rally" x="2" />
+    <skill id="imbue" s="evade" x="1" />
     <rarity>4</rarity>
     <type>3</type>
     <set>9999</set>
@@ -10334,8 +10332,8 @@
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="rally" x="3" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -10344,8 +10342,8 @@
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="rally" x="3" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
   </unit>
   <unit>
@@ -10354,8 +10352,8 @@
     <name>Lucker Based Frog</name>
     <portrait>Lucky_Frog_Portrait_2</portrait>
     <health>65</health>
-    <skill id="imbue" s="evade" x="2" />
     <skill id="rally" x="3" />
+    <skill id="imbue" s="evade" x="2" />
     <rarity>4</rarity>
     <type>3</type>
     <set>9999</set>
@@ -10370,8 +10368,8 @@
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="rally" x="4" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -10380,8 +10378,8 @@
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="3" />
       <skill id="rally" x="5" />
+      <skill id="imbue" s="evade" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -10680,8 +10678,8 @@
     <portrait>Portrait_mythic_wyld</portrait>
     <asset_bundle>160</asset_bundle>
     <health>65</health>
-    <skill id="imbue" s="evade" x="1" />
     <skill id="imbue" s="daze" all="1" x="2" />
+    <skill id="imbue" s="evade" x="1" />
     <skill id="enfeeble" x="3" />
     <rarity>4</rarity>
     <type>8</type>
@@ -10693,29 +10691,29 @@
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="evade" x="1" />
       <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="imbue" s="evade" x="1" />
       <skill id="enfeeble" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="imbue" s="daze" all="1" x="3" />
+      <skill id="imbue" s="evade" x="2" />
       <skill id="enfeeble" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="evade" x="2" />
       <skill id="imbue" s="daze" all="1" x="3" />
+      <skill id="imbue" s="evade" x="2" />
       <skill id="enfeeble" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="evade" x="3" />
       <skill id="imbue" s="daze" all="1" x="4" />
+      <skill id="imbue" s="evade" x="3" />
       <skill id="enfeeble" x="6" />
     </upgrade>
   </unit>
@@ -12190,8 +12188,8 @@
     <name>Aviary Feral Wing</name>
     <portrait>aviansoldier2</portrait>
     <health>65</health>
-    <skill id="imbue" s="counter" all="1" x="3" />
     <skill id="imbue" s="berserk" all="1" x="1" />
+    <skill id="imbue" s="counter" all="1" x="3" />
     <rarity>4</rarity>
     <type>3</type>
     <set>9999</set>
@@ -12202,29 +12200,29 @@
     <upgrade>
       <level>3</level>
       <health>80</health>
-      <skill id="imbue" s="counter" all="1" x="4" />
       <skill id="imbue" s="berserk" all="1" x="2" />
+      <skill id="imbue" s="counter" all="1" x="4" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" s="counter" all="1" x="6" />
       <skill id="imbue" s="berserk" all="1" x="3" />
+      <skill id="imbue" s="counter" all="1" x="6" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="counter" all="1" x="7" />
       <skill id="imbue" s="berserk" all="1" x="4" />
+      <skill id="imbue" s="counter" all="1" x="7" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="counter" all="1" x="8" />
       <skill id="imbue" s="berserk" all="1" x="5" />
+      <skill id="imbue" s="counter" all="1" x="8" />
       <skill id="jam" />
     </upgrade>
   </unit>
@@ -12282,9 +12280,9 @@
     <name>Lightning Boss Nophora</name>
     <portrait>Weapon_Hoarder_Portrait</portrait>
     <health>75</health>
-    <skill id="imbue" s="regenerate" all="1" x="2" />
     <skill id="protect" all="1" x="1" />
     <skill id="imbue" s="venom" all="1" x="2" />
+    <skill id="imbue" s="regenerate" all="1" x="2" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
@@ -12295,30 +12293,30 @@
     <upgrade>
       <level>3</level>
       <health>85</health>
-      <skill id="imbue" s="regenerate" all="1" x="3" />
       <skill id="protect" all="1" x="2" />
       <skill id="imbue" s="venom" all="1" x="3" />
+      <skill id="imbue" s="regenerate" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
-      <skill id="imbue" s="regenerate" all="1" x="3" />
       <skill id="protect" all="1" x="2" />
       <skill id="imbue" s="venom" all="1" x="4" />
+      <skill id="imbue" s="regenerate" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
-      <skill id="imbue" s="regenerate" all="1" x="4" />
       <skill id="protect" all="1" x="3" />
       <skill id="imbue" s="venom" all="1" x="4" />
+      <skill id="imbue" s="regenerate" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="regenerate" all="1" x="7" />
       <skill id="protect" all="1" x="4" />
       <skill id="imbue" s="venom" all="1" x="6" />
+      <skill id="imbue" s="regenerate" all="1" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -12327,46 +12325,46 @@
     <name>Lightning Boss Llorona</name>
     <portrait>La_Llorona_Portrait</portrait>
     <health>75</health>
+    <skill id="enfeeble" all="1" x="1" />
     <skill id="imbue" s="absorb" all="1" x="1" />
     <skill id="imbue" s="evade" all="1" x="1" />
-    <skill id="enfeeble" all="1" x="1" />
     <rarity>4</rarity>
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>80</health>
+      <skill id="enfeeble" all="1" x="2" />
       <skill id="imbue" s="absorb" all="1" x="2" />
       <skill id="imbue" s="evade" all="1" x="1" />
-      <skill id="enfeeble" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>85</health>
+      <skill id="enfeeble" all="1" x="3" />
       <skill id="imbue" s="absorb" all="1" x="3" />
       <skill id="imbue" s="evade" all="1" x="1" />
-      <skill id="enfeeble" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
+      <skill id="enfeeble" all="1" x="4" />
       <skill id="imbue" s="absorb" all="1" x="4" />
       <skill id="imbue" s="evade" all="1" x="1" />
-      <skill id="enfeeble" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
+      <skill id="enfeeble" all="1" x="5" />
       <skill id="imbue" s="absorb" all="1" x="5" />
       <skill id="imbue" s="evade" all="1" x="2" />
-      <skill id="enfeeble" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
+      <skill id="enfeeble" all="1" x="6" />
       <skill id="imbue" s="absorb" all="1" x="6" />
       <skill id="imbue" s="evade" all="1" x="3" />
-      <skill id="enfeeble" all="1" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -12774,30 +12772,30 @@
     <upgrade>
       <level>3</level>
       <health>85</health>
+      <skill id="strike" all="1" x="3" />
       <skill id="imbue" s="backlash" all="1" x="1" />
       <skill id="imbue" s="counterpoison" all="1" x="4" />
-      <skill id="strike" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
+      <skill id="strike" all="1" x="4" />
       <skill id="imbue" s="backlash" all="1" x="1" />
       <skill id="imbue" s="counterpoison" all="1" x="5" />
-      <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
+      <skill id="strike" all="1" x="5" />
       <skill id="imbue" s="backlash" all="1" x="2" />
       <skill id="imbue" s="counterpoison" all="1" x="6" />
-      <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
+      <skill id="strike" all="1" x="6" />
       <skill id="imbue" s="backlash" all="1" x="2" />
       <skill id="imbue" s="counterpoison" all="1" x="7" />
-      <skill id="strike" all="1" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -13240,46 +13238,46 @@
     <name>Lightning Boss Orobas</name>
     <portrait>balrog</portrait>
     <health>50</health>
+    <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="1" />
+    <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="1" />
     <skill id="weaken" all="1" x="1" />
-    <skill id="imbue" s="armored" ignore_nullify="" all="1" x="1" />
-    <skill id="imbue" s="legion" ignore_nullify="" all="1" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>55</health>
+      <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="2" />
+      <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="2" />
       <skill id="weaken" all="1" x="2" />
-      <skill id="imbue" s="armored" ignore_nullify="" all="1" x="2" />
-      <skill id="imbue" s="legion" ignore_nullify="" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>65</health>
+      <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="3" />
+      <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="3" />
       <skill id="weaken" all="1" x="3" />
-      <skill id="imbue" s="armored" ignore_nullify="" all="1" x="3" />
-      <skill id="imbue" s="legion" ignore_nullify="" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>75</health>
+      <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="5" />
+      <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="5" />
       <skill id="weaken" all="1" x="5" />
-      <skill id="imbue" s="armored" ignore_nullify="" all="1" x="5" />
-      <skill id="imbue" s="legion" ignore_nullify="" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>85</health>
+      <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="8" />
+      <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="8" />
       <skill id="weaken" all="1" x="8" />
-      <skill id="imbue" s="armored" ignore_nullify="" all="1" x="8" />
-      <skill id="imbue" s="legion" ignore_nullify="" all="1" x="8" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
+      <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="12" />
+      <skill id="imbue" s="armored" ignore_nullify="1" all="1" x="12" />
       <skill id="weaken" all="1" x="12" />
-      <skill id="imbue" s="armored" ignore_nullify="" all="1" x="12" />
-      <skill id="imbue" s="legion" ignore_nullify="" all="1" x="12" />
     </upgrade>
   </unit>
   <unit>
@@ -13289,22 +13287,22 @@
     <portrait>Goblinch_Portrait</portrait>
     <desc>Krampus has found a list of gifts a true love sent over twelve days and he is trying to make amends.</desc>
     <health>45</health>
-    <skill id="heal" ignore_nullify="" x="4" />
-    <skill id="heal" ignore_nullify="" x="4" />
+    <skill id="heal" ignore_nullify="1" x="4" />
+    <skill id="heal" ignore_nullify="1" x="4" />
     <rarity>3</rarity>
     <type>3</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>50</health>
-      <skill id="heal" ignore_nullify="" x="6" />
-      <skill id="heal" ignore_nullify="" x="6" />
+      <skill id="heal" ignore_nullify="1" x="6" />
+      <skill id="heal" ignore_nullify="1" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>55</health>
-      <skill id="heal" ignore_nullify="" x="8" />
-      <skill id="heal" ignore_nullify="" x="8" />
+      <skill id="heal" ignore_nullify="1" x="8" />
+      <skill id="heal" ignore_nullify="1" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -13313,8 +13311,8 @@
     <upgrade>
       <level>5</level>
       <health>65</health>
-      <skill id="heal" ignore_nullify="" x="12" />
-      <skill id="heal" ignore_nullify="" x="12" />
+      <skill id="heal" ignore_nullify="1" x="12" />
+      <skill id="heal" ignore_nullify="1" x="12" />
     </upgrade>
   </unit>
   <unit>

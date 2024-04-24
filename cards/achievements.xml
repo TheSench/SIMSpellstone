@@ -3380,6 +3380,34 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <achievement>
+    <id>822</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XXII</name>
+    <desc>Collect a total of 1,750,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>821</achievement_req>
+    <req>
+      <total_sp>1750000</total_sp>
+    </req>
+    <reward>
+      <item id="2002" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>823</id>
+    <type>8</type>
+    <order>30</order>
+    <name>Vaporizer XXIII</name>
+    <desc>Collect a total of 2,000,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>822</achievement_req>
+    <req>
+      <total_sp>2000000</total_sp>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- END Salvage Quests -->
   <!-- 900: Currency Quests START -->
   <achievement>
@@ -3593,6 +3621,51 @@
     <achievement_collected_req>1205</achievement_collected_req>
     <req>
       <pvp_wins>60000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1207</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CVI</name>
+    <desc>Collect 62,000 Bounties.</desc>
+    <achievement_collected_req>1206</achievement_collected_req>
+    <req>
+      <pvp_wins>62000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1208</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CVII</name>
+    <desc>Collect 64,000 Bounties.</desc>
+    <achievement_collected_req>1207</achievement_collected_req>
+    <req>
+      <pvp_wins>64000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1209</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CVIII</name>
+    <desc>Collect 66,000 Bounties.</desc>
+    <achievement_collected_req>1208</achievement_collected_req>
+    <req>
+      <pvp_wins>66000</pvp_wins>
     </req>
     <reward>
       <wb>120</wb>
@@ -24341,6 +24414,202 @@
     <locked_start_time>1712854800</locked_start_time>
     <req>
       <campaign>1370</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 115: ComDev Mecha - Red Feather Valley -->
+  <!-- E115 Node 1: Artificial Reality -->
+  <achievement>
+    <id>4531</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Artificial Reality campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7247</mission_req>
+    <locked_start_time>1714064400</locked_start_time>
+    <req>
+      <campaign>1371</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7111" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4532</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Artificial Reality campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4531</achievement_req>
+    <locked_start_time>1714064400</locked_start_time>
+    <req>
+      <campaign>1371</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4533</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Artificial Reality campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4532</achievement_req>
+    <locked_start_time>1714064400</locked_start_time>
+    <req>
+      <campaign>1371</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4534</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Artificial Reality campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4533</achievement_req>
+    <locked_start_time>1714064400</locked_start_time>
+    <req>
+      <campaign>1371</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4535</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Artificial Reality campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4534</achievement_req>
+    <locked_start_time>1714064400</locked_start_time>
+    <req>
+      <campaign>1371</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 115: ComDev Mecha - Red Feather Valley -->
+  <!-- E115 Node 2: Creeping Doubts -->
+  <achievement>
+    <id>4536</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Creeping Doubts campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7253</mission_req>
+    <locked_start_time>1715274000</locked_start_time>
+    <req>
+      <campaign>1372</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7111" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4537</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Creeping Doubts campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4536</achievement_req>
+    <locked_start_time>1715274000</locked_start_time>
+    <req>
+      <campaign>1372</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4538</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Creeping Doubts campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4537</achievement_req>
+    <locked_start_time>1715274000</locked_start_time>
+    <req>
+      <campaign>1372</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4539</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Creeping Doubts campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4538</achievement_req>
+    <locked_start_time>1715274000</locked_start_time>
+    <req>
+      <campaign>1372</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4540</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Creeping Doubts campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4539</achievement_req>
+    <locked_start_time>1715274000</locked_start_time>
+    <req>
+      <campaign>1372</campaign>
       <level>6</level>
     </req>
     <reward>

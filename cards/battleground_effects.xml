@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <!--
 		1-100		DO NOT USE, OFF LIMITS!!
@@ -1747,6 +1746,21 @@
       <add_skill id="evade" x="3" y="10" delay="4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>179</id>
+    <name>Titanium Ward</name>
+    <desc>All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on base Health. These effects cannot be Nullified.</desc>
+    <icon>filter_mech_64</icon>
+    <effect>
+      <add_skill id="absorb" mult="0.10" base="health" y="16" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" base="health" all="1" yy="1,16" />
+      <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="2,16" />
+      <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="3,16" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
+      <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
+      <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2796,6 +2810,62 @@
     <effect>
       <skill id="heal" x="1.1" all="1" />
       <skill id="rally" x="0.6" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>568</id>
+    <name>Pocket Tanks</name>
+    <desc>1 delay cards have their Attack and Health doubled.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <skill id="enlarge" mult="1" all="1" delay="1" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="1" delay="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>569</id>
+    <name>Pocket Tanks 2.0</name>
+    <desc>2 delay cards have their Attack and Health doubled.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <skill id="enlarge" mult="1" all="1" delay="2" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="1" delay="2" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>570</id>
+    <name>Darkassan's Prophecy</name>
+    <desc>All cards gain Vampirism 10.</desc>
+    <icon>filter_undead_64</icon>
+    <effect>
+      <add_skill id="vampirism" x="10" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>571</id>
+    <name>The Burning Hell</name>
+    <desc>All cards gain Scorchbreath and Emberhide equal to two times their delay.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <add_skill id="scorchbreath" x="2" all="1" delay="1" />
+      <add_skill id="scorchbreath" x="4" all="1" delay="2" />
+      <add_skill id="scorchbreath" x="6" all="1" delay="3" />
+      <add_skill id="scorchbreath" x="8" all="1" delay="4" />
+      <add_skill id="counterburn" x="2" all="1" delay="1" />
+      <add_skill id="counterburn" x="4" all="1" delay="2" />
+      <add_skill id="counterburn" x="6" all="1" delay="3" />
+      <add_skill id="counterburn" x="8" all="1" delay="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>572</id>
+    <name>The Void's Universe</name>
+    <desc>All cards gain confuse on activation.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <add_skill id="confuse" c="99" all="1" />
     </effect>
   </battleground>
   <!-- ============================= -->
@@ -4829,6 +4899,23 @@
       <scale_health base="health" mult="-0.99" rarity="4" />
       <add_skill id="weakenself" mult="1" base="attack" all="1" rarity="4" />
       <add_skill id="jamself" c="1" all="1" rarity="4" />
+    </effect>
+  </battleground>
+  <!-- ComDev Nodes Enemy Scaling - More difficult than all pink and gold nodes -->
+  <battleground>
+    <id>2123</id>
+    <name>Red Feather Valley</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_void_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult="0.07" mult="0.04" />
     </effect>
   </battleground>
   <!-- END ENEMY BGE -->

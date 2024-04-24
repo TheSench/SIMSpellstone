@@ -2840,6 +2840,74 @@ var BATTLEGROUNDS = {
 		"id": "178",
 		"name": "Invisible Mark"
 	},
+	"179": {
+		"desc": "All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on base Health. These effects cannot be Nullified.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "1,16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "rally",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "2,16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "heal",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "3,16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "0,16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "rally",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "0,16"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "heal",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "0,16"
+			}
+		],
+		"id": "179",
+		"name": "Titanium Ward"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4931,6 +4999,159 @@ var BATTLEGROUNDS = {
 		"scale_with_level": true,
 		"starting_level": 22
 	},
+	"568": {
+		"desc": "1 delay cards have their Attack and Health doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 1
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "scale_health",
+				"mult": 1
+			}
+		],
+		"id": "568",
+		"name": "Pocket Tanks"
+	},
+	"569": {
+		"desc": "2 delay cards have their Attack and Health doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 1
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "scale_health",
+				"mult": 1
+			}
+		],
+		"id": "569",
+		"name": "Pocket Tanks 2.0"
+	},
+	"570": {
+		"desc": "All cards gain Vampirism 10.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"x": 10
+			}
+		],
+		"id": "570",
+		"name": "Darkassan's Prophecy"
+	},
+	"571": {
+		"desc": "All cards gain Scorchbreath and Emberhide equal to two times their delay.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "scorchbreath",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "scorchbreath",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "scorchbreath",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "scorchbreath",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 8
+			}
+		],
+		"id": "571",
+		"name": "The Burning Hell"
+	},
+	"572": {
+		"desc": "All cards gain confuse on activation.",
+		"effect": [
+			{
+				"all": "1",
+				"c": "99",
+				"effect_type": "add_skill",
+				"id": "confuse"
+			}
+		],
+		"id": "572",
+		"name": "The Void's Universe"
+	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
 		"effect": [
@@ -7014,6 +7235,23 @@ var BATTLEGROUNDS = {
 		"hidden": true,
 		"id": "2122",
 		"name": "No Legendary Zone"
+	},
+	"2123": {
+		"desc": "Non-token enemies become stronger with each passing Mastery level.",
+		"effect": [
+			{
+				"base_mult": 0.07,
+				"effect_type": "scale_attributes",
+				"mult": 0.04
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2123",
+		"max_level": 7,
+		"name": "Red Feather Valley",
+		"scale_with_level": true,
+		"starting_level": 0
 	},
 	"5001": {
 		"desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",

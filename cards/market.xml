@@ -1154,6 +1154,8 @@
     <limited_buy index="1" cost="200" />
     <limited_buy index="2" cost="250" />
     <limited_buy index="3" cost="300" />
+    <limited_buy index="4" cost="350" />
+    <limited_buy index="5" cost="400" />
   </store_item>
   <store_item>
     <id>93</id>
@@ -11088,6 +11090,122 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="105624" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5380</id>
+    <name>Rustcast Witch Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRustcast Witch^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_037_banner_chance_w7</background_prefab>
+    <bundle>126</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7191" display_card_id="7191" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5381</id>
+    <name>Brightcore Defender Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBrightcore Defender^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_055_banner_hulkingautomation</background_prefab>
+    <bundle>171</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5246" display_card_id="5246" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5382</id>
+    <name>Leadtrap Catcher Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLeadtrap Catcher^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_067_banner_catcher</background_prefab>
+    <bundle>199</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7281" display_card_id="7281" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5383</id>
+    <name>Grimkite Model Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFGrimkite Model^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_053_banner_dragonmechawarrior</background_prefab>
+    <bundle>165</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6241" display_card_id="6241" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5384</id>
+    <name>Warkid Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFB4RN4B1, Exo Warkid^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_101_r1bb1t_championpack</asset_prefab>
+    <background_prefab>event_101_r1bb1t_banner</background_prefab>
+    <bundle>269</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105642" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5385</id>
+    <name>R3-M1 Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFR3-M1, the Channeler^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_95_voidchanneler_championpack</asset_prefab>
+    <background_prefab>event_95_voidchanneler_banner</background_prefab>
+    <bundle>257</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="106625" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>
