@@ -4865,24 +4865,23 @@
 		</reward>
 	</achievement>-->
   <!-- BEGIN LEGENDARY RUNE UPDATE -->
-  <!--	<achievement>
-		<id>1401</id>
-		<type>13</type>
-		<order>63</order>
-		<icon>rune_empty_legendary</icon>
-		<icon_bundle>34</icon_bundle>
-		<name>Legendary Runes XXI</name>
-		<desc>Successfully craft 340 Legendary Runes.</desc>
-		<achievement_req>1380</achievement_req>
-		<req>
-			<craft_rune rarity="4" num="340"/>
-		</req>
-		<reward>
-			<item id="4013" number="3"/>
-		</reward>
-	</achievement>
-
-	<achievement>
+  <achievement>
+    <id>1401</id>
+    <type>13</type>
+    <order>63</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes XXI</name>
+    <desc>Successfully craft 340 Legendary Runes.</desc>
+    <achievement_req>1380</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="340" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <!--<achievement>
 		<id>1402</id>
 		<type>13</type>
 		<order>63</order>
@@ -24610,6 +24609,202 @@
     <locked_start_time>1715274000</locked_start_time>
     <req>
       <campaign>1372</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 116: ComDev Undead - Red Feather Valley -->
+  <!-- E116 Node 1: Where Did You Come From? -->
+  <achievement>
+    <id>4541</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Where Did You Come From? campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7259</mission_req>
+    <locked_start_time>1716483600</locked_start_time>
+    <req>
+      <campaign>1373</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7112" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4542</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Where Did You Come From? campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4541</achievement_req>
+    <locked_start_time>1716483600</locked_start_time>
+    <req>
+      <campaign>1373</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4543</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Where Did You Come From? campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4542</achievement_req>
+    <locked_start_time>1716483600</locked_start_time>
+    <req>
+      <campaign>1373</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4544</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Where Did You Come From? campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4543</achievement_req>
+    <locked_start_time>1716483600</locked_start_time>
+    <req>
+      <campaign>1373</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4545</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Where Did You Come From? campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4544</achievement_req>
+    <locked_start_time>1716483600</locked_start_time>
+    <req>
+      <campaign>1373</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 116: ComDev Undead - Red Feather Valley -->
+  <!-- E116 Node 2: Already Seen -->
+  <achievement>
+    <id>4546</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Already Seen campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7265</mission_req>
+    <locked_start_time>1717693200</locked_start_time>
+    <req>
+      <campaign>1374</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7112" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4547</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Already Seen campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4546</achievement_req>
+    <locked_start_time>1717693200</locked_start_time>
+    <req>
+      <campaign>1374</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4548</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Already Seen campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4547</achievement_req>
+    <locked_start_time>1717693200</locked_start_time>
+    <req>
+      <campaign>1374</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4549</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Already Seen campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4548</achievement_req>
+    <locked_start_time>1717693200</locked_start_time>
+    <req>
+      <campaign>1374</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4550</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Already Seen campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4549</achievement_req>
+    <locked_start_time>1717693200</locked_start_time>
+    <req>
+      <campaign>1374</campaign>
       <level>6</level>
     </req>
     <reward>

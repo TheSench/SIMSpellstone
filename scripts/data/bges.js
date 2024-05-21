@@ -2908,6 +2908,43 @@ var BATTLEGROUNDS = {
 		"id": "179",
 		"name": "Titanium Ward"
 	},
+	"180": {
+		"desc": "All Undead gain Vampirism equal to 10% of their base Health. 0-2D Undead also gain Siphon equal to 20% of their base Health. 3-4D Undead also gain Emberhide equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.1,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.2,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"mult": 0.1,
+				"y": "7"
+			}
+		],
+		"id": "180",
+		"name": "Blazing Undead Vampirism"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -5151,6 +5188,116 @@ var BATTLEGROUNDS = {
 		],
 		"id": "572",
 		"name": "The Void's Universe"
+	},
+	"573": {
+		"desc": "All enemies start with a Tree of Eternity card. The first enemy card played in battle also has one additional Delay.",
+		"effect": {
+			"1": {
+				"id": 616,
+				"level": 1
+			},
+			"2": {
+				"id": 616,
+				"level": 1
+			},
+			"3": {
+				"id": 616,
+				"level": 1
+			},
+			"4": {
+				"id": 616,
+				"level": 1
+			},
+			"5": {
+				"id": 616,
+				"level": 1
+			},
+			"6": {
+				"id": 616,
+				"level": 1
+			},
+			"7": {
+				"id": 616,
+				"level": 1
+			},
+			"8": {
+				"id": 616,
+				"level": 1
+			},
+			"9": {
+				"id": 616,
+				"level": 1
+			},
+			"10": {
+				"id": 616,
+				"level": 1
+			},
+			"11": {
+				"id": 616,
+				"level": 1
+			},
+			"12": {
+				"id": 616,
+				"level": 1
+			},
+			"13": {
+				"id": 616,
+				"level": 1
+			},
+			"14": {
+				"id": 616,
+				"level": 1
+			},
+			"15": {
+				"id": 616,
+				"level": 1
+			},
+			"16": {
+				"id": 616,
+				"level": 1
+			},
+			"17": {
+				"id": 616,
+				"level": 1
+			},
+			"18": {
+				"id": 616,
+				"level": 1
+			}
+		},
+		"id": "573",
+		"isTower": true,
+		"name": "Tree of Eternity"
+	},
+	"574": {
+		"desc": "All Aether gain Armor. All Chaos gain Enrage. All Wyld gain Berserk. Values are equal to 10% of base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "1"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.1,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "enrage",
+				"ignore_nullify": "1",
+				"mult": 0.1,
+				"y": "2"
+			}
+		],
+		"id": "574",
+		"name": "Faction Friction"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

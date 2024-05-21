@@ -1761,6 +1761,17 @@
       <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
     </effect>
   </battleground>
+  <battleground>
+    <id>180</id>
+    <name>Blazing Undead Vampirism</name>
+    <desc>All Undead gain Vampirism equal to 10% of their base Health. 0-2D Undead also gain Siphon equal to 20% of their base Health. 3-4D Undead also gain Emberhide equal to 10% of their base Health.</desc>
+    <icon>filter_undead_64.png</icon>
+    <effect>
+      <add_skill id="vampirism" mult="0.1" base="health" y="7" />
+      <add_skill id="leech" mult="0.2" base="health" y="7" delay="0,1,2" />
+      <add_skill id="counterburn" mult="0.1" base="health" y="7" delay="3,4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2866,6 +2877,49 @@
     <icon>filter_chaos_64</icon>
     <effect>
       <add_skill id="confuse" c="99" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>573</id>
+    <name>Tree of Eternity</name>
+    <desc>All enemies start with a Tree of Eternity card. The first enemy card played in battle also has one additional Delay.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>tree_of_life_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <on_play first_play="1" defender="1">
+        <add_skill id="slow" x="1" />
+      </on_play>
+      <starting_card id="616" level="1" pvp_rank="1" />
+      <starting_card id="616" level="1" pvp_rank="2" />
+      <starting_card id="616" level="1" pvp_rank="3" />
+      <starting_card id="616" level="1" pvp_rank="4" />
+      <starting_card id="616" level="1" pvp_rank="5" />
+      <starting_card id="616" level="1" pvp_rank="6" />
+      <starting_card id="616" level="1" pvp_rank="7" />
+      <starting_card id="616" level="1" pvp_rank="8" />
+      <starting_card id="616" level="1" pvp_rank="9" />
+      <starting_card id="616" level="1" pvp_rank="10" />
+      <starting_card id="616" level="1" pvp_rank="11" />
+      <starting_card id="616" level="1" pvp_rank="12" />
+      <starting_card id="616" level="1" pvp_rank="13" />
+      <starting_card id="616" level="1" pvp_rank="14" />
+      <starting_card id="616" level="1" pvp_rank="15" />
+      <starting_card id="616" level="1" pvp_rank="16" />
+      <starting_card id="616" level="1" pvp_rank="17" />
+      <starting_card id="616" level="1" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>574</id>
+    <name>Faction Friction</name>
+    <desc>All Aether gain Armor. All Chaos gain Enrage. All Wyld gain Berserk. Values are equal to 10% of base Health.</desc>
+    <icon>Conflux_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="armored" mult="0.1" base="health" y="1" />
+      <skill id="enrage" ignore_nullify="1" mult="0.1" all="1" base="health" y="2" />
+      <add_skill id="berserk" mult="0.1" base="health" y="3" />
     </effect>
   </battleground>
   <!-- ============================= -->

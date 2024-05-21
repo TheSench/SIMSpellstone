@@ -6642,6 +6642,42 @@ var CAMPAIGNS = {
 		],
 		"name": "Creeping Doubts"
 	},
+	"1373": {
+		"battleground_id": "2123",
+		"id": "1373",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7254",
+			"7255",
+			"7256",
+			"7257",
+			"7258",
+			"7259"
+		],
+		"name": "Where Did You Come From?"
+	},
+	"1374": {
+		"battleground_id": "2123",
+		"id": "1374",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7260",
+			"7261",
+			"7262",
+			"7263",
+			"7264",
+			"7265"
+		],
+		"name": "Already Seen"
+	},
 	"3000": {
 		"id": "3000",
 		"items": {},
@@ -156374,5 +156410,725 @@ var MISSIONS = {
 		],
 		"id": "7253",
 		"name": "More Suspicious Minds"
+	},
+	"7254": {
+		"commander": {
+			"id": "231"
+		},
+		"deck": [
+			{
+				"id": "1331"
+			},
+			{
+				"id": "2025"
+			},
+			{
+				"id": "2115"
+			},
+			{
+				"id": "1331"
+			},
+			{
+				"id": "2025"
+			},
+			{
+				"id": "2115"
+			},
+			{
+				"id": "1331"
+			},
+			{
+				"id": "2025"
+			},
+			{
+				"id": "2115"
+			},
+			{
+				"id": "1331",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2025",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2115",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1331",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2025",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2115",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7254",
+		"name": "Where Did You Go?"
+	},
+	"7255": {
+		"commander": {
+			"id": "4"
+		},
+		"deck": [
+			{
+				"id": "2140"
+			},
+			{
+				"id": "2114"
+			},
+			{
+				"id": "2191"
+			},
+			{
+				"id": "2140"
+			},
+			{
+				"id": "2114"
+			},
+			{
+				"id": "2191"
+			},
+			{
+				"id": "2140"
+			},
+			{
+				"id": "2114"
+			},
+			{
+				"id": "2191"
+			},
+			{
+				"id": "2140",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2114",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2191",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2140",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2114",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2191",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7255",
+		"name": "I've Been Here Long Time Ago"
+	},
+	"7256": {
+		"commander": {
+			"id": "4"
+		},
+		"deck": [
+			{
+				"id": "6016"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "7170"
+			},
+			{
+				"id": "6016"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "7170"
+			},
+			{
+				"id": "6016"
+			},
+			{
+				"id": "5033"
+			},
+			{
+				"id": "7170"
+			},
+			{
+				"id": "6016",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5033",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7170",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5033",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7170",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7256",
+		"name": "Which Witch?"
+	},
+	"7257": {
+		"commander": {
+			"id": "4"
+		},
+		"deck": [
+			{
+				"id": "1342"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "2253"
+			},
+			{
+				"id": "1342"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "2253"
+			},
+			{
+				"id": "1342"
+			},
+			{
+				"id": "1644"
+			},
+			{
+				"id": "2253"
+			},
+			{
+				"id": "1342",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1644",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2253",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1342",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1644",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2253",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7257",
+		"name": "Treasure Hunter... Again"
+	},
+	"7258": {
+		"commander": {
+			"id": "4"
+		},
+		"deck": [
+			{
+				"id": "1346"
+			},
+			{
+				"id": "2026"
+			},
+			{
+				"id": "2236"
+			},
+			{
+				"id": "1346"
+			},
+			{
+				"id": "2026"
+			},
+			{
+				"id": "2236"
+			},
+			{
+				"id": "1346"
+			},
+			{
+				"id": "2026"
+			},
+			{
+				"id": "2236"
+			},
+			{
+				"id": "1346",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2026",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2236",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1346",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2026",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2236",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7258",
+		"name": "Another Path to Knowledge"
+	},
+	"7259": {
+		"commander": {
+			"id": "228"
+		},
+		"deck": [
+			{
+				"id": "5213"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "5213"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "5213"
+			},
+			{
+				"id": "6292"
+			},
+			{
+				"id": "7169"
+			},
+			{
+				"id": "5213",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6292",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7169",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5213",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6292",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7169",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7259",
+		"name": "Breaking Free One More Time"
+	},
+	"7260": {
+		"commander": {
+			"id": "230"
+		},
+		"deck": [
+			{
+				"id": "5083"
+			},
+			{
+				"id": "6166"
+			},
+			{
+				"id": "7036"
+			},
+			{
+				"id": "5083"
+			},
+			{
+				"id": "6166"
+			},
+			{
+				"id": "7036"
+			},
+			{
+				"id": "5083"
+			},
+			{
+				"id": "6166"
+			},
+			{
+				"id": "7036"
+			},
+			{
+				"id": "5083",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6166",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7036",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5083",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6166",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7036",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7260",
+		"name": "Aria's Second Flight"
+	},
+	"7261": {
+		"commander": {
+			"id": "230"
+		},
+		"deck": [
+			{
+				"id": "6002"
+			},
+			{
+				"id": "5277"
+			},
+			{
+				"id": "7257"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "5277"
+			},
+			{
+				"id": "7257"
+			},
+			{
+				"id": "6002"
+			},
+			{
+				"id": "5277"
+			},
+			{
+				"id": "7257"
+			},
+			{
+				"id": "6002",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5277",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7257",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6002",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5277",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7257",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7261",
+		"name": "Seized by Darkness"
+	},
+	"7262": {
+		"commander": {
+			"id": "220"
+		},
+		"deck": [
+			{
+				"id": "5214"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "5214"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "5214"
+			},
+			{
+				"id": "2145"
+			},
+			{
+				"id": "6167"
+			},
+			{
+				"id": "5214",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6167",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5214",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2145",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6167",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7262",
+		"name": "Push the Undead Back"
+	},
+	"7263": {
+		"commander": {
+			"id": "15"
+		},
+		"deck": [
+			{
+				"id": "8075"
+			},
+			{
+				"id": "6003"
+			},
+			{
+				"id": "6032"
+			},
+			{
+				"id": "8075"
+			},
+			{
+				"id": "6003"
+			},
+			{
+				"id": "6032"
+			},
+			{
+				"id": "8075"
+			},
+			{
+				"id": "6003"
+			},
+			{
+				"id": "6032"
+			},
+			{
+				"id": "8075",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6003",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6032",
+				"mastery_level": "4"
+			},
+			{
+				"id": "8075",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6003",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6032",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7263",
+		"name": "Return of the Necromancer"
+	},
+	"7264": {
+		"commander": {
+			"id": "15"
+		},
+		"deck": [
+			{
+				"id": "6233"
+			},
+			{
+				"id": "7037"
+			},
+			{
+				"id": "5222"
+			},
+			{
+				"id": "6233"
+			},
+			{
+				"id": "7037"
+			},
+			{
+				"id": "5222"
+			},
+			{
+				"id": "6233"
+			},
+			{
+				"id": "7037"
+			},
+			{
+				"id": "5222"
+			},
+			{
+				"id": "6233",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7037",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5222",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6233",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7037",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5222",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7264",
+		"name": "Standing Down?"
+	},
+	"7265": {
+		"commander": {
+			"id": "437"
+		},
+		"deck": [
+			{
+				"id": "6168"
+			},
+			{
+				"id": "6174"
+			},
+			{
+				"id": "6301"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "7131"
+			},
+			{
+				"id": "6301"
+			},
+			{
+				"id": "7236"
+			},
+			{
+				"id": "6087"
+			},
+			{
+				"id": "6082"
+			},
+			{
+				"id": "5216",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6277",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6232",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5305",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5036",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7121",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7265",
+		"name": "The Void Puppetmaster"
 	}
 };

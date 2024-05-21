@@ -4027,8 +4027,8 @@
   <campaign>
     <id>1114</id>
     <name>Snowdust Forge</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 March 2017 17:00:00 -->
     <location_id>8</location_id>
@@ -4054,8 +4054,8 @@
   <campaign>
     <id>1115</id>
     <name>Ancient Aegis</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 March 2017 17:00:00 -->
     <location_id>8</location_id>
@@ -4090,8 +4090,8 @@
   <campaign>
     <id>1116</id>
     <name>Blazing Dyrnwyn</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1115" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1115" level="1"/> -->
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 March 2017 17:00:00 -->
     <battleground_id>2005</battleground_id>
@@ -4130,8 +4130,8 @@
     <name>Dyrnwyn's Test</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1115" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1115" level="1"/> -->
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 March 2017 17:00:00 -->
     <battleground_id>2006</battleground_id>
@@ -4162,8 +4162,8 @@
   <campaign>
     <id>1118</id>
     <name>Miracle Water</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1116" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1116" level="1"/> -->
     <locked_start_time>1491498000</locked_start_time>
     <!-- Thu, 06 April 2017 17:00:00 -->
     <battleground_id>2007</battleground_id>
@@ -4201,8 +4201,8 @@
   <campaign>
     <id>1119</id>
     <name>War Stratagem</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1118" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1118" level="1"/> -->
     <locked_start_time>1492707600</locked_start_time>
     <!-- Thu, 20 April 2017 17:00:00 -->
     <battleground_id>2008</battleground_id>
@@ -4351,8 +4351,8 @@
   <campaign>
     <id>1124</id>
     <name>Soul Power</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4377,8 +4377,8 @@
   <campaign>
     <id>1125</id>
     <name>The Void Plane</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4413,8 +4413,8 @@
   <campaign>
     <id>1126</id>
     <name>Ruler of The Void</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1125" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1125" level="1"/> -->
     <locked_start_time>1495126800</locked_start_time>
     <!-- Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2010</battleground_id>
@@ -4453,8 +4453,8 @@
     <name>This is the Final Battle</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1125" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1125" level="1"/> -->
     <locked_start_time>1495126800</locked_start_time>
     <!--  Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2011</battleground_id>
@@ -4485,8 +4485,8 @@
   <campaign>
     <id>1128</id>
     <name>The Abyss</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1126" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1126" level="1"/> -->
     <locked_start_time>1496336400</locked_start_time>
     <!-- Thu, 01 June 2017 17:00:00 -->
     <battleground_id>2012</battleground_id>
@@ -4523,8 +4523,8 @@
   <campaign>
     <id>1129</id>
     <name>The Void's Harmony</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1128" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1128" level="1"/> -->
     <locked_start_time>1497546000</locked_start_time>
     <!-- Thu, 15 June 2017 17:00:00 -->
     <battleground_id>2013</battleground_id>
@@ -4562,8 +4562,8 @@
   <campaign>
     <id>1130</id>
     <name>Honey Buzz</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <location_id>10</location_id>
@@ -4588,8 +4588,8 @@
   <campaign>
     <id>1131</id>
     <name>Heroes of the World</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <location_id>10</location_id>
@@ -4624,8 +4624,8 @@
   <campaign>
     <id>1132</id>
     <name>Violent Coincidences</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1131" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1131" level="1"/> -->
     <locked_start_time>1499965200</locked_start_time>
     <!-- Thu, 13 July 2017 17:00:00 -->
     <battleground_id>2014</battleground_id>
@@ -4664,8 +4664,8 @@
     <name>No Place is Home</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1131" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1131" level="1"/> -->
     <locked_start_time>1499965200</locked_start_time>
     <!-- Thu, 13 July 2017 17:00:00 -->
     <battleground_id>2016</battleground_id>
@@ -4696,8 +4696,8 @@
   <campaign>
     <id>1134</id>
     <name>Winds of Change</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1132" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1132" level="1"/> -->
     <locked_start_time>1501174800</locked_start_time>
     <!--   Thu, 27 July 2017 17:00:00 -->
     <battleground_id>2017</battleground_id>
@@ -4734,8 +4734,8 @@
   <campaign>
     <id>1135</id>
     <name>Family Grudge</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1134" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1134" level="1"/> -->
     <locked_start_time>1502384400</locked_start_time>
     <!--   Thu, 10 August 2017 17:00:00 -->
     <battleground_id>2018</battleground_id>
@@ -4773,8 +4773,8 @@
   <campaign>
     <id>1136</id>
     <name>Sea Temple Defenses</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <location_id>11</location_id>
@@ -4800,8 +4800,8 @@
   <campaign>
     <id>1137</id>
     <name>Beneath the Waves</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <location_id>11</location_id>
@@ -4836,8 +4836,8 @@
   <campaign>
     <id>1138</id>
     <name>The Temple's Judgement</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1137" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1137" level="1" />
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <battleground_id>2019</battleground_id>
@@ -4876,8 +4876,8 @@
     <name>Through Fire and Water</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1137" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1137" level="1" />
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <battleground_id>2020</battleground_id>
@@ -4908,8 +4908,8 @@
   <campaign>
     <id>1140</id>
     <name>Newfound Alliance</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1138" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1138" level="1" />
     <locked_start_time>1506013200</locked_start_time>
     <!-- Thu, 21 Sept 2017 17:00:00 -->
     <battleground_id>2021</battleground_id>
@@ -4946,8 +4946,8 @@
   <campaign>
     <id>1141</id>
     <name>Warmonger</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1140" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1140" level="1" />
     <locked_start_time>1507222800</locked_start_time>
     <!-- Thu, 5 Oct 2017 17:00:00 -->
     <battleground_id>2022</battleground_id>
@@ -4984,8 +4984,8 @@
   <campaign>
     <id>1142</id>
     <name>Mining Resources</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1508432400</locked_start_time>
     <!-- Thu, 19 Oct 2017 17:00:00 -->
     <location_id>12</location_id>
@@ -5010,8 +5010,8 @@
   <campaign>
     <id>1143</id>
     <name>Journey to Fireshard Mine</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1508432400</locked_start_time>
     <!-- Thu, 19 Oct 2017 17:00:00 -->
     <location_id>12</location_id>
@@ -5046,8 +5046,8 @@
   <campaign>
     <id>1144</id>
     <name>First Contact</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1143" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1143" level="1" />
     <locked_start_time>1509642000</locked_start_time>
     <!-- Thu, 2 Nov 2017 17:00:00 -->
     <battleground_id>2023</battleground_id>
@@ -5114,8 +5114,8 @@
     <name>Fireshard's Giant</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1143" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1143" level="1" />
     <locked_start_time>1509642000</locked_start_time>
     <!--  Thu, 2 Nov 2017 17:00:00  -->
     <battleground_id>2024</battleground_id>
@@ -5146,8 +5146,8 @@
   <campaign>
     <id>1147</id>
     <name>In Search of Love</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1144" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1144" level="1" />
     <locked_start_time>1510851600</locked_start_time>
     <!-- Thu, 16 Nov 2017 17:00:00 -->
     <battleground_id>2025</battleground_id>
@@ -5184,8 +5184,8 @@
   <campaign>
     <id>1148</id>
     <name>Confronting the Robot Within</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1147" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1147" level="1" />
     <locked_start_time>1512061200</locked_start_time>
     <!-- Thu, 30 Nov 2017 17:00:00 -->
     <battleground_id>2026</battleground_id>
@@ -5223,8 +5223,8 @@
   <campaign>
     <id>1149</id>
     <name>Orbs' Power Source</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1513270800</locked_start_time>
     <!-- Thu, 14 Dec 2017 17:00:00 -->
     <location_id>13</location_id>
@@ -5249,8 +5249,8 @@
   <campaign>
     <id>1150</id>
     <name>Avian Arrival</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <locked_start_time>1513270800</locked_start_time>
     <!-- Thu, 14 Dec 2017 17:00:00 -->
     <location_id>13</location_id>
@@ -5285,8 +5285,8 @@
   <campaign>
     <id>1151</id>
     <name>The Crimsonwings</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1150" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1150" level="1" />
     <locked_start_time>1514480400</locked_start_time>
     <!-- Thu, 28 Dec 2017 17:00:00 -->
     <battleground_id>2028</battleground_id>
@@ -5354,8 +5354,8 @@
     <name>In the Name of the Nameless</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1150" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1150" level="1" />
     <locked_start_time>1514480400</locked_start_time>
     <!-- Thu, 28 Dec 2017 17:00:00 -->
     <battleground_id>2029</battleground_id>
@@ -5386,8 +5386,8 @@
   <campaign>
     <id>1154</id>
     <name>An Ally in Red</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1151" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1151" level="1" />
     <locked_start_time>1515690000</locked_start_time>
     <!-- Thu, 11 Jan 2018 17:00:00 -->
     <battleground_id>2030</battleground_id>
@@ -5424,8 +5424,8 @@
   <campaign>
     <id>1155</id>
     <name>Forgotten Hero</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1154" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1154" level="1" />
     <locked_start_time>1516899600</locked_start_time>
     <!-- Thu, 25 Jan 2018 17:00:00 -->
     <battleground_id>2031</battleground_id>
@@ -10032,8 +10032,8 @@
     <id>1288</id>
     <name>Deep in Trouble</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1622134800</locked_start_time>
     <!-- Thursday, 27 May 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10075,8 +10075,8 @@
     <id>1289</id>
     <name>The Swarm Thickens</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1288" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1288" level="1"/> -->
     <locked_start_time>1623344400</locked_start_time>
     <!-- Thursday, 10 June 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10206,8 +10206,8 @@
     <id>1292</id>
     <name>The Stars are Left</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1626973200</locked_start_time>
     <!-- Thursday, 22 July 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10249,8 +10249,8 @@
     <id>1293</id>
     <name>A not so Unexpected Journey</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1292" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1292" level="1" />
     <locked_start_time>1628182800</locked_start_time>
     <!-- Thursday, 5 August 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10378,8 +10378,8 @@
     <id>1296</id>
     <name>Bureaucra-Sea</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1631811600</locked_start_time>
     <!-- Thursday, 16 September 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10421,8 +10421,8 @@
     <id>1297</id>
     <name>Ranger of the Cute</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1296" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1296" level="1" />
     <locked_start_time>1633021200</locked_start_time>
     <!-- Thursday, 30 September 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10590,8 +10590,8 @@
     <id>1301</id>
     <name>Wrong Turn</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1636650000</locked_start_time>
     <!-- Thursday, 11 November 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -10633,8 +10633,8 @@
     <id>1302</id>
     <name>Fireshards Way of Fun</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1301" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1301" level="1" />
     <locked_start_time>1637859600</locked_start_time>
     <!-- Thursday, 25 November 2021 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11299,8 +11299,8 @@
     <id>1318</id>
     <name>Misleading a Menace</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="6" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="6" level="1"/> -->
     <locked_start_time>1653584400</locked_start_time>
     <!-- Thursday, 26 May 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11342,8 +11342,8 @@
     <id>1319</id>
     <name>The Hunter Has Become the Hunted</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1318" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1318" level="1"/> -->
     <locked_start_time>1654794000</locked_start_time>
     <!-- Thursday, 9 June 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -11639,8 +11639,8 @@
     <id>1326</id>
     <name>Old Friend</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1663261200</locked_start_time>
     <!-- Thursday, 15 September 2022 17:00:00	  -->
     <battleground_id>2119</battleground_id>
@@ -11680,8 +11680,8 @@
     <id>1327</id>
     <name>Battling the Void</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1326" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1326" level="1"/> -->
     <locked_start_time>1664470800</locked_start_time>
     <!-- Thursday, 29 September 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12089,8 +12089,8 @@
     <id>1337</id>
     <name>The Menace Returns!</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1672938000</locked_start_time>
     <!-- Thursday, January 5, 2023 17:00:00	 	  -->
     <battleground_id>2119</battleground_id>
@@ -12130,8 +12130,8 @@
     <id>1338</id>
     <name>The Colossus</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1337" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1337" level="1"/> -->
     <locked_start_time>1674147600</locked_start_time>
     <!-- Thursday, 19 January 2023 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12172,8 +12172,8 @@
     <id>1339</id>
     <name>Gossip About a Hero</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1675357200</locked_start_time>
     <!-- Thursday, 2 February 2023 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12215,8 +12215,8 @@
     <id>1340</id>
     <name>Unmasking the False Hero</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1339" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1339" level="1"/> -->
     <locked_start_time>1676566800</locked_start_time>
     <!-- Thursday, 16 February 2023 17:00:00 -->
     <battleground_id>2119</battleground_id>
@@ -12965,8 +12965,8 @@
     <id>1357</id>
     <name>Tides of Void</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1697130000</locked_start_time>
     <!-- Thursday, 12 October 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13007,8 +13007,8 @@
     <id>1358</id>
     <name>Starving Off the Maelstrom</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1357" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1357" level="1" />
     <locked_start_time>1698339600</locked_start_time>
     <!-- Thursday, 26 October 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -13625,6 +13625,87 @@
       <!-- Warrior Karna -->
       <card level="6" id="2112" />
       <!-- Warrior Karna -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <!-- Event 116: ComDev Undead - Red Feather Valley -->
+  <campaign>
+    <id>1373</id>
+    <name>Where Did You Come From?</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1716483600</locked_start_time>
+    <!-- Thursday, 23 May 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>630</x>
+    <y>150</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7254</mission_id>
+      <mission_id>7255</mission_id>
+      <mission_id>7256</mission_id>
+      <mission_id>7257</mission_id>
+      <mission_id>7258</mission_id>
+      <mission_id>7259</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104084" number="50" />
+      <!-- Milax -->
+      <card level="5" id="2116" />
+      <!-- Messina's Choice -->
+      <card level="6" id="2116" />
+      <!-- Messina's Choice -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1374</id>
+    <name>Already Seen</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1373" level="1" />
+    <locked_start_time>1717693200</locked_start_time>
+    <!-- Thursday, 06 June 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>750</x>
+    <y>200</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7260</mission_id>
+      <mission_id>7261</mission_id>
+      <mission_id>7262</mission_id>
+      <mission_id>7263</mission_id>
+      <mission_id>7264</mission_id>
+      <mission_id>7265</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104084" number="50" />
+      <!-- Milax -->
+      <card level="5" id="2116" />
+      <!-- Messina's Choice -->
+      <card level="6" id="2116" />
+      <!-- Messina's Choice -->
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>

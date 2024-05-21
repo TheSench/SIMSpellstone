@@ -72445,6 +72445,615 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 116: ComDev Undead - Red Feather Valley -->
+  <!-- E116 Node 1: Where Did You Come From? -->
+  <mission>
+    <id>7254</id>
+    <name>Where Did You Go?</name>
+    <energy>24</energy>
+    <desc>You're not quite sure how Verus departed from this artificial reality and there's no way of asking him now. Unfortunately, you now have other problems. Undead problems.</desc>
+    <commander id="231" />
+    <!-- Skeletal Army -->
+    <deck>
+      <card id="1331" />
+      <!-- Cursed Soldiers -->
+      <card id="2025" />
+      <!-- Void Knight -->
+      <card id="2115" />
+      <!-- Druid of Corruption -->
+      <card id="1331" />
+      <!-- Cursed Soldiers -->
+      <card id="2025" />
+      <!-- Void Knight -->
+      <card id="2115" />
+      <!-- Druid of Corruption -->
+      <card id="1331" />
+      <!-- Cursed Soldiers -->
+      <card id="2025" />
+      <!-- Void Knight -->
+      <card id="2115" />
+      <!-- Druid of Corruption -->
+      <card id="1331" mastery_level="2" />
+      <!-- Cursed Soldiers -->
+      <card id="2025" mastery_level="3" />
+      <!-- Void Knight -->
+      <card id="2115" mastery_level="4" />
+      <!-- Druid of Corruption -->
+      <card id="1331" mastery_level="5" />
+      <!-- Cursed Soldiers -->
+      <card id="2025" mastery_level="6" />
+      <!-- Void Knight -->
+      <card id="2115" mastery_level="7" />
+      <!-- Druid of Corruption -->
+    </deck>
+    <speech>
+      <line>
+        <commander>skeletonwarrior</commander>
+        <enemy>1</enemy>
+        <text>GRAARRROOOoooooowww!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7255</id>
+    <name>I've Been Here Long Time Ago</name>
+    <energy>24</energy>
+    <desc>You, Lev and Ursurio make quick work of the skeletons. Standing behind them, though, is a familiar sight...</desc>
+    <commander id="4" />
+    <!-- Aria the Necromancer -->
+    <deck>
+      <card id="2140" />
+      <!-- Absorbing Sleetbones -->
+      <card id="2114" />
+      <!-- Ironspike Bonewalker -->
+      <card id="2191" />
+      <!-- Killer Crocbones -->
+      <card id="2140" />
+      <!-- Absorbing Sleetbones -->
+      <card id="2114" />
+      <!-- Ironspike Bonewalker -->
+      <card id="2191" />
+      <!-- Killer Crocbones -->
+      <card id="2140" />
+      <!-- Absorbing Sleetbones -->
+      <card id="2114" />
+      <!-- Ironspike Bonewalker -->
+      <card id="2191" />
+      <!-- Killer Crocbones -->
+      <card id="2140" mastery_level="2" />
+      <!-- Absorbing Sleetbones -->
+      <card id="2114" mastery_level="3" />
+      <!-- Ironspike Bonewalker -->
+      <card id="2191" mastery_level="4" />
+      <!-- Killer Crocbones -->
+      <card id="2140" mastery_level="5" />
+      <!-- Absorbing Sleetbones -->
+      <card id="2114" mastery_level="6" />
+      <!-- Ironspike Bonewalker -->
+      <card id="2191" mastery_level="7" />
+      <!-- Killer Crocbones -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7256</id>
+    <name>Which Witch?</name>
+    <energy>24</energy>
+    <desc>Aria! You're not sure though if it's really her or a creation of the Void. After all, she was one of the first to be possessed by the Void.</desc>
+    <commander id="4" />
+    <!-- Aria the Necromancer -->
+    <deck>
+      <card id="6016" />
+      <!-- Boneclaw Giant -->
+      <card id="5033" />
+      <!-- Dread Soul -->
+      <card id="7170" />
+      <!-- Gallows Hand -->
+      <card id="6016" />
+      <!-- Boneclaw Giant -->
+      <card id="5033" />
+      <!-- Dread Soul -->
+      <card id="7170" />
+      <!-- Gallows Hand -->
+      <card id="6016" />
+      <!-- Boneclaw Giant -->
+      <card id="5033" />
+      <!-- Dread Soul -->
+      <card id="7170" />
+      <!-- Gallows Hand -->
+      <card id="6016" mastery_level="2" />
+      <!-- Boneclaw Giant -->
+      <card id="5033" mastery_level="3" />
+      <!-- Dread Soul -->
+      <card id="7170" mastery_level="4" />
+      <!-- Gallows Hand -->
+      <card id="6016" mastery_level="5" />
+      <!-- Boneclaw Giant -->
+      <card id="5033" mastery_level="6" />
+      <!-- Dread Soul -->
+      <card id="7170" mastery_level="7" />
+      <!-- Gallows Hand -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7257</id>
+    <name>Treasure Hunter... Again</name>
+    <energy>24</energy>
+    <desc>Aria explains why she is here. You are beginning to find this conversation oddly familiar, almost as if you've heard it before.</desc>
+    <commander id="4" />
+    <!-- Aria the Necromancer -->
+    <deck>
+      <card id="1342" />
+      <!-- Dai Ronin -->
+      <card id="1644" />
+      <!-- Nether Blackfin -->
+      <card id="2253" />
+      <!-- Glacierheart Walker -->
+      <card id="1342" />
+      <!-- Dai Ronin -->
+      <card id="1644" />
+      <!-- Nether Blackfin -->
+      <card id="2253" />
+      <!-- Glacierheart Walker -->
+      <card id="1342" />
+      <!-- Dai Ronin -->
+      <card id="1644" />
+      <!-- Nether Blackfin -->
+      <card id="2253" />
+      <!-- Glacierheart Walker -->
+      <card id="1342" mastery_level="2" />
+      <!-- Dai Ronin -->
+      <card id="1644" mastery_level="3" />
+      <!-- Nether Blackfin -->
+      <card id="2253" mastery_level="4" />
+      <!-- Glacierheart Walker -->
+      <card id="1342" mastery_level="5" />
+      <!-- Dai Ronin -->
+      <card id="1644" mastery_level="6" />
+      <!-- Nether Blackfin -->
+      <card id="2253" mastery_level="7" />
+      <!-- Glacierheart Walker -->
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>The glyphs spoke of an ancient power sealed away here. If I could just get my hands on it...</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>This feels like a story from years ago you've told me about before, Aria.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Don't you look at me like that.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7258</id>
+    <name>Another Path to Knowledge</name>
+    <energy>24</energy>
+    <desc>Aria turns and flees. Your group chases her. You can see a monument in the distance.</desc>
+    <commander id="4" />
+    <!-- Aria the Necromancer -->
+    <deck>
+      <card id="1346" />
+      <!-- Wandmaster Demilich -->
+      <card id="2026" />
+      <!-- Lazarus, Betrayer -->
+      <card id="2236" />
+      <!-- Maleficient Initiate -->
+      <card id="1346" />
+      <!-- Wandmaster Demilich -->
+      <card id="2026" />
+      <!-- Lazarus, Betrayer -->
+      <card id="2236" />
+      <!-- Maleficient Initiate -->
+      <card id="1346" />
+      <!-- Wandmaster Demilich -->
+      <card id="2026" />
+      <!-- Lazarus, Betrayer -->
+      <card id="2236" />
+      <!-- Maleficient Initiate -->
+      <card id="1346" mastery_level="2" />
+      <!-- Wandmaster Demilich -->
+      <card id="2026" mastery_level="3" />
+      <!-- Lazarus, Betrayer -->
+      <card id="2236" mastery_level="4" />
+      <!-- Maleficient Initiate -->
+      <card id="1346" mastery_level="5" />
+      <!-- Wandmaster Demilich -->
+      <card id="2026" mastery_level="6" />
+      <!-- Lazarus, Betrayer -->
+      <card id="2236" mastery_level="7" />
+      <!-- Maleficient Initiate -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Yup, you've definitely told me this story before.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>If only I could remember what happens next...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7259</id>
+    <name>Breaking Free One More Time</name>
+    <energy>24</energy>
+    <desc>As you approach the monument, the ground shatters around your feet. Void shadows rise from the ground and start attacking.</desc>
+    <commander id="228" />
+    <!-- Voidlings -->
+    <deck>
+      <card id="5213" />
+      <!-- Mountking Defender -->
+      <card id="6292" />
+      <!-- Nightbreaker Baroness -->
+      <card id="7169" />
+      <!-- Mortalum, Axelord -->
+      <card id="5213" />
+      <!-- Mountking Defender -->
+      <card id="6292" />
+      <!-- Nightbreaker Baroness -->
+      <card id="7169" />
+      <!-- Mortalum, Axelord -->
+      <card id="5213" />
+      <!-- Mountking Defender -->
+      <card id="6292" />
+      <!-- Nightbreaker Baroness -->
+      <card id="7169" />
+      <!-- Mortalum, Axelord -->
+      <card id="5213" mastery_level="2" />
+      <!-- Mountking Defender -->
+      <card id="6292" mastery_level="3" />
+      <!-- Nightbreaker Baroness -->
+      <card id="7169" mastery_level="4" />
+      <!-- Mortalum, Axelord -->
+      <card id="5213" mastery_level="5" />
+      <!-- Mountking Defender -->
+      <card id="6292" mastery_level="6" />
+      <!-- Nightbreaker Baroness -->
+      <card id="7169" mastery_level="7" />
+      <!-- Mortalum, Axelord -->
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>The shadows?! They are moving!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>What are these things?! I've never seen anything like them!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Oh yeah, that's what happens next!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E116 Node 2: Already Seen -->
+  <mission>
+    <id>7260</id>
+    <name>Aria's Second Flight</name>
+    <energy>24</energy>
+    <desc>Aria tries to flee the valley but cannot outrun the Voidlings. Unable to find sanctuary, she summons as many Undead as she can to fight them off.</desc>
+    <commander id="230" />
+    <!-- Aria, Void Consumed -->
+    <deck>
+      <card id="5083" />
+      <!-- Honor Bound -->
+      <card id="6166" />
+      <!-- Warfield Corpsedancer -->
+      <card id="7036" />
+      <!-- Deepwood Zombie -->
+      <card id="5083" />
+      <!-- Honor Bound -->
+      <card id="6166" />
+      <!-- Warfield Corpsedancer -->
+      <card id="7036" />
+      <!-- Deepwood Zombie -->
+      <card id="5083" />
+      <!-- Honor Bound -->
+      <card id="6166" />
+      <!-- Warfield Corpsedancer -->
+      <card id="7036" />
+      <!-- Deepwood Zombie -->
+      <card id="5083" mastery_level="2" />
+      <!-- Honor Bound -->
+      <card id="6166" mastery_level="3" />
+      <!-- Warfield Corpsedancer -->
+      <card id="7036" mastery_level="4" />
+      <!-- Deepwood Zombie -->
+      <card id="5083" mastery_level="5" />
+      <!-- Honor Bound -->
+      <card id="6166" mastery_level="6" />
+      <!-- Warfield Corpsedancer -->
+      <card id="7036" mastery_level="7" />
+      <!-- Deepwood Zombie -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>I think she's trying to find a temple!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>No! Get out of my mind!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Who are you? Where am I?! STAY AWAY!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7261</id>
+    <name>Seized by Darkness</name>
+    <energy>24</energy>
+    <desc>The Voidlings have now surrounded Aria. With a scream, the shadows consume her. The skeletons, now without their master, turn and attack you!</desc>
+    <commander id="230" />
+    <!-- Aria, Void Consumed -->
+    <deck>
+      <card id="6002" />
+      <!-- Spirit of Insanity -->
+      <card id="5277" />
+      <!-- Visitor of Eternity -->
+      <card id="7257" />
+      <!-- Spectre of Erosion -->
+      <card id="6002" />
+      <!-- Spirit of Insanity -->
+      <card id="5277" />
+      <!-- Visitor of Eternity -->
+      <card id="7257" />
+      <!-- Spectre of Erosion -->
+      <card id="6002" />
+      <!-- Spirit of Insanity -->
+      <card id="5277" />
+      <!-- Visitor of Eternity -->
+      <card id="7257" />
+      <!-- Spectre of Erosion -->
+      <card id="6002" mastery_level="2" />
+      <!-- Spirit of Insanity -->
+      <card id="5277" mastery_level="3" />
+      <!-- Visitor of Eternity -->
+      <card id="7257" mastery_level="4" />
+      <!-- Spectre of Erosion -->
+      <card id="6002" mastery_level="5" />
+      <!-- Spirit of Insanity -->
+      <card id="5277" mastery_level="6" />
+      <!-- Visitor of Eternity -->
+      <card id="7257" mastery_level="7" />
+      <!-- Spectre of Erosion -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7262</id>
+    <name>Push the Undead Back</name>
+    <energy>24</energy>
+    <desc>More Undead come from the woods but these are different. A poisonous corruption swirls around them. You turn to your party with a knowing nod.</desc>
+    <commander id="220" />
+    <!-- Cursed Voidlings -->
+    <deck>
+      <card id="5214" />
+      <!-- Bonebite Highjacker -->
+      <card id="2145" />
+      <!-- Astaroth -->
+      <card id="6167" />
+      <!-- Macabre Mechanation -->
+      <card id="5214" />
+      <!-- Bonebite Highjacker -->
+      <card id="2145" />
+      <!-- Astaroth -->
+      <card id="6167" />
+      <!-- Macabre Mechanation -->
+      <card id="5214" />
+      <!-- Bonebite Highjacker -->
+      <card id="2145" />
+      <!-- Astaroth -->
+      <card id="6167" />
+      <!-- Macabre Mechanation -->
+      <card id="5214" mastery_level="2" />
+      <!-- Bonebite Highjacker -->
+      <card id="2145" mastery_level="3" />
+      <!-- Astaroth -->
+      <card id="6167" mastery_level="4" />
+      <!-- Macabre Mechanation -->
+      <card id="5214" mastery_level="5" />
+      <!-- Bonebite Highjacker -->
+      <card id="2145" mastery_level="6" />
+      <!-- Astaroth -->
+      <card id="6167" mastery_level="7" />
+      <!-- Macabre Mechanation -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7263</id>
+    <name>Return of the Necromancer</name>
+    <energy>24</energy>
+    <desc>You spot a cloaked figure that appears to be the leader. As you approach, she removes her hood and you see a familiar face.</desc>
+    <commander id="15" />
+    <!-- Aria the Nightwielder -->
+    <deck>
+      <card id="8075" />
+      <!-- Vorpal Magnate -->
+      <card id="6003" />
+      <!-- Obsidian Knight -->
+      <card id="6032" />
+      <!-- King Mumohotep -->
+      <card id="8075" />
+      <!-- Vorpal Magnate -->
+      <card id="6003" />
+      <!-- Obsidian Knight -->
+      <card id="6032" />
+      <!-- King Mumohotep -->
+      <card id="8075" />
+      <!-- Vorpal Magnate -->
+      <card id="6003" />
+      <!-- Obsidian Knight -->
+      <card id="6032" />
+      <!-- King Mumohotep -->
+      <card id="8075" mastery_level="2" />
+      <!-- Vorpal Magnate -->
+      <card id="6003" mastery_level="3" />
+      <!-- Obsidian Knight -->
+      <card id="6032" mastery_level="4" />
+      <!-- King Mumohotep -->
+      <card id="8075" mastery_level="5" />
+      <!-- Vorpal Magnate -->
+      <card id="6003" mastery_level="6" />
+      <!-- Obsidian Knight -->
+      <card id="6032" mastery_level="7" />
+      <!-- King Mumohotep -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Does it feel like we are fighting the same thing again and again?</text>
+      </line>
+      <line>
+        <commander>ariaupgrade</commander>
+        <enemy>1</enemy>
+        <text>So you're the ones who have defeated my precious minions? I shall add you to my collection!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7264</id>
+    <name>Standing Down?</name>
+    <energy>24</energy>
+    <desc>Just as you are about to rush in, you feel a tug on your back. You turn around and see Lev. Maybe this isn't a battle you are meant to fight.</desc>
+    <commander id="15" />
+    <!-- Aria the Nightwielder -->
+    <deck>
+      <card id="6233" />
+      <!-- Sandbone Watcher -->
+      <card id="7037" />
+      <!-- Noxious Bane -->
+      <card id="5222" />
+      <!-- Valiant Automaburner -->
+      <card id="6233" />
+      <!-- Sandbone Watcher -->
+      <card id="7037" />
+      <!-- Noxious Bane -->
+      <card id="5222" />
+      <!-- Valiant Automaburner -->
+      <card id="6233" />
+      <!-- Sandbone Watcher -->
+      <card id="7037" />
+      <!-- Noxious Bane -->
+      <card id="5222" />
+      <!-- Valiant Automaburner -->
+      <card id="6233" mastery_level="2" />
+      <!-- Sandbone Watcher -->
+      <card id="7037" mastery_level="3" />
+      <!-- Noxious Bane -->
+      <card id="5222" mastery_level="4" />
+      <!-- Valiant Automaburner -->
+      <card id="6233" mastery_level="5" />
+      <!-- Sandbone Watcher -->
+      <card id="7037" mastery_level="6" />
+      <!-- Noxious Bane -->
+      <card id="5222" mastery_level="7" />
+      <!-- Valiant Automaburner -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Adventurer! Stop! This feels like a trap.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Maybe that Mecha was right and we shouldn't be always seeking to defeat the Void. Perhaps this is a fight we should back down from.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You said that this necromancer was your first contact with the Void?</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>That's interesting. For you see, Verus was there for my first.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7265</id>
+    <name>The Void Puppetmaster</name>
+    <energy>24</energy>
+    <desc>Aria was to you what Verus was to Lev: there at your earliest encounter with the Void. You wonder who else this reality will materialize from your past.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="6168" />
+      <!-- Chainwrath Spirit -->
+      <card id="6174" />
+      <!-- Flareye Owl -->
+      <card id="6301" />
+      <!-- Count Vlad -->
+      <card id="7124" />
+      <!-- Immortal Appetite -->
+      <card id="7131" />
+      <!-- Xovrus, Death's End -->
+      <card id="6301" />
+      <!-- Count Vlad -->
+      <card id="7236" />
+      <!-- Unicorn Specter -->
+      <card id="6087" />
+      <!-- Reaping Obliterator -->
+      <card id="6082" />
+      <!-- Rugarth, Fallen Bones -->
+      <card id="5216" mastery_level="2" />
+      <!-- Hallowed Drakon -->
+      <card id="6277" mastery_level="3" />
+      <!-- Ironblood Manipulator -->
+      <card id="6232" mastery_level="4" />
+      <!-- Viofire Deathmoth -->
+      <card id="5305" mastery_level="5" />
+      <!-- Transcended Master -->
+      <card id="5036" mastery_level="6" />
+      <!-- Summer Tail -->
+      <card id="7121" mastery_level="7" />
+      <!-- Varachnis Charmer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>All these Undead, the necromancer, even Verus. They must have just been creations of the Deep Void.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>We have to be careful. I believe the Void is now burrowed deep into our memories, insidiously replaying them back to us.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Ursurio! You're the only one whose memories have yet to be dredged up. Can you remember your first time?</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Mmmm... tasty honey.</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

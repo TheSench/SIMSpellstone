@@ -11208,4 +11208,120 @@
       <item id="106625" quantity="125" weight="1" />
     </item_pack>
   </store_item>
+  <store_item>
+    <id>5386</id>
+    <name>Weirdflesh Thing Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFWeirdflesh Thing^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_066_banner_evileye</background_prefab>
+    <bundle>197</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6276" display_card_id="6276" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5387</id>
+    <name>Bogwater Horde Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBogwater Horde^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_051_banner_swampundead</background_prefab>
+    <bundle>161</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7238" display_card_id="7238" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5388</id>
+    <name>Ironblood Ghoul Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFIronblood Ghoul^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_066_banner_ironghoul</background_prefab>
+    <bundle>197</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6277" display_card_id="6277" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5389</id>
+    <name>Two-Deaths Brute Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFTwo-Deaths Brute^cFFFF! May be purchased four times.</desc>
+    <background_prefab>event_058_banner_twoheadedundeadbrute</background_prefab>
+    <bundle>177</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>150</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6258" display_card_id="6258" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5390</id>
+    <name>Osseus Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFOsseus, the Skeleball^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_92_skeleball_championpack</asset_prefab>
+    <background_prefab>event_92_skeleball_banner</background_prefab>
+    <bundle>251</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="106624" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5391</id>
+    <name>Tao Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFTao, Transcended Lich^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_051_undeadmonk</asset_prefab>
+    <background_prefab>event_051_banner_undeadmonk</background_prefab>
+    <bundle>161</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105607" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
 </root>
