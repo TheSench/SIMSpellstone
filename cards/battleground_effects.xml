@@ -1753,10 +1753,10 @@
     <icon>filter_mech_64</icon>
     <effect>
       <add_skill id="absorb" mult="0.10" base="health" y="16" />
-      <skill id="protect" ignore_nullify="1" mult="0.15" base="health" all="1" yy="1,16" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="0" base="health" all="1" yy="1,16" />
       <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="2,16" />
       <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="3,16" />
-      <skill id="protect" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="0" base="health" all="1" yy="0,16" />
       <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
       <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
     </effect>
@@ -2881,33 +2881,14 @@
   </battleground>
   <battleground>
     <id>573</id>
-    <name>Tree of Eternity</name>
-    <desc>All enemies start with a Tree of Eternity card. The first enemy card played in battle also has one additional Delay.</desc>
-    <web_picture>filter_tower_64.png</web_picture>
-    <icon>tree_of_life_64</icon>
-    <icon_bundle>31</icon_bundle>
+    <name>Enemy Delay</name>
+    <desc>The first enemy card played in battle has one additional Delay.</desc>
+    <icon>1Delay_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
     <effect>
       <on_play first_play="1" defender="1">
         <add_skill id="slow" x="1" />
       </on_play>
-      <starting_card id="616" level="1" pvp_rank="1" />
-      <starting_card id="616" level="1" pvp_rank="2" />
-      <starting_card id="616" level="1" pvp_rank="3" />
-      <starting_card id="616" level="1" pvp_rank="4" />
-      <starting_card id="616" level="1" pvp_rank="5" />
-      <starting_card id="616" level="1" pvp_rank="6" />
-      <starting_card id="616" level="1" pvp_rank="7" />
-      <starting_card id="616" level="1" pvp_rank="8" />
-      <starting_card id="616" level="1" pvp_rank="9" />
-      <starting_card id="616" level="1" pvp_rank="10" />
-      <starting_card id="616" level="1" pvp_rank="11" />
-      <starting_card id="616" level="1" pvp_rank="12" />
-      <starting_card id="616" level="1" pvp_rank="13" />
-      <starting_card id="616" level="1" pvp_rank="14" />
-      <starting_card id="616" level="1" pvp_rank="15" />
-      <starting_card id="616" level="1" pvp_rank="16" />
-      <starting_card id="616" level="1" pvp_rank="17" />
-      <starting_card id="616" level="1" pvp_rank="18" />
     </effect>
   </battleground>
   <battleground>

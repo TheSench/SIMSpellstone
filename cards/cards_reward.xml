@@ -32287,49 +32287,39 @@
     <name>Glacierheart Walker</name>
     <picture>Undead_Frozen_Warrior_B</picture>
     <asset_bundle>274</asset_bundle>
+    <hidden_until_time>1685034000</hidden_until_time>
+    <attack>11</attack>
+    <health>30</health>
     <cost>2</cost>
-    <attack>12</attack>
-    <health>29</health>
+    <rarity>4</rarity>
     <skill id="regenerate" x="8" />
     <skill id="frost" x="5" />
     <skill id="berserk" x="5" />
-    <rarity>4</rarity>
     <type>1</type>
     <sub_type>7</sub_type>
     <set>2000</set>
-    <hidden_until_time>1685034000</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <skill id="regenerate" x="8" />
-      <skill id="frost" x="6" />
-      <skill id="berserk" x="6" />
+      <attack>12</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="regenerate" x="9" />
-      <skill id="frost" x="7" />
-      <skill id="berserk" x="6" />
+      <attack>13</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>13</attack>
-      <skill id="regenerate" x="9" />
-      <skill id="frost" x="8" />
-      <skill id="berserk" x="6" />
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>30</health>
       <skill id="regenerate" x="9" />
-      <skill id="frost" x="9" />
-      <skill id="berserk" x="6" />
+      <skill id="frost" x="5" />
+      <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>13</attack>
-      <health>31</health>
       <skill id="regenerate" x="9" />
-      <skill id="frost" x="10" />
+      <skill id="frost" x="6" />
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>

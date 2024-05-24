@@ -2857,6 +2857,7 @@ var BATTLEGROUNDS = {
 				"id": "protect",
 				"ignore_nullify": "1",
 				"mult": 0.15,
+				"x": 0,
 				"y": "1,16"
 			},
 			{
@@ -2884,6 +2885,7 @@ var BATTLEGROUNDS = {
 				"id": "protect",
 				"ignore_nullify": "1",
 				"mult": 0.15,
+				"x": 0,
 				"y": "0,16"
 			},
 			{
@@ -5190,84 +5192,21 @@ var BATTLEGROUNDS = {
 		"name": "The Void's Universe"
 	},
 	"573": {
-		"desc": "All enemies start with a Tree of Eternity card. The first enemy card played in battle also has one additional Delay.",
-		"effect": {
-			"1": {
-				"id": 616,
-				"level": 1
-			},
-			"2": {
-				"id": 616,
-				"level": 1
-			},
-			"3": {
-				"id": 616,
-				"level": 1
-			},
-			"4": {
-				"id": 616,
-				"level": 1
-			},
-			"5": {
-				"id": 616,
-				"level": 1
-			},
-			"6": {
-				"id": 616,
-				"level": 1
-			},
-			"7": {
-				"id": 616,
-				"level": 1
-			},
-			"8": {
-				"id": 616,
-				"level": 1
-			},
-			"9": {
-				"id": 616,
-				"level": 1
-			},
-			"10": {
-				"id": 616,
-				"level": 1
-			},
-			"11": {
-				"id": 616,
-				"level": 1
-			},
-			"12": {
-				"id": 616,
-				"level": 1
-			},
-			"13": {
-				"id": 616,
-				"level": 1
-			},
-			"14": {
-				"id": 616,
-				"level": 1
-			},
-			"15": {
-				"id": 616,
-				"level": 1
-			},
-			"16": {
-				"id": 616,
-				"level": 1
-			},
-			"17": {
-				"id": 616,
-				"level": 1
-			},
-			"18": {
-				"id": 616,
-				"level": 1
+		"desc": "The first enemy card played in battle has one additional Delay.",
+		"effect": [
+			{
+				"defender": 1,
+				"effect": {
+					"effect_type": "add_skill",
+					"id": "slow",
+					"x": 1
+				},
+				"effect_type": "on_play",
+				"first_play": 1
 			}
-		},
+		],
 		"id": "573",
-		"isTower": true,
-		"name": "Tree of Eternity"
+		"name": "Enemy Delay"
 	},
 	"574": {
 		"desc": "All Aether gain Armor. All Chaos gain Enrage. All Wyld gain Berserk. Values are equal to 10% of base Health.",
