@@ -573,7 +573,7 @@
   <skillType>
     <id>swarm</id>
     <order>1</order>
-    <icon>berserk</icon>
+    <icon>infect</icon>
     <name>Swarm</name>
     <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />

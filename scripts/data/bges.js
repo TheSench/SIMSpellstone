@@ -2947,6 +2947,52 @@ var BATTLEGROUNDS = {
 		"id": "180",
 		"name": "Blazing Undead Vampirism"
 	},
+	"181": {
+		"desc": "All Insects gain extra Pierce and Swarm equal to 50% of their base Attack, and also gain 15% extra Health. Also, all Poison/Poisonbolt skills for all tribes deal 30% more damage.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "scale_health",
+				"mult": 0.15,
+				"y": "13"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "swarm",
+				"mult": 0.5,
+				"y": "13"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.5,
+				"y": "13"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.3,
+				"s": "poison"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.3,
+				"s": "poisonstrike"
+			}
+		],
+		"id": "181",
+		"name": "Universal Toxic Swarm"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4860,7 +4906,7 @@ var BATTLEGROUNDS = {
 		"name": "Endless Rage"
 	},
 	"565": {
-		"desc": "All enemies start with a Warding Tower card. The tower evolves with the strongest opponents!",
+		"desc": "All enemies start with a Warding Tower card.",
 		"effect": {
 			"2": {
 				"id": 615,
@@ -5039,52 +5085,80 @@ var BATTLEGROUNDS = {
 		"starting_level": 22
 	},
 	"568": {
-		"desc": "1 delay cards have their Attack and Health doubled.",
-		"effect": [
-			{
-				"all": "1",
-				"delay": [
-					1
-				],
-				"effect_type": "skill",
-				"id": "enlarge",
-				"mult": 1
+		"desc": "All enemies start with a Swarming Tower card.",
+		"effect": {
+			"2": {
+				"id": 617,
+				"level": 1
 			},
-			{
-				"base": "health",
-				"delay": [
-					1
-				],
-				"effect_type": "scale_health",
-				"mult": 1
+			"3": {
+				"id": 617,
+				"level": 2
+			},
+			"4": {
+				"id": 617,
+				"level": 3
+			},
+			"5": {
+				"id": 617,
+				"level": 4
+			},
+			"6": {
+				"id": 617,
+				"level": 5
+			},
+			"7": {
+				"id": 617,
+				"level": 6
+			},
+			"8": {
+				"id": 617,
+				"level": 7
+			},
+			"9": {
+				"id": 617,
+				"level": 8
+			},
+			"10": {
+				"id": 617,
+				"level": 9
+			},
+			"11": {
+				"id": 617,
+				"level": 10
+			},
+			"12": {
+				"id": 617,
+				"level": 11
+			},
+			"13": {
+				"id": 617,
+				"level": 12
+			},
+			"14": {
+				"id": 617,
+				"level": 13
+			},
+			"15": {
+				"id": 617,
+				"level": 14
+			},
+			"16": {
+				"id": 617,
+				"level": 15
+			},
+			"17": {
+				"id": 617,
+				"level": 16
+			},
+			"18": {
+				"id": 617,
+				"level": 17
 			}
-		],
+		},
 		"id": "568",
-		"name": "Pocket Tanks"
-	},
-	"569": {
-		"desc": "2 delay cards have their Attack and Health doubled.",
-		"effect": [
-			{
-				"all": "1",
-				"delay": [
-					2
-				],
-				"effect_type": "skill",
-				"id": "enlarge",
-				"mult": 1
-			},
-			{
-				"base": "health",
-				"delay": [
-					2
-				],
-				"effect_type": "scale_health",
-				"mult": 1
-			}
-		],
-		"id": "569",
-		"name": "Pocket Tanks 2.0"
+		"isTower": true,
+		"name": "Swarming Tower"
 	},
 	"570": {
 		"desc": "All cards gain Vampirism 10.",
@@ -5100,7 +5174,7 @@ var BATTLEGROUNDS = {
 		"name": "Darkassan's Prophecy"
 	},
 	"571": {
-		"desc": "All cards gain Scorchbreath and Emberhide equal to two times their delay.",
+		"desc": "All cards gain Scorchbreath thrice their delay.",
 		"effect": [
 			{
 				"all": "1",
@@ -5109,7 +5183,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "scorchbreath",
-				"x": 2
+				"x": 3
 			},
 			{
 				"all": "1",
@@ -5118,7 +5192,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "scorchbreath",
-				"x": 4
+				"x": 6
 			},
 			{
 				"all": "1",
@@ -5127,7 +5201,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "scorchbreath",
-				"x": 6
+				"x": 9
 			},
 			{
 				"all": "1",
@@ -5136,43 +5210,7 @@ var BATTLEGROUNDS = {
 				],
 				"effect_type": "add_skill",
 				"id": "scorchbreath",
-				"x": 8
-			},
-			{
-				"all": "1",
-				"delay": [
-					1
-				],
-				"effect_type": "add_skill",
-				"id": "counterburn",
-				"x": 2
-			},
-			{
-				"all": "1",
-				"delay": [
-					2
-				],
-				"effect_type": "add_skill",
-				"id": "counterburn",
-				"x": 4
-			},
-			{
-				"all": "1",
-				"delay": [
-					3
-				],
-				"effect_type": "add_skill",
-				"id": "counterburn",
-				"x": 6
-			},
-			{
-				"all": "1",
-				"delay": [
-					4
-				],
-				"effect_type": "add_skill",
-				"id": "counterburn",
-				"x": 8
+				"x": 12
 			}
 		],
 		"id": "571",
@@ -5237,6 +5275,75 @@ var BATTLEGROUNDS = {
 		],
 		"id": "574",
 		"name": "Faction Friction"
+	},
+	"575": {
+		"desc": "Empower and Empower All skills are 25% more effective.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.25,
+				"s": "rally"
+			}
+		],
+		"id": "575",
+		"name": "Empowered Spirits"
+	},
+	"576": {
+		"desc": "Legion skills are 25% more effective.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.25,
+				"s": "legion"
+			}
+		],
+		"id": "576",
+		"name": "Legion's Call"
+	},
+	"577": {
+		"desc": "Berserk skills are 25% more effective.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"mult": 0.25,
+				"s": "berserk"
+			}
+		],
+		"id": "577",
+		"name": "Berserker Rage"
+	},
+	"578": {
+		"desc": "Aether have their Health increased by 40% of the base.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.4,
+				"y": "1"
+			}
+		],
+		"id": "578",
+		"name": "Aether Triumph 2.0"
+	},
+	"579": {
+		"desc": "Chaos have their Attack increased by 25% of the base.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 0.25,
+				"y": "2"
+			}
+		],
+		"id": "579",
+		"name": "Chaos Triumph 2.0"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

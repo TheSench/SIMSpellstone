@@ -357,7 +357,7 @@ var SKILL_DATA = {
 	},
 	"swarm": {
 		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature.",
-		"icon": "berserk",
+		"icon": "infect",
 		"name": "Swarm",
 		"type": "onAttack"
 	},

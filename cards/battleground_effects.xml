@@ -1772,6 +1772,19 @@
       <add_skill id="counterburn" mult="0.1" base="health" y="7" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>181</id>
+    <name>Universal Toxic Swarm</name>
+    <desc>All Insects gain extra Pierce and Swarm equal to 50% of their base Attack, and also gain 15% extra Health. Also, all Poison/Poisonbolt skills for all tribes deal 30% more damage.</desc>
+    <icon>filter_insect_64.png</icon>
+    <effect>
+      <scale_health base="health" mult="0.15" yy="13" delay="2" />
+      <add_skill id="swarm" mult="0.5" base="attack" y="13" />
+      <add_skill id="pierce" mult="0.5" base="attack" y="13" />
+      <skill id="enhance" s="poison" mult="0.3" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poisonstrike" mult="0.3" all="1" ignore_nullify="1" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2757,7 +2770,7 @@
   <battleground>
     <id>565</id>
     <name>Warding Tower</name>
-    <desc>All enemies start with a Warding Tower card. The tower evolves with the strongest opponents!</desc>
+    <desc>All enemies start with a Warding Tower card.</desc>
     <web_picture>filter_tower_64.png</web_picture>
     <icon>filter_tower_64</icon>
     <effect>
@@ -2825,24 +2838,28 @@
   </battleground>
   <battleground>
     <id>568</id>
-    <name>Pocket Tanks</name>
-    <desc>1 delay cards have their Attack and Health doubled.</desc>
-    <icon>filter_chaos_64</icon>
+    <name>Swarming Tower</name>
+    <desc>All enemies start with a Swarming Tower card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>filter_tower_64</icon>
     <effect>
-      <skill id="enlarge" mult="1" all="1" delay="1" />
-      <!-- mult is based on attack -->
-      <scale_health base="health" mult="1" delay="1" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>569</id>
-    <name>Pocket Tanks 2.0</name>
-    <desc>2 delay cards have their Attack and Health doubled.</desc>
-    <icon>filter_chaos_64</icon>
-    <effect>
-      <skill id="enlarge" mult="1" all="1" delay="2" />
-      <!-- mult is based on attack -->
-      <scale_health base="health" mult="1" delay="2" />
+      <starting_card id="617" level="1" pvp_rank="2" />
+      <starting_card id="617" level="2" pvp_rank="3" />
+      <starting_card id="617" level="3" pvp_rank="4" />
+      <starting_card id="617" level="4" pvp_rank="5" />
+      <starting_card id="617" level="5" pvp_rank="6" />
+      <starting_card id="617" level="6" pvp_rank="7" />
+      <starting_card id="617" level="7" pvp_rank="8" />
+      <starting_card id="617" level="8" pvp_rank="9" />
+      <starting_card id="617" level="9" pvp_rank="10" />
+      <starting_card id="617" level="10" pvp_rank="11" />
+      <starting_card id="617" level="11" pvp_rank="12" />
+      <starting_card id="617" level="12" pvp_rank="13" />
+      <starting_card id="617" level="13" pvp_rank="14" />
+      <starting_card id="617" level="14" pvp_rank="15" />
+      <starting_card id="617" level="15" pvp_rank="16" />
+      <starting_card id="617" level="16" pvp_rank="17" />
+      <starting_card id="617" level="17" pvp_rank="18" />
     </effect>
   </battleground>
   <battleground>
@@ -2857,17 +2874,13 @@
   <battleground>
     <id>571</id>
     <name>The Burning Hell</name>
-    <desc>All cards gain Scorchbreath and Emberhide equal to two times their delay.</desc>
+    <desc>All cards gain Scorchbreath thrice their delay.</desc>
     <icon>filter_chaos_64</icon>
     <effect>
-      <add_skill id="scorchbreath" x="2" all="1" delay="1" />
-      <add_skill id="scorchbreath" x="4" all="1" delay="2" />
-      <add_skill id="scorchbreath" x="6" all="1" delay="3" />
-      <add_skill id="scorchbreath" x="8" all="1" delay="4" />
-      <add_skill id="counterburn" x="2" all="1" delay="1" />
-      <add_skill id="counterburn" x="4" all="1" delay="2" />
-      <add_skill id="counterburn" x="6" all="1" delay="3" />
-      <add_skill id="counterburn" x="8" all="1" delay="4" />
+      <add_skill id="scorchbreath" x="3" all="1" delay="1" />
+      <add_skill id="scorchbreath" x="6" all="1" delay="2" />
+      <add_skill id="scorchbreath" x="9" all="1" delay="3" />
+      <add_skill id="scorchbreath" x="12" all="1" delay="4" />
     </effect>
   </battleground>
   <battleground>
@@ -2901,6 +2914,55 @@
       <add_skill id="armored" mult="0.1" base="health" y="1" />
       <skill id="enrage" ignore_nullify="1" mult="0.1" all="1" base="health" y="2" />
       <add_skill id="berserk" mult="0.1" base="health" y="3" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>575</id>
+    <name>Empowered Spirits</name>
+    <desc>Empower and Empower All skills are 25% more effective.</desc>
+    <icon>empower_BGE_64</icon>
+    <icon_bundle>96</icon_bundle>
+    <effect>
+      <skill id="enhance" s="rally" mult="0.25" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>576</id>
+    <name>Legion's Call</name>
+    <desc>Legion skills are 25% more effective.</desc>
+    <icon>Legion_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="legion" mult="0.25" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>577</id>
+    <name>Berserker Rage</name>
+    <desc>Berserk skills are 25% more effective.</desc>
+    <icon>Berserk_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="berserk" mult="0.25" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>578</id>
+    <name>Aether Triumph 2.0</name>
+    <desc>Aether have their Health increased by 40% of the base.</desc>
+    <icon>filter_aether_64</icon>
+    <effect>
+      <scale_health base="health" mult="0.4" yy="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>579</id>
+    <name>Chaos Triumph 2.0</name>
+    <desc>Chaos have their Attack increased by 25% of the base.</desc>
+    <icon>filter_chaos_64</icon>
+    <effect>
+      <skill id="enlarge" mult="0.25" all="1" y="2" />
+      <!-- mult is based on attack -->
     </effect>
   </battleground>
   <!-- ============================= -->
