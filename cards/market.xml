@@ -170,21 +170,6 @@
     <level_req>5</level_req>
     <item id="4" quantity="1450" />
   </store_item>
-  <store_item>
-    <id>9</id>
-    <name>Auto Dust Pack x500</name>
-    <category>2</category>
-    <show_desc>1</show_desc>
-    <desc>Quickly convert your Gold! Gives 1450 Arcane Dust, the expected amount from vaporizing all cards from 500 Basic Packs!</desc>
-    <priority>8</priority>
-    <asset_prefab>dust_package_3</asset_prefab>
-    <background_prefab>banner_epic</background_prefab>
-    <bundle>15</bundle>
-    <sc_cost>50000</sc_cost>
-    <card_limit>1</card_limit>
-    <level_req>5</level_req>
-    <item id="4" quantity="1450" />
-  </store_item>
   <!-- HC Packs -->
   <store_item>
     <id>11</id>
@@ -3135,9 +3120,9 @@
     <name>Double Legendary Undead Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Undead card from Premium Set!</desc>
+    <desc>Gives two copies of one random ^cE7FFLegendary^cFFFF Undead card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>

@@ -73054,6 +73054,636 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 117: ComDev Insect - Red Feather Valley -->
+  <!-- E117 Node 1: Bear's First Time -->
+  <mission>
+    <id>7266</id>
+    <name>Honey Boo Boo</name>
+    <energy>24</energy>
+    <desc>You hear the buzz of the approaching swarm growing in volume long before you see the silhouettes against the sky...</desc>
+    <commander id="434" />
+    <!-- Forgettable Elder Agatha -->
+    <deck>
+      <card id="1036" />
+      <!-- Silkwatch Warden -->
+      <card id="1330" />
+      <!-- Devouring Locusts -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1036" />
+      <!-- Silkwatch Warden -->
+      <card id="1330" />
+      <!-- Devouring Locusts -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1036" />
+      <!-- Silkwatch Warden -->
+      <card id="1330" />
+      <!-- Devouring Locusts -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1036" mastery_level="2" />
+      <!-- Silkwatch Warden -->
+      <card id="1330" mastery_level="3" />
+      <!-- Devouring Locusts -->
+      <card id="7300" mastery_level="4" />
+      <!-- Honey Burglar -->
+      <card id="1036" mastery_level="5" />
+      <!-- Silkwatch Warden -->
+      <card id="1330" mastery_level="6" />
+      <!-- Devouring Locusts -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Really, Ursurio? A Void tainted pot of honey? That was your first contact with the Void?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7267</id>
+    <name>Not the Bees</name>
+    <energy>24</energy>
+    <desc>You deduce these insects had something to do with Ursurio's first encounter with the Void. In retrospect, you probably should have guessed it was food related.</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2179" />
+      <!-- Hard-Hitter Chryxie -->
+      <card id="2156" />
+      <!-- Bladed Wayfarer -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2179" />
+      <!-- Hard-Hitter Chryxie -->
+      <card id="2156" />
+      <!-- Bladed Wayfarer -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2179" />
+      <!-- Hard-Hitter Chryxie -->
+      <card id="2156" />
+      <!-- Bladed Wayfarer -->
+      <card id="7300" mastery_level="2" />
+      <!-- Honey Burglar -->
+      <card id="2179" mastery_level="3" />
+      <!-- Hard-Hitter Chryxie -->
+      <card id="2156" mastery_level="4" />
+      <!-- Bladed Wayfarer -->
+      <card id="7300" mastery_level="5" />
+      <!-- Honey Burglar -->
+      <card id="2179" mastery_level="6" />
+      <!-- Hard-Hitter Chryxie -->
+      <card id="2156" mastery_level="7" />
+      <!-- Bladed Wayfarer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>The bees were smaller the first time round!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>And it's not like I knew they were bringing Void pollen back to their honeycombs!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7268</id>
+    <name>Bring Back Our Honey</name>
+    <energy>24</energy>
+    <desc>You have plenty of questions for Ursurio but they will have to wait whilst you take care of the bugs.</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="2099" />
+      <!-- White Regemage -->
+      <card id="2180" />
+      <!-- Hidden Monstrosity -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2099" />
+      <!-- White Regemage -->
+      <card id="2180" />
+      <!-- Hidden Monstrosity -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2099" />
+      <!-- White Regemage -->
+      <card id="2180" />
+      <!-- Hidden Monstrosity -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2099" mastery_level="2" />
+      <!-- White Regemage -->
+      <card id="2180" mastery_level="3" />
+      <!-- Hidden Monstrosity -->
+      <card id="7300" mastery_level="4" />
+      <!-- Honey Burglar -->
+      <card id="2099" mastery_level="5" />
+      <!-- White Regemage -->
+      <card id="2180" mastery_level="6" />
+      <!-- Hidden Monstrosity -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7269</id>
+    <name>Stinging a Bear's Back</name>
+    <energy>24</energy>
+    <desc>Ursurio doesn't seem to mind the bees attacking. Presumably his thick hide and armor provide protection against their stings.</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="1344" />
+      <!-- Boomsting Duo -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1344" />
+      <!-- Boomsting Duo -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1344" />
+      <!-- Boomsting Duo -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="1344" mastery_level="2" />
+      <!-- Boomsting Duo -->
+      <card id="1645" mastery_level="3" />
+      <!-- Sundermarr -->
+      <card id="7300" mastery_level="4" />
+      <!-- Honey Burglar -->
+      <card id="1344" mastery_level="5" />
+      <!-- Boomsting Duo -->
+      <card id="1645" mastery_level="6" />
+      <!-- Sundermarr -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>And I have a strong stomach!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>It was just mild food poisoning...</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>... and maybe a few hallucinations.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7270</id>
+    <name>If I Only Had Honey</name>
+    <energy>24</energy>
+    <desc>In the midst of the fighting, Ursurio tries to justify eating the Void infected honey, bemoaning his inability to find anything quite like it again.</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="2247" />
+      <!-- Bee Nice -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2247" />
+      <!-- Bee Nice -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2247" />
+      <!-- Bee Nice -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2247" mastery_level="2" />
+      <!-- Bee Nice -->
+      <card id="2100" mastery_level="3" />
+      <!-- Kheptronos -->
+      <card id="7300" mastery_level="4" />
+      <!-- Honey Burglar -->
+      <card id="2247" mastery_level="5" />
+      <!-- Bee Nice -->
+      <card id="2100" mastery_level="6" />
+      <!-- Kheptronos -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Wait, if we follow these critters back to their nest, maybe I'll find that honey again!</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Focus!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7271</id>
+    <name>Long Term Poisoning</name>
+    <energy>24</energy>
+    <desc>The three of you remaining in the group beat the swarm into retreat, but Lev wonders if there were long term consequences for Ursurio from that day.</desc>
+    <commander id="437" />
+    <!-- Hero's Shadow -->
+    <deck>
+      <card id="2233" />
+      <!-- Aikido Initiate -->
+      <card id="2211" />
+      <!-- Firelight Patrol -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2233" />
+      <!-- Aikido Initiate -->
+      <card id="2211" />
+      <!-- Firelight Patrol -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2233" />
+      <!-- Aikido Initiate -->
+      <card id="2211" />
+      <!-- Firelight Patrol -->
+      <card id="7300" />
+      <!-- Honey Burglar -->
+      <card id="2233" mastery_level="2" />
+      <!-- Aikido Initiate -->
+      <card id="2211" mastery_level="3" />
+      <!-- Firelight Patrol -->
+      <card id="7300" mastery_level="4" />
+      <!-- Honey Burglar -->
+      <card id="2233" mastery_level="5" />
+      <!-- Aikido Initiate -->
+      <card id="2211" mastery_level="6" />
+      <!-- Firelight Patrol -->
+      <card id="7300" mastery_level="7" />
+      <!-- Honey Burglar -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>You seemed to be taking those stings quite well, Ursurio, considering you dived right into the thick of it.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Are you sure you didn't get long term side effects from the Void, what with being mildly poisoned?</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Now that you mention it, I have always felt quite immune from the Void corruption. Hmmm... never thought of it like that.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E117 Node 2: Called Out -->
+  <mission>
+    <id>7272</id>
+    <name>Dinner Time</name>
+    <energy>24</energy>
+    <desc>All this fighting and talk of honey has made your group hungry. You make your way back to camp and your rations.</desc>
+    <commander id="18" />
+    <!-- General Ursurio -->
+    <deck>
+      <card id="7010" />
+      <!-- Honeycomb Dragon -->
+      <card id="5067" />
+      <!-- Squito Roamer -->
+      <card id="7140" />
+      <!-- Clawgro -->
+      <card id="7010" />
+      <!-- Honeycomb Dragon -->
+      <card id="5067" />
+      <!-- Squito Roamer -->
+      <card id="7140" />
+      <!-- Clawgro -->
+      <card id="7010" />
+      <!-- Honeycomb Dragon -->
+      <card id="5067" />
+      <!-- Squito Roamer -->
+      <card id="7140" />
+      <!-- Clawgro -->
+      <card id="7010" mastery_level="2" />
+      <!-- Honeycomb Dragon -->
+      <card id="5067" mastery_level="3" />
+      <!-- Squito Roamer -->
+      <card id="7140" mastery_level="4" />
+      <!-- Clawgro -->
+      <card id="7010" mastery_level="5" />
+      <!-- Honeycomb Dragon -->
+      <card id="5067" mastery_level="6" />
+      <!-- Squito Roamer -->
+      <card id="7140" mastery_level="7" />
+      <!-- Clawgro -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>All this talk has made me hungry. Let's get back to --</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Watch your step, General!</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Thing nearly tripped me over! What was that?</text>
+      </line>
+      <line>
+        <commander>windupdragons</commander>
+        <enemy>1</enemy>
+        <text>BZZZT... WHRR...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7273</id>
+    <name>Return of the Messenger</name>
+    <energy>24</energy>
+    <desc>With all the excitement of the insect attack, your group failed to notice the wreckage of another flying machine, similar to those you saw previously.</desc>
+    <commander id="369" />
+    <!-- Guardian Constructs -->
+    <deck>
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="6192" />
+      <!-- Buzzing Elytrite -->
+      <card id="5233" />
+      <!-- Buzzbolt -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="6192" />
+      <!-- Buzzing Elytrite -->
+      <card id="5233" />
+      <!-- Buzzbolt -->
+      <card id="5142" />
+      <!-- Buzzblade -->
+      <card id="6192" />
+      <!-- Buzzing Elytrite -->
+      <card id="5233" />
+      <!-- Buzzbolt -->
+      <card id="5142" mastery_level="2" />
+      <!-- Buzzblade -->
+      <card id="6192" mastery_level="3" />
+      <!-- Buzzing Elytrite -->
+      <card id="5233" mastery_level="4" />
+      <!-- Buzzbolt -->
+      <card id="5142" mastery_level="5" />
+      <!-- Buzzblade -->
+      <card id="6192" mastery_level="6" />
+      <!-- Buzzing Elytrite -->
+      <card id="5233" mastery_level="7" />
+      <!-- Buzzbolt -->
+    </deck>
+    <speech>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>Looks like one of that Mecha Titan's messenger vessels.</text>
+      </line>
+      <line>
+        <commander>ursurioupgrade</commander>
+        <enemy>0</enemy>
+        <text>I guess he has another message for us.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7274</id>
+    <name>Viracocha's Accusations</name>
+    <energy>24</energy>
+    <desc>Viracocha once again speaks directly into your mind, but more forcefully and accusatory than before.</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="7279" />
+      <!-- Brainweb Recluse -->
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="7064" />
+      <!-- Willowfly -->
+      <card id="7279" />
+      <!-- Brainweb Recluse -->
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="7064" />
+      <!-- Willowfly -->
+      <card id="7279" />
+      <!-- Brainweb Recluse -->
+      <card id="6295" />
+      <!-- Creeperbots -->
+      <card id="7064" />
+      <!-- Willowfly -->
+      <card id="7279" mastery_level="2" />
+      <!-- Brainweb Recluse -->
+      <card id="6295" mastery_level="3" />
+      <!-- Creeperbots -->
+      <card id="7064" mastery_level="4" />
+      <!-- Willowfly -->
+      <card id="7279" mastery_level="5" />
+      <!-- Brainweb Recluse -->
+      <card id="6295" mastery_level="6" />
+      <!-- Creeperbots -->
+      <card id="7064" mastery_level="7" />
+      <!-- Willowfly -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Poison, Lev? That's rich of you saying the bear is carrying Poison.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Have you ever checked the tip of your spear? Or have you been so preoccupied not to even notice?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>That's right, Lev. Poison. Interesting how you didn't used to do that. Looks like Void has changed you...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7275</id>
+    <name>Lev, the Poisoner</name>
+    <energy>24</energy>
+    <desc>Viracocha is accusing Lev of being the source of the Void corruption!</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="6193" />
+      <!-- Scorpio Stinger -->
+      <card id="7048" />
+      <!-- Bogskull Widow -->
+      <card id="6138" />
+      <!-- Bitter Therix -->
+      <card id="6193" />
+      <!-- Scorpio Stinger -->
+      <card id="7048" />
+      <!-- Bogskull Widow -->
+      <card id="6138" />
+      <!-- Bitter Therix -->
+      <card id="6193" />
+      <!-- Scorpio Stinger -->
+      <card id="7048" />
+      <!-- Bogskull Widow -->
+      <card id="6138" />
+      <!-- Bitter Therix -->
+      <card id="6193" mastery_level="2" />
+      <!-- Scorpio Stinger -->
+      <card id="7048" mastery_level="3" />
+      <!-- Bogskull Widow -->
+      <card id="6138" mastery_level="4" />
+      <!-- Bitter Therix -->
+      <card id="6193" mastery_level="5" />
+      <!-- Scorpio Stinger -->
+      <card id="7048" mastery_level="6" />
+      <!-- Bogskull Widow -->
+      <card id="6138" mastery_level="7" />
+      <!-- Bitter Therix -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>What are you trying to achieve with these baseless accusations?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>The truth. Isn't that what we all want?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7276</id>
+    <name>Trapped Again?</name>
+    <energy>24</energy>
+    <desc>These are serious allegations against Lev! But even more serious is Viracocha's plan to deal with Lev...</desc>
+    <commander id="446" />
+    <!-- Viracocha, the Gentle -->
+    <deck>
+      <card id="6037" />
+      <!-- Keeper of Souls -->
+      <card id="6067" />
+      <!-- Gurgitater -->
+      <card id="7200" />
+      <!-- Sewer Slipper -->
+      <card id="6037" />
+      <!-- Keeper of Souls -->
+      <card id="6067" />
+      <!-- Gurgitater -->
+      <card id="7200" />
+      <!-- Sewer Slipper -->
+      <card id="6037" />
+      <!-- Keeper of Souls -->
+      <card id="6067" />
+      <!-- Gurgitater -->
+      <card id="7200" />
+      <!-- Sewer Slipper -->
+      <card id="6037" mastery_level="2" />
+      <!-- Keeper of Souls -->
+      <card id="6067" mastery_level="3" />
+      <!-- Gurgitater -->
+      <card id="7200" mastery_level="4" />
+      <!-- Sewer Slipper -->
+      <card id="6037" mastery_level="5" />
+      <!-- Keeper of Souls -->
+      <card id="6067" mastery_level="6" />
+      <!-- Gurgitater -->
+      <card id="7200" mastery_level="7" />
+      <!-- Sewer Slipper -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Was this the plan all along? Create this place and then to trap me here.</text>
+      </line>
+      <line>
+        <commander>Portrait_mythic_wyld</commander>
+        <enemy>0</enemy>
+        <text>Well I think I know who the Void has actually corrupted.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7277</id>
+    <name>All Part of a Plan</name>
+    <energy>24</energy>
+    <desc>Meanwhile, somewhere unbeknowst to you all...</desc>
+    <commander id="389" />
+    <!-- Void's Shadow -->
+    <deck>
+      <card id="5305" />
+      <!-- Fallen Master -->
+      <card id="7121" />
+      <!-- Varachnis -->
+      <card id="6232" />
+      <!-- Firetouch Deathmoth -->
+      <card id="5305" />
+      <!-- Fallen Master -->
+      <card id="7121" />
+      <!-- Varachnis -->
+      <card id="6232" />
+      <!-- Firetouch Deathmoth -->
+      <card id="5305" />
+      <!-- Fallen Master -->
+      <card id="7121" />
+      <!-- Varachnis -->
+      <card id="6232" />
+      <!-- Firetouch Deathmoth -->
+      <card id="5305" mastery_level="2" />
+      <!-- Fallen Master -->
+      <card id="7121" mastery_level="3" />
+      <!-- Varachnis -->
+      <card id="6232" mastery_level="4" />
+      <!-- Firetouch Deathmoth -->
+      <card id="5305" mastery_level="5" />
+      <!-- Fallen Master -->
+      <card id="7121" mastery_level="6" />
+      <!-- Varachnis -->
+      <card id="6232" mastery_level="7" />
+      <!-- Firetouch Deathmoth -->
+    </deck>
+    <speech>
+      <line>
+        <commander>void2</commander>
+        <enemy>1</enemy>
+        <text>It's all going perfectly according to plan...</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

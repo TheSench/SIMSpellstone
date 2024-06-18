@@ -3672,6 +3672,36 @@
       <!-- 120 Shards -->
     </reward>
   </achievement>
+  <achievement>
+    <id>1210</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CIX</name>
+    <desc>Collect 68,000 Bounties.</desc>
+    <achievement_collected_req>1209</achievement_collected_req>
+    <req>
+      <pvp_wins>68000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1211</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CX</name>
+    <desc>Collect 70,000 Bounties.</desc>
+    <achievement_collected_req>1210</achievement_collected_req>
+    <req>
+      <pvp_wins>70000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
   <!-- END Bounty Part 2 Quests  -->
   <!-- 1300: Runes Quests START -->
   <achievement>
@@ -24805,6 +24835,202 @@
     <locked_start_time>1717693200</locked_start_time>
     <req>
       <campaign>1374</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 117: ComDev Insect - Red Feather Valley -->
+  <!-- E117 Node 1: Bear's First Time -->
+  <achievement>
+    <id>4551</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Bear's First Time campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7271</mission_req>
+    <locked_start_time>1718902800</locked_start_time>
+    <req>
+      <campaign>1375</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7113" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4552</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Bear's First Time campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4551</achievement_req>
+    <locked_start_time>1718902800</locked_start_time>
+    <req>
+      <campaign>1375</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4553</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Bear's First Time campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4552</achievement_req>
+    <locked_start_time>1718902800</locked_start_time>
+    <req>
+      <campaign>1375</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4554</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Bear's First Time campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4553</achievement_req>
+    <locked_start_time>1718902800</locked_start_time>
+    <req>
+      <campaign>1375</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4555</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Bear's First Time campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4554</achievement_req>
+    <locked_start_time>1718902800</locked_start_time>
+    <req>
+      <campaign>1375</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 117: ComDev Insect - Red Feather Valley -->
+  <!-- E117 Node 2: Called Out -->
+  <achievement>
+    <id>4556</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Called Out campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7277</mission_req>
+    <locked_start_time>1720112400</locked_start_time>
+    <req>
+      <campaign>1376</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7113" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4557</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Called Out campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4556</achievement_req>
+    <locked_start_time>1720112400</locked_start_time>
+    <req>
+      <campaign>1376</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4558</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Called Out campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4557</achievement_req>
+    <locked_start_time>1720112400</locked_start_time>
+    <req>
+      <campaign>1376</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4559</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Called Out campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4558</achievement_req>
+    <locked_start_time>1720112400</locked_start_time>
+    <req>
+      <campaign>1376</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4560</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Called Out campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4559</achievement_req>
+    <locked_start_time>1720112400</locked_start_time>
+    <req>
+      <campaign>1376</campaign>
       <level>6</level>
     </req>
     <reward>

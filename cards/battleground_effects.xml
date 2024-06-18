@@ -1778,7 +1778,7 @@
     <desc>All Insects gain extra Pierce and Swarm equal to 50% of their base Attack, and also gain 15% extra Health. Also, all Poison/Poisonbolt skills for all tribes deal 30% more damage.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
-      <scale_health base="health" mult="0.15" yy="13" delay="2" />
+      <scale_health base="health" mult="0.15" yy="13" />
       <add_skill id="swarm" mult="0.5" base="attack" y="13" />
       <add_skill id="pierce" mult="0.5" base="attack" y="13" />
       <skill id="enhance" s="poison" mult="0.3" all="1" ignore_nullify="1" />
@@ -2963,6 +2963,43 @@
     <effect>
       <skill id="enlarge" mult="0.25" all="1" y="2" />
       <!-- mult is based on attack -->
+    </effect>
+  </battleground>
+  <battleground>
+    <id>580</id>
+    <name>Epic Return</name>
+    <desc>All Epic cards have their Attack, Health, and all Skills increased by 75%! Freeze and Dualstrike are not affected.</desc>
+    <icon>Epic_Card_Icon</icon>
+    <effect>
+      <skill id="enlarge" mult="0.5" all="1" z="3" />
+      <!-- mult is based on attack -->
+      <scale_health base="health" mult="0.5" rarity="3" />
+      <skill id="enhance" s="armored" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="evade" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="leech" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="pierce" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="burn" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poison" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="heal" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="strike" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="weaken" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="protect" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="rally" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="berserk" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="absorb" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="enrage" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="regenerate" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="valor" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="daze" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="backlash" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="frost" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="stasis" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="corrosive" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="legion" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="fervor" z="3" mult="0.75" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="enfeeble" z="3" mult="0.75" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <!-- ============================= -->

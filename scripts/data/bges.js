@@ -2952,9 +2952,6 @@ var BATTLEGROUNDS = {
 		"effect": [
 			{
 				"base": "health",
-				"delay": [
-					2
-				],
 				"effect_type": "scale_health",
 				"mult": 0.15,
 				"y": "13"
@@ -5344,6 +5341,260 @@ var BATTLEGROUNDS = {
 		],
 		"id": "579",
 		"name": "Chaos Triumph 2.0"
+	},
+	"580": {
+		"desc": "All Epic cards have their Attack, Health, and all Skills increased by 75%! Freeze and Dualstrike are not affected.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 0.5,
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "armored",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "counter",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "evade",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "leech",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "pierce",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "burn",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "poison",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "heal",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "strike",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "weaken",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "protect",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "rally",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "berserk",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "absorb",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "counterburn",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "enrage",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "regenerate",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "valor",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "daze",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "backlash",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "frost",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "stasis",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "corrosive",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "legion",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "fervor",
+				"z": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.75,
+				"s": "enfeeble",
+				"z": "3"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.5,
+				"rarity": 3
+			}
+		],
+		"id": "580",
+		"name": "Epic Return"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
