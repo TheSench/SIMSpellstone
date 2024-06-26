@@ -11428,7 +11428,7 @@
     <name>In Deep Danger</name>
     <icon id="node_gem_yellow" bundle="15" />
     <!-- <hidden>1</hidden> -->
-    <campaign_req id="1318" level="1" />
+    <campaign_req id="1320" level="1" />
     <locked_start_time>1657213200</locked_start_time>
     <!-- Thursday, 7 July 2022 17:00:00 -->
     <battleground_id>2119</battleground_id>
