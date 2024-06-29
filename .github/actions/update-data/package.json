@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1",
-    "@vercel/ncc": "^0.36.1",
-    "fast-xml-parser": "^4.2.4",
-    "xml-formatter": "^3.4.1"
+    "@actions/github": "^6.0.0",
+    "@vercel/ncc": "^0.38.1",
+    "fast-xml-parser": "^4.4.0",
+    "xml-formatter": "^3.6.2"
   }
 }
