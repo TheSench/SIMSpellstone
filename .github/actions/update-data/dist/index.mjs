@@ -8463,24 +8463,6 @@ function convertedValue(name, originalValue, options) {
   return xmlToJsonInner([normalizedName, originalValue], options);
 }
 
-;// CONCATENATED MODULE: ./src/data/getScriptFromGithub.mjs
-
-
-
-
-const scriptDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './scripts/data/');
-const xmlDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './cards/');
-
-function getScriptFromGithub(scriptName) {
-    const scriptPath = (0,external_path_.join)(scriptDir, scriptName);
-    return (0,external_fs_.readFileSync)(scriptPath, 'utf8');
-}
-
-function getXmlFromGithub(xmlName) {
-    const xmlPath = join(xmlDir, xmlName);
-    return readFileSync(xmlPath, 'utf8');
-}
-
 ;// CONCATENATED MODULE: ./src/data/getXmlFromSynapse.mjs
 
 
@@ -8489,9 +8471,7 @@ function getXmlFromGithub(xmlName) {
 
 
 
-
-
-const getXmlFromSynapse_xmlDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './cards/');
+const xmlDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './cards/');
 
 async function getJsonFromSynapse(filename, options) {
   console.log('Processing XML file: ' + filename);
@@ -8527,7 +8507,7 @@ async function getXmlFromSynapse(filename) {
           indentation: '  ',
           whiteSpaceAtEndOfSelfclosingTag: true,
         });
-        (0,external_fs_.writeFileSync)((0,external_path_.join)(getXmlFromSynapse_xmlDir, filename), xml);
+        (0,external_fs_.writeFileSync)((0,external_path_.join)(xmlDir, filename), xml);
         console.timeEnd('Retrieving ' + filename);
         resolve(xml);
       });
@@ -8703,6 +8683,19 @@ function convertTime(time) {
   if (time) {
     return (parseInt(time) * 1000).toString();
   }
+}
+
+;// CONCATENATED MODULE: ./src/data/getScriptFromGithub.mjs
+
+
+
+
+const scriptDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './scripts/data/');
+const getScriptFromGithub_xmlDir = (0,external_path_.join)((0,rootDir/* getRootDir */.ie)(), './cards/');
+
+function getScriptFromGithub(scriptName) {
+    const scriptPath = (0,external_path_.join)(scriptDir, scriptName);
+    return (0,external_fs_.readFileSync)(scriptPath, 'utf8');
 }
 
 ;// CONCATENATED MODULE: ./src/data/common.mjs
