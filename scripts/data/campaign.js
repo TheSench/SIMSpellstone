@@ -599,1512 +599,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Trial by Fire"
 	},
-	"1000": {
-		"id": "1000",
-		"items": {},
-		"location_id": "100",
-		"missions": [
-			"5001",
-			"5002",
-			"5003",
-			"5004",
-			"5005",
-			"5006"
-		],
-		"name": "Demon's Pass"
-	},
-	"1001": {
-		"id": "1001",
-		"items": {},
-		"location_id": "100",
-		"missions": [
-			"5007",
-			"5008",
-			"5009",
-			"5010",
-			"5011",
-			"5012"
-		],
-		"name": "First Contact"
-	},
-	"1002": {
-		"id": "1002",
-		"items": {},
-		"location_id": "100",
-		"missions": [
-			"5013",
-			"5014",
-			"5015",
-			"5016",
-			"5017",
-			"5018"
-		],
-		"name": "Aria's Fall"
-	},
-	"1003": {
-		"id": "1003",
-		"items": {
-			"3004": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5019",
-			"5020",
-			"5021",
-			"5022",
-			"5023",
-			"5024"
-		],
-		"name": "Tarragon Quakes"
-	},
-	"1004": {
-		"id": "1004",
-		"items": {},
-		"location_id": "101",
-		"missions": [
-			"5025"
-		],
-		"name": "Decim's Deceit"
-	},
-	"1005": {
-		"id": "1005",
-		"items": {
-			"3002": 0.65
-		},
-		"location_id": "101",
-		"missions": [
-			"5026"
-		],
-		"name": "Scorched Lands"
-	},
-	"1006": {
-		"id": "1006",
-		"items": {
-			"3003": 0.5
-		},
-		"location_id": "101",
-		"missions": [
-			"5027"
-		],
-		"name": "Dragon's Aerie"
-	},
-	"1007": {
-		"id": "1007",
-		"items": {},
-		"location_id": "101",
-		"missions": [
-			"5028"
-		],
-		"name": "Ice Dragon's Realm"
-	},
-	"1008": {
-		"id": "1008",
-		"items": {},
-		"location_id": "102",
-		"missions": [
-			"5029",
-			"5030"
-		],
-		"name": "The Strong Stone"
-	},
-	"1009": {
-		"id": "1009",
-		"items": {
-			"3006": 0.5
-		},
-		"location_id": "102",
-		"missions": [
-			"5031",
-			"5032",
-			"5033",
-			"5034"
-		],
-		"name": "Golden Lava"
-	},
-	"1010": {
-		"id": "1010",
-		"items": {
-			"3006": 0.5
-		},
-		"location_id": "102",
-		"missions": [
-			"5035",
-			"5036",
-			"5037",
-			"5038"
-		],
-		"name": "Magma Explosion"
-	},
-	"1011": {
-		"id": "1011",
-		"items": {},
-		"location_id": "102",
-		"missions": [
-			"5039",
-			"5040"
-		],
-		"name": "Celestial Depths"
-	},
-	"1012": {
-		"id": "1012",
-		"items": {
-			"3008": 0.9
-		},
-		"location_id": "102",
-		"missions": [
-			"5041",
-			"5042"
-		],
-		"name": "Capturing the Sky"
-	},
-	"1013": {
-		"id": "1013",
-		"items": {
-			"3011": 0.2
-		},
-		"location_id": "103",
-		"missions": [
-			"5043",
-			"5044",
-			"5045",
-			"5046",
-			"5047",
-			"5048",
-			"5049",
-			"5050"
-		],
-		"name": "Into the Marshes"
-	},
-	"1014": {
-		"id": "1014",
-		"items": {
-			"3009": 0.4,
-			"3011": 0.2
-		},
-		"location_id": "103",
-		"missions": [
-			"5051",
-			"5052",
-			"5053",
-			"5054"
-		],
-		"name": "High Grace"
-	},
-	"1015": {
-		"id": "1015",
-		"items": {
-			"3009": 0.4,
-			"3011": 0.2
-		},
-		"location_id": "103",
-		"missions": [
-			"5055",
-			"5056",
-			"5057",
-			"5058"
-		],
-		"name": "Tadpole Collection"
-	},
-	"1016": {
-		"id": "1016",
-		"items": {
-			"3009": 0.4,
-			"3011": 0.2
-		},
-		"location_id": "103",
-		"missions": [
-			"5059",
-			"5060",
-			"5061",
-			"5062"
-		],
-		"name": "Search and Rescue"
-	},
-	"1017": {
-		"id": "1017",
-		"items": {
-			"3011": 0.25
-		},
-		"location_id": "103",
-		"missions": [
-			"5063",
-			"5064"
-		],
-		"name": "To The Throne"
-	},
-	"1018": {
-		"id": "1018",
-		"items": {
-			"3004": 0.25,
-			"3012": 0.05
-		},
-		"location_id": "101",
-		"missions": [
-			"5065",
-			"5066",
-			"5067",
-			"5068",
-			"5069",
-			"5070"
-		],
-		"name": "Tarragon Quakes"
-	},
-	"1019": {
-		"id": "1019",
-		"items": {
-			"3012": 0.3
-		},
-		"location_id": "101",
-		"missions": [
-			"5071"
-		],
-		"name": "Decim's Deceit"
-	},
-	"1020": {
-		"id": "1020",
-		"items": {
-			"3002": 0.65,
-			"3012": 0.15
-		},
-		"location_id": "101",
-		"missions": [
-			"5072"
-		],
-		"name": "Scorched Lands"
-	},
-	"1021": {
-		"id": "1021",
-		"items": {
-			"3003": 0.5,
-			"3012": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5073"
-		],
-		"name": "Dragon's Aerie"
-	},
-	"1022": {
-		"id": "1022",
-		"items": {
-			"3012": 0.35
-		},
-		"location_id": "101",
-		"missions": [
-			"5074"
-		],
-		"name": "Ice Dragon's Realm"
-	},
-	"1023": {
-		"id": "1023",
-		"items": {
-			"3012": 0.45
-		},
-		"location_id": "101",
-		"missions": [
-			"5075",
-			"5076",
-			"5077",
-			"5078"
-		],
-		"name": "Molten Eruption"
-	},
-	"1024": {
-		"id": "1024",
-		"items": {
-			"3015": 0.2
-		},
-		"location_id": "104",
-		"missions": [
-			"5079",
-			"5080",
-			"5081",
-			"5082"
-		],
-		"name": "To Frigore!"
-	},
-	"1025": {
-		"id": "1025",
-		"items": {
-			"3015": 0.2
-		},
-		"location_id": "104",
-		"missions": [
-			"5083",
-			"5084",
-			"5085",
-			"5086"
-		],
-		"name": "Vapor Collection"
-	},
-	"1026": {
-		"id": "1026",
-		"items": {
-			"3015": 0.25
-		},
-		"location_id": "104",
-		"missions": [
-			"5087",
-			"5088",
-			"5089",
-			"5090",
-			"5091",
-			"5092"
-		],
-		"name": "Vapor Hunters"
-	},
-	"1027": {
-		"id": "1027",
-		"items": {
-			"3015": 0.2
-		},
-		"location_id": "104",
-		"missions": [
-			"5093",
-			"5094",
-			"5095",
-			"5096"
-		],
-		"name": "Descent into Madness"
-	},
-	"1028": {
-		"id": "1028",
-		"items": {
-			"3015": 0.3
-		},
-		"location_id": "104",
-		"missions": [
-			"5097",
-			"5098"
-		],
-		"name": "Flashing Lights"
-	},
-	"1029": {
-		"id": "1029",
-		"items": {
-			"3015": 0.4
-		},
-		"location_id": "104",
-		"missions": [
-			"5099",
-			"5100",
-			"5101",
-			"5102",
-			"5103"
-		],
-		"name": "Playing With Vapor"
-	},
-	"1030": {
-		"id": "1030",
-		"items": {
-			"3016": 0.22
-		},
-		"location_id": "105",
-		"missions": [
-			"5104",
-			"5105",
-			"5106",
-			"5107",
-			"5108"
-		],
-		"name": "Closer to The Void"
-	},
-	"1031": {
-		"id": "1031",
-		"items": {
-			"3016": 0.2
-		},
-		"location_id": "105",
-		"missions": [
-			"5109",
-			"5110",
-			"5111",
-			"5112"
-		],
-		"name": "Trial by Purple Fire"
-	},
-	"1032": {
-		"id": "1032",
-		"items": {
-			"3016": 0.2
-		},
-		"location_id": "105",
-		"missions": [
-			"5113",
-			"5114",
-			"5115",
-			"5116"
-		],
-		"name": "Climate Change"
-	},
-	"1033": {
-		"id": "1033",
-		"items": {
-			"3016": 0.25
-		},
-		"location_id": "105",
-		"missions": [
-			"5117",
-			"5118",
-			"5119",
-			"5120",
-			"5121",
-			"5122"
-		],
-		"name": "Infection of The Void"
-	},
-	"1034": {
-		"id": "1034",
-		"items": {
-			"3016": 0.3
-		},
-		"location_id": "105",
-		"missions": [
-			"5123",
-			"5124",
-			"5125",
-			"5126"
-		],
-		"name": "Lost Laboratory"
-	},
-	"1035": {
-		"id": "1035",
-		"items": {
-			"3016": 0.4
-		},
-		"location_id": "105",
-		"missions": [
-			"5127",
-			"5128"
-		],
-		"name": "Lay Down Your Burdens"
-	},
-	"1036": {
-		"id": "1036",
-		"items": {
-			"3021": 0.2
-		},
-		"location_id": "106",
-		"missions": [
-			"5129",
-			"5130",
-			"5131",
-			"5132"
-		],
-		"name": "To Skyhaven"
-	},
-	"1037": {
-		"id": "1037",
-		"items": {
-			"3021": 0.2
-		},
-		"location_id": "106",
-		"missions": [
-			"5133",
-			"5134",
-			"5135",
-			"5136"
-		],
-		"name": "Finding Your Way"
-	},
-	"1038": {
-		"id": "1038",
-		"items": {
-			"3021": 0.22
-		},
-		"location_id": "106",
-		"missions": [
-			"5137",
-			"5138",
-			"5139",
-			"5140",
-			"5141"
-		],
-		"name": "Home Sweet Home"
-	},
-	"1039": {
-		"id": "1039",
-		"items": {
-			"3021": 0.25
-		},
-		"location_id": "106",
-		"missions": [
-			"5142",
-			"5143",
-			"5144",
-			"5145",
-			"5146",
-			"5147"
-		],
-		"name": "Old Mistakes"
-	},
-	"1040": {
-		"id": "1040",
-		"items": {
-			"3021": 0.23
-		},
-		"location_id": "106",
-		"missions": [
-			"5148",
-			"5149",
-			"5150"
-		],
-		"name": "To Court"
-	},
-	"1041": {
-		"id": "1041",
-		"items": {
-			"3021": 0.26
-		},
-		"location_id": "106",
-		"missions": [
-			"5151",
-			"5152",
-			"5153"
-		],
-		"name": "History Repeats"
-	},
-	"1042": {
-		"id": "1042",
-		"items": {
-			"3026": 0.2
-		},
-		"location_id": "102",
-		"missions": [
-			"5154",
-			"5155",
-			"5156"
-		],
-		"name": "Scorched Villages"
-	},
-	"1043": {
-		"id": "1043",
-		"items": {
-			"3026": 0.2
-		},
-		"location_id": "102",
-		"missions": [
-			"5157",
-			"5158",
-			"5159"
-		],
-		"name": "Back to the Vaults"
-	},
-	"1044": {
-		"id": "1044",
-		"items": {
-			"3026": 0.22
-		},
-		"location_id": "102",
-		"missions": [
-			"5160",
-			"5161",
-			"5162",
-			"5163",
-			"5164"
-		],
-		"name": "To Water Island"
-	},
-	"1045": {
-		"id": "1045",
-		"items": {
-			"3026": 0.22
-		},
-		"location_id": "102",
-		"missions": [
-			"5165",
-			"5166",
-			"5167",
-			"5168",
-			"5169",
-			"5170"
-		],
-		"name": "Zen Gardens"
-	},
-	"1046": {
-		"id": "1046",
-		"items": {
-			"3026": 0.22
-		},
-		"location_id": "102",
-		"missions": [
-			"5171",
-			"5172",
-			"5173",
-			"5174"
-		],
-		"name": "Quick Thinking"
-	},
-	"1047": {
-		"id": "1047",
-		"items": {
-			"3026": 0.25
-		},
-		"location_id": "102",
-		"missions": [
-			"5175",
-			"5176",
-			"5177",
-			"5178"
-		],
-		"name": "Final Round"
-	},
-	"1048": {
-		"id": "1048",
-		"items": {
-			"3030": 0.2
-		},
-		"location_id": "107",
-		"missions": [
-			"5179",
-			"5180",
-			"5181"
-		],
-		"name": "New Horizons"
-	},
-	"1049": {
-		"id": "1049",
-		"items": {
-			"3030": 0.2
-		},
-		"location_id": "107",
-		"missions": [
-			"5182",
-			"5183",
-			"5184"
-		],
-		"name": "Saying Goodbye"
-	},
-	"1050": {
-		"id": "1050",
-		"items": {
-			"3030": 0.22
-		},
-		"location_id": "107",
-		"missions": [
-			"5185",
-			"5186",
-			"5187",
-			"5188",
-			"5189"
-		],
-		"name": "Golden Crown Banquet"
-	},
-	"1051": {
-		"id": "1051",
-		"items": {
-			"3030": 0.21
-		},
-		"location_id": "107",
-		"missions": [
-			"5190",
-			"5191",
-			"5192"
-		],
-		"name": "Surprise from Above"
-	},
-	"1052": {
-		"id": "1052",
-		"items": {
-			"3030": 0.22
-		},
-		"location_id": "107",
-		"missions": [
-			"5193",
-			"5194",
-			"5195",
-			"5196"
-		],
-		"name": "The Chase"
-	},
-	"1053": {
-		"id": "1053",
-		"items": {
-			"3030": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5197",
-			"5198",
-			"5199",
-			"5200",
-			"5201",
-			"5202"
-		],
-		"name": "Defensive Maneuvers"
-	},
-	"1054": {
-		"id": "1054",
-		"items": {},
-		"location_id": "108",
-		"missions": [
-			"5203",
-			"5204",
-			"5205",
-			"5206"
-		],
-		"name": "Volcano of Eruptions"
-	},
-	"1055": {
-		"id": "1055",
-		"items": {},
-		"location_id": "108",
-		"missions": [
-			"5207",
-			"5208",
-			"5209",
-			"5210"
-		],
-		"name": "A Man Who Loves Birds"
-	},
-	"1056": {
-		"id": "1056",
-		"items": {},
-		"location_id": "108",
-		"missions": [
-			"5211",
-			"5212",
-			"5213",
-			"5214"
-		],
-		"name": "Some Gloomy Lake"
-	},
-	"1057": {
-		"id": "1057",
-		"items": {
-			"3030": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5215"
-		],
-		"name": "Side Dish"
-	},
-	"1058": {
-		"id": "1058",
-		"items": {
-			"3033": 0.22
-		},
-		"location_id": "109",
-		"missions": [
-			"5216",
-			"5217",
-			"5218",
-			"5219",
-			"5220"
-		],
-		"name": "Avian Hideaway"
-	},
-	"1059": {
-		"id": "1059",
-		"items": {
-			"3033": 0.23
-		},
-		"location_id": "109",
-		"missions": [
-			"5221",
-			"5222",
-			"5223",
-			"5224"
-		],
-		"name": "Unwavered"
-	},
-	"1060": {
-		"id": "1060",
-		"items": {
-			"3033": 0.23
-		},
-		"location_id": "109",
-		"missions": [
-			"5225",
-			"5226",
-			"5227",
-			"5228"
-		],
-		"name": "To Red Feather Valley"
-	},
-	"1061": {
-		"id": "1061",
-		"items": {
-			"3033": 0.23
-		},
-		"location_id": "109",
-		"missions": [
-			"5229",
-			"5230",
-			"5231",
-			"5232",
-			"5233",
-			"5234"
-		],
-		"name": "Into the City"
-	},
-	"1062": {
-		"id": "1062",
-		"items": {
-			"3033": 0.24
-		},
-		"location_id": "109",
-		"missions": [
-			"5235",
-			"5236",
-			"5237"
-		],
-		"name": "Through the Alleyway"
-	},
-	"1063": {
-		"id": "1063",
-		"items": {
-			"3033": 0.24
-		},
-		"location_id": "109",
-		"missions": [
-			"5238",
-			"5239",
-			"5240"
-		],
-		"name": "Frobert and the Magistrate"
-	},
-	"1064": {
-		"id": "1064",
-		"items": {
-			"3034": 0.2
-		},
-		"location_id": "101",
-		"missions": [
-			"5241",
-			"5242",
-			"5243",
-			"5244"
-		],
-		"name": "Lakeside"
-	},
-	"1065": {
-		"id": "1065",
-		"items": {
-			"3034": 0.21
-		},
-		"location_id": "101",
-		"missions": [
-			"5245",
-			"5246",
-			"5247",
-			"5248"
-		],
-		"name": "Nasty Neighbours"
-	},
-	"1066": {
-		"id": "1066",
-		"items": {
-			"3034": 0.22
-		},
-		"location_id": "101",
-		"missions": [
-			"5249",
-			"5250",
-			"5251",
-			"5252",
-			"5253"
-		],
-		"name": "Lost Lambs"
-	},
-	"1067": {
-		"id": "1067",
-		"items": {
-			"3034": 0.23
-		},
-		"location_id": "101",
-		"missions": [
-			"5254",
-			"5255",
-			"5256"
-		],
-		"name": "Worst Fears"
-	},
-	"1068": {
-		"id": "1068",
-		"items": {
-			"3034": 0.24
-		},
-		"location_id": "101",
-		"missions": [
-			"5257",
-			"5258",
-			"5259"
-		],
-		"name": "Goblins Afoot"
-	},
-	"1069": {
-		"id": "1069",
-		"items": {
-			"3034": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5260",
-			"5261",
-			"5262",
-			"5263",
-			"5264"
-		],
-		"name": "Sinister Intentions"
-	},
-	"1070": {
-		"id": "1070",
-		"items": {
-			"3034": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5265"
-		],
-		"name": "High Flying"
-	},
-	"1071": {
-		"id": "1071",
-		"items": {
-			"3041": 0.2
-		},
-		"location_id": "110",
-		"missions": [
-			"5266",
-			"5267",
-			"5268"
-		],
-		"name": "SOS"
-	},
-	"1072": {
-		"id": "1072",
-		"items": {
-			"3041": 0.21
-		},
-		"location_id": "110",
-		"missions": [
-			"5269",
-			"5270",
-			"5271"
-		],
-		"name": "To Beetleton Bunker"
-	},
-	"1073": {
-		"id": "1073",
-		"items": {
-			"3041": 0.22
-		},
-		"location_id": "110",
-		"missions": [
-			"5272",
-			"5273",
-			"5274",
-			"5275",
-			"5276"
-		],
-		"name": "Town on Fire"
-	},
-	"1074": {
-		"id": "1074",
-		"items": {
-			"3041": 0.24
-		},
-		"location_id": "110",
-		"missions": [
-			"5277",
-			"5278",
-			"5279",
-			"5280",
-			"5281",
-			"5282"
-		],
-		"name": "Goblin Incoming"
-	},
-	"1075": {
-		"id": "1075",
-		"items": {
-			"3041": 0.23
-		},
-		"location_id": "110",
-		"missions": [
-			"5283",
-			"5284",
-			"5285",
-			"5286"
-		],
-		"name": "The Artifact"
-	},
-	"1076": {
-		"id": "1076",
-		"items": {
-			"3041": 0.25
-		},
-		"location_id": "110",
-		"missions": [
-			"5287",
-			"5288",
-			"5289"
-		],
-		"name": "Up, Up and Away"
-	},
-	"1077": {
-		"id": "1077",
-		"items": {
-			"3042": 0.2
-		},
-		"location_id": "106",
-		"missions": [
-			"5290",
-			"5291",
-			"5292"
-		],
-		"name": "Rumor Mill"
-	},
-	"1078": {
-		"id": "1078",
-		"items": {
-			"3042": 0.2
-		},
-		"location_id": "106",
-		"missions": [
-			"5293",
-			"5294",
-			"5295"
-		],
-		"name": "Territory Control"
-	},
-	"1079": {
-		"id": "1079",
-		"items": {
-			"3042": 0.22
-		},
-		"location_id": "106",
-		"missions": [
-			"5296",
-			"5297",
-			"5298",
-			"5299",
-			"5300"
-		],
-		"name": "Redemption"
-	},
-	"1080": {
-		"id": "1080",
-		"items": {
-			"3042": 0.23
-		},
-		"location_id": "106",
-		"missions": [
-			"5301",
-			"5302",
-			"5303"
-		],
-		"name": "Groundwork"
-	},
-	"1081": {
-		"id": "1081",
-		"items": {
-			"3042": 0.23
-		},
-		"location_id": "106",
-		"missions": [
-			"5304",
-			"5305",
-			"5306"
-		],
-		"name": "What was Sown"
-	},
-	"1082": {
-		"id": "1082",
-		"items": {
-			"3042": 0.25
-		},
-		"location_id": "106",
-		"missions": [
-			"5307",
-			"5308",
-			"5309",
-			"5310",
-			"5311",
-			"5312"
-		],
-		"name": "Plan of Attack"
-	},
-	"1083": {
-		"id": "1083",
-		"items": {
-			"3043": 0.25
-		},
-		"location_id": "100",
-		"missions": [
-			"5313",
-			"5314",
-			"5315",
-			"5316",
-			"5317"
-		],
-		"name": "Salt Waste Empire"
-	},
-	"1084": {
-		"id": "1084",
-		"items": {
-			"3043": 0.25
-		},
-		"location_id": "100",
-		"missions": [
-			"5318",
-			"5319",
-			"5320",
-			"5321",
-			"5322",
-			"5323"
-		],
-		"name": "Backup Plan"
-	},
-	"1085": {
-		"id": "1085",
-		"items": {
-			"3043": 0.25
-		},
-		"location_id": "100",
-		"missions": [
-			"5324",
-			"5325",
-			"5326",
-			"5327",
-			"5328"
-		],
-		"name": "Ground Inspection"
-	},
-	"1086": {
-		"id": "1086",
-		"items": {
-			"3043": 0.25
-		},
-		"location_id": "100",
-		"missions": [
-			"5329",
-			"5330",
-			"5331",
-			"5332",
-			"5333",
-			"5334",
-			"5335",
-			"5336"
-		],
-		"name": "Reks and the Tamer"
-	},
-	"1087": {
-		"id": "1087",
-		"items": {
-			"3044": 0.25
-		},
-		"location_id": "105",
-		"missions": [
-			"5337",
-			"5338",
-			"5339",
-			"5340",
-			"5341"
-		],
-		"name": "Light of the Wisps"
-	},
-	"1088": {
-		"id": "1088",
-		"items": {
-			"3044": 0.25
-		},
-		"location_id": "105",
-		"missions": [
-			"5342",
-			"5343",
-			"5344",
-			"5345",
-			"5346",
-			"5347"
-		],
-		"name": "A Difference of Opinion"
-	},
-	"1089": {
-		"id": "1089",
-		"items": {
-			"3044": 0.25
-		},
-		"location_id": "105",
-		"missions": [
-			"5348",
-			"5349",
-			"5350",
-			"5351",
-			"5352"
-		],
-		"name": "Influence of The Void"
-	},
-	"1090": {
-		"id": "1090",
-		"items": {
-			"3044": 0.25
-		},
-		"location_id": "105",
-		"missions": [
-			"5353",
-			"5354",
-			"5355",
-			"5356",
-			"5357",
-			"5358",
-			"5359",
-			"5360"
-		],
-		"name": "Redemption"
-	},
-	"1091": {
-		"id": "1091",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5361",
-			"5362",
-			"5363",
-			"5364",
-			"5365"
-		],
-		"name": "Decim and the Goblins"
-	},
-	"1092": {
-		"id": "1092",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5366",
-			"5367",
-			"5368",
-			"5369",
-			"5370"
-		],
-		"name": "Dungeon Depths"
-	},
-	"1093": {
-		"id": "1093",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5371",
-			"5372",
-			"5373",
-			"5374",
-			"5375",
-			"5376"
-		],
-		"name": "The Fugitive"
-	},
-	"1094": {
-		"id": "1094",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5377",
-			"5378",
-			"5379",
-			"5380"
-		],
-		"name": "Common Enemy"
-	},
-	"1095": {
-		"id": "1095",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5381",
-			"5382",
-			"5383",
-			"5384"
-		],
-		"name": "New Friends"
-	},
-	"1096": {
-		"id": "1096",
-		"items": {
-			"3045": 0.25
-		},
-		"location_id": "111",
-		"missions": [
-			"5385",
-			"5386",
-			"5387"
-		],
-		"name": "Trick or Treat"
-	},
-	"1097": {
-		"id": "1097",
-		"items": {
-			"3046": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5388",
-			"5389",
-			"5390",
-			"5391",
-			"5392"
-		],
-		"name": "The Price of Freedom"
-	},
-	"1098": {
-		"id": "1098",
-		"items": {
-			"3046": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5393",
-			"5394",
-			"5395",
-			"5396",
-			"5397",
-			"5398"
-		],
-		"name": "Dragon Buddies"
-	},
-	"1099": {
-		"id": "1099",
-		"items": {
-			"3046": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5399",
-			"5400",
-			"5401",
-			"5402",
-			"5403"
-		],
-		"name": "Cry of the Wild"
-	},
-	"1100": {
-		"id": "1100",
-		"items": {
-			"3046": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5404",
-			"5405",
-			"5406",
-			"5407"
-		],
-		"name": "Relentless Kidnappers"
-	},
-	"1101": {
-		"id": "1101",
-		"items": {
-			"3046": 0.25
-		},
-		"location_id": "101",
-		"missions": [
-			"5408",
-			"5409",
-			"5410",
-			"5411"
-		],
-		"name": "Showdown"
-	},
-	"1102": {
-		"id": "1102",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5412",
-			"5413",
-			"5414",
-			"5415",
-			"5416"
-		],
-		"name": "The Secret Mission"
-	},
-	"1103": {
-		"id": "1103",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5417",
-			"5418",
-			"5419",
-			"5420",
-			"5421",
-			"5422"
-		],
-		"name": "Gold Versus Dawn"
-	},
-	"1104": {
-		"id": "1104",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5423",
-			"5424",
-			"5425",
-			"5426",
-			"5427"
-		],
-		"name": "Tracking the Corruption"
-	},
-	"1105": {
-		"id": "1105",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5428",
-			"5429",
-			"5430",
-			"5431"
-		],
-		"name": "Corrupted Waters"
-	},
-	"1106": {
-		"id": "1106",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5432",
-			"5433",
-			"5434",
-			"5435"
-		],
-		"name": "Alternate Plan"
-	},
-	"1107": {
-		"id": "1107",
-		"items": {
-			"3047": 0.25
-		},
-		"location_id": "107",
-		"missions": [
-			"5436",
-			"5437",
-			"5438",
-			"5439",
-			"5440"
-		],
-		"name": "Spirits of Time"
-	},
 	"1108": {
 		"id": "1108",
 		"items": {
@@ -2346,62 +840,6 @@ var CAMPAIGNS = {
 			"5549"
 		],
 		"name": "War Stratagem"
-	},
-	"1120": {
-		"id": "1120",
-		"items": {
-			"3052": 1
-		},
-		"location_id": "108",
-		"missions": [
-			"5550",
-			"5551",
-			"5552",
-			"5553"
-		],
-		"name": "Volcano of Eruptions"
-	},
-	"1121": {
-		"id": "1121",
-		"items": {
-			"3052": 1
-		},
-		"location_id": "108",
-		"missions": [
-			"5554",
-			"5555",
-			"5556",
-			"5557"
-		],
-		"name": "A Man Who Loves Birds"
-	},
-	"1122": {
-		"id": "1122",
-		"items": {
-			"3052": 1
-		},
-		"location_id": "108",
-		"missions": [
-			"5558",
-			"5559",
-			"5560",
-			"5561"
-		],
-		"name": "Some Gloomy Lake"
-	},
-	"1123": {
-		"battleground_id": "2009",
-		"id": "1123",
-		"items": {
-			"3052": 1
-		},
-		"location_id": "108",
-		"missions": [
-			"5562",
-			"5563",
-			"5564"
-		],
-		"name": "The Evil Castle"
 	},
 	"1124": {
 		"id": "1124",
@@ -2817,19 +1255,6 @@ var CAMPAIGNS = {
 		],
 		"name": "First Contact"
 	},
-	"1145": {
-		"id": "1145",
-		"items": {
-			"3062": 0.2
-		},
-		"location_id": "12",
-		"missions": [
-			"5739",
-			"5740",
-			"5741"
-		],
-		"name": "Trick or Treat"
-	},
 	"1146": {
 		"battleground_id": "2024",
 		"id": "1146",
@@ -2948,21 +1373,6 @@ var CAMPAIGNS = {
 			"5796"
 		],
 		"name": "The Crimsonwings"
-	},
-	"1152": {
-		"id": "1152",
-		"items": {
-			"3065": 0.2
-		},
-		"location_id": "13",
-		"missions": [
-			"5797",
-			"5798",
-			"5799",
-			"5800",
-			"5801"
-		],
-		"name": "The Giftbringer"
 	},
 	"1153": {
 		"battleground_id": "2029",
@@ -3201,49 +1611,6 @@ var CAMPAIGNS = {
 			"5911"
 		],
 		"name": "The Missing Pyrokinetic"
-	},
-	"1165": {
-		"id": "1165",
-		"items": {
-			"3068": 0.6
-		},
-		"location_id": "14",
-		"missions": [
-			"5912",
-			"5913",
-			"5914",
-			"5915"
-		],
-		"name": "Knights on Strike"
-	},
-	"1166": {
-		"id": "1166",
-		"items": {
-			"3068": 0.6
-		},
-		"location_id": "14",
-		"missions": [
-			"5916",
-			"5917",
-			"5918",
-			"5919"
-		],
-		"name": "Toknight's the Knight"
-	},
-	"1167": {
-		"battleground_id": "526",
-		"id": "1167",
-		"items": {
-			"3068": 0.6
-		},
-		"location_id": "14",
-		"missions": [
-			"5920",
-			"5921",
-			"5922",
-			"5923"
-		],
-		"name": "Dragons... I Hate Dragons"
 	},
 	"1168": {
 		"battleground_id": "2037",
@@ -3627,19 +1994,6 @@ var CAMPAIGNS = {
 		],
 		"name": "The Spirit Between Planes"
 	},
-	"1188": {
-		"id": "1188",
-		"items": {
-			"3080": 0.4
-		},
-		"location_id": "18",
-		"missions": [
-			"6095",
-			"6096",
-			"6097"
-		],
-		"name": "Legend of Pumpking"
-	},
 	"1189": {
 		"id": "1189",
 		"items": {
@@ -3721,21 +2075,6 @@ var CAMPAIGNS = {
 			"6125"
 		],
 		"name": "Unknown Tribe"
-	},
-	"1194": {
-		"id": "1194",
-		"items": {
-			"3083": 0.2
-		},
-		"location_id": "19",
-		"missions": [
-			"6126",
-			"6127",
-			"6128",
-			"6129",
-			"6130"
-		],
-		"name": "Winter Star's Eve"
 	},
 	"1195": {
 		"id": "1195",
@@ -3866,40 +2205,6 @@ var CAMPAIGNS = {
 			"6174"
 		],
 		"name": "A Brighter Future"
-	},
-	"1203": {
-		"battleground_id": "546",
-		"id": "1203",
-		"items": {
-			"3089": 0.4
-		},
-		"location_id": "21",
-		"missions": [
-			"6191",
-			"6192",
-			"6193",
-			"6194",
-			"6195",
-			"6196"
-		],
-		"name": "Revenge of the Commons!"
-	},
-	"1204": {
-		"battleground_id": "546",
-		"id": "1204",
-		"items": {
-			"3089": 0.4
-		},
-		"location_id": "21",
-		"missions": [
-			"6197",
-			"6198",
-			"6199",
-			"6200",
-			"6201",
-			"6202"
-		],
-		"name": "The Legends Come To Take Their Place!"
 	},
 	"1205": {
 		"battleground_id": "2063",
@@ -4229,19 +2534,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Solaron's Chosen"
 	},
-	"1225": {
-		"id": "1225",
-		"items": {
-			"3101": 0.2
-		},
-		"location_id": "25",
-		"missions": [
-			"6308",
-			"6309",
-			"6310"
-		],
-		"name": "Legend of Pumpking"
-	},
 	"1226": {
 		"battleground_id": "2081",
 		"id": "1226",
@@ -4308,21 +2600,6 @@ var CAMPAIGNS = {
 			"6334"
 		],
 		"name": "Shack of Mysteries"
-	},
-	"1230": {
-		"id": "1230",
-		"items": {
-			"3104": 0.2
-		},
-		"location_id": "26",
-		"missions": [
-			"6335",
-			"6336",
-			"6337",
-			"6338",
-			"6339"
-		],
-		"name": "Tree Champion"
 	},
 	"1231": {
 		"battleground_id": "2084",
@@ -4487,57 +2764,6 @@ var CAMPAIGNS = {
 			"6395"
 		],
 		"name": "Mechanical Titan"
-	},
-	"1244": {
-		"battleground_id": "546",
-		"id": "1244",
-		"items": {
-			"3107": 0.4
-		},
-		"location_id": "27",
-		"missions": [
-			"6402",
-			"6403",
-			"6404",
-			"6405",
-			"6406",
-			"6407"
-		],
-		"name": "Revenge of the Commons!"
-	},
-	"1245": {
-		"battleground_id": "546",
-		"id": "1245",
-		"items": {
-			"3107": 0.4
-		},
-		"location_id": "27",
-		"missions": [
-			"6408",
-			"6409",
-			"6410",
-			"6411",
-			"6412",
-			"6413"
-		],
-		"name": "The Legends Come To Take Their Place!"
-	},
-	"1246": {
-		"battleground_id": "135",
-		"id": "1246",
-		"items": {
-			"3107": 0.4
-		},
-		"location_id": "27",
-		"missions": [
-			"6396",
-			"6397",
-			"6398",
-			"6399",
-			"6400",
-			"6401"
-		],
-		"name": "A new FOE has appeared!?"
 	},
 	"1247": {
 		"battleground_id": "2092",
@@ -4785,19 +3011,6 @@ var CAMPAIGNS = {
 		],
 		"name": "First Order Remnants"
 	},
-	"1262": {
-		"id": "1262",
-		"items": {},
-		"location_id": "31",
-		"missions": [
-			"6498",
-			"6499",
-			"6500",
-			"6501",
-			"6502"
-		],
-		"name": "Spellstone's 5th Anniversary"
-	},
 	"1263": {
 		"battleground_id": "2104",
 		"id": "1263",
@@ -4846,19 +3059,6 @@ var CAMPAIGNS = {
 			"6518"
 		],
 		"name": "Missing Spiritual Strength"
-	},
-	"1266": {
-		"id": "1266",
-		"items": {
-			"3119": 0.2
-		},
-		"location_id": "31",
-		"missions": [
-			"6519",
-			"6520",
-			"6521"
-		],
-		"name": "Trick or Treat"
 	},
 	"1267": {
 		"id": "1267",
@@ -4975,21 +3175,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Battle for Skyhaven"
 	},
-	"1274": {
-		"id": "1274",
-		"items": {
-			"3122": 0.2
-		},
-		"location_id": "32",
-		"missions": [
-			"6562",
-			"6563",
-			"6564",
-			"6565",
-			"6566"
-		],
-		"name": "Tree Champion"
-	},
 	"1275": {
 		"battleground_id": "2112",
 		"id": "1275",
@@ -5086,57 +3271,6 @@ var CAMPAIGNS = {
 			"6598"
 		],
 		"name": "Faction Weakness Awakening"
-	},
-	"1281": {
-		"battleground_id": "546",
-		"id": "1281",
-		"items": {
-			"3128": 0.4
-		},
-		"location_id": "34",
-		"missions": [
-			"6618",
-			"6619",
-			"6620",
-			"6621",
-			"6622",
-			"6623"
-		],
-		"name": "Revenge of the Commons!"
-	},
-	"1282": {
-		"battleground_id": "546",
-		"id": "1282",
-		"items": {
-			"3128": 0.4
-		},
-		"location_id": "34",
-		"missions": [
-			"6624",
-			"6625",
-			"6626",
-			"6627",
-			"6628",
-			"6629"
-		],
-		"name": "The Legends Come To Take Their Place!"
-	},
-	"1283": {
-		"battleground_id": "135",
-		"id": "1283",
-		"items": {
-			"3128": 0.4
-		},
-		"location_id": "34",
-		"missions": [
-			"6612",
-			"6613",
-			"6614",
-			"6615",
-			"6616",
-			"6617"
-		],
-		"name": "Director's Cut"
 	},
 	"1284": {
 		"battleground_id": "2117",
@@ -5376,21 +3510,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Ranger of the Cute"
 	},
-	"1298": {
-		"battleground_id": "547",
-		"id": "1298",
-		"items": {},
-		"location_id": "34",
-		"missions": [
-			"6702",
-			"6703",
-			"6704",
-			"6705",
-			"6706",
-			"6707"
-		],
-		"name": "Spellstone's 6th Anniversary"
-	},
 	"1299": {
 		"battleground_id": "2119",
 		"id": "1299",
@@ -5459,19 +3578,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Fireshards Way of Fun"
 	},
-	"1303": {
-		"id": "1303",
-		"items": {
-			"3062": 0.2
-		},
-		"location_id": "12",
-		"missions": [
-			"6732",
-			"6733",
-			"6734"
-		],
-		"name": "False Halloween?"
-	},
 	"1304": {
 		"battleground_id": "2119",
 		"id": "1304",
@@ -5505,21 +3611,6 @@ var CAMPAIGNS = {
 			"6747"
 		],
 		"name": "Froggsters"
-	},
-	"1306": {
-		"id": "1306",
-		"items": {
-			"3110": 0.2
-		},
-		"location_id": "26",
-		"missions": [
-			"6748",
-			"6749",
-			"6750",
-			"6751",
-			"6752"
-		],
-		"name": "Tree Champion"
 	},
 	"1307": {
 		"battleground_id": "2119",
@@ -5656,23 +3747,6 @@ var CAMPAIGNS = {
 			"6806"
 		],
 		"name": "Exploring Tarragon Peak"
-	},
-	"1315": {
-		"battleground_id": "546",
-		"id": "1315",
-		"items": {
-			"3119": 0.4
-		},
-		"location_id": "31",
-		"missions": [
-			"6789",
-			"6790",
-			"6791",
-			"6792",
-			"6793",
-			"6794"
-		],
-		"name": "Return of the Commons!"
 	},
 	"1316": {
 		"battleground_id": "2119",
@@ -5878,22 +3952,6 @@ var CAMPAIGNS = {
 		],
 		"name": "Battling the Void"
 	},
-	"1328": {
-		"battleground_id": "547",
-		"id": "1328",
-		"items": {},
-		"location_id": "34",
-		"missions": [
-			"6915",
-			"6916",
-			"6917",
-			"6918",
-			"6919",
-			"6920",
-			"6921"
-		],
-		"name": "Spellstone's 7th Anniversary"
-	},
 	"1329": {
 		"battleground_id": "2119",
 		"id": "1329",
@@ -5927,19 +3985,6 @@ var CAMPAIGNS = {
 			"6939"
 		],
 		"name": "The Void Channeler"
-	},
-	"1331": {
-		"id": "1331",
-		"items": {
-			"3095": 0.2
-		},
-		"location_id": "23",
-		"missions": [
-			"6946",
-			"6947",
-			"6948"
-		],
-		"name": "False Halloween?"
 	},
 	"1332": {
 		"battleground_id": "2119",
@@ -6010,21 +4055,6 @@ var CAMPAIGNS = {
 			"6978"
 		],
 		"name": "The Teleporter"
-	},
-	"1336": {
-		"id": "1336",
-		"items": {
-			"3110": 0.2
-		},
-		"location_id": "26",
-		"missions": [
-			"6979",
-			"6980",
-			"6981",
-			"6982",
-			"6983"
-		],
-		"name": "Tree Champion"
 	},
 	"1337": {
 		"battleground_id": "2119",
@@ -6713,6 +4743,42 @@ var CAMPAIGNS = {
 			"7277"
 		],
 		"name": "Called Out"
+	},
+	"1377": {
+		"battleground_id": "2123",
+		"id": "1377",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7278",
+			"7279",
+			"7280",
+			"7281",
+			"7282",
+			"7283"
+		],
+		"name": "False God"
+	},
+	"1378": {
+		"battleground_id": "2123",
+		"id": "1378",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7284",
+			"7285",
+			"7286",
+			"7287",
+			"7288",
+			"7289"
+		],
+		"name": "Begin Again"
 	},
 	"3000": {
 		"id": "3000",
@@ -7426,6 +5492,62 @@ var CAMPAIGNS = {
 			"2068"
 		],
 		"name": "Coming Real Soon (TM) Now!!!"
+	},
+	"5012": {
+		"id": "5012",
+		"items": {
+			"3131": 0.5,
+			"28170": 0.005,
+			"28180": 0.005,
+			"28190": 0.005,
+			"28200": 0.005,
+			"28220": 0.005,
+			"28230": 0.005,
+			"28240": 0.005,
+			"28250": 0.005,
+			"28260": 0.005,
+			"28270": 0.005,
+			"28290": 0.005
+		},
+		"location_id": "36",
+		"missions": [
+			"2069",
+			"2070",
+			"2071",
+			"2072",
+			"2073",
+			"2074",
+			"2075"
+		],
+		"name": "One Year of ComDev Part I"
+	},
+	"5013": {
+		"id": "5013",
+		"items": {
+			"3131": 0.5,
+			"28170": 0.005,
+			"28180": 0.005,
+			"28190": 0.005,
+			"28200": 0.005,
+			"28220": 0.005,
+			"28230": 0.005,
+			"28240": 0.005,
+			"28250": 0.005,
+			"28260": 0.005,
+			"28270": 0.005,
+			"28290": 0.005
+		},
+		"location_id": "36",
+		"missions": [
+			"2076",
+			"2077",
+			"2078",
+			"2079",
+			"2080",
+			"2081",
+			"2082"
+		],
+		"name": "One Year of ComDev Part II"
 	}
 };
 var MISSIONS = {
@@ -21033,6 +19155,510 @@ var MISSIONS = {
 		],
 		"id": "2068",
 		"name": "Spellstone 2: Match 3 Boogaloo!!!"
+	},
+	"2069": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			},
+			{
+				"id": "4073"
+			}
+		],
+		"id": "2069",
+		"name": "Helvius, Spraying Mantis"
+	},
+	"2070": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "4074"
+			}
+		],
+		"id": "2070",
+		"name": "Sivun, the Blind Commander"
+	},
+	"2071": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			},
+			{
+				"id": "4075"
+			}
+		],
+		"id": "2071",
+		"name": "K'luum, the Unbound Void"
+	},
+	"2072": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			},
+			{
+				"id": "4076"
+			}
+		],
+		"id": "2072",
+		"name": "Tethys, the Watershaper"
+	},
+	"2073": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			},
+			{
+				"id": "4077"
+			}
+		],
+		"id": "2073",
+		"name": "Archangel Melkira"
+	},
+	"2074": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			},
+			{
+				"id": "4078"
+			}
+		],
+		"id": "2074",
+		"name": "Daffdal, the Lamp Keeper"
+	},
+	"2075": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			},
+			{
+				"id": "4079"
+			}
+		],
+		"id": "2075",
+		"name": "Yanlong, the Matron"
+	},
+	"2076": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			},
+			{
+				"id": "4080"
+			}
+		],
+		"id": "2076",
+		"name": "Arezzo, the Chimera"
+	},
+	"2077": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			},
+			{
+				"id": "4081"
+			}
+		],
+		"id": "2077",
+		"name": "General Karlson"
+	},
+	"2078": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			},
+			{
+				"id": "4082"
+			}
+		],
+		"id": "2078",
+		"name": "Little Kawosha"
+	},
+	"2079": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			},
+			{
+				"id": "4083"
+			}
+		],
+		"id": "2079",
+		"name": "Scrap, the Acorn Seeker"
+	},
+	"2080": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			},
+			{
+				"id": "4084"
+			}
+		],
+		"id": "2080",
+		"name": "Milax, Guardian of the Shade"
+	},
+	"2081": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4085"
+			}
+		],
+		"id": "2081",
+		"name": "Ecyxigua, the Tongue Twister"
+	},
+	"2082": {
+		"commander": {
+			"id": "377"
+		},
+		"deck": [
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			},
+			{
+				"id": "4086"
+			}
+		],
+		"id": "2082",
+		"name": "The Barfis Brothers"
 	},
 	"3654": {
 		"commander": {
@@ -157886,5 +156512,725 @@ var MISSIONS = {
 		],
 		"id": "7277",
 		"name": "All Part of a Plan"
+	},
+	"7278": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "1026"
+			},
+			{
+				"id": "1629"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "1026"
+			},
+			{
+				"id": "1629"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "1026"
+			},
+			{
+				"id": "1629"
+			},
+			{
+				"id": "1326"
+			},
+			{
+				"id": "1026",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1629",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1026",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1629",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1326",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7278",
+		"name": "It's Time to Go"
+	},
+	"7279": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "2238"
+			},
+			{
+				"id": "2170"
+			},
+			{
+				"id": "2137"
+			},
+			{
+				"id": "2238"
+			},
+			{
+				"id": "2170"
+			},
+			{
+				"id": "2137"
+			},
+			{
+				"id": "2238"
+			},
+			{
+				"id": "2170"
+			},
+			{
+				"id": "2137"
+			},
+			{
+				"id": "2238",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2170",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2137",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2238",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2170",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2137",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7279",
+		"name": "Better Than Revenge"
+	},
+	"7280": {
+		"commander": {
+			"id": "340"
+		},
+		"deck": [
+			{
+				"id": "2168"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "7251"
+			},
+			{
+				"id": "2168"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "7251"
+			},
+			{
+				"id": "2168"
+			},
+			{
+				"id": "6013"
+			},
+			{
+				"id": "7251"
+			},
+			{
+				"id": "2168",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6013",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2168",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6013",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7251",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7280",
+		"name": "I Can See You"
+	},
+	"7281": {
+		"commander": {
+			"id": "340"
+		},
+		"deck": [
+			{
+				"id": "7021"
+			},
+			{
+				"id": "7000"
+			},
+			{
+				"id": "7044"
+			},
+			{
+				"id": "7021"
+			},
+			{
+				"id": "7000"
+			},
+			{
+				"id": "7044"
+			},
+			{
+				"id": "7021"
+			},
+			{
+				"id": "7000"
+			},
+			{
+				"id": "7044"
+			},
+			{
+				"id": "7021",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7000",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7044",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7021",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7000",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7044",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7281",
+		"name": "Out of the Woods"
+	},
+	"7282": {
+		"commander": {
+			"id": "421"
+		},
+		"deck": [
+			{
+				"id": "1029"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1029"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1029"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1029",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1343",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1642",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1029",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1343",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1642",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7282",
+		"name": "Everything Has Changed"
+	},
+	"7283": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "2208"
+			},
+			{
+				"id": "2225"
+			},
+			{
+				"id": "2047"
+			},
+			{
+				"id": "2208"
+			},
+			{
+				"id": "2225"
+			},
+			{
+				"id": "2047"
+			},
+			{
+				"id": "2208"
+			},
+			{
+				"id": "2225"
+			},
+			{
+				"id": "2047"
+			},
+			{
+				"id": "2208",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2225",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2047",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2208",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2225",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2047",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7283",
+		"name": "Bigger Than the Whole Sky"
+	},
+	"7284": {
+		"commander": {
+			"id": "349"
+		},
+		"deck": [
+			{
+				"id": "5019"
+			},
+			{
+				"id": "6047"
+			},
+			{
+				"id": "7077"
+			},
+			{
+				"id": "5019"
+			},
+			{
+				"id": "6047"
+			},
+			{
+				"id": "7077"
+			},
+			{
+				"id": "5019"
+			},
+			{
+				"id": "6047"
+			},
+			{
+				"id": "7077"
+			},
+			{
+				"id": "5019",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6047",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7077",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5019",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6047",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7077",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7284",
+		"name": "Eyes Open"
+	},
+	"7285": {
+		"commander": {
+			"id": "349"
+		},
+		"deck": [
+			{
+				"id": "7028"
+			},
+			{
+				"id": "5211"
+			},
+			{
+				"id": "6298"
+			},
+			{
+				"id": "7028"
+			},
+			{
+				"id": "5211"
+			},
+			{
+				"id": "6298"
+			},
+			{
+				"id": "7028"
+			},
+			{
+				"id": "5211"
+			},
+			{
+				"id": "6298"
+			},
+			{
+				"id": "7028",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5211",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6298",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7028",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5211",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6298",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7285",
+		"name": "You Need to Calm Down"
+	},
+	"7286": {
+		"commander": {
+			"id": "349"
+		},
+		"deck": [
+			{
+				"id": "5049"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "7013"
+			},
+			{
+				"id": "5049"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "7013"
+			},
+			{
+				"id": "5049"
+			},
+			{
+				"id": "6043"
+			},
+			{
+				"id": "7013"
+			},
+			{
+				"id": "5049",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6043",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7013",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5049",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6043",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7013",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7286",
+		"name": "You're on Your Own, Kid"
+	},
+	"7287": {
+		"commander": {
+			"id": "349"
+		},
+		"deck": [
+			{
+				"id": "5301"
+			},
+			{
+				"id": "6136"
+			},
+			{
+				"id": "7133"
+			},
+			{
+				"id": "5301"
+			},
+			{
+				"id": "6136"
+			},
+			{
+				"id": "7133"
+			},
+			{
+				"id": "5301"
+			},
+			{
+				"id": "6136"
+			},
+			{
+				"id": "7133"
+			},
+			{
+				"id": "5301",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6136",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7133",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5301",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6136",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7133",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7287",
+		"name": "No Body, No Crime"
+	},
+	"7288": {
+		"commander": {
+			"id": "349"
+		},
+		"deck": [
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5263"
+			},
+			{
+				"id": "7313"
+			},
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5263"
+			},
+			{
+				"id": "7313"
+			},
+			{
+				"id": "5138"
+			},
+			{
+				"id": "5263"
+			},
+			{
+				"id": "7313"
+			},
+			{
+				"id": "5138",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5263",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7313",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5138",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5263",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7313",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7288",
+		"name": "Epiphany"
+	},
+	"7289": {
+		"commander": {
+			"id": "389"
+		},
+		"deck": [
+			{
+				"id": "7137"
+			},
+			{
+				"id": "7138"
+			},
+			{
+				"id": "7295"
+			},
+			{
+				"id": "7137"
+			},
+			{
+				"id": "7138"
+			},
+			{
+				"id": "7295"
+			},
+			{
+				"id": "7137"
+			},
+			{
+				"id": "7138"
+			},
+			{
+				"id": "7295"
+			},
+			{
+				"id": "7137",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7138",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7295",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7137",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7138",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7295",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7289",
+		"name": "Mastermind"
 	}
 };

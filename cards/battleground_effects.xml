@@ -1785,6 +1785,19 @@
       <skill id="enhance" s="poisonstrike" mult="0.3" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>182</id>
+    <name>Ascended Elemental Conflux</name>
+    <desc>All Elementals gain 10% Shroud. Also, Aether Elementals gain 15% Radiance, Chaos Elementals gain 15% Scorchbreath, Wyld Elementals gain 15% self Invigorate, and Void Elementals gain 15% Devour. Values are based on base Health.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="stasis" mult="0.10" base="health" y="5" />
+      <add_skill id="radiance" mult="0.15" base="health" yy="1,5" />
+      <add_skill id="scorchbreath" mult="0.15" base="health" yy="2,5" />
+      <skill id="invigorate" ignore_nullify="1" mult="0.15" all="1" base="health" yy="3,5" />
+      <add_skill id="devour" mult="0.15" base="health" yy="8,5" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2552,9 +2565,9 @@
     <id>550</id>
     <name>Sanctuary Clash</name>
     <desc>All cards gain Shroud 99.</desc>
-    <icon>Stasis_BGE_64</icon>
+    <icon>blue_pearl_bge_64</icon>
     <!-- REVISAR -->
-    <icon_bundle>110</icon_bundle>
+    <icon_bundle>82</icon_bundle>
     <!-- REVISAR -->
     <effect>
       <add_skill id="stasis" x="99" all="1" />
@@ -2860,6 +2873,16 @@
       <starting_card id="617" level="15" pvp_rank="16" />
       <starting_card id="617" level="16" pvp_rank="17" />
       <starting_card id="617" level="17" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>569</id>
+    <name>Level Down</name>
+    <desc>All cards are unlevelled.</desc>
+    <icon>1Delay_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <stat level="1" />
     </effect>
   </battleground>
   <battleground>

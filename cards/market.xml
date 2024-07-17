@@ -81,10 +81,10 @@
   </store_item>
   <store_item>
     <id>4</id>
-    <name>Reward Pack</name>
+    <name>Powder Reward Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random card from Reward Set.</desc>
+    <desc>Combine 25 Inscription Powder and gives one random card from Reward Set.</desc>
     <priority>15</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
@@ -225,112 +225,6 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="1000" />
     </cards>
   </store_item>
-  <!-- Faction Packs -->
-  <store_item>
-    <id>14</id>
-    <name>Aether Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Aether card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>1</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>15</id>
-    <name>Chaos Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Chaos card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>2</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>16</id>
-    <name>Wyld Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Wyld card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>3</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>17</id>
-    <name>Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Frog card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>4</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="4" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>18</id>
-    <name>Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Elemental card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>5</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="5" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>19</id>
-    <name>Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Angel card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>6</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="6" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>20</id>
-    <name>Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random Undead card.</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <type>7</type>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="7" set="1000" />
-    </cards>
-  </store_item>
   <!-- Unique Packs -->
   <store_item>
     <id>21</id>
@@ -346,323 +240,6 @@
       <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
       <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
     </cards>
-  </store_item>
-  <store_item>
-    <id>22</id>
-    <name>Elemental Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Elemental cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>23</id>
-    <name>Elemental Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Elemental cards with one guaranteed Epic+ and two guaranteed Rares+ from Standard or Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>24</id>
-    <name>Aether Faction Pack</name>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <desc>Gives three Aether cards from the Standard Set, all guaranteed Epics or higher.</desc>
-    <priority>300</priority>
-    <asset_prefab>aether_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>25</id>
-    <name>Chaos Faction Pack</name>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <desc>Gives three Chaos cards from the Standard Set, all guaranteed Epics or higher.</desc>
-    <priority>300</priority>
-    <asset_prefab>chaos_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>26</id>
-    <name>Wyld Faction Pack</name>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <desc>Gives three Wyld cards from the Standard Set, all guaranteed Epics or higher.</desc>
-    <priority>300</priority>
-    <asset_prefab>wyld_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>27</id>
-    <name>Frog Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Frog cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="4" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>28</id>
-    <name>Legendary Dragonstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Dragon card and three additional Dragon cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>29</id>
-    <name>Aether Double Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four Aether cards from the Standard Set, two guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>aether_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>30</id>
-    <!-- WRONG ASSET_PREFAB. FIX BEFORE RELEASE. -->
-    <name>Chaos Double Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four Chaos cards from the Standard Set, two guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>aether_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>31</id>
-    <name>Wyld Double Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four Wyld cards from the Standard Set, two guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>wyld_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>32</id>
-    <name>Triple Dragon Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Dragon cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>33</id>
-    <name>Legendary Barrierstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Barrier card and three additional Barrier cards guaranteed Epic or higher and all from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>34</id>
-    <name>Barrier Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Barrier cards from Premium Set with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>35</id>
-    <name>Barrier Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four Barrier cards with two guaranteed Epics and two guaranteed Rares or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>36</id>
-    <name>Triple Barrier Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Barrier cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>37</id>
-    <name>Legendary Spellstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Premium card and three additional Premium cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>38</id>
-    <name>Undead Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Undead cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="7" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="7" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>39</id>
-    <name>Angel Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Angel cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>40</id>
-    <name>Undead Event Reward Pack</name>
-    <category>0</category>
-    <desc>Gives one of the following cards: Blight Knight, Patchwork Experiment, Dusk Noble, Matriarch's Call.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <card_pack>
-      <pulls>1</pulls>
-      <card id="2025" level="1" weight="0.3" />
-      <card id="2060" level="1" weight="0.3" />
-      <card id="2024" level="1" weight="0.3" />
-      <card id="2059" level="1" weight="0.3" />
-    </card_pack>
   </store_item>
   <!-- Legacy Packs -->
   <store_item>
@@ -712,25 +289,6 @@
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" release_set="1" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>44</id>
-    <name>Epic Pack</name>
-    <!-- Different description than store pack. -->
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four cards from Standard Set with one guaranteed ^c0DFFEpic ^cFFFFor higher.</desc>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <!-- <banner>1</banner>	 -->
-    <!-- has a lowpriority banner slot in the store -->
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
     </cards>
   </store_item>
   <store_item>
@@ -1532,498 +1090,8 @@
   <!-- =============================== -->
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
-  <store_item>
-    <id>3001</id>
-    <name>Epic Pack</name>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives four cards with one guaranteed Epic or higher. Best chance at Legendaries!</desc>
-    <asset_prefab>epic_sale_pack</asset_prefab>
-    <bundle>30</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>60</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3002</id>
-    <name>Aether Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Aether cards from the Standard Set, one Epic and two Rares or higher!</desc>
-    <asset_prefab>aether_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="1" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3003</id>
-    <name>Chaos Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Chaos cards from the Standard Set, one Epic and two Rares or higher!</desc>
-    <asset_prefab>chaos_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="2" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3004</id>
-    <name>Wyld Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Wyld cards from the Standard Set, one Epic and two Rares or higher!</desc>
-    <asset_prefab>wyld_crystal</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="3" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3005</id>
-    <name>Triple Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Undead cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3006</id>
-    <name>Legendary Undeadstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Undead card and three additional Undead cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3007</id>
-    <name>Legendary Angelstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Angel card and three additional Angel cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3008</id>
-    <name>x10 Angel Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten Epic Angel cards or higher from Premium.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3009</id>
-    <name>Angel Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one Epic Angel card or higher!</desc>
-    <asset_prefab>angel_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>46</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3010</id>
-    <name>Triple Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Angel cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3011</id>
-    <name>Triple Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Elemental cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3012</id>
-    <name>Legendary Elementalstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Elemental card and three additional Elemental cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3013</id>
-    <name>x10 Elemental Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Elemental cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3014</id>
-    <name>Triple Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Frog cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3015</id>
-    <name>Legendary Frogstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Frog card and three additional Frog cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3016</id>
-    <name>Quadra Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Frog card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3017</id>
-    <name>Avian Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Avian cards from Standard or Premium set, two Rares+ and one Epic+!</desc>
-    <asset_prefab>event_011_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>59</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3018</id>
-    <name>Quadra Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Avian card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3019</id>
-    <name>Triple Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Avian cards guaranteed Epics or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3020</id>
-    <name>Legendary Avianstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Avian card and three additional Epic+ Avian cards from Premium.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3021</id>
-    <name>Avian Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Avian cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3022</id>
-    <name>Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two cards with both guaranteed ^c8E5FRare ^cFFFFor higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3023</id>
-    <name>Dragon Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one Epic+ Dragon card and two Rare+ cards from Standard or Premium set!</desc>
-    <asset_prefab>event_011_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>59</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3024</id>
-    <name>Quadra Dragon Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Dragon card from Standard or Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="1000,3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3025</id>
-    <name>Insect Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Rare+ Insect cards from Standard or Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3026</id>
-    <name>Insect Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one Epic+ Insect card and two Rare+ Insect cards from Standard or Premium set!</desc>
-    <asset_prefab>event_013_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>64</bundle>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3027</id>
-    <name>Quadra Insect Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Insect card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3028</id>
-    <name>Triple Insect Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three Epic+ Insect cards from Standard or Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>event_013_crystal_epic</asset_prefab>
-    <bundle>64</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3029</id>
-    <name>Legendary Insectstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Insect card and three additional Epic+ Insect cards from Standard or Premium Set!</desc>
-    <priority>1</priority>
-    <asset_prefab>event_013_crystal_legendary</asset_prefab>
-    <bundle>64</bundle>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3030</id>
-    <name>Quadra Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Angel card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="4" />
-    </cards>
-  </store_item>
+  <!-- 3001- : Old events removed. See old versions for archive. -->
+  <!-- Thank You Packs. To retire when items removed. -->
   <store_item>
     <id>3031</id>
     <name>Quadra Elemental Pack</name>
@@ -2036,339 +1104,6 @@
     <hc_cost>1000</hc_cost>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3032</id>
-    <name>Leveled Aether Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three fully leveled Aether cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
-    <asset_prefab>aether_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3033</id>
-    <name>Leveled Chaos Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three fully leveled Chaos cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
-    <asset_prefab>chaos_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3034</id>
-    <name>Leveled Wyld Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives three fully leveled Wyld cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
-    <asset_prefab>wyld_crystal_epic</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <bundle>30</bundle>
-    <hc_cost>180</hc_cost>
-    <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3035</id>
-    <name>Quadra Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Undead card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3036</id>
-    <name>Quadra Goblin Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Goblin card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3037</id>
-    <name>Legendary Goblinstone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Goblin card and three additional Goblin cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3038</id>
-    <name>Goblin Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Epic+ Goblin and two guaranteed Rares+ cards from Standard or Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3039</id>
-    <name>Rare Shard Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Rare+ cards from Standard or Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3040</id>
-    <name>Dual Legendary Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Frog card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3041</id>
-    <name>Epic Pack</name>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives four cards with one guaranteed Epic or higher. Best chance at Legendaries!</desc>
-    <asset_prefab>epic_sale_pack</asset_prefab>
-    <bundle>30</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>50</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3042</id>
-    <name>Double Seafolk Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Seafolk cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3043</id>
-    <name>Legendary Seastone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Seafolk card and three additional Seafolk cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3044</id>
-    <name>Quadra Seafolk Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Seafolk card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3045</id>
-    <name>Random Epic Seafolk</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Epic+ Seafolk from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3046</id>
-    <name>Double Avian Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Avian cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3047</id>
-    <name>Double Legendary Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Avian card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3048</id>
-    <name>Random Legendary Card</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3049</id>
-    <name>Double Angel Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Angel cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3050</id>
-    <name>Random Epic Angel</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Epic+ Angel from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3051</id>
-    <name>Random Epic Undead</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Epic+ Undead from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3052</id>
-    <name>Double Undead Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Undead cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3053</id>
-    <name>Double Dragon Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Dragon cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2399,834 +1134,173 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
     </cards>
   </store_item>
+  <!-- Dual Tribe Premium Legendary for Dual Shard Bundles -->
   <store_item>
-    <id>3056</id>
-    <name>Quad Elemental Epic Pack</name>
+    <id>3104</id>
+    <name>Dual Frog Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ or higher card from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Frog card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3057</id>
-    <name>Dual Legendary Elemental Pack</name>
+    <id>3105</id>
+    <name>Dual Elemental Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives a guaranteed ^cE7FFDual Legendary^cFFFF Elemental card from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Elemental card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3058</id>
-    <name>Double Insect Epic Pack</name>
+    <id>3106</id>
+    <name>Dual Angel Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Insect cards from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Angel card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3059</id>
-    <name>Quad Insect Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Insect or higher card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" fusion_level="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3060</id>
-    <name>Dual Insect Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Epic or higher Insect card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3061</id>
-    <name>Double Goblin Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Goblin cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3062</id>
-    <name>x10 Goblin Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Goblin cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3063</id>
-    <name>x10 Seafolk Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Seafolk cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3064</id>
-    <name>Dual Seafolk Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Epic or higher Seafolk card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3065</id>
-    <name>Double Frog Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Frog cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3066</id>
-    <name>Runecrafter's Pouch</name>
-    <feature_lock_req>runes</feature_lock_req>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
-    <hc_cost>12</hc_cost>
-    <asset_prefab>rune_bag_sale</asset_prefab>
-    <bundle>15</bundle>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="4013" quantity="1" weight="0.3" />
-      <item id="4012" quantity="1" weight="0.5" />
-      <item id="4012" quantity="2" weight="0.05" />
-      <item id="4011" quantity="1" weight="1" />
-      <item id="4011" quantity="2" weight="0.1" />
-      <item id="4001" quantity="2" weight="1" />
-      <item id="4001" quantity="3" weight="0.5" />
-      <item id="4001" quantity="4" weight="0.4" />
-      <item id="4001" quantity="5" weight="0.2" />
-      <item id="4001" quantity="10" weight="0.1" />
-      <item id="2001" quantity="15" weight="1" />
-      <item id="2001" quantity="20" weight="0.5" />
-      <item id="2001" quantity="25" weight="0.3" />
-      <item id="2001" quantity="50" weight="0.1" />
-      <item id="2501" quantity="40" weight="1" />
-      <item id="2501" quantity="50" weight="0.5" />
-      <item id="2501" quantity="60" weight="0.3" />
-      <item id="2501" quantity="80" weight="0.1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>3067</id>
-    <name>Runecrafter's Chest</name>
-    <feature_lock_req>runes</feature_lock_req>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Contains 10x Runecrafter's Pouches, plus an additional guaranteed Rune.</desc>
-    <hc_cost>120</hc_cost>
-    <asset_prefab>rune_chest_sale</asset_prefab>
-    <bundle>15</bundle>
-    <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="10" />
-    <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
-    <item_pack>
-      <pulls>10</pulls>
-      <item id="4013" quantity="1" weight="0.3" />
-      <item id="4012" quantity="1" weight="0.5" />
-      <item id="4012" quantity="2" weight="0.05" />
-      <item id="4011" quantity="1" weight="1" />
-      <item id="4011" quantity="2" weight="0.1" />
-      <item id="4001" quantity="2" weight="1" />
-      <item id="4001" quantity="3" weight="0.5" />
-      <item id="4001" quantity="4" weight="0.4" />
-      <item id="4001" quantity="5" weight="0.2" />
-      <item id="4001" quantity="10" weight="0.1" />
-      <item id="2001" quantity="15" weight="1" />
-      <item id="2001" quantity="20" weight="0.5" />
-      <item id="2001" quantity="25" weight="0.3" />
-      <item id="2001" quantity="50" weight="0.1" />
-      <item id="2501" quantity="40" weight="1" />
-      <item id="2501" quantity="50" weight="0.5" />
-      <item id="2501" quantity="60" weight="0.3" />
-      <item id="2501" quantity="80" weight="0.1" />
-    </item_pack>
-    <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
-  </store_item>
-  <store_item>
-    <id>3068</id>
-    <name>Legendary Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Frog card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3069</id>
-    <name>x10 Frog Epic Pack</name>
+    <id>3107</id>
+    <name>Dual Undead Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Frog cards from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Undead card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3070</id>
-    <name>Quadra Mecha Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Mecha card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3071</id>
-    <name>Legendary Mecha Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Mecha card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3072</id>
-    <name>Double Mecha Epic Pack</name>
+    <id>3109</id>
+    <name>Dual Dragon Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Mecha cards from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Dragon card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3073</id>
-    <name>Legendary Mechastone Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Mecha card and three additional Mecha cards guaranteed Epic or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3074</id>
-    <name>Quad Mecha Epic Pack</name>
+    <id>3110</id>
+    <name>Dual Avian Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Mecha card from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Avian card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" fusion_level="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3075</id>
-    <name>Dual Mecha Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Mecha card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3076</id>
-    <name>Mecha Epic Card</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFEpic^cFFFF+ Mecha card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3077</id>
-    <name>x10 Mecha Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Mecha cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3078</id>
-    <name>Legendary Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Undead card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3079</id>
-    <name>x10 Undead Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives ten ^c0DFFEpic^cFFFF+ Undead cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3080</id>
-    <name>Dual Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Undead card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3081</id>
-    <name>Dual Legendary Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Avian card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3082</id>
-    <name>Double Elemental Epic Pack</name>
+    <id>3111</id>
+    <name>Dual Goblin Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Elemental cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3083</id>
-    <name>Legendary Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Elemental card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3084</id>
-    <name>Quad Elemental Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Elemental card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3085</id>
-    <name>Double Angel Legendary Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two guaranteed ^cE7FFLegendary^cFFFF+ Angel cards from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3086</id>
-    <name>100x Common Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives 100 ^cDDDFCommon^cFFFF cards with NO chance of upgrade! Worst chance at ^cE7FFLegendary^cFFFF cards! May be bought an unlimited number of times!</desc>
-    <priority>1</priority>
-    <asset_prefab>basic_pack</asset_prefab>
-    <icon>icon_basic_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="1" set="1000" num_pulls="100" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3087</id>
-    <name>Double Legendary Goblin Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Goblin card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3088</id>
-    <name>Dual Legendary Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFDual Legendary^cFFFF card from Premium Set!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" fusion_level="1" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3089</id>
-    <name>Legendary Seafolk Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Seafolk card!</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Goblin card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3090</id>
-    <name>Quad Seafolk Epic Pack</name>
+    <id>3112</id>
+    <name>Dual Seafolk Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Seafolk card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" fusion_level="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3091</id>
-    <name>Legendary Insect Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Insect card!</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Seafolk card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3092</id>
-    <name>Double Legendary Insect Pack</name>
+    <id>3113</id>
+    <name>Dual Insect Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Insect card from Premium Set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Insect card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3093</id>
-    <name>Quad Frog Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Frog or higher card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3094</id>
-    <name>Double Legendary Avian Pack</name>
+    <id>3114</id>
+    <name>Dual Beast Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Avian card from Premium Set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Beast card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3095</id>
-    <name>Quad Elemental Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Elemental or higher card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <show_list>1</show_list>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" fusion_level="2" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="14" set="3000" fusion_level="1" />
     </cards>
   </store_item>
   <store_item>
-    <id>3096</id>
-    <name>Quad Undead Epic Pack</name>
+    <id>3116</id>
+    <name>Dual Mecha Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Undead or higher card from Premium set.</desc>
+    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Mecha card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" fusion_level="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3097</id>
-    <name>Dual Dragon Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Dragon card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3098</id>
-    <name>Dual Legendary Mecha Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Contains a random ^cE7FFDual Legendary^cFFFF+ Mecha card from the Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
+    <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
+    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" fusion_level="1" />
     </cards>
   </store_item>
-  <store_item>
-    <id>3099</id>
-    <name>Legendary Goblin Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Goblin card!</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3100</id>
-    <name>Double Legendary Undead Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one random ^cE7FFLegendary^cFFFF Undead card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>legendary_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3101</id>
-    <name>Legendary Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Angel card!</desc>
-    <priority>1</priority>
-    <asset_prefab>legendary_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3102</id>
-    <name>Dual Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Epic or higher Angel card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3103</id>
-    <name>Legendary Dragon Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Dragon card!</desc>
-    <priority>1</priority>
-    <asset_prefab>legendary_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3104</id>
-    <name>Dual Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Frog card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3105</id>
-    <name>Legendary Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Avian card!</desc>
-    <priority>1</priority>
-    <asset_prefab>legendary_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3106</id>
-    <name>Dual Avian Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Avian card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3107</id>
-    <name>Legendary Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives one random ^cE7FFLegendary^cFFFF Frog card!</desc>
-    <priority>1</priority>
-    <asset_prefab>legendary_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
-    </cards>
-  </store_item>
+  <!-- Quad Premium Legendary for Colossal Bundle -->
   <store_item>
     <id>3108</id>
     <name>Quad Legendary Pack</name>
@@ -3241,10 +1315,10 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000" fusion_level="2" />
     </cards>
   </store_item>
-  <!-- Quad Tribe Premium Epic Packs for Quad Premium Epic Bundles -->
+  <!-- Quad Tribe Premium Epic for Weekend Bundles -->
   <store_item>
     <id>3124</id>
-    <name>Quad Frog Premium Epic Pack</name>
+    <name>Quad Frog Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Frog card from Premium set.</desc>
@@ -3259,7 +1333,7 @@
   </store_item>
   <store_item>
     <id>3125</id>
-    <name>Quad Elemental Premium Epic Pack</name>
+    <name>Quad Elemental Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Elemental card from Premium set.</desc>
@@ -3274,7 +1348,7 @@
   </store_item>
   <store_item>
     <id>3126</id>
-    <name>Quad Angel Premium Epic Pack</name>
+    <name>Quad Angel Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Angel card from Premium set.</desc>
@@ -3289,7 +1363,7 @@
   </store_item>
   <store_item>
     <id>3127</id>
-    <name>Quad Undead Premium Epic Pack</name>
+    <name>Quad Undead Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Undead card from Premium set.</desc>
@@ -3304,7 +1378,7 @@
   </store_item>
   <store_item>
     <id>3129</id>
-    <name>Quad Dragon Premium Epic Pack</name>
+    <name>Quad Dragon Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Dragon card from Premium set.</desc>
@@ -3319,7 +1393,7 @@
   </store_item>
   <store_item>
     <id>3130</id>
-    <name>Quad Avian Premium Epic Pack</name>
+    <name>Quad Avian Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Avian card from Premium set.</desc>
@@ -3334,7 +1408,7 @@
   </store_item>
   <store_item>
     <id>3131</id>
-    <name>Quad Goblin Premium Epic Pack</name>
+    <name>Quad Goblin Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Goblin card from Premium set.</desc>
@@ -3349,7 +1423,7 @@
   </store_item>
   <store_item>
     <id>3132</id>
-    <name>Quad Seafolk Premium Epic Pack</name>
+    <name>Quad Seafolk Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Seafolk card from Premium set.</desc>
@@ -3364,7 +1438,7 @@
   </store_item>
   <store_item>
     <id>3133</id>
-    <name>Quad Insect Premium Epic Pack</name>
+    <name>Quad Insect Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Insect card from Premium set.</desc>
@@ -3379,7 +1453,7 @@
   </store_item>
   <store_item>
     <id>3134</id>
-    <name>Quad Beast Premium Epic Pack</name>
+    <name>Quad Beast Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Beast card from Premium set.</desc>
@@ -3394,7 +1468,7 @@
   </store_item>
   <store_item>
     <id>3136</id>
-    <name>Quad Mecha Premium Epic Pack</name>
+    <name>Quad Mecha Premium Epic</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives one random ^c0DFFQuad Epic^cFFFF Mecha card from Premium set.</desc>
@@ -3461,6 +1535,55 @@
       <item id="104032" />
       <item id="104033" />
       <item id="104034" />
+      <item id="104035" />
+      <item id="104036" />
+      <item id="104037" />
+      <item id="104038" />
+      <item id="104039" />
+      <item id="104040" />
+      <item id="104041" />
+      <item id="104042" />
+      <item id="104043" />
+      <item id="104044" />
+      <item id="104045" />
+      <item id="104046" />
+      <item id="104047" />
+      <item id="104048" />
+      <item id="104049" />
+      <item id="104050" />
+      <item id="104051" />
+      <item id="104052" />
+      <item id="104053" />
+      <item id="104054" />
+      <item id="104055" />
+      <item id="104056" />
+      <item id="104057" />
+      <item id="104058" />
+      <item id="104059" />
+      <item id="104060" />
+      <item id="104061" />
+      <item id="104062" />
+      <item id="104063" />
+      <item id="104064" />
+      <item id="104065" />
+      <item id="104066" />
+      <item id="104067" />
+      <item id="105640" />
+      <item id="104068" />
+      <item id="104069" />
+      <item id="104070" />
+      <item id="104071" />
+      <item id="104072" />
+      <item id="104073" />
+      <item id="104074" />
+      <item id="104075" />
+      <item id="104076" />
+      <item id="104077" />
+      <item id="104078" />
+      <item id="104079" />
+      <item id="104080" />
+      <item id="104081" />
+      <item id="104082" />
     </costed_items>
   </store_item>
   <store_item>
@@ -3624,91 +1747,93 @@
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>
     <costed_items>
-      <item id="104000" number="10" purchase1="10" scalar="10" />
-      <item id="104001" number="10" purchase1="10" scalar="10" />
-      <item id="104002" number="10" purchase1="10" scalar="10" />
-      <item id="104004" number="10" purchase1="10" scalar="10" />
-      <item id="104005" number="10" purchase1="10" scalar="10" />
-      <item id="104006" number="10" purchase1="10" scalar="10" />
-      <item id="104007" number="10" purchase1="10" scalar="10" />
-      <item id="104008" number="10" purchase1="10" scalar="10" />
-      <item id="104009" number="10" purchase1="10" scalar="10" />
-      <item id="104010" number="10" purchase1="10" scalar="10" />
-      <item id="104011" number="10" purchase1="10" scalar="10" />
-      <item id="104012" number="10" purchase1="10" scalar="10" />
-      <item id="104013" number="10" purchase1="10" scalar="10" />
-      <item id="104014" number="10" purchase1="10" scalar="10" />
-      <item id="104015" number="10" purchase1="10" scalar="10" />
-      <item id="104016" number="10" purchase1="10" scalar="10" />
-      <item id="104017" number="10" purchase1="10" scalar="10" />
-      <item id="104018" number="10" purchase1="10" scalar="10" />
-      <item id="104019" number="10" purchase1="10" scalar="10" />
-      <item id="104020" number="10" purchase1="10" scalar="10" />
-      <item id="104021" number="10" purchase1="10" scalar="10" />
-      <item id="104022" number="10" purchase1="10" scalar="10" />
-      <item id="104023" number="10" purchase1="10" scalar="10" />
-      <item id="104024" number="10" purchase1="10" scalar="10" />
-      <item id="104025" number="10" purchase1="10" scalar="10" />
-      <item id="104026" number="10" purchase1="10" scalar="10" />
-      <item id="104027" number="10" purchase1="10" scalar="10" />
-      <item id="104028" number="10" purchase1="10" scalar="10" />
-      <item id="104029" number="10" purchase1="10" scalar="10" />
-      <item id="104030" number="10" purchase1="10" scalar="10" />
-      <item id="104031" number="10" purchase1="10" scalar="10" />
-      <item id="104032" number="10" purchase1="10" scalar="10" />
-      <item id="104033" number="10" purchase1="10" scalar="10" />
-      <item id="104034" number="10" purchase1="10" scalar="10" />
-      <item id="104035" number="10" purchase1="10" scalar="10" />
-      <item id="104036" number="10" purchase1="10" scalar="10" />
-      <item id="104037" number="10" purchase1="10" scalar="10" />
-      <item id="104038" number="10" purchase1="10" scalar="10" />
-      <item id="104039" number="10" purchase1="10" scalar="10" />
-      <item id="104040" number="10" purchase1="10" scalar="10" />
-      <item id="104041" number="10" purchase1="10" scalar="10" />
-      <item id="104042" number="10" purchase1="10" scalar="10" />
-      <item id="104043" number="10" purchase1="10" scalar="10" />
-      <item id="104044" number="10" purchase1="10" scalar="10" />
-      <item id="104045" number="10" purchase1="10" scalar="10" />
-      <item id="104046" number="10" purchase1="10" scalar="10" />
-      <item id="104047" number="10" purchase1="10" scalar="10" />
-      <item id="104048" number="10" purchase1="10" scalar="10" />
-      <item id="104049" number="10" purchase1="10" scalar="10" />
-      <item id="104050" number="10" purchase1="10" scalar="10" />
-      <item id="104051" number="10" purchase1="10" scalar="10" />
-      <item id="104052" number="10" purchase1="10" scalar="10" />
-      <item id="104053" number="10" purchase1="10" scalar="10" />
-      <item id="104054" number="10" purchase1="10" scalar="10" />
-      <item id="104055" number="10" purchase1="10" scalar="10" />
-      <item id="104056" number="10" purchase1="10" scalar="10" />
-      <item id="104057" number="10" purchase1="10" scalar="10" />
-      <item id="104058" number="10" purchase1="10" scalar="10" />
-      <item id="104059" number="10" purchase1="10" scalar="10" />
-      <item id="104060" number="10" purchase1="10" scalar="10" />
-      <item id="104061" number="10" purchase1="10" scalar="10" />
-      <item id="104062" number="10" purchase1="10" scalar="10" />
-      <item id="104063" number="10" purchase1="10" scalar="10" />
-      <item id="104064" number="10" purchase1="10" scalar="10" />
-      <item id="104065" number="10" purchase1="10" scalar="10" />
-      <item id="104066" number="10" purchase1="10" scalar="10" />
-      <item id="104067" number="10" purchase1="10" scalar="10" />
-      <item id="105640" number="10" purchase1="10" scalar="10" />
-      <item id="104068" number="10" purchase1="10" scalar="10" />
-      <item id="104069" number="10" purchase1="10" scalar="10" />
-      <item id="104070" number="10" purchase1="10" scalar="10" />
-      <item id="104071" number="10" purchase1="10" scalar="10" />
-      <item id="104072" number="10" purchase1="10" scalar="10" />
-      <item id="104073" number="10" purchase1="10" scalar="10" />
-      <item id="104074" number="10" purchase1="10" scalar="10" />
-      <item id="104075" number="10" purchase1="10" scalar="10" />
-      <item id="104076" number="10" purchase1="10" scalar="10" />
-      <item id="104077" number="10" purchase1="10" scalar="10" />
-      <item id="104078" number="10" purchase1="10" scalar="10" />
-      <item id="104079" number="10" purchase1="10" scalar="10" />
-      <item id="104080" number="10" purchase1="10" scalar="10" />
-      <item id="104081" number="10" purchase1="10" scalar="10" />
-      <item id="104082" number="10" purchase1="10" scalar="10" />
-      <item id="104083" number="10" purchase1="10" scalar="10" />
-      <item id="104084" number="10" purchase1="10" scalar="10" />
+      <item id="104000" number="10" purchase1="5" scalar="5" />
+      <item id="104001" number="10" purchase1="5" scalar="5" />
+      <item id="104002" number="10" purchase1="5" scalar="5" />
+      <item id="104004" number="10" purchase1="5" scalar="5" />
+      <item id="104005" number="10" purchase1="5" scalar="5" />
+      <item id="104006" number="10" purchase1="5" scalar="5" />
+      <item id="104007" number="10" purchase1="5" scalar="5" />
+      <item id="104008" number="10" purchase1="5" scalar="5" />
+      <item id="104009" number="10" purchase1="5" scalar="5" />
+      <item id="104010" number="10" purchase1="5" scalar="5" />
+      <item id="104011" number="10" purchase1="5" scalar="5" />
+      <item id="104012" number="10" purchase1="5" scalar="5" />
+      <item id="104013" number="10" purchase1="5" scalar="5" />
+      <item id="104014" number="10" purchase1="5" scalar="5" />
+      <item id="104015" number="10" purchase1="5" scalar="5" />
+      <item id="104016" number="10" purchase1="5" scalar="5" />
+      <item id="104017" number="10" purchase1="5" scalar="5" />
+      <item id="104018" number="10" purchase1="5" scalar="5" />
+      <item id="104019" number="10" purchase1="5" scalar="5" />
+      <item id="104020" number="10" purchase1="5" scalar="5" />
+      <item id="104021" number="10" purchase1="5" scalar="5" />
+      <item id="104022" number="10" purchase1="5" scalar="5" />
+      <item id="104023" number="10" purchase1="5" scalar="5" />
+      <item id="104024" number="10" purchase1="5" scalar="5" />
+      <item id="104025" number="10" purchase1="5" scalar="5" />
+      <item id="104026" number="10" purchase1="5" scalar="5" />
+      <item id="104027" number="10" purchase1="5" scalar="5" />
+      <item id="104028" number="10" purchase1="5" scalar="5" />
+      <item id="104029" number="10" purchase1="5" scalar="5" />
+      <item id="104030" number="10" purchase1="5" scalar="5" />
+      <item id="104031" number="10" purchase1="5" scalar="5" />
+      <item id="104032" number="10" purchase1="5" scalar="5" />
+      <item id="104033" number="10" purchase1="5" scalar="5" />
+      <item id="104034" number="10" purchase1="5" scalar="5" />
+      <item id="104035" number="10" purchase1="5" scalar="5" />
+      <item id="104036" number="10" purchase1="5" scalar="5" />
+      <item id="104037" number="10" purchase1="5" scalar="5" />
+      <item id="104038" number="10" purchase1="5" scalar="5" />
+      <item id="104039" number="10" purchase1="5" scalar="5" />
+      <item id="104040" number="10" purchase1="5" scalar="5" />
+      <item id="104041" number="10" purchase1="5" scalar="5" />
+      <item id="104042" number="10" purchase1="5" scalar="5" />
+      <item id="104043" number="10" purchase1="5" scalar="5" />
+      <item id="104044" number="10" purchase1="5" scalar="5" />
+      <item id="104045" number="10" purchase1="5" scalar="5" />
+      <item id="104046" number="10" purchase1="5" scalar="5" />
+      <item id="104047" number="10" purchase1="5" scalar="5" />
+      <item id="104048" number="10" purchase1="5" scalar="5" />
+      <item id="104049" number="10" purchase1="5" scalar="5" />
+      <item id="104050" number="10" purchase1="5" scalar="5" />
+      <item id="104051" number="10" purchase1="5" scalar="5" />
+      <item id="104052" number="10" purchase1="5" scalar="5" />
+      <item id="104053" number="10" purchase1="5" scalar="5" />
+      <item id="104054" number="10" purchase1="5" scalar="5" />
+      <item id="104055" number="10" purchase1="5" scalar="5" />
+      <item id="104056" number="10" purchase1="5" scalar="5" />
+      <item id="104057" number="10" purchase1="5" scalar="5" />
+      <item id="104058" number="10" purchase1="5" scalar="5" />
+      <item id="104059" number="10" purchase1="5" scalar="5" />
+      <item id="104060" number="10" purchase1="5" scalar="5" />
+      <item id="104061" number="10" purchase1="5" scalar="5" />
+      <item id="104062" number="10" purchase1="5" scalar="5" />
+      <item id="104063" number="10" purchase1="5" scalar="5" />
+      <item id="104064" number="10" purchase1="5" scalar="5" />
+      <item id="104065" number="10" purchase1="5" scalar="5" />
+      <item id="104066" number="10" purchase1="5" scalar="5" />
+      <item id="104067" number="10" purchase1="5" scalar="5" />
+      <item id="105640" number="10" purchase1="5" scalar="5" />
+      <item id="104068" number="10" purchase1="5" scalar="5" />
+      <item id="104069" number="10" purchase1="5" scalar="5" />
+      <item id="104070" number="10" purchase1="5" scalar="5" />
+      <item id="104071" number="10" purchase1="5" scalar="5" />
+      <item id="104072" number="10" purchase1="5" scalar="5" />
+      <item id="104073" number="10" purchase1="5" scalar="5" />
+      <item id="104074" number="10" purchase1="5" scalar="5" />
+      <item id="104075" number="10" purchase1="5" scalar="5" />
+      <item id="104076" number="10" purchase1="5" scalar="5" />
+      <item id="104077" number="10" purchase1="5" scalar="5" />
+      <item id="104078" number="10" purchase1="5" scalar="5" />
+      <item id="104079" number="10" purchase1="5" scalar="5" />
+      <item id="104080" number="10" purchase1="5" scalar="5" />
+      <item id="104081" number="10" purchase1="5" scalar="5" />
+      <item id="104082" number="10" purchase1="5" scalar="5" />
+      <item id="104083" number="10" purchase1="5" scalar="5" />
+      <item id="104084" number="10" purchase1="5" scalar="5" />
+      <item id="104085" number="10" purchase1="5" scalar="5" />
+      <item id="104086" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -4026,1458 +2151,8 @@
     <!-- Stuff to give -->
     <item id="1035" quantity="3" />
   </store_item>
-  <store_item>
-    <id>5020</id>
-    <name>Raid Survival Bundle</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Includes three Raid Refill +20 items, an Epic Pack, and 2000 gold. May be purchased 5 times.</desc>
-    <asset_prefab>triple_raid_refill_box</asset_prefab>
-    <bundle>35</bundle>
-    <hc_cost>200</hc_cost>
-    <num_available>5</num_available>
-    <!-- Stuff to give -->
-    <pack>12</pack>
-    <gold>2000</gold>
-    <item id="1035" quantity="3" />
-  </store_item>
-  <store_item>
-    <id>5038</id>
-    <name>Dust Satchel</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 200 Arcane Dust! May be purchased an unlimited number of times!</desc>
-    <asset_prefab>dust_package_2</asset_prefab>
-    <background_prefab>banner_epic</background_prefab>
-    <bundle>15</bundle>
-    <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>30</hc_cost>
-    <!-- Stuff to give -->
-    <item id="4" quantity="200" />
-  </store_item>
-  <store_item>
-    <id>5045</id>
-    <name>Dungeon Survival Bundle</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Includes three Dungeon Refill +20 items, an Epic Pack, and 2000 gold. May be purchased 5 times.</desc>
-    <asset_prefab>dungeon_refill_box</asset_prefab>
-    <bundle>31</bundle>
-    <hc_cost>200</hc_cost>
-    <num_available>5</num_available>
-    <!-- Stuff to give -->
-    <pack>12</pack>
-    <gold>2000</gold>
-    <item id="1045" quantity="3" />
-  </store_item>
-  <store_item>
-    <id>5098</id>
-    <name>Limitless Embersoul Stockpile!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>210</priority>
-    <desc>Gives 40 ^cCC1FEmbersouls^cFFFF! May be purchased an unlimited amount of times!</desc>
-    <asset_prefab>embersoul_package_3</asset_prefab>
-    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
-    <bundle>30</bundle>
-    <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>90</hc_cost>
-    <!-- Stuff to give -->
-    <item id="2515" quantity="40" />
-  </store_item>
-  <store_item>
-    <id>5100</id>
-    <name>Limitless Brinesoul Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>210</priority>
-    <desc>Gives 40 ^cCC1FBrinesouls^cFFFF! May be purchased an unlimited amount of times!</desc>
-    <asset_prefab>brinesoul_box</asset_prefab>
-    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
-    <bundle>35</bundle>
-    <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>90</hc_cost>
-    <!-- Stuff to give -->
-    <item id="2522" quantity="40" />
-  </store_item>
-  <store_item>
-    <id>5108</id>
-    <name>Unlimited Energy Refill Pack</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Fifteen Energy Potion +20 for a limited time only! May be purchased an unlimited number of times!</desc>
-    <asset_prefab>event_012_energyChest</asset_prefab>
-    <bundle>62</bundle>
-    <icon>energy_refill_20</icon>
-    <hc_cost>100</hc_cost>
-    <!-- Stuff to give -->
-    <item id="1004" quantity="15" />
-  </store_item>
-  <store_item>
-    <id>5124</id>
-    <name>Chest of Bounty Unlimited</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Includes four Bounty Refill +10 and 1500 gold! May be purchased an unlimited number of times!</desc>
-    <asset_prefab>bounty_pack_4</asset_prefab>
-    <bundle>15</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>90</hc_cost>
-    <!-- Stuff to give -->
-    <gold>1500</gold>
-    <item id="1024" quantity="4" />
-  </store_item>
-  <store_item>
-    <id>5138</id>
-    <name>Grand Dust Satchel</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 400 Arcane Dust! May be purchased an unlimited number of times!</desc>
-    <asset_prefab>dust_package_3</asset_prefab>
-    <background_prefab>banner_epic</background_prefab>
-    <bundle>15</bundle>
-    <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>60</hc_cost>
-    <!-- Stuff to give -->
-    <item id="4" quantity="400" />
-  </store_item>
-  <store_item>
-    <id>5150</id>
-    <name>Limitless Windsoul Stockpile!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>210</priority>
-    <desc>Gives 200 ^cCC1FWindsouls^cFFFF! May be purchased an unlimited amount of times!</desc>
-    <asset_prefab>windsoul_box</asset_prefab>
-    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
-    <bundle>35</bundle>
-    <!-- <icon>rune_component_bag_item</icon> -->
-    <hc_cost>90</hc_cost>
-    <!-- Stuff to give -->
-    <item id="2524" quantity="200" />
-  </store_item>
-  <store_item>
-    <id>5265</id>
-    <name>Celesti Monstrosity Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFCelesti Monstrosity^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>220</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7199" display_card_id="7199" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5290</id>
-    <name>Spider Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFCrystal Spider^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>220</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7295" display_card_id="7295" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5292</id>
-    <name>Bloodboil Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBloodboil Mage^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>220</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6206" display_card_id="6206" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5314</id>
-    <name>Gurgitater Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFGurgitater^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>220</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6067" display_card_id="6067" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5327</id>
-    <name>Dragonfly Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFDragonfly Runner^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6146" display_card_id="6146" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5328</id>
-    <name>Fowlmaster Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFFowlmaster^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5209" display_card_id="5209" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5329</id>
-    <name>Frostjaw Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFFrostjaw^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7026" display_card_id="7026" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5330</id>
-    <name>Grumplo Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFGobKnightly Grumplo^cFFFF! May be purchased four times.</desc>
-    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5239" display_card_id="5239" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5331</id>
-    <name>Double Legendary Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed ^cE7FFLegendary ^cFFFFElemental card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5332</id>
-    <name>Mag Ma Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMag "The Pebble" Ma^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6228" display_card_id="6228" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5333</id>
-    <name>Lapis Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFLapis^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5136" display_card_id="5136" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5334</id>
-    <name>Embered Demise Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFEmbered Demise^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6200" display_card_id="6200" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5335</id>
-    <name>Oxylus Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFOxylus, Might Warden^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7178" display_card_id="7178" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5336</id>
-    <name>Double Legendary Seafolk Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary Seafolk card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5337</id>
-    <name>Mollusk Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMollusk Snarecaster^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7154" display_card_id="7154" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5338</id>
-    <name>Bailong Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBailong^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6106" display_card_id="6106" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5339</id>
-    <name>Lanternbulb Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFLanternbulb Hunter^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5237" display_card_id="5237" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5340</id>
-    <name>Boilfin Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBoilfin Merman^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6225" display_card_id="6225" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5341</id>
-    <name>Double Legendary Angel Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary Angel card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5342</id>
-    <name>Zuphlas Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFZuphlas^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7218" display_card_id="7218" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5343</id>
-    <name>Erinye Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFErinye of Justice^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6263" display_card_id="6263" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5344</id>
-    <name>Seraph Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFSeraph of Singularities^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5249" display_card_id="5249" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5345</id>
-    <name>Winged Giant Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFWinged Giant^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7039" display_card_id="7039" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5346</id>
-    <name>Double Legendary Frog Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary Frog card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5347</id>
-    <name>Gold Crown Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFGold Crown Mayor^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_040_banner_goldencrownmayorfrog</background_prefab>
-    <bundle>134</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7204" display_card_id="7204" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5348</id>
-    <name>Ribbitaksu Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFRibbitaksu^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6103" display_card_id="6103" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5349</id>
-    <name>Fuming Beast Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFFuming Beast^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6052" display_card_id="6052" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5350</id>
-    <name>Runecrafter Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFRunecrafter Initiate^cFFFF! May be purchased four times.</desc>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5297" display_card_id="5297" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5351</id>
-    <name>Leafsinger Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFLeafsinger^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_040_champion_treemasterfrog</asset_prefab>
-    <background_prefab>event_040_banner_treemasterfrog</background_prefab>
-    <bundle>134</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107602" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5352</id>
-    <name>Fritz Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFFritz, the Fiddler^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_93_frogfiddler_championpack</asset_prefab>
-    <background_prefab>event_93_frogfiddler_banner</background_prefab>
-    <bundle>253</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107626" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5353</id>
-    <name>Double Legendary Dragon Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Dragon card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5354</id>
-    <name>Double Legendary Mecha Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Mecha card.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5355</id>
-    <name>Drakon Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFDrakon^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_044_banner_ghostdragon</background_prefab>
-    <bundle>144</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5216" display_card_id="5216" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5356</id>
-    <name>Vlad Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFVlad^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_92_dragcula_banner</background_prefab>
-    <bundle>251</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6301" display_card_id="6301" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5357</id>
-    <name>Xovrus, Death's End Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFXovrus, Death's End^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_024_banner_chance_w1</background_prefab>
-    <bundle>92</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7131" display_card_id="7131" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5358</id>
-    <name>Sandlair Dragon Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFSandlair Dragon^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_044_banner_sandlochnessdragon</background_prefab>
-    <bundle>144</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6207" display_card_id="6207" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5359</id>
-    <name>Trafyr Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFTrafyr, the Rose Warden^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_062_rosewyrm</asset_prefab>
-    <background_prefab>event_062_banner_rosewyrm</background_prefab>
-    <bundle>186</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107610" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5360</id>
-    <name>Worf Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFWorf, Volcano King^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_101_Fragon_championpack</asset_prefab>
-    <background_prefab>event_101_fragon_banner</background_prefab>
-    <bundle>269</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106629" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5361</id>
-    <name>Double Legendary Beast Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Legendary or higher Beast card from Premium Set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="14" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5362</id>
-    <name>Monkey Style Tenshi Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMonkey Style Tenshi^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_060_banner_angelmartialartist</background_prefab>
-    <bundle>181</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5260" display_card_id="5260" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5363</id>
-    <name>Rattleroar Chimera Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFRattleroar Chimera^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_043_banner_zombiechimera</background_prefab>
-    <bundle>142</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6205" display_card_id="6205" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5364</id>
-    <name>Lavahorn Monster Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFLavahorn Monster^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_056_banner_magmarhino</background_prefab>
-    <bundle>173</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6251" display_card_id="6251" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5365</id>
-    <name>Honey Burglar Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFHoney Burglar^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_91_honeythief_banner</background_prefab>
-    <bundle>249</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7300" display_card_id="7300" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5366</id>
-    <name>Kabuto Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFKabuto, Samurai Myth^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_039_champion_samuraibug</asset_prefab>
-    <background_prefab>event_038_banner_samuraibug</background_prefab>
-    <bundle>131</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106603" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5367</id>
-    <name>Bashira Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFBashira, the Half-Blooded^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_072_halfoni</asset_prefab>
-    <background_prefab>event_072_banner_halfoni</background_prefab>
-    <bundle>210</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107617" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5368</id>
-    <name>Moonscale Drake Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFMoonscale Drake^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_053_banner_dragonwolf</background_prefab>
-    <bundle>165</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7243" display_card_id="7243" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5369</id>
-    <name>Werefang the Howler Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFWerefang the Howler^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_031_banner_w2</background_prefab>
-    <bundle>111</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7168" display_card_id="7168" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5370</id>
-    <name>Deceitful Wybat Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFDeceitful Wybat^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_069_banner_wyvernbat</background_prefab>
-    <bundle>203</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7283" display_card_id="7283" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5371</id>
-    <name>Avalantooth Yeti Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFAvalantooth Yeti^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_065_banner_yetirider</background_prefab>
-    <bundle>193</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7277" display_card_id="7277" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5372</id>
-    <name>Puzzlemud Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFPuzzlemud's Body^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_055_tinyarmorgolem</asset_prefab>
-    <background_prefab>event_055_banner_tinyarmorgolem</background_prefab>
-    <bundle>171</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107606" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5373</id>
-    <name>Coldsteel Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFColdsteel Hunter^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_104_thehunter_championpack</asset_prefab>
-    <background_prefab>event_104_thehunter_banner</background_prefab>
-    <bundle>275</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107631" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5374</id>
-    <name>Fowlmaster Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFFowlmaster^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_041_banner_goblinbirdmaster</background_prefab>
-    <bundle>136</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5209" display_card_id="5209" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5375</id>
-    <name>Cute Chef Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFCute Chef^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_102_eyecook_banner</background_prefab>
-    <bundle>271</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7311" display_card_id="7311" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5376</id>
-    <name>Bennu Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBennu^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_021_banner_chance_w3</background_prefab>
-    <bundle>84</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5111" display_card_id="5111" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5377</id>
-    <name>Squire Gorger Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFSquire Gorger^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_011_banner_chance_w2</background_prefab>
-    <bundle>59</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6053" display_card_id="6053" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5378</id>
-    <name>Saucy Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFSaucy, Lady of the Cauldron^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_079_turkeywitch_championpack</asset_prefab>
-    <background_prefab>event_079_turkeywitch_banner</background_prefab>
-    <bundle>225</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107621" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5379</id>
-    <name>Altos Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAltos, the Implacable^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_82_eternalguardian_championpack</asset_prefab>
-    <background_prefab>event_82_eternalguardian_banner</background_prefab>
-    <bundle>231</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105624" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5380</id>
-    <name>Rustcast Witch Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFRustcast Witch^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_037_banner_chance_w7</background_prefab>
-    <bundle>126</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7191" display_card_id="7191" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5381</id>
-    <name>Brightcore Defender Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBrightcore Defender^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_055_banner_hulkingautomation</background_prefab>
-    <bundle>171</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="5246" display_card_id="5246" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5382</id>
-    <name>Leadtrap Catcher Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFLeadtrap Catcher^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_067_banner_catcher</background_prefab>
-    <bundle>199</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7281" display_card_id="7281" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5383</id>
-    <name>Grimkite Model Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFGrimkite Model^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_053_banner_dragonmechawarrior</background_prefab>
-    <bundle>165</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6241" display_card_id="6241" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5384</id>
-    <name>Warkid Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFB4RN4B1, Exo Warkid^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_101_r1bb1t_championpack</asset_prefab>
-    <background_prefab>event_101_r1bb1t_banner</background_prefab>
-    <bundle>269</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105642" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5385</id>
-    <name>R3-M1 Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFR3-M1, the Channeler^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_95_voidchanneler_championpack</asset_prefab>
-    <background_prefab>event_95_voidchanneler_banner</background_prefab>
-    <bundle>257</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106625" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5386</id>
-    <name>Weirdflesh Thing Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFWeirdflesh Thing^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_066_banner_evileye</background_prefab>
-    <bundle>197</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6276" display_card_id="6276" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5387</id>
-    <name>Bogwater Horde Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFBogwater Horde^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_051_banner_swampundead</background_prefab>
-    <bundle>161</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="7238" display_card_id="7238" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5388</id>
-    <name>Ironblood Ghoul Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFIronblood Ghoul^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_066_banner_ironghoul</background_prefab>
-    <bundle>197</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6277" display_card_id="6277" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5389</id>
-    <name>Two-Deaths Brute Sale!</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives one copy of a ^cE7FFTwo-Deaths Brute^cFFFF! May be purchased four times.</desc>
-    <background_prefab>event_058_banner_twoheadedundeadbrute</background_prefab>
-    <bundle>177</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>150</hc_cost>
-    <show_desc>1</show_desc>
-    <!-- Stuff to give -->
-    <cards>
-      <card min_level="1" max_level="1" unit_id="6258" display_card_id="6258" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5390</id>
-    <name>Osseus Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFOsseus, the Skeleball^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_92_skeleball_championpack</asset_prefab>
-    <background_prefab>event_92_skeleball_banner</background_prefab>
-    <bundle>251</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106624" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5391</id>
-    <name>Tao Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFTao, Transcended Lich^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_051_undeadmonk</asset_prefab>
-    <background_prefab>event_051_banner_undeadmonk</background_prefab>
-    <bundle>161</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105607" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
+  <!-- 5005- : Old events removed. See old versions for archive. -->
+  <!-- Event 117: ComDev Insect - Red Feather Valley -->
   <store_item>
     <id>5392</id>
     <name>Nano Swarm Stone Stockpile</name>
@@ -5558,4 +2233,103 @@
       <item id="105606" quantity="125" weight="1" />
     </item_pack>
   </store_item>
+  <!-- Event 118: ComDev Elemental - Red Feather Valley -->
+  <store_item>
+    <id>5396</id>
+    <name>Quad Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFQuad, the Gatherer^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_86_fairychanneler_championpack</asset_prefab>
+    <background_prefab>event_86_fairychanneler_banner</background_prefab>
+    <bundle>239</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107625" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5397</id>
+    <name>Windsage Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFWindsage Gama^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_052_frogwindspiritmonk</asset_prefab>
+    <background_prefab>event_052_banner_frogwindspiritmonk</background_prefab>
+    <bundle>163</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105608" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5398</id>
+    <name>Medusozoa Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFMedusozoa, the Immortal^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_049_champion_thundercloudjellyfish</asset_prefab>
+    <background_prefab>event_049_banner_thundercloudjellyfish</background_prefab>
+    <bundle>156</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105605" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5399</id>
+    <name>Malik Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFMalik, Hollow Djinn^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_056_voidelemental</asset_prefab>
+    <background_prefab>event_056_banner_voidelemental</background_prefab>
+    <bundle>173</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107607" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <!-- <store_item> -->
+  <!-- <id>5400</id> -->
+  <!-- <name>Daze for Days Chance Pack</name> -->
+  <!-- <category>0</category> -->
+  <!-- <hidden>1</hidden> -->
+  <!-- <event_only>1</event_only> -->
+  <!-- <priority>250</priority> -->
+  <!-- <desc>Gives one random ^cE7FFQuad Legendary^cFFFF card with Daze from Premium Set.</desc> -->
+  <!-- <priority>1</priority> -->
+  <!-- <asset_prefab>event_042_box_lanternundeadelemental</asset_prefab> -->
+  <!-- <background_prefab>event_042_banner_lanternundeadelemental</background_prefab> -->
+  <!-- <bundle>140</bundle> -->
+  <!-- <icon>icon_purple_crystal</icon> -->
+  <!-- <hc_cost>300</hc_cost> -->
+  <!-- <cards> -->
+  <!-- <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" skill_id="daze" set="3000" fusion_level="2"/> -->
+  <!-- </cards> -->
+  <!-- </store_item> -->
 </root>

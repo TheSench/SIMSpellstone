@@ -459,7 +459,7 @@ var RUNES = {
 		"id": "5092",
 		"name": "Rune of Greater Fervor",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
 			"health": {
 				"mult": 0.15
@@ -905,7 +905,7 @@ var RUNES = {
 		"id": "5187",
 		"name": "Rune of Greater Frostbreath",
 		"rarity": 4,
-		"set": "3",
+		"set": "1",
 		"stat_boost": {
 			"health": {
 				"mult": 0.15
@@ -1044,12 +1044,12 @@ var RUNES = {
 	},
 	"5222": {
 		"category": "3",
-		"desc": "Ward +30%, rounded up. Minimum +3. Health +15%, rounded up.",
+		"desc": "Ward +50%, rounded up. Minimum +3. Health +15%, rounded up.",
 		"icon": "rune_ward_legendary",
 		"id": "5222",
 		"name": "Rune of Greater Warding",
 		"rarity": 4,
-		"set": "3",
+		"set": "1",
 		"stat_boost": {
 			"health": {
 				"mult": 0.15
@@ -1057,7 +1057,7 @@ var RUNES = {
 			"skill": {
 				"id": "absorb",
 				"min_bonus": 3,
-				"mult": 0.3
+				"mult": 0.5
 			}
 		},
 		"type": "3"
@@ -1150,7 +1150,7 @@ var RUNES = {
 		"id": "5263",
 		"name": "Rune of Greater Mass Enrage",
 		"rarity": 4,
-		"set": "1",
+		"set": "3",
 		"stat_boost": {
 			"health": {
 				"mult": 0.15

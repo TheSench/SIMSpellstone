@@ -2990,6 +2990,50 @@ var BATTLEGROUNDS = {
 		"id": "181",
 		"name": "Universal Toxic Swarm"
 	},
+	"182": {
+		"desc": "All Elementals gain 10% Shroud. Also, Aether Elementals gain 15% Radiance, Chaos Elementals gain 15% Scorchbreath, Wyld Elementals gain 15% self Invigorate, and Void Elementals gain 15% Devour. Values are based on base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"mult": 0.1,
+				"y": "5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "radiance",
+				"mult": 0.15,
+				"y": "1,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "scorchbreath",
+				"mult": 0.15,
+				"y": "2,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "devour",
+				"mult": 0.15,
+				"y": "8,5"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "invigorate",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"y": "3,5"
+			}
+		],
+		"id": "182",
+		"name": "Ascended Elemental Conflux"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -5156,6 +5200,17 @@ var BATTLEGROUNDS = {
 		"id": "568",
 		"isTower": true,
 		"name": "Swarming Tower"
+	},
+	"569": {
+		"desc": "All cards are unlevelled.",
+		"effect": [
+			{
+				"effect_type": "statChange",
+				"level": 1
+			}
+		],
+		"id": "569",
+		"name": "Level Down"
 	},
 	"570": {
 		"desc": "All cards gain Vampirism 10.",
