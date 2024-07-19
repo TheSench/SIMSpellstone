@@ -1791,11 +1791,25 @@
     <desc>All Elementals gain 10% Shroud. Also, Aether Elementals gain 15% Radiance, Chaos Elementals gain 15% Scorchbreath, Wyld Elementals gain 15% self Invigorate, and Void Elementals gain 15% Devour. Values are based on base Health.</desc>
     <icon>filter_elementals_64</icon>
     <effect>
+      <scale_health base="health" mult="0.15" yy="3,5" />
       <add_skill id="stasis" mult="0.10" base="health" y="5" />
       <add_skill id="radiance" mult="0.15" base="health" yy="1,5" />
       <add_skill id="scorchbreath" mult="0.15" base="health" yy="2,5" />
-      <skill id="invigorate" ignore_nullify="1" mult="0.15" all="1" base="health" yy="3,5" />
+      <add_skill id="regenerate" mult="0.15" base="health" yy="3,5" />
       <add_skill id="devour" mult="0.15" base="health" yy="8,5" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>183</id>
+    <name>Cupid's Legions</name>
+    <desc>0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 10% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="legion" mult="0.15" base="health" y="6" delay="0,1,2" />
+      <add_skill id="leech" mult="0.25" base="health" y="6" delay="0,1,2" />
+      <add_skill id="weakenbge" x="99" y="6" delay="3,4" />
+      <add_skill id="regenerate" mult="0.15" base="health" y="6" delay="3,4" />
+      <evolve_skill id="daze" s="heartseeker" />
     </effect>
   </battleground>
   <!-- ================================= -->

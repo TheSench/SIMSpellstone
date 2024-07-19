@@ -889,7 +889,2928 @@
     <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <!-- END Seaside Campaigns -->
-  <!-- 1001-: Event only IDs removed. See old versions for archive. -->
+  <!-- Event 1 Campaigns START -->
+  <campaign>
+    <id>1000</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Demon's Pass</name>
+    <location_id>100</location_id>
+    <x>700</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5001</mission_id>
+      <mission_id>5002</mission_id>
+      <mission_id>5003</mission_id>
+      <mission_id>5004</mission_id>
+      <mission_id>5005</mission_id>
+      <mission_id>5006</mission_id>
+    </missions>
+    <rewards>
+      <card level="4" id="2000" />
+      <card level="7" id="2000" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1001</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>First Contact</name>
+    <campaign_req id="1000" level="1" />
+    <location_id>100</location_id>
+    <x>580</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5007</mission_id>
+      <mission_id>5008</mission_id>
+      <mission_id>5009</mission_id>
+      <mission_id>5010</mission_id>
+      <mission_id>5011</mission_id>
+      <mission_id>5012</mission_id>
+    </missions>
+    <rewards>
+      <card level="4" id="2001" />
+      <card level="7" id="2001" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1002</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Aria's Fall</name>
+    <campaign_req id="1001" level="1" />
+    <location_id>100</location_id>
+    <x>350</x>
+    <y>435</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5013</mission_id>
+      <mission_id>5014</mission_id>
+      <mission_id>5015</mission_id>
+      <mission_id>5016</mission_id>
+      <mission_id>5017</mission_id>
+      <mission_id>5018</mission_id>
+    </missions>
+    <rewards>
+      <card level="4" id="2002" />
+      <card level="7" id="2002" />
+    </rewards>
+  </campaign>
+  <!-- END Event 1 Campaigns -->
+  <!-- Event 2 Campaigns START -->
+  <campaign>
+    <id>1003</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tarragon Quakes</name>
+    <icon id="Dragon_Hatchling_01" bundle="16" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5019</mission_id>
+      <mission_id>5020</mission_id>
+      <mission_id>5021</mission_id>
+      <mission_id>5022</mission_id>
+      <mission_id>5023</mission_id>
+      <mission_id>5024</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="510" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3004" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1004</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Decim's Deceit</name>
+    <campaign_req id="1003" level="1" />
+    <location_id>101</location_id>
+    <x>360</x>
+    <y>240</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5025</mission_id>
+    </missions>
+    <rewards>
+      <card level="4" id="2004" />
+      <card level="7" id="2004" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1005</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Scorched Lands</name>
+    <icon id="Obsidian_Gravel_01" bundle="16" />
+    <campaign_req id="1003" level="1" />
+    <location_id>101</location_id>
+    <x>750</x>
+    <y>255</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5026</mission_id>
+    </missions>
+    <rewards>
+      <card level="3" id="510" />
+      <card level="5" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3002" drop_per_energy="0.65" />
+  </campaign>
+  <campaign>
+    <id>1006</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragon's Aerie</name>
+    <icon id="Smoldering_Ember_01" bundle="16" />
+    <campaign_req id="1003" level="1" />
+    <location_id>101</location_id>
+    <x>500</x>
+    <y>430</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5027</mission_id>
+    </missions>
+    <rewards>
+      <card level="3" id="510" />
+      <card level="5" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3003" drop_per_energy="0.5" />
+  </campaign>
+  <campaign>
+    <id>1007</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Ice Dragon's Realm</name>
+    <icon id="Tepid_Dragon_Egg_01" bundle="16" />
+    <campaign_req id="1003" level="1" />
+    <location_id>101</location_id>
+    <x>600</x>
+    <y>600</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5028</mission_id>
+    </missions>
+    <rewards>
+      <card level="6" id="510" />
+      <card level="7" id="511" />
+    </rewards>
+  </campaign>
+  <!-- END Event 2 Campaigns -->
+  <!-- Event 3 Campaigns START -->
+  <campaign>
+    <id>1008</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Strong Stone</name>
+    <location_id>102</location_id>
+    <x>145</x>
+    <y>530</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5029</mission_id>
+      <mission_id>5030</mission_id>
+    </missions>
+    <rewards>
+      <card level="2" id="510" />
+      <card level="4" id="2009" />
+      <card level="7" id="2009" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1009</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Golden Lava</name>
+    <icon id="Lava_Vial" bundle="17" />
+    <campaign_req id="1008" level="1" />
+    <location_id>102</location_id>
+    <x>330</x>
+    <y>240</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5031</mission_id>
+      <mission_id>5032</mission_id>
+      <mission_id>5033</mission_id>
+      <mission_id>5034</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1306" />
+      <card level="2" id="1306" />
+      <card level="3" id="1301" />
+      <card level="4" id="1301" />
+      <card level="5" id="2008" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3006" drop_per_energy="0.5" />
+  </campaign>
+  <campaign>
+    <id>1010</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Magma Explosion</name>
+    <icon id="Lava_Vial" bundle="17" />
+    <campaign_req id="1009" level="1" />
+    <location_id>102</location_id>
+    <x>700</x>
+    <y>290</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5035</mission_id>
+      <mission_id>5036</mission_id>
+      <mission_id>5037</mission_id>
+      <mission_id>5038</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1305" />
+      <card level="2" id="1305" />
+      <card level="3" id="1307" />
+      <card level="4" id="1307" />
+      <card level="5" id="2008" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3006" drop_per_energy="0.5" />
+  </campaign>
+  <campaign>
+    <id>1011</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Celestial Depths</name>
+    <icon id="Soul_Of_Silver" bundle="17" />
+    <campaign_req id="1008" level="1" />
+    <location_id>102</location_id>
+    <x>900</x>
+    <y>580</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5039</mission_id>
+      <mission_id>5040</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1603" />
+      <card level="2" id="1603" />
+      <card level="3" id="1607" />
+      <card level="4" id="1607" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="1617" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1012</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Capturing the Sky</name>
+    <icon id="Captured_Wind" bundle="17" />
+    <campaign_req id="1008" level="1" />
+    <location_id>102</location_id>
+    <x>730</x>
+    <y>535</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5041</mission_id>
+      <mission_id>5042</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1002" />
+      <card level="2" id="1002" />
+      <card level="3" id="1004" />
+      <card level="4" id="1004" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="1010" />
+    </rewards>
+    <find_item id="3008" drop_per_energy="0.9" />
+  </campaign>
+  <!-- END Event 3 Campaigns -->
+  <!-- START Event 4 Campaigns -->
+  <campaign>
+    <id>1013</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Into the Marshes</name>
+    <icon id="Lightning_Bug" bundle="17" />
+    <location_id>103</location_id>
+    <x>450</x>
+    <y>160</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5043</mission_id>
+      <mission_id>5044</mission_id>
+      <mission_id>5045</mission_id>
+      <mission_id>5046</mission_id>
+      <mission_id>5047</mission_id>
+      <mission_id>5048</mission_id>
+      <mission_id>5049</mission_id>
+      <mission_id>5050</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1604" />
+      <card level="2" id="1604" />
+      <card level="3" id="1604" />
+      <card level="4" id="2011" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="2011" />
+    </rewards>
+    <find_item id="3011" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1014</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>High Grace</name>
+    <icon id="Tadpole_Egg" bundle="17" />
+    <campaign_req id="1013" level="1" />
+    <location_id>103</location_id>
+    <x>770</x>
+    <y>290</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5051</mission_id>
+      <mission_id>5052</mission_id>
+      <mission_id>5053</mission_id>
+      <mission_id>5054</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1607" />
+      <card level="2" id="1607" />
+      <card level="3" id="1304" />
+      <card level="4" id="1304" />
+      <card level="5" id="510" />
+      <card level="6" id="1618" />
+      <card level="7" id="1618" />
+    </rewards>
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1015</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tadpole Collection</name>
+    <icon id="Tadpole_Egg" bundle="17" />
+    <campaign_req id="1014" level="1" />
+    <location_id>103</location_id>
+    <x>620</x>
+    <y>350</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5055</mission_id>
+      <mission_id>5056</mission_id>
+      <mission_id>5057</mission_id>
+      <mission_id>5058</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1603" />
+      <card level="2" id="1603" />
+      <card level="3" id="1004" />
+      <card level="4" id="1004" />
+      <card level="5" id="510" />
+      <card level="6" id="1313" />
+      <card level="7" id="1313" />
+    </rewards>
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1016</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Search and Rescue</name>
+    <icon id="Tadpole_Egg" bundle="17" />
+    <campaign_req id="1015" level="1" />
+    <location_id>103</location_id>
+    <x>800</x>
+    <y>490</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5059</mission_id>
+      <mission_id>5060</mission_id>
+      <mission_id>5061</mission_id>
+      <mission_id>5062</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1606" />
+      <card level="2" id="1606" />
+      <card level="3" id="1006" />
+      <card level="4" id="1006" />
+      <card level="5" id="510" />
+      <card level="6" id="1015" />
+      <card level="7" id="1015" />
+    </rewards>
+    <find_item id="3011" drop_per_energy="0.2" />
+    <find_item id="3009" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1017</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To The Throne</name>
+    <campaign_req id="1016" level="1" />
+    <location_id>103</location_id>
+    <x>345</x>
+    <y>430</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5063</mission_id>
+      <mission_id>5064</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="1604" />
+      <card level="2" id="1604" />
+      <card level="3" id="1604" />
+      <card level="4" id="2014" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="2014" />
+    </rewards>
+    <find_item id="3011" drop_per_energy="0.25" />
+  </campaign>
+  <!-- END Event 4 Campaigns -->
+  <!-- Event 5 Campaigns START -->
+  <campaign>
+    <id>1018</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tarragon Quakes</name>
+    <icon id="Dragon_Hatchling_01" bundle="16" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5065</mission_id>
+      <mission_id>5066</mission_id>
+      <mission_id>5067</mission_id>
+      <mission_id>5068</mission_id>
+      <mission_id>5069</mission_id>
+      <mission_id>5070</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="510" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3004" drop_per_energy="0.25" />
+    <find_item id="3012" drop_per_energy="0.05" />
+  </campaign>
+  <campaign>
+    <id>1019</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Decim's Deceit</name>
+    <campaign_req id="1018" level="1" />
+    <location_id>101</location_id>
+    <x>360</x>
+    <y>240</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5071</mission_id>
+    </missions>
+    <rewards>
+      <card level="4" id="2004" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3012" drop_per_energy="0.30" />
+  </campaign>
+  <campaign>
+    <id>1020</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Scorched Lands</name>
+    <icon id="Obsidian_Gravel_01" bundle="16" />
+    <campaign_req id="1019" level="1" />
+    <location_id>101</location_id>
+    <x>750</x>
+    <y>255</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5072</mission_id>
+    </missions>
+    <rewards>
+      <card level="3" id="510" />
+      <card level="5" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3002" drop_per_energy="0.65" />
+    <find_item id="3012" drop_per_energy="0.15" />
+  </campaign>
+  <campaign>
+    <id>1021</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragon's Aerie</name>
+    <icon id="Smoldering_Ember_01" bundle="16" />
+    <campaign_req id="1019" level="1" />
+    <location_id>101</location_id>
+    <x>500</x>
+    <y>430</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5073</mission_id>
+    </missions>
+    <rewards>
+      <card level="3" id="510" />
+      <card level="5" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3003" drop_per_energy="0.5" />
+    <find_item id="3012" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1022</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Ice Dragon's Realm</name>
+    <icon id="Tepid_Dragon_Egg_01" bundle="16" />
+    <campaign_req id="1019" level="1" />
+    <location_id>101</location_id>
+    <x>600</x>
+    <y>600</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5074</mission_id>
+    </missions>
+    <rewards>
+      <card level="6" id="510" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3012" drop_per_energy="0.35" />
+  </campaign>
+  <campaign>
+    <id>1023</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Molten Eruption</name>
+    <icon id="dragon_claw_icon" bundle="17" />
+    <campaign_req id="1020" level="1" />
+    <location_id>101</location_id>
+    <x>505</x>
+    <y>170</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5075</mission_id>
+      <mission_id>5076</mission_id>
+      <mission_id>5077</mission_id>
+      <mission_id>5078</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2000" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3012" drop_per_energy="0.45" />
+  </campaign>
+  <!-- END Event 5 Campaigns -->
+  <!-- START Event 6 Campaigns -->
+  <campaign>
+    <id>1024</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Frigore!</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <location_id>104</location_id>
+    <x>590</x>
+    <y>215</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5079</mission_id>
+      <mission_id>5080</mission_id>
+      <mission_id>5081</mission_id>
+      <mission_id>5082</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="511" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1025</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Vapor Collection</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <campaign_req id="1024" level="1" />
+    <location_id>104</location_id>
+    <x>300</x>
+    <y>150</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5083</mission_id>
+      <mission_id>5084</mission_id>
+      <mission_id>5085</mission_id>
+      <mission_id>5086</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2019" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1026</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Vapor Hunters</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <campaign_req id="1025" level="1" />
+    <location_id>104</location_id>
+    <x>154</x>
+    <y>262</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5087</mission_id>
+      <mission_id>5088</mission_id>
+      <mission_id>5089</mission_id>
+      <mission_id>5090</mission_id>
+      <mission_id>5091</mission_id>
+      <mission_id>5092</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2020" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="2020" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1027</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Descent into Madness</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <campaign_req id="1026" level="1" />
+    <location_id>104</location_id>
+    <x>240</x>
+    <y>386</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5093</mission_id>
+      <mission_id>5094</mission_id>
+      <mission_id>5095</mission_id>
+      <mission_id>5096</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2021" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1028</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Flashing Lights</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <campaign_req id="1027" level="1" />
+    <location_id>104</location_id>
+    <x>542</x>
+    <y>448</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5097</mission_id>
+      <mission_id>5098</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="511" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.3" />
+  </campaign>
+  <campaign>
+    <id>1029</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Playing With Vapor</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <campaign_req id="1028" level="1" />
+    <location_id>104</location_id>
+    <x>763</x>
+    <y>521</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5099</mission_id>
+      <mission_id>5100</mission_id>
+      <mission_id>5101</mission_id>
+      <mission_id>5102</mission_id>
+      <mission_id>5103</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="511" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3015" drop_per_energy="0.4" />
+  </campaign>
+  <!-- END Event 6 Campaigns -->
+  <!-- START Event 7 Campaigns -->
+  <campaign>
+    <id>1030</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Closer to The Void</name>
+    <icon id="void_bone" bundle="17" />
+    <location_id>105</location_id>
+    <x>204</x>
+    <y>167</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5104</mission_id>
+      <mission_id>5105</mission_id>
+      <mission_id>5106</mission_id>
+      <mission_id>5107</mission_id>
+      <mission_id>5108</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1314" />
+      <card level="3" id="1314" />
+      <card level="4" id="511" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1031</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trial by Purple Fire</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>105</location_id>
+    <x>377</x>
+    <y>127</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5109</mission_id>
+      <mission_id>5110</mission_id>
+      <mission_id>5111</mission_id>
+      <mission_id>5112</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
+      <card level="4" id="511" />
+      <card level="5" id="1319" />
+      <card level="6" id="1319" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1032</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Climate Change</name>
+    <icon id="machine_parts" bundle="17" />
+    <location_id>105</location_id>
+    <x>518</x>
+    <y>153</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5113</mission_id>
+      <mission_id>5114</mission_id>
+      <mission_id>5115</mission_id>
+      <mission_id>5116</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1613" />
+      <card level="3" id="1613" />
+      <card level="4" id="511" />
+      <card level="5" id="1613" />
+      <card level="6" id="1613" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1033</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Infection of The Void</name>
+    <icon id="undead_essence" bundle="17" />
+    <location_id>105</location_id>
+    <x>590</x>
+    <y>243</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5117</mission_id>
+      <mission_id>5118</mission_id>
+      <mission_id>5119</mission_id>
+      <mission_id>5120</mission_id>
+      <mission_id>5121</mission_id>
+      <mission_id>5122</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1017" />
+      <card level="3" id="1017" />
+      <card level="4" id="511" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1034</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lost Laboratory</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>105</location_id>
+    <x>708</x>
+    <y>309</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5123</mission_id>
+      <mission_id>5124</mission_id>
+      <mission_id>5125</mission_id>
+      <mission_id>5126</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1311" />
+      <card level="3" id="1311" />
+      <card level="4" id="511" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.3" />
+  </campaign>
+  <campaign>
+    <id>1035</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lay Down Your Burdens</name>
+    <icon id="void_flower" bundle="17" />
+    <location_id>105</location_id>
+    <x>479</x>
+    <y>406</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5127</mission_id>
+      <mission_id>5128</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1010" />
+      <card level="3" id="1010" />
+      <card level="4" id="511" />
+      <card level="5" id="1010" />
+      <card level="6" id="1010" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3016" drop_per_energy="0.4" />
+  </campaign>
+  <!-- END Event 7 Campaigns -->
+  <!--  Event 8 Campaigns -->
+  <campaign>
+    <id>1036</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Skyhaven</name>
+    <icon id="package" bundle="17" />
+    <location_id>106</location_id>
+    <x>282</x>
+    <y>178</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5129</mission_id>
+      <mission_id>5130</mission_id>
+      <mission_id>5131</mission_id>
+      <mission_id>5132</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1014" />
+      <card level="3" id="1014" />
+      <card level="4" id="511" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1037</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Finding Your Way</name>
+    <icon id="letter_blue_seal" bundle="17" />
+    <location_id>106</location_id>
+    <x>474</x>
+    <y>192</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5133</mission_id>
+      <mission_id>5134</mission_id>
+      <mission_id>5135</mission_id>
+      <mission_id>5136</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1014" />
+      <card level="3" id="1014" />
+      <item level="4" id="3023" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1038</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Home Sweet Home</name>
+    <icon id="letter_purple_seal" bundle="17" />
+    <location_id>106</location_id>
+    <x>658</x>
+    <y>211</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5137</mission_id>
+      <mission_id>5138</mission_id>
+      <mission_id>5139</mission_id>
+      <mission_id>5140</mission_id>
+      <mission_id>5141</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <item level="4" id="3025" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1039</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Old Mistakes</name>
+    <icon id="letter_yellow_seal" bundle="17" />
+    <location_id>106</location_id>
+    <x>535</x>
+    <y>321</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5142</mission_id>
+      <mission_id>5143</mission_id>
+      <mission_id>5144</mission_id>
+      <mission_id>5145</mission_id>
+      <mission_id>5146</mission_id>
+      <mission_id>5147</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1019" />
+      <card level="3" id="1019" />
+      <item level="4" id="3024" />
+      <card level="5" id="1019" />
+      <card level="6" id="1019" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1040</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Court</name>
+    <icon id="package" bundle="17" />
+    <location_id>106</location_id>
+    <x>361</x>
+    <y>426</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5148</mission_id>
+      <mission_id>5149</mission_id>
+      <mission_id>5150</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1011" />
+      <card level="3" id="1011" />
+      <card level="4" id="511" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1041</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>History Repeats</name>
+    <icon id="letter_red_seal" bundle="17" />
+    <location_id>106</location_id>
+    <x>258</x>
+    <y>483</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5151</mission_id>
+      <mission_id>5152</mission_id>
+      <mission_id>5153</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1011" />
+      <card level="3" id="1011" />
+      <item level="4" id="3022" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3021" drop_per_energy="0.26" />
+  </campaign>
+  <!-- END Event 8 Campaigns -->
+  <!-- Event 9 Campaigns START -->
+  <campaign>
+    <id>1042</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Scorched Villages</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <location_id>102</location_id>
+    <x>344</x>
+    <y>251</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5154</mission_id>
+      <mission_id>5155</mission_id>
+      <mission_id>5156</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1010" />
+      <card level="3" id="1010" />
+      <item level="4" id="3027" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1043</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Back to the Vaults</name>
+    <icon id="Lava_Vial" bundle="17" />
+    <location_id>102</location_id>
+    <x>605</x>
+    <y>253</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5157</mission_id>
+      <mission_id>5158</mission_id>
+      <mission_id>5159</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <item level="4" id="3028" />
+      <card level="5" id="1010" />
+      <card level="6" id="1010" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1044</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Water Island</name>
+    <icon id="Burning_Target_110" bundle="17" />
+    <location_id>102</location_id>
+    <x>737</x>
+    <y>440</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5160</mission_id>
+      <mission_id>5161</mission_id>
+      <mission_id>5162</mission_id>
+      <mission_id>5163</mission_id>
+      <mission_id>5164</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="7017" />
+      <card level="3" id="7017" />
+      <card level="4" id="2032" />
+      <card level="5" id="1617" />
+      <card level="6" id="1617" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1045</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Zen Gardens</name>
+    <icon id="Burning_Target_110" bundle="17" />
+    <location_id>102</location_id>
+    <x>781</x>
+    <y>580</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5165</mission_id>
+      <mission_id>5166</mission_id>
+      <mission_id>5167</mission_id>
+      <mission_id>5168</mission_id>
+      <mission_id>5169</mission_id>
+      <mission_id>5170</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1617" />
+      <card level="3" id="1617" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1046</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Quick Thinking</name>
+    <icon id="arcane_vapor" bundle="17" />
+    <location_id>102</location_id>
+    <x>257</x>
+    <y>485</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5171</mission_id>
+      <mission_id>5172</mission_id>
+      <mission_id>5173</mission_id>
+      <mission_id>5174</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <item level="4" id="3027" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1047</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Final Round</name>
+    <icon id="Captured_Wind" bundle="17" />
+    <location_id>102</location_id>
+    <x>74</x>
+    <y>415</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5175</mission_id>
+      <mission_id>5176</mission_id>
+      <mission_id>5177</mission_id>
+      <mission_id>5178</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6017" />
+      <card level="3" id="6017" />
+      <item level="4" id="3029" />
+      <card level="5" id="5017" />
+      <card level="6" id="5017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3026" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 9 Campaigns END -->
+  <!--  START Event 10 -->
+  <campaign>
+    <id>1048</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>New Horizons</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>279</x>
+    <y>226</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5179</mission_id>
+      <mission_id>5180</mission_id>
+      <mission_id>5181</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="511" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1049</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Saying Goodbye</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>456</x>
+    <y>202</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5182</mission_id>
+      <mission_id>5183</mission_id>
+      <mission_id>5184</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1015" />
+      <card level="3" id="1015" />
+      <card level="4" id="2011" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1050</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Golden Crown Banquet</name>
+    <icon id="Tadpole_Egg" bundle="17" />
+    <location_id>107</location_id>
+    <x>810</x>
+    <y>360</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5185</mission_id>
+      <mission_id>5186</mission_id>
+      <mission_id>5187</mission_id>
+      <mission_id>5188</mission_id>
+      <mission_id>5189</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="3031" />
+      <card level="2" id="1313" />
+      <card level="3" id="1313" />
+      <item level="4" id="3031" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1051</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Surprise from Above</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>661</x>
+    <y>437</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5190</mission_id>
+      <mission_id>5191</mission_id>
+      <mission_id>5192</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="511" />
+      <card level="5" id="1313" />
+      <card level="6" id="1313" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.21" />
+  </campaign>
+  <campaign>
+    <id>1052</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Chase</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>355</x>
+    <y>446</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5193</mission_id>
+      <mission_id>5194</mission_id>
+      <mission_id>5195</mission_id>
+      <mission_id>5196</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2012" />
+      <card level="5" id="1010" />
+      <card level="6" id="1010" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1053</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Defensive Maneuvers</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>171</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5197</mission_id>
+      <mission_id>5198</mission_id>
+      <mission_id>5199</mission_id>
+      <mission_id>5200</mission_id>
+      <mission_id>5201</mission_id>
+      <mission_id>5202</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1010" />
+      <card level="3" id="1010" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1057</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Side Dish</name>
+    <icon id="Tadpole_Egg" bundle="17" />
+    <location_id>107</location_id>
+    <x>640</x>
+    <y>272</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5215</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="3031" />
+      <card level="2" id="1613" />
+      <card level="3" id="1613" />
+      <item level="4" id="3031" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3030" drop_per_energy="0.25" />
+  </campaign>
+  <!--  END Event 10 -->
+  <!-- April Fools Campaigns START -->
+  <campaign>
+    <id>1054</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Volcano of Eruptions</name>
+    <icon id="herocoin" bundle="52" />
+    <location_id>108</location_id>
+    <x>780</x>
+    <y>300</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5203</mission_id>
+      <mission_id>5204</mission_id>
+      <mission_id>5205</mission_id>
+      <mission_id>5206</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5022" />
+      <card level="3" id="5022" />
+      <item level="4" id="3032" />
+      <card level="5" id="5022" />
+      <card level="6" id="5022" />
+      <card level="7" id="511" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1055</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A Man Who Loves Birds</name>
+    <icon id="herocoin" bundle="52" />
+    <location_id>108</location_id>
+    <x>470</x>
+    <y>265</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5207</mission_id>
+      <mission_id>5208</mission_id>
+      <mission_id>5209</mission_id>
+      <mission_id>5210</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <item level="4" id="3032" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="511" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1056</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Some Gloomy Lake</name>
+    <icon id="herocoin" bundle="52" />
+    <location_id>108</location_id>
+    <x>280</x>
+    <y>390</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5211</mission_id>
+      <mission_id>5212</mission_id>
+      <mission_id>5213</mission_id>
+      <mission_id>5214</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1617" />
+      <card level="3" id="1617" />
+      <item level="4" id="3032" />
+      <card level="5" id="1617" />
+      <card level="6" id="1617" />
+      <card level="7" id="511" />
+    </rewards>
+  </campaign>
+  <!-- April Fools Campaigns END -->
+  <!-- START AVIAN campaigns event 11 -->
+  <campaign>
+    <id>1058</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Avian Hideaway</name>
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>292</x>
+    <y>419</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5216</mission_id>
+      <mission_id>5217</mission_id>
+      <mission_id>5218</mission_id>
+      <mission_id>5219</mission_id>
+      <mission_id>5220</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="2040" />
+      <card level="5" id="1615" />
+      <card level="6" id="1615" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1059</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Unwavered</name>
+    <!-- <campaign_req id="1058" level="1"/> -->
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>438</x>
+    <y>388</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5221</mission_id>
+      <mission_id>5222</mission_id>
+      <mission_id>5223</mission_id>
+      <mission_id>5224</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1615" />
+      <card level="3" id="1615" />
+      <card level="4" id="511" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1060</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Red Feather Valley</name>
+    <!-- <campaign_req id="1059" level="1"/> -->
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>806</x>
+    <y>440</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5225</mission_id>
+      <mission_id>5226</mission_id>
+      <mission_id>5227</mission_id>
+      <mission_id>5228</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1616" />
+      <card level="3" id="1616" />
+      <card level="4" id="2041" />
+      <card level="5" id="1614" />
+      <card level="6" id="1614" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1061</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Into the City</name>
+    <!-- <campaign_req id="1060" level="1"/> -->
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>526</x>
+    <y>299</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5229</mission_id>
+      <mission_id>5230</mission_id>
+      <mission_id>5231</mission_id>
+      <mission_id>5232</mission_id>
+      <mission_id>5233</mission_id>
+      <mission_id>5234</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1614" />
+      <card level="3" id="1614" />
+      <card level="4" id="2042" />
+      <card level="5" id="1616" />
+      <card level="6" id="1616" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1062</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Through the Alleyway</name>
+    <!-- 	<campaign_req id="1061" level="1"/> -->
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>374</x>
+    <y>262</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5235</mission_id>
+      <mission_id>5236</mission_id>
+      <mission_id>5237</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1619" />
+      <card level="3" id="1619" />
+      <card level="4" id="511" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.24" />
+  </campaign>
+  <campaign>
+    <id>1063</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Frobert and the Magistrate</name>
+    <!-- 	<campaign_req id="1062" level="1"/> -->
+    <icon id="feather_red_100" bundle="17" />
+    <location_id>109</location_id>
+    <x>199</x>
+    <y>189</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>5238</mission_id>
+      <mission_id>5239</mission_id>
+      <mission_id>5240</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <card level="4" id="2041" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3033" drop_per_energy="0.24" />
+  </campaign>
+  <!-- END Avian campaigns event 11 -->
+  <!-- START Dragon campaigns event 12 -->
+  <campaign>
+    <id>1064</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lakeside</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>101</location_id>
+    <x>128</x>
+    <y>166</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5241</mission_id>
+      <mission_id>5242</mission_id>
+      <mission_id>5243</mission_id>
+      <mission_id>5244</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1313" />
+      <card level="3" id="1313" />
+      <item level="4" id="3038" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.20" />
+  </campaign>
+  <campaign>
+    <id>1065</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Nasty Neighbours</name>
+    <icon id="spiked_egg" bundle="17" />
+    <location_id>101</location_id>
+    <x>325</x>
+    <y>134</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5245</mission_id>
+      <mission_id>5246</mission_id>
+      <mission_id>5247</mission_id>
+      <mission_id>5248</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1314" />
+      <card level="3" id="1314" />
+      <item level="4" id="3035" />
+      <card level="5" id="1313" />
+      <card level="6" id="1313" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.21" />
+  </campaign>
+  <campaign>
+    <id>1066</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lost Lambs</name>
+    <icon id="icey_egg" bundle="17" />
+    <location_id>101</location_id>
+    <x>85</x>
+    <y>294</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5249</mission_id>
+      <mission_id>5250</mission_id>
+      <mission_id>5251</mission_id>
+      <mission_id>5252</mission_id>
+      <mission_id>5253</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1317" />
+      <card level="3" id="1317" />
+      <item level="4" id="3036" />
+      <card level="5" id="1315" />
+      <card level="6" id="1315" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1067</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Worst Fears</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>101</location_id>
+    <x>414</x>
+    <y>258</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5254</mission_id>
+      <mission_id>5255</mission_id>
+      <mission_id>5256</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <item level="4" id="3038" />
+      <card level="5" id="1317" />
+      <card level="6" id="1317" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1068</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Goblins Afoot</name>
+    <icon id="furry_egg" bundle="17" />
+    <location_id>101</location_id>
+    <x>612</x>
+    <y>244</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5257</mission_id>
+      <mission_id>5258</mission_id>
+      <mission_id>5259</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3037" />
+      <card level="5" id="1319" />
+      <card level="6" id="1319" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.24" />
+  </campaign>
+  <campaign>
+    <id>1069</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Sinister Intentions</name>
+    <icon id="mothers_fire_100" bundle="58" />
+    <location_id>101</location_id>
+    <x>721</x>
+    <y>201</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5260</mission_id>
+      <mission_id>5261</mission_id>
+      <mission_id>5262</mission_id>
+      <mission_id>5263</mission_id>
+      <mission_id>5264</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
+      <card level="4" id="2003" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <!-- stub -->
+    <id>1070</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>High Flying</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>101</location_id>
+    <x>236</x>
+    <y>264</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5265</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1312" />
+      <card level="3" id="1312" />
+      <item level="4" id="3038" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy="0.25" />
+  </campaign>
+  <!-- START Event 13 Insects -->
+  <campaign>
+    <id>1071</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>SOS</name>
+    <icon id="honey_comb" bundle="58" />
+    <location_id>110</location_id>
+    <x>280</x>
+    <y>214</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5266</mission_id>
+      <mission_id>5267</mission_id>
+      <mission_id>5268</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3040" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1072</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Beetleton Bunker</name>
+    <icon id="larvae" bundle="58" />
+    <location_id>110</location_id>
+    <x>460</x>
+    <y>189</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5269</mission_id>
+      <mission_id>5270</mission_id>
+      <mission_id>5271</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6017" />
+      <card level="3" id="6017" />
+      <item level="4" id="3039" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.21" />
+  </campaign>
+  <campaign>
+    <id>1073</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Town on Fire</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>686</x>
+    <y>172</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5272</mission_id>
+      <mission_id>5273</mission_id>
+      <mission_id>5274</mission_id>
+      <mission_id>5275</mission_id>
+      <mission_id>5276</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6022" />
+      <card level="3" id="6022" />
+      <card level="4" id="2049" />
+      <card level="5" id="6006" />
+      <card level="6" id="6006" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1074</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Goblin Incoming</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>810</x>
+    <y>286</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5277</mission_id>
+      <mission_id>5278</mission_id>
+      <mission_id>5279</mission_id>
+      <mission_id>5280</mission_id>
+      <mission_id>5281</mission_id>
+      <mission_id>5282</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6006" />
+      <card level="3" id="6006" />
+      <card level="4" id="2050" />
+      <card level="5" id="6022" />
+      <card level="6" id="6022" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.24" />
+  </campaign>
+  <campaign>
+    <id>1075</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Artifact</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>644</x>
+    <y>342</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5283</mission_id>
+      <mission_id>5284</mission_id>
+      <mission_id>5285</mission_id>
+      <mission_id>5286</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1613" />
+      <card level="3" id="1613" />
+      <card level="4" id="511" />
+      <card level="5" id="1610" />
+      <card level="6" id="1610" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1076</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Up, Up and Away</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>537</x>
+    <y>409</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5287</mission_id>
+      <mission_id>5288</mission_id>
+      <mission_id>5289</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1610" />
+      <card level="3" id="1610" />
+      <card level="4" id="2048" />
+      <card level="5" id="1613" />
+      <card level="6" id="1613" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 14 Angels -->
+  <campaign>
+    <id>1077</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Rumor Mill</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>245</x>
+    <y>468</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5290</mission_id>
+      <mission_id>5291</mission_id>
+      <mission_id>5292</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1014" />
+      <card level="3" id="1014" />
+      <card level="4" id="511" />
+      <card level="5" id="1019" />
+      <card level="6" id="1019" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.20" />
+  </campaign>
+  <campaign>
+    <id>1078</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Territory Control</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>403</x>
+    <y>408</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5293</mission_id>
+      <mission_id>5294</mission_id>
+      <mission_id>5295</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1019" />
+      <card level="3" id="1019" />
+      <card level="4" id="2052" />
+      <card level="5" id="1014" />
+      <card level="6" id="1014" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.20" />
+  </campaign>
+  <campaign>
+    <id>1079</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Redemption</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>554</x>
+    <y>328</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5296</mission_id>
+      <mission_id>5297</mission_id>
+      <mission_id>5298</mission_id>
+      <mission_id>5299</mission_id>
+      <mission_id>5300</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1017" />
+      <card level="3" id="1017" />
+      <card level="4" id="2027" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.22" />
+  </campaign>
+  <campaign>
+    <id>1080</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Groundwork</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>699</x>
+    <y>216</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5301</mission_id>
+      <mission_id>5302</mission_id>
+      <mission_id>5303</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="511" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1081</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>What was Sown</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>493</x>
+    <y>195</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5304</mission_id>
+      <mission_id>5305</mission_id>
+      <mission_id>5306</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1015" />
+      <card level="3" id="1015" />
+      <card level="4" id="2054" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.23" />
+  </campaign>
+  <campaign>
+    <id>1082</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Plan of Attack</name>
+    <icon id="angel_feather100" bundle="58" />
+    <location_id>106</location_id>
+    <x>290</x>
+    <y>183</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5307</mission_id>
+      <mission_id>5308</mission_id>
+      <mission_id>5309</mission_id>
+      <mission_id>5310</mission_id>
+      <mission_id>5311</mission_id>
+      <mission_id>5312</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="2053" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 15 Elementals -->
+  <campaign>
+    <id>1083</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Salt Waste Empire</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>145</x>
+    <y>230</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5313</mission_id>
+      <mission_id>5314</mission_id>
+      <mission_id>5315</mission_id>
+      <mission_id>5316</mission_id>
+      <mission_id>5317</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6017" />
+      <card level="3" id="6017" />
+      <card level="4" id="2056" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1084</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Backup Plan</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>445</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5318</mission_id>
+      <mission_id>5319</mission_id>
+      <mission_id>5320</mission_id>
+      <mission_id>5321</mission_id>
+      <mission_id>5322</mission_id>
+      <mission_id>5323</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2057" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1085</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Ground Inspection</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>600</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5324</mission_id>
+      <mission_id>5325</mission_id>
+      <mission_id>5326</mission_id>
+      <mission_id>5327</mission_id>
+      <mission_id>5328</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="2058" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1086</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Reks and the Tamer</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>760</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5329</mission_id>
+      <mission_id>5330</mission_id>
+      <mission_id>5331</mission_id>
+      <mission_id>5332</mission_id>
+      <mission_id>5333</mission_id>
+      <mission_id>5334</mission_id>
+      <mission_id>5335</mission_id>
+      <mission_id>5336</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 16 Undead -->
+  <campaign>
+    <id>1087</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Light of the Wisps</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>204</x>
+    <y>167</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5337</mission_id>
+      <mission_id>5338</mission_id>
+      <mission_id>5339</mission_id>
+      <mission_id>5340</mission_id>
+      <mission_id>5341</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1314" />
+      <card level="3" id="1314" />
+      <card level="4" id="2059" />
+      <card level="5" id="1319" />
+      <card level="6" id="1319" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1088</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A Difference of Opinion</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>417</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5342</mission_id>
+      <mission_id>5343</mission_id>
+      <mission_id>5344</mission_id>
+      <mission_id>5345</mission_id>
+      <mission_id>5346</mission_id>
+      <mission_id>5347</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
+      <card level="4" id="2025" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1089</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Influence of The Void</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>708</x>
+    <y>309</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5348</mission_id>
+      <mission_id>5349</mission_id>
+      <mission_id>5350</mission_id>
+      <mission_id>5351</mission_id>
+      <mission_id>5352</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1311" />
+      <card level="3" id="1311" />
+      <card level="4" id="2060" />
+      <card level="5" id="1315" />
+      <card level="6" id="1315" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1090</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Redemption</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>479</x>
+    <y>406</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5353</mission_id>
+      <mission_id>5354</mission_id>
+      <mission_id>5355</mission_id>
+      <mission_id>5356</mission_id>
+      <mission_id>5357</mission_id>
+      <mission_id>5358</mission_id>
+      <mission_id>5359</mission_id>
+      <mission_id>5360</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 17 Goblins -->
+  <campaign>
+    <id>1091</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Decim and the Goblins</name>
+    <icon id="sparkler100" bundle="58" />
+    <location_id>111</location_id>
+    <x>234</x>
+    <y>404</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5361</mission_id>
+      <mission_id>5362</mission_id>
+      <mission_id>5363</mission_id>
+      <mission_id>5364</mission_id>
+      <mission_id>5365</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6007" />
+      <card level="3" id="6007" />
+      <card level="4" id="2062" />
+      <card level="5" id="1011" />
+      <card level="6" id="1011" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1092</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dungeon Depths</name>
+    <icon id="sparkler100" bundle="58" />
+    <location_id>111</location_id>
+    <x>410</x>
+    <y>191</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5366</mission_id>
+      <mission_id>5367</mission_id>
+      <mission_id>5368</mission_id>
+      <mission_id>5369</mission_id>
+      <mission_id>5370</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1011" />
+      <card level="3" id="1011" />
+      <card level="4" id="2063" />
+      <card level="5" id="6007" />
+      <card level="6" id="6007" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1093</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Fugitive</name>
+    <icon id="sparkler100" bundle="58" />
+    <location_id>111</location_id>
+    <x>390</x>
+    <y>510</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5371</mission_id>
+      <mission_id>5372</mission_id>
+      <mission_id>5373</mission_id>
+      <mission_id>5374</mission_id>
+      <mission_id>5375</mission_id>
+      <mission_id>5376</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6007" />
+      <card level="3" id="6007" />
+      <card level="4" id="2053" />
+      <card level="5" id="1317" />
+      <card level="6" id="1317" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1094</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Common Enemy</name>
+    <icon id="sparkler100" bundle="58" />
+    <location_id>111</location_id>
+    <x>710</x>
+    <y>510</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5377</mission_id>
+      <mission_id>5378</mission_id>
+      <mission_id>5379</mission_id>
+      <mission_id>5380</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1317" />
+      <card level="3" id="1317" />
+      <card level="4" id="511" />
+      <card level="5" id="6007" />
+      <card level="6" id="6007" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1095</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>New Friends</name>
+    <icon id="sparkler100" bundle="58" />
+    <location_id>111</location_id>
+    <x>730</x>
+    <y>250</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5381</mission_id>
+      <mission_id>5382</mission_id>
+      <mission_id>5383</mission_id>
+      <mission_id>5384</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5007" />
+      <card level="3" id="5007" />
+      <card level="4" id="2064" />
+      <card level="5" id="5007" />
+      <card level="6" id="5007" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Halloween Event -->
+  <campaign>
+    <id>1096</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trick or Treat</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>111</location_id>
+    <x>730</x>
+    <y>250</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5385</mission_id>
+      <mission_id>5386</mission_id>
+      <mission_id>5387</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3045" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 18 dragons -->
+  <campaign>
+    <id>1097</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Price of Freedom</name>
+    <icon id="smolderingEmber100" bundle="58" />
+    <location_id>101</location_id>
+    <x>128</x>
+    <y>166</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5388</mission_id>
+      <mission_id>5389</mission_id>
+      <mission_id>5390</mission_id>
+      <mission_id>5391</mission_id>
+      <mission_id>5392</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5012" />
+      <card level="3" id="5012" />
+      <card level="4" id="2067" />
+      <card level="5" id="7012" />
+      <card level="6" id="7012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3046" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1098</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragon Buddies</name>
+    <icon id="smolderingEmber100" bundle="58" />
+    <location_id>101</location_id>
+    <x>325</x>
+    <y>134</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5393</mission_id>
+      <mission_id>5394</mission_id>
+      <mission_id>5395</mission_id>
+      <mission_id>5396</mission_id>
+      <mission_id>5397</mission_id>
+      <mission_id>5398</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="7012" />
+      <card level="3" id="7012" />
+      <card level="4" id="2045" />
+      <card level="5" id="5012" />
+      <card level="6" id="5012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3046" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1099</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Cry of the Wild</name>
+    <icon id="smolderingEmber100" bundle="58" />
+    <location_id>101</location_id>
+    <x>85</x>
+    <y>294</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5399</mission_id>
+      <mission_id>5400</mission_id>
+      <mission_id>5401</mission_id>
+      <mission_id>5402</mission_id>
+      <mission_id>5403</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6012" />
+      <card level="3" id="6012" />
+      <card level="4" id="2066" />
+      <card level="5" id="1313" />
+      <card level="6" id="1313" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3046" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1100</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Relentless Kidnappers</name>
+    <icon id="smolderingEmber100" bundle="58" />
+    <location_id>101</location_id>
+    <x>414</x>
+    <y>258</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5404</mission_id>
+      <mission_id>5405</mission_id>
+      <mission_id>5406</mission_id>
+      <mission_id>5407</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1313" />
+      <card level="3" id="1313" />
+      <card level="4" id="501" />
+      <card level="5" id="6012" />
+      <card level="6" id="6012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3046" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1101</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Showdown</name>
+    <icon id="smolderingEmber100" bundle="58" />
+    <location_id>101</location_id>
+    <x>612</x>
+    <y>244</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5408</mission_id>
+      <mission_id>5409</mission_id>
+      <mission_id>5410</mission_id>
+      <mission_id>5411</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2046" />
+      <card level="5" id="5017" />
+      <card level="6" id="5017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3046" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Event 19 Frogs -->
+  <campaign>
+    <id>1102</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Secret Mission</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>279</x>
+    <y>226</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5412</mission_id>
+      <mission_id>5413</mission_id>
+      <mission_id>5414</mission_id>
+      <mission_id>5415</mission_id>
+      <mission_id>5416</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2069" />
+      <card level="5" id="6022" />
+      <card level="6" id="6022" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1103</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Gold Versus Dawn</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>456</x>
+    <y>202</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5417</mission_id>
+      <mission_id>5418</mission_id>
+      <mission_id>5419</mission_id>
+      <mission_id>5420</mission_id>
+      <mission_id>5421</mission_id>
+      <mission_id>5422</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6022" />
+      <card level="3" id="6022" />
+      <card level="4" id="2012" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1104</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tracking the Corruption</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>661</x>
+    <y>437</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5423</mission_id>
+      <mission_id>5424</mission_id>
+      <mission_id>5425</mission_id>
+      <mission_id>5426</mission_id>
+      <mission_id>5427</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5022" />
+      <card level="3" id="5022" />
+      <card level="4" id="2070" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1105</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Corrupted Waters</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>355</x>
+    <y>446</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5428</mission_id>
+      <mission_id>5429</mission_id>
+      <mission_id>5430</mission_id>
+      <mission_id>5431</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="501" />
+      <card level="5" id="5022" />
+      <card level="6" id="5022" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
+  <campaign>
+    <id>1106</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Alternate Plan</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>171</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5432</mission_id>
+      <mission_id>5433</mission_id>
+      <mission_id>5434</mission_id>
+      <mission_id>5435</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="7007" />
+      <card level="3" id="7007" />
+      <card level="4" id="2034" />
+      <card level="5" id="7007" />
+      <card level="6" id="7007" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
+  <!-- Christmas Event -->
+  <campaign>
+    <id>1107</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spirits of Time</name>
+    <icon id="santaHat" bundle="41" />
+    <location_id>107</location_id>
+    <x>171</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5436</mission_id>
+      <mission_id>5437</mission_id>
+      <mission_id>5438</mission_id>
+      <mission_id>5439</mission_id>
+      <mission_id>5440</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="2075" />
+      <card level="3" id="2075" />
+      <card level="4" id="2012" />
+      <card level="5" id="2075" />
+      <card level="6" id="2075" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3047" drop_per_energy="0.25" />
+  </campaign>
   <!-- Campaign Event -->
   <campaign>
     <id>1108</id>
@@ -1309,6 +4230,118 @@
     </rewards>
     <find_item id="3049" drop_per_energy="0.8" />
   </campaign>
+  <!-- April Fools Campaigns START -->
+  <campaign>
+    <id>1120</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Volcano of Eruptions</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>730</x>
+    <y>300</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5550</mission_id>
+      <mission_id>5551</mission_id>
+      <mission_id>5552</mission_id>
+      <mission_id>5553</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5022" />
+      <card level="3" id="5022" />
+      <card level="4" id="511" />
+      <card level="5" id="5022" />
+      <card level="6" id="5022" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1121</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A Man Who Loves Birds</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>420</x>
+    <y>220</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5554</mission_id>
+      <mission_id>5555</mission_id>
+      <mission_id>5556</mission_id>
+      <mission_id>5557</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="511" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1122</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Some Gloomy Lake</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>250</x>
+    <y>400</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5558</mission_id>
+      <mission_id>5559</mission_id>
+      <mission_id>5560</mission_id>
+      <mission_id>5561</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5007" />
+      <card level="3" id="5007" />
+      <card level="4" id="511" />
+      <card level="5" id="5007" />
+      <card level="6" id="5007" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1123</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Evil Castle</name>
+    <icon id="aprilfoolsBossNode" bundle="52" />
+    <location_id>108</location_id>
+    <battleground_id>2009</battleground_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>530</x>
+    <y>395</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5562</mission_id>
+      <mission_id>5563</mission_id>
+      <mission_id>5564</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="514" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <item level="4" id="514" />
+      <card level="5" id="511" />
+      <card level="6" id="511" />
+      <item level="7" id="512" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <!-- April Fools Campaigns END -->
   <!-- Event 24 Dragons -->
   <campaign>
     <id>1124</id>
@@ -2042,6 +5075,34 @@
     </rewards>
     <find_item id="3062" drop_per_energy="0.4" />
   </campaign>
+  <!-- Halloween 2017 Mecha -->
+  <campaign>
+    <id>1145</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trick or Treat</name>
+    <icon id="pumpkin" bundle="75" />
+    <!-- <locked_start_time>1509210000</locked_start_time>	 Sat, 28 Oct 2017 17:00:00 GMT -->
+    <location_id>12</location_id>
+    <x>550</x>
+    <y>295</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5739</mission_id>
+      <mission_id>5740</mission_id>
+      <mission_id>5741</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3062" drop_per_energy="0.2" />
+  </campaign>
   <!-- Boss Node Fireshard's Giant Mecha -->
   <campaign>
     <id>1146</id>
@@ -2252,6 +5313,35 @@
       <item level="7" id="3066" />
     </rewards>
     <find_item id="3065" drop_per_energy="0.4" />
+  </campaign>
+  <!-- Christmas Event 2017 -->
+  <campaign>
+    <id>1152</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Giftbringer</name>
+    <icon id="santaHat" bundle="41" />
+    <location_id>13</location_id>
+    <x>557</x>
+    <y>242</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5797</mission_id>
+      <mission_id>5798</mission_id>
+      <mission_id>5799</mission_id>
+      <mission_id>5800</mission_id>
+      <mission_id>5801</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2526" />
+      <item level="2" id="2527" />
+      <item level="3" id="2527" />
+      <card level="4" id="2081" />
+      <item level="5" id="104000" number="5" />
+      <item level="6" id="104000" number="5" />
+      <item level="7" id="104000" number="10" />
+    </rewards>
+    <find_item id="3065" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -2672,6 +5762,91 @@
       <item level="7" id="3072" />
     </rewards>
     <find_item id="3071" drop_per_energy="0.4" />
+  </campaign>
+  <!-- Knights on Strike April Fool's Campaigns -->
+  <campaign>
+    <id>1165</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Knights on Strike</name>
+    <icon id="KnightNode" bundle="123" />
+    <location_id>14</location_id>
+    <x>530</x>
+    <y>510</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5912</mission_id>
+      <mission_id>5913</mission_id>
+      <mission_id>5914</mission_id>
+      <mission_id>5915</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" />
+      <item level="2" id="1011" />
+      <item level="3" id="1011" />
+      <card level="4" id="511" />
+      <item level="5" id="1011" />
+      <item level="6" id="1011" />
+      <item level="7" id="1012" />
+    </rewards>
+    <find_item id="3068" drop_per_energy="0.6" />
+  </campaign>
+  <campaign>
+    <id>1166</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Toknight's the Knight</name>
+    <icon id="KnightNode" bundle="123" />
+    <campaign_req id="1165" level="1" />
+    <location_id>14</location_id>
+    <x>700</x>
+    <y>410</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5916</mission_id>
+      <mission_id>5917</mission_id>
+      <mission_id>5918</mission_id>
+      <mission_id>5919</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="511" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <item level="7" id="2528" />
+    </rewards>
+    <find_item id="3068" drop_per_energy="0.6" />
+  </campaign>
+  <campaign>
+    <id>1167</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragons... I Hate Dragons</name>
+    <campaign_req id="1165" level="1" />
+    <icon id="KnightNode" bundle="123" />
+    <battleground_id>526</battleground_id>
+    <location_id>14</location_id>
+    <x>780</x>
+    <y>270</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5920</mission_id>
+      <mission_id>5921</mission_id>
+      <mission_id>5922</mission_id>
+      <mission_id>5923</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="2002" />
+      <card level="3" id="2002" />
+      <card level="4" id="511" />
+      <card level="5" id="2002" />
+      <card level="6" id="2002" />
+      <item level="7" id="4013" />
+    </rewards>
+    <find_item id="3068" drop_per_energy="0.6" />
   </campaign>
   <!-- Campaign Event 9 -->
   <!-- A Test of Might -->
@@ -3363,6 +6538,34 @@
     </rewards>
     <find_item id="3080" drop_per_energy="0.8" />
   </campaign>
+  <!-- Halloween Undead 2018 -->
+  <campaign>
+    <id>1188</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Legend of Pumpking</name>
+    <icon id="pumpkin" bundle="75" />
+    <!-- <locked_start_time>1509210000</locked_start_time>	 Sat, 28 Oct 2017 17:00:00 GMT -->
+    <location_id>18</location_id>
+    <x>500</x>
+    <y>160</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6095</mission_id>
+      <mission_id>6096</mission_id>
+      <mission_id>6097</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12060" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="12060" />
+    </rewards>
+    <find_item id="3080" drop_per_energy="0.4" />
+  </campaign>
   <!-- Campaign Event 13 dragons -->
   <campaign>
     <id>1189</id>
@@ -3521,6 +6724,35 @@
       <item level="7" id="3084" />
     </rewards>
     <find_item id="3083" drop_per_energy="0.8" />
+  </campaign>
+  <!-- Christmas Event 2018 -->
+  <campaign>
+    <id>1194</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Winter Star's Eve</name>
+    <icon id="santaHat" bundle="41" />
+    <location_id>19</location_id>
+    <x>857</x>
+    <y>242</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6126</mission_id>
+      <mission_id>6127</mission_id>
+      <mission_id>6128</mission_id>
+      <mission_id>6129</mission_id>
+      <mission_id>6130</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1004" />
+      <item level="2" id="2527" />
+      <item level="3" id="2527" />
+      <card level="4" id="512" />
+      <item level="5" id="104013" number="5" />
+      <item level="6" id="104013" number="5" />
+      <item level="7" id="104013" number="10" />
+    </rewards>
+    <find_item id="3083" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 14 angels -->
   <campaign>
@@ -3774,6 +7006,68 @@
       <item level="5" id="3091" />
       <item level="6" id="3091" />
       <item level="7" id="3091" />
+    </rewards>
+    <find_item id="3089" drop_per_energy="0.4" />
+  </campaign>
+  <!-- Revenge of the Commons April Fool's Campaigns -->
+  <campaign>
+    <id>1203</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>21</location_id>
+    <x>520</x>
+    <y>430</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6191</mission_id>
+      <mission_id>6192</mission_id>
+      <mission_id>6193</mission_id>
+      <mission_id>6194</mission_id>
+      <mission_id>6195</mission_id>
+      <mission_id>6196</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3089" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1204</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1203" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>21</location_id>
+    <x>815</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6197</mission_id>
+      <mission_id>6198</mission_id>
+      <mission_id>6199</mission_id>
+      <mission_id>6200</mission_id>
+      <mission_id>6201</mission_id>
+      <mission_id>6202</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
     </rewards>
     <find_item id="3089" drop_per_energy="0.4" />
   </campaign>
@@ -4465,6 +7759,35 @@
     <find_item id="3101" drop_per_energy="0.4" />
     <!-- Soul of Silver  -->
   </campaign>
+  <!-- Halloween Elemental 2019 -->
+  <campaign>
+    <id>1225</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Legend of Pumpking</name>
+    <icon id="pumpkin" bundle="75" />
+    <locked_start_time>1572368400</locked_start_time>
+    <!-- Tuesday, 29 October 2019 17:00:00 -->
+    <location_id>25</location_id>
+    <x>320</x>
+    <y>495</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6308</mission_id>
+      <mission_id>6309</mission_id>
+      <mission_id>6310</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12170" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <item level="5" id="104025" number="50" />
+      <card level="6" id="12170" />
+      <item level="7" id="104025" number="150" />
+    </rewards>
+    <find_item id="3101" drop_per_energy="0.2" />
+  </campaign>
   <!-- ================================== Campaign Event 19 weeks 5-8/ Stormy Seastone Citadel ================================== -->
   <campaign>
     <id>1226</id>
@@ -4617,6 +7940,38 @@
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3104" drop_per_energy="0.4" />
+  </campaign>
+  <!-- Christmas Event 2019 -->
+  <campaign>
+    <id>1230</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id="6" level="1"/> -->
+    <locked_start_time>1576774800</locked_start_time>
+    <!-- Thursday, 19 December 2019 17:00:00 -->
+    <location_id>26</location_id>
+    <x>140</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6335</mission_id>
+      <mission_id>6336</mission_id>
+      <mission_id>6337</mission_id>
+      <mission_id>6338</mission_id>
+      <mission_id>6339</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12060" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="512" />
+      <item level="5" id="104027" number="25" />
+      <card level="6" id="12060" />
+      <item level="7" id="104027" number="50" />
+    </rewards>
+    <find_item id="3104" drop_per_energy="0.2" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -4999,6 +8354,99 @@
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3110" drop_per_energy="0.4" />
+  </campaign>
+  <!-- New April Fool's Campaigns -->
+  <campaign>
+    <id>1244</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>27</location_id>
+    <x>140</x>
+    <y>230</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6402</mission_id>
+      <mission_id>6403</mission_id>
+      <mission_id>6404</mission_id>
+      <mission_id>6405</mission_id>
+      <mission_id>6406</mission_id>
+      <mission_id>6407</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3107" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1245</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1244" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>27</location_id>
+    <x>400</x>
+    <y>400</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6408</mission_id>
+      <mission_id>6409</mission_id>
+      <mission_id>6410</mission_id>
+      <mission_id>6411</mission_id>
+      <mission_id>6412</mission_id>
+      <mission_id>6413</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3107" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1246</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A new FOE has appeared!?</name>
+    <campaign_req id="1244" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>135</battleground_id>
+    <location_id>27</location_id>
+    <x>850</x>
+    <y>400</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6396</mission_id>
+      <mission_id>6397</mission_id>
+      <mission_id>6398</mission_id>
+      <mission_id>6399</mission_id>
+      <mission_id>6400</mission_id>
+      <mission_id>6401</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12179" />
+      <item level="2" id="514" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
+      <item level="5" id="104031" number="50" />
+      <card level="6" id="12180" />
+      <item level="7" id="104031" number="150" />
+    </rewards>
+    <find_item id="3107" drop_per_energy="0.4" />
   </campaign>
   <!-- Boss Node -->
   <campaign>
@@ -5574,6 +9022,44 @@
     <find_item id="3119" drop_per_energy="0.4" />
   </campaign>
   <!-- 5th Anniversary -->
+  <campaign>
+    <id>1262</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spellstone's 5th Anniversary</name>
+    <icon id="blue_boss_gem" bundle="15" />
+    <!--	<campaign_req id="6" level="1"/> -->
+    <locked_start_time>1600362000</locked_start_time>
+    <!-- Thursday, September 17, 2020 17:00:00 -->
+    <!--	<battleground_id>547</battleground_id> -->
+    <location_id>31</location_id>
+    <x>640</x>
+    <y>450</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6498</mission_id>
+      <mission_id>6499</mission_id>
+      <mission_id>6500</mission_id>
+      <mission_id>6501</mission_id>
+      <mission_id>6502</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12003" />
+      <!--Dragon Breeder -->
+      <card level="2" id="511" />
+      <!-- Arcane Ore -->
+      <card level="3" id="511" />
+      <!-- Arcane Ore -->
+      <card level="4" id="512" />
+      <!-- Arcane Deposit -->
+      <item level="5" id="104001" number="50" />
+      <!--Foxfire Stones -->
+      <card level="6" id="12003" />
+      <!--Dragon Breeder -->
+      <item level="7" id="104001" number="150" />
+      <!--Foxfire Stones -->
+    </rewards>
+  </campaign>
   <!-- END 5th Anniversary -->
   <!-- Boss Node -->
   <campaign>
@@ -5689,6 +9175,35 @@
       <!-- Crafting Item for Legendary Card -->
     </rewards>
     <find_item id="3119" drop_per_energy="0.8" />
+  </campaign>
+  <!-- Halloween 2020 -->
+  <campaign>
+    <id>1266</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trick or Treat</name>
+    <icon id="pumpkin" bundle="75" />
+    <locked_start_time>1603990800</locked_start_time>
+    <!-- Thursday, 29 October 2020 17:00:00 -->
+    <location_id>31</location_id>
+    <x>390</x>
+    <y>520</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6519</mission_id>
+      <mission_id>6520</mission_id>
+      <mission_id>6521</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12196" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <item level="5" id="104038" number="50" />
+      <card level="6" id="12197" />
+      <item level="7" id="104038" number="150" />
+    </rewards>
+    <find_item id="3119" drop_per_energy="0.2" />
   </campaign>
   <!-- ================================== Campaign Event 26 weeks 1-4 / Gladius Scriptorium ================================== -->
   <campaign>
@@ -5967,6 +9482,40 @@
     </rewards>
     <find_item id="3125" drop_per_energy="0.4" />
   </campaign>
+  <!-- Christmas Event 2020 -->
+  <campaign>
+    <id>1274</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id="6" level="1"/> -->
+    <locked_start_time>1608224400</locked_start_time>
+    <!-- Thursday, December 17, 2020 17:00:00 -->
+    <location_id>32</location_id>
+    <x>300</x>
+    <!-- left right -->
+    <y>500</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6562</mission_id>
+      <mission_id>6563</mission_id>
+      <mission_id>6564</mission_id>
+      <mission_id>6565</mission_id>
+      <mission_id>6566</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12041" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="512" />
+      <item level="5" id="104040" number="25" />
+      <card level="6" id="12041" />
+      <item level="7" id="104040" number="50" />
+    </rewards>
+    <find_item id="3122" drop_per_energy="0.2" />
+  </campaign>
   <!-- Boss Node -->
   <campaign>
     <id>1275</id>
@@ -6207,6 +9756,98 @@
       <!--  Shatterstone Anomaly's Spellstone  -->
       <item level="7" id="3130" />
       <!--  Shatterstone Anomaly's Spellstone  -->
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.4" />
+  </campaign>
+  <!-- April Fool's Campaign 2021 -->
+  <campaign>
+    <id>1281</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Revenge of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>34</location_id>
+    <x>450</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6618</mission_id>
+      <mission_id>6619</mission_id>
+      <mission_id>6620</mission_id>
+      <mission_id>6621</mission_id>
+      <mission_id>6622</mission_id>
+      <mission_id>6623</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2153" />
+      <card level="2" id="2153" />
+      <card level="3" id="2153" />
+      <card level="4" id="2153" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1282</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Legends Come To Take Their Place!</name>
+    <campaign_req id="1281" level="1" />
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>546</battleground_id>
+    <location_id>34</location_id>
+    <x>570</x>
+    <y>320</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6624</mission_id>
+      <mission_id>6625</mission_id>
+      <mission_id>6626</mission_id>
+      <mission_id>6627</mission_id>
+      <mission_id>6628</mission_id>
+      <mission_id>6629</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2152" />
+      <card level="2" id="2152" />
+      <card level="3" id="2152" />
+      <card level="4" id="2152" />
+      <item level="5" id="514" />
+      <item level="6" id="514" />
+      <item level="7" id="514" />
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.4" />
+  </campaign>
+  <campaign>
+    <id>1283</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Director's Cut</name>
+    <icon id="common_icon_110" bundle="155" />
+    <battleground_id>135</battleground_id>
+    <location_id>34</location_id>
+    <x>500</x>
+    <y>220</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6612</mission_id>
+      <mission_id>6613</mission_id>
+      <mission_id>6614</mission_id>
+      <mission_id>6615</mission_id>
+      <mission_id>6616</mission_id>
+      <mission_id>6617</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="12209" />
+      <item level="2" id="514" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
+      <item level="5" id="104044" number="50" />
+      <card level="6" id="12209" />
+      <item level="7" id="104044" number="150" />
     </rewards>
     <find_item id="3128" drop_per_energy="0.4" />
   </campaign>
@@ -6815,6 +10456,42 @@
     <!-- Thursday, 11 November 2021 17:00:00 -->
   </campaign>
   <!-- 6th Anniversary -->
+  <campaign>
+    <id>1298</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spellstone's 6th Anniversary</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <battleground_id>547</battleground_id>
+    <location_id>34</location_id>
+    <x>300</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6702</mission_id>
+      <mission_id>6703</mission_id>
+      <mission_id>6704</mission_id>
+      <mission_id>6705</mission_id>
+      <mission_id>6706</mission_id>
+      <mission_id>6707</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104024" number="50" />
+      <!-- Widow Stones -->
+      <item level="2" id="104048" number="50" />
+      <!-- Clockoo Stones -->
+      <item level="3" id="104047" number="50" />
+      <!-- Ark Stones -->
+      <item level="4" id="104046" number="75" />
+      <!-- Agatha Stones -->
+      <item level="5" id="104038" number="75" />
+      <!-- Kalyt Stones -->
+      <item level="6" id="104044" number="75" />
+      <!-- Viracocha Stones -->
+      <item level="7" id="104022" number="150" />
+      <!-- Bluefire Stones -->
+    </rewards>
+  </campaign>
   <!-- END 6th Anniversary -->
   <!-- Campaign Event 35 - Skyhaven  -->
   <campaign>
@@ -6990,6 +10667,37 @@
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
   </campaign>
+  <!-- Halloween Campaign 2021 -->
+  <campaign>
+    <id>1303</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>False Halloween?</name>
+    <icon id="pumpkin" bundle="75" />
+    <locked_start_time>1635526800</locked_start_time>
+    <!-- Friday, 29 October 2021 17:00:00 -->
+    <location_id>12</location_id>
+    <x>390</x>
+    <!-- left right -->
+    <y>520</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6732</mission_id>
+      <mission_id>6733</mission_id>
+      <mission_id>6734</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104004" number="50" />
+      <item level="2" id="1004" number="2" />
+      <item level="3" id="104009" number="50" />
+      <item level="4" id="104031" number="50" />
+      <item level="5" id="1004" number="2" />
+      <item level="6" id="104018" number="75" />
+      <item level="7" id="104044" number="150" />
+    </rewards>
+    <find_item id="3062" drop_per_energy="0.2" />
+  </campaign>
   <!-- Campaign Event 37 - Healed Dawnglow  -->
   <campaign>
     <id>1304</id>
@@ -7076,6 +10784,40 @@
     <find_item id="3110" drop_per_energy="0.8" />
     <ignore_energy_reduction_until>1641488400</ignore_energy_reduction_until>
     <!-- Thursday, 6 January 2022 17:00:00 -->
+  </campaign>
+  <!-- Christmas Event 2021 -->
+  <campaign>
+    <id>1306</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <!-- <campaign_req id="6" level="1"/> -->
+    <locked_start_time>1639760400</locked_start_time>
+    <!-- Friday, 17 December 2021 17:00:00 -->
+    <location_id>26</location_id>
+    <x>570</x>
+    <!-- left right -->
+    <y>370</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6748</mission_id>
+      <mission_id>6749</mission_id>
+      <mission_id>6750</mission_id>
+      <mission_id>6751</mission_id>
+      <mission_id>6752</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104031" number="50" />
+      <item level="2" id="104038" number="50" />
+      <item level="3" id="104007" number="65" />
+      <item level="4" id="104037" number="65" />
+      <item level="5" id="104014" number="75" />
+      <item level="6" id="104004" number="100" />
+      <item level="7" id="104018" number="125" />
+    </rewards>
+    <find_item id="3110" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 38 - World's Center  -->
   <campaign>
@@ -7426,6 +11168,39 @@
     <!-- Thursday, May 26, 2022 at 17:00:00  -->
   </campaign>
   <!-- April Fool's Campaign 2022 -->
+  <campaign>
+    <id>1315</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Return of the Commons!</name>
+    <icon id="common_icon_110" bundle="155" />
+    <!-- <campaign_req id="6" level="1"/> -->
+    <battleground_id>546</battleground_id>
+    <location_id>31</location_id>
+    <x>730</x>
+    <y>250</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>6789</mission_id>
+      <mission_id>6790</mission_id>
+      <mission_id>6791</mission_id>
+      <mission_id>6792</mission_id>
+      <mission_id>6793</mission_id>
+      <mission_id>6794</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="22152" />
+      <card level="2" id="22153" />
+      <item level="3" id="514" />
+      <item level="4" id="514" />
+      <item level="5" id="514" />
+      <item level="6" id="104045" number="50" />
+      <!-- Korg Stones -->
+      <item level="7" id="104022" number="50" />
+      <!-- Bluefire Stones -->
+    </rewards>
+    <find_item id="3119" drop_per_energy="0.4" />
+  </campaign>
   <!-- April Fools Campaigns END -->
   <!-- Campaign Event 89 - Return to Elaria -->
   <campaign>
@@ -7940,6 +11715,43 @@
     <!-- Thursday, November 10, 2022 at 17:00:00   -->
   </campaign>
   <!-- 7th Anniversary -->
+  <campaign>
+    <id>1328</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Spellstone's 7th Anniversary</name>
+    <icon id="node_gem_yellow" bundle="15" />
+    <battleground_id>547</battleground_id>
+    <location_id>34</location_id>
+    <x>300</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6915</mission_id>
+      <mission_id>6916</mission_id>
+      <mission_id>6917</mission_id>
+      <mission_id>6918</mission_id>
+      <mission_id>6919</mission_id>
+      <mission_id>6920</mission_id>
+      <mission_id>6921</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104052" number="50" />
+      <!-- Shadomeka -->
+      <item level="2" id="104004" number="50" />
+      <!-- Lokthor, the Reborn -->
+      <item level="3" id="104037" number="50" />
+      <!-- Nuvis, the Eye Collector -->
+      <item level="4" id="104053" number="75" />
+      <!-- Cellia, Heir of War -->
+      <item level="5" id="104038" number="75" />
+      <!-- Kalyt Stones -->
+      <item level="6" id="104057" number="75" />
+      <!-- Predonyx, Jungle King -->
+      <item level="7" id="104036" number="150" />
+      <!-- Leroux Stones -->
+    </rewards>
+  </campaign>
   <!-- END 7th Anniversary -->
   <!-- Campaign Event 95 -  Salt Wastes -->
   <campaign>
@@ -8025,6 +11837,44 @@
     <find_item id="3095" drop_per_energy=".8" />
     <ignore_energy_reduction_until>1670518800</ignore_energy_reduction_until>
     <!-- Thursday, December 8, 2022 at 17:00:00	   -->
+  </campaign>
+  <!-- Halloween Campaign 2022 -->
+  <campaign>
+    <id>1331</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>False Halloween?</name>
+    <icon id="pumpkin" bundle="75" />
+    <locked_start_time>1666890000</locked_start_time>
+    <!-- Thursday, 27 October 2022 17:00:00 -->
+    <location_id>23</location_id>
+    <x>575</x>
+    <!-- left right -->
+    <y>450</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6946</mission_id>
+      <mission_id>6947</mission_id>
+      <mission_id>6948</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="2241" />
+      <!-- Gargobot  -->
+      <item level="2" id="1004" number="2" />
+      <!-- Energy +20 -->
+      <card level="3" id="2241" />
+      <!-- Gargobot -->
+      <item level="4" id="104061" number="50" />
+      <!-- Veric Stones -->
+      <item level="5" id="1004" number="2" />
+      <!-- Energy +20 -->
+      <item level="6" id="104052" number="75" />
+      <!-- Shadomeka Stones -->
+      <item level="7" id="104022" number="100" />
+      <!-- Bluefire Stones -->
+    </rewards>
+    <find_item id="3095" drop_per_energy="0.2" />
   </campaign>
   <!-- Campaign Event 96 -  Salt Wastes -->
   <campaign>
@@ -8197,6 +12047,38 @@
     <!-- Thursday, February 2, 2023 at 17:00:00  -->
   </campaign>
   <!-- Christmas Event 2022 -->
+  <campaign>
+    <id>1336</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tree Champion</name>
+    <icon id="santaHat" bundle="41" />
+    <locked_start_time>1671555600</locked_start_time>
+    <!-- Tuesday, 20 December 2022 17:00:00 -->
+    <location_id>26</location_id>
+    <x>570</x>
+    <!-- left right -->
+    <y>370</y>
+    <!-- up down -->
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6979</mission_id>
+      <mission_id>6980</mission_id>
+      <mission_id>6981</mission_id>
+      <mission_id>6982</mission_id>
+      <mission_id>6983</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104037" number="50" />
+      <item level="2" id="104060" number="50" />
+      <item level="3" id="104052" number="65" />
+      <item level="4" id="104057" number="65" />
+      <item level="5" id="104056" number="75" />
+      <item level="6" id="104063" number="100" />
+      <item level="7" id="104059" number="125" />
+    </rewards>
+    <find_item id="3110" drop_per_energy="0.2" />
+  </campaign>
   <!-- Event 98 -->
   <campaign>
     <id>1337</id>

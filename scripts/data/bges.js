@@ -2995,6 +2995,12 @@ var BATTLEGROUNDS = {
 		"effect": [
 			{
 				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.15,
+				"y": "3,5"
+			},
+			{
+				"base": "health",
 				"effect_type": "add_skill",
 				"id": "stasis",
 				"mult": 0.1,
@@ -3017,22 +3023,77 @@ var BATTLEGROUNDS = {
 			{
 				"base": "health",
 				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "3,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
 				"id": "devour",
 				"mult": 0.15,
 				"y": "8,5"
-			},
-			{
-				"all": "1",
-				"base": "health",
-				"effect_type": "skill",
-				"id": "invigorate",
-				"ignore_nullify": "1",
-				"mult": 0.15,
-				"y": "3,5"
 			}
 		],
 		"id": "182",
 		"name": "Ascended Elemental Conflux"
+	},
+	"183": {
+		"desc": "0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 10% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "legion",
+				"mult": 0.15,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.25,
+				"y": "6"
+			},
+			{
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"x": 99,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "6"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "daze",
+				"s": "heartseeker"
+			}
+		],
+		"id": "183",
+		"name": "Cupid's Legions"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
