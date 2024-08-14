@@ -74261,6 +74261,649 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 119: ComDev Angel - Red Feather Valley -->
+  <!-- E119 Node 1: Reconstruction -->
+  <mission>
+    <id>7290</id>
+    <name>Cleanup Complete</name>
+    <energy>24</energy>
+    <desc>Meanwhile, Samael and Yuriel proudly gaze from afar at Skyhaven. The citadel is gleaming once again after the demonic invasion.</desc>
+    <commander id="209" />
+    <!-- Orobas of the Void -->
+    <deck>
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="1341" />
+      <!-- Blood Demon -->
+      <card id="2030" />
+      <!-- Ebon Duelist -->
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="1341" />
+      <!-- Blood Demon -->
+      <card id="2030" />
+      <!-- Ebon Duelist -->
+      <card id="6001" />
+      <!-- Orobas -->
+      <card id="1341" />
+      <!-- Blood Demon -->
+      <card id="2030" />
+      <!-- Ebon Duelist -->
+      <card id="6001" mastery_level="2" />
+      <!-- Orobas -->
+      <card id="1341" mastery_level="3" />
+      <!-- Blood Demon -->
+      <card id="2030" mastery_level="4" />
+      <!-- Ebon Duelist -->
+      <card id="6001" mastery_level="5" />
+      <!-- Orobas -->
+      <card id="1341" mastery_level="6" />
+      <!-- Blood Demon -->
+      <card id="2030" mastery_level="7" />
+      <!-- Ebon Duelist -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>It'll take another few months before we reorganize all the books in the Grand Library.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>At least the rugs are all clean again.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7291</id>
+    <name>Two Plus One</name>
+    <energy>24</energy>
+    <desc>The two old Aether friends have traveled here with Gobtoh, the mischievous angelic Goblin whose actions caused all the mayhem. </desc>
+    <commander id="483" />
+    <!-- Lightning Boss Gobtoh -->
+    <deck>
+      <card id="1327" />
+      <!-- Fallen Angel -->
+      <card id="2173" />
+      <!-- Soulstained Reaper -->
+      <card id="2055" />
+      <!-- Wrath -->
+      <card id="1327" />
+      <!-- Fallen Angel -->
+      <card id="2173" />
+      <!-- Soulstained Reaper -->
+      <card id="2055" />
+      <!-- Wrath -->
+      <card id="1327" />
+      <!-- Fallen Angel -->
+      <card id="2173" />
+      <!-- Soulstained Reaper -->
+      <card id="2055" />
+      <!-- Wrath -->
+      <card id="1327" mastery_level="2" />
+      <!-- Fallen Angel -->
+      <card id="2173" mastery_level="3" />
+      <!-- Soulstained Reaper -->
+      <card id="2055" mastery_level="4" />
+      <!-- Wrath -->
+      <card id="1327" mastery_level="5" />
+      <!-- Fallen Angel -->
+      <card id="2173" mastery_level="6" />
+      <!-- Soulstained Reaper -->
+      <card id="2055" mastery_level="7" />
+      <!-- Wrath -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>How was I supposed to know those weapons would release a horde of demons into our home?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Well now you know, little goblin. You unleashed chaos.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Void, Samael. He unleashed the Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7292</id>
+    <name>The Shackled Trickster</name>
+    <energy>24</energy>
+    <desc>Gobtoh, bound by celestial chains, scowls at his captors. Samael is unimpressed by the lack of cooperation.</desc>
+    <commander id="483" />
+    <!-- Lightning Boss Gobtoh -->
+    <deck>
+      <card id="6038" />
+      <!-- Hemlock -->
+      <card id="6028" />
+      <!-- Brahmet -->
+      <card id="6116" />
+      <!-- Otherworldly Archer -->
+      <card id="6038" />
+      <!-- Hemlock -->
+      <card id="6028" />
+      <!-- Brahmet -->
+      <card id="6116" />
+      <!-- Otherworldly Archer -->
+      <card id="6038" />
+      <!-- Hemlock -->
+      <card id="6028" />
+      <!-- Brahmet -->
+      <card id="6116" />
+      <!-- Otherworldly Archer -->
+      <card id="6038" mastery_level="2" />
+      <!-- Hemlock -->
+      <card id="6028" mastery_level="3" />
+      <!-- Brahmet -->
+      <card id="6116" mastery_level="4" />
+      <!-- Otherworldly Archer -->
+      <card id="6038" mastery_level="5" />
+      <!-- Hemlock -->
+      <card id="6028" mastery_level="6" />
+      <!-- Brahmet -->
+      <card id="6116" mastery_level="7" />
+      <!-- Otherworldly Archer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Can I go home now? I don't like it here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7293</id>
+    <name>Supply Chains</name>
+    <energy>24</energy>
+    <desc>Samael continues with his interrogation, intent on discovering how Gobtoh came into possession of Remi's Void weapons.</desc>
+    <commander id="483" />
+    <!-- Lightning Boss Gobtoh -->
+    <deck>
+      <card id="6035" />
+      <!-- Demos -->
+      <card id="6177" />
+      <!-- Diabolic Summoner -->
+      <card id="7070" />
+      <!-- Laughing Menace -->
+      <card id="6035" />
+      <!-- Demos -->
+      <card id="6177" />
+      <!-- Diabolic Summoner -->
+      <card id="7070" />
+      <!-- Laughing Menace -->
+      <card id="6035" />
+      <!-- Demos -->
+      <card id="6177" />
+      <!-- Diabolic Summoner -->
+      <card id="7070" />
+      <!-- Laughing Menace -->
+      <card id="6035" mastery_level="2" />
+      <!-- Demos -->
+      <card id="6177" mastery_level="3" />
+      <!-- Diabolic Summoner -->
+      <card id="7070" mastery_level="4" />
+      <!-- Laughing Menace -->
+      <card id="6035" mastery_level="5" />
+      <!-- Demos -->
+      <card id="6177" mastery_level="6" />
+      <!-- Diabolic Summoner -->
+      <card id="7070" mastery_level="7" />
+      <!-- Laughing Menace -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>You have much to answer for!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The court will show leniency if you tell us who supplied you with those weapons. Tell us!</text>
+      </line>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>0</enemy>
+        <text>TELL US! UNLESS YOU WANT TO BE PUT BACK INTO A STONE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7294</id>
+    <name>Incriminating Evidence</name>
+    <energy>24</energy>
+    <desc>Yuriel produces a single red feather, tucked like a bookmark in his tome. It would appear this is the reason they are all here in Red Feather Valley.</desc>
+    <commander id="483" />
+    <!-- Lightning Boss Gobtoh -->
+    <deck>
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="6272" />
+      <!-- Blazemaster Rookie -->
+      <card id="5206" />
+      <!-- Scarhawk Avienda -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="6272" />
+      <!-- Blazemaster Rookie -->
+      <card id="5206" />
+      <!-- Scarhawk Avienda -->
+      <card id="7263" />
+      <!-- Cheggrub -->
+      <card id="6272" />
+      <!-- Blazemaster Rookie -->
+      <card id="5206" />
+      <!-- Scarhawk Avienda -->
+      <card id="7263" mastery_level="2" />
+      <!-- Cheggrub -->
+      <card id="6272" mastery_level="3" />
+      <!-- Blazemaster Rookie -->
+      <card id="5206" mastery_level="4" />
+      <!-- Scarhawk Avienda -->
+      <card id="7263" mastery_level="5" />
+      <!-- Cheggrub -->
+      <card id="6272" mastery_level="6" />
+      <!-- Blazemaster Rookie -->
+      <card id="5206" mastery_level="7" />
+      <!-- Scarhawk Avienda -->
+    </deck>
+    <speech>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Maybe this will jog your memory. We found this on your person when Melkira first trapped you.</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>So that's why we're here? Because of one red feather?</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Hahaha! You are looking in precisely the wrong direction!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Oh, so not the birds in the sky but the beasts on the ground?</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Err... I never said that!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>You didn't have to.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7295</id>
+    <name>Beasts of a Feather</name>
+    <energy>24</energy>
+    <desc>Gobtoh reveals his source was neither Remi nor an Avian resident of the valley. It was in fact a Beast...</desc>
+    <commander id="483" />
+    <!-- Lightning Boss Gobtoh -->
+    <deck>
+      <card id="5260" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6039" />
+      <!-- Auroch -->
+      <card id="7297" />
+      <!-- Cursed Caserpent -->
+      <card id="5260" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6039" />
+      <!-- Auroch -->
+      <card id="7297" />
+      <!-- Cursed Caserpent -->
+      <card id="5260" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6039" />
+      <!-- Auroch -->
+      <card id="7297" />
+      <!-- Cursed Caserpent -->
+      <card id="5260" mastery_level="2" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6039" mastery_level="3" />
+      <!-- Auroch -->
+      <card id="7297" mastery_level="4" />
+      <!-- Cursed Caserpent -->
+      <card id="5260" mastery_level="5" />
+      <!-- Monkey Style Tenshi -->
+      <card id="6039" mastery_level="6" />
+      <!-- Auroch -->
+      <card id="7297" mastery_level="7" />
+      <!-- Cursed Caserpent -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>This makes no sense. Lev had united the Beasts against the Void.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Yes, but it would be naive to assume that there wasn't a single Beast corrupted by the Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E119 Node 2: Watch Out -->
+  <mission>
+    <id>7296</id>
+    <name>To Do List</name>
+    <energy>24</energy>
+    <desc>Samael and Yuriel continue their quest to tie up all remaining loose ends from the Goblin Civil War.</desc>
+    <commander id="323" />
+    <!-- Goblin Captain -->
+    <deck>
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="6213" />
+      <!-- Stonespeak Devil -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="6213" />
+      <!-- Stonespeak Devil -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="7254" />
+      <!-- Halo Frenzier -->
+      <card id="6213" />
+      <!-- Stonespeak Devil -->
+      <card id="5088" />
+      <!-- Betrayal -->
+      <card id="7254" mastery_level="2" />
+      <!-- Halo Frenzier -->
+      <card id="6213" mastery_level="3" />
+      <!-- Stonespeak Devil -->
+      <card id="5088" mastery_level="4" />
+      <!-- Betrayal -->
+      <card id="7254" mastery_level="5" />
+      <!-- Halo Frenzier -->
+      <card id="6213" mastery_level="6" />
+      <!-- Stonespeak Devil -->
+      <card id="5088" mastery_level="7" />
+      <!-- Betrayal -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7297</id>
+    <name>Running to Time</name>
+    <energy>24</energy>
+    <desc>The angels are on the the hunt for Remi's pocket watch, and its last known owner: Xerkahn.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="6040" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="6040" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="6040" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" />
+      <!-- Warden of the Leaf -->
+      <card id="5038" mastery_level="2" />
+      <!-- Celestial Monarch -->
+      <card id="6040" mastery_level="3" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" mastery_level="4" />
+      <!-- Warden of the Leaf -->
+      <card id="5038" mastery_level="5" />
+      <!-- Celestial Monarch -->
+      <card id="6040" mastery_level="6" />
+      <!-- Scorching Cutlass -->
+      <card id="7040" mastery_level="7" />
+      <!-- Warden of the Leaf -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7298</id>
+    <name>Berserk Angel</name>
+    <energy>24</energy>
+    <desc>Samael has good reason to want to find the watch, namely one very angry joint queen of Skyhaven.</desc>
+    <commander id="469" />
+    <!-- Lightning Boss Alyel -->
+    <deck>
+      <card id="5120" />
+      <!-- Seraph of Stone Rise -->
+      <card id="5002" />
+      <!-- Twilight Mirror -->
+      <card id="5183" />
+      <!-- Swordslayer Giant -->
+      <card id="5120" />
+      <!-- Seraph of Stone Rise -->
+      <card id="5002" />
+      <!-- Twilight Mirror -->
+      <card id="5183" />
+      <!-- Swordslayer Giant -->
+      <card id="5120" />
+      <!-- Seraph of Stone Rise -->
+      <card id="5002" />
+      <!-- Twilight Mirror -->
+      <card id="5183" />
+      <!-- Swordslayer Giant -->
+      <card id="5120" mastery_level="2" />
+      <!-- Seraph of Stone Rise -->
+      <card id="5002" mastery_level="3" />
+      <!-- Twilight Mirror -->
+      <card id="5183" mastery_level="4" />
+      <!-- Swordslayer Giant -->
+      <card id="5120" mastery_level="5" />
+      <!-- Seraph of Stone Rise -->
+      <card id="5002" mastery_level="6" />
+      <!-- Twilight Mirror -->
+      <card id="5183" mastery_level="7" />
+      <!-- Swordslayer Giant -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Have you heard from Alyel recently?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The frog healers assure me that they've done the best they can. She hasn't been able to get her speed back, but is perfectly healthy otherwise.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7299</id>
+    <name>A Beast in Disguise?</name>
+    <energy>24</energy>
+    <desc>Yuriel ponders all the clues they have encountered thus far. He arrives at theory that Xerkahn is an imposter.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="5003" />
+      <!-- White Knight -->
+      <card id="5039" />
+      <!-- Ethereal Knight -->
+      <card id="6262" />
+      <!-- Red Knight -->
+      <card id="5003" />
+      <!-- White Knight -->
+      <card id="5039" />
+      <!-- Ethereal Knight -->
+      <card id="6262" />
+      <!-- Red Knight -->
+      <card id="5003" />
+      <!-- White Knight -->
+      <card id="5039" />
+      <!-- Ethereal Knight -->
+      <card id="6262" />
+      <!-- Red Knight -->
+      <card id="5003" mastery_level="2" />
+      <!-- White Knight -->
+      <card id="5039" mastery_level="3" />
+      <!-- Ethereal Knight -->
+      <card id="6262" mastery_level="4" />
+      <!-- Red Knight -->
+      <card id="5003" mastery_level="5" />
+      <!-- White Knight -->
+      <card id="5039" mastery_level="6" />
+      <!-- Ethereal Knight -->
+      <card id="6262" mastery_level="7" />
+      <!-- Red Knight -->
+    </deck>
+    <speech>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>It seems obvious to me that Xerkahn is a Beast in disguise.</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>As if Beasts know how to use magic. *She'd* probably be the one disguised as a Beast.</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Who said anything about magic? So it *is* a magic disguise just like your masquerade as Reks!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Wait... you can't use that! I plead self-incrimination!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7300</id>
+    <name>Finding an Imposter</name>
+    <energy>24</energy>
+    <desc>Gobtoh scoffs at Yuriel. Even armed with that knowledge, surely there's no way to track Xerkahn down.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="5078" />
+      <!-- Asariel -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="5078" />
+      <!-- Asariel -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5038" />
+      <!-- Celestial Monarch -->
+      <card id="5078" />
+      <!-- Asariel -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="5038" mastery_level="2" />
+      <!-- Celestial Monarch -->
+      <card id="5078" mastery_level="3" />
+      <!-- Asariel -->
+      <card id="7218" mastery_level="4" />
+      <!-- Zuphlas -->
+      <card id="5038" mastery_level="5" />
+      <!-- Celestial Monarch -->
+      <card id="5078" mastery_level="6" />
+      <!-- Asariel -->
+      <card id="7218" mastery_level="7" />
+      <!-- Zuphlas -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Well it's not like you'll ever find her!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>You underestimate our ability to spread more rumors amongst the Goblins.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>What's the Void weapon equivalent of a honeypot?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7301</id>
+    <name>Sailed into a Trap</name>
+    <energy>24</energy>
+    <desc>Suddenly, a familiar ship appears through the clouds. It would appear Samael's plan has worked.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="5136" />
+      <!-- Lapis -->
+      <card id="5274" />
+      <!-- Voltwing Angel -->
+      <card id="7074" />
+      <!-- Sijou -->
+      <card id="5136" mastery_level="2" />
+      <!-- Lapis -->
+      <card id="5274" mastery_level="3" />
+      <!-- Voltwing Angel -->
+      <card id="7074" mastery_level="4" />
+      <!-- Sijou -->
+      <card id="5136" mastery_level="5" />
+      <!-- Lapis -->
+      <card id="5274" mastery_level="6" />
+      <!-- Voltwing Angel -->
+      <card id="7074" mastery_level="7" />
+      <!-- Sijou -->
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Arrrrrright yer meddlin' Angels! Hand over the watch yer stole from me!</text>
+      </line>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>0</enemy>
+        <text>What a shame! It appears your information was inaccurate!</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

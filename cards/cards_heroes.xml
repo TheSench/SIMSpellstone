@@ -12801,7 +12801,7 @@
   <unit>
     <id>483</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Gobtoh</name>
+    <name>Gobtoh</name>
     <portrait>event_047_chance_angelgoblindemon</portrait>
     <asset_bundle>150</asset_bundle>
     <health>75</health>

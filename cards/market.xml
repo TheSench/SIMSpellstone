@@ -241,56 +241,6 @@
       <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
     </cards>
   </store_item>
-  <!-- Legacy Packs -->
-  <store_item>
-    <id>41</id>
-    <name>Legacy Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two cards from Standard Set with one guaranteed ^c8E5FRare ^cFFFFor higher.</desc>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>45</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" release_set="1" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>42</id>
-    <name>Legacy Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four cards from Standard Set with one guaranteed ^c0DFFEpic ^cFFFFor higher. Best chance at ^cE7FFLegendaries^cFFFF!</desc>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>100</hc_cost>
-    <!-- <banner>1</banner>	 -->
-    <!-- has a lowpriority banner slot in the store -->
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" release_set="1" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>43</id>
-    <name>Legacy Legendary Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four cards with one guaranteed ^cE7FFLegendary ^cFFFF!</desc>
-    <asset_prefab>legendary_crystal</asset_prefab>
-    <bundle>30</bundle>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>5000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" release_set="1" />
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" release_set="1" />
-    </cards>
-  </store_item>
   <store_item>
     <id>45</id>
     <name>Double Legendary Reward Pack</name>
@@ -1091,49 +1041,6 @@
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
   <!-- 3001- : Old events removed. See old versions for archive. -->
-  <!-- Thank You Packs. To retire when items removed. -->
-  <store_item>
-    <id>3031</id>
-    <name>Quadra Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Elemental card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="4" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3054</id>
-    <name>Dual Elemental Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two copies of one guaranteed Epic or higher Elemental card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="2" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>3055</id>
-    <name>Elemental Epic Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives a guaranteed Epic or higher Elemental card from Premium set.</desc>
-    <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-    </cards>
-  </store_item>
   <!-- Dual Tribe Premium Legendary for Dual Shard Bundles -->
   <store_item>
     <id>3104</id>
@@ -1606,16 +1513,6 @@
       <!-- Rare Pack -->
       <item id="20" number="1" purchase1="20000" scalar="5000" />
       <!-- Arena Trophies -->
-      <!-- <item id="12" number="1" purchase1="800" purchase2="1600" purchase3="3200" purchase4="6400" purchase5="9600" scalar="4800" /> -->
-      <!-- Epic Pack -->
-      <!-- <item id="1002" number="1" purchase1="100" purchase2="200" purchase3="400" purchase4="800" purchase5="1200" scalar="600" /> -->
-      <!-- Energy Refill +5 -->
-      <!-- <item id="1003" number="1" purchase1="200" purchase2="400" purchase3="800" purchase4="1600" purchase5="2400" scalar="1200" /> -->
-      <!-- Energy Refill +10 -->
-      <!-- <item id="1004" number="1" purchase1="400" purchase2="800" purchase3="1600" purchase4="2400" purchase5="3600" scalar="1800" /> -->
-      <!-- Energy Refill +20 -->
-      <!-- <item id="1021" number="1" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" /> -->
-      <!-- Bounty Refill +1 -->
       <item id="2001" number="15" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
       <!-- Arcane Fragment -->
       <item id="2501" number="100" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
@@ -1630,25 +1527,6 @@
       <!-- Rare Runeshell -->
     </costed_items>
   </store_item>
-  <!-- <store_item> -->
-  <!-- <id>4003</id> -->
-  <!-- <name>Cycling Epic Premium Card</name> -->
-  <!-- <category>4</category> -->
-  <!-- <vip_level_req>0</vip_level_req> -->
-  <!-- <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc> -->
-  <!-- <preview_desc>Unlocks a random ^c0DFFEpic ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc> -->
-  <!-- <priority>30</priority> -->
-  <!-- <icon>icon_blue_crystal</icon> -->
-  <!-- <scale_prices>1</scale_prices> -->
-  <!-- <rarity3scaling purchase1="60" purchase2="60" purchase3="60" purchase4="60" scalar="40"/> -->
-  <!-- <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100"/> -->
-  <!-- <cycle_cards>1</cycle_cards> -->
-  <!-- <cycle_length>86400</cycle_length> -->
-  <!-- <start_offset>61200</start_offset> -->
-  <!-- <cards> -->
-  <!-- <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="3000"/> -->
-  <!-- </cards> -->
-  <!-- </store_item> -->
   <store_item>
     <id>4004</id>
     <name>Cycling Rune</name>
@@ -1669,24 +1547,6 @@
       <item min_rarity="4" max_rarity="4" type="3" set="1,3" />
     </items>
   </store_item>
-  <!-- <store_item> -->
-  <!-- <id>4005</id> -->
-  <!-- <name>Cycling Legendary Premium Card</name> -->
-  <!-- <category>4</category> -->
-  <!-- <vip_level_req>0</vip_level_req> -->
-  <!-- <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases after 4 purchases!</desc> -->
-  <!-- <preview_desc>Unlocks a random Aether ^cE7FFLegendary ^cFFFFcard that can be purchased with shards and cycles every 24 hours!</preview_desc> -->
-  <!-- <priority>40</priority> -->
-  <!-- <icon>icon_purple_crystal</icon> -->
-  <!-- <scale_prices>1</scale_prices> -->
-  <!-- <rarity4scaling purchase1="150" purchase2="150" purchase3="150" purchase4="150" scalar="100"/> -->
-  <!-- <cycle_cards>1</cycle_cards> -->
-  <!-- <cycle_length>86400</cycle_length> -->
-  <!-- <start_offset>61200</start_offset> -->
-  <!-- <cards> -->
-  <!-- <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="1" set="3000"/> -->
-  <!-- </cards> -->
-  <!-- </store_item> -->
   <store_item>
     <id>4006</id>
     <name>Cycling Legendary Reward Card</name>
@@ -2152,87 +2012,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 117: ComDev Insect - Red Feather Valley -->
-  <store_item>
-    <id>5392</id>
-    <name>Nano Swarm Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFNano Swarm^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_104_spiritualswarm_championpack</asset_prefab>
-    <background_prefab>event_104_spiritualswarm_banner</background_prefab>
-    <bundle>275</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105645" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5393</id>
-    <name>Nuri &amp; Nera Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFNuri &amp; Nera, Twin Assailants^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_105_destructoranthill_championpack</asset_prefab>
-    <background_prefab>event_105_destructoranthill_banner</background_prefab>
-    <bundle>277</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106632" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5394</id>
-    <name>Tilly Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFTilly, the Love Keeper^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_99_lovebug_championpack</asset_prefab>
-    <background_prefab>event_99_lovebug_banner</background_prefab>
-    <bundle>265</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107629" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5395</id>
-    <name>Volvel Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFVolvel, Golden Pride^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_050_scythejudgement</asset_prefab>
-    <background_prefab>event_050_banner_scythejudgement</background_prefab>
-    <bundle>158</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105606" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
   <!-- Event 118: ComDev Elemental - Red Feather Valley -->
   <store_item>
     <id>5396</id>
@@ -2314,22 +2093,85 @@
       <item id="107607" quantity="125" weight="1" />
     </item_pack>
   </store_item>
-  <!-- <store_item> -->
-  <!-- <id>5400</id> -->
-  <!-- <name>Daze for Days Chance Pack</name> -->
-  <!-- <category>0</category> -->
-  <!-- <hidden>1</hidden> -->
-  <!-- <event_only>1</event_only> -->
-  <!-- <priority>250</priority> -->
-  <!-- <desc>Gives one random ^cE7FFQuad Legendary^cFFFF card with Daze from Premium Set.</desc> -->
-  <!-- <priority>1</priority> -->
-  <!-- <asset_prefab>event_042_box_lanternundeadelemental</asset_prefab> -->
-  <!-- <background_prefab>event_042_banner_lanternundeadelemental</background_prefab> -->
-  <!-- <bundle>140</bundle> -->
-  <!-- <icon>icon_purple_crystal</icon> -->
-  <!-- <hc_cost>300</hc_cost> -->
-  <!-- <cards> -->
-  <!-- <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" skill_id="daze" set="3000" fusion_level="2"/> -->
-  <!-- </cards> -->
-  <!-- </store_item> -->
+  <!-- Event 119: ComDev Angel - Red Feather Valley -->
+  <store_item>
+    <id>5400</id>
+    <name>Abbadon Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAbbadon, the Vicious^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_89_dragonparagon_championpack</asset_prefab>
+    <background_prefab>event_89_dragonparagon_banner</background_prefab>
+    <bundle>245</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="106620" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5401</id>
+    <name>Aeronwen Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAeronwen, the Glider^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_83_nitrogenglider_championpack</asset_prefab>
+    <background_prefab>event_83_nitrogenglider_banner</background_prefab>
+    <bundle>233</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105625" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5402</id>
+    <name>Altos Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAltos, the Implacable^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_82_eternalguardian_championpack</asset_prefab>
+    <background_prefab>event_82_eternalguardian_banner</background_prefab>
+    <bundle>231</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105624" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5403</id>
+    <name>Asim Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAsim, the Lorekeeper^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_88_lorekeepergod_championpack</asset_prefab>
+    <background_prefab>event_88_lorekeepergod_banner</background_prefab>
+    <bundle>243</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105630" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
 </root>

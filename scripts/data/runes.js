@@ -1166,23 +1166,18 @@ var RUNES = {
 	},
 	"5271": {
 		"category": "3",
-		"desc": "Daze +2",
+		"desc": "Rune disabled during Cupid's Legions BGE.",
 		"icon": "rune_daze_epic",
 		"id": "5271",
 		"name": "Rune of Dazing",
 		"rarity": 3,
 		"set": "1",
-		"stat_boost": {
-			"skill": {
-				"id": "daze",
-				"x": 2
-			}
-		},
+		"stat_boost": [],
 		"type": "3"
 	},
 	"5272": {
 		"category": "3",
-		"desc": "Daze +50%, rounded up. Minimum +3. Health +15%, rounded up.",
+		"desc": "Daze bonus disabled during Cupid's Legions BGE. Health +15%, rounded up.",
 		"icon": "rune_daze_legendary",
 		"id": "5272",
 		"name": "Rune of Greater Dazing",
@@ -1191,11 +1186,6 @@ var RUNES = {
 		"stat_boost": {
 			"health": {
 				"mult": 0.15
-			},
-			"skill": {
-				"id": "daze",
-				"min_bonus": 3,
-				"mult": 0.5
 			}
 		},
 		"type": "3"

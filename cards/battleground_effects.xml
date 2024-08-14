@@ -1801,9 +1801,9 @@
   </battleground>
   <battleground>
     <id>183</id>
-    <name>Cupid's Legions</name>
-    <desc>0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 10% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.</desc>
-    <icon>filter_elementals_64</icon>
+    <name>Cupid&apos;s Legions</name>
+    <desc>0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 15% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.</desc>
+    <icon>filter_angel_64</icon>
     <effect>
       <add_skill id="legion" mult="0.15" base="health" y="6" delay="0,1,2" />
       <add_skill id="leech" mult="0.25" base="health" y="6" delay="0,1,2" />
@@ -2891,12 +2891,14 @@
   </battleground>
   <battleground>
     <id>569</id>
-    <name>Level Down</name>
-    <desc>All cards are unlevelled.</desc>
-    <icon>1Delay_BGE_64</icon>
-    <icon_bundle>110</icon_bundle>
+    <name>Tougher Enemies</name>
+    <desc>All enemy Legendary cards have their Attack and Health increased by 25%.</desc>
+    <icon>dungeon_bge_64</icon>
+    <icon_bundle>71</icon_bundle>
+    <enemy_only>1</enemy_only>
     <effect>
-      <stat level="1" />
+      <skill id="enlarge" mult="0.25" all="1" z="4" />
+      <scale_health base="health" mult="0.25" rarity="4" />
     </effect>
   </battleground>
   <battleground>
@@ -3008,9 +3010,9 @@
     <desc>All Epic cards have their Attack, Health, and all Skills increased by 75%! Freeze and Dualstrike are not affected.</desc>
     <icon>Epic_Card_Icon</icon>
     <effect>
-      <skill id="enlarge" mult="0.5" all="1" z="3" />
+      <skill id="enlarge" mult="0.75" all="1" z="3" />
       <!-- mult is based on attack -->
-      <scale_health base="health" mult="0.5" rarity="3" />
+      <scale_health base="health" mult="0.75" rarity="3" />
       <skill id="enhance" s="armored" z="3" mult="0.75" all="1" ignore_nullify="1" />
       <skill id="enhance" s="counter" z="3" mult="0.75" all="1" ignore_nullify="1" />
       <skill id="enhance" s="evade" z="3" mult="0.75" all="1" ignore_nullify="1" />
@@ -5132,6 +5134,21 @@
       </on_play>
       <on_play first_play="1" defender="1">
         <add_skill id="haste" x="1" />
+      </on_play>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>5004</id>
+    <name>The Arena</name>
+    <desc>In Arena Battles, the player who goes first has two Delay added to the first card they play and the player who goes second has one Delay added to the first card they play.</desc>
+    <icon>arenaBGE_64.png</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <on_play first_play="1" attacker="1">
+        <add_skill id="slow" x="2" />
+      </on_play>
+      <on_play first_play="1" defender="1">
+        <add_skill id="slow" x="1" />
       </on_play>
     </effect>
   </battleground>

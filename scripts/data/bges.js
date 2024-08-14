@@ -3039,7 +3039,7 @@ var BATTLEGROUNDS = {
 		"name": "Ascended Elemental Conflux"
 	},
 	"183": {
-		"desc": "0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 10% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.",
+		"desc": "0-2D Angels gain 15% Legion and 25% Siphon. 3D-4D Angels gain 15% Regenerate and Weaken 99. % values are based on base Health. Also, all Daze skills for all tribes are changed to Heartseeker with the same value.",
 		"effect": [
 			{
 				"base": "health",
@@ -5263,15 +5263,26 @@ var BATTLEGROUNDS = {
 		"name": "Swarming Tower"
 	},
 	"569": {
-		"desc": "All cards are unlevelled.",
+		"desc": "All enemy Legendary cards have their Attack and Health increased by 25%.",
 		"effect": [
 			{
-				"effect_type": "statChange",
-				"level": 1
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 0.25,
+				"z": "4"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.25,
+				"rarity": 4
 			}
 		],
+		"enemy_only": true,
+		"hidden": true,
 		"id": "569",
-		"name": "Level Down"
+		"name": "Tougher Enemies"
 	},
 	"570": {
 		"desc": "All cards gain Vampirism 10.",
@@ -5465,7 +5476,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enlarge",
-				"mult": 0.5,
+				"mult": 0.75,
 				"z": "3"
 			},
 			{
@@ -5705,7 +5716,7 @@ var BATTLEGROUNDS = {
 			{
 				"base": "health",
 				"effect_type": "scale_health",
-				"mult": 0.5,
+				"mult": 0.75,
 				"rarity": 3
 			}
 		],
@@ -7883,6 +7894,34 @@ var BATTLEGROUNDS = {
 		],
 		"hidden": true,
 		"id": "5003",
+		"name": "The Arena"
+	},
+	"5004": {
+		"desc": "In Arena Battles, the player who goes first has two Delay added to the first card they play and the player who goes second has one Delay added to the first card they play.",
+		"effect": [
+			{
+				"attacker": 1,
+				"effect": {
+					"effect_type": "add_skill",
+					"id": "slow",
+					"x": 2
+				},
+				"effect_type": "on_play",
+				"first_play": 1
+			},
+			{
+				"defender": 1,
+				"effect": {
+					"effect_type": "add_skill",
+					"id": "slow",
+					"x": 1
+				},
+				"effect_type": "on_play",
+				"first_play": 1
+			}
+		],
+		"hidden": true,
+		"id": "5004",
 		"name": "The Arena"
 	},
 	"6001": {
