@@ -241,11 +241,11 @@
     <level>1</level>
     <salvage0>60</salvage0>
     <salvage1>560</salvage1>
-    <salvage2>1100</salvage2>
+    <salvage2>1450</salvage2>
     <sp_cost>5</sp_cost>
     <buyback_cost0>120</buyback_cost0>
     <buyback_cost1>1120</buyback_cost1>
-    <buyback_cost2>2200</buyback_cost2>
+    <buyback_cost2>2900</buyback_cost2>
     <shard_fragment_cost>200</shard_fragment_cost>
     <shard_sp_cost>200</shard_sp_cost>
   </card_level>
@@ -254,7 +254,7 @@
     <level>2</level>
     <salvage0>60</salvage0>
     <salvage1>565</salvage1>
-    <salvage2>1105</salvage2>
+    <salvage2>1455</salvage2>
     <sp_cost>15</sp_cost>
     <shard_fragment_cost>250</shard_fragment_cost>
     <shard_sp_cost>300</shard_sp_cost>
@@ -264,7 +264,7 @@
     <level>3</level>
     <salvage0>70</salvage0>
     <salvage1>570</salvage1>
-    <salvage2>1110</salvage2>
+    <salvage2>1460</salvage2>
     <sp_cost>30</sp_cost>
     <shard_fragment_cost>300</shard_fragment_cost>
     <shard_sp_cost>400</shard_sp_cost>
@@ -274,7 +274,7 @@
     <level>4</level>
     <salvage0>85</salvage0>
     <salvage1>580</salvage1>
-    <salvage2>1120</salvage2>
+    <salvage2>1470</salvage2>
     <sp_cost>75</sp_cost>
     <shard_fragment_cost>450</shard_fragment_cost>
     <shard_sp_cost>500</shard_sp_cost>
@@ -284,7 +284,7 @@
     <level>5</level>
     <salvage0>110</salvage0>
     <salvage1>590</salvage1>
-    <salvage2>1130</salvage2>
+    <salvage2>1480</salvage2>
     <sp_cost>150</sp_cost>
     <shard_fragment_cost>600</shard_fragment_cost>
     <shard_sp_cost>500</shard_sp_cost>
@@ -294,7 +294,7 @@
     <level>6</level>
     <salvage0>150</salvage0>
     <salvage1>600</salvage1>
-    <salvage2>1140</salvage2>
+    <salvage2>1490</salvage2>
     <sp_cost>300</sp_cost>
     <shard_fragment_cost>750</shard_fragment_cost>
     <shard_sp_cost>500</shard_sp_cost>
@@ -304,7 +304,7 @@
     <level>7</level>
     <salvage0>300</salvage0>
     <salvage1>650</salvage1>
-    <salvage2>1190</salvage2>
+    <salvage2>1550</salvage2>
     <shard_fragment_cost>900</shard_fragment_cost>
     <shard_sp_cost>500</shard_sp_cost>
   </card_level>

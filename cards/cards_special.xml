@@ -132,6 +132,21 @@
     <set>9999</set>
     <desc>A massive deposit of Spellstone ore. It has little combat use, but can be Vaporized for resources.</desc>
   </unit>
+  <unit>
+    <id>20513</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Arcane Motherlode</name>
+    <picture>Arcane_Ore</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>5</rarity>
+    <set>9999</set>
+    <desc>An expensive deposit of Spellstone ore. You spent a lot of Gold on something best Vaporized into Arcane Dust.</desc>
+  </unit>
   <!-- ========================== -->
   <!-- === BATTLEGROUND CARDS === -->
   <!-- ========================== -->

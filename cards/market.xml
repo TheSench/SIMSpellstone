@@ -157,10 +157,10 @@
   </store_item>
   <store_item>
     <id>8</id>
-    <name>Auto Dust Pack x500</name>
+    <name>Express Dust Pack</name>
     <category>1</category>
     <show_desc>1</show_desc>
-    <desc>Quickly convert your Gold! Gives 1450 Arcane Dust, the expected amount from vaporizing all cards from 500 Basic Packs!</desc>
+    <desc>Quickly convert your Gold! Gives one ^cF90FArcane Motherlode^cFFFF worth 1450 Arcane Dust, the expected amount from vaporizing all cards from 500 Basic Packs!</desc>
     <priority>-3</priority>
     <asset_prefab>dust_package_3</asset_prefab>
     <background_prefab>banner_epic</background_prefab>
@@ -168,7 +168,9 @@
     <sc_cost>50000</sc_cost>
     <card_limit>1</card_limit>
     <level_req>5</level_req>
-    <item id="4" quantity="1450" />
+    <cards>
+      <card min_level="1" max_level="1" unit_id="20513" />
+    </cards>
   </store_item>
   <!-- HC Packs -->
   <store_item>
@@ -197,8 +199,6 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>20</hc_cost>
     <drop_item_id>11</drop_item_id>
-    <!-- <banner>1</banner>	 -->
-    <!-- has a lowpriority banner slot in the store -->
     <cards>
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
@@ -226,21 +226,6 @@
     </cards>
   </store_item>
   <!-- Unique Packs -->
-  <store_item>
-    <id>21</id>
-    <name>Dragon Rare Pack</name>
-    <category>0</category>
-    <hidden>1</hidden>
-    <desc>Gives two Dragon cards with both guaranteed Rare or higher.</desc>
-    <priority>1</priority>
-    <asset_prefab>rare_pack</asset_prefab>
-    <icon>icon_green_crystal</icon>
-    <hc_cost>1000</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
-    </cards>
-  </store_item>
   <store_item>
     <id>45</id>
     <name>Double Legendary Reward Pack</name>
@@ -893,6 +878,8 @@
       <item id="104084" quantity="500" weight="1" />
       <item id="104085" quantity="500" weight="1" />
       <item id="104086" quantity="500" weight="1" />
+      <item id="104087" quantity="500" weight="1" />
+      <item id="104088" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1694,6 +1681,8 @@
       <item id="104084" number="10" purchase1="5" scalar="5" />
       <item id="104085" number="10" purchase1="5" scalar="5" />
       <item id="104086" number="10" purchase1="5" scalar="5" />
+      <item id="104087" number="10" purchase1="5" scalar="5" />
+      <item id="104088" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2012,87 +2001,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 118: ComDev Elemental - Red Feather Valley -->
-  <store_item>
-    <id>5396</id>
-    <name>Quad Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFQuad, the Gatherer^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_86_fairychanneler_championpack</asset_prefab>
-    <background_prefab>event_86_fairychanneler_banner</background_prefab>
-    <bundle>239</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107625" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5397</id>
-    <name>Windsage Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFWindsage Gama^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_052_frogwindspiritmonk</asset_prefab>
-    <background_prefab>event_052_banner_frogwindspiritmonk</background_prefab>
-    <bundle>163</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105608" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5398</id>
-    <name>Medusozoa Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFMedusozoa, the Immortal^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_049_champion_thundercloudjellyfish</asset_prefab>
-    <background_prefab>event_049_banner_thundercloudjellyfish</background_prefab>
-    <bundle>156</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105605" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5399</id>
-    <name>Malik Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFMalik, Hollow Djinn^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_056_voidelemental</asset_prefab>
-    <background_prefab>event_056_banner_voidelemental</background_prefab>
-    <bundle>173</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107607" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
   <!-- Event 119: ComDev Angel - Red Feather Valley -->
   <store_item>
     <id>5400</id>
@@ -2172,6 +2080,87 @@
     <item_pack>
       <pulls>1</pulls>
       <item id="105630" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <!-- Event 120: ComDev Goblin - Red Feather Valley -->
+  <store_item>
+    <id>5404</id>
+    <name>Crash &apos; Zink Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFCrash and Zink, the Riders^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_97_beastriders_championpack</asset_prefab>
+    <background_prefab>event_97_beastriders_banner</background_prefab>
+    <bundle>261</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107627" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5405</id>
+    <name>Drarm Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFDrarm, the Soulbinder^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_85_undeadectomancer_championpack</asset_prefab>
+    <background_prefab>event_85_undeadectomancer_banner</background_prefab>
+    <bundle>237</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105627" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5406</id>
+    <name>Klevit Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFKlevit, the Speedfall^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_078_snowboardwizard_championpack</asset_prefab>
+    <background_prefab>event_078_snowboardwizard_banner</background_prefab>
+    <bundle>223</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="107620" quantity="125" weight="1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>5407</id>
+    <name>Remi Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFRemi, the Banished^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_94_remibipolar_championpack</asset_prefab>
+    <background_prefab>event_94_remibipolar_banner</background_prefab>
+    <bundle>255</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="105635" quantity="125" weight="1" />
     </item_pack>
   </store_item>
 </root>
