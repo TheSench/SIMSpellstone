@@ -3095,6 +3095,27 @@ var BATTLEGROUNDS = {
 		"id": "183",
 		"name": "Cupid's Legions"
 	},
+	"184": {
+		"desc": "All Goblins gain extra Barrage and Corrosive equal to 15% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"y": "11"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"mult": 0.15,
+				"y": "11"
+			}
+		],
+		"id": "184",
+		"name": "Goblin Acid Rain"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

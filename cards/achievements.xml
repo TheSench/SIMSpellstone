@@ -18882,6 +18882,26 @@
       <!-- Random Reward Legendary -->
     </reward>
   </achievement>
+  <!-- Spellstone Anniversary Special Event 2024 -->
+  <achievement>
+    <id>3978</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Spellstone's 9th Anniversary</name>
+    <desc>Complete the Spellstone's 9th Anniversary campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <icon>sparkler200</icon>
+    <icon_bundle>58</icon_bundle>
+    <mission_req>2089</mission_req>
+    <req>
+      <campaign>5014</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
   <!-- START Non-Core Maps Meta -->
   <achievement>
@@ -22017,6 +22037,202 @@
     <locked_start_time>1724950800</locked_start_time>
     <req>
       <campaign>1380</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 120: ComDev Goblin - Red Feather Valley -->
+  <!-- E120 Node 1: Xerkahn's Air Assault -->
+  <achievement>
+    <id>4581</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Xerkahn's Air Assault campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7307</mission_req>
+    <locked_start_time>1726160400</locked_start_time>
+    <req>
+      <campaign>1381</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7116" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4582</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Xerkahn's Air Assault campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4581</achievement_req>
+    <locked_start_time>1726160400</locked_start_time>
+    <req>
+      <campaign>1381</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4583</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Xerkahn's Air Assault campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4582</achievement_req>
+    <locked_start_time>1726160400</locked_start_time>
+    <req>
+      <campaign>1381</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4584</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Xerkahn's Air Assault campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4583</achievement_req>
+    <locked_start_time>1726160400</locked_start_time>
+    <req>
+      <campaign>1381</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4585</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Xerkahn's Air Assault campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4584</achievement_req>
+    <locked_start_time>1726160400</locked_start_time>
+    <req>
+      <campaign>1381</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 120: ComDev Goblin - Red Feather Valley -->
+  <!-- E120 Node 2: Flask of Evidence -->
+  <achievement>
+    <id>4586</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Flask of Evidence campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7313</mission_req>
+    <locked_start_time>1727370000</locked_start_time>
+    <req>
+      <campaign>1382</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7116" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4587</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Flask of Evidence campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4586</achievement_req>
+    <locked_start_time>1727370000</locked_start_time>
+    <req>
+      <campaign>1382</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4588</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Flask of Evidence campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4587</achievement_req>
+    <locked_start_time>1727370000</locked_start_time>
+    <req>
+      <campaign>1382</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4589</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Flask of Evidence campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4588</achievement_req>
+    <locked_start_time>1727370000</locked_start_time>
+    <req>
+      <campaign>1382</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4590</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Flask of Evidence campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4589</achievement_req>
+    <locked_start_time>1727370000</locked_start_time>
+    <req>
+      <campaign>1382</campaign>
       <level>6</level>
     </req>
     <reward>

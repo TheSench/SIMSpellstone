@@ -1034,7 +1034,7 @@
     <name>Dual Frog Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Frog card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Frog card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
@@ -1049,7 +1049,7 @@
     <name>Dual Elemental Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Elemental card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Elemental card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1064,7 +1064,7 @@
     <name>Dual Angel Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Angel card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Angel card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1079,7 +1079,7 @@
     <name>Dual Undead Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Undead card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Undead card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1094,7 +1094,7 @@
     <name>Dual Dragon Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Dragon card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Dragon card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1109,7 +1109,7 @@
     <name>Dual Avian Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Avian card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Avian card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1124,7 +1124,7 @@
     <name>Dual Goblin Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Goblin card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Goblin card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1139,7 +1139,7 @@
     <name>Dual Seafolk Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Seafolk card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Seafolk card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1154,7 +1154,7 @@
     <name>Dual Insect Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Insect card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Insect card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1169,7 +1169,7 @@
     <name>Dual Beast Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Beast card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Beast card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -1184,7 +1184,7 @@
     <name>Dual Mecha Premium Legendary</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one random ^c0DFFQuad Epic^cFFFF Mecha card from Premium set.</desc>
+    <desc>Gives one random ^cE7FFDual Legendary^cFFFF Mecha card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
@@ -2085,12 +2085,12 @@
   <!-- Event 120: ComDev Goblin - Red Feather Valley -->
   <store_item>
     <id>5404</id>
-    <name>Crash &apos; Zink Stone Stockpile</name>
+    <name>Crash &amp; Zink Stone Stockpile</name>
     <banner>1</banner>
     <category>1</category>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <priority>300</priority>
+    <priority>600</priority>
     <desc>Gives 125 Champion Stones for ^cE7FFCrash and Zink, the Riders^cFFFF! May be purchased 12 times.</desc>
     <asset_prefab>event_97_beastriders_championpack</asset_prefab>
     <background_prefab>event_97_beastriders_banner</background_prefab>
@@ -2098,10 +2098,7 @@
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107627" quantity="125" weight="1" />
-    </item_pack>
+    <item id="107627" quantity="125" />
   </store_item>
   <store_item>
     <id>5405</id>
@@ -2110,7 +2107,7 @@
     <category>1</category>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <priority>300</priority>
+    <priority>600</priority>
     <desc>Gives 125 Champion Stones for ^cE7FFDrarm, the Soulbinder^cFFFF! May be purchased 12 times.</desc>
     <asset_prefab>event_85_undeadectomancer_championpack</asset_prefab>
     <background_prefab>event_85_undeadectomancer_banner</background_prefab>
@@ -2118,10 +2115,7 @@
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105627" quantity="125" weight="1" />
-    </item_pack>
+    <item id="105627" quantity="125" />
   </store_item>
   <store_item>
     <id>5406</id>
@@ -2130,7 +2124,7 @@
     <category>1</category>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <priority>300</priority>
+    <priority>600</priority>
     <desc>Gives 125 Champion Stones for ^cE7FFKlevit, the Speedfall^cFFFF! May be purchased 12 times.</desc>
     <asset_prefab>event_078_snowboardwizard_championpack</asset_prefab>
     <background_prefab>event_078_snowboardwizard_banner</background_prefab>
@@ -2138,10 +2132,7 @@
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="107620" quantity="125" weight="1" />
-    </item_pack>
+    <item id="107620" quantity="125" />
   </store_item>
   <store_item>
     <id>5407</id>
@@ -2150,7 +2141,7 @@
     <category>1</category>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <priority>300</priority>
+    <priority>600</priority>
     <desc>Gives 125 Champion Stones for ^cE7FFRemi, the Banished^cFFFF! May be purchased 12 times.</desc>
     <asset_prefab>event_94_remibipolar_championpack</asset_prefab>
     <background_prefab>event_94_remibipolar_banner</background_prefab>
@@ -2158,9 +2149,6 @@
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105635" quantity="125" weight="1" />
-    </item_pack>
+    <item id="105635" quantity="125" />
   </store_item>
 </root>

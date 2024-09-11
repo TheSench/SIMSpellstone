@@ -5102,8 +5102,8 @@
   <campaign>
     <id>1195</id>
     <name>Purity and Corruption</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>20</location_id>
     <x>90</x>
     <y>365</y>
@@ -5130,8 +5130,8 @@
   <campaign>
     <id>1196</id>
     <name>Warrior's Path</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1195" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1195" level="1"/> -->
     <battleground_id>2057</battleground_id>
     <location_id>20</location_id>
     <x>300</x>
@@ -5162,8 +5162,8 @@
     <name>Schism</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1195" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1195" level="1"/> -->
     <battleground_id>2058</battleground_id>
     <location_id>20</location_id>
     <show_level>1</show_level>
@@ -5192,8 +5192,8 @@
   <campaign>
     <id>1198</id>
     <name>Shades of the Past</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1196" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1196" level="1"/> -->
     <battleground_id>2059</battleground_id>
     <location_id>20</location_id>
     <x>630</x>
@@ -5221,8 +5221,8 @@
   <campaign>
     <id>1199</id>
     <name>Crimsonwing Foundation</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1198" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1198" level="1"/> -->
     <battleground_id>2060</battleground_id>
     <location_id>20</location_id>
     <x>810</x>
@@ -5251,8 +5251,8 @@
   <campaign>
     <id>1200</id>
     <name>Notorious Reputation</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>21</location_id>
     <x>100</x>
     <y>305</y>
@@ -5279,8 +5279,8 @@
   <campaign>
     <id>1201</id>
     <name>Bridge Builder</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1200" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1200" level="1"/> -->
     <battleground_id>2061</battleground_id>
     <location_id>21</location_id>
     <x>280</x>
@@ -5311,8 +5311,8 @@
     <name>A Brighter Future</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1200" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1200" level="1"/> -->
     <battleground_id>2062</battleground_id>
     <location_id>21</location_id>
     <show_level>1</show_level>
@@ -5374,8 +5374,8 @@
   <campaign>
     <id>1205</id>
     <name>Old Alliances Die Hard</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1201" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1201" level="1"/> -->
     <battleground_id>2063</battleground_id>
     <location_id>21</location_id>
     <x>420</x>
@@ -5403,8 +5403,8 @@
   <campaign>
     <id>1206</id>
     <name>Goblins' Future</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1205" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1205" level="1"/> -->
     <battleground_id>2064</battleground_id>
     <location_id>21</location_id>
     <x>810</x>
@@ -5433,8 +5433,8 @@
   <campaign>
     <id>1207</id>
     <name>Return to Beetleton</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>22</location_id>
     <x>265</x>
     <y>210</y>
@@ -5461,8 +5461,8 @@
   <campaign>
     <id>1208</id>
     <name>The Sage's Path</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1207" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1207" level="1"/> -->
     <battleground_id>2065</battleground_id>
     <location_id>22</location_id>
     <x>475</x>
@@ -5493,8 +5493,8 @@
     <name>Memories Best Left Forgotten</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1207" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1207" level="1"/> -->
     <battleground_id>2066</battleground_id>
     <location_id>22</location_id>
     <show_level>1</show_level>
@@ -5523,8 +5523,8 @@
   <campaign>
     <id>1210</id>
     <name>Priority Differences</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1208" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1208" level="1"/> -->
     <battleground_id>2069</battleground_id>
     <location_id>22</location_id>
     <x>625</x>
@@ -5552,8 +5552,8 @@
   <campaign>
     <id>1211</id>
     <name>A Dream's Rebirth</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1210" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1210" level="1"/> -->
     <battleground_id>2070</battleground_id>
     <location_id>22</location_id>
     <x>780</x>
@@ -5582,8 +5582,8 @@
   <campaign>
     <id>1212</id>
     <name>Welcome to the Salt Wastes</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>23</location_id>
     <x>205</x>
     <y>245</y>
@@ -5610,8 +5610,8 @@
   <campaign>
     <id>1213</id>
     <name>Temple of Origin</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1212" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1212" level="1" />
     <battleground_id>2071</battleground_id>
     <location_id>23</location_id>
     <x>465</x>
@@ -5642,8 +5642,8 @@
     <name>Three Valiant Hearts</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1212" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1212" level="1" />
     <battleground_id>2072</battleground_id>
     <location_id>23</location_id>
     <show_level>1</show_level>
@@ -5672,8 +5672,8 @@
   <campaign>
     <id>1215</id>
     <name>Three-Pronged Attack</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1213" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1213" level="1" />
     <battleground_id>2073</battleground_id>
     <location_id>23</location_id>
     <x>615</x>
@@ -5701,8 +5701,8 @@
   <campaign>
     <id>1216</id>
     <name>Door of Reckoning</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1215" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1215" level="1" />
     <battleground_id>2074</battleground_id>
     <location_id>23</location_id>
     <x>795</x>
@@ -5731,8 +5731,8 @@
   <campaign>
     <id>1217</id>
     <name>Return to the Abyss</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>24</location_id>
     <x>205</x>
     <y>475</y>
@@ -5766,8 +5766,8 @@
   <campaign>
     <id>1218</id>
     <name>The Forgotten Hero</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1217" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1217" level="1" />
     <battleground_id>2075</battleground_id>
     <location_id>24</location_id>
     <x>285</x>
@@ -5805,8 +5805,8 @@
     <name>Releasing the Elements</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1217" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1217" level="1" />
     <battleground_id>2076</battleground_id>
     <location_id>24</location_id>
     <show_level>1</show_level>
@@ -5840,8 +5840,8 @@
   <campaign>
     <id>1220</id>
     <name>Hero's Goal</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1218" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1218" level="1" />
     <battleground_id>2077</battleground_id>
     <location_id>24</location_id>
     <x>700</x>
@@ -5876,8 +5876,8 @@
   <campaign>
     <id>1221</id>
     <name>The End of an Era</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1220" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1220" level="1" />
     <battleground_id>2078</battleground_id>
     <location_id>24</location_id>
     <x>850</x>
@@ -5913,8 +5913,8 @@
   <campaign>
     <id>1222</id>
     <name>Return to Seastone Citadel</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>25</location_id>
     <x>170</x>
     <y>280</y>
@@ -5948,8 +5948,8 @@
   <campaign>
     <id>1223</id>
     <name>Seastone Staff's Fate</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1222" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1222" level="1" />
     <battleground_id>2079</battleground_id>
     <location_id>25</location_id>
     <x>425</x>
@@ -5987,8 +5987,8 @@
     <name>Solaron's Chosen</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1222" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1222" level="1" />
     <battleground_id>2080</battleground_id>
     <location_id>25</location_id>
     <show_level>1</show_level>
@@ -6036,8 +6036,8 @@
   <campaign>
     <id>1226</id>
     <name>False Ideals</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1223" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1223" level="1" />
     <battleground_id>2081</battleground_id>
     <location_id>25</location_id>
     <x>780</x>
@@ -6072,8 +6072,8 @@
   <campaign>
     <id>1227</id>
     <name>Descent of Madness</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1226" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1226" level="1" />
     <battleground_id>2082</battleground_id>
     <location_id>25</location_id>
     <x>720</x>
@@ -8708,8 +8708,8 @@
     <id>1309</id>
     <name>I Hate Portals</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>24</location_id>
     <x>680</x>
@@ -8745,8 +8745,8 @@
     <id>1310</id>
     <name>Elemental Enemies</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1309" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1309" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>24</location_id>
     <x>320</x>
@@ -8783,8 +8783,8 @@
     <id>1311</id>
     <name>Shipwreck</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>25</location_id>
     <x>270</x>
@@ -8820,8 +8820,8 @@
     <id>1312</id>
     <name>One Shell of a Place</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1311" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1311" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>25</location_id>
     <x>550</x>
@@ -9176,8 +9176,8 @@
     <id>1322</id>
     <name>Search Mission</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>21</location_id>
     <x>815</x>
@@ -9213,8 +9213,8 @@
     <id>1323</id>
     <name>A Helping Hand</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1322" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1322" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>21</location_id>
     <x>510</x>
@@ -9420,8 +9420,8 @@
     <id>1329</id>
     <name>Tracking a Trickster</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>23</location_id>
     <x>350</x>
@@ -9457,8 +9457,8 @@
     <id>1330</id>
     <name>The Void Channeler</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1329" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1329" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>23</location_id>
     <x>450</x>
@@ -9902,8 +9902,8 @@
     <id>1343</id>
     <name>In Search of the Lost Tribe</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>23</location_id>
     <x>569</x>
@@ -9939,8 +9939,8 @@
     <id>1344</id>
     <name>After the Storm, Comes the Calm?</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1343" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1343" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>23</location_id>
     <x>615</x>
@@ -10052,8 +10052,8 @@
     <id>1347</id>
     <name>Into the Chaos</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>25</location_id>
     <x>900</x>
@@ -10089,8 +10089,8 @@
     <id>1348</id>
     <name>Crazy Chainsaws</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1347" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1347" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>25</location_id>
     <x>880</x>
@@ -10208,8 +10208,8 @@
     <id>1351</id>
     <name>A Flight in the Dark</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1689872400</locked_start_time>
     <!--  Thursday, July 20, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10251,8 +10251,8 @@
     <id>1352</id>
     <name>The Healer's Prison</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1351" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1351" level="1"/> -->
     <locked_start_time>1691082000</locked_start_time>
     <!--  Thursday, August 3, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10821,8 +10821,8 @@
     <id>1365</id>
     <name>The Memory Palace</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1706806800</locked_start_time>
     <!-- Thursday, 01 February 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10863,8 +10863,8 @@
     <id>1366</id>
     <name>Power, Growth, Order</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1365" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1365" level="1"/> -->
     <locked_start_time>1708016400</locked_start_time>
     <!-- Thursday, 15 February 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -11339,7 +11339,7 @@
       <item level="3" id="18" number="1000" />
       <!-- Legendary Pack Fragments -->
       <item level="4" id="104087" number="50" />
-      <!-- Placeholder Champion -->
+      <!-- Mo-Bling -->
       <card level="5" id="2007" />
       <!-- Platinum Golem -->
       <card level="6" id="2007" />
@@ -11379,7 +11379,7 @@
       <item level="3" id="18" number="1000" />
       <!-- Legendary Pack Fragments -->
       <item level="4" id="104087" number="50" />
-      <!-- Placeholder Champion -->
+      <!-- Mo-Bling -->
       <card level="5" id="2007" />
       <!-- Platinum Golem -->
       <card level="6" id="2007" />
@@ -11465,6 +11465,87 @@
       <!-- Pyra -->
       <card level="6" id="2257" />
       <!-- Pyra -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <!-- Event 120: ComDev Goblin - Red Feather Valley -->
+  <campaign>
+    <id>1381</id>
+    <name>Xerkahn's Air Assault</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1726160400</locked_start_time>
+    <!-- Thursday, 12 September 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>270</x>
+    <y>350</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7302</mission_id>
+      <mission_id>7303</mission_id>
+      <mission_id>7304</mission_id>
+      <mission_id>7305</mission_id>
+      <mission_id>7306</mission_id>
+      <mission_id>7307</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28240" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104089" number="50" />
+      <!-- Oiram -->
+      <card level="5" id="2214" />
+      <!-- Bloody Redcap -->
+      <card level="6" id="2214" />
+      <!-- Bloody Redcap -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1382</id>
+    <name>Flask of Evidence</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1381" level="1" />
+    <locked_start_time>1727370000</locked_start_time>
+    <!-- Thursday, 26 September 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>150</x>
+    <y>300</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7308</mission_id>
+      <mission_id>7309</mission_id>
+      <mission_id>7310</mission_id>
+      <mission_id>7311</mission_id>
+      <mission_id>7312</mission_id>
+      <mission_id>7313</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28240" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104089" number="50" />
+      <!-- Oiram -->
+      <card level="5" id="2214" />
+      <!-- Bloody Redcap -->
+      <card level="6" id="2214" />
+      <!-- Bloody Redcap -->
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>
@@ -12907,5 +12988,57 @@
       <mission_id>2081</mission_id>
       <mission_id>2082</mission_id>
     </missions>
+  </campaign>
+  <!-- Special Event 2024 -->
+  <campaign>
+    <id>5014</id>
+    <name>Spellstone's 9th Anniversary</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <location_id>36</location_id>
+    <x>100</x>
+    <y>550</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>2083</mission_id>
+      <mission_id>2084</mission_id>
+      <mission_id>2085</mission_id>
+      <mission_id>2086</mission_id>
+      <mission_id>2087</mission_id>
+      <mission_id>2088</mission_id>
+      <mission_id>2089</mission_id>
+      <mission_id>2090</mission_id>
+      <mission_id>2091</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="104500" number="50" />
+      <!-- Sneggle, the Insatiable -->
+      <item level="2" id="104501" number="50" />
+      <!-- Rasako, Ninja of the Swamp -->
+      <item level="3" id="104502" number="50" />
+      <!-- Mawu, the Moon Spirit -->
+      <item level="4" id="104503" number="50" />
+      <!-- Acheron, the Retaliator -->
+      <item level="5" id="104504" number="50" />
+      <!-- Maglheqet, God of Warriors -->
+      <item level="6" id="104505" number="50" />
+      <!-- The Last Dodo -->
+      <item level="7" id="531" number="1" />
+      <!-- Special Event Mystery Package -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="28170" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28180" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28190" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28200" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28220" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28230" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28240" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28250" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28260" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28270" drop_per_energy="0.001" min="5" max="5" />
+    <find_item id="28290" drop_per_energy="0.001" min="5" max="5" />
   </campaign>
 </root>

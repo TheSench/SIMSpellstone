@@ -11,7 +11,7 @@
     <picture>Avian_Stag_B</picture>
     <asset_bundle>114</asset_bundle>
     <item_name>Noctrus Stone</item_name>
-    <item_desc>Collect Noctrus Stones to upgrade the Legendary Noctrus Flintclaw card!</item_desc>
+    <item_desc>Collect Noctrus Stones to upgrade Noctrus Flintclaw!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -105,7 +105,7 @@
     <picture>Fire_Fox_Ghost_B</picture>
     <asset_bundle>118</asset_bundle>
     <item_name>Foxfire Stone</item_name>
-    <item_desc>Collect Foxfire Stones to upgrade the Legendary Foxfire card!</item_desc>
+    <item_desc>Collect Foxfire Stones to upgrade Foxfire!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -181,14 +181,14 @@
   <unit>
     <id>4002</id>
     <card_type>2</card_type>
-    <name>Razi the Fallen Light</name>
+    <name>Razi, the Fallen Light</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Crimson_Winged_Angel_B</picture>
     <asset_bundle>120</asset_bundle>
     <item_name>Razi Stone</item_name>
-    <item_desc>Collect Razi Stones to upgrade the Legendary Razi the Fallen Light card!</item_desc>
+    <item_desc>Collect Razi Stones to upgrade Razi, the Fallen Light!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -277,7 +277,7 @@
     <picture>mythicWyld_A</picture>
     <asset_bundle>57</asset_bundle>
     <item_name>Lev Stone</item_name>
-    <item_desc>Collect Lev Stones to upgrade the Mythic Lev, Celebrated Hero card!</item_desc>
+    <item_desc>Collect Lev Stones to upgrade Lev, Celebrated Hero!</item_desc>
     <item_icon>championStone_mythic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>19</item_overflow_item_id>
@@ -372,7 +372,7 @@
     <picture>Reborn_Dragon_A</picture>
     <asset_bundle>122</asset_bundle>
     <item_name>Lok'thor Stone</item_name>
-    <item_desc>Collect Lok'thor Stones to upgrade the Legendary Lok'thor, the Reborn card!</item_desc>
+    <item_desc>Collect Lok'thor Stones to upgrade Lok'thor, the Reborn!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -460,81 +460,90 @@
     <picture>Spellstone_Hammer_Goblin_B</picture>
     <asset_bundle>125</asset_bundle>
     <item_name>Boldur Stone</item_name>
-    <item_desc>Collect Boldur Stones to upgrade the Legendary Boldur, Bridge Builder card!</item_desc>
+    <item_desc>Collect Boldur Stones to upgrade Boldur, Bridge Builder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>11</sub_type>
-    <attack>9</attack>
+    <attack>11</attack>
     <health>31</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="protect" all="1" x="2" />
-    <skill id="daze" x="7" />
-    <skill id="berserk" x="4" />
+    <skill id="protect" all="1" x="3" />
+    <skill id="daze" x="11" />
+    <skill id="berserk" x="5" />
     <upgrade>
       <level>2</level>
-      <attack>10</attack>
-      <skill id="protect" all="1" x="2" />
-      <skill id="daze" x="8" />
+      <attack>12</attack>
+      <health>31</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="12" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <attack>12</attack>
       <health>32</health>
-      <skill id="protect" all="1" x="3" />
-      <skill id="daze" x="8" />
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="13" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>11</attack>
-      <skill id="protect" all="1" x="3" />
-      <skill id="daze" x="9" />
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="14" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>12</attack>
-      <skill id="protect" all="1" x="3" />
-      <skill id="daze" x="10" />
+      <attack>14</attack>
+      <health>32</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="daze" x="14" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>14</attack>
       <health>33</health>
-      <skill id="protect" all="1" x="4" />
-      <skill id="daze" x="10" />
+      <skill id="protect" all="1" x="5" />
+      <skill id="daze" x="14" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <attack>13</attack>
-      <skill id="protect" all="1" x="4" />
-      <skill id="daze" x="11" />
+      <attack>15</attack>
+      <health>33</health>
+      <skill id="protect" all="1" x="5" />
+      <skill id="daze" x="15" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>8</level>
+      <attack>15</attack>
       <health>34</health>
       <skill id="protect" all="1" x="5" />
-      <skill id="daze" x="11" />
+      <skill id="daze" x="15" />
       <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>14</attack>
-      <skill id="protect" all="1" x="5" />
-      <skill id="daze" x="12" />
+      <attack>15</attack>
+      <health>35</health>
+      <skill id="protect" all="1" x="6" />
+      <skill id="daze" x="15" />
       <skill id="berserk" x="7" />
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>16</attack>
       <health>35</health>
       <skill id="protect" all="1" x="6" />
-      <skill id="daze" x="12" />
-      <skill id="berserk" x="7" />
+      <skill id="daze" x="16" />
+      <skill id="berserk" x="8" />
     </upgrade>
   </unit>
   <unit>
@@ -547,7 +556,7 @@
     <picture>Train_Mecha_B</picture>
     <asset_bundle>127</asset_bundle>
     <item_name>LOCO-5000 Stone</item_name>
-    <item_desc>Collect LOCO-5000 Stones to upgrade the Legendary LOCO-5000 card!</item_desc>
+    <item_desc>Collect LOCO-5000 Stones to upgrade LOCO-5000!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -631,7 +640,7 @@
     <picture>Sky_Sea_Monster_A</picture>
     <asset_bundle>129</asset_bundle>
     <item_name>Typhoeus Stone</item_name>
-    <item_desc>Collect Typhoeus Stones to upgrade the Legendary Typhoeus, Storm Father card!</item_desc>
+    <item_desc>Collect Typhoeus Stones to upgrade Typhoeus, Storm Father!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -727,7 +736,7 @@
     <picture>Sun_Warrior_Insect_A</picture>
     <asset_bundle>132</asset_bundle>
     <item_name>Rhynio Stone</item_name>
-    <item_desc>Collect Rhynio Stones to upgrade the Legendary Rhynio Sun Warrior card!</item_desc>
+    <item_desc>Collect Rhynio Stones to upgrade Rhynio Sun Warrior!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -809,7 +818,7 @@
     <picture>Dream_Catcher_Angel_Frog_A</picture>
     <asset_bundle>135</asset_bundle>
     <item_name>Kachina Stone</item_name>
-    <item_desc>Collect Kachina Stones to upgrade the Legendary Kachina, the Dreamer card!</item_desc>
+    <item_desc>Collect Kachina Stones to upgrade Kachina, the Dreamer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -892,7 +901,7 @@
     <picture>Corrupted_Monk_Avian_A</picture>
     <asset_bundle>137</asset_bundle>
     <item_name>Columba Stone</item_name>
-    <item_desc>Collect Firewing Stones to upgrade the Legendary Columba, Firewing Monk card!</item_desc>
+    <item_desc>Collect Firewing Stones to upgrade Columba, Firewing Monk!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -977,7 +986,7 @@
     <picture>Elemental_Emerald_Wolf_A</picture>
     <asset_bundle>141</asset_bundle>
     <item_name>Emerald Stone</item_name>
-    <item_desc>Collect Emerald Stones to upgrade the Legendary Emerald Amarok card!</item_desc>
+    <item_desc>Collect Emerald Stones to upgrade Emerald Amarok!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1052,14 +1061,14 @@
   <unit>
     <id>4012</id>
     <card_type>2</card_type>
-    <name>Cordelia the Twinblade</name>
+    <name>Cordelia, the Twinblade</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Vampire_Blood_Knight_A</picture>
     <asset_bundle>143</asset_bundle>
-    <item_name>Twinblade Stone</item_name>
-    <item_desc>Collect Emerald Stones to upgrade the Legendary Cordelia the Twinblade card!</item_desc>
+    <item_name>Cordelia Stone</item_name>
+    <item_desc>Collect Cordelia Stones to upgrade Cordelia, the Twinblade!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1142,7 +1151,7 @@
     <picture>Dragon_Sage_Ancient_A</picture>
     <asset_bundle>145</asset_bundle>
     <item_name>Teroxis Stone</item_name>
-    <item_desc>Collect Teroxis Stones to upgrade the Legendary Teroxis, King of Stones card!</item_desc>
+    <item_desc>Collect Teroxis Stones to upgrade Teroxis, King of Stones!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1229,8 +1238,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Mecha_Mecha_Bear_A</picture>
     <asset_bundle>147</asset_bundle>
-    <item_name>Ironpaw Stone</item_name>
-    <item_desc>Collect Ironpaw Stones to upgrade the Legendary Ralgan Ironpaw card!</item_desc>
+    <item_name>Ralgan Stone</item_name>
+    <item_desc>Collect Ralgan Stones to upgrade Ralgan Ironpaw!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1318,7 +1327,7 @@
     <picture>Angel_Demon_Samurai_A</picture>
     <asset_bundle>149</asset_bundle>
     <item_name>Batara Stone</item_name>
-    <item_desc>Collect Batara Stones to upgrade the Legendary Vindicator Batara card!</item_desc>
+    <item_desc>Collect Batara Stones to upgrade Vindicator Batara!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1398,77 +1407,78 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Goblin_Dark_Knight_B</picture>
     <asset_bundle>151</asset_bundle>
-    <item_name>Darkblade Stone</item_name>
-    <item_desc>Collect Darkblade Stones to upgrade the Legendary Daknak Darkblade card!</item_desc>
+    <item_name>Daknak Stone</item_name>
+    <item_desc>Collect Daknak Stones to upgrade Daknak Darkblade!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>11</sub_type>
-    <attack>5</attack>
+    <attack>14</attack>
     <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="valor" x="7" />
-    <skill id="heal" y="11" x="8" />
+    <skill id="heal" x="8" y="11" />
     <skill id="frost" x="2" />
     <upgrade>
       <level>2</level>
       <skill id="valor" x="7" />
-      <skill id="heal" y="11" x="8" />
+      <skill id="heal" x="8" y="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>21</health>
       <skill id="valor" x="8" />
-      <skill id="heal" y="11" x="9" />
+      <skill id="heal" x="9" y="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="valor" x="8" />
-      <skill id="heal" y="11" x="10" />
+      <skill id="heal" x="10" y="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>22</health>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="10" />
+      <skill id="heal" x="10" y="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="11" />
+      <skill id="heal" x="11" y="11" />
       <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>23</health>
       <skill id="valor" x="9" />
-      <skill id="heal" y="11" x="11" />
+      <skill id="heal" x="11" y="11" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <skill id="valor" x="10" />
-      <skill id="heal" y="11" x="11" />
+      <skill id="heal" x="11" y="11" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <health>24</health>
       <skill id="valor" x="10" />
-      <skill id="heal" y="11" x="12" />
+      <skill id="heal" x="12" y="11" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>25</health>
+      <attack>14</attack>
+      <health>26</health>
       <skill id="valor" x="11" />
-      <skill id="heal" y="11" x="12" />
+      <skill id="heal" x="13" y="11" />
       <skill id="frost" x="4" />
     </upgrade>
   </unit>
@@ -1482,7 +1492,7 @@
     <picture>Seafolk_Merman_King_Proteus_A</picture>
     <asset_bundle>154</asset_bundle>
     <item_name>Proteus Stone</item_name>
-    <item_desc>Collect Proteus Stones to upgrade the Legendary King Proteus card!</item_desc>
+    <item_desc>Collect Proteus Stones to upgrade King Proteus!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1577,8 +1587,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Elemental_Air_Monk_Sage_A</picture>
     <asset_bundle>157</asset_bundle>
-    <item_name>Aeromaster Stone</item_name>
-    <item_desc>Collect Aeromaster Stones to upgrade the Legendary Kensho, the Aeromaster card!</item_desc>
+    <item_name>Kensho Stone</item_name>
+    <item_desc>Collect Kensho Stones to upgrade Kensho, the Aeromaster!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1662,8 +1672,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Dark_Sword_A</picture>
     <asset_bundle>159</asset_bundle>
-    <item_name>Ebonclaw Stone</item_name>
-    <item_desc>Collect Ebonclaw Stones to upgrade the Legendary Formos Ebonclaw card!</item_desc>
+    <item_name>Formos Stone</item_name>
+    <item_desc>Collect Formos Stones to upgrade Formos Ebonclaw!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1746,8 +1756,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Lightning_Ghost_A</picture>
     <asset_bundle>162</asset_bundle>
-    <item_name>Death Stone</item_name>
-    <item_desc>Collect Death Stones to upgrade the Legendary Sound of Death card!</item_desc>
+    <item_name>Sound of Death Stone</item_name>
+    <item_desc>Collect Sound of Death Stones to upgrade Sound of Death!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1841,7 +1851,7 @@
     <picture>Frog_Poison_Ranger_A</picture>
     <asset_bundle>164</asset_bundle>
     <item_name>Plyn Stone</item_name>
-    <item_desc>Collect Plyn Stones to upgrade the Legendary Plyn Poisontrek card!</item_desc>
+    <item_desc>Collect Plyn Stones to upgrade Plyn Poisontrek!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1922,7 +1932,7 @@
     <picture>Void_Dragon_A</picture>
     <asset_bundle>166</asset_bundle>
     <item_name>Bluefire Stone</item_name>
-    <item_desc>Collect Bluefire Stones to upgrade the Legendary Bluefire, Void Incarnate card!</item_desc>
+    <item_desc>Collect Bluefire Stones to upgrade Bluefire, Void Incarnate!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2010,7 +2020,7 @@
     <picture>Avian_Knight_Rider_Champ_A</picture>
     <asset_bundle>168</asset_bundle>
     <item_name>Paloma Stone</item_name>
-    <item_desc>Collect Paloma Stones to upgrade the Legendary Paloma, Spear Knight card!</item_desc>
+    <item_desc>Collect Paloma Stones to upgrade Paloma, Spear Knight!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2098,7 +2108,7 @@
     <picture>Mecha_Black_Fire_Armor_A</picture>
     <asset_bundle>172</asset_bundle>
     <item_name>Coalheart Stone</item_name>
-    <item_desc>Collect Coalheart Stones to upgrade the Legendary The Coalheart Widow card!</item_desc>
+    <item_desc>Collect Coalheart Stones to upgrade The Coalheart Widow!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2185,8 +2195,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Elemental_Swamp_Monster_A</picture>
     <asset_bundle>174</asset_bundle>
-    <item_name>Quag Stone</item_name>
-    <item_desc>Collect Quag Stones to upgrade the Legendary Quageye card!</item_desc>
+    <item_name>Quageye Stone</item_name>
+    <item_desc>Collect Quageye Stones to upgrade Quageye, the Masher!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2266,7 +2276,7 @@
     <picture>Goblin_Skeletal_Goblin_A</picture>
     <asset_bundle>176</asset_bundle>
     <item_name>Spikes Stone</item_name>
-    <item_desc>Collect Spikes Stones to upgrade the Legendary Spikes card!</item_desc>
+    <item_desc>Collect Spikes Stones to upgrade Spikes, the Warmonger!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2352,7 +2362,7 @@
     <picture>Undead_Demon_Barrier_Invader_A</picture>
     <asset_bundle>178</asset_bundle>
     <item_name>Umbu Stone</item_name>
-    <item_desc>Collect Umbu Stones to upgrade the Legendary Umbu card!</item_desc>
+    <item_desc>Collect Umbu Stones to upgrade Umbu, Life Releaser!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2449,7 +2459,7 @@
     <picture>Seafolk_Corsair_Fish</picture>
     <asset_bundle>180</asset_bundle>
     <item_name>Eichiro Stone</item_name>
-    <item_desc>Collect Eichiro Stones to upgrade the Legendary Eichiro card!</item_desc>
+    <item_desc>Collect Eichiro Stones to upgrade Pirate Hunter Eichiro!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2536,7 +2546,7 @@
     <picture>Angel_Jackal_God_A</picture>
     <asset_bundle>182</asset_bundle>
     <item_name>Cyno Stone</item_name>
-    <item_desc>Collect Cyno Stones to upgrade the Legendary Arbiter of Souls card!</item_desc>
+    <item_desc>Collect Cyno Stones to upgrade Cyno, Arbiter of Souls!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2623,8 +2633,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Mothman_A</picture>
     <asset_bundle>185</asset_bundle>
-    <item_name>Cryptid Stone</item_name>
-    <item_desc>Collect Cryptid Stones to upgrade the Legendary Mothmo, the Cryptid card!</item_desc>
+    <item_name>Mothmo Stone</item_name>
+    <item_desc>Collect Mothmo Stones to upgrade Mothmo, the Cryptid!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2709,7 +2719,7 @@
     <picture>Dragon_Sparky_A</picture>
     <asset_bundle>187</asset_bundle>
     <item_name>Sparky Stone</item_name>
-    <item_desc>Collect Sparky Stones to upgrade the Legendary Sparky, the Royal Pet card!</item_desc>
+    <item_desc>Collect Sparky Stones to upgrade Sparky, the Royal Pet!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2797,7 +2807,7 @@
     <picture>Frog_Puppeteer_A</picture>
     <asset_bundle>190</asset_bundle>
     <item_name>Froggit Stone</item_name>
-    <item_desc>Collect Froggit Stones to upgrade the Legendary Froggit, the Puppeteer card!</item_desc>
+    <item_desc>Collect Froggit Stones to upgrade Froggit, the Puppeteer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2885,7 +2895,7 @@
     <picture>Avian_Duck_Captain_A</picture>
     <asset_bundle>192</asset_bundle>
     <item_name>Balt Stone</item_name>
-    <item_desc>Collect Balt Stones to upgrade the Legendary Balt, Raptor's Captain card!</item_desc>
+    <item_desc>Collect Balt Stones to upgrade Balt, Raptor's Captain!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2964,7 +2974,7 @@
     <picture>Elemental_Nymph_Monk_A</picture>
     <asset_bundle>194</asset_bundle>
     <item_name>Maki Stone</item_name>
-    <item_desc>Collect Maki Stones to upgrade the Legendary Maki, the Blossom Fist card!</item_desc>
+    <item_desc>Collect Maki Stones to upgrade Maki, the Blossom Fist!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3043,7 +3053,7 @@
     <picture>Frog_Undead_Vampire_Toad_A</picture>
     <asset_bundle>198</asset_bundle>
     <item_name>Vasile Stone</item_name>
-    <item_desc>Collect Vasile Stones to upgrade the Legendary Vasile, the Night Duke card!</item_desc>
+    <item_desc>Collect Vasile Stones to upgrade Vasile, the Night Duke!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3132,7 +3142,7 @@
     <picture>Mecha_Phantom_Android_A</picture>
     <asset_bundle>200</asset_bundle>
     <item_name>Leroux Stone</item_name>
-    <item_desc>Collect Leroux Stones to upgrade the Legendary Leroux, the Macabre card!</item_desc>
+    <item_desc>Collect Leroux Stones to upgrade Leroux, the Macabre!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3209,7 +3219,7 @@
     <picture>Goblin_Mecha_Eye_Collector_B</picture>
     <asset_bundle>202</asset_bundle>
     <item_name>Nuvis Stone</item_name>
-    <item_desc>Collect Nuvis Stones to upgrade the Legendary Nuvis, the Eye Collector card!</item_desc>
+    <item_desc>Collect Nuvis Stones to upgrade Nuvis, the Eye Collector!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3293,7 +3303,7 @@
     <picture>Dragon_Dark_Tyrant_A</picture>
     <asset_bundle>204</asset_bundle>
     <item_name>Kalyt Stone</item_name>
-    <item_desc>Collect Kalyt Stones to upgrade the Legendary Kalyt, the Last Word card!</item_desc>
+    <item_desc>Collect Kalyt Stones to upgrade Kalyt, the Last Word!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3375,7 +3385,7 @@
     <picture>Seafolk_Ocean_Queen_A</picture>
     <asset_bundle>207</asset_bundle>
     <item_name>Lairel Stone</item_name>
-    <item_desc>Collect Lairel Stones to upgrade the Legendary Royal Fighter Lairel card!</item_desc>
+    <item_desc>Collect Lairel Stones to upgrade Royal Fighter Lairel!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3471,7 +3481,7 @@
     <picture>Avian_Harpy_Archer_A</picture>
     <asset_bundle>209</asset_bundle>
     <item_name>Iphelia Stone</item_name>
-    <item_desc>Collect Iphelia Stones to upgrade the Legendary Iphelia, Voice of Pain card!</item_desc>
+    <item_desc>Collect Iphelia Stones to upgrade Iphelia, Voice of Pain!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3556,7 +3566,7 @@
     <picture>Angel_Queen_Leyla_A</picture>
     <asset_bundle>211</asset_bundle>
     <item_name>Leyla Stone</item_name>
-    <item_desc>Collect Leyla Stones to upgrade the Legendary Leyla, Queen of Skyhaven card!</item_desc>
+    <item_desc>Collect Leyla Stones to upgrade Leyla, Queen of Skyhaven!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3645,7 +3655,7 @@
     <picture>Frog_Invisible_Ranger_A</picture>
     <asset_bundle>213</asset_bundle>
     <item_name>Omy Stone</item_name>
-    <item_desc>Collect Omy Stones to upgrade the Legendary Hidden Omy card!</item_desc>
+    <item_desc>Collect Omy Stones to upgrade Hidden Omy!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3727,7 +3737,7 @@
     <picture>Elemental_Skysea_Titan_A</picture>
     <asset_bundle>215</asset_bundle>
     <item_name>Allfather Stone</item_name>
-    <item_desc>Collect Allfather Stones to upgrade the Legendary Allfather, the Shaper card!</item_desc>
+    <item_desc>Collect Allfather Stones to upgrade Allfather, the Shaper!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3811,7 +3821,7 @@
     <picture>Mecha_Viracocha_A</picture>
     <asset_bundle>218</asset_bundle>
     <item_name>Viracocha Stone</item_name>
-    <item_desc>Collect Viracocha Stones to upgrade the Legendary Viracocha!</item_desc>
+    <item_desc>Collect Viracocha Stones to upgrade Viracocha!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3898,7 +3908,7 @@
     <picture>Frog_Dragon_Dart_Drake_A</picture>
     <asset_bundle>220</asset_bundle>
     <item_name>Korg Stone</item_name>
-    <item_desc>Collect Korg Stones to upgrade the Legendary Korg, the Last Touch!</item_desc>
+    <item_desc>Collect Korg Stones to upgrade Korg, the Last Touch!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3983,7 +3993,7 @@
     <picture>Insect_Agatha_A</picture>
     <asset_bundle>222</asset_bundle>
     <item_name>Agatha Stone</item_name>
-    <item_desc>Collect Agatha Stones to upgrade the Legendary Agatha, Myth Warden!</item_desc>
+    <item_desc>Collect Agatha Stones to upgrade Agatha, Myth Warden!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4067,7 +4077,7 @@
     <picture>Goblin_Goatapult_A</picture>
     <asset_bundle>224</asset_bundle>
     <item_name>Ark Stone</item_name>
-    <item_desc>Collect Ark Stones to upgrade the Legendary Ark and the Goatapult!</item_desc>
+    <item_desc>Collect Ark Stones to upgrade Ark and the Goatapult!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4096,9 +4106,6 @@
       <level>4</level>
       <attack>12</attack>
       <health>31</health>
-      <skill id="corrosive" x="8" />
-      <skill id="strike" x="11" />
-      <skill id="poisonstrike" x="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -4138,6 +4145,8 @@
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>14</attack>
+      <health>35</health>
       <skill id="corrosive" x="10" />
       <skill id="strike" x="14" />
       <skill id="poisonstrike" x="10" />
@@ -4153,7 +4162,7 @@
     <picture>Avian_Mecha_Bomber_Cukoo_A</picture>
     <asset_bundle>226</asset_bundle>
     <item_name>Clockoo Stone</item_name>
-    <item_desc>Collect Clockoo Stones to upgrade the Legendary Sgt. Clockoo!</item_desc>
+    <item_desc>Collect Clockoo Stones to upgrade Sgt. Clockoo!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4238,7 +4247,7 @@
     <picture>Undead_Seafolk_Squid_Ghost_A</picture>
     <asset_bundle>228</asset_bundle>
     <item_name>Morty Stone</item_name>
-    <item_desc>Collect Morty Stones to upgrade the Legendary Morty Ahab, Seaturned!</item_desc>
+    <item_desc>Collect Morty Stones to upgrade Morty Ahab, Seaturned!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4326,7 +4335,7 @@
     <picture>Seafolk_Sea_Unicorn_A</picture>
     <asset_bundle>230</asset_bundle>
     <item_name>Illu Stone</item_name>
-    <item_desc>Collect Illu Stones to upgrade the Legendary Illu, Mirage of the Sea!</item_desc>
+    <item_desc>Collect Illu Stones to upgrade Illu, Mirage of the Sea!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4408,7 +4417,7 @@
     <picture>Angel_Freya_Reborn_A</picture>
     <asset_bundle>232</asset_bundle>
     <item_name>Freya Stone</item_name>
-    <item_desc>Collect Freya Stones to upgrade the Legendary Freya, the Landbinder!</item_desc>
+    <item_desc>Collect Freya Stones to upgrade Freya, the Landbinder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4488,8 +4497,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Mecha_Fireshard_Ultimate_A</picture>
     <asset_bundle>234</asset_bundle>
-    <item_name>Shado Stone</item_name>
-    <item_desc>Collect Shado Stones to upgrade the Legendary Shadomeka!</item_desc>
+    <item_name>Shadomeka Stone</item_name>
+    <item_desc>Collect Shadomeka Stones to upgrade Shadomeka!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4575,7 +4584,7 @@
     <picture>Frog_Cellia_A</picture>
     <asset_bundle>236</asset_bundle>
     <item_name>Cellia Stone</item_name>
-    <item_desc>Collect Cellia Stones to upgrade the Legendary Cellia, Heir of War!</item_desc>
+    <item_desc>Collect Cellia Stones to upgrade Cellia, Heir of War!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4661,80 +4670,90 @@
     <picture>Reks_Dragonslayer_A</picture>
     <asset_bundle>238</asset_bundle>
     <item_name>Reks Stone</item_name>
-    <item_desc>Collect Reks Stones to upgrade the Legendary Reks, the Dragonslayer!</item_desc>
+    <item_desc>Collect Reks Stones to upgrade Reks, the Dragonslayer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>2</type>
     <sub_type>11</sub_type>
-    <attack>10</attack>
-    <health>29</health>
+    <attack>13</attack>
+    <health>31</health>
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="rally" all="1" x="3" />
-    <skill id="legion" x="3" />
+    <skill id="legion" x="5" />
     <skill id="weaken" all="1" x="3" />
     <upgrade>
       <level>2</level>
-      <health>30</health>
-      <skill id="rally" all="1" x="3" />
-      <skill id="legion" x="4" />
-      <skill id="weaken" all="1" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
+      <attack>13</attack>
       <health>31</health>
-      <skill id="rally" all="1" x="4" />
-      <skill id="legion" x="4" />
-      <skill id="weaken" all="1" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>32</health>
-      <skill id="rally" all="1" x="4" />
-      <skill id="legion" x="4" />
-      <skill id="weaken" all="1" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <attack>11</attack>
       <skill id="rally" all="1" x="4" />
       <skill id="legion" x="5" />
       <skill id="weaken" all="1" x="4" />
     </upgrade>
     <upgrade>
-      <level>6</level>
-      <attack>12</attack>
+      <level>3</level>
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="rally" all="1" x="5" />
+      <skill id="legion" x="5" />
+      <skill id="weaken" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
       <health>33</health>
-      <skill id="rally" all="1" x="4" />
+      <skill id="rally" all="1" x="5" />
       <skill id="legion" x="6" />
       <skill id="weaken" all="1" x="4" />
     </upgrade>
     <upgrade>
-      <level>7</level>
+      <level>5</level>
+      <attack>14</attack>
+      <health>33</health>
       <skill id="rally" all="1" x="5" />
       <skill id="legion" x="6" />
       <skill id="weaken" all="1" x="5" />
     </upgrade>
     <upgrade>
-      <level>8</level>
-      <attack>13</attack>
+      <level>6</level>
+      <attack>14</attack>
       <health>34</health>
       <skill id="rally" all="1" x="5" />
       <skill id="legion" x="7" />
       <skill id="weaken" all="1" x="5" />
     </upgrade>
     <upgrade>
-      <level>9</level>
-      <attack>14</attack>
-      <health>35</health>
+      <level>7</level>
+      <attack>15</attack>
+      <health>34</health>
+      <skill id="rally" all="1" x="6" />
+      <skill id="legion" x="7" />
+      <skill id="weaken" all="1" x="5" />
     </upgrade>
     <upgrade>
-      <level>10</level>
-      <health>36</health>
+      <level>8</level>
+      <attack>16</attack>
+      <health>34</health>
       <skill id="rally" all="1" x="6" />
       <skill id="legion" x="8" />
       <skill id="weaken" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>16</attack>
+      <health>35</health>
+      <skill id="rally" all="1" x="6" />
+      <skill id="legion" x="8" />
+      <skill id="weaken" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>17</attack>
+      <health>36</health>
+      <skill id="rally" all="1" x="6" />
+      <skill id="legion" x="9" />
+      <skill id="weaken" all="1" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -4747,7 +4766,7 @@
     <picture>Elemental_Dragon_Tribite_A</picture>
     <asset_bundle>240</asset_bundle>
     <item_name>Frostfire Stone</item_name>
-    <item_desc>Collect Frostfire Stones to upgrade the Legendary Frostfire, the Corrupted!</item_desc>
+    <item_desc>Collect Frostfire Stones to upgrade Frostfire, the Corrupted!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4840,7 +4859,7 @@
     <picture>Seafolk-Sea_Colossus</picture>
     <asset_bundle>242</asset_bundle>
     <item_name>Moklam Stone</item_name>
-    <item_desc>Collect Moklam Stones to upgrade the Legendary Moklam, the Sea Colossus!</item_desc>
+    <item_desc>Collect Moklam Stones to upgrade Moklam, the Sea Colossus!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4937,7 +4956,7 @@
     <picture>Dragon_Corrosaurus_A</picture>
     <asset_bundle>244</asset_bundle>
     <item_name>Predonyx Stone</item_name>
-    <item_desc>Collect Predonyx Stones to upgrade the Legendary Predonyx, Jungle King!</item_desc>
+    <item_desc>Collect Predonyx Stones to upgrade Predonyx, Jungle King!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -5276,7 +5295,7 @@
     <picture>Undead_Frog_Veric_Undying_A</picture>
     <asset_bundle>252</asset_bundle>
     <item_name>Veric Stone</item_name>
-    <item_desc>Collect Veric Stones to upgrade Veric!</item_desc>
+    <item_desc>Collect Veric Stones to upgrade Veric, the Undying!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -5710,8 +5729,8 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="7" />
-    <skill id="frost" x="3" />
-    <skill id="frost" x="3" />
+    <skill id="frost" x="4" />
+    <skill id="frost" x="4" />
     <upgrade>
       <level>2</level>
       <attack>12</attack>
@@ -5720,56 +5739,56 @@
     <upgrade>
       <level>3</level>
       <skill id="absorb" x="8" />
-      <skill id="frost" x="3" />
+      <skill id="frost" x="5" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>13</attack>
       <skill id="absorb" x="8" />
-      <skill id="frost" x="4" />
-      <skill id="frost" x="4" />
+      <skill id="frost" x="5" />
+      <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>34</health>
       <skill id="absorb" x="9" />
-      <skill id="frost" x="4" />
-      <skill id="frost" x="4" />
+      <skill id="frost" x="5" />
+      <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>14</attack>
       <skill id="absorb" x="9" />
+      <skill id="frost" x="6" />
       <skill id="frost" x="5" />
-      <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <skill id="absorb" x="10" />
-      <skill id="frost" x="5" />
-      <skill id="frost" x="5" />
+      <skill id="frost" x="6" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <health>35</health>
       <skill id="absorb" x="11" />
-      <skill id="frost" x="5" />
-      <skill id="frost" x="5" />
+      <skill id="frost" x="6" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>9</level>
       <skill id="absorb" x="12" />
+      <skill id="frost" x="7" />
       <skill id="frost" x="6" />
-      <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <attack>15</attack>
       <health>36</health>
       <skill id="absorb" x="12" />
-      <skill id="frost" x="6" />
-      <skill id="frost" x="6" />
+      <skill id="frost" x="7" />
+      <skill id="frost" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -6293,8 +6312,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Insect_Deadly_Mantis_A</picture>
     <asset_bundle>278</asset_bundle>
-    <item_name>Mantis Stone</item_name>
-    <item_desc>Collect Mantis Stones to upgrade Helvius, Spraying Mantis!</item_desc>
+    <item_name>Helvius Stone</item_name>
+    <item_desc>Collect Helvius Stones to upgrade Helvius, Spraying Mantis!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -7274,7 +7293,7 @@
     <asset_bundle>228</asset_bundle>
     <hidden_until_time>1716476400</hidden_until_time>
     <item_name>Milax Stone</item_name>
-    <item_desc>Collect Milax Stones to upgrade the Legendary Milax, Guardian of the Shade!</item_desc>
+    <item_desc>Collect Milax Stones to upgrade Milax, Guardian of the Shade!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -7709,20 +7728,118 @@
   <unit>
     <id>4089</id>
     <card_type>2</card_type>
+    <name>Oiram, the Clanker</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Mecha_Tengu_B</picture>
+    <asset_bundle>218</asset_bundle>
+    <hidden_until_time>1726153200</hidden_until_time>
+    <item_name>Oiram Stone</item_name>
+    <item_desc>Collect Oiram Stones to upgrade Oiram, the Clanker!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <sub_type>16</sub_type>
+    <attack>15</attack>
+    <health>45</health>
+    <skill id="corrosive" x="6" />
+    <skill id="strike" all="1" x="4" />
+    <skill id="strike" all="1" x="4" />
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <upgrade>
+      <level>2</level>
+      <attack>16</attack>
+      <health>45</health>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" all="1" x="4" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>17</attack>
+      <health>46</health>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>17</attack>
+      <health>47</health>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="strike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>18</attack>
+      <health>48</health>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" all="1" x="5" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>18</attack>
+      <health>48</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="strike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>19</attack>
+      <health>49</health>
+      <skill id="corrosive" x="9" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>20</attack>
+      <health>49</health>
+      <skill id="corrosive" x="10" />
+      <skill id="strike" all="1" x="6" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>21</attack>
+      <health>50</health>
+      <skill id="corrosive" x="10" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="strike" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>22</attack>
+      <health>50</health>
+      <skill id="corrosive" x="11" />
+      <skill id="strike" all="1" x="7" />
+      <skill id="strike" all="1" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4090</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1726153200</hidden_until_time>
+    <hidden_until_time>1728572400</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>11</sub_type>
+    <sub_type>12</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -8322,7 +8439,7 @@
     <picture>Avian_Priest_Champion_A</picture>
     <asset_bundle>137</asset_bundle>
     <item_name>Tanit Stone</item_name>
-    <item_desc>Collect Tanit Stones to upgrade the Legendary Tanit, Divinity's Focus card!</item_desc>
+    <item_desc>Collect Tanit Stones to upgrade Tanit, Divinity's Focus!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8410,7 +8527,7 @@
     <picture>Iciclle_Dragon_Elemental_B</picture>
     <asset_bundle>141</asset_bundle>
     <item_name>Volsung Stone</item_name>
-    <item_desc>Collect Volsung Stones to upgrade the Legendary Volsung Icewind card!</item_desc>
+    <item_desc>Collect Volsung Stones to upgrade Volsung Icewind!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8495,14 +8612,14 @@
   <unit>
     <id>5602</id>
     <card_type>2</card_type>
-    <name>TZ-530 the Impassable</name>
+    <name>TZ-530, the Impassable</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Mecha_Defender_Mecha_A</picture>
     <asset_bundle>147</asset_bundle>
     <item_name>TZ-530 Stone</item_name>
-    <item_desc>Collect TZ-530 Stones to upgrade the Legendary TZ-530 the Impassable card!</item_desc>
+    <item_desc>Collect TZ-530 Stones to upgrade TZ-530, the Impassable!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8582,14 +8699,14 @@
   <unit>
     <id>5603</id>
     <card_type>2</card_type>
-    <name>Dina the Iridescent</name>
+    <name>Dina, the Iridescent</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Angel_Stained_Glass_Wings_Angel_A</picture>
     <asset_bundle>149</asset_bundle>
-    <item_name>Iridescent Stone</item_name>
-    <item_desc>Collect Iridescent Stones to upgrade the Legendary Dina the Iridescent card!</item_desc>
+    <item_name>Dina Stone</item_name>
+    <item_desc>Collect Dina Stones to upgrade Dina, the Iridescent!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8676,8 +8793,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Seafolk_Mirror_Mermaid_B</picture>
     <asset_bundle>154</asset_bundle>
-    <item_name>Mirrormage Stone</item_name>
-    <item_desc>Collect Mirrormage Stones to upgrade the Legendary Mirrormage Ghessela card!</item_desc>
+    <item_name>Ghessela Stone</item_name>
+    <item_desc>Collect Ghessela Stones to upgrade Mirrormage Ghessela!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8773,7 +8890,7 @@
     <picture>Elemental_Seafolk_Thunder_Cloud_Jellyfish_A</picture>
     <asset_bundle>157</asset_bundle>
     <item_name>Medusozoa Stone</item_name>
-    <item_desc>Collect Medusozoa Stones to upgrade the Legendary Medusozoa, the Immortal card!</item_desc>
+    <item_desc>Collect Medusozoa Stones to upgrade Medusozoa, the Immortal!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8860,7 +8977,7 @@
     <picture>Insect_Angel_Scythe_Judgement_A</picture>
     <asset_bundle>159</asset_bundle>
     <item_name>Volvel Stone</item_name>
-    <item_desc>Collect Volvel Stones to upgrade the Legendary Volvel, Golden Pride card!</item_desc>
+    <item_desc>Collect Volvel Stones to upgrade Volvel, Golden Pride!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8947,8 +9064,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Monk_A</picture>
     <asset_bundle>162</asset_bundle>
-    <item_name>Transcendence Stone</item_name>
-    <item_desc>Collect Transcendence Stones to upgrade the Legendary Tao, Transcended Lich card!</item_desc>
+    <item_name>Tao Stone</item_name>
+    <item_desc>Collect Tao Stones to upgrade Tao, Transcended Lich!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9031,8 +9148,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Frog_Elemental_Wind_Spirit_Monk_B</picture>
     <asset_bundle>164</asset_bundle>
-    <item_name>Windsage Stone</item_name>
-    <item_desc>Collect Windsage Stones to upgrade the Legendary Windsage Gama card!</item_desc>
+    <item_name>Gama Stone</item_name>
+    <item_desc>Collect Gama Stones to upgrade Windsage Gama!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9124,7 +9241,7 @@
     <picture>Dragon_Fire_Orb_B</picture>
     <asset_bundle>166</asset_bundle>
     <item_name>Phorus Stone</item_name>
-    <item_desc>Collect Phorus Stones to upgrade the Legendary Phorus of the Sunsphere card!</item_desc>
+    <item_desc>Collect Phorus Stones to upgrade Phorus of the Sunsphere!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9211,81 +9328,91 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Goblin_Cunning_Goblin_Leader_A</picture>
     <asset_bundle>176</asset_bundle>
-    <item_name>Boss Stone</item_name>
-    <item_desc>Collect Boss Stones to upgrade the Legendary Ystlin, the Market Boss card!</item_desc>
+    <item_name>Ystlin Stone</item_name>
+    <item_desc>Collect Ystlin Stones to upgrade Ystlin, the Market Boss!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>1</type>
     <sub_type>11</sub_type>
-    <attack>9</attack>
-    <health>28</health>
+    <attack>11</attack>
+    <health>31</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="protect" x="2" y="11" all="1" />
-    <skill id="legion" x="4" />
-    <skill id="strike" x="3" all="1" />
+    <skill id="protect" all="1" x="3" />
+    <skill id="legion" x="6" />
+    <skill id="strike" all="1" x="3" />
     <upgrade>
       <level>2</level>
-      <health>29</health>
-      <skill id="protect" x="3" y="11" all="1" />
-      <skill id="legion" x="4" />
-      <skill id="strike" x="3" all="1" />
+      <attack>13</attack>
+      <health>31</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="legion" x="6" />
+      <skill id="strike" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>10</attack>
-      <health>30</health>
+      <attack>13</attack>
+      <health>32</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="legion" x="7" />
+      <skill id="strike" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
-      <skill id="protect" x="3" y="11" all="1" />
-      <skill id="legion" x="5" />
-      <skill id="strike" x="3" all="1" />
+      <attack>13</attack>
+      <health>33</health>
+      <skill id="protect" all="1" x="3" />
+      <skill id="legion" x="7" />
+      <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>11</attack>
-      <skill id="protect" x="4" y="11" all="1" />
-      <skill id="legion" x="5" />
-      <skill id="strike" x="4" all="1" />
+      <attack>14</attack>
+      <health>33</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="legion" x="7" />
+      <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="protect" x="5" y="11" all="1" />
-      <skill id="legion" x="6" />
-      <skill id="strike" x="4" all="1" />
+      <attack>14</attack>
+      <health>34</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="legion" x="8" />
+      <skill id="strike" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <attack>12</attack>
-      <health>32</health>
-      <skill id="protect" x="5" y="11" all="1" />
-      <skill id="legion" x="6" />
-      <skill id="strike" x="5" all="1" />
+      <attack>14</attack>
+      <health>35</health>
+      <skill id="protect" all="1" x="4" />
+      <skill id="legion" x="8" />
+      <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>33</health>
-      <skill id="protect" x="6" y="11" all="1" />
-      <skill id="legion" x="7" />
-      <skill id="strike" x="5" all="1" />
+      <attack>15</attack>
+      <health>35</health>
+      <skill id="protect" all="1" x="5" />
+      <skill id="legion" x="8" />
+      <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>13</attack>
-      <health>34</health>
-      <skill id="protect" x="6" y="11" all="1" />
-      <skill id="legion" x="7" />
-      <skill id="strike" x="5" all="1" />
+      <attack>15</attack>
+      <health>36</health>
+      <skill id="protect" all="1" x="5" />
+      <skill id="legion" x="9" />
+      <skill id="strike" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <health>35</health>
-      <skill id="protect" x="6" y="11" all="1" />
-      <skill id="legion" x="8" />
-      <skill id="strike" x="6" all="1" />
+      <attack>16</attack>
+      <health>36</health>
+      <skill id="protect" all="1" x="6" />
+      <skill id="legion" x="9" />
+      <skill id="strike" all="1" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -9297,8 +9424,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Seafolk_Insect_Hermit_Crab</picture>
     <asset_bundle>180</asset_bundle>
-    <item_name>Hermit Stone</item_name>
-    <item_desc>Collect Hermit Stones to upgrade the Legendary Zhu-Lath, the Hermit card!</item_desc>
+    <item_name>Zhu-Lath Stone</item_name>
+    <item_desc>Collect Zhu-Lath Stones to upgrade Zhu-Lath, the Hermit!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9381,8 +9508,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Frog_Icetificer_A</picture>
     <asset_bundle>190</asset_bundle>
-    <item_name>Icebreaker Stone</item_name>
-    <item_desc>Collect Icebreaker Stones to upgrade the Legendary Genen, the Icebreaker card!</item_desc>
+    <item_name>Genen Stone</item_name>
+    <item_desc>Collect Genen Stones to upgrade Genen, the Icebreaker!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9472,7 +9599,7 @@
     <picture>Avian_Ex_Crimsonwing_A</picture>
     <asset_bundle>192</asset_bundle>
     <item_name>Caraca Stone</item_name>
-    <item_desc>Collect Caraca Stones to upgrade the Legendary Caraca, the Redeemed card!</item_desc>
+    <item_desc>Collect Caraca Stones to upgrade Caraca, the Redeemed!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9561,8 +9688,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Mecha_Chakram_Dancer_B</picture>
     <asset_bundle>200</asset_bundle>
-    <item_name>Bladedance Stone</item_name>
-    <item_desc>Collect Bladedance Stones to upgrade the Legendary Zahira, the Bladedance card!</item_desc>
+    <item_name>Zahira Stone</item_name>
+    <item_desc>Collect Zahira Stones to upgrade Zahira, the Bladedance!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9647,7 +9774,7 @@
     <picture>Mecha_Kensei_A</picture>
     <asset_bundle>200</asset_bundle>
     <item_name>Katto Stone</item_name>
-    <item_desc>Collect Katto Stones to upgrade the Legendary Sword Saint Katto card!</item_desc>
+    <item_desc>Collect Katto Stones to upgrade Sword Saint Katto!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9728,7 +9855,7 @@
     <picture>Dragon_Bagpipe_Tail_B</picture>
     <asset_bundle>204</asset_bundle>
     <item_name>Satchmo Stone</item_name>
-    <item_desc>Collect Satchmo Stones to upgrade the Legendary Satchmo, Pipe Tail card!</item_desc>
+    <item_desc>Collect Satchmo Stones to upgrade Satchmo, Pipe Tail!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9816,7 +9943,7 @@
     <picture>Angel_Avian_Hawk_Goddess_B</picture>
     <asset_bundle>209</asset_bundle>
     <item_name>Osyris Stone</item_name>
-    <item_desc>Collect Osyris Stones to upgrade the Legendary Osyris, Mighty Goddess card!</item_desc>
+    <item_desc>Collect Osyris Stones to upgrade Osyris, Mighty Goddess!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9898,7 +10025,7 @@
     <picture>Frog_Round_Knight_A</picture>
     <asset_bundle>213</asset_bundle>
     <item_name>Raju Stone</item_name>
-    <item_desc>Collect Raju Stones to upgrade the Legendary Raju, the Unyielding card!</item_desc>
+    <item_desc>Collect Raju Stones to upgrade Raju, the Unyielding!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9982,7 +10109,7 @@
     <picture>Elemental_Mecha_Poison_Juggernaut_A</picture>
     <asset_bundle>215</asset_bundle>
     <item_name>Chlorox Stone</item_name>
-    <item_desc>Collect Chlorox Stones to upgrade the Legendary Chlorox Omega card!</item_desc>
+    <item_desc>Collect Chlorox Stones to upgrade Chlorox Omega!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10068,7 +10195,7 @@
     <picture>Mecha_Repairwoman_A</picture>
     <asset_bundle>218</asset_bundle>
     <item_name>Kira Stone</item_name>
-    <item_desc>Collect Kira Stones to upgrade the Legendary Kira, the Innovator card!</item_desc>
+    <item_desc>Collect Kira Stones to upgrade Kira, the Innovator!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10154,7 +10281,7 @@
     <picture>Dragon_Brave_Longma_A</picture>
     <asset_bundle>220</asset_bundle>
     <item_name>Nayaara Stone</item_name>
-    <item_desc>Collect Nayaara Stones to upgrade the Legendary Nayaara, the Airlight card!</item_desc>
+    <item_desc>Collect Nayaara Stones to upgrade Nayaara, the Airlight!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10239,7 +10366,7 @@
     <picture>Insect_Moth_Courtesan_A</picture>
     <asset_bundle>222</asset_bundle>
     <item_name>Pollutarax Stone</item_name>
-    <item_desc>Collect Pollutarax Stones to upgrade the Legendary Duchess Pollutarax card!</item_desc>
+    <item_desc>Collect Pollutarax Stones to upgrade Duchess Pollutarax!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10325,7 +10452,7 @@
     <picture>Seafolk_Rime_Shrimp_A</picture>
     <asset_bundle>230</asset_bundle>
     <item_name>Shrime Stone</item_name>
-    <item_desc>Collect Shrime Stones to upgrade the Legendary Shrime, the Frozen card!</item_desc>
+    <item_desc>Collect Shrime Stones to upgrade Shrime, the Frozen!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10405,7 +10532,7 @@
     <picture>Angel_Eternal_Guardian_A</picture>
     <asset_bundle>232</asset_bundle>
     <item_name>Altos Stone</item_name>
-    <item_desc>Collect Altos Stones to upgrade the Legendary Altos, the Implacable card!</item_desc>
+    <item_desc>Collect Altos Stones to upgrade Altos, the Implacable!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10485,8 +10612,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Mecha_Angel_Nitrogen_Glider_A</picture>
     <asset_bundle>234</asset_bundle>
-    <item_name>Aeron Stone</item_name>
-    <item_desc>Collect Aeron Stones to upgrade the Legendary Aeronwen, the Glider card!</item_desc>
+    <item_name>Aeronwen Stone</item_name>
+    <item_desc>Collect Aeronwen Stones to upgrade Aeronwen, the Glider!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10574,7 +10701,7 @@
     <picture>Frog_Embersmith_A</picture>
     <asset_bundle>236</asset_bundle>
     <item_name>Gendra Stone</item_name>
-    <item_desc>Collect Gendra Stones to upgrade the Legendary Gendra, the Blacksmith card!</item_desc>
+    <item_desc>Collect Gendra Stones to upgrade Gendra, the Blacksmith!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10662,7 +10789,7 @@
     <picture>Goblin_Undead_Ectomancer_A</picture>
     <asset_bundle>238</asset_bundle>
     <item_name>Drarm Stone</item_name>
-    <item_desc>Collect Drarm Stones to upgrade the Legendary Drarm, the Soulbinder card!</item_desc>
+    <item_desc>Collect Drarm Stones to upgrade Drarm, the Soulbinder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10741,14 +10868,14 @@
   <unit>
     <id>5628</id>
     <card_type>2</card_type>
-    <name>Gorgon, The Imprisoned</name>
+    <name>Gorgon, the Imprisoned</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Elemental_Undead_Imprisoned_Horror_A</picture>
     <asset_bundle>240</asset_bundle>
     <item_name>Gorgon Stone</item_name>
-    <item_desc>Collect Gorgon Stones to upgrade the Legendary Gorgon, The Imprisoned card!</item_desc>
+    <item_desc>Collect Gorgon Stones to upgrade Gorgon, the Imprisoned!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10834,7 +10961,7 @@
     <picture>Seafolk_Naga_Witch_A</picture>
     <asset_bundle>242</asset_bundle>
     <item_name>Kandrula Stone</item_name>
-    <item_desc>Collect Kandrula Stones to upgrade the Legendary Kandrula, the Sly card!</item_desc>
+    <item_desc>Collect Kandrula Stones to upgrade Kandrula, the Sly!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10911,7 +11038,7 @@
     <picture>Dragon_Angel_Lorekeeper_God_A</picture>
     <asset_bundle>244</asset_bundle>
     <item_name>Asim Stone</item_name>
-    <item_desc>Collect Asim Stones to upgrade the Legendary Asim, the Lorekeeper card!</item_desc>
+    <item_desc>Collect Asim Stones to upgrade Asim, the Lorekeeper!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10995,7 +11122,7 @@
     <picture>Angel_Breaker_A</picture>
     <asset_bundle>246</asset_bundle>
     <item_name>Galahad Stone</item_name>
-    <item_desc>Collect Galahad Stones to upgrade the Legendary Saint Galahad card!</item_desc>
+    <item_desc>Collect Galahad Stones to upgrade Saint Galahad!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11079,7 +11206,7 @@
     <picture>Avian_Aurora_Protector_A</picture>
     <asset_bundle>248</asset_bundle>
     <item_name>Auron Stone</item_name>
-    <item_desc>Collect Auron Stones to upgrade the Legendary Auron, the Icewall card!</item_desc>
+    <item_desc>Collect Auron Stones to upgrade Auron, the Icewall!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11169,7 +11296,7 @@
     <picture>Undead_La_Llorona_A</picture>
     <asset_bundle>252</asset_bundle>
     <item_name>Llorona Stone</item_name>
-    <item_desc>Collect Llorona Stones to upgrade the Legendary La Llorona card!</item_desc>
+    <item_desc>Collect Llorona Stones to upgrade La Llorona!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11253,7 +11380,7 @@
     <picture>Frog_Elemental_Electromancer_A</picture>
     <asset_bundle>254</asset_bundle>
     <item_name>Eira Stone</item_name>
-    <item_desc>Collect Eira Stones to upgrade the Legendary Eira, the Electrokinetic card!</item_desc>
+    <item_desc>Collect Eira Stones to upgrade Eira, the Electrokinetic!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11341,7 +11468,7 @@
     <picture>Elemental_Goblin_Remi_Bipolar_A</picture>
     <asset_bundle>256</asset_bundle>
     <item_name>Remi Stone</item_name>
-    <item_desc>Collect Remi Stones to upgrade the Legendary Remi, the Banished card!</item_desc>
+    <item_desc>Collect Remi Stones to upgrade Remi, the Banished!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11425,7 +11552,7 @@
     <picture>Elemental_Mecha_Ferromancer_A</picture>
     <asset_bundle>256</asset_bundle>
     <item_name>Almet Stone</item_name>
-    <item_desc>Collect Almet Stones to upgrade the Legendary Almet, the Ferromancer!</item_desc>
+    <item_desc>Collect Almet Stones to upgrade Almet, the Ferromancer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11510,7 +11637,7 @@
     <picture>Mecha_Seafolk_Living_Ship_A</picture>
     <asset_bundle>258</asset_bundle>
     <item_name>Moby Stone</item_name>
-    <item_desc>Collect Moby Stones to upgrade the Legendary Moby, the Righteous!</item_desc>
+    <item_desc>Collect Moby Stones to upgrade Moby, the Righteous!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11596,7 +11723,7 @@
     <picture>Seafolk_Dragon_Dragon_Family_A</picture>
     <asset_bundle>260</asset_bundle>
     <item_name>Family Stone</item_name>
-    <item_desc>Collect Family Stones to upgrade the Legendary The Dragon Family!</item_desc>
+    <item_desc>Collect Family Stones to upgrade The Dragon Family!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11672,14 +11799,14 @@
   <unit>
     <id>5639</id>
     <card_type>2</card_type>
-    <name>Zakum, The Destroyer</name>
+    <name>Zakum, the Destroyer</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Angel_Golden_Knight_A</picture>
     <asset_bundle>264</asset_bundle>
     <item_name>Zakum Stone</item_name>
-    <item_desc>Collect Zakum Stones to upgrade the Legendary Zakum, The Destroyer!</item_desc>
+    <item_desc>Collect Zakum Stones to upgrade Zakum, the Destroyer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11760,7 +11887,7 @@
     <picture>Insect_Sword_Saviour_A</picture>
     <asset_bundle>266</asset_bundle>
     <item_name>Kattoraki Stone</item_name>
-    <item_desc>Collect Kattoraki Stones to upgrade the Legendary Kattoraki, the Sword Savior!</item_desc>
+    <item_desc>Collect Kattoraki Stones to upgrade Kattoraki, the Sword Savior!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11840,14 +11967,14 @@
   <unit>
     <id>5641</id>
     <card_type>2</card_type>
-    <name>Howaito and Kuroilong</name>
+    <name>Howaito &amp; Kuroilong</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dragon_Ying_Yang_A</picture>
     <asset_bundle>268</asset_bundle>
-    <item_name>Dual Stone</item_name>
-    <item_desc>Collect Dual Stones to upgrade the Legendary Howaito and Kuroilong!</item_desc>
+    <item_name>Howaito &amp; Kuroilong Stone</item_name>
+    <item_desc>Collect Howaito &amp; Kuroilong Stones to upgrade Howaito &amp; Kuroilong!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11931,8 +12058,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Frog_Mecha_R1-BB1T_A</picture>
     <asset_bundle>270</asset_bundle>
-    <item_name>Warkid Stone</item_name>
-    <item_desc>Collect Warkid Stones to upgrade the Legendary B4RN4B1, Exo Warkid!</item_desc>
+    <item_name>B4RN4B1 Stone</item_name>
+    <item_desc>Collect B4RN4B1 Stones to upgrade B4RN4B1, Exo Warkid!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12012,14 +12139,14 @@
   <unit>
     <id>5643</id>
     <card_type>2</card_type>
-    <name>Austra, The Ice Mage</name>
+    <name>Austra, the Ice Mage</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Avian_Aurora_Ice_Mage_A</picture>
     <asset_bundle>272</asset_bundle>
-    <item_name>Ice Stone</item_name>
-    <item_desc>Collect Ice Stones to upgrade the Legendary Austra, The Ice Mage!</item_desc>
+    <item_name>Austra Stone</item_name>
+    <item_desc>Collect Austra Stones to upgrade Austra, the Ice Mage!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12104,8 +12231,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Winter_Vampire_A</picture>
     <asset_bundle>274</asset_bundle>
-    <item_name>Snowfang Stone</item_name>
-    <item_desc>Collect Snowfang Stones to upgrade the Legendary Katerina, Snowfang!</item_desc>
+    <item_name>Katerina Stone</item_name>
+    <item_desc>Collect Katerina Stones to upgrade Katerina, Snowfang!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12188,7 +12315,7 @@
     <picture>Mecha_Insect_Spiritual_Swarm_A</picture>
     <asset_bundle>276</asset_bundle>
     <item_name>Nano Stone</item_name>
-    <item_desc>Collect Nano Stones to upgrade the Legendary Nano Swarm!</item_desc>
+    <item_desc>Collect Nano Stones to upgrade Nano Swarm!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12278,7 +12405,7 @@
     <picture>Insect_Frozen_Slug_A</picture>
     <asset_bundle>278</asset_bundle>
     <item_name>Frazzil Stone</item_name>
-    <item_desc>Collect Guardian Stones to upgrade Frazzil, Glacial Guardian!</item_desc>
+    <item_desc>Collect Frazzil Stones to upgrade Frazzil, Glacial Guardian!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12356,14 +12483,14 @@
   <unit>
     <id>6600</id>
     <card_type>2</card_type>
-    <name>Sigix the Charcannon</name>
+    <name>Sigix, the Charcannon</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Goblin_Battery_Cyborg_B</picture>
     <asset_bundle>125</asset_bundle>
     <item_name>Sigix Stone</item_name>
-    <item_desc>Collect Sigix Stones to upgrade the Legendary Sigix the Charcannon card!</item_desc>
+    <item_desc>Collect Sigix Stones to upgrade Sigix, the Charcannon!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12453,7 +12580,7 @@
     <picture>Monster_Guardian_Mecha_B</picture>
     <asset_bundle>127</asset_bundle>
     <item_name>Elytragor Stone</item_name>
-    <item_desc>Collect Elytragor Stones to upgrade the Legendary Elytragor, Beacon's Call card!</item_desc>
+    <item_desc>Collect Elytragor Stones to upgrade Elytragor, Beacon's Call!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12546,7 +12673,7 @@
     <picture>Seafolk_Land_Shark_A</picture>
     <asset_bundle>129</asset_bundle>
     <item_name>Land Shark Stone</item_name>
-    <item_desc>Collect Land Shark Stones to upgrade the Legendary Apex Land Shark card!</item_desc>
+    <item_desc>Collect Land Shark Stones to upgrade Apex Land Shark!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12642,7 +12769,7 @@
     <picture>Samurai_Bug_A</picture>
     <asset_bundle>132</asset_bundle>
     <item_name>Kabuto Stone</item_name>
-    <item_desc>Collect Kabuto Stones to upgrade the Legendary Kabuto, Samurai Myth card!</item_desc>
+    <item_desc>Collect Kabuto Stones to upgrade Kabuto, Samurai Myth!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12734,8 +12861,8 @@
     <picture>Undead_Elemental_Headless_Titaness_A</picture>
     <asset_bundle>178</asset_bundle>
     <hidden_until_time>1576774800</hidden_until_time>
-    <item_name>Headless Stone</item_name>
-    <item_desc>Collect Headless Stones to upgrade the Legendary Styxia, the Headless card!</item_desc>
+    <item_name>Styxia Stone</item_name>
+    <item_desc>Collect Styxia Stones to upgrade Styxia, the Headless!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12824,7 +12951,7 @@
     <asset_bundle>198</asset_bundle>
     <hidden_until_time>1596733200</hidden_until_time>
     <item_name>Xerkahn Stone</item_name>
-    <item_desc>Collect Xerkahn Stones to upgrade the Legendary Xerkahn, the Rancor card!</item_desc>
+    <item_desc>Collect Xerkahn Stones to upgrade Xerkahn, the Rancor!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12884,11 +13011,14 @@
     <upgrade>
       <level>9</level>
       <health>25</health>
+      <skill id="valor" x="11" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="enrage" all="1" x="6" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <attack>5</attack>
-      <health>25</health>
+      <health>26</health>
       <skill id="valor" x="11" />
       <skill id="enfeeble" all="1" x="5" />
       <skill id="enrage" all="1" x="6" />
@@ -12905,7 +13035,7 @@
     <asset_bundle>202</asset_bundle>
     <hidden_until_time>1600362000</hidden_until_time>
     <item_name>Lyra Stone</item_name>
-    <item_desc>Collect Lyra Stones to upgrade the Legendary Lyra, Mayhem Conductor card!</item_desc>
+    <item_desc>Collect Lyra Stones to upgrade Lyra, Mayhem Conductor!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12916,67 +13046,68 @@
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="absorb" x="6" />
-    <skill id="fervor" x="2" y="2" />
-    <skill id="enfeeble" x="2" all="1" />
+    <skill id="fervor" x="3" y="2" />
+    <skill id="enfeeble" all="1" x="2" />
     <upgrade>
       <level>2</level>
       <skill id="absorb" x="7" />
-      <skill id="fervor" x="2" y="2" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="fervor" x="3" y="2" />
+      <skill id="enfeeble" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>9</attack>
       <skill id="absorb" x="7" />
-      <skill id="fervor" x="2" y="2" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="fervor" x="3" y="2" />
+      <skill id="enfeeble" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>21</health>
       <skill id="absorb" x="7" />
-      <skill id="fervor" x="3" y="2" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="fervor" x="4" y="2" />
+      <skill id="enfeeble" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>22</health>
       <skill id="absorb" x="8" />
-      <skill id="fervor" x="3" y="2" />
-      <skill id="enfeeble" x="4" all="1" />
+      <skill id="fervor" x="4" y="2" />
+      <skill id="enfeeble" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>10</attack>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>23</health>
+      <health>24</health>
       <skill id="absorb" x="8" />
-      <skill id="fervor" x="4" y="2" />
-      <skill id="enfeeble" x="4" all="1" />
+      <skill id="fervor" x="5" y="2" />
+      <skill id="enfeeble" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>8</level>
       <attack>11</attack>
       <skill id="absorb" x="9" />
-      <skill id="fervor" x="5" y="2" />
-      <skill id="enfeeble" x="4" all="1" />
+      <skill id="fervor" x="6" y="2" />
+      <skill id="enfeeble" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <health>24</health>
+      <health>25</health>
       <skill id="absorb" x="10" />
-      <skill id="fervor" x="5" y="2" />
-      <skill id="enfeeble" x="5" all="1" />
+      <skill id="fervor" x="6" y="2" />
+      <skill id="enfeeble" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>10</level>
       <attack>12</attack>
-      <health>25</health>
+      <health>26</health>
       <skill id="absorb" x="10" />
-      <skill id="fervor" x="6" y="2" />
-      <skill id="enfeeble" x="5" all="1" />
+      <skill id="fervor" x="7" y="2" />
+      <skill id="enfeeble" all="1" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -12989,8 +13120,8 @@
     <picture>Seafolk_Elder_Evil_A</picture>
     <asset_bundle>207</asset_bundle>
     <hidden_until_time>1606410000</hidden_until_time>
-    <item_name>Evil Stone</item_name>
-    <item_desc>Collect Evil Stones to upgrade the Legendary The Elder Evil card!</item_desc>
+    <item_name>Elder Evil Stone</item_name>
+    <item_desc>Collect Elder Evil Stones to upgrade The Elder Evil!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13088,7 +13219,7 @@
     <hidden_until_time>1613667600</hidden_until_time>
     <!-- Thursday, 18 February 2021 0:00:00 -->
     <item_name>Zyd Stone</item_name>
-    <item_desc>Collect Zyd Stones to upgrade the Legendary Zyd, the Unhinged card!</item_desc>
+    <item_desc>Collect Zyd Stones to upgrade Zyd, the Unhinged!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13167,7 +13298,7 @@
     <asset_bundle>215</asset_bundle>
     <hidden_until_time>1614877200</hidden_until_time>
     <item_name>Hedron Stone</item_name>
-    <item_desc>Collect Hedron Stones to upgrade the Legendary Hedron, the Critical Threat card!</item_desc>
+    <item_desc>Collect Hedron Stones to upgrade Hedron, the Critical Threat!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13252,7 +13383,7 @@
     <asset_bundle>218</asset_bundle>
     <hidden_until_time>1618506000</hidden_until_time>
     <item_name>Issa Stone</item_name>
-    <item_desc>Collect Issa Stones to upgrade the Legendary Issa, the Wireslayer card!</item_desc>
+    <item_desc>Collect Issa Stones to upgrade Issa, the Wireslayer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13329,7 +13460,7 @@
     <hidden_until_time>1620925200</hidden_until_time>
     <!-- Thursday, 13 May 2021 17:00:00 -->
     <item_name>Caelius Stone</item_name>
-    <item_desc>Collect Caelius Stones to upgrade the Legendary Caelius, the Highlord card!</item_desc>
+    <item_desc>Collect Caelius Stones to upgrade Caelius, the Highlord!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13417,9 +13548,8 @@
     <picture>Goblin_Labyrinth_King_A</picture>
     <asset_bundle>224</asset_bundle>
     <hidden_until_time>1625763600</hidden_until_time>
-    <!-- Thursday, 8 July 2021 17:00:00 -->
     <item_name>Zolb Stone</item_name>
-    <item_desc>Collect Zolb Stones to upgrade the Legendary Zolb, Labyrinth King card!</item_desc>
+    <item_desc>Collect Zolb Stones to upgrade Zolb, Labyrinth King!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13430,68 +13560,72 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="regenerate" x="6" />
-    <skill id="rally" x="3" y="11" all="1" />
-    <skill id="protect" x="4" y="11" all="1" />
+    <skill id="rally" all="1" x="3" y="11" />
+    <skill id="protect" all="1" x="4" y="11" />
     <upgrade>
       <level>2</level>
+      <attack>12</attack>
       <health>32</health>
       <skill id="regenerate" x="7" />
-      <skill id="rally" x="3" y="11" all="1" />
-      <skill id="protect" x="4" y="11" all="1" />
+      <skill id="rally" all="1" x="3" y="11" />
+      <skill id="protect" all="1" x="4" y="11" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>12</attack>
+      <attack>13</attack>
       <skill id="regenerate" x="7" />
-      <skill id="rally" x="4" y="11" all="1" />
-      <skill id="protect" x="4" y="11" all="1" />
+      <skill id="rally" all="1" x="4" y="11" />
+      <skill id="protect" all="1" x="4" y="11" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>33</health>
       <skill id="regenerate" x="7" />
-      <skill id="rally" x="4" y="11" all="1" />
-      <skill id="protect" x="5" y="11" all="1" />
+      <skill id="rally" all="1" x="4" y="11" />
+      <skill id="protect" all="1" x="5" y="11" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>34</health>
       <skill id="regenerate" x="8" />
-      <skill id="rally" x="4" y="11" all="1" />
-      <skill id="protect" x="5" y="11" all="1" />
+      <skill id="rally" all="1" x="4" y="11" />
+      <skill id="protect" all="1" x="5" y="11" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>34</health>
+      <health>35</health>
       <skill id="regenerate" x="9" />
-      <skill id="rally" x="5" y="11" all="1" />
-      <skill id="protect" x="5" y="11" all="1" />
+      <skill id="rally" all="1" x="5" y="11" />
+      <skill id="protect" all="1" x="5" y="11" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <attack>13</attack>
+      <attack>14</attack>
       <skill id="regenerate" x="10" />
-      <skill id="rally" x="5" y="11" all="1" />
-      <skill id="protect" x="6" y="11" all="1" />
+      <skill id="rally" all="1" x="5" y="11" />
+      <skill id="protect" all="1" x="6" y="11" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>35</health>
+      <health>36</health>
       <skill id="regenerate" x="11" />
-      <skill id="rally" x="6" y="11" all="1" />
-      <skill id="protect" x="6" y="11" all="1" />
+      <skill id="rally" all="1" x="6" y="11" />
+      <skill id="protect" all="1" x="6" y="11" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>14</attack>
+      <attack>15</attack>
       <skill id="regenerate" x="12" />
-      <skill id="rally" x="6" y="11" all="1" />
-      <skill id="protect" x="7" y="11" all="1" />
+      <skill id="rally" all="1" x="6" y="11" />
+      <skill id="protect" all="1" x="7" y="11" />
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>15</attack>
+      <health>36</health>
       <skill id="regenerate" x="12" />
-      <skill id="rally" x="7" y="11" all="1" />
-      <skill id="protect" x="8" y="11" all="1" />
+      <skill id="rally" all="1" x="7" y="11" />
+      <skill id="protect" all="1" x="8" y="11" />
     </upgrade>
   </unit>
   <unit>
@@ -13505,7 +13639,7 @@
     <asset_bundle>226</asset_bundle>
     <hidden_until_time>1625763600</hidden_until_time>
     <item_name>Skylo Stone</item_name>
-    <item_desc>Collect Skylo Stones to upgrade the Legendary Skylo, Lord of the Wings card!</item_desc>
+    <item_desc>Collect Skylo Stones to upgrade Skylo, Lord of the Wings!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13578,7 +13712,7 @@
   <unit>
     <id>6614</id>
     <card_type>2</card_type>
-    <name>Blaze, The Unvoker</name>
+    <name>Blaze, the Unvoker</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
@@ -13586,7 +13720,7 @@
     <asset_bundle>228</asset_bundle>
     <hidden_until_time>1629392400</hidden_until_time>
     <item_name>Blaze Stone</item_name>
-    <item_desc>Collect Blaze Stones to upgrade the Legendary Blaze, The Unvoker card!</item_desc>
+    <item_desc>Collect Blaze Stones to upgrade Blaze, the Unvoker!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13674,7 +13808,7 @@
     <hidden_until_time>1631811600</hidden_until_time>
     <!-- Thursday, 16 September 2021 17:00:00 -->
     <item_name>Stern Stone</item_name>
-    <item_desc>Collect Stern Stones to upgrade the Legendary Stern, the Gladthorn card!</item_desc>
+    <item_desc>Collect Stern Stones to upgrade Stern, the Gladthorn!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13771,7 +13905,7 @@
     <asset_bundle>232</asset_bundle>
     <hidden_until_time>1634230800</hidden_until_time>
     <item_name>Mephisto Stone</item_name>
-    <item_desc>Collect Mephisto Stones to upgrade the Legendary Mephisto, the Pactmaker card!</item_desc>
+    <item_desc>Collect Mephisto Stones to upgrade Mephisto, the Pactmaker!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13859,7 +13993,7 @@
     <hidden_until_time>1639069200</hidden_until_time>
     <!-- Thursday, December 9, 2021 at 17:00:00-->
     <item_name>Domhain Stone</item_name>
-    <item_desc>Collect Domhain Stones to upgrade the Legendary Domhain, the Fomorian card!</item_desc>
+    <item_desc>Collect Domhain Stones to upgrade Domhain, the Fomorian!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13958,7 +14092,7 @@
     <hidden_until_time>1647536400</hidden_until_time>
     <!-- Thursday, 17 March 2022 17:00:00 -->
     <item_name>Jormun Stone</item_name>
-    <item_desc>Collect Jormun Stones to upgrade the Legendary Jormun, the Ravager card!</item_desc>
+    <item_desc>Collect Jormun Stones to upgrade Jormun, the Ravager!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14056,7 +14190,7 @@
     <asset_bundle>244</asset_bundle>
     <hidden_until_time>1648746000</hidden_until_time>
     <item_name>Darkon Stone</item_name>
-    <item_desc>Collect Darkon Stones to upgrade the Legendary Darkon, the Deep Horror card!</item_desc>
+    <item_desc>Collect Darkon Stones to upgrade Darkon, the Deep Horror!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14146,7 +14280,7 @@
     <asset_bundle>246</asset_bundle>
     <hidden_until_time>1651165200</hidden_until_time>
     <item_name>Abbadon Stone</item_name>
-    <item_desc>Collect Abbadon Stones to upgrade the Legendary Abbadon, the Vicious card!</item_desc>
+    <item_desc>Collect Abbadon Stones to upgrade Abbadon, the Vicious!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14232,7 +14366,7 @@
     <asset_bundle>248</asset_bundle>
     <hidden_until_time>1654794000</hidden_until_time>
     <item_name>Ardeat Stone</item_name>
-    <item_desc>Collect Ardeat Stones to upgrade the Legendary Ardeat, the Arsonist card!</item_desc>
+    <item_desc>Collect Ardeat Stones to upgrade Ardeat, the Arsonist!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14322,7 +14456,7 @@
     <asset_bundle>250</asset_bundle>
     <hidden_until_time>1656003600</hidden_until_time>
     <item_name>Nophora Stone</item_name>
-    <item_desc>Collect Nophora Stones to upgrade the Legendary Nophora, the Hoarder card!</item_desc>
+    <item_desc>Collect Nophora Stones to upgrade Nophora, the Hoarder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14412,7 +14546,7 @@
     <asset_bundle>250</asset_bundle>
     <hidden_until_time>1657213200</hidden_until_time>
     <item_name>Mortas Stone</item_name>
-    <item_desc>Collect Mortas Stones to upgrade the Legendary Mortas, the Cursed card!</item_desc>
+    <item_desc>Collect Mortas Stones to upgrade Mortas, the Cursed!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14500,7 +14634,7 @@
     <asset_bundle>252</asset_bundle>
     <hidden_until_time>1658422800</hidden_until_time>
     <item_name>Osseus Stone</item_name>
-    <item_desc>Collect Osseus Stones to upgrade the Legendary Osseus, the Skeleball!</item_desc>
+    <item_desc>Collect Osseus Stones to upgrade Osseus, the Skeleball!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14583,8 +14717,8 @@
     <picture>Void_Mecha_Void_Channeler_A</picture>
     <asset_bundle>258</asset_bundle>
     <hidden_until_time>1665680400</hidden_until_time>
-    <item_name>Channeler Stone</item_name>
-    <item_desc>Collect Channeler Stones to upgrade the Legendary R3-M1, the Channeler!</item_desc>
+    <item_name>R3-M1 Stone</item_name>
+    <item_desc>Collect R3-M1 Stones to upgrade R3-M1, the Channeler!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14756,43 +14890,49 @@
     <picture>Goblin_Portal_Ambusher_A</picture>
     <asset_bundle>262</asset_bundle>
     <hidden_until_time>1671728400</hidden_until_time>
-    <!-- Thursday, 22 December 2022 17:00:00	 -->
-    <item_name>Leaper Stone</item_name>
-    <item_desc>Collect Leaper Stones to upgrade Vig, the Leaper!</item_desc>
+    <item_name>Vig Stone</item_name>
+    <item_desc>Collect Vig Stones to upgrade Vig, the Leaper!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>8</type>
     <sub_type>11</sub_type>
-    <attack>6</attack>
+    <attack>8</attack>
     <health>20</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="rally" x="5" y="8" />
+    <skill id="rally" x="7" y="8" />
     <skill id="jam" c="5" />
     <skill id="berserk" x="4" />
     <upgrade>
       <level>2</level>
+      <attack>8</attack>
       <health>21</health>
-      <skill id="rally" x="6" y="8" />
+      <skill id="rally" x="7" y="8" />
       <skill id="jam" c="5" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
-      <skill id="rally" x="7" y="8" />
+      <attack>8</attack>
+      <health>22</health>
+      <skill id="rally" x="8" y="8" />
       <skill id="jam" c="5" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>8</attack>
-      <health>22</health>
+      <health>23</health>
+      <skill id="rally" x="9" y="8" />
+      <skill id="jam" c="5" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="8" y="8" />
+      <attack>9</attack>
+      <health>23</health>
+      <skill id="rally" x="9" y="8" />
       <skill id="jam" c="4" />
       <skill id="berserk" x="4" />
     </upgrade>
@@ -14800,29 +14940,38 @@
       <level>6</level>
       <attack>9</attack>
       <health>24</health>
-    </upgrade>
-    <upgrade>
-      <level>7</level>
       <skill id="rally" x="9" y="8" />
       <skill id="jam" c="4" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
-      <level>8</level>
-      <health>25</health>
+      <level>7</level>
+      <attack>9</attack>
+      <health>24</health>
       <skill id="rally" x="9" y="8" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
+      <level>8</level>
+      <attack>9</attack>
+      <health>25</health>
+      <skill id="rally" x="9" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+    <upgrade>
       <level>9</level>
       <attack>10</attack>
+      <health>25</health>
       <skill id="rally" x="9" y="8" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="6" />
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>10</attack>
+      <health>25</health>
       <skill id="rally" x="10" y="8" />
       <skill id="jam" c="3" />
       <skill id="berserk" x="7" />
@@ -14838,8 +14987,8 @@
     <picture>Angel_Dark_Duo_A</picture>
     <asset_bundle>264</asset_bundle>
     <hidden_until_time>1674147600</hidden_until_time>
-    <item_name>Vengeful Stone</item_name>
-    <item_desc>Collect Vengeful Stones to upgrade Zamriel, the Vengeful!</item_desc>
+    <item_name>Zamriel Stone</item_name>
+    <item_desc>Collect Zamriel Stones to upgrade Zamriel, the Vengeful!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14928,8 +15077,8 @@
     <asset_bundle>270</asset_bundle>
     <hidden_until_time>1680195600</hidden_until_time>
     <!-- Thursday, March 30, 2023 17:00:00	 -->
-    <item_name>Volcano Stone</item_name>
-    <item_desc>Collect Volcano Stones to upgrade Worf, Volcano King!</item_desc>
+    <item_name>Worf Stone</item_name>
+    <item_desc>Collect Worf Stones to upgrade Worf, Volcano King!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15016,8 +15165,8 @@
     <picture>Avian_Gaerriel,_The_Flying_Nightmare_A</picture>
     <asset_bundle>272</asset_bundle>
     <hidden_until_time>1683824400</hidden_until_time>
-    <item_name>Nightmare Stone</item_name>
-    <item_desc>Collect Nightmare Stones to upgrade Gaerriel, Flying Nightmare!</item_desc>
+    <item_name>Gaerriel Stone</item_name>
+    <item_desc>Collect Gaerriel Stones to upgrade Gaerriel, Flying Nightmare!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15185,8 +15334,8 @@
     <picture>Insect_Destructor_Anthill_A</picture>
     <asset_bundle>278</asset_bundle>
     <hidden_until_time>1689872400</hidden_until_time>
-    <item_name>Assailants Stone</item_name>
-    <item_desc>Collect Assailants Stones to upgrade Nuri &amp; Nera, Twin Assailants!</item_desc>
+    <item_name>Nuri &amp; Nera Stone</item_name>
+    <item_desc>Collect Nuri &amp; Nera Stones to upgrade Nuri &amp; Nera, Twin Assailants!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15275,7 +15424,7 @@
     <asset_bundle>125</asset_bundle>
     <hidden_until_time>1524502800</hidden_until_time>
     <item_name>Arran Stone</item_name>
-    <item_desc>Collect Arran Stones to upgrade the Legendary Glory Seeker Arran card!</item_desc>
+    <item_desc>Collect Arran Stones to upgrade Glory Seeker Arran!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15311,9 +15460,7 @@
     <upgrade>
       <level>5</level>
       <attack>14</attack>
-      <skill id="corrosive" x="8" />
-      <skill id="heal" all="1" x="4" />
-      <skill id="leech" x="14" />
+      <health>33</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -15324,29 +15471,30 @@
     </upgrade>
     <upgrade>
       <level>7</level>
+      <attack>16</attack>
       <skill id="corrosive" x="8" />
       <skill id="heal" all="1" x="5" />
       <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>8</level>
-      <health>33</health>
+      <health>34</health>
       <skill id="corrosive" x="9" />
       <skill id="heal" all="1" x="5" />
       <skill id="leech" x="15" />
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>16</attack>
-      <health>34</health>
       <skill id="corrosive" x="9" />
-      <skill id="heal" all="1" x="5" />
+      <skill id="heal" all="1" x="6" />
       <skill id="leech" x="16" />
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>16</attack>
+      <health>35</health>
       <skill id="corrosive" x="10" />
-      <skill id="heal" all="1" x="6" />
+      <skill id="heal" all="1" x="7" />
       <skill id="leech" x="16" />
     </upgrade>
   </unit>
@@ -15361,7 +15509,7 @@
     <asset_bundle>129</asset_bundle>
     <hidden_until_time>1529082000</hidden_until_time>
     <item_name>Nemea Stone</item_name>
-    <item_desc>Collect Nemea Stones to upgrade the Legendary Nemea, the Lost Regent card!</item_desc>
+    <item_desc>Collect Nemea Stones to upgrade Nemea, the Lost Regent!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15449,7 +15597,7 @@
     <asset_bundle>135</asset_bundle>
     <hidden_until_time>1533229200</hidden_until_time>
     <item_name>Leafsinger Stone</item_name>
-    <item_desc>Collect Leafsinger Stones to upgrade the Legendary Leafsinger card!</item_desc>
+    <item_desc>Collect Leafsinger Stones to upgrade Leafsinger!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15530,15 +15678,15 @@
   <unit>
     <id>7603</id>
     <card_type>2</card_type>
-    <name>Formyr the Desecrated</name>
+    <name>Formyr, the Desecrated</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Undead_Flesh_A</picture>
     <asset_bundle>143</asset_bundle>
     <hidden_until_time>1540486800</hidden_until_time>
-    <item_name>Desecrated Stone</item_name>
-    <item_desc>Collect Desecrated Stones to upgrade the Legendary Formyr the Desecrated card!</item_desc>
+    <item_name>Formyr Stone</item_name>
+    <item_desc>Collect Formyr Stones to upgrade Formyr, the Desecrated!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15630,7 +15778,7 @@
     <asset_bundle>145</asset_bundle>
     <hidden_until_time>1542906000</hidden_until_time>
     <item_name>Tropicano Stone</item_name>
-    <item_desc>Collect Tropicano Stones to upgrade the Legendary Tropicano Rex card!</item_desc>
+    <item_desc>Collect Tropicano Stones to upgrade Tropicano Rex!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15719,7 +15867,7 @@
     <asset_bundle>168</asset_bundle>
     <hidden_until_time>1567098000</hidden_until_time>
     <item_name>Rago Stone</item_name>
-    <item_desc>Collect Rago Stones to upgrade the Legendary Rago, Crimson Vicar card!</item_desc>
+    <item_desc>Collect Rago Stones to upgrade Rago, Crimson Vicar!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15813,7 +15961,7 @@
     <asset_bundle>172</asset_bundle>
     <hidden_until_time>1569517200</hidden_until_time>
     <item_name>Puzzlemud Stone</item_name>
-    <item_desc>Collect Puzzlemud Stones to upgrade the Legendary Puzzlemud's Body card!</item_desc>
+    <item_desc>Collect Puzzlemud Stones to upgrade Puzzlemud's Body!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15898,7 +16046,7 @@
     <asset_bundle>174</asset_bundle>
     <hidden_until_time>1571936400</hidden_until_time>
     <item_name>Malik Stone</item_name>
-    <item_desc>Collect Malik Stones to upgrade the Legendary Malik, Hollow Djinn card!</item_desc>
+    <item_desc>Collect Malik Stones to upgrade Malik, Hollow Djinn!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15992,7 +16140,7 @@
     <asset_bundle>182</asset_bundle>
     <hidden_until_time>1581613200</hidden_until_time>
     <item_name>Triad Stone</item_name>
-    <item_desc>Collect Triad Stones to upgrade the Legendary The Triad of Fortunes card!</item_desc>
+    <item_desc>Collect Triad Stones to upgrade The Triad of Fortunes!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16081,7 +16229,7 @@
     <asset_bundle>185</asset_bundle>
     <hidden_until_time>1584032400</hidden_until_time>
     <item_name>Wrom Stone</item_name>
-    <item_desc>Collect Wrom Stones to upgrade the Legendary Wrom, the Entomancer card!</item_desc>
+    <item_desc>Collect Wrom Stones to upgrade Wrom, the Entomancer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16167,7 +16315,7 @@
     <hidden_until_time>1586451600</hidden_until_time>
     <!-- Thursday, 9 April 2020 17:00:00 -->
     <item_name>Trafyr Stone</item_name>
-    <item_desc>Collect Trafyr Stones to upgrade the Legendary Trafyr, the Rose Warden card!</item_desc>
+    <item_desc>Collect Trafyr Stones to upgrade Trafyr, the Rose Warden!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16256,7 +16404,7 @@
     <asset_bundle>194</asset_bundle>
     <hidden_until_time>1593709200</hidden_until_time>
     <item_name>Vsov Stone</item_name>
-    <item_desc>Collect Vsov Stones to upgrade the Legendary Vsov, Blizzard Djinn card!</item_desc>
+    <item_desc>Collect Vsov Stones to upgrade Vsov, Blizzard Djinn!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16342,8 +16490,8 @@
     <picture>Avian_Undead_Mummy_Condor_B</picture>
     <asset_bundle>198</asset_bundle>
     <hidden_until_time>1595523600</hidden_until_time>
-    <item_name>Beyonder Stone</item_name>
-    <item_desc>Collect Beyonder Stones to upgrade the Legendary Tzopilotl, the Beyonder card!</item_desc>
+    <item_name>Tzopilotl Stone</item_name>
+    <item_desc>Collect Tzopilotl Stones to upgrade Tzopilotl, the Beyonder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16428,7 +16576,7 @@
     <asset_bundle>202</asset_bundle>
     <hidden_until_time>1601571600</hidden_until_time>
     <item_name>Tarkar Stone</item_name>
-    <item_desc>Collect Tarkar Stones to upgrade the Legendary Tarkar, the Unturned card!</item_desc>
+    <item_desc>Collect Tarkar Stones to upgrade Tarkar, the Unturned!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16518,7 +16666,7 @@
     <asset_bundle>204</asset_bundle>
     <hidden_until_time>1603990800</hidden_until_time>
     <item_name>Tylong Stone</item_name>
-    <item_desc>Collect Tylong Stones to upgrade the Legendary Tylong, Old Warrior card!</item_desc>
+    <item_desc>Collect Tylong Stones to upgrade Tylong, Old Warrior!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16606,7 +16754,7 @@
     <hidden_until_time>1605200400</hidden_until_time>
     <!-- Thursday, 12 November 2020 17:00:00 -->
     <item_name>Kyviat Stone</item_name>
-    <item_desc>Collect Kyviat Stones to upgrade the Legendary Kyviat, the Aquamancer card!</item_desc>
+    <item_desc>Collect Kyviat Stones to upgrade Kyviat, the Aquamancer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16703,7 +16851,7 @@
     <asset_bundle>209</asset_bundle>
     <hidden_until_time>1610038800</hidden_until_time>
     <item_name>Lechuza Stone</item_name>
-    <item_desc>Collect Lechuza Stones to upgrade the Legendary Lechuza, the Skybinder card!</item_desc>
+    <item_desc>Collect Lechuza Stones to upgrade Lechuza, the Skybinder!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16800,7 +16948,7 @@
     <asset_bundle>211</asset_bundle>
     <hidden_until_time>1610038800</hidden_until_time>
     <item_name>Bashira Stone</item_name>
-    <item_desc>Collect Bashira Stones to upgrade the Legendary Bashira, the Half-Blooded card!</item_desc>
+    <item_desc>Collect Bashira Stones to upgrade Bashira, the Half-Blooded!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16890,7 +17038,7 @@
     <asset_bundle>211</asset_bundle>
     <hidden_until_time>1611248400</hidden_until_time>
     <item_name>Caccia Stone</item_name>
-    <item_desc>Collect Caccia Stones to upgrade the Legendary Caccia, the Lunatic card!</item_desc>
+    <item_desc>Collect Caccia Stones to upgrade Caccia, the Lunatic!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16972,7 +17120,7 @@
   <unit>
     <id>7619</id>
     <card_type>2</card_type>
-    <name>Rima, The Impaler</name>
+    <name>Rima, the Impaler</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
@@ -16980,7 +17128,7 @@
     <asset_bundle>222</asset_bundle>
     <hidden_until_time>1611248400</hidden_until_time>
     <item_name>Rima Stone</item_name>
-    <item_desc>Collect Rima Stones to upgrade the Legendary Rima, The Impaler card!</item_desc>
+    <item_desc>Collect Rima Stones to upgrade Rima, the Impaler!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17068,7 +17216,7 @@
     <picture>Goblin_Snowboard_Wizard_A</picture>
     <asset_bundle>224</asset_bundle>
     <item_name>Klevit Stone</item_name>
-    <item_desc>Collect Klevit Stones to upgrade the Legendary Klevit, the Speedfall!</item_desc>
+    <item_desc>Collect Klevit Stones to upgrade Klevit, the Speedfall!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17113,9 +17261,6 @@
       <level>6</level>
       <attack>13</attack>
       <health>24</health>
-      <skill id="absorb" x="8" />
-      <skill id="jam" c="3" />
-      <skill id="nullify" x="3" />
     </upgrade>
     <upgrade>
       <level>7</level>
@@ -17127,9 +17272,6 @@
       <level>8</level>
       <attack>14</attack>
       <health>25</health>
-      <skill id="absorb" x="9" />
-      <skill id="jam" c="3" />
-      <skill id="nullify" x="4" />
     </upgrade>
     <upgrade>
       <level>9</level>
@@ -17141,6 +17283,7 @@
     <upgrade>
       <level>10</level>
       <attack>15</attack>
+      <health>26</health>
       <skill id="absorb" x="10" />
       <skill id="jam" c="3" />
       <skill id="nullify" x="5" />
@@ -17156,7 +17299,7 @@
     <picture>Avian_Turkey_Witch_A</picture>
     <asset_bundle>226</asset_bundle>
     <item_name>Saucy Stone</item_name>
-    <item_desc>Collect Saucy Stones to upgrade the Legendary Saucy, Lady of the Cauldron!</item_desc>
+    <item_desc>Collect Saucy Stones to upgrade Saucy, Lady of the Cauldron!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17246,7 +17389,7 @@
     <picture>Undead_Avian_Plague_Druid_A</picture>
     <asset_bundle>228</asset_bundle>
     <item_name>Gravy Stone</item_name>
-    <item_desc>Collect Gravy Stones to upgrade the Legendary Gravy, the Ravenlyte!</item_desc>
+    <item_desc>Collect Gravy Stones to upgrade Gravy, the Ravenlyte!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17331,7 +17474,7 @@
     <picture>Mecha_Mecha_Beastmaster_A</picture>
     <asset_bundle>234</asset_bundle>
     <item_name>Dunstan Stone</item_name>
-    <item_desc>Collect Dunstan Stones to upgrade the Legendary Dunstan, the Untamed!</item_desc>
+    <item_desc>Collect Dunstan Stones to upgrade Dunstan, the Untamed!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17417,13 +17560,13 @@
     <picture>Troll_Master_A</picture>
     <asset_bundle>238</asset_bundle>
     <item_name>Sigblin Stone</item_name>
-    <item_desc>Collect Sigblin Stones to upgrade the Legendary Sigblin, the Trollskin!</item_desc>
+    <item_desc>Collect Sigblin Stones to upgrade Sigblin, the Trollskin!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>3</type>
     <sub_type>11</sub_type>
-    <attack>14</attack>
+    <attack>16</attack>
     <health>45</health>
     <cost>3</cost>
     <rarity>4</rarity>
@@ -17432,7 +17575,7 @@
     <skill id="flurry" c="4" />
     <upgrade>
       <level>2</level>
-      <attack>15</attack>
+      <attack>17</attack>
       <skill id="stasis" x="4" />
       <skill id="regenerate" x="9" />
       <skill id="flurry" c="4" />
@@ -17452,14 +17595,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>16</attack>
+      <attack>18</attack>
       <skill id="stasis" x="5" />
       <skill id="regenerate" x="11" />
       <skill id="flurry" c="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>17</attack>
+      <attack>19</attack>
       <health>47</health>
     </upgrade>
     <upgrade>
@@ -17477,7 +17620,7 @@
     </upgrade>
     <upgrade>
       <level>9</level>
-      <attack>18</attack>
+      <attack>20</attack>
       <health>49</health>
       <skill id="stasis" x="7" />
       <skill id="regenerate" x="12" />
@@ -17485,6 +17628,7 @@
     </upgrade>
     <upgrade>
       <level>10</level>
+      <attack>20</attack>
       <health>50</health>
       <skill id="stasis" x="8" />
       <skill id="regenerate" x="13" />
@@ -17501,7 +17645,7 @@
     <picture>Elemental_Fairy_Channeler_A</picture>
     <asset_bundle>240</asset_bundle>
     <item_name>Quad Stone</item_name>
-    <item_desc>Collect Quad Stones to upgrade the Legendary Quad, the Gatherer!</item_desc>
+    <item_desc>Collect Quad Stones to upgrade Quad, the Gatherer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17582,7 +17726,7 @@
     <picture>Frog_Frog_Fiddler_A</picture>
     <asset_bundle>254</asset_bundle>
     <item_name>Fritz Stone</item_name>
-    <item_desc>Collect Fritz Stones to upgrade the Legendary Fritz, the Fiddler!</item_desc>
+    <item_desc>Collect Fritz Stones to upgrade Fritz, the Fiddler!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17659,14 +17803,14 @@
   <unit>
     <id>7627</id>
     <card_type>2</card_type>
-    <name>Crash and Zink, the Riders</name>
+    <name>Crash &amp; Zink, the Riders</name>
     <set>5100</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Goblin_Beast_Beast_Riders_A</picture>
     <asset_bundle>262</asset_bundle>
-    <item_name>Rider Stone</item_name>
-    <item_desc>Collect Rider Stones to upgrade the Legendary Crash and Zink, the Riders!</item_desc>
+    <item_name>Crash &amp; Zink Stone</item_name>
+    <item_desc>Collect Crash &amp; Zink Stones to upgrade Crash &amp; Zink, the Riders!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17757,7 +17901,7 @@
     <picture>Insect_Arachnid_Nightwalker_A</picture>
     <asset_bundle>266</asset_bundle>
     <item_name>Ungoliant Stone</item_name>
-    <item_desc>Collect Ungoliant Stones to upgrade the Legendary Ungoliant, Poisonous Terror!</item_desc>
+    <item_desc>Collect Ungoliant Stones to upgrade Ungoliant, Poisonous Terror!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17844,7 +17988,7 @@
     <picture>Insect_Love_Bug_A</picture>
     <asset_bundle>266</asset_bundle>
     <item_name>Tilly Stone</item_name>
-    <item_desc>Collect Tilly Stones to upgrade the Legendary Tilly, the Love Keeper!</item_desc>
+    <item_desc>Collect Tilly Stones to upgrade Tilly, the Love Keeper!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -17927,7 +18071,7 @@
     <picture>Dragon_Tree_Dragon_A</picture>
     <asset_bundle>268</asset_bundle>
     <item_name>Protector Stone</item_name>
-    <item_desc>Collect Protector Stones to upgrade the Legendary Tiendroantun, the Protector!</item_desc>
+    <item_desc>Collect Protector Stones to upgrade Tiendroantun, the Protector!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -18015,7 +18159,7 @@
     <picture>Mecha_Undead_The_Hunter_A</picture>
     <asset_bundle>276</asset_bundle>
     <item_name>Coldsteel Stone</item_name>
-    <item_desc>Collect Coldsteel Stones to upgrade the Legendary Coldsteel Hunter!</item_desc>
+    <item_desc>Collect Coldsteel Stones to upgrade Coldsteel Hunter!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>

@@ -1812,6 +1812,16 @@
       <evolve_skill id="daze" s="heartseeker" />
     </effect>
   </battleground>
+  <battleground>
+    <id>184</id>
+    <name>Goblin Acid Rain</name>
+    <desc>All Goblins gain extra Barrage and Corrosive equal to 15% of their base Health.</desc>
+    <icon>filter_goblin_64</icon>
+    <effect>
+      <add_skill id="barrage" mult="0.15" base="health" y="11" />
+      <add_skill id="corrosive" mult="0.15" base="health" y="11" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

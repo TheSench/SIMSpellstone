@@ -3992,18 +3992,18 @@
     <name>Cloudwhale Rider</name>
     <picture>Goblin_Whale_Rider_Seafolk_A</picture>
     <asset_bundle>138</asset_bundle>
-    <hidden_until_time>1535648400</hidden_until_time>
+    <cost>2</cost>
     <attack>7</attack>
     <health>20</health>
-    <cost>2</cost>
-    <rarity>4</rarity>
     <skill id="absorb" x="4" />
-    <skill id="protect" x="2" all="1" />
+    <skill id="protect" all="1" x="2" />
     <skill id="frost" x="3" />
+    <rarity>4</rarity>
     <type>1</type>
     <sub_type>12</sub_type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1535648400</hidden_until_time>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -4015,19 +4015,20 @@
     <upgrade>
       <level>4</level>
       <health>23</health>
-      <skill id="absorb" x="5" />
-      <skill id="protect" x="2" all="1" />
-      <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>8</attack>
+      <skill id="absorb" x="5" />
+      <skill id="protect" all="1" x="2" />
+      <skill id="frost" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>8</attack>
       <health>24</health>
       <skill id="absorb" x="5" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="protect" all="1" x="2" />
       <skill id="frost" x="4" />
     </upgrade>
   </unit>
@@ -4038,27 +4039,26 @@
     <name>Cloudwhale Wizard</name>
     <picture>Goblin_Whale_Rider_Seafolk_A</picture>
     <asset_bundle>138</asset_bundle>
-    <hidden_until_time>1535648400</hidden_until_time>
-    <attack>8</attack>
-    <health>24</health>
     <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="absorb" x="6" />
-    <skill id="protect" x="2" all="1" />
+    <attack>8</attack>
+    <health>25</health>
+    <skill id="absorb" x="5" />
+    <skill id="protect" all="1" x="2" />
     <skill id="frost" x="4" />
+    <rarity>4</rarity>
     <type>1</type>
     <sub_type>12</sub_type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1535648400</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <health>25</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>26</health>
       <skill id="absorb" x="6" />
-      <skill id="protect" x="3" all="1" />
+      <skill id="protect" all="1" x="2" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
@@ -4067,15 +4067,17 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="absorb" x="7" />
-      <skill id="protect" x="3" all="1" />
+      <health>28</health>
+      <skill id="absorb" x="6" />
+      <skill id="protect" all="1" x="3" />
       <skill id="frost" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>8</attack>
       <health>28</health>
       <skill id="absorb" x="7" />
-      <skill id="protect" x="3" all="1" />
+      <skill id="protect" all="1" x="3" />
       <skill id="frost" x="5" />
     </upgrade>
   </unit>
@@ -4086,47 +4088,44 @@
     <name>Cloudwhale Magus</name>
     <picture>Goblin_Whale_Rider_Seafolk_B</picture>
     <asset_bundle>138</asset_bundle>
-    <hidden_until_time>1535648400</hidden_until_time>
-    <attack>9</attack>
-    <health>29</health>
     <cost>2</cost>
-    <rarity>4</rarity>
-    <skill id="absorb" x="7" />
-    <skill id="protect" x="3" all="1" />
+    <attack>8</attack>
+    <health>28</health>
+    <skill id="absorb" x="8" />
+    <skill id="protect" all="1" x="3" />
     <skill id="frost" x="5" />
+    <rarity>4</rarity>
     <type>1</type>
     <sub_type>12</sub_type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1535648400</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <health>30</health>
-      <skill id="absorb" x="7" />
-      <skill id="protect" x="3" all="1" />
-      <skill id="frost" x="5" />
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>31</health>
-      <skill id="absorb" x="8" />
-      <skill id="protect" x="3" all="1" />
-      <skill id="frost" x="5" />
+      <attack>9</attack>
+      <health>30</health>
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>10</attack>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="absorb" x="9" />
-      <skill id="protect" x="3" all="1" />
-      <skill id="frost" x="5" />
+      <skill id="protect" all="1" x="3" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>11</attack>
+      <health>31</health>
       <skill id="absorb" x="9" />
-      <skill id="protect" x="4" all="1" />
+      <skill id="protect" all="1" x="4" />
       <skill id="frost" x="6" />
     </upgrade>
   </unit>
@@ -6839,23 +6838,21 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
-      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="3" />
       <skill id="burn" x="1" />
       <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
+      <health>11</health>
       <skill id="enfeeble" x="3" />
       <skill id="burn" x="1" />
-      <skill id="weaken" x="1" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enfeeble" x="3" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="2" />
+      <attack>3</attack>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -6875,10 +6872,10 @@
     <picture>Goblin_Sabertooth_Mech_A</picture>
     <asset_bundle>38</asset_bundle>
     <cost>0</cost>
-    <attack>4</attack>
+    <attack>3</attack>
     <health>12</health>
     <skill id="enfeeble" x="3" />
-    <skill id="burn" x="2" />
+    <skill id="burn" x="3" />
     <skill id="weaken" x="3" />
     <rarity>3</rarity>
     <type>2</type>
@@ -6887,17 +6884,19 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <skill id="enfeeble" x="4" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="3" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>13</health>
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <health>14</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -6928,20 +6927,23 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <skill id="enfeeble" x="5" />
+      <skill id="enfeeble" x="4" />
       <skill id="burn" x="4" />
       <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
-      <level>4</level>
-      <attack>5</attack>
-      <skill id="enfeeble" x="5" />
+      <level>3</level>
+      <health>16</health>
+      <skill id="enfeeble" x="4" />
       <skill id="burn" x="4" />
       <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -7093,36 +7095,35 @@
     <name>Firecracker</name>
     <picture>Goblin_Explosive_Goblin_A</picture>
     <asset_bundle>195</asset_bundle>
-    <hidden_until_time>1595350800</hidden_until_time>
-    <attack>4</attack>
-    <health>23</health>
     <cost>2</cost>
-    <rarity>3</rarity>
+    <attack>5</attack>
+    <health>23</health>
     <skill id="absorb" x="4" />
     <skill id="counterburn" x="2" />
     <skill id="strike" x="5" />
+    <rarity>3</rarity>
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1595350800</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <health>24</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="absorb" x="5" />
-      <skill id="counterburn" x="2" />
-      <skill id="strike" x="5" />
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="5" />
+      <skill id="absorb" x="4" />
       <skill id="counterburn" x="3" />
       <skill id="strike" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>5</attack>
+      <attack>6</attack>
+      <health>24</health>
       <skill id="absorb" x="5" />
       <skill id="counterburn" x="3" />
       <skill id="strike" x="6" />
@@ -7135,39 +7136,39 @@
     <name>Firesnapper</name>
     <picture>Goblin_Explosive_Goblin_A</picture>
     <asset_bundle>195</asset_bundle>
-    <hidden_until_time>1595350800</hidden_until_time>
-    <attack>5</attack>
-    <health>25</health>
     <cost>2</cost>
-    <rarity>3</rarity>
+    <attack>6</attack>
+    <health>24</health>
     <skill id="absorb" x="5" />
-    <skill id="counterburn" x="3" />
+    <skill id="counterburn" x="4" />
     <skill id="strike" x="6" />
+    <rarity>3</rarity>
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1595350800</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <skill id="absorb" x="6" />
-      <skill id="counterburn" x="3" />
-      <skill id="strike" x="6" />
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
       <skill id="absorb" x="6" />
       <skill id="counterburn" x="4" />
       <skill id="strike" x="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="6" />
-      <skill id="counterburn" x="4" />
-      <skill id="strike" x="7" />
+      <attack>8</attack>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>8</attack>
       <health>26</health>
+      <skill id="absorb" x="6" />
+      <skill id="counterburn" x="4" />
+      <skill id="strike" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -7177,36 +7178,38 @@
     <name>Firecrackler</name>
     <picture>Goblin_Explosive_Goblin_B</picture>
     <asset_bundle>195</asset_bundle>
-    <hidden_until_time>1595350800</hidden_until_time>
-    <attack>7</attack>
-    <health>26</health>
     <cost>2</cost>
-    <rarity>3</rarity>
-    <skill id="absorb" x="7" />
-    <skill id="counterburn" x="4" />
+    <attack>8</attack>
+    <health>26</health>
+    <skill id="absorb" x="6" />
+    <skill id="counterburn" x="5" />
     <skill id="strike" x="7" />
+    <rarity>3</rarity>
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <hidden_until_time>1595350800</hidden_until_time>
     <upgrade>
       <level>2</level>
-      <attack>8</attack>
-      <skill id="absorb" x="7" />
-      <skill id="counterburn" x="5" />
-      <skill id="strike" x="7" />
+      <attack>9</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>27</health>
+      <skill id="absorb" x="6" />
+      <skill id="counterburn" x="5" />
+      <skill id="strike" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="absorb" x="8" />
-      <skill id="counterburn" x="5" />
-      <skill id="strike" x="7" />
+      <skill id="absorb" x="7" />
+      <skill id="counterburn" x="6" />
+      <skill id="strike" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>10</attack>
+      <health>27</health>
       <skill id="absorb" x="8" />
       <skill id="counterburn" x="6" />
       <skill id="strike" x="8" />
@@ -8280,15 +8283,15 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
+      <attack>7</attack>
       <health>16</health>
-      <skill id="strike" x="6" />
-      <skill id="nullify" x="1" />
-      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>7</attack>
       <health>17</health>
+      <skill id="strike" x="6" />
+      <skill id="nullify" x="1" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -8299,8 +8302,8 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="strike" x="6" />
-      <skill id="nullify" x="3" />
+      <skill id="strike" x="7" />
+      <skill id="nullify" x="2" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
@@ -8321,10 +8324,10 @@
     <asset_bundle>38</asset_bundle>
     <cost>1</cost>
     <attack>8</attack>
-    <health>18</health>
+    <health>19</health>
     <skill id="strike" x="8" />
     <skill id="nullify" x="3" />
-    <skill id="berserk" x="5" />
+    <skill id="berserk" x="4" />
     <rarity>4</rarity>
     <type>2</type>
     <sub_type>11</sub_type>
@@ -8332,23 +8335,25 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <attack>9</attack>
-      <health>19</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>20</health>
       <skill id="strike" x="8" />
       <skill id="nullify" x="4" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
       <level>4</level>
-      <attack>10</attack>
       <health>21</health>
+      <skill id="strike" x="8" />
+      <skill id="nullify" x="5" />
+      <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>10</attack>
       <skill id="strike" x="9" />
       <skill id="nullify" x="5" />
       <skill id="berserk" x="5" />
@@ -10753,43 +10758,43 @@
     <card_type>2</card_type>
     <name>Garganotos</name>
     <picture>Forest_Beast_A</picture>
-    <attack>3</attack>
-    <health>21</health>
     <cost>2</cost>
-    <rarity>3</rarity>
+    <attack>6</attack>
+    <health>21</health>
     <skill id="rally" x="1" />
-    <skill id="pierce" x="5" />
+    <skill id="pierce" x="7" />
     <skill id="poison" x="2" />
+    <rarity>3</rarity>
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>22</health>
       <skill id="rally" x="2" />
-      <skill id="pierce" x="6" />
-      <skill id="poison" x="2" />
+      <skill id="pierce" x="8" />
+      <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <health>22</health>
       <skill id="rally" x="3" />
-      <skill id="pierce" x="6" />
+      <skill id="pierce" x="9" />
       <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>23</health>
-      <skill id="rally" x="3" />
-      <skill id="pierce" x="7" />
-      <skill id="poison" x="4" />
+      <skill id="rally" x="4" />
+      <skill id="pierce" x="10" />
+      <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>5</attack>
+      <attack>7</attack>
+      <health>23</health>
       <skill id="rally" x="4" />
-      <skill id="pierce" x="8" />
+      <skill id="pierce" x="11" />
       <skill id="poison" x="4" />
     </upgrade>
   </unit>
@@ -10800,37 +10805,41 @@
     <name>Mega Garganotos</name>
     <picture>Forest_Beast_B</picture>
     <asset_bundle>9</asset_bundle>
-    <attack>5</attack>
-    <health>24</health>
     <cost>2</cost>
-    <rarity>3</rarity>
+    <attack>7</attack>
+    <health>23</health>
     <skill id="rally" x="4" />
-    <skill id="pierce" x="9" />
+    <skill id="pierce" x="12" />
     <skill id="poison" x="4" />
+    <rarity>3</rarity>
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <skill id="rally" x="4" />
-      <skill id="pierce" x="10" />
-      <skill id="poison" x="4" />
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>25</health>
+      <attack>8</attack>
+      <skill id="rally" x="5" />
+      <skill id="pierce" x="12" />
+      <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="rally" x="4" />
-      <skill id="pierce" x="11" />
+      <health>25</health>
+      <skill id="rally" x="5" />
+      <skill id="pierce" x="12" />
       <skill id="poison" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <attack>8</attack>
+      <health>25</health>
       <skill id="rally" x="5" />
-      <skill id="pierce" x="12" />
+      <skill id="pierce" x="13" />
       <skill id="poison" x="6" />
     </upgrade>
   </unit>
@@ -10841,41 +10850,44 @@
     <name>King Garganotos</name>
     <picture>Forest_Beast_C</picture>
     <asset_bundle>9</asset_bundle>
-    <attack>6</attack>
-    <health>26</health>
     <cost>2</cost>
-    <rarity>3</rarity>
-    <skill id="rally" x="6" />
-    <skill id="pierce" x="13" />
+    <attack>8</attack>
+    <health>26</health>
+    <skill id="rally" x="5" />
+    <skill id="pierce" x="14" />
     <skill id="poison" x="7" />
+    <rarity>3</rarity>
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
-      <attack>7</attack>
-      <skill id="rally" x="7" />
-      <skill id="pierce" x="14" />
-      <skill id="poison" x="8" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <skill id="rally" x="7" />
+      <attack>9</attack>
+      <skill id="rally" x="5" />
       <skill id="pierce" x="15" />
       <skill id="poison" x="8" />
     </upgrade>
     <upgrade>
-      <level>4</level>
-      <skill id="rally" x="8" />
+      <level>3</level>
+      <skill id="rally" x="6" />
       <skill id="pierce" x="16" />
       <skill id="poison" x="9" />
     </upgrade>
     <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="rally" x="7" />
+      <skill id="pierce" x="17" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
       <level>5</level>
-      <attack>8</attack>
+      <attack>10</attack>
       <health>28</health>
+      <skill id="rally" x="8" />
+      <skill id="pierce" x="18" />
+      <skill id="poison" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -13706,7 +13718,8 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <skill id="pierce" x="4" />
+      <skill id="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -13725,9 +13738,9 @@
     <picture>Goblin_Gang_B</picture>
     <asset_bundle>10</asset_bundle>
     <cost>1</cost>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>10</health>
-    <skill id="pierce" x="5" />
+    <skill id="pierce" x="4" />
     <skill id="flurry" c="5" />
     <rarity>2</rarity>
     <type>2</type>
@@ -13735,11 +13748,12 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <skill id="pierce" x="5" />
+      <skill id="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>5</attack>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -13767,11 +13781,12 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <skill id="pierce" x="5" />
+      <skill id="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>14</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>4</level>
