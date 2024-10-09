@@ -147,6 +147,55 @@
     <set>9999</set>
     <desc>An expensive deposit of Spellstone ore. You spent a lot of Gold on something best Vaporized into Arcane Dust.</desc>
   </unit>
+  <unit>
+    <id>514</id>
+    <card_type>2</card_type>
+    <name>Larger Arcane Pumpkin</name>
+    <picture>Arcane_Pumpkin_C</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>0</attack>
+    <health>5</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>4</rarity>
+    <set>9999</set>
+    <desc>A special fruit that blooms only in fall throughout Arcantica. Not very flavorful, but a great source of Arcane Dust.</desc>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>10</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>20515</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Largest Ever Arcane Pumpkin</name>
+    <picture>Arcane_Pumpkin_C</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>5</rarity>
+    <set>9999</set>
+    <desc>A mother of all the special fruit that bloom only in fall. A collector's item and a great source of Arcane Dust.</desc>
+  </unit>
   <!-- ========================== -->
   <!-- === BATTLEGROUND CARDS === -->
   <!-- ========================== -->

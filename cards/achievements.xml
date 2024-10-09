@@ -16872,7 +16872,7 @@
     <icon_bundle>15</icon_bundle>
     <locked_start_time>1682614800</locked_start_time>
     <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3865</achievement_req>
+    <achievement_req>3872</achievement_req>
     <!-- Dont forget requirement  -->
     <req>
       <campaign>1345</campaign>
@@ -16892,7 +16892,7 @@
     <icon_bundle>15</icon_bundle>
     <locked_start_time>1682614800</locked_start_time>
     <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3866</achievement_req>
+    <achievement_req>3873</achievement_req>
     <req>
       <campaign>1345</campaign>
       <level>4</level>
@@ -16912,7 +16912,7 @@
     <icon_bundle>15</icon_bundle>
     <locked_start_time>1682614800</locked_start_time>
     <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3867</achievement_req>
+    <achievement_req>3874</achievement_req>
     <req>
       <campaign>1345</campaign>
       <level>6</level>
@@ -16952,7 +16952,7 @@
     <icon_bundle>15</icon_bundle>
     <locked_start_time>1683824400</locked_start_time>
     <!-- Thursday, 11 May 2023 17:00:00 -->
-    <achievement_req>3869</achievement_req>
+    <achievement_req>3876</achievement_req>
     <req>
       <campaign>1346</campaign>
       <level>4</level>
@@ -16972,7 +16972,7 @@
     <icon_bundle>15</icon_bundle>
     <locked_start_time>1683824400</locked_start_time>
     <!-- Thursday, 11 May 2023 17:00:00 -->
-    <achievement_req>3870</achievement_req>
+    <achievement_req>3877</achievement_req>
     <req>
       <campaign>1346</campaign>
       <level>6</level>
@@ -18892,9 +18892,29 @@
     <event_only>1</event_only>
     <icon>sparkler200</icon>
     <icon_bundle>58</icon_bundle>
-    <mission_req>2089</mission_req>
+    <mission_req>2091</mission_req>
     <req>
       <campaign>5014</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Random Reward Legendary -->
+    </reward>
+  </achievement>
+  <!-- Halloween Special Event 2024 -->
+  <achievement>
+    <id>3979</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Spellstone's 9th Anniversary</name>
+    <desc>Complete the 'Trick or Tantrum?' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <icon>pumpkin</icon>
+    <icon_bundle>75</icon_bundle>
+    <mission_req>2105</mission_req>
+    <req>
+      <campaign>5016</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -22233,6 +22253,202 @@
     <locked_start_time>1727370000</locked_start_time>
     <req>
       <campaign>1382</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
+  <!-- E121 Node 1: Knowledge is Power -->
+  <achievement>
+    <id>4591</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Knowledge is Power campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7319</mission_req>
+    <locked_start_time>1728579600</locked_start_time>
+    <req>
+      <campaign>1383</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7117" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4592</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Knowledge is Power campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4591</achievement_req>
+    <locked_start_time>1728579600</locked_start_time>
+    <req>
+      <campaign>1383</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4593</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Knowledge is Power campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4592</achievement_req>
+    <locked_start_time>1728579600</locked_start_time>
+    <req>
+      <campaign>1383</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4594</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Knowledge is Power campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4593</achievement_req>
+    <locked_start_time>1728579600</locked_start_time>
+    <req>
+      <campaign>1383</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4595</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Knowledge is Power campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4594</achievement_req>
+    <locked_start_time>1728579600</locked_start_time>
+    <req>
+      <campaign>1383</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
+  <!-- E121 Node 2: Secret Potion -->
+  <achievement>
+    <id>4596</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Secret Potion campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7325</mission_req>
+    <locked_start_time>1729789200</locked_start_time>
+    <req>
+      <campaign>1384</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7117" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4597</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Secret Potion campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4596</achievement_req>
+    <locked_start_time>1729789200</locked_start_time>
+    <req>
+      <campaign>1384</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4598</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Secret Potion campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4597</achievement_req>
+    <locked_start_time>1729789200</locked_start_time>
+    <req>
+      <campaign>1384</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4599</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Secret Potion campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4598</achievement_req>
+    <locked_start_time>1729789200</locked_start_time>
+    <req>
+      <campaign>1384</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4600</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Secret Potion campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4599</achievement_req>
+    <locked_start_time>1729789200</locked_start_time>
+    <req>
+      <campaign>1384</campaign>
       <level>6</level>
     </req>
     <reward>

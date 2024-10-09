@@ -10870,6 +10870,736 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
+  <!-- E121 Node 1: Knowledge is Power -->
+  <mission>
+    <id>7314</id>
+    <name>They Know</name>
+    <energy>24</energy>
+    <desc>Samael and Yuriel have deduced the real identity of the goblin impersonating Xerkahn: Tagati.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="1035" />
+      <!-- Calypsan Heir -->
+      <card id="1634" />
+      <!-- Brightshoal Warrior -->
+      <card id="1637" />
+      <!-- Icy Lake Monster -->
+      <card id="1035" />
+      <!-- Calypsan Heir -->
+      <card id="1634" />
+      <!-- Brightshoal Warrior -->
+      <card id="1637" />
+      <!-- Icy Lake Monster -->
+      <card id="1035" />
+      <!-- Calypsan Heir -->
+      <card id="1634" />
+      <!-- Brightshoal Warrior -->
+      <card id="1637" />
+      <!-- Icy Lake Monster -->
+      <card id="1035" mastery_level="2" />
+      <!-- Calypsan Heir -->
+      <card id="1634" mastery_level="3" />
+      <!-- Brightshoal Warrior -->
+      <card id="1637" mastery_level="4" />
+      <!-- Icy Lake Monster -->
+      <card id="1035" mastery_level="5" />
+      <!-- Calypsan Heir -->
+      <card id="1634" mastery_level="6" />
+      <!-- Brightshoal Warrior -->
+      <card id="1637" mastery_level="7" />
+      <!-- Icy Lake Monster -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7315</id>
+    <name>She Doesn't Know</name>
+    <energy>24</energy>
+    <desc>The pair plan their next move and decide to use the element of surprise to their advantage as Tagati doesn't know her cover is blown.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="1630" />
+      <!-- Giant Squid -->
+      <card id="1635" />
+      <!-- Mergoat -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1630" />
+      <!-- Giant Squid -->
+      <card id="1635" />
+      <!-- Mergoat -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1630" />
+      <!-- Giant Squid -->
+      <card id="1635" />
+      <!-- Mergoat -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1630" mastery_level="2" />
+      <!-- Giant Squid -->
+      <card id="1635" mastery_level="3" />
+      <!-- Mergoat -->
+      <card id="1644" mastery_level="4" />
+      <!-- Blackfin -->
+      <card id="1630" mastery_level="5" />
+      <!-- Giant Squid -->
+      <card id="1635" mastery_level="6" />
+      <!-- Mergoat -->
+      <card id="1644" mastery_level="7" />
+      <!-- Blackfin -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Dark Mage Tagati? Excellent detective work!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>So she doesn't know we know her real identity yet. So she won't suspect that we know she's a mage either.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>I wonder if she thinks we still have the watch or whether she knows we spread a lot of false rumors?</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>If you had the watch, wouldn't you have used it by now?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7316</id>
+    <name>He Knows They Know</name>
+    <energy>24</energy>
+    <desc>Unfortunately for Samael and Yuriel, someone else already knows all this information too...</desc>
+    <commander id="483" />
+    <!-- Gobtoh -->
+    <deck>
+      <card id="1045" />
+      <!-- Cloudwhale Rider -->
+      <card id="2148" />
+      <!-- Goctopus -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="1045" />
+      <!-- Cloudwhale Rider -->
+      <card id="2148" />
+      <!-- Goctopus -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="1045" />
+      <!-- Cloudwhale Rider -->
+      <card id="2148" />
+      <!-- Goctopus -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="1045" mastery_level="2" />
+      <!-- Cloudwhale Rider -->
+      <card id="2148" mastery_level="3" />
+      <!-- Goctopus -->
+      <card id="2103" mastery_level="4" />
+      <!-- Siren -->
+      <card id="1045" mastery_level="5" />
+      <!-- Cloudwhale Rider -->
+      <card id="2148" mastery_level="6" />
+      <!-- Goctopus -->
+      <card id="2103" mastery_level="7" />
+      <!-- Siren -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>And she knew I first found the Void weapons here!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>You angels are so arrogant, you don't think us goblins are smart! Well we're smart!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>In fact, we're so smart I already passed a message to her that simply read ''They Know''. Ha ha! Not so smart now!</text>
+      </line>
+      <line>
+        <commander>samaelWithFiresword</commander>
+        <enemy>0</enemy>
+        <text>You what?!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>I plead no self-incrimination!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Don't be so full of yourself, little Gobtoh. I already worked it all out.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7317</id>
+    <name>Knowing Me, Knowing Yuriel</name>
+    <energy>24</energy>
+    <desc>It seems like Samael has underestimated the goblins' ability to scheme. Yuriel, especially, isn't used to finding himself one step behind a goblin.</desc>
+    <commander id="14" />
+    <!-- Yuriel the Manashifter -->
+    <deck>
+      <card id="2178" />
+      <!-- Hellcay Draftee -->
+      <card id="2135" />
+      <!-- Primitive Crustavian -->
+      <card id="2200" />
+      <!-- Noble Swordfish -->
+      <card id="2178" />
+      <!-- Hellcay Draftee -->
+      <card id="2135" />
+      <!-- Primitive Crustavian -->
+      <card id="2200" />
+      <!-- Noble Swordfish -->
+      <card id="2178" />
+      <!-- Hellcay Draftee -->
+      <card id="2135" />
+      <!-- Primitive Crustavian -->
+      <card id="2200" />
+      <!-- Noble Swordfish -->
+      <card id="2178" mastery_level="2" />
+      <!-- Hellcay Draftee -->
+      <card id="2135" mastery_level="3" />
+      <!-- Primitive Crustavian -->
+      <card id="2200" mastery_level="4" />
+      <!-- Noble Swordfish -->
+      <card id="2178" mastery_level="5" />
+      <!-- Hellcay Draftee -->
+      <card id="2135" mastery_level="6" />
+      <!-- Primitive Crustavian -->
+      <card id="2200" mastery_level="7" />
+      <!-- Noble Swordfish -->
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Yuriel's a smart owl. As soon as you almost said my name, I knew you had blown my cover.</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Well since we all know, might as well drop the pretense.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>Ah... that's better.</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Nice wand you have there. Looks like it's been Void touched. Another one from Remi's cache?</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>*scowls* I made it myself! Unlike that goblin, I don't need my Void weapons given to me.</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>So I would say hand over the watch but I guess that was a lie too. Good thing I brought my barrage of acid.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7318</id>
+    <name>Who Knows?</name>
+    <energy>24</energy>
+    <desc>Everyone can agree on one thing though: no one knows where Remi's pocket watch has ended up.</desc>
+    <commander id="398" />
+    <!-- Xerkahn, the Avenger -->
+    <deck>
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="2106" mastery_level="2" />
+      <!-- Pharite Snapjaw -->
+      <card id="2108" mastery_level="3" />
+      <!-- Koi Jockey -->
+      <card id="2116" mastery_level="4" />
+      <!-- Messina's Choice -->
+      <card id="2106" mastery_level="5" />
+      <!-- Pharite Snapjaw -->
+      <card id="2108" mastery_level="6" />
+      <!-- Koi Jockey -->
+      <card id="2116" mastery_level="7" />
+      <!-- Messina's Choice -->
+    </deck>
+    <speech>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>So, give me a reason why I don't simply rain down acid and destroy this entire valley?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Maybe the watch is here? Do you want to risk losing it in your assault? It might corrode away...</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>You're bluffing!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>Destroy this valley and you'll also destroy the trail that leads back to whoever first supplied Gobtoh with that cache of Void weapons.</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>Don't listen to them! I already moved all the weapons! Besides, don't you have more than enough supplies with your crazy tentacled cultist friends?! </text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>!!!!!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7319</id>
+    <name>Follow Your Nose</name>
+    <energy>24</energy>
+    <desc>Gobtoh accidentally reveals one of Tagati's key contacts: the crazed followers of Lady Scylla...</desc>
+    <commander id="360" />
+    <!-- Scylla -->
+    <deck>
+      <card id="2242" />
+      <!-- Siegeturtle -->
+      <card id="2080" />
+      <!-- Hunter Zind -->
+      <card id="2073" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2242" />
+      <!-- Siegeturtle -->
+      <card id="2080" />
+      <!-- Hunter Zind -->
+      <card id="2073" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2242" />
+      <!-- Siegeturtle -->
+      <card id="2080" />
+      <!-- Hunter Zind -->
+      <card id="2073" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2242" mastery_level="2" />
+      <!-- Siegeturtle -->
+      <card id="2080" mastery_level="3" />
+      <!-- Hunter Zind -->
+      <card id="2073" mastery_level="4" />
+      <!-- Scylla, Smuggler's End -->
+      <card id="2242" mastery_level="5" />
+      <!-- Siegeturtle -->
+      <card id="2080" mastery_level="6" />
+      <!-- Hunter Zind -->
+      <card id="2073" mastery_level="7" />
+      <!-- Scylla, Smuggler's End -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The followers of Lady Scylla!</text>
+      </line>
+      <line>
+        <commander>yurielupgrade</commander>
+        <enemy>0</enemy>
+        <text>So that's how you've made this acid weapon!</text>
+      </line>
+      <line>
+        <commander>event_047_chance_angelgoblindemon</commander>
+        <enemy>1</enemy>
+        <text>I plead no self-incrimination! You can't use that evidence!</text>
+      </line>
+      <line>
+        <commander>event_047_box_goblindarkwizard</commander>
+        <enemy>1</enemy>
+        <text>Arrrgh! Let's get going!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E121 Node 2: Secret Potion -->
+  <mission>
+    <id>7320</id>
+    <name>Homebrewing</name>
+    <energy>24</energy>
+    <desc>Meanwhile, somewhere in the deep, dark waters, an ominous idea is brewing...</desc>
+    <commander id="246" />
+    <!-- Darkwater Mermaid -->
+    <deck>
+      <card id="5152" />
+      <!-- Mermaid Merchant -->
+      <card id="6108" />
+      <!-- Redwater Angler -->
+      <card id="7005" />
+      <!-- Tsunamari -->
+      <card id="5152" />
+      <!-- Mermaid Merchant -->
+      <card id="6108" />
+      <!-- Redwater Angler -->
+      <card id="7005" />
+      <!-- Tsunamari -->
+      <card id="5152" />
+      <!-- Mermaid Merchant -->
+      <card id="6108" />
+      <!-- Redwater Angler -->
+      <card id="7005" />
+      <!-- Tsunamari -->
+      <card id="5152" mastery_level="2" />
+      <!-- Mermaid Merchant -->
+      <card id="6108" mastery_level="3" />
+      <!-- Redwater Angler -->
+      <card id="7005" mastery_level="4" />
+      <!-- Tsunamari -->
+      <card id="5152" mastery_level="5" />
+      <!-- Mermaid Merchant -->
+      <card id="6108" mastery_level="6" />
+      <!-- Redwater Angler -->
+      <card id="7005" mastery_level="7" />
+      <!-- Tsunamari -->
+    </deck>
+    <speech>
+      <line>
+        <commander>mermaid</commander>
+        <enemy>1</enemy>
+        <text>That's another crate of special purple rainwater your captain lady ordered. Careful! It's fragile.</text>
+      </line>
+      <line>
+        <commander>Portraits_Goblin_Diver</commander>
+        <enemy>1</enemy>
+        <text>Right me lads! I got the secret ingredient for the acid weapon! Now take me back to the surface.</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh overhear goblin say acid weapon!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh ask why we can't use water to make potion instead?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7321</id>
+    <name>Own Recipe</name>
+    <energy>24</energy>
+    <desc>The Void tainted water was a key ingredient in Tagati's acid weapon. Now her suppliers are starting to realise the potential of what they possess.</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7003" />
+      <!-- Kraken -->
+      <card id="7104" />
+      <!-- Croaker of the Deep -->
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7003" />
+      <!-- Kraken -->
+      <card id="7104" />
+      <!-- Croaker of the Deep -->
+      <card id="7023" />
+      <!-- Zolmosh the Fist -->
+      <card id="7003" />
+      <!-- Kraken -->
+      <card id="7104" />
+      <!-- Croaker of the Deep -->
+      <card id="7023" mastery_level="2" />
+      <!-- Zolmosh the Fist -->
+      <card id="7003" mastery_level="3" />
+      <!-- Kraken -->
+      <card id="7104" mastery_level="4" />
+      <!-- Croaker of the Deep -->
+      <card id="7023" mastery_level="5" />
+      <!-- Zolmosh the Fist -->
+      <card id="7003" mastery_level="6" />
+      <!-- Kraken -->
+      <card id="7104" mastery_level="7" />
+      <!-- Croaker of the Deep -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>It must have some power if lady goblin pirate want it!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7322</id>
+    <name>Instructions Unclear</name>
+    <energy>24</energy>
+    <desc>The Scylla cultists, however, lack the goblin sage's knowledge of magical alchemy.</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5258" />
+      <!-- Hammerhead Smithy -->
+      <card id="7106" />
+      <!-- Octhos, Ruin Baron -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5258" />
+      <!-- Hammerhead Smithy -->
+      <card id="7106" />
+      <!-- Octhos, Ruin Baron -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5258" />
+      <!-- Hammerhead Smithy -->
+      <card id="7106" />
+      <!-- Octhos, Ruin Baron -->
+      <card id="5106" mastery_level="2" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5258" mastery_level="3" />
+      <!-- Hammerhead Smithy -->
+      <card id="7106" mastery_level="4" />
+      <!-- Octhos, Ruin Baron -->
+      <card id="5106" mastery_level="5" />
+      <!-- Acuro, Sea Captain -->
+      <card id="5258" mastery_level="6" />
+      <!-- Hammerhead Smithy -->
+      <card id="7106" mastery_level="7" />
+      <!-- Octhos, Ruin Baron -->
+    </deck>
+    <speech>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>1</enemy>
+        <text>Yes but she said something about a mage witch. There's probably some secret recipe to it. We won't know what to do.</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Watershaper smart! Find Watershaper and she can work out recipe!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh will then use special water to bring back Maelstrom!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7323</id>
+    <name>A Secret Ingredient?</name>
+    <energy>24</energy>
+    <desc>Nevertheless, this will not stop Zolmosh from achieving his goal of summoning Scylla back from the dead.</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="6127" />
+      <!-- Hexapus -->
+      <card id="6261" />
+      <!-- Darkwater Beguiler -->
+      <card id="5237" />
+      <!-- Lanternbulb Hunter -->
+      <card id="6127" />
+      <!-- Hexapus -->
+      <card id="6261" />
+      <!-- Darkwater Beguiler -->
+      <card id="5237" />
+      <!-- Lanternbulb Hunter -->
+      <card id="6127" />
+      <!-- Hexapus -->
+      <card id="6261" />
+      <!-- Darkwater Beguiler -->
+      <card id="5237" />
+      <!-- Lanternbulb Hunter -->
+      <card id="6127" mastery_level="2" />
+      <!-- Hexapus -->
+      <card id="6261" mastery_level="3" />
+      <!-- Darkwater Beguiler -->
+      <card id="5237" mastery_level="4" />
+      <!-- Lanternbulb Hunter -->
+      <card id="6127" mastery_level="5" />
+      <!-- Hexapus -->
+      <card id="6261" mastery_level="6" />
+      <!-- Darkwater Beguiler -->
+      <card id="5237" mastery_level="7" />
+      <!-- Lanternbulb Hunter -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh have secret of own to reveal!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh notice lady goblin pirate have this last time she came do deal!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh pick her pocket or two! HAHAHAHA!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7324</id>
+    <name>Sticky Fins</name>
+    <energy>24</energy>
+    <desc>The cultists somehow managed to steal the pocket watch from Tagati! Unfortunately, they do not know the power they are about to unleash...</desc>
+    <commander id="359" />
+    <!-- Oracle of Lady Scylla -->
+    <deck>
+      <card id="7221" />
+      <!-- Icejaw Devastator -->
+      <card id="7194" />
+      <!-- Coralscape Grappler -->
+      <card id="7054" />
+      <!-- The Thing Below -->
+      <card id="7221" />
+      <!-- Icejaw Devastator -->
+      <card id="7194" />
+      <!-- Coralscape Grappler -->
+      <card id="7054" />
+      <!-- The Thing Below -->
+      <card id="7221" />
+      <!-- Icejaw Devastator -->
+      <card id="7194" />
+      <!-- Coralscape Grappler -->
+      <card id="7054" />
+      <!-- The Thing Below -->
+      <card id="7221" mastery_level="2" />
+      <!-- Icejaw Devastator -->
+      <card id="7194" mastery_level="3" />
+      <!-- Coralscape Grappler -->
+      <card id="7054" mastery_level="4" />
+      <!-- The Thing Below -->
+      <card id="7221" mastery_level="5" />
+      <!-- Icejaw Devastator -->
+      <card id="7194" mastery_level="6" />
+      <!-- Coralscape Grappler -->
+      <card id="7054" mastery_level="7" />
+      <!-- The Thing Below -->
+    </deck>
+    <speech>
+      <line>
+        <commander>mermaid</commander>
+        <enemy>1</enemy>
+        <text>How did you get hold of that?! You don't even have fingers to pick pockets with?</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Zolmosh smart! Zolmosh has magnet! Lady goblin pirate didn't even notice last time she was here!</text>
+      </line>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>1</enemy>
+        <text>Are you sure you know what you're doing with that thing though?</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>No one believe in Zolmosh! No one has faith in Zolmosh! Zolmosh will show...</text>
+      </line>
+      <line>
+        <commander>mermaid</commander>
+        <enemy>1</enemy>
+        <text>Err... the water is moving.</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>The Maelstrom has returned!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7325</id>
+    <name>Lesson Lerna'd</name>
+    <energy>24</energy>
+    <desc>If you play silly games with the Void, turns out you might end up with silly prizes.</desc>
+    <commander id="477" />
+    <!-- Lightning Boss Lerna -->
+    <deck>
+      <card id="7108" />
+      <!-- Quetee -->
+      <card id="6225" />
+      <!-- Boilfin Merman -->
+      <card id="5294" />
+      <!-- Kani Defender -->
+      <card id="7108" />
+      <!-- Quetee -->
+      <card id="6225" />
+      <!-- Boilfin Merman -->
+      <card id="5294" />
+      <!-- Kani Defender -->
+      <card id="7108" />
+      <!-- Quetee -->
+      <card id="6225" />
+      <!-- Boilfin Merman -->
+      <card id="5294" />
+      <!-- Kani Defender -->
+      <card id="7108" mastery_level="2" />
+      <!-- Quetee -->
+      <card id="6225" mastery_level="3" />
+      <!-- Boilfin Merman -->
+      <card id="5294" mastery_level="4" />
+      <!-- Kani Defender -->
+      <card id="7108" mastery_level="5" />
+      <!-- Quetee -->
+      <card id="6225" mastery_level="6" />
+      <!-- Boilfin Merman -->
+      <card id="5294" mastery_level="7" />
+      <!-- Kani Defender -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Void_Hydra_Portrait</commander>
+        <enemy>1</enemy>
+        <text>RAWRR!!!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Um... Zolmosh knows that not real Scylla...</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>
@@ -14750,7 +15480,7 @@
       <!-- The Barfis Brothers -->
     </deck>
   </mission>
-  <!-- Special Event 2024 -->
+  <!-- Spellstone Anniversary Special Event 2024 -->
   <mission>
     <id>2083</id>
     <name>Celebrating Year 1</name>
@@ -15207,6 +15937,927 @@
         <commander>Portrait_mythic_wyld</commander>
         <enemy>0</enemy>
         <text>Or maybe I was Lev disguised as Batara all along...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Halloween Special Event 2024 -->
+  <mission>
+    <id>2092</id>
+    <name>Gather Round</name>
+    <energy>4</energy>
+    <desc>On a dark and stormy night, the Mystic Library of Skyhaven has opened its doors to the public for a special announcement.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Good evening, all. And happy October. Tonight, I am proud to present a story once thought lost forever...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Oh, brother... Let's hope she can stick to a schedule this time.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2093</id>
+    <name>Once Upon a Time</name>
+    <energy>4</energy>
+    <desc>Razi opens the thick, dusty tome in her hands. When she speaks, the story comes to life in front of Aria and Daknak! Wisps of arcane fire drift through the air, which fills with the musty scent of legend... or is it the scent of Daknak's armpit?</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Long, long ago, in the Celestial Vault high above the land, lived Goblin King Pumpus.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>He was a joyous, generous ruler. Once a year, he would harness the power of the elements...</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>And when he did, delicious treats would rain down for all his subjects to eat.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Oooh, this story makes Daknak HUNGRY.</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Reowwrr...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You and me both, buddy.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2094</id>
+    <name>Unpleasant Remi-niscing</name>
+    <energy>4</energy>
+    <desc>Pumpus wasn't wholly beloved by everyone, according to Razi. Some people thought the Goblin people deserved better than mere sugary parlor tricks.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>But there were a few Goblins in his celestial kingdom that spurned his treats.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Remi the Banished, one of Skyhaven's most infamous criminals, was one of them.</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>That perilous old fool! I would NEVER let us Goblins fatten up on chocolate and Spellstone candies.</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>I'll teach him to make us weak! I, Remi, born of Aether and Chaos, deserve to rule instead!</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>With the power of the Void, the culmination of all elements, Pumpus will be no more!</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Hee hee hee... Eeya ha ha ha!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2095</id>
+    <name>Better Watch Out</name>
+    <energy>4</energy>
+    <desc>Razi's tone turns as grave as a tombstone as she recounts the machinations of the wicked Remi.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>To destroy King Pumpus, Remi channeled the power of the Void into a simple pocket watch.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Its magic made sure everyone was too slow to notice his plan.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2096</id>
+    <name>The Clock Strikes Twice</name>
+    <energy>4</energy>
+    <desc>The scheming Remi, now in control of time itself, enlists a certain Goblin assassin to do his bidding...</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>With Pumpus's army now as slow and defenseless as fifteen Siegefists, Remi scoured the back alleyways of Skyhaven for someone to help him.</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Oh Betrayal... Harsh and fatal, where might you be? Hee hee hee!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak knows this part! Daknak's Valor make Daknak strong, too!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Strange that we haven't heard more from you, with all the Goblin acid these days.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>That's not Daknak's fault. Right, Fluffles?</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Reowwrr...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2097</id>
+    <name>The Anti-Pumpus Rumpus</name>
+    <energy>4</energy>
+    <desc>Remi and the assassin known only as ''Betrayal'' broke into King Pumpus's chambers to carry out the next phase of Remi's plan.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Betrayal's blinding speed and Remi's magic made a terrifying combination. King Pumpus barely stood a chance. He was a baker, not a fighter.</text>
+      </line>
+      <line>
+        <commander>Remi_Bipolar_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Eee hee hee! Now, it's time for me to get what I deserve!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Sounds familiar, eh Daknak?</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Shush, purple lady. Daknak is listening!</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Remi's hexes transformed Pumpus into a monster with a pumpkin for a head. His new body was cursed with a vengeful aura.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Everywhere he went, it flared up and made the people quake with fear.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>It was a cruel trick to play on one so kind. Soon the goblins forgot all about Pumpus.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>They began to whisper the name ''Pumpking'' with dread.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2098</id>
+    <name>Pumpking's Last Treat</name>
+    <energy>4</energy>
+    <desc>Not everyone was affected by Pumpking's presence. When the other Elementals heard what Remi had done, the backlash against him was immediate and severe.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>In the end, Pumpking got the last laugh.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>His new form was an Elemental, so the other Elementals comforted him.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>They tracked Remi down and placed him in an anti-magic field.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Then, they threw him into exile, deep in the darkness of the Abyss. And that was how he became known as ''Remi the Banished''.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>And we all lived crummily ever after. Cursed watch.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2099</id>
+    <name>Bad End</name>
+    <energy>4</energy>
+    <desc>Daknak isn't exactly fond of how Razi's tale ended. As heinous as Remi was, he couldn't help but relate to that need for respect. Frustration wells up inside the spindly Goblin.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak thinks this ending sucks!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>And so does Daknak's cute pet Fluffles.</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Meowr, hisss!</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Hmm...? That's to be expected. History rarely writes a happy ending.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2100</id>
+    <name>Making the Grade</name>
+    <energy>4</energy>
+    <desc>Daknak launches into a bitter rant about how much he hates reading. Somewhere or other, he goes off on a tangent into his childhood...</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak hates history! Daknak got a C on his Goblin Certificate of Secondary Education all because of history!!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Oh, here we go. It's not Daknak without a fight, is it...?</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Grrrrr...</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>I should never have reopened this place. That owl had the right idea...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2101</id>
+    <name>A Catty Reaction</name>
+    <energy>4</energy>
+    <desc>Daknak's tantrum hits a fever pitch. Waving his enchanted blade in the air like a conductor's baton, he howls for backup!</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Sabercat! Hex and scorch the book to a crisp!!</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Gao-gaoooon!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Protect the book! Daknak might have some of those acid bombs!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2102</id>
+    <name>Speak of the Pumpking...</name>
+    <energy>4</energy>
+    <desc>Daknak stamps his feet and slashes at the air. Then, because Razi neglected to mention an important part of the story, he makes a HUGE mistake!</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak hates stupid books! All that Pumpking, Pumpking, Pumpking, and no respect for Goblins!</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Now you've done it! If you invoke that name thrice, there's no telling what will happen!!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>...Huh?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2103</id>
+    <name>...and He Shall Appear?!</name>
+    <energy>4</energy>
+    <veffect>1</veffect>
+    <desc>Outside the Mystic Library, a thunderclap booms loud enough to silence all Daknak's pandemonium. At the doorway inside, there waits a gangling creature with a pumpkin for a head...</desc>
+    <commander id="342" />
+    <!-- Treat Trickmaster -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Gah! So loud! Daknak hates stupid Bolts too!</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>..................</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>That aura... This isn't just any Elemental! I can feel the Void inside it...!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2104</id>
+    <name>King of the Pumpkin Patch</name>
+    <energy>4</energy>
+    <veffect>1</veffect>
+    <desc>The Void-infected Pumpking is just as the stories say. Somehow, his presence rattles everyone in the library to their core. It's as if they were standing before the Void itself...</desc>
+    <commander id="342" />
+    <!-- Treat Trickmaster -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>Trick... or... treat...?</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Ngh! W-what is that power?!</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Mewwl...</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>S-shh, don't be s-scared, Fluffles...</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Alright. I'll handle this myself.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2105</id>
+    <name>This Is Halloween!</name>
+    <energy>4</energy>
+    <desc>Aria, whose soul survived the Void before, isn't intimidated by Pumpking's presence. Instead, she calmly approaches him and takes a gentle bow.</desc>
+    <commander id="15" />
+    <!-- Aria the Nightwielder -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2015" />
+      <!-- Pumpking -->
+      <card id="7304" />
+      <!-- Pumpkin Prototype -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...Your Majesty.</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>*Disappears*</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>...Eek... Is he gone...?</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>You astound me, necromancer. Only a champion of Void could have... Wait, what's that?</text>
+      </line>
+      <line>
+        <commander>avianlion</commander>
+        <enemy>1</enemy>
+        <text>Meowr! Yeowza!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Daknak thinks it's... a bucket of candy?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Hmmm. I guess we'll never know what he was here for.</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>Indeed, the great Pumpking works in mysterious ways.</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>0</enemy>
+        <text>Look at those Aether sweets! Aeron bars, Sparkies, and... is that a Melky Way?! Jackpot!!</text>
       </line>
     </speech>
   </mission>

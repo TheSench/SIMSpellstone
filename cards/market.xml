@@ -880,6 +880,7 @@
       <item id="104086" quantity="500" weight="1" />
       <item id="104087" quantity="500" weight="1" />
       <item id="104088" quantity="500" weight="1" />
+      <item id="104089" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1478,6 +1479,13 @@
       <item id="104080" />
       <item id="104081" />
       <item id="104082" />
+      <item id="104083" />
+      <item id="104084" />
+      <item id="104085" />
+      <item id="104086" />
+      <item id="104087" />
+      <item id="104088" />
+      <item id="104089" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1683,6 +1691,7 @@
       <item id="104086" number="10" purchase1="5" scalar="5" />
       <item id="104087" number="10" purchase1="5" scalar="5" />
       <item id="104088" number="10" purchase1="5" scalar="5" />
+      <item id="104089" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2001,87 +2010,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 119: ComDev Angel - Red Feather Valley -->
-  <store_item>
-    <id>5400</id>
-    <name>Abbadon Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAbbadon, the Vicious^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_89_dragonparagon_championpack</asset_prefab>
-    <background_prefab>event_89_dragonparagon_banner</background_prefab>
-    <bundle>245</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="106620" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5401</id>
-    <name>Aeronwen Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAeronwen, the Glider^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_83_nitrogenglider_championpack</asset_prefab>
-    <background_prefab>event_83_nitrogenglider_banner</background_prefab>
-    <bundle>233</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105625" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5402</id>
-    <name>Altos Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAltos, the Implacable^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_82_eternalguardian_championpack</asset_prefab>
-    <background_prefab>event_82_eternalguardian_banner</background_prefab>
-    <bundle>231</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105624" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
-  <store_item>
-    <id>5403</id>
-    <name>Asim Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAsim, the Lorekeeper^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_88_lorekeepergod_championpack</asset_prefab>
-    <background_prefab>event_88_lorekeepergod_banner</background_prefab>
-    <bundle>243</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="105630" quantity="125" weight="1" />
-    </item_pack>
-  </store_item>
   <!-- Event 120: ComDev Goblin - Red Feather Valley -->
   <store_item>
     <id>5404</id>
@@ -2150,5 +2078,74 @@
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
     <item id="105635" quantity="125" />
+  </store_item>
+  <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
+  <store_item>
+    <id>5408</id>
+    <name>Apex Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFApex Land Shark^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_038_champion_landshark</asset_prefab>
+    <background_prefab>event_038_banner_landshark</background_prefab>
+    <bundle>128</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item id="106602" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5409</id>
+    <name>Armada Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFThe Undead Armada^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_96_undeadarmada_championpack</asset_prefab>
+    <background_prefab>event_96_undeadarmada_banner</background_prefab>
+    <bundle>259</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item id="106626" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5410</id>
+    <name>Kandrula Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFKandrula, the Sly^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_87_nagawitch_championpack</asset_prefab>
+    <background_prefab>event_87_nagawitch_banner</background_prefab>
+    <bundle>241</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item id="105629" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5411</id>
+    <name>Domhain Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFDomhain, the Fomorian^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_84_entropylord_championpack</asset_prefab>
+    <background_prefab>event_84_entropylord_banner</background_prefab>
+    <bundle>235</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <item id="106617" quantity="125" />
   </store_item>
 </root>

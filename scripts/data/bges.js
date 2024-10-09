@@ -3116,6 +3116,58 @@ var BATTLEGROUNDS = {
 		"id": "184",
 		"name": "Goblin Acid Rain"
 	},
+	"185": {
+		"desc": "All Seafolk gain Maelstrom's Fury equal to 15 minus twice the card Delay.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "fury",
+				"x": 15,
+				"y": "12"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "fury",
+				"x": 13,
+				"y": "12"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "fury",
+				"x": 11,
+				"y": "12"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "fury",
+				"x": 9,
+				"y": "12"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "fury",
+				"x": 7,
+				"y": "12"
+			}
+		],
+		"id": "185",
+		"name": "Fury of the Seas"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

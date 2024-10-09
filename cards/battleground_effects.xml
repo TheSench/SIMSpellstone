@@ -1822,6 +1822,19 @@
       <add_skill id="corrosive" mult="0.15" base="health" y="11" />
     </effect>
   </battleground>
+  <battleground>
+    <id>185</id>
+    <name>Fury of the Seas</name>
+    <desc>All Seafolk gain Maelstrom&apos;s Fury equal to 15 minus twice the card Delay.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <add_skill id="fury" x="15" y="12" delay="0" />
+      <add_skill id="fury" x="13" y="12" delay="1" />
+      <add_skill id="fury" x="11" y="12" delay="2" />
+      <add_skill id="fury" x="9" y="12" delay="3" />
+      <add_skill id="fury" x="7" y="12" delay="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
