@@ -640,7 +640,7 @@
     <picture>Sky_Sea_Monster_A</picture>
     <asset_bundle>129</asset_bundle>
     <item_name>Typhoeus Stone</item_name>
-    <item_desc>Collect Typhoeus Stones to upgrade the Legendary Typhoeus, Storm Father card!</item_desc>
+    <item_desc>Collect Typhoeus Stones to upgrade Typhoeus, Storm Father!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -1479,8 +1479,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Seafolk_Merman_King_Proteus_A</picture>
     <asset_bundle>154</asset_bundle>
-    <item_name></item_name>
-    <item_desc></item_desc>
+    <item_name>Proteus Stone</item_name>
+    <item_desc>Collect Proteus Stones to upgrade King Proteus!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -2435,7 +2435,7 @@
     <picture>Seafolk_Corsair_Fish</picture>
     <asset_bundle>180</asset_bundle>
     <item_name>Eichiro Stone</item_name>
-    <item_desc>Collect Eichiro Stones to upgrade the Legendary Eichiro card!</item_desc>
+    <item_desc>Collect Eichiro Stones to upgrade Pirate Hunter Eichiro!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -3358,7 +3358,7 @@
     <picture>Seafolk_Ocean_Queen_A</picture>
     <asset_bundle>207</asset_bundle>
     <item_name>Lairel Stone</item_name>
-    <item_desc>Collect Lairel Stones to upgrade the Legendary Royal Fighter Lairel card!</item_desc>
+    <item_desc>Collect Lairel Stones to upgrade Royal Fighter Lairel!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4215,7 +4215,7 @@
     <picture>Undead_Seafolk_Squid_Ghost_A</picture>
     <asset_bundle>228</asset_bundle>
     <item_name>Morty Stone</item_name>
-    <item_desc>Collect Morty Stones to upgrade the Legendary Morty Ahab, Seaturned!</item_desc>
+    <item_desc>Collect Morty Stones to upgrade Morty Ahab, Seaturned!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4303,7 +4303,7 @@
     <picture>Seafolk_Sea_Unicorn_A</picture>
     <asset_bundle>230</asset_bundle>
     <item_name>Illu Stone</item_name>
-    <item_desc>Collect Illu Stones to upgrade the Legendary Illu, Mirage of the Sea!</item_desc>
+    <item_desc>Collect Illu Stones to upgrade Illu, Mirage of the Sea!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -4827,7 +4827,7 @@
     <picture>Seafolk-Sea_Colossus</picture>
     <asset_bundle>242</asset_bundle>
     <item_name>Moklam Stone</item_name>
-    <item_desc>Collect Moklam Stones to upgrade the Legendary Moklam, the Sea Colossus!</item_desc>
+    <item_desc>Collect Moklam Stones to upgrade Moklam, the Sea Colossus!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -5000,7 +5000,7 @@
     <picture>Angel_Righteous_Berserker_A</picture>
     <asset_bundle>246</asset_bundle>
     <item_name>Alyel Stone</item_name>
-    <item_desc>Collect Alyel Stones to upgrade the Alyel, Rush of Fury!</item_desc>
+    <item_desc>Collect Alyel Stones to upgrade Alyel, Rush of Fury!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -7797,7 +7797,7 @@
     <asset_bundle>95</asset_bundle>
     <hidden_until_time>1728572400</hidden_until_time>
     <item_name>Mike Stone</item_name>
-    <item_desc>Collect Mike Stones to upgrade Mike</item_desc>
+    <item_desc>Collect Mike Stones to upgrade Mike!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8847,8 +8847,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Seafolk_Mirror_Mermaid_B</picture>
     <asset_bundle>154</asset_bundle>
-    <item_name>Mirrormage Stone</item_name>
-    <item_desc>Collect Mirrormage Stones to upgrade the Legendary Mirrormage Ghessela card!</item_desc>
+    <item_name>Ghessela Stone</item_name>
+    <item_desc>Collect Ghessela Stones to upgrade Mirrormage Ghessela!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -8939,7 +8939,7 @@
     <picture>Elemental_Seafolk_Thunder_Cloud_Jellyfish_A</picture>
     <asset_bundle>157</asset_bundle>
     <item_name>Medusozoa Stone</item_name>
-    <item_desc>Collect Medusozoa Stones to upgrade the Legendary Medusozoa, the Immortal card!</item_desc>
+    <item_desc>Collect Medusozoa Stones to upgrade Medusozoa, the Immortal!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -9473,8 +9473,8 @@
     <cannot_salvage>1</cannot_salvage>
     <picture>Seafolk_Insect_Hermit_Crab</picture>
     <asset_bundle>180</asset_bundle>
-    <item_name>Hermit Stone</item_name>
-    <item_desc>Collect Hermit Stones to upgrade the Legendary Zhu-Lath, the Hermit card!</item_desc>
+    <item_name>Zhu-Lath Stone</item_name>
+    <item_desc>Collect Zhu-Lath Stones to upgrade Zhu-Lath, the Hermit!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -10501,7 +10501,7 @@
     <picture>Seafolk_Rime_Shrimp_A</picture>
     <asset_bundle>230</asset_bundle>
     <item_name>Shrime Stone</item_name>
-    <item_desc>Collect Shrime Stones to upgrade the Legendary Shrime, the Frozen card!</item_desc>
+    <item_desc>Collect Shrime Stones to upgrade Shrime, the Frozen!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11012,7 +11012,7 @@
     <picture>Seafolk_Naga_Witch_A</picture>
     <asset_bundle>242</asset_bundle>
     <item_name>Kandrula Stone</item_name>
-    <item_desc>Collect Kandrula Stones to upgrade the Legendary Kandrula, the Sly card!</item_desc>
+    <item_desc>Collect Kandrula Stones to upgrade Kandrula, the Sly!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11689,7 +11689,7 @@
     <picture>Mecha_Seafolk_Living_Ship_A</picture>
     <asset_bundle>258</asset_bundle>
     <item_name>Moby Stone</item_name>
-    <item_desc>Collect Moby Stones to upgrade the Legendary Moby, the Righteous!</item_desc>
+    <item_desc>Collect Moby Stones to upgrade Moby, the Righteous!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -11775,7 +11775,7 @@
     <picture>Seafolk_Dragon_Dragon_Family_A</picture>
     <asset_bundle>260</asset_bundle>
     <item_name>Family Stone</item_name>
-    <item_desc>Collect Family Stones to upgrade the Legendary The Dragon Family!</item_desc>
+    <item_desc>Collect Family Stones to upgrade The Dragon Family!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -12727,7 +12727,7 @@
     <picture>Seafolk_Land_Shark_A</picture>
     <asset_bundle>129</asset_bundle>
     <item_name>Land Shark Stone</item_name>
-    <item_desc>Collect Land Shark Stones to upgrade the Legendary Apex Land Shark card!</item_desc>
+    <item_desc>Collect Land Shark Stones to upgrade Apex Land Shark!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13168,8 +13168,8 @@
     <picture>Seafolk_Elder_Evil_A</picture>
     <asset_bundle>207</asset_bundle>
     <hidden_until_time>1606410000</hidden_until_time>
-    <item_name>Evil Stone</item_name>
-    <item_desc>Collect Evil Stones to upgrade the Legendary The Elder Evil card!</item_desc>
+    <item_name>Elder Evil Stone</item_name>
+    <item_desc>Collect Elder Evil Stones to upgrade The Elder Evil!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -13849,7 +13849,7 @@
     <asset_bundle>230</asset_bundle>
     <hidden_until_time>1631811600</hidden_until_time>
     <item_name>Stern Stone</item_name>
-    <item_desc>Collect Stern Stones to upgrade the Legendary Stern, the Gladthorn card!</item_desc>
+    <item_desc>Collect Stern Stones to upgrade Stern, the Gladthorn!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14018,7 +14018,7 @@
     <asset_bundle>236</asset_bundle>
     <hidden_until_time>1639069200</hidden_until_time>
     <item_name>Domhain Stone</item_name>
-    <item_desc>Collect Domhain Stones to upgrade the Legendary Domhain, the Fomorian card!</item_desc>
+    <item_desc>Collect Domhain Stones to upgrade Domhain, the Fomorian!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -14109,7 +14109,7 @@
     <asset_bundle>242</asset_bundle>
     <hidden_until_time>1647536400</hidden_until_time>
     <item_name>Jormun Stone</item_name>
-    <item_desc>Collect Jormun Stones to upgrade the Legendary Jormun, the Ravager card!</item_desc>
+    <item_desc>Collect Jormun Stones to upgrade Jormun, the Ravager!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -15514,7 +15514,7 @@
     <asset_bundle>129</asset_bundle>
     <hidden_until_time>1529082000</hidden_until_time>
     <item_name>Nemea Stone</item_name>
-    <item_desc>Collect Nemea Stones to upgrade the Legendary Nemea, the Lost Regent card!</item_desc>
+    <item_desc>Collect Nemea Stones to upgrade Nemea, the Lost Regent!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
@@ -16758,7 +16758,7 @@
     <asset_bundle>207</asset_bundle>
     <hidden_until_time>1605200400</hidden_until_time>
     <item_name>Kyviat Stone</item_name>
-    <item_desc>Collect Kyviat Stones to upgrade the Legendary Kyviat, the Aquamancer card!</item_desc>
+    <item_desc>Collect Kyviat Stones to upgrade Kyviat, the Aquamancer!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
