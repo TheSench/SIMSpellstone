@@ -3168,6 +3168,50 @@ var BATTLEGROUNDS = {
 		"id": "185",
 		"name": "Fury of the Seas"
 	},
+	"186": {
+		"desc": "Frogs gain Pierce and deal extra damage on their first attack each turn equal to 25% of their base Health. Frogs of 0-2 Delay gain Siphon equal to 25% of their base Health while Frogs of 3-4 Delay gain Regenerate equal to 15% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "4"
+			}
+		],
+		"id": "186",
+		"name": "Lily & Spear Regenerated"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -5795,6 +5839,86 @@ var BATTLEGROUNDS = {
 		],
 		"id": "580",
 		"name": "Epic Return"
+	},
+	"581": {
+		"desc": "All enemies start with a Ninja Frog card.",
+		"effect": {
+			"1": {
+				"id": 618,
+				"level": 1
+			},
+			"2": {
+				"id": 618,
+				"level": 2
+			},
+			"3": {
+				"id": 618,
+				"level": 3
+			},
+			"4": {
+				"id": 618,
+				"level": 4
+			},
+			"5": {
+				"id": 618,
+				"level": 5
+			},
+			"6": {
+				"id": 618,
+				"level": 6
+			},
+			"7": {
+				"id": 10618,
+				"level": 1
+			},
+			"8": {
+				"id": 10618,
+				"level": 2
+			},
+			"9": {
+				"id": 10618,
+				"level": 3
+			},
+			"10": {
+				"id": 10618,
+				"level": 4
+			},
+			"11": {
+				"id": 10618,
+				"level": 5
+			},
+			"12": {
+				"id": 10618,
+				"level": 6
+			},
+			"13": {
+				"id": 20618,
+				"level": 1
+			},
+			"14": {
+				"id": 20618,
+				"level": 2
+			},
+			"15": {
+				"id": 20618,
+				"level": 3
+			},
+			"16": {
+				"id": 20618,
+				"level": 4
+			},
+			"17": {
+				"id": 20618,
+				"level": 5
+			},
+			"18": {
+				"id": 20618,
+				"level": 6
+			}
+		},
+		"id": "581",
+		"isTower": true,
+		"name": "Ninja Frog"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

@@ -11600,6 +11600,645 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 122: ComDev Frog - Red Feather Valley -->
+  <!-- E122 Node 1: News Travels Fast -->
+  <mission>
+    <id>7326</id>
+    <name>Critical Supply Chain</name>
+    <energy>24</energy>
+    <desc>Gobtoh has inadvertently revealed that the cultists of Scylla are a critical supplier for the Goblin's acid rain weapons.</desc>
+    <commander id="246" />
+    <!-- Darkwater Mermaid -->
+    <deck>
+      <card id="1328" />
+      <!-- Poison Bullfrog -->
+      <card id="1627" />
+      <!-- Sage of Croaks -->
+      <card id="1643" />
+      <!-- Nimble Leaper -->
+      <card id="1328" />
+      <!-- Poison Bullfrog -->
+      <card id="1627" />
+      <!-- Sage of Croaks -->
+      <card id="1643" />
+      <!-- Nimble Leaper -->
+      <card id="1328" />
+      <!-- Poison Bullfrog -->
+      <card id="1627" />
+      <!-- Sage of Croaks -->
+      <card id="1643" />
+      <!-- Nimble Leaper -->
+      <card id="1328" mastery_level="2" />
+      <!-- Poison Bullfrog -->
+      <card id="1627" mastery_level="3" />
+      <!-- Sage of Croaks -->
+      <card id="1643" mastery_level="4" />
+      <!-- Nimble Leaper -->
+      <card id="1328" mastery_level="5" />
+      <!-- Poison Bullfrog -->
+      <card id="1627" mastery_level="6" />
+      <!-- Sage of Croaks -->
+      <card id="1643" mastery_level="7" />
+      <!-- Nimble Leaper -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7327</id>
+    <name>Ol' Friends</name>
+    <energy>24</energy>
+    <desc>Returning Gobtoh back to celestial custody in Skyhaven, Samael and Yuriel pay a visit to an old friend.</desc>
+    <commander id="12" />
+    <!-- Ol' Cedric -->
+    <deck>
+      <card id="1028" />
+      <!-- Heroic Frog -->
+      <card id="1043" />
+      <!-- Lilypad Bard -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1028" />
+      <!-- Heroic Frog -->
+      <card id="1043" />
+      <!-- Lilypad Bard -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1028" />
+      <!-- Heroic Frog -->
+      <card id="1043" />
+      <!-- Lilypad Bard -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1028" mastery_level="2" />
+      <!-- Heroic Frog -->
+      <card id="1043" mastery_level="3" />
+      <!-- Lilypad Bard -->
+      <card id="1044" mastery_level="4" />
+      <!-- Blackhawk Cavalier -->
+      <card id="1028" mastery_level="5" />
+      <!-- Heroic Frog -->
+      <card id="1043" mastery_level="6" />
+      <!-- Lilypad Bard -->
+      <card id="1044" mastery_level="7" />
+      <!-- Blackhawk Cavalier -->
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Good to see you two again. Did you manage to find anything?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7328</id>
+    <name>Have I Got News for You</name>
+    <energy>24</energy>
+    <desc>The pair have good news and bad news for Cedric. Unfortunately, it would appear the bad news does not sit well for a certain someone.</desc>
+    <commander id="12" />
+    <!-- Ol' Cedric -->
+    <deck>
+      <card id="2011" />
+      <!-- Poliworg -->
+      <card id="2183" />
+      <!-- Storm Disciple -->
+      <card id="2071" />
+      <!-- Sproutfrog Rainwisher -->
+      <card id="2011" />
+      <!-- Poliworg -->
+      <card id="2183" />
+      <!-- Storm Disciple -->
+      <card id="2071" />
+      <!-- Sproutfrog Rainwisher -->
+      <card id="2011" />
+      <!-- Poliworg -->
+      <card id="2183" />
+      <!-- Storm Disciple -->
+      <card id="2071" />
+      <!-- Sproutfrog Rainwisher -->
+      <card id="2011" mastery_level="2" />
+      <!-- Poliworg -->
+      <card id="2183" mastery_level="3" />
+      <!-- Storm Disciple -->
+      <card id="2071" mastery_level="4" />
+      <!-- Sproutfrog Rainwisher -->
+      <card id="2011" mastery_level="5" />
+      <!-- Poliworg -->
+      <card id="2183" mastery_level="6" />
+      <!-- Storm Disciple -->
+      <card id="2071" mastery_level="7" />
+      <!-- Sproutfrog Rainwisher -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>So the good news is we found the real identity of Xerkahn and the source of some of her weapons.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>The bad news is no one knows where the pocket watch is.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>What do you mean you don't know?! How am I ever going to be healed without it?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7329</id>
+    <name>Terminal Change</name>
+    <energy>24</energy>
+    <desc>Alyel is not best pleased that the effects of the Void and Remi's watch may be permanent.</desc>
+    <commander id="469" />
+    <!-- Lightning Boss Alyel -->
+    <deck>
+      <card id="2012" />
+      <!-- Frogling Swarm -->
+      <card id="2223" />
+      <!-- Stalker Hextongue -->
+      <card id="2258" />
+      <!-- Painter van Frogh -->
+      <card id="2012" />
+      <!-- Frogling Swarm -->
+      <card id="2223" />
+      <!-- Stalker Hextongue -->
+      <card id="2258" />
+      <!-- Painter van Frogh -->
+      <card id="2012" />
+      <!-- Frogling Swarm -->
+      <card id="2223" />
+      <!-- Stalker Hextongue -->
+      <card id="2258" />
+      <!-- Painter van Frogh -->
+      <card id="2012" mastery_level="2" />
+      <!-- Frogling Swarm -->
+      <card id="2223" mastery_level="3" />
+      <!-- Stalker Hextongue -->
+      <card id="2258" mastery_level="4" />
+      <!-- Painter van Frogh -->
+      <card id="2012" mastery_level="5" />
+      <!-- Frogling Swarm -->
+      <card id="2223" mastery_level="6" />
+      <!-- Stalker Hextongue -->
+      <card id="2258" mastery_level="7" />
+      <!-- Painter van Frogh -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>How's your recovery been?</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>The frog doctors say I'm fine and there's nothing more they can do.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>BUT I'M NOT FINE!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>I know you're not as fast as you once were but you still seem to be as fiery and aggressive as I remember.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7330</id>
+    <name>No Delay</name>
+    <energy>24</energy>
+    <desc>Time, however, is of the essence, and the group all agree they need to find the cultists before the goblins.</desc>
+    <commander id="469" />
+    <!-- Lightning Boss Alyel -->
+    <deck>
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2250" />
+      <!-- Sad Joseph -->
+      <card id="2014" />
+      <!-- Tadpole Warmage -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2250" />
+      <!-- Sad Joseph -->
+      <card id="2014" />
+      <!-- Tadpole Warmage -->
+      <card id="2108" />
+      <!-- Koi Jockey -->
+      <card id="2250" />
+      <!-- Sad Joseph -->
+      <card id="2014" />
+      <!-- Tadpole Warmage -->
+      <card id="2108" mastery_level="2" />
+      <!-- Koi Jockey -->
+      <card id="2250" mastery_level="3" />
+      <!-- Sad Joseph -->
+      <card id="2014" mastery_level="4" />
+      <!-- Tadpole Warmage -->
+      <card id="2108" mastery_level="5" />
+      <!-- Koi Jockey -->
+      <card id="2250" mastery_level="6" />
+      <!-- Sad Joseph -->
+      <card id="2014" mastery_level="7" />
+      <!-- Tadpole Warmage -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7331</id>
+    <name>Riding Shotgun</name>
+    <energy>24</energy>
+    <desc>It looks like Alyel is coming along for this one, and she can be very insistent.</desc>
+    <commander id="469" />
+    <!-- Lightning Boss Alyel -->
+    <deck>
+      <card id="2133" />
+      <!-- Dawnglow Smasher -->
+      <card id="2182" />
+      <!-- Axolotl Sentinels -->
+      <card id="2249" />
+      <!-- Tiny Warrior -->
+      <card id="2133" />
+      <!-- Dawnglow Smasher -->
+      <card id="2182" />
+      <!-- Axolotl Sentinels -->
+      <card id="2249" />
+      <!-- Tiny Warrior -->
+      <card id="2133" />
+      <!-- Dawnglow Smasher -->
+      <card id="2182" />
+      <!-- Axolotl Sentinels -->
+      <card id="2249" />
+      <!-- Tiny Warrior -->
+      <card id="2133" mastery_level="2" />
+      <!-- Dawnglow Smasher -->
+      <card id="2182" mastery_level="3" />
+      <!-- Axolotl Sentinels -->
+      <card id="2249" mastery_level="4" />
+      <!-- Tiny Warrior -->
+      <card id="2133" mastery_level="5" />
+      <!-- Dawnglow Smasher -->
+      <card id="2182" mastery_level="6" />
+      <!-- Axolotl Sentinels -->
+      <card id="2249" mastery_level="7" />
+      <!-- Tiny Warrior -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Don't think I'm just going to stay here with these healers who can't heal!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>I've beaten the cultists before, I'll do it again.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- E122 Node 2: An Unmissable Offer -->
+  <mission>
+    <id>7332</id>
+    <name>Three Fates</name>
+    <energy>24</energy>
+    <desc>The three angels follow the frog scouts' reconnaissance on the cultists' last known location.</desc>
+    <commander id="249" />
+    <!-- Lone Frog Scout -->
+    <deck>
+      <card id="7016" />
+      <!-- Webfist Shaman -->
+      <card id="7098" />
+      <!-- Survivalist -->
+      <card id="7157" />
+      <!-- Webtoe Quickfirst -->
+      <card id="7016" />
+      <!-- Webfist Shaman -->
+      <card id="7098" />
+      <!-- Survivalist -->
+      <card id="7157" />
+      <!-- Webtoe Quickfirst -->
+      <card id="7016" />
+      <!-- Webfist Shaman -->
+      <card id="7098" />
+      <!-- Survivalist -->
+      <card id="7157" />
+      <!-- Webtoe Quickfirst -->
+      <card id="7016" mastery_level="2" />
+      <!-- Webfist Shaman -->
+      <card id="7098" mastery_level="3" />
+      <!-- Survivalist -->
+      <card id="7157" mastery_level="4" />
+      <!-- Webtoe Quickfirst -->
+      <card id="7016" mastery_level="5" />
+      <!-- Webfist Shaman -->
+      <card id="7098" mastery_level="6" />
+      <!-- Survivalist -->
+      <card id="7157" mastery_level="7" />
+      <!-- Webtoe Quickfirst -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7333</id>
+    <name>Something in the Water</name>
+    <energy>24</energy>
+    <desc>Something about this area doesn't feel right. The water is darker and more turbulent than normal.</desc>
+    <commander id="280" />
+    <!-- Void Infected Mermaid -->
+    <deck>
+      <card id="5269" />
+      <!-- Jolty Jouster -->
+      <card id="5103" />
+      <!-- Mother of Solars -->
+      <card id="5054" />
+      <!-- Reckless Ballista -->
+      <card id="5269" />
+      <!-- Jolty Jouster -->
+      <card id="5103" />
+      <!-- Mother of Solars -->
+      <card id="5054" />
+      <!-- Reckless Ballista -->
+      <card id="5269" />
+      <!-- Jolty Jouster -->
+      <card id="5103" />
+      <!-- Mother of Solars -->
+      <card id="5054" />
+      <!-- Reckless Ballista -->
+      <card id="5269" mastery_level="2" />
+      <!-- Jolty Jouster -->
+      <card id="5103" mastery_level="3" />
+      <!-- Mother of Solars -->
+      <card id="5054" mastery_level="4" />
+      <!-- Reckless Ballista -->
+      <card id="5269" mastery_level="5" />
+      <!-- Jolty Jouster -->
+      <card id="5103" mastery_level="6" />
+      <!-- Mother of Solars -->
+      <card id="5054" mastery_level="7" />
+      <!-- Reckless Ballista -->
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Is the sea supposed to be that colour?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Alyel! I wouldn't go touching it. The weapon the goblins have is corrosive.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Argh! It stings!</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>OK let's find some protective gear tomorrow.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7334</id>
+    <name>Tomorrow is Another Day</name>
+    <energy>24</energy>
+    <desc>The angels decide to make camp, rest and explore the murkier depths in the morning.</desc>
+    <commander id="281" />
+    <!-- Dark Coral -->
+    <deck>
+      <card id="6018" />
+      <!-- Underwater Lasher -->
+      <card id="6264" />
+      <!-- Flame Tongue Devil -->
+      <card id="6169" />
+      <!-- Deatheater -->
+      <card id="6018" />
+      <!-- Underwater Lasher -->
+      <card id="6264" />
+      <!-- Flame Tongue Devil -->
+      <card id="6169" />
+      <!-- Deatheater -->
+      <card id="6018" />
+      <!-- Underwater Lasher -->
+      <card id="6264" />
+      <!-- Flame Tongue Devil -->
+      <card id="6169" />
+      <!-- Deatheater -->
+      <card id="6018" mastery_level="2" />
+      <!-- Underwater Lasher -->
+      <card id="6264" mastery_level="3" />
+      <!-- Flame Tongue Devil -->
+      <card id="6169" mastery_level="4" />
+      <!-- Deatheater -->
+      <card id="6018" mastery_level="5" />
+      <!-- Underwater Lasher -->
+      <card id="6264" mastery_level="6" />
+      <!-- Flame Tongue Devil -->
+      <card id="6169" mastery_level="7" />
+      <!-- Deatheater -->
+    </deck>
+  </mission>
+  <mission>
+    <id>7335</id>
+    <name>Visions of Late</name>
+    <energy>24</energy>
+    <desc>Before lights out, Alyel reveals to the others that she has been having vivid dreams of late.</desc>
+    <commander id="469" />
+    <!-- Lightning Boss Alyel -->
+    <deck>
+      <card id="7102" />
+      <!-- Croaker's Disciple -->
+      <card id="7018" />
+      <!-- Frog Emperor -->
+      <card id="7240" />
+      <!-- Tranquil Monk -->
+      <card id="7102" />
+      <!-- Croaker's Disciple -->
+      <card id="7018" />
+      <!-- Frog Emperor -->
+      <card id="7240" />
+      <!-- Tranquil Monk -->
+      <card id="7102" />
+      <!-- Croaker's Disciple -->
+      <card id="7018" />
+      <!-- Frog Emperor -->
+      <card id="7240" />
+      <!-- Tranquil Monk -->
+      <card id="7102" mastery_level="2" />
+      <!-- Croaker's Disciple -->
+      <card id="7018" mastery_level="3" />
+      <!-- Frog Emperor -->
+      <card id="7240" mastery_level="4" />
+      <!-- Tranquil Monk -->
+      <card id="7102" mastery_level="5" />
+      <!-- Croaker's Disciple -->
+      <card id="7018" mastery_level="6" />
+      <!-- Frog Emperor -->
+      <card id="7240" mastery_level="7" />
+      <!-- Tranquil Monk -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>So these only just recently started but they are *so* realistic, I could swear I was still awake.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Hmm... you aren't the first person who has had these symptoms.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7336</id>
+    <name>Waking up in the Valley</name>
+    <energy>24</energy>
+    <desc>Alyel awakes and finds herself nowhere near the sea. Standing before her is a familiar mechanical titan.</desc>
+    <commander id="399" />
+    <!-- Viracocha, Titan Aspirer -->
+    <deck>
+      <card id="7204" />
+      <!-- Gold Crown Matriarch -->
+      <card id="7272" />
+      <!-- Mirage Nomad -->
+      <card id="6302" />
+      <!-- Frog Ballista -->
+      <card id="7204" />
+      <!-- Gold Crown Matriarch -->
+      <card id="7272" />
+      <!-- Mirage Nomad -->
+      <card id="6302" />
+      <!-- Frog Ballista -->
+      <card id="7204" />
+      <!-- Gold Crown Matriarch -->
+      <card id="7272" />
+      <!-- Mirage Nomad -->
+      <card id="6302" />
+      <!-- Frog Ballista -->
+      <card id="7204" mastery_level="2" />
+      <!-- Gold Crown Matriarch -->
+      <card id="7272" mastery_level="3" />
+      <!-- Mirage Nomad -->
+      <card id="6302" mastery_level="4" />
+      <!-- Frog Ballista -->
+      <card id="7204" mastery_level="5" />
+      <!-- Gold Crown Matriarch -->
+      <card id="7272" mastery_level="6" />
+      <!-- Mirage Nomad -->
+      <card id="6302" mastery_level="7" />
+      <!-- Frog Ballista -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Wait? Where the heck am I?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Hello, Righteous Berserker. Welcome to Red Feather Valley.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>OK. Can someone explain how I got here?</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>All in good time. Speaking of time. I understand you seek a watch.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Let me explain how you might find it...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>7337</id>
+    <name>Deal or No Deal</name>
+    <energy>24</energy>
+    <desc>Viracocha makes Alyel and intriguing proposal. One that she almost can't refuse.</desc>
+    <commander id="399" />
+    <!-- Viracocha, Titan Aspirer -->
+    <deck>
+      <card id="7154" />
+      <!-- Mollusk Snarecaster -->
+      <card id="6296" />
+      <!-- Pepe -->
+      <card id="6235" />
+      <!-- Mawcroak -->
+      <card id="7154" />
+      <!-- Mollusk Snarecaster -->
+      <card id="6296" />
+      <!-- Pepe -->
+      <card id="6235" />
+      <!-- Mawcroak -->
+      <card id="7154" />
+      <!-- Mollusk Snarecaster -->
+      <card id="6296" />
+      <!-- Pepe -->
+      <card id="6235" />
+      <!-- Mawcroak -->
+      <card id="7154" mastery_level="2" />
+      <!-- Mollusk Snarecaster -->
+      <card id="6296" mastery_level="3" />
+      <!-- Pepe -->
+      <card id="6235" mastery_level="4" />
+      <!-- Mawcroak -->
+      <card id="7154" mastery_level="5" />
+      <!-- Mollusk Snarecaster -->
+      <card id="6296" mastery_level="6" />
+      <!-- Pepe -->
+      <card id="6235" mastery_level="7" />
+      <!-- Mawcroak -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>So, just simply do what I say and we can get you back to full speed.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>You're asking a lot of me. I need time to think about it.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>I always thought we had to destroy the Void, not work with it.</text>
+      </line>
+      <line>
+        <commander>Portraits_Ancient_Titan_Mecha</commander>
+        <enemy>1</enemy>
+        <text>Lev and her beasts never understood. They only saw the world in black and white.</text>
+      </line>
+      <line>
+        <commander>Portrait_RighteousBerserker</commander>
+        <enemy>0</enemy>
+        <text>Let me go away and think about all of this...</text>
+      </line>
+      <line>
+        <commander>event_94_voidcolossal_championtrove</commander>
+        <enemy>1</enemy>
+        <text>Take all the time you need... mwhahaha...</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 106: ComDev Goblin - New Lightning Node -->
   <!-- Lightning Boss Gobtoh (Return to Karthos) -->
   <mission>

@@ -12142,44 +12142,49 @@
   <unit>
     <id>469</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Alyel</name>
+    <name>Alyel</name>
     <portrait>Portrait_RighteousBerserker</portrait>
     <health>75</health>
-    <skill id="weaken" all="1" x="2" />
-    <skill id="weaken" all="1" x="4" />
+    <skill id="imbue" s="evade" x="1" />
+    <skill id="imbue" s="evade" x="1" />
+    <skill id="imbue" s="berserk" all="1" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>80</health>
-      <skill id="weaken" all="1" x="3" />
-      <skill id="weaken" all="1" x="5" />
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="imbue" s="berserk" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>85</health>
-      <skill id="weaken" all="1" x="3" />
-      <skill id="weaken" all="1" x="6" />
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="imbue" s="berserk" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
-      <skill id="weaken" all="1" x="4" />
-      <skill id="weaken" all="1" x="7" />
+      <skill id="imbue" s="evade" x="3" />
+      <skill id="imbue" s="evade" x="3" />
+      <skill id="imbue" s="berserk" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
-      <skill id="weaken" all="1" x="4" />
-      <skill id="weaken" all="1" x="8" />
+      <skill id="imbue" s="evade" x="3" />
+      <skill id="imbue" s="evade" x="3" />
+      <skill id="imbue" s="berserk" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="weaken" all="1" x="5" />
-      <skill id="weaken" all="1" x="10" />
-      <skill id="imbue" s="devour" all="1" x="10" />
+      <skill id="imbue" s="evade" x="4" />
+      <skill id="imbue" s="evade" x="4" />
+      <skill id="imbue" s="berserk" all="1" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -12229,7 +12234,7 @@
   <unit>
     <id>471</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Ashanti</name>
+    <name>Ashanti</name>
     <portrait>Portrait_Aereal_Assasin</portrait>
     <health>75</health>
     <skill id="jam" all="1" c="5" />
@@ -12277,7 +12282,7 @@
   <unit>
     <id>472</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Nophora</name>
+    <name>Nophora</name>
     <portrait>Weapon_Hoarder_Portrait</portrait>
     <health>75</health>
     <skill id="protect" all="1" x="1" />
@@ -12322,7 +12327,7 @@
   <unit>
     <id>473</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Llorona</name>
+    <name>Llorona</name>
     <portrait>La_Llorona_Portrait</portrait>
     <health>75</health>
     <skill id="enfeeble" all="1" x="1" />
@@ -12370,7 +12375,7 @@
   <unit>
     <id>474</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Caesar</name>
+    <name>Caesar</name>
     <portrait>Mini_Menace_Portrait1</portrait>
     <health>75</health>
     <skill id="protect" all="1" x="1" />
@@ -12418,7 +12423,7 @@
   <unit>
     <id>475</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Remi</name>
+    <name>Remi</name>
     <portrait>Remi_Bipolar_Portrait</portrait>
     <health>75</health>
     <skill id="enfeeble" all="1" x="1" />
@@ -12466,7 +12471,7 @@
   <unit>
     <id>476</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Darkassan</name>
+    <name>Darkassan</name>
     <portrait>Undead_Flying_Creeper_Portrait</portrait>
     <health>75</health>
     <skill id="heal" all="1" x="2" />
@@ -12514,7 +12519,7 @@
   <unit>
     <id>477</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Lerna</name>
+    <name>Lerna</name>
     <portrait>Void_Hydra_Portrait</portrait>
     <health>75</health>
     <skill id="imbue" s="regenerate" all="1" x="2" />
@@ -12554,15 +12559,15 @@
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" s="regenerate" all="1" x="7" />
-      <skill id="protect" all="1" x="7" />
-      <skill id="weaken" all="1" x="7" />
+      <skill id="imbue" s="regenerate" all="1" x="6" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="weaken" all="1" x="4" />
     </upgrade>
   </unit>
   <unit>
     <id>478</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Krampus</name>
+    <name>Krampus</name>
     <portrait>Goblinch_Portrait</portrait>
     <health>75</health>
     <skill id="imbue" s="frost" all="1" x="1" />
@@ -12610,7 +12615,7 @@
   <unit>
     <id>479</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Freya</name>
+    <name>Freya</name>
     <portrait>Portrait_Angel_Spy_Wyld</portrait>
     <asset_bundle>160</asset_bundle>
     <health>75</health>
@@ -12659,7 +12664,7 @@
   <unit>
     <id>480</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Leyla</name>
+    <name>Leyla</name>
     <portrait>Leyla_Portrait</portrait>
     <health>75</health>
     <skill id="imbue" s="corrosive" all="1" x="3" />
@@ -12707,7 +12712,7 @@
   <unit>
     <id>481</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Llorona</name>
+    <name>Llorona Reborn</name>
     <portrait>La_Llorona_Portrait</portrait>
     <health>75</health>
     <skill id="heal" all="1" x="4" />
@@ -12850,10 +12855,10 @@
   <unit>
     <id>484</id>
     <card_type>1</card_type>
-    <name>Lightning Boss K'luum</name>
+    <name>K'luum</name>
     <portrait>void2</portrait>
     <asset_bundle>5</asset_bundle>
-    <health>18</health>
+    <health>75</health>
     <skill id="barrage" x="4" />
     <skill id="confuse" c="5" />
     <skill id="imbue" s="evade" all="1" x="1" />
@@ -12862,35 +12867,35 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>80</health>
       <skill id="barrage" x="6" />
       <skill id="confuse" c="4" />
       <skill id="imbue" s="evade" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>20</health>
+      <health>85</health>
       <skill id="barrage" x="8" />
       <skill id="confuse" c="4" />
       <skill id="imbue" s="evade" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>21</health>
+      <health>90</health>
       <skill id="barrage" x="11" />
       <skill id="confuse" c="3" />
       <skill id="imbue" s="evade" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>22</health>
+      <health>95</health>
       <skill id="barrage" x="15" />
       <skill id="confuse" c="3" />
       <skill id="imbue" s="evade" all="1" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>23</health>
+      <health>99</health>
       <skill id="barrage" x="20" />
       <skill id="confuse" c="2" />
       <skill id="imbue" s="evade" all="1" x="6" />
@@ -13235,7 +13240,7 @@
   <unit>
     <id>492</id>
     <card_type>1</card_type>
-    <name>Lightning Boss Orobas</name>
+    <name>Resummoned Orobas</name>
     <portrait>balrog</portrait>
     <health>50</health>
     <skill id="imbue" s="legion" ignore_nullify="1" all="1" x="1" />

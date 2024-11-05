@@ -783,10 +783,7 @@
     <hidden>1</hidden>
     <desc>Contains 500 Stones for a random Champion from the Reward Champion set.</desc>
     <priority>1</priority>
-    <asset_prefab>championStoneBox2</asset_prefab>
-    <bundle>113</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
+    <icon>icon_card_legendary</icon>
     <hc_cost>600</hc_cost>
     <no_drop_rate>1</no_drop_rate>
     <item_pack>
@@ -890,10 +887,7 @@
     <hidden>1</hidden>
     <desc>Contains 500 Stones for a random Champion from the Premium Champion set.</desc>
     <priority>1</priority>
-    <asset_prefab>championStoneBox2</asset_prefab>
-    <bundle>113</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
+    <icon>icon_card_legendary</icon>
     <hc_cost>600</hc_cost>
     <no_drop_rate>1</no_drop_rate>
     <item_pack>
@@ -1029,6 +1023,49 @@
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
   <!-- 3001- : Old events removed. See old versions for archive. -->
+  <!-- Singles Day Premium Flask Pack -->
+  <store_item>
+    <id>3101</id>
+    <name>Random Premium Flasks</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains 111 of one random Premium Flask containing a choice of 4 of the possible 111 Stones from the Premium Champion set.</desc>
+    <priority>1</priority>
+    <icon>package_60</icon>
+    <icon_bundle>17</icon_bundle>
+    <hc_cost>60</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="2578" quantity="111" weight="1" />
+      <item id="2579" quantity="111" weight="1" />
+      <item id="2580" quantity="111" weight="1" />
+      <item id="2595" quantity="111" weight="1" />
+      <item id="2596" quantity="111" weight="1" />
+      <item id="2597" quantity="111" weight="1" />
+      <item id="2598" quantity="111" weight="1" />
+      <item id="2599" quantity="111" weight="1" />
+      <item id="2600" quantity="111" weight="1" />
+      <item id="2615" quantity="111" weight="1" />
+      <item id="2616" quantity="111" weight="1" />
+      <item id="2617" quantity="111" weight="1" />
+      <item id="2636" quantity="111" weight="1" />
+      <item id="2637" quantity="111" weight="1" />
+      <item id="2638" quantity="111" weight="1" />
+      <item id="2684" quantity="111" weight="1" />
+      <item id="2685" quantity="111" weight="1" />
+      <item id="2686" quantity="111" weight="1" />
+      <item id="2687" quantity="111" weight="1" />
+      <item id="2688" quantity="111" weight="1" />
+      <item id="2689" quantity="111" weight="1" />
+      <item id="2690" quantity="111" weight="1" />
+      <item id="2691" quantity="111" weight="1" />
+      <item id="2692" quantity="111" weight="1" />
+      <item id="2693" quantity="111" weight="1" />
+      <item id="2817" quantity="111" weight="1" />
+      <item id="2818" quantity="111" weight="1" />
+      <item id="2819" quantity="111" weight="1" />
+    </item_pack>
+  </store_item>
   <!-- Dual Tribe Premium Legendary for Dual Shard Bundles -->
   <store_item>
     <id>3104</id>
@@ -1040,7 +1077,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
     </cards>
@@ -1055,7 +1091,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" fusion_level="1" />
     </cards>
@@ -1070,7 +1105,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" fusion_level="1" />
     </cards>
@@ -1085,7 +1119,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" fusion_level="1" />
     </cards>
@@ -1100,7 +1133,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" fusion_level="1" />
     </cards>
@@ -1115,7 +1147,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" fusion_level="1" />
     </cards>
@@ -1130,7 +1161,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" fusion_level="1" />
     </cards>
@@ -1145,7 +1175,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" fusion_level="1" />
     </cards>
@@ -1160,7 +1189,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000" fusion_level="1" />
     </cards>
@@ -1175,7 +1203,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="14" set="3000" fusion_level="1" />
     </cards>
@@ -1190,7 +1217,6 @@
     <asset_prefab>legendary_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="16" set="3000" fusion_level="1" />
     </cards>
@@ -1221,7 +1247,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="4" set="3000" fusion_level="2" />
     </cards>
@@ -1236,7 +1261,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="5" set="3000" fusion_level="2" />
     </cards>
@@ -1251,7 +1275,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="6" set="3000" fusion_level="2" />
     </cards>
@@ -1266,7 +1289,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="7" set="3000" fusion_level="2" />
     </cards>
@@ -1281,7 +1303,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="9" set="3000" fusion_level="2" />
     </cards>
@@ -1296,7 +1317,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="10" set="3000" fusion_level="2" />
     </cards>
@@ -1311,7 +1331,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="11" set="3000" fusion_level="2" />
     </cards>
@@ -1326,7 +1345,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="12" set="3000" fusion_level="2" />
     </cards>
@@ -1341,7 +1359,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="13" set="3000" fusion_level="2" />
     </cards>
@@ -1356,7 +1373,6 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="14" set="3000" fusion_level="2" />
     </cards>
@@ -1371,9 +1387,163 @@
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
-    <show_list>1</show_list>
     <cards>
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="16" set="3000" fusion_level="2" />
+    </cards>
+  </store_item>
+  <!-- Dual Tribe Reward Epic for Reward Boxes -->
+  <store_item>
+    <id>3144</id>
+    <name>Dual Frog Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Frog card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="4" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3145</id>
+    <name>Dual Elemental Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Elemental card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="5" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3146</id>
+    <name>Dual Angel Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Angel card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="6" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3147</id>
+    <name>Dual Undead Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Undead card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="7" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3149</id>
+    <name>Dual Dragon Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Dragon card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="9" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3150</id>
+    <name>Dual Avian Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Avian card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="10" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3151</id>
+    <name>Dual Goblin Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Goblin card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="11" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3152</id>
+    <name>Dual Seafolk Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Seafolk card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="12" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3153</id>
+    <name>Dual Insect Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Insect card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="13" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3154</id>
+    <name>Dual Beast Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Beast card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="14" set="2000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3156</id>
+    <name>Dual Mecha Reward Epic</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFDual Epic^cFFFF Mecha card from Reward set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" type="16" set="2000" fusion_level="1" />
     </cards>
   </store_item>
   <!-- ======================================= -->
@@ -1692,6 +1862,7 @@
       <item id="104087" number="10" purchase1="5" scalar="5" />
       <item id="104088" number="10" purchase1="5" scalar="5" />
       <item id="104089" number="10" purchase1="5" scalar="5" />
+      <item id="104090" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2010,75 +2181,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 120: ComDev Goblin - Red Feather Valley -->
-  <store_item>
-    <id>5404</id>
-    <name>Crash &amp; Zink Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>600</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFCrash and Zink, the Riders^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_97_beastriders_championpack</asset_prefab>
-    <background_prefab>event_97_beastriders_banner</background_prefab>
-    <bundle>261</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="107627" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5405</id>
-    <name>Drarm Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>600</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFDrarm, the Soulbinder^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_85_undeadectomancer_championpack</asset_prefab>
-    <background_prefab>event_85_undeadectomancer_banner</background_prefab>
-    <bundle>237</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="105627" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5406</id>
-    <name>Klevit Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>600</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFKlevit, the Speedfall^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_078_snowboardwizard_championpack</asset_prefab>
-    <background_prefab>event_078_snowboardwizard_banner</background_prefab>
-    <bundle>223</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="107620" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5407</id>
-    <name>Remi Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>600</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFRemi, the Banished^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_94_remibipolar_championpack</asset_prefab>
-    <background_prefab>event_94_remibipolar_banner</background_prefab>
-    <bundle>255</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="105635" quantity="125" />
-  </store_item>
   <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
   <store_item>
     <id>5408</id>
@@ -2147,5 +2249,134 @@
     <icon_bundle>58</icon_bundle>
     <hc_cost>150</hc_cost>
     <item id="106617" quantity="125" />
+  </store_item>
+  <!-- Event 122: ComDev Frog - Red Feather Valley -->
+  <store_item>
+    <id>5412</id>
+    <name>B4RN4B1 Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFB4RN4B1, Exo Warkid^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_101_r1bb1t_championpack</asset_prefab>
+    <background_prefab>event_101_r1bb1t_banner</background_prefab>
+    <bundle>269</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105642" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5413</id>
+    <name>Fritz Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFFritz, the Fiddler^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_93_frogfiddler_championpack</asset_prefab>
+    <background_prefab>event_93_frogfiddler_banner</background_prefab>
+    <bundle>253</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107626" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5414</id>
+    <name>Gama Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFWindsage Gama^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_052_frogwindspiritmonk</asset_prefab>
+    <background_prefab>event_052_banner_frogwindspiritmonk</background_prefab>
+    <bundle>163</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105608" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5415</id>
+    <name>Raju Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFRaju, the Unyielding^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_073_roundknight</asset_prefab>
+    <background_prefab>event_073_banner_roundknight</background_prefab>
+    <bundle>212</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105618" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5416</id>
+    <name>Frog Goliath Chance Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>350</priority>
+    <show_desc>1</show_desc>
+    <desc>Get a frog that can hit back by pulling a Premium ^cE7FFLegendary ^cFFFFFrog card with Vengeance! Each pull also grants Arcane Dust!</desc>
+    <asset_prefab>event_029_chance_w5</asset_prefab>
+    <background_prefab>event_029_banner_chance_w5</background_prefab>
+    <bundle>105</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>120</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" skill_id="counter" set="3000" />
+    </cards>
+    <sp>15</sp>
+  </store_item>
+  <store_item>
+    <id>5417</id>
+    <name>Singles Day Premium Deal</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>1250</priority>
+    <show_desc>1</show_desc>
+    <desc>On this 11/11, get the fusion of four singles with a random ^cE7FFQuad Legendary^cFFFF card from Premium Set! One purchase only!</desc>
+    <asset_prefab>legendary_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>110</hc_cost>
+    <show_list>1</show_list>
+    <pack>3108</pack>
+  </store_item>
+  <store_item>
+    <id>5418</id>
+    <name>Black and White Duo Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>1200</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFHowaito &amp; Kuroilong^cFFFF and ^cE7FFCrash &amp; Zind^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_100_yingyang_championpack</asset_prefab>
+    <background_prefab>event_100_yingyang_banner</background_prefab>
+    <bundle>267</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>200</hc_cost>
+    <show_list>1</show_list>
+    <item id="105641" quantity="125" />
+    <item id="107627" quantity="125" />
   </store_item>
 </root>

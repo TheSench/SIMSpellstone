@@ -101,17 +101,17 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"26": {
-		"id": "26",
-		"name": "World's Center"
+	"29": {
+		"id": "29",
+		"name": "Return to Luminis"
 	},
-	"27": {
-		"id": "27",
-		"name": "Return to Elaria"
+	"30": {
+		"id": "30",
+		"name": "Return to Karthos"
 	},
-	"28": {
-		"id": "28",
-		"name": "Healed Dawnglow"
+	"31": {
+		"id": "31",
+		"name": "Return to Tarragon Peak"
 	},
 	"36": {
 		"id": "36",
@@ -6598,6 +6598,42 @@ var CAMPAIGNS = {
 			"7325"
 		],
 		"name": "Secret Potion"
+	},
+	"1385": {
+		"battleground_id": "2123",
+		"id": "1385",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7326",
+			"7327",
+			"7328",
+			"7329",
+			"7330",
+			"7331"
+		],
+		"name": "News Travels Fast"
+	},
+	"1386": {
+		"battleground_id": "2123",
+		"id": "1386",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7332",
+			"7333",
+			"7334",
+			"7335",
+			"7336",
+			"7337"
+		],
+		"name": "An Unmissable Offer"
 	},
 	"3000": {
 		"id": "3000",
@@ -35237,5 +35273,725 @@ var MISSIONS = {
 		],
 		"id": "7325",
 		"name": "Lesson Lerna'd"
+	},
+	"7326": {
+		"commander": {
+			"id": "246"
+		},
+		"deck": [
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "1328"
+			},
+			{
+				"id": "1627"
+			},
+			{
+				"id": "1643"
+			},
+			{
+				"id": "1328",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1627",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1643",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1328",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1627",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1643",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7326",
+		"name": "Critical Supply Chain"
+	},
+	"7327": {
+		"commander": {
+			"id": "12"
+		},
+		"deck": [
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1028"
+			},
+			{
+				"id": "1043"
+			},
+			{
+				"id": "1044"
+			},
+			{
+				"id": "1028",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1043",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1044",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1028",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1043",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1044",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7327",
+		"name": "Ol' Friends"
+	},
+	"7328": {
+		"commander": {
+			"id": "12"
+		},
+		"deck": [
+			{
+				"id": "2011"
+			},
+			{
+				"id": "2183"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2011"
+			},
+			{
+				"id": "2183"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2011"
+			},
+			{
+				"id": "2183"
+			},
+			{
+				"id": "2071"
+			},
+			{
+				"id": "2011",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2183",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2071",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2011",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2183",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2071",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7328",
+		"name": "Have I Got News for You"
+	},
+	"7329": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "2012"
+			},
+			{
+				"id": "2223"
+			},
+			{
+				"id": "2258"
+			},
+			{
+				"id": "2012"
+			},
+			{
+				"id": "2223"
+			},
+			{
+				"id": "2258"
+			},
+			{
+				"id": "2012"
+			},
+			{
+				"id": "2223"
+			},
+			{
+				"id": "2258"
+			},
+			{
+				"id": "2012",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2258",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2012",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2223",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2258",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7329",
+		"name": "Terminal Change"
+	},
+	"7330": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2250"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2250"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2108"
+			},
+			{
+				"id": "2250"
+			},
+			{
+				"id": "2014"
+			},
+			{
+				"id": "2108",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2250",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2014",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2108",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2250",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2014",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7330",
+		"name": "No Delay"
+	},
+	"7331": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "2133"
+			},
+			{
+				"id": "2182"
+			},
+			{
+				"id": "2249"
+			},
+			{
+				"id": "2133"
+			},
+			{
+				"id": "2182"
+			},
+			{
+				"id": "2249"
+			},
+			{
+				"id": "2133"
+			},
+			{
+				"id": "2182"
+			},
+			{
+				"id": "2249"
+			},
+			{
+				"id": "2133",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2182",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2249",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2133",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2182",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2249",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7331",
+		"name": "Riding Shotgun"
+	},
+	"7332": {
+		"commander": {
+			"id": "249"
+		},
+		"deck": [
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7098"
+			},
+			{
+				"id": "7157"
+			},
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7098"
+			},
+			{
+				"id": "7157"
+			},
+			{
+				"id": "7016"
+			},
+			{
+				"id": "7098"
+			},
+			{
+				"id": "7157"
+			},
+			{
+				"id": "7016",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7098",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7016",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7098",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7157",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7332",
+		"name": "Three Fates"
+	},
+	"7333": {
+		"commander": {
+			"id": "280"
+		},
+		"deck": [
+			{
+				"id": "5269"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5054"
+			},
+			{
+				"id": "5269"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5054"
+			},
+			{
+				"id": "5269"
+			},
+			{
+				"id": "5103"
+			},
+			{
+				"id": "5054"
+			},
+			{
+				"id": "5269",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5103",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5054",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5269",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5103",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5054",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7333",
+		"name": "Something in the Water"
+	},
+	"7334": {
+		"commander": {
+			"id": "281"
+		},
+		"deck": [
+			{
+				"id": "6018"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6169"
+			},
+			{
+				"id": "6018"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6169"
+			},
+			{
+				"id": "6018"
+			},
+			{
+				"id": "6264"
+			},
+			{
+				"id": "6169"
+			},
+			{
+				"id": "6018",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6264",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6169",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6018",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6264",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6169",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7334",
+		"name": "Tomorrow is Another Day"
+	},
+	"7335": {
+		"commander": {
+			"id": "469"
+		},
+		"deck": [
+			{
+				"id": "7102"
+			},
+			{
+				"id": "7018"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7102"
+			},
+			{
+				"id": "7018"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7102"
+			},
+			{
+				"id": "7018"
+			},
+			{
+				"id": "7240"
+			},
+			{
+				"id": "7102",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7018",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7240",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7102",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7018",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7240",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7335",
+		"name": "Visions of Late"
+	},
+	"7336": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "7204"
+			},
+			{
+				"id": "7272"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "7204"
+			},
+			{
+				"id": "7272"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "7204"
+			},
+			{
+				"id": "7272"
+			},
+			{
+				"id": "6302"
+			},
+			{
+				"id": "7204",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7272",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6302",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7204",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7272",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6302",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7336",
+		"name": "Waking up in the Valley"
+	},
+	"7337": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "7154"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6235"
+			},
+			{
+				"id": "7154"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6235"
+			},
+			{
+				"id": "7154"
+			},
+			{
+				"id": "6296"
+			},
+			{
+				"id": "6235"
+			},
+			{
+				"id": "7154",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6296",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6235",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7154",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6296",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6235",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7337",
+		"name": "Deal or No Deal"
 	}
 };
