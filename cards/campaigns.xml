@@ -6717,8 +6717,8 @@
   <campaign>
     <id>1250</id>
     <name>Return to Luminis</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>29</location_id>
     <x>725</x>
     <y>565</y>
@@ -6752,8 +6752,8 @@
   <campaign>
     <id>1251</id>
     <name>Civil War</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1250" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1250" level="1"/> -->
     <battleground_id>2095</battleground_id>
     <location_id>29</location_id>
     <x>560</x>
@@ -6791,8 +6791,8 @@
     <name>Constructing Aether</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1250" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1250" level="1"/> -->
     <battleground_id>2096</battleground_id>
     <location_id>29</location_id>
     <show_level>1</show_level>
@@ -6825,8 +6825,8 @@
   <campaign>
     <id>1253</id>
     <name>The Power Coil</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1251" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1251" level="1"/> -->
     <battleground_id>2097</battleground_id>
     <location_id>29</location_id>
     <x>630</x>
@@ -6861,8 +6861,8 @@
   <campaign>
     <id>1254</id>
     <name>Aether Attunement</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1253" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1253" level="1"/> -->
     <battleground_id>2098</battleground_id>
     <location_id>29</location_id>
     <x>390</x>
@@ -6898,8 +6898,8 @@
   <campaign>
     <id>1255</id>
     <name>Return to Karthos</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>30</location_id>
     <x>590</x>
     <y>535</y>
@@ -6933,8 +6933,8 @@
   <campaign>
     <id>1256</id>
     <name>Chaos Power Coil</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1255" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1255" level="1"/> -->
     <battleground_id>2099</battleground_id>
     <location_id>30</location_id>
     <x>770</x>
@@ -6972,8 +6972,8 @@
     <name>Constructing Chaos</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1255" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1255" level="1"/> -->
     <battleground_id>2100</battleground_id>
     <location_id>30</location_id>
     <show_level>1</show_level>
@@ -7006,8 +7006,8 @@
   <campaign>
     <id>1258</id>
     <name>Chaos Allegiance</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1256" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1256" level="1"/> -->
     <battleground_id>2101</battleground_id>
     <location_id>30</location_id>
     <x>630</x>
@@ -7042,8 +7042,8 @@
   <campaign>
     <id>1259</id>
     <name>Past Trickery Reveal</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1258" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1258" level="1"/> -->
     <battleground_id>2102</battleground_id>
     <location_id>30</location_id>
     <x>390</x>
@@ -7079,8 +7079,8 @@
   <campaign>
     <id>1260</id>
     <name>Return to Tarragon Peak</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="24" level="1"/> -->
     <location_id>31</location_id>
     <x>100</x>
     <y>340</y>
@@ -7114,8 +7114,8 @@
   <campaign>
     <id>1261</id>
     <name>First Order Remnants</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1260" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1260" level="1"/> -->
     <battleground_id>2103</battleground_id>
     <location_id>31</location_id>
     <x>340</x>
@@ -7170,8 +7170,8 @@
     <name>Daknak Fight!</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1260" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1260" level="1"/> -->
     <battleground_id>2104</battleground_id>
     <location_id>31</location_id>
     <show_level>1</show_level>
@@ -7204,8 +7204,8 @@
   <campaign>
     <id>1264</id>
     <name>Seastone Staff Secrets</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1261" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1261" level="1"/> -->
     <battleground_id>2105</battleground_id>
     <location_id>31</location_id>
     <x>300</x>
@@ -7240,8 +7240,8 @@
   <campaign>
     <id>1265</id>
     <name>Missing Spiritual Strength</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1264" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1264" level="1"/> -->
     <battleground_id>2106</battleground_id>
     <location_id>31</location_id>
     <x>615</x>
@@ -7291,8 +7291,8 @@
   <campaign>
     <id>1267</id>
     <name>Beneath Skyhaven</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>32</location_id>
     <x>80</x>
     <y>360</y>
@@ -7326,8 +7326,8 @@
   <campaign>
     <id>1268</id>
     <name>Search for Dyrnwyn</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1267" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1267" level="1" />
     <battleground_id>2107</battleground_id>
     <location_id>32</location_id>
     <x>290</x>
@@ -7365,8 +7365,8 @@
     <name>Arena Rematch</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1267" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1267" level="1" />
     <battleground_id>2108</battleground_id>
     <location_id>32</location_id>
     <show_level>1</show_level>
@@ -7399,8 +7399,8 @@
   <campaign>
     <id>1270</id>
     <name>Solaron's Domain</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1268" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1268" level="1" />
     <battleground_id>2109</battleground_id>
     <location_id>32</location_id>
     <x>615</x>
@@ -7435,8 +7435,8 @@
   <campaign>
     <id>1271</id>
     <name>Aether Imbalance</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1270" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1270" level="1" />
     <battleground_id>2110</battleground_id>
     <location_id>32</location_id>
     <x>840</x>
@@ -7472,8 +7472,8 @@
   <campaign>
     <id>1272</id>
     <name>A Monk's Sanity</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>33</location_id>
     <x>250</x>
     <y>240</y>
@@ -7507,8 +7507,8 @@
   <campaign>
     <id>1273</id>
     <name>Battle for Skyhaven</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1272" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1272" level="1" />
     <battleground_id>2111</battleground_id>
     <location_id>33</location_id>
     <x>580</x>
@@ -7562,8 +7562,8 @@
     <name>Constructing Wyld</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1272" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1272" level="1" />
     <battleground_id>2112</battleground_id>
     <location_id>33</location_id>
     <show_level>1</show_level>
@@ -7596,8 +7596,8 @@
   <campaign>
     <id>1276</id>
     <name>Wyld Power Coil</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1273" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1273" level="1" />
     <battleground_id>2113</battleground_id>
     <location_id>33</location_id>
     <x>515</x>
@@ -7632,8 +7632,8 @@
   <campaign>
     <id>1277</id>
     <name>New Hope</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1276" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1276" level="1" />
     <battleground_id>2114</battleground_id>
     <location_id>33</location_id>
     <x>250</x>
@@ -7669,8 +7669,8 @@
   <campaign>
     <id>1278</id>
     <name>World Conflux</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="24" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="24" level="1" />
     <location_id>34</location_id>
     <x>10</x>
     <y>240</y>
@@ -7704,8 +7704,8 @@
   <campaign>
     <id>1279</id>
     <name>Dyrnwyn's Judgement</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1278" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1278" level="1" />
     <battleground_id>2115</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
@@ -7744,8 +7744,8 @@
     <name>Faction Weakness Awakening</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1278" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1278" level="1" />
     <battleground_id>2116</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
@@ -7828,8 +7828,8 @@
   <campaign>
     <id>1284</id>
     <name>Titan Conflux</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1279" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1279" level="1" />
     <battleground_id>2117</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
@@ -7865,8 +7865,8 @@
   <campaign>
     <id>1285</id>
     <name>Spellstone's End</name>
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1284" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1284" level="1" />
     <battleground_id>2118</battleground_id>
     <!-- Enemy BGE -->
     <location_id>34</location_id>
@@ -8858,8 +8858,8 @@
     <id>1313</id>
     <name>Taking a Break</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>31</location_id>
     <x>225</x>
@@ -8895,8 +8895,8 @@
     <id>1314</id>
     <name>Exploring Tarragon Peak</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1313" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1313" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>31</location_id>
     <x>615</x>
@@ -9251,8 +9251,8 @@
     <id>1324</id>
     <name>Attack on Skyhaven</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>33</location_id>
     <x>375</x>
@@ -9269,16 +9269,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2662" number="25" />
-      <!-- Skyhaven Assault Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2237" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2216" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2662" number="75" />
-      <!-- Skyhaven Assault Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2236" />
       <!-- Map Legendary -->
     </rewards>
@@ -9288,8 +9288,8 @@
     <id>1325</id>
     <name>Throne Room</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1324" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1324" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>33</location_id>
     <x>710</x>
@@ -9306,16 +9306,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2662" number="25" />
-      <!-- Skyhaven Assault Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2034" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2011" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2662" number="75" />
-      <!-- Skyhaven Assault Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2236" />
       <!-- Map Legendary -->
     </rewards>
@@ -9977,8 +9977,8 @@
     <id>1345</id>
     <name>Looking for Glory</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>32</location_id>
     <x>290</x>
@@ -9995,16 +9995,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2680" number="25" />
-      <!-- Gladius Scriptorium Flask -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2251" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2119" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2680" number="75" />
-      <!-- Gladius Scriptorium Flask -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
@@ -10014,8 +10014,8 @@
     <id>1346</id>
     <name>The Betrayal</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1345" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1345" level="1" />
     <battleground_id>2119</battleground_id>
     <location_id>32</location_id>
     <x>615</x>
@@ -10032,16 +10032,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2680" number="25" />
-      <!-- Gladius Scriptorium Flask -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2117" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2165" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2680" number="75" />
-      <!-- Gladius Scriptorium Flask -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
@@ -10127,8 +10127,8 @@
     <id>1349</id>
     <name>Dark Side of the Science</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>29</location_id>
     <x>780</x>
@@ -10164,8 +10164,8 @@
     <id>1350</id>
     <name>When an Experiment Goes Wrong...</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1349" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1349" level="1"/> -->
     <battleground_id>2119</battleground_id>
     <location_id>29</location_id>
     <x>250</x>
@@ -10295,8 +10295,8 @@
     <id>1353</id>
     <name>The Return of a King</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1692291600</locked_start_time>
     <!--  Thursday, August 17, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10341,8 +10341,8 @@
     <id>1354</id>
     <name>Warring Factions</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1353" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1353" level="1"/> -->
     <locked_start_time>1693501200</locked_start_time>
     <!--  Thursday, August 31, 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10388,8 +10388,8 @@
     <id>1355</id>
     <name>The Goblins' Conflux</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1694710800</locked_start_time>
     <!-- Thursday, 14 September 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10434,8 +10434,8 @@
     <id>1356</id>
     <name>Furious Clouds</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1355" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1355" level="1" />
     <locked_start_time>1695920400</locked_start_time>
     <!--  Thursday, 28 September 2023 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10566,8 +10566,8 @@
     <id>1359</id>
     <name>Nether Legions</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="36" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="36" level="1" />
     <locked_start_time>1699549200</locked_start_time>
     <!-- Thursday, 09 November 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10608,8 +10608,8 @@
     <id>1360</id>
     <name>Upon Righteous Wings</name>
     <icon id="machine_parts_200" bundle="17" />
-    <hidden>1</hidden>
-    <!-- <campaign_req id="1359" level="1"/> -->
+    <!-- <hidden>1</hidden> -->
+    <campaign_req id="1359" level="1" />
     <locked_start_time>1700758800</locked_start_time>
     <!-- Thursday, 23 November 2023 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10736,8 +10736,8 @@
     <id>1363</id>
     <name>Runes in the Ruins</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="36" level="1"/> -->
     <locked_start_time>1704387600</locked_start_time>
     <!-- Thursday, 04 January 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -10778,8 +10778,8 @@
     <id>1364</id>
     <name>A Forgotten Hero</name>
     <icon id="machine_parts_200" bundle="17" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1363" level="1" />
+    <hidden>1</hidden>
+    <!-- <campaign_req id="1363" level="1"/> -->
     <locked_start_time>1705597200</locked_start_time>
     <!-- Thursday, 18 January 2024 at 17:00:00 -->
     <battleground_id>2120</battleground_id>
@@ -11708,6 +11708,87 @@
       <!-- Koi Jockey -->
       <card level="6" id="2108" />
       <!-- Koi Jockey -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <!-- Event 123: ComDev Beast - Red Feather Valley -->
+  <campaign>
+    <id>1387</id>
+    <name>Act in Haste</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="36" level="1" />
+    <locked_start_time>1733418000</locked_start_time>
+    <!-- Thursday, 05 December 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>630</x>
+    <y>450</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7338</mission_id>
+      <mission_id>7339</mission_id>
+      <mission_id>7340</mission_id>
+      <mission_id>7341</mission_id>
+      <mission_id>7342</mission_id>
+      <mission_id>7343</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104092" number="50" />
+      <!-- Mathay, the Mechanticore -->
+      <card level="5" id="2089" />
+      <!-- Slagspirit -->
+      <card level="6" id="2089" />
+      <!-- Slagspirit -->
+      <item level="7" id="529" number="2" />
+      <!-- Massive Runecrafter Chest -->
+    </rewards>
+    <find_item id="3131" drop_per_energy="0.5" />
+    <!-- Keep same for all nodes in Red Feather Valley -->
+    <find_item id="2524" drop_per_energy="0.2" />
+  </campaign>
+  <campaign>
+    <id>1388</id>
+    <name>Repent in Leisure</name>
+    <icon id="machine_parts_200" bundle="17" />
+    <campaign_req id="1387" level="1" />
+    <locked_start_time>1734627600</locked_start_time>
+    <!-- Thursday, 19 December 2024 at 17:00:00 -->
+    <battleground_id>2123</battleground_id>
+    <location_id>36</location_id>
+    <x>750</x>
+    <y>500</y>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
+    <missions>
+      <mission_id>7344</mission_id>
+      <mission_id>7345</mission_id>
+      <mission_id>7346</mission_id>
+      <mission_id>7347</mission_id>
+      <mission_id>7348</mission_id>
+      <mission_id>7349</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="2" />
+      <!-- Legendary Rune Sliver -->
+      <item level="3" id="18" number="1000" />
+      <!-- Legendary Pack Fragments -->
+      <item level="4" id="104092" number="50" />
+      <!-- Mathay, the Mechanticore -->
+      <card level="5" id="2089" />
+      <!-- Slagspirit -->
+      <card level="6" id="2089" />
+      <!-- Slagspirit -->
       <item level="7" id="529" number="2" />
       <!-- Massive Runecrafter Chest -->
     </rewards>

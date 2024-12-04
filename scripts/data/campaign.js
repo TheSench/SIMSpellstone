@@ -101,17 +101,17 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"29": {
-		"id": "29",
-		"name": "Return to Luminis"
+	"32": {
+		"id": "32",
+		"name": "Gladius Scriptorium"
 	},
-	"30": {
-		"id": "30",
-		"name": "Return to Karthos"
+	"33": {
+		"id": "33",
+		"name": "Skyhaven Assault"
 	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
+	"34": {
+		"id": "34",
+		"name": "Conflux Convergence"
 	},
 	"36": {
 		"id": "36",
@@ -6634,6 +6634,42 @@ var CAMPAIGNS = {
 			"7337"
 		],
 		"name": "An Unmissable Offer"
+	},
+	"1387": {
+		"battleground_id": "2123",
+		"id": "1387",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7338",
+			"7339",
+			"7340",
+			"7341",
+			"7342",
+			"7343"
+		],
+		"name": "Act in Haste"
+	},
+	"1388": {
+		"battleground_id": "2123",
+		"id": "1388",
+		"items": {
+			"2524": 0.2,
+			"3131": 0.5
+		},
+		"location_id": "36",
+		"missions": [
+			"7344",
+			"7345",
+			"7346",
+			"7347",
+			"7348",
+			"7349"
+		],
+		"name": "Repent in Leisure"
 	},
 	"3000": {
 		"id": "3000",
@@ -35993,5 +36029,725 @@ var MISSIONS = {
 		],
 		"id": "7337",
 		"name": "Deal or No Deal"
+	},
+	"7338": {
+		"commander": {
+			"id": "298"
+		},
+		"deck": [
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1625"
+			},
+			{
+				"id": "1626"
+			},
+			{
+				"id": "1641"
+			},
+			{
+				"id": "1625",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1641",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1625",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1626",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1641",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7338",
+		"name": "Missing Angel"
+	},
+	"7339": {
+		"commander": {
+			"id": "298"
+		},
+		"deck": [
+			{
+				"id": "1635"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1635"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1635"
+			},
+			{
+				"id": "1343"
+			},
+			{
+				"id": "1642"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "2"
+			},
+			{
+				"id": "1343",
+				"mastery_level": "3"
+			},
+			{
+				"id": "1642",
+				"mastery_level": "4"
+			},
+			{
+				"id": "1635",
+				"mastery_level": "5"
+			},
+			{
+				"id": "1343",
+				"mastery_level": "6"
+			},
+			{
+				"id": "1642",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7339",
+		"name": "Fools Rush In"
+	},
+	"7340": {
+		"commander": {
+			"id": "477"
+		},
+		"deck": [
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2000"
+			},
+			{
+				"id": "2019"
+			},
+			{
+				"id": "2021"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2021",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2000",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2019",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2021",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7340",
+		"name": "Avoid the Void"
+	},
+	"7341": {
+		"commander": {
+			"id": "303"
+		},
+		"deck": [
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2089"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2089"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "2138"
+			},
+			{
+				"id": "2089"
+			},
+			{
+				"id": "2220"
+			},
+			{
+				"id": "2138",
+				"mastery_level": "2"
+			},
+			{
+				"id": "2089",
+				"mastery_level": "3"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "4"
+			},
+			{
+				"id": "2138",
+				"mastery_level": "5"
+			},
+			{
+				"id": "2089",
+				"mastery_level": "6"
+			},
+			{
+				"id": "2220",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7341",
+		"name": "Prior Experience"
+	},
+	"7342": {
+		"commander": {
+			"id": "494"
+		},
+		"deck": [
+			{
+				"id": "5030"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6030"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6030"
+			},
+			{
+				"id": "5030"
+			},
+			{
+				"id": "6150"
+			},
+			{
+				"id": "6030"
+			},
+			{
+				"id": "5030",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5030",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6150",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6030",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7342",
+		"name": "A Pattern Appears"
+	},
+	"7343": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "5293"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "7032"
+			},
+			{
+				"id": "5293"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "7032"
+			},
+			{
+				"id": "5293"
+			},
+			{
+				"id": "6052"
+			},
+			{
+				"id": "7032"
+			},
+			{
+				"id": "5293",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6052",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7032",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5293",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6052",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7032",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7343",
+		"name": "The Greatest Trick"
+	},
+	"7344": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "5134"
+			},
+			{
+				"id": "6019"
+			},
+			{
+				"id": "7002"
+			},
+			{
+				"id": "5134"
+			},
+			{
+				"id": "6019"
+			},
+			{
+				"id": "7002"
+			},
+			{
+				"id": "5134"
+			},
+			{
+				"id": "6019"
+			},
+			{
+				"id": "7002"
+			},
+			{
+				"id": "5134",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6019",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7002",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5134",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6019",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7002",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7344",
+		"name": "Deal with the Void"
+	},
+	"7345": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7009"
+			},
+			{
+				"id": "7027"
+			},
+			{
+				"id": "7031"
+			},
+			{
+				"id": "7009",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7027",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7031",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7009",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7027",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7031",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7345",
+		"name": "No More Hiding"
+	},
+	"7346": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "6251"
+			},
+			{
+				"id": "5212"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6251"
+			},
+			{
+				"id": "5212"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6251"
+			},
+			{
+				"id": "5212"
+			},
+			{
+				"id": "6226"
+			},
+			{
+				"id": "6251",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5212",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6226",
+				"mastery_level": "4"
+			},
+			{
+				"id": "6251",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5212",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6226",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7346",
+		"name": "Same as Always"
+	},
+	"7347": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "5036"
+			},
+			{
+				"id": "7236"
+			},
+			{
+				"id": "5181"
+			},
+			{
+				"id": "5036"
+			},
+			{
+				"id": "7236"
+			},
+			{
+				"id": "5181"
+			},
+			{
+				"id": "5036"
+			},
+			{
+				"id": "7236"
+			},
+			{
+				"id": "5181"
+			},
+			{
+				"id": "5036",
+				"mastery_level": "2"
+			},
+			{
+				"id": "7236",
+				"mastery_level": "3"
+			},
+			{
+				"id": "5181",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5036",
+				"mastery_level": "5"
+			},
+			{
+				"id": "7236",
+				"mastery_level": "6"
+			},
+			{
+				"id": "5181",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7347",
+		"name": "The Void Apprentice"
+	},
+	"7348": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "5164"
+			},
+			{
+				"id": "6080"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5164"
+			},
+			{
+				"id": "6080"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5164"
+			},
+			{
+				"id": "6080"
+			},
+			{
+				"id": "7219"
+			},
+			{
+				"id": "5164",
+				"mastery_level": "2"
+			},
+			{
+				"id": "6080",
+				"mastery_level": "3"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "4"
+			},
+			{
+				"id": "5164",
+				"mastery_level": "5"
+			},
+			{
+				"id": "6080",
+				"mastery_level": "6"
+			},
+			{
+				"id": "7219",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7348",
+		"name": "Viir Explains it All"
+	},
+	"7349": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "7124"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "7124"
+			},
+			{
+				"id": "5000"
+			},
+			{
+				"id": "6009"
+			},
+			{
+				"id": "7124",
+				"mastery_level": "2"
+			},
+			{
+				"id": "5000",
+				"mastery_level": "3"
+			},
+			{
+				"id": "6009",
+				"mastery_level": "4"
+			},
+			{
+				"id": "7124",
+				"mastery_level": "5"
+			},
+			{
+				"id": "5000",
+				"mastery_level": "6"
+			},
+			{
+				"id": "6009",
+				"mastery_level": "7"
+			}
+		],
+		"id": "7349",
+		"name": "Time to Reset"
 	}
 };

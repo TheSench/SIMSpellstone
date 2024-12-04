@@ -22652,5 +22652,201 @@
       <!-- Shards -->
     </reward>
   </achievement>
+  <!-- Event 123: ComDev Beast - Red Feather Valley -->
+  <!-- E123 Node 1: Act in Haste -->
+  <achievement>
+    <id>4611</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Act in Haste campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7343</mission_req>
+    <locked_start_time>1733418000</locked_start_time>
+    <req>
+      <campaign>1387</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7119" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4612</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Act in Haste campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4611</achievement_req>
+    <locked_start_time>1733418000</locked_start_time>
+    <req>
+      <campaign>1387</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4613</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Act in Haste campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4612</achievement_req>
+    <locked_start_time>1733418000</locked_start_time>
+    <req>
+      <campaign>1387</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4614</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Act in Haste campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4613</achievement_req>
+    <locked_start_time>1733418000</locked_start_time>
+    <req>
+      <campaign>1387</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4615</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Act in Haste campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4614</achievement_req>
+    <locked_start_time>1733418000</locked_start_time>
+    <req>
+      <campaign>1387</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 123: ComDev Beast - Red Feather Valley -->
+  <!-- E123 Node 2: Repent in Leisure -->
+  <achievement>
+    <id>4616</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Repent in Leisure campaign on Mastery Level 1.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <mission_req>7349</mission_req>
+    <locked_start_time>1734627600</locked_start_time>
+    <req>
+      <campaign>1388</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="3131" number="100" />
+      <event_points id="7119" number="100" />
+      <!-- Expedition Items -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4617</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Repent in Leisure campaign on Mastery Level 2.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4616</achievement_req>
+    <locked_start_time>1734627600</locked_start_time>
+    <req>
+      <campaign>1388</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>3000</gold>
+      <!-- Gold -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4618</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Repent in Leisure campaign on Mastery Level 4.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4617</achievement_req>
+    <locked_start_time>1734627600</locked_start_time>
+    <req>
+      <campaign>1388</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>500</sp>
+      <!-- Dust -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4619</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Repent in Leisure campaign on Mastery Level 5.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4618</achievement_req>
+    <locked_start_time>1734627600</locked_start_time>
+    <req>
+      <campaign>1388</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <pack>45</pack>
+      <!-- Reward Pack -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>4620</id>
+    <type>2</type>
+    <order>603</order>
+    <name>Red Feather Valley</name>
+    <desc>Complete the Repent in Leisure campaign on Mastery Level 6.</desc>
+    <icon>machine_parts_200</icon>
+    <icon_bundle>17</icon_bundle>
+    <achievement_req>4619</achievement_req>
+    <locked_start_time>1734627600</locked_start_time>
+    <req>
+      <campaign>1388</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <wb>60</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
   <!-- END Non-Core Map Quests Part II -->
 </root>

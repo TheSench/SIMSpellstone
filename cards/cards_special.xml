@@ -1319,4 +1319,146 @@
       <skill id="protect" x="6" all="1" y="12" />
     </upgrade>
   </unit>
+  <unit>
+    <id>619</id>
+    <card_type>2</card_type>
+    <name>Defensive Tusker</name>
+    <picture>Insect_Butterfly_Elephant_B</picture>
+    <asset_bundle>185</asset_bundle>
+    <cost>0</cost>
+    <attack>0</attack>
+    <health>13</health>
+    <skill id="taunt" x="1" />
+    <skill id="armored" x="1" />
+    <skill id="regenerate" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <type>3</type>
+    <sub_type>14</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="2" />
+      <skill id="regenerate" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="3" />
+      <skill id="regenerate" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>18</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="4" />
+      <skill id="regenerate" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>10619</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Fortified Tusker</name>
+    <picture>Insect_Butterfly_Elephant_B</picture>
+    <asset_bundle>185</asset_bundle>
+    <cost>0</cost>
+    <attack>0</attack>
+    <health>19</health>
+    <skill id="taunt" x="1" />
+    <skill id="armored" x="5" />
+    <skill id="regenerate" x="5" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <type>3</type>
+    <sub_type>14</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="6" />
+      <skill id="regenerate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="7" />
+      <skill id="regenerate" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="8" />
+      <skill id="regenerate" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>20619</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Redoubtable Tusker</name>
+    <picture>Insect_Butterfly_Elephant_B</picture>
+    <asset_bundle>185</asset_bundle>
+    <cost>0</cost>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="taunt" x="1" />
+    <skill id="armored" x="9" />
+    <skill id="regenerate" x="9" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <sub_type>14</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="10" />
+      <skill id="regenerate" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="11" />
+      <skill id="regenerate" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="taunt" x="1" />
+      <skill id="armored" x="12" />
+      <skill id="regenerate" x="12" />
+    </upgrade>
+  </unit>
 </root>

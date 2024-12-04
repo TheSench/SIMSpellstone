@@ -276,6 +276,25 @@
     </cards>
   </store_item>
   <store_item>
+    <id>48</id>
+    <name>Gold Premium Card</name>
+    <banner>1</banner>
+    <category>2</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives one copy of a ^cE7FFWendigo^cFFFF! May be purchased unlimited times.</desc>
+    <show_desc>1</show_desc>
+    <priority>51</priority>
+    <sc_cost>50000</sc_cost>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <no_drop_rate>1</no_drop_rate>
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7314" display_card_id="7314" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>50</id>
     <feature_lock_req>salvage</feature_lock_req>
     <name>Dust Satchel</name>
@@ -878,6 +897,8 @@
       <item id="104087" quantity="500" weight="1" />
       <item id="104088" quantity="500" weight="1" />
       <item id="104089" quantity="500" weight="1" />
+      <item id="104090" quantity="500" weight="1" />
+      <item id="104091" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1023,47 +1044,47 @@
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
   <!-- 3001- : Old events removed. See old versions for archive. -->
-  <!-- Singles Day Premium Flask Pack -->
+  <!-- Random Premium Flask Pack -->
   <store_item>
     <id>3101</id>
     <name>Random Premium Flasks</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Contains 111 of one random Premium Flask containing a choice of 4 of the possible 111 Stones from the Premium Champion set.</desc>
+    <desc>Contains 100 of a random Premium Flask containing a choice of 4 Stones from the Premium Champion set.</desc>
     <priority>1</priority>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
     <hc_cost>60</hc_cost>
     <item_pack>
       <pulls>1</pulls>
-      <item id="2578" quantity="111" weight="1" />
-      <item id="2579" quantity="111" weight="1" />
-      <item id="2580" quantity="111" weight="1" />
-      <item id="2595" quantity="111" weight="1" />
-      <item id="2596" quantity="111" weight="1" />
-      <item id="2597" quantity="111" weight="1" />
-      <item id="2598" quantity="111" weight="1" />
-      <item id="2599" quantity="111" weight="1" />
-      <item id="2600" quantity="111" weight="1" />
-      <item id="2615" quantity="111" weight="1" />
-      <item id="2616" quantity="111" weight="1" />
-      <item id="2617" quantity="111" weight="1" />
-      <item id="2636" quantity="111" weight="1" />
-      <item id="2637" quantity="111" weight="1" />
-      <item id="2638" quantity="111" weight="1" />
-      <item id="2684" quantity="111" weight="1" />
-      <item id="2685" quantity="111" weight="1" />
-      <item id="2686" quantity="111" weight="1" />
-      <item id="2687" quantity="111" weight="1" />
-      <item id="2688" quantity="111" weight="1" />
-      <item id="2689" quantity="111" weight="1" />
-      <item id="2690" quantity="111" weight="1" />
-      <item id="2691" quantity="111" weight="1" />
-      <item id="2692" quantity="111" weight="1" />
-      <item id="2693" quantity="111" weight="1" />
-      <item id="2817" quantity="111" weight="1" />
-      <item id="2818" quantity="111" weight="1" />
-      <item id="2819" quantity="111" weight="1" />
+      <item id="2578" quantity="100" weight="1" />
+      <item id="2579" quantity="100" weight="1" />
+      <item id="2580" quantity="100" weight="1" />
+      <item id="2595" quantity="100" weight="1" />
+      <item id="2596" quantity="100" weight="1" />
+      <item id="2597" quantity="100" weight="1" />
+      <item id="2598" quantity="100" weight="1" />
+      <item id="2599" quantity="100" weight="1" />
+      <item id="2600" quantity="100" weight="1" />
+      <item id="2615" quantity="100" weight="1" />
+      <item id="2616" quantity="100" weight="1" />
+      <item id="2617" quantity="100" weight="1" />
+      <item id="2636" quantity="100" weight="1" />
+      <item id="2637" quantity="100" weight="1" />
+      <item id="2638" quantity="100" weight="1" />
+      <item id="2684" quantity="100" weight="1" />
+      <item id="2685" quantity="100" weight="1" />
+      <item id="2686" quantity="100" weight="1" />
+      <item id="2687" quantity="100" weight="1" />
+      <item id="2688" quantity="100" weight="1" />
+      <item id="2689" quantity="100" weight="1" />
+      <item id="2690" quantity="100" weight="1" />
+      <item id="2691" quantity="100" weight="1" />
+      <item id="2692" quantity="100" weight="1" />
+      <item id="2693" quantity="100" weight="1" />
+      <item id="2817" quantity="100" weight="1" />
+      <item id="2818" quantity="100" weight="1" />
+      <item id="2819" quantity="100" weight="1" />
     </item_pack>
   </store_item>
   <!-- Dual Tribe Premium Legendary for Dual Shard Bundles -->
@@ -1074,8 +1095,8 @@
     <hidden>1</hidden>
     <desc>Gives one random ^cE7FFDual Legendary^cFFFF Frog card from Premium set.</desc>
     <priority>1</priority>
-    <asset_prefab>epic_pack</asset_prefab>
-    <icon>icon_blue_crystal</icon>
+    <asset_prefab>legendary_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
@@ -1656,6 +1677,8 @@
       <item id="104087" />
       <item id="104088" />
       <item id="104089" />
+      <item id="104090" />
+      <item id="104091" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1863,6 +1886,7 @@
       <item id="104088" number="10" purchase1="5" scalar="5" />
       <item id="104089" number="10" purchase1="5" scalar="5" />
       <item id="104090" number="10" purchase1="5" scalar="5" />
+      <item id="104091" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2181,75 +2205,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 121: ComDev Seafolk - Red Feather Valley -->
-  <store_item>
-    <id>5408</id>
-    <name>Apex Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFApex Land Shark^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_038_champion_landshark</asset_prefab>
-    <background_prefab>event_038_banner_landshark</background_prefab>
-    <bundle>128</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="106602" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5409</id>
-    <name>Armada Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFThe Undead Armada^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_96_undeadarmada_championpack</asset_prefab>
-    <background_prefab>event_96_undeadarmada_banner</background_prefab>
-    <bundle>259</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="106626" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5410</id>
-    <name>Kandrula Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFKandrula, the Sly^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_87_nagawitch_championpack</asset_prefab>
-    <background_prefab>event_87_nagawitch_banner</background_prefab>
-    <bundle>241</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="105629" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5411</id>
-    <name>Domhain Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFDomhain, the Fomorian^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_84_entropylord_championpack</asset_prefab>
-    <background_prefab>event_84_entropylord_banner</background_prefab>
-    <bundle>235</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <item id="106617" quantity="125" />
-  </store_item>
   <!-- Event 122: ComDev Frog - Red Feather Valley -->
   <store_item>
     <id>5412</id>
@@ -2368,7 +2323,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>1200</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFHowaito &amp; Kuroilong^cFFFF and ^cE7FFCrash &amp; Zind^cFFFF! May be purchased 12 times.</desc>
+    <desc>Gives 125 Champion Stones for ^cE7FFHowaito &amp; Kuroilong^cFFFF and ^cE7FFCrash &amp; Zink^cFFFF! May be purchased 12 times.</desc>
     <asset_prefab>event_100_yingyang_championpack</asset_prefab>
     <background_prefab>event_100_yingyang_banner</background_prefab>
     <bundle>267</bundle>
@@ -2378,5 +2333,134 @@
     <show_list>1</show_list>
     <item id="105641" quantity="125" />
     <item id="107627" quantity="125" />
+  </store_item>
+  <!-- Event 123: ComDev Beast - Red Feather Valley -->
+  <store_item>
+    <id>5419</id>
+    <name>Nayaara Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFNayaara, the Airlight^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_076_bravelongma</asset_prefab>
+    <background_prefab>event_076_banner_bravelongma</background_prefab>
+    <bundle>219</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105621" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5420</id>
+    <name>Tylong Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFTylong, Old Warrior^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_069_tigerlung</asset_prefab>
+    <background_prefab>event_069_banner_tigerlung</background_prefab>
+    <bundle>203</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107614" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5421</id>
+    <name>Caccia Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFCaccia, the Lunatic^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_072_moonmask</asset_prefab>
+    <background_prefab>event_072_banner_moonmask</background_prefab>
+    <bundle>210</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107618" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5422</id>
+    <name>Dunstan Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFDunstan, the Untamed^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_83_mechabeasmaster_championpack</asset_prefab>
+    <background_prefab>event_83_mechabeastmaster_banner</background_prefab>
+    <bundle>233</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107623" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5423</id>
+    <name>Holiday Appetite Deal</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives one copy of a Quad Fused ^cE7FFImmortal Appetite^cFFFF! One purchase only! Happy Holidays from Spellstone!</desc>
+    <show_desc>1</show_desc>
+    <priority>1200</priority>
+    <hc_cost>150</hc_cost>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <no_drop_rate>1</no_drop_rate>
+    <cards>
+      <card min_level="1" max_level="1" unit_id="27124" display_card_id="27124" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5424</id>
+    <name>Boxing Day Mystery Box</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>1250</priority>
+    <desc>Happy Holidays from Spellstone!</desc>
+    <background_prefab>christmas_store_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>package_60</icon>
+    <icon_bundle>17</icon_bundle>
+    <sc_cost>1</sc_cost>
+    <show_list>1</show_list>
+    <item id="531" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5425</id>
+    <name>New Year's Day Chance Flasks</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>1250</priority>
+    <desc>Contains 100 of a random Premium Flask containing a choice of 4 Stones from the Premium Champion set!</desc>
+    <asset_prefab>flask_pack_aether_1</asset_prefab>
+    <!-- Small Aether Flasks Icon -->
+    <background_prefab>aether_flask_banner</background_prefab>
+    <!-- Aether Flask Banner -->
+    <bundle>35</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>60</hc_cost>
+    <show_list>1</show_list>
+    <pack>3101</pack>
   </store_item>
 </root>

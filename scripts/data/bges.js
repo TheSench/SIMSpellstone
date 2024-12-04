@@ -3212,6 +3212,119 @@ var BATTLEGROUNDS = {
 		"id": "186",
 		"name": "Lily & Spear Regenerated"
 	},
+	"187": {
+		"desc": "All Beasts gain 20% bonus Health, and bonus Berserk and Armor equal to 20% minus twice their delay. All % values based on base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.2,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.2,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.2,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.18,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.18,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.16,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.16,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.14,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.14,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.12,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.12,
+				"y": "14"
+			}
+		],
+		"id": "187",
+		"name": "Beast Quake"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -5380,26 +5493,16 @@ var BATTLEGROUNDS = {
 		"name": "Swarming Tower"
 	},
 	"569": {
-		"desc": "All enemy Legendary cards have their Attack and Health increased by 25%.",
+		"desc": "All cards gain Confuse.",
 		"effect": [
 			{
 				"all": "1",
-				"effect_type": "skill",
-				"id": "enlarge",
-				"mult": 0.25,
-				"z": "4"
-			},
-			{
-				"base": "health",
-				"effect_type": "scale_health",
-				"mult": 0.25,
-				"rarity": 4
+				"effect_type": "add_skill",
+				"id": "confuse"
 			}
 		],
-		"enemy_only": true,
-		"hidden": true,
 		"id": "569",
-		"name": "Tougher Enemies"
+		"name": "Total Confusion"
 	},
 	"570": {
 		"desc": "All cards gain Vampirism 10.",
@@ -5919,6 +6022,86 @@ var BATTLEGROUNDS = {
 		"id": "581",
 		"isTower": true,
 		"name": "Ninja Frog"
+	},
+	"582": {
+		"desc": "All enemies start with a Redoubtable Tusker card.",
+		"effect": {
+			"1": {
+				"id": 619,
+				"level": 1
+			},
+			"2": {
+				"id": 619,
+				"level": 2
+			},
+			"3": {
+				"id": 619,
+				"level": 3
+			},
+			"4": {
+				"id": 619,
+				"level": 4
+			},
+			"5": {
+				"id": 619,
+				"level": 5
+			},
+			"6": {
+				"id": 619,
+				"level": 6
+			},
+			"7": {
+				"id": 10619,
+				"level": 1
+			},
+			"8": {
+				"id": 10619,
+				"level": 2
+			},
+			"9": {
+				"id": 10619,
+				"level": 3
+			},
+			"10": {
+				"id": 10619,
+				"level": 4
+			},
+			"11": {
+				"id": 10619,
+				"level": 5
+			},
+			"12": {
+				"id": 10619,
+				"level": 6
+			},
+			"13": {
+				"id": 20619,
+				"level": 1
+			},
+			"14": {
+				"id": 20619,
+				"level": 2
+			},
+			"15": {
+				"id": 20619,
+				"level": 3
+			},
+			"16": {
+				"id": 20619,
+				"level": 4
+			},
+			"17": {
+				"id": 20619,
+				"level": 5
+			},
+			"18": {
+				"id": 20619,
+				"level": 6
+			}
+		},
+		"id": "582",
+		"isTower": true,
+		"name": "Redoubtable Tusker"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
