@@ -1332,8 +1332,9 @@
     <skill id="armored" x="1" />
     <skill id="regenerate" x="1" />
     <rarity>4</rarity>
-    <type>1</type>
     <type>3</type>
+    <type>2</type>
+    <type>1</type>
     <sub_type>14</sub_type>
     <set>9999</set>
     <upgrade>
@@ -1380,8 +1381,9 @@
     <skill id="armored" x="5" />
     <skill id="regenerate" x="5" />
     <rarity>4</rarity>
-    <type>1</type>
     <type>3</type>
+    <type>2</type>
+    <type>1</type>
     <sub_type>14</sub_type>
     <set>9999</set>
     <upgrade>
@@ -1429,6 +1431,8 @@
     <skill id="regenerate" x="9" />
     <rarity>4</rarity>
     <type>3</type>
+    <type>2</type>
+    <type>1</type>
     <sub_type>14</sub_type>
     <set>9999</set>
     <upgrade>
