@@ -3325,6 +3325,34 @@ var BATTLEGROUNDS = {
 		"id": "187",
 		"name": "Beast Quake"
 	},
+	"188": {
+		"desc": "All Mechas gain Ward, Frostbreath, and Scorch equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.1,
+				"y": "16"
+			}
+		],
+		"id": "188",
+		"name": "Winter Engine's Warmth"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4790,19 +4818,6 @@ var BATTLEGROUNDS = {
 		"id": "552",
 		"name": "Crushing Wave Clash"
 	},
-	"553": {
-		"desc": "All cards gain Dualstrike every 1.",
-		"effect": [
-			{
-				"all": "1",
-				"effect_type": "add_skill",
-				"id": "flurry",
-				"x": 1
-			}
-		],
-		"id": "553",
-		"name": "Doubling Clash"
-	},
 	"554": {
 		"desc": "Bolt, Frostbreath and Hex skills are doubled. Health is also doubled.",
 		"effect": [
@@ -5559,19 +5574,6 @@ var BATTLEGROUNDS = {
 		],
 		"id": "571",
 		"name": "The Burning Hell"
-	},
-	"572": {
-		"desc": "All cards gain confuse on activation.",
-		"effect": [
-			{
-				"all": "1",
-				"c": "99",
-				"effect_type": "add_skill",
-				"id": "confuse"
-			}
-		],
-		"id": "572",
-		"name": "The Void's Universe"
 	},
 	"573": {
 		"desc": "The first enemy card played in battle has one additional Delay.",
@@ -8141,7 +8143,7 @@ var BATTLEGROUNDS = {
 		"starting_level": 0
 	},
 	"2121": {
-		"desc": "The Lightning Boss has one Delay removed from the first card they play in this Lightning Boss Node.",
+		"desc": "The Lightning Boss has one Delay removed from the first card they play.",
 		"effect": [
 			{
 				"defender": 1,
@@ -8201,6 +8203,22 @@ var BATTLEGROUNDS = {
 		"id": "2123",
 		"max_level": 7,
 		"name": "Red Feather Valley",
+		"scale_with_level": true,
+		"starting_level": 0
+	},
+	"2124": {
+		"desc": "Enemies are much stronger.",
+		"effect": [
+			{
+				"base_mult": 0.5,
+				"effect_type": "scale_attributes",
+				"mult": 0.01
+			}
+		],
+		"enemy_only": true,
+		"hidden": true,
+		"id": "2124",
+		"name": "Alyel Back in Time",
 		"scale_with_level": true,
 		"starting_level": 0
 	},

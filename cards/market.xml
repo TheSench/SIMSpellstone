@@ -2145,13 +2145,13 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Beat out the competition in Expedition with fifteen ^cCC1FEnergy Potion +20 ^cFFFFfor a limited time only! No purchase limit!</desc>
+    <desc>Beat out the competition in Expedition with ten ^cCC1FEnergy Potion +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
     <asset_prefab>event_012_energyChest</asset_prefab>
     <bundle>62</bundle>
-    <icon>energy_refill_20</icon>
-    <hc_cost>100</hc_cost>
+    <icon>energy_refill_10</icon>
+    <hc_cost>35</hc_cost>
     <!-- Stuff to give -->
-    <item id="1004" quantity="15" />
+    <item id="1003" quantity="10" />
   </store_item>
   <store_item>
     <id>5002</id>
@@ -2162,13 +2162,13 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Beat out the competition in Brawl with four ^cCC1FBounty Refill +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
+    <desc>Beat out the competition in Brawl with two ^cCC1FBounty Refill +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
     <asset_prefab>bounty_pack_4</asset_prefab>
     <bundle>15</bundle>
-    <icon>icon_blue_crystal</icon>
-    <hc_cost>90</hc_cost>
+    <icon>bounty_refill_10</icon>
+    <hc_cost>45</hc_cost>
     <!-- Stuff to give -->
-    <item id="1024" quantity="4" />
+    <item id="1024" quantity="2" />
   </store_item>
   <store_item>
     <id>5003</id>
@@ -2205,135 +2205,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 122: ComDev Frog - Red Feather Valley -->
-  <store_item>
-    <id>5412</id>
-    <name>B4RN4B1 Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFB4RN4B1, Exo Warkid^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_101_r1bb1t_championpack</asset_prefab>
-    <background_prefab>event_101_r1bb1t_banner</background_prefab>
-    <bundle>269</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105642" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5413</id>
-    <name>Fritz Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFFritz, the Fiddler^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_93_frogfiddler_championpack</asset_prefab>
-    <background_prefab>event_93_frogfiddler_banner</background_prefab>
-    <bundle>253</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107626" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5414</id>
-    <name>Gama Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFWindsage Gama^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_052_frogwindspiritmonk</asset_prefab>
-    <background_prefab>event_052_banner_frogwindspiritmonk</background_prefab>
-    <bundle>163</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105608" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5415</id>
-    <name>Raju Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFRaju, the Unyielding^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_073_roundknight</asset_prefab>
-    <background_prefab>event_073_banner_roundknight</background_prefab>
-    <bundle>212</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105618" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5416</id>
-    <name>Frog Goliath Chance Pack</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>350</priority>
-    <show_desc>1</show_desc>
-    <desc>Get a frog that can hit back by pulling a Premium ^cE7FFLegendary ^cFFFFFrog card with Vengeance! Each pull also grants Arcane Dust!</desc>
-    <asset_prefab>event_029_chance_w5</asset_prefab>
-    <background_prefab>event_029_banner_chance_w5</background_prefab>
-    <bundle>105</bundle>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>120</hc_cost>
-    <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" skill_id="counter" set="3000" />
-    </cards>
-    <sp>15</sp>
-  </store_item>
-  <store_item>
-    <id>5417</id>
-    <name>Singles Day Premium Deal</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>1250</priority>
-    <show_desc>1</show_desc>
-    <desc>On this 11/11, get the fusion of four singles with a random ^cE7FFQuad Legendary^cFFFF card from Premium Set! One purchase only!</desc>
-    <asset_prefab>legendary_crystal</asset_prefab>
-    <bundle>30</bundle>
-    <icon>icon_purple_crystal</icon>
-    <hc_cost>110</hc_cost>
-    <show_list>1</show_list>
-    <pack>3108</pack>
-  </store_item>
-  <store_item>
-    <id>5418</id>
-    <name>Black and White Duo Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>1200</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFHowaito &amp; Kuroilong^cFFFF and ^cE7FFCrash &amp; Zink^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_100_yingyang_championpack</asset_prefab>
-    <background_prefab>event_100_yingyang_banner</background_prefab>
-    <bundle>267</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>200</hc_cost>
-    <show_list>1</show_list>
-    <item id="105641" quantity="125" />
-    <item id="107627" quantity="125" />
-  </store_item>
   <!-- Event 123: ComDev Beast - Red Feather Valley -->
   <store_item>
     <id>5419</id>
@@ -2462,5 +2333,78 @@
     <hc_cost>60</hc_cost>
     <show_list>1</show_list>
     <pack>3101</pack>
+  </store_item>
+  <!-- Event 124: ComDev Mecha - Conflux Convergence -->
+  <store_item>
+    <id>5426</id>
+    <name>R3-M1 Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFR3-M1, the Channeler^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_95_voidchanneler_championpack</asset_prefab>
+    <background_prefab>event_95_voidchanneler_banner</background_prefab>
+    <bundle>257</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="106625" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5427</id>
+    <name>Katto Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFSword Saint Katto^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_067_kensei</asset_prefab>
+    <background_prefab>event_067_banner_kensei</background_prefab>
+    <bundle>199</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105615" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5428</id>
+    <name>Nano Swarm Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFNano Swarm^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_104_spiritualswarm_championpack</asset_prefab>
+    <background_prefab>event_104_spiritualswarm_banner</background_prefab>
+    <bundle>275</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105645" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5429</id>
+    <name>Aeronwen Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAeronwen, the Glider^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_83_nitrogenglider_championpack</asset_prefab>
+    <background_prefab>event_83_nitrogenglider_banner</background_prefab>
+    <bundle>233</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105625" quantity="125" />
   </store_item>
 </root>

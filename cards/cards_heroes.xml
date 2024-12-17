@@ -12,26 +12,25 @@
     <desc>Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.</desc>
     <attack>0</attack>
     <health>24</health>
-    <skill id="heal" x="1" />
+    <skill id="enhance" s="counter" all="1" x="1" />
     <rarity>2</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
       <health>30</health>
-      <skill id="heal" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>36</health>
-      <skill id="imbue" s="counter" all="1" x="1" />
-      <skill id="heal" x="3" />
+      <skill id="imbue" s="counterburn" x="1" />
+      <skill id="enhance" s="counter" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>42</health>
-      <skill id="imbue" s="counter" all="1" x="2" />
-      <skill id="heal" x="4" />
+      <skill id="imbue" s="counterburn" x="1" />
+      <skill id="enhance" s="counter" all="1" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -454,40 +453,36 @@
     <desc>Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.</desc>
     <attack>0</attack>
     <health>66</health>
-    <skill id="imbue" s="counter" x="2" />
-    <skill id="heal" x="4" />
+    <skill id="imbue" s="counterburn" all="1" x="1" />
+    <skill id="enhance" s="counter" all="1" x="2" />
     <rarity>4</rarity>
     <type>1</type>
     <set>7000</set>
     <upgrade>
       <level>2</level>
       <health>72</health>
-      <skill id="imbue" s="counter" all="1" x="1" />
-      <skill id="heal" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>78</health>
-      <skill id="imbue" s="counter" all="1" x="1" />
-      <skill id="heal" x="5" />
+      <skill id="imbue" s="counterburn" all="1" x="1" />
+      <skill id="enhance" s="counter" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>84</health>
-      <skill id="imbue" s="counter" all="1" x="1" />
-      <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="counter" all="1" x="2" />
-      <skill id="heal" x="7" />
+      <skill id="imbue" s="counterburn" all="1" x="1" />
+      <skill id="enhance" s="counter" all="1" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>96</health>
-      <skill id="imbue" s="counter" all="1" x="3" />
-      <skill id="heal" x="8" />
+      <skill id="imbue" s="counterburn" all="1" x="2" />
+      <skill id="enhance" s="counter" all="1" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -569,7 +564,7 @@
       <level>6</level>
       <health>96</health>
       <skill id="imbue" s="berserk" all="1" x="3" />
-      <skill id="weaken" x="6" />
+      <skill id="weaken" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -640,6 +635,8 @@
     <upgrade>
       <level>4</level>
       <health>84</health>
+      <skill id="imbue" s="venom" all="1" x="2" />
+      <skill id="heal" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -649,7 +646,7 @@
       <level>6</level>
       <health>96</health>
       <skill id="imbue" s="venom" all="1" x="2" />
-      <skill id="heal" all="1" x="3" />
+      <skill id="heal" all="1" x="4" />
     </upgrade>
   </unit>
   <unit>

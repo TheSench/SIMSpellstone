@@ -5207,7 +5207,7 @@
     <name>The Road Traveled</name>
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Elyse has learned a lot since her arrival in Arcantica. She sits reading her latest book when she hears a familiar rumbling outside of the airship. (Elyse will automatically be appointed)</desc>
     <commander id="224" />
     <!-- Consumed Undead-->
@@ -5251,7 +5251,7 @@
     <name>Field Observation</name>
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Groc takes Elyse out near The Celestial Vaults. Elementals of all kinds can be seen wandering the landscape. Elyse frantically tries to identify them with her books. (Elyse will automatically be appointed)</desc>
     <commander id="203" />
     <!-- Luminis Angel-->
@@ -5278,7 +5278,7 @@
     <name>Real Time Training</name>
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Groc gently removes the book from Elyse's hands. He asks her to focus on how the Elementals are interacting with each other. (Elyse will automatically be appointed)</desc>
     <commander id="210" />
     <!-- Lava Crab Gang-->
@@ -5321,7 +5321,7 @@
     <name>Action and Reaction</name>
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Elyse sets her books aside. She closely watches the Elementals as they mingle. One by one, Elyse guesses the origin of each elemental. (Elyse will automatically be appointed)</desc>
     <commander id="226" />
     <!-- Lost Lava Crab-->
@@ -5348,7 +5348,7 @@
     <name>Golden Rule</name>
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. Groc and Elyse both frown. (Elyse will automatically be appointed)</desc>
     <commander id="238" />
     <!-- Lantern Guardian -->
@@ -5391,7 +5391,7 @@
     <name>Elyse Emerges</name>
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Elyse's stomach twists as she approaches the Wind Elemental alone, but she knows that she can do it. It's finally time for her to leave her books and learn from the world. (Elyse will automatically be appointed)</desc>
     <commander id="243" />
     <!-- Windstorm Avatar  -->
@@ -5418,7 +5418,7 @@
     <name>Ocean View</name>
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Oda stands on the shoreline looking at the ocean. His palms start to sweat as he thinks about the shipwreck he survived many years ago. Rayne notices Oda. Concerned, she approaches. (Oda will automatically be appointed)</desc>
     <commander id="224" />
     <!-- Consumed Undead -->
@@ -5462,7 +5462,7 @@
     <name>Concerned Citizen</name>
     <player_commander>1</player_commander>
     <!--  <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Oda reveals to Rayne how he was shipwrecked as a young boy. She listens to him as he speaks, taking note of how he looks at the ocean as if it might suddenly swallow him whole. (Oda will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
@@ -5488,7 +5488,7 @@
     <name>Exposure Therapy</name>
     <player_commander>1</player_commander>
     <!--  <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Rayne takes Oda closer to the shore, water swelling up to greet her as she approaches. Tiny fish swim up to her feet. She encourages Oda to come and dip his feet in the shallow water. (Oda will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
@@ -5513,7 +5513,7 @@
     <name>Finding Strength</name>
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Oda inches closer to the water. Now drenched in sweat, he looks back at Rayne. This is very unlike the stoic man; large bodies of water really put him on edge. Rayne smiles reassuringly. (Oda will automatically be appointed)</desc>
     <commander id="225" />
     <deck>
@@ -5556,7 +5556,7 @@
     <name>Dark Betrayal</name>
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Oda sits waist deep in the ocean, where he starts to panic. Rayne reminds him to focus on his surroundings as a school of fish come and swim around the two of them. (Oda will automatically be appointed)</desc>
     <commander id="265" />
     <deck>
@@ -5588,7 +5588,7 @@
     <name>Oda's Confrontation</name>
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Oda stands up quickly, suddenly alert. He looks angrily at Rayne and then quickly begins to check his surroundings. A dark shape approaches in the water... (Oda will automatically be appointed)</desc>
     <commander id="268" />
     <deck>
@@ -5636,7 +5636,7 @@
     <name>What Ails</name>
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Aria stands in front of a mirror. The veins on her arms have begun to glow a faint purple. She worries that the infection she suffered from The Void has resurfaced. (Aria will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
@@ -5662,7 +5662,7 @@
     <name>Showing Symptoms</name>
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He is concerned about her health, although it might not be related to Aria's own welfare. (Aria will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
@@ -5705,7 +5705,7 @@
     <name>Salt Side Laboratory</name>
     <player_commander>4</player_commander>
     <!--  <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Tarian informs Aria of a small building on the outskirts of The Salt Wastes. It's filled to the brim with lab equipment. It seems to be one of Malchior's abandoned laboratories. (Aria will automatically be appointed)</desc>
     <commander id="210" />
     <deck>
@@ -5742,7 +5742,7 @@
     <name>Flower for the Lady</name>
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>Aria finds one of the Black Flowers in the back of the lab. She begins to grind and distill the herb into a potion that might cure The Void infection for good. (Aria will automatically be appointed)</desc>
     <commander id="205" />
     <deck>
@@ -5768,7 +5768,7 @@
     <name>Building Burdens</name>
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>The potion needs a few hours to settle. Ronaldo looks at Aria who is beginning to look nervous. He offers what comfort he can as they wait. (Aria will automatically be appointed)</desc>
     <commander id="299" />
     <deck>
@@ -5815,7 +5815,7 @@
     <name>Bottoms Up</name>
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
-    <energy>8</energy>
+    <energy>4</energy>
     <desc>The potion is now black and opaque. The notes indicate that this will stop the infection from spreading. Aria pours it in a cup and pinches her nose. (Aria will automatically be appointed)</desc>
     <commander id="252" />
     <deck>
@@ -5858,7 +5858,7 @@
     <name>Outback</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Deep in the woods, Decim carries a bundle of sticks to a small fire. He carefully feeds them in, making sure the flames do not get too high. Something unusual rests on top... (Decim will automatically be appointed)</desc>
     <commander id="208" />
     <deck>
@@ -5896,7 +5896,7 @@
     <name>Over Easy</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Decim spends days keeping the fire going. He carefully turns the egg, making sure the young dragon is warmed properly. (Decim will automatically be appointed)</desc>
     <commander id="290" />
     <deck>
@@ -5922,7 +5922,7 @@
     <name>Hatch Day</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Decim's ears perk up as he hears the egg cracking. Finally, his dragon egg is hatching! (Decim will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
@@ -5959,7 +5959,7 @@
     <name>Gone In 60 Seconds</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Duhast is learning to walk and spit fire faster than Decim can keep up with it. He takes the young dragon around the forest, watching it discover the nuances of the world. (Decim will automatically be appointed)</desc>
     <commander id="267" />
     <deck>
@@ -5997,7 +5997,7 @@
     <name>Fear</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Decim races through the forest, frantically looking for Duhast. Somewhere in the back of his head, he realizes he's never cared about anything aside himself like this. (Decim will automatically be appointed)</desc>
     <commander id="250" />
     <deck>
@@ -6023,7 +6023,7 @@
     <name>Cave Dweller</name>
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Decim stumbles upon a cave deep in the woods. He enters, calling Duhast's name. It's getting darker and darker as he makes his way to the back. Suddenly, a light appears... (Decim will automatically be appointed)</desc>
     <commander id="293" />
     <deck>
@@ -6065,7 +6065,7 @@
     <name>Bookworm</name>
     <player_commander>2</player_commander>
     <!--  <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Yuriel wanders the markets of Luminis. He makes his way to his favorite vender, a rare book seller. (Yuriel will automatically be appointed)</desc>
     <commander id="246" />
     <deck>
@@ -6091,7 +6091,7 @@
     <name>Dark Presence</name>
     <player_commander>2</player_commander>
     <!--  <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>As Yuriel browses the vendor's wares he notices an unusual patron in the shop:  a large orc with a glowing fist. He suspects he is a follower of Chaos magic... (Yuriel will automatically be appointed)</desc>
     <commander id="238" />
     <deck>
@@ -6130,7 +6130,7 @@
     <name>No Choice</name>
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Yuriel turns to find a city guard, but before he can reach the door, the large orc blocks his path. He has a menacing aura about him. (Yuriel will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
@@ -6172,7 +6172,7 @@
     <name>Trapped by Chaos</name>
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>The orc raises his hand. Purple magic rises all around, and Yuriel finds himself trapped in a cage of magic. He tries to call for help, but his voice doesn't travel beyond the magical barrier. (Yuriel will automatically be appointed)</desc>
     <commander id="266" />
     <deck>
@@ -6198,7 +6198,7 @@
     <name>Strange Book</name>
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>As Yuriel opens the book, a bright light shines from it. He feels a rush of magical energy overcome him, and the orc's barrier shatters. Yuriel feels stronger than ever before. (Yuriel will automatically be appointed)</desc>
     <commander id="243" />
     <deck>
@@ -6230,7 +6230,7 @@
     <name>What Lies Within</name>
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Yuriel relishes in the surge of magical powers that rush through him. He is so taken by the feeling he doesn't seem to notice the creature emerging from the book pages... (Yuriel will automatically be appointed)</desc>
     <commander id="209" />
     <!-- Orobas of the Void -->
@@ -6257,7 +6257,7 @@
     <name>Guard Duty</name>
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Ursurio sits at his command post on the outskirts of The Void. He watches the horizon for any sign of danger. His stomach rumbles. (Ursurio will automatically be appointed)</desc>
     <commander id="211" />
     <deck>
@@ -6283,7 +6283,7 @@
     <name>Idle Hands</name>
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>A retired soldier enters his post. Ursurio is happy to see a familiar face. He invites Ol'Cedric in for a drink. (Ursurio will automatically be appointed)</desc>
     <commander id="206" />
     <deck>
@@ -6326,7 +6326,7 @@
     <name>Enemy Spotted</name>
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Ursurio and Cedric head to the location of the ghouls. They spot them and are able to sneak up behind them. They quickly launch into battle! (Ursurio will automatically be appointed)</desc>
     <commander id="208" />
     <deck>
@@ -6351,7 +6351,7 @@
     <name>Pangs of War</name>
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>As the final wave of ghouls are dealt with, the two champions get a moment of rest. Ol'Cedric takes a breather, when he hears a loud grumbling sound. (Ursurio will automatically be appointed)</desc>
     <commander id="289" />
     <deck>
@@ -6394,7 +6394,7 @@
     <name>Iron Stomach</name>
     <player_commander>8</player_commander>
     <!--  <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>Cedric takes Ursurio back to his post. Cedric's troops have set up camp and are just finishing the night's preparations. They are right in time for dinner! (Ursurio will automatically be appointed)</desc>
     <commander id="275" />
     <deck>
@@ -6432,7 +6432,7 @@
     <name>Promotion</name>
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
-    <energy>10</energy>
+    <energy>5</energy>
     <desc>As the two feast, Cedric spots a piece of mail on the counter, underneath a pile of armor. (Ursurio will automatically be appointed)</desc>
     <commander id="264" />
     <deck>

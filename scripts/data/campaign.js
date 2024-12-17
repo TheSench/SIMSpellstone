@@ -611,6 +611,45 @@ var CAMPAIGNS = {
 		],
 		"name": "Trial by Fire"
 	},
+	"134": {
+		"id": "134",
+		"items": {
+			"2527": 0.01,
+			"3128": 0.5
+		},
+		"location_id": "34",
+		"missions": [
+			"6583",
+			"6584",
+			"6585",
+			"6586",
+			"6587",
+			"6588",
+			"6589",
+			"6590",
+			"6591",
+			"6592",
+			"6593",
+			"6594",
+			"6595",
+			"6596",
+			"6597",
+			"6598",
+			"6599",
+			"6600",
+			"6601",
+			"6602",
+			"6603",
+			"6604",
+			"6605",
+			"6606",
+			"6607",
+			"6608",
+			"6609",
+			"6610"
+		],
+		"name": "Conflux Convergence"
+	},
 	"1000": {
 		"id": "1000",
 		"items": {},
@@ -4628,7 +4667,7 @@ var CAMPAIGNS = {
 	"1267": {
 		"id": "1267",
 		"items": {
-			"3122": 0.2
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -4645,7 +4684,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2107",
 		"id": "1268",
 		"items": {
-			"3122": 0.4
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -4662,7 +4701,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2108",
 		"id": "1269",
 		"items": {
-			"3122": 0.4
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -4677,7 +4716,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2109",
 		"id": "1270",
 		"items": {
-			"3122": 0.6
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -4694,7 +4733,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2110",
 		"id": "1271",
 		"items": {
-			"3122": 0.8
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -4710,7 +4749,7 @@ var CAMPAIGNS = {
 	"1272": {
 		"id": "1272",
 		"items": {
-			"3125": 0.2
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -4727,7 +4766,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2111",
 		"id": "1273",
 		"items": {
-			"3125": 0.4
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -4757,7 +4796,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2112",
 		"id": "1275",
 		"items": {
-			"3125": 0.4
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -4772,7 +4811,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2113",
 		"id": "1276",
 		"items": {
-			"3125": 0.6
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -4789,7 +4828,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2114",
 		"id": "1277",
 		"items": {
-			"3125": 0.8
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -4805,7 +4844,7 @@ var CAMPAIGNS = {
 	"1278": {
 		"id": "1278",
 		"items": {
-			"3128": 0.2
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -4822,7 +4861,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2115",
 		"id": "1279",
 		"items": {
-			"3128": 0.4
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -4839,7 +4878,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2116",
 		"id": "1280",
 		"items": {
-			"3128": 0.4
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -4896,7 +4935,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2117",
 		"id": "1284",
 		"items": {
-			"3128": 0.4
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -4913,7 +4952,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2118",
 		"id": "1285",
 		"items": {
-			"3128": 0.4
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -4930,7 +4969,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1286",
 		"items": {
-			"3083": 0.4
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -4947,7 +4986,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1287",
 		"items": {
-			"3083": 0.4
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -4964,7 +5003,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1288",
 		"items": {
-			"3056": 0.6
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -4981,7 +5020,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1289",
 		"items": {
-			"3056": 0.8
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -4998,7 +5037,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1290",
 		"items": {
-			"3071": 0.6
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -5015,7 +5054,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1291",
 		"items": {
-			"3071": 0.8
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -5032,7 +5071,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1292",
 		"items": {
-			"3065": 0.6
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -5049,7 +5088,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1293",
 		"items": {
-			"3065": 0.8
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -5066,7 +5105,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1294",
 		"items": {
-			"3080": 0.6
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -5083,7 +5122,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1295",
 		"items": {
-			"3080": 0.8
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -5100,7 +5139,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1296",
 		"items": {
-			"3059": 0.6
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -5117,7 +5156,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1297",
 		"items": {
-			"3059": 0.8
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -5148,7 +5187,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1299",
 		"items": {
-			"3068": 0.6
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -5165,7 +5204,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1300",
 		"items": {
-			"3068": 0.8
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -5182,7 +5221,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1301",
 		"items": {
-			"3062": 0.6
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -5199,7 +5238,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1302",
 		"items": {
-			"3062": 0.8
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -5227,7 +5266,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1304",
 		"items": {
-			"3110": 0.6
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -5244,7 +5283,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1305",
 		"items": {
-			"3110": 0.8
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -5274,7 +5313,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1307",
 		"items": {
-			"3104": 0.6
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -5291,7 +5330,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1308",
 		"items": {
-			"3104": 0.8
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -5308,7 +5347,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1309",
 		"items": {
-			"3098": 0.6
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -5325,7 +5364,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1310",
 		"items": {
-			"3098": 0.8
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -5342,7 +5381,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1311",
 		"items": {
-			"3101": 0.6
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -5359,7 +5398,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1312",
 		"items": {
-			"3101": 0.8
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -5376,7 +5415,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1313",
 		"items": {
-			"3119": 0.6
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -5393,7 +5432,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1314",
 		"items": {
-			"3119": 0.8
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -5424,7 +5463,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1316",
 		"items": {
-			"3107": 0.6
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -5441,7 +5480,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1317",
 		"items": {
-			"3107": 0.8
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -5458,7 +5497,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1318",
 		"items": {
-			"3049": 0.6
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -5475,7 +5514,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1319",
 		"items": {
-			"3049": 0.8
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -5492,7 +5531,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1320",
 		"items": {
-			"3074": 0.6
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -5509,7 +5548,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1321",
 		"items": {
-			"3074": 0.8
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -5526,7 +5565,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1322",
 		"items": {
-			"3089": 0.6
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -5543,7 +5582,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1323",
 		"items": {
-			"3089": 0.8
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -5560,7 +5599,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1324",
 		"items": {
-			"3125": 0.6
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -5577,7 +5616,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1325",
 		"items": {
-			"3125": 0.8
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -5594,7 +5633,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1326",
 		"items": {
-			"3053": 0.6
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -5611,7 +5650,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1327",
 		"items": {
-			"3053": 0.8
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -5643,7 +5682,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1329",
 		"items": {
-			"3095": 0.6
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -5660,7 +5699,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1330",
 		"items": {
-			"3095": 0.8
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -5689,7 +5728,7 @@ var CAMPAIGNS = {
 		"id": "1332",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.6
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -5707,7 +5746,7 @@ var CAMPAIGNS = {
 		"id": "1333",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.8
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -5724,7 +5763,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1334",
 		"items": {
-			"3077": 0.6
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -5741,7 +5780,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1335",
 		"items": {
-			"3077": 0.8
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -5771,7 +5810,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1337",
 		"items": {
-			"3053": 0.6
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -5788,7 +5827,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1338",
 		"items": {
-			"3053": 0.8
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -5805,7 +5844,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1339",
 		"items": {
-			"3056": 0.6
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -5822,7 +5861,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1340",
 		"items": {
-			"3056": 0.8
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -5839,7 +5878,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1341",
 		"items": {
-			"3083": 0.6
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -5856,7 +5895,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1342",
 		"items": {
-			"3083": 0.8
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -5873,7 +5912,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1343",
 		"items": {
-			"3095": 0.6
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -5890,7 +5929,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1344",
 		"items": {
-			"3095": 0.8
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -5907,7 +5946,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1345",
 		"items": {
-			"3122": 0.6
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -5924,7 +5963,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1346",
 		"items": {
-			"3122": 0.8
+			"3122": 0.5
 		},
 		"location_id": "32",
 		"missions": [
@@ -5941,7 +5980,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1347",
 		"items": {
-			"3101": 0.6
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -5958,7 +5997,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1348",
 		"items": {
-			"3101": 0.8
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -5975,7 +6014,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1349",
 		"items": {
-			"3113": 0.6
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -5992,7 +6031,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2119",
 		"id": "1350",
 		"items": {
-			"3113": 0.8
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -6009,7 +6048,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1351",
 		"items": {
-			"3092": 0.85
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -6026,7 +6065,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1352",
 		"items": {
-			"3092": 0.9
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -6043,7 +6082,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1353",
 		"items": {
-			"3116": 0.85
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -6060,7 +6099,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1354",
 		"items": {
-			"3116": 0.9
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -6077,7 +6116,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1355",
 		"items": {
-			"3128": 0.85
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -6094,7 +6133,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1356",
 		"items": {
-			"3128": 0.9
+			"3128": 0.5
 		},
 		"location_id": "34",
 		"missions": [
@@ -6111,7 +6150,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1357",
 		"items": {
-			"3059": 0.85
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -6128,7 +6167,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1358",
 		"items": {
-			"3059": 0.9
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -6145,7 +6184,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1359",
 		"items": {
-			"3125": 0.85
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -6162,7 +6201,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1360",
 		"items": {
-			"3125": 0.9
+			"3125": 0.5
 		},
 		"location_id": "33",
 		"missions": [
@@ -6179,7 +6218,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1361",
 		"items": {
-			"3077": 0.85
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -6196,7 +6235,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1362",
 		"items": {
-			"3077": 0.9
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -6213,7 +6252,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1363",
 		"items": {
-			"3119": 0.85
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -6230,7 +6269,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1364",
 		"items": {
-			"3119": 0.9
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -6247,7 +6286,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1365",
 		"items": {
-			"3086": 0.85
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -6264,7 +6303,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1366",
 		"items": {
-			"3086": 0.9
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -6281,7 +6320,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1367",
 		"items": {
-			"3107": 0.85
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -6298,7 +6337,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2120",
 		"id": "1368",
 		"items": {
-			"3107": 0.9
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -6889,10 +6928,8 @@ var CAMPAIGNS = {
 	},
 	"4001": {
 		"id": "4001",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6807",
 			"6808",
@@ -6901,15 +6938,12 @@ var CAMPAIGNS = {
 			"6811",
 			"6812"
 		],
-		"name": "Classic Lightning Vulcanos",
-		"side_mission": "1"
+		"name": "Classic Lightning Vulcanos"
 	},
 	"4002": {
 		"id": "4002",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6825",
 			"6826",
@@ -6918,15 +6952,12 @@ var CAMPAIGNS = {
 			"6829",
 			"6830"
 		],
-		"name": "Classic Lightning Alyel",
-		"side_mission": "1"
+		"name": "Classic Lightning Alyel"
 	},
 	"4003": {
 		"id": "4003",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6843",
 			"6844",
@@ -6935,15 +6966,12 @@ var CAMPAIGNS = {
 			"6847",
 			"6848"
 		],
-		"name": "Classic Lightning Ashanti",
-		"side_mission": "1"
+		"name": "Classic Lightning Ashanti"
 	},
 	"4004": {
 		"id": "4004",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6861",
 			"6862",
@@ -6952,15 +6980,12 @@ var CAMPAIGNS = {
 			"6865",
 			"6866"
 		],
-		"name": "Classic Lightning Nophora",
-		"side_mission": "1"
+		"name": "Classic Lightning Nophora"
 	},
 	"4005": {
 		"id": "4005",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6879",
 			"6880",
@@ -6969,15 +6994,12 @@ var CAMPAIGNS = {
 			"6883",
 			"6884"
 		],
-		"name": "Classic Lightning Llorona",
-		"side_mission": "1"
+		"name": "Classic Lightning Llorona"
 	},
 	"4006": {
 		"id": "4006",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6897",
 			"6898",
@@ -6986,15 +7008,12 @@ var CAMPAIGNS = {
 			"6901",
 			"6902"
 		],
-		"name": "Classic Lightning Caesar",
-		"side_mission": "1"
+		"name": "Classic Lightning Caesar"
 	},
 	"4007": {
 		"id": "4007",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6922",
 			"6923",
@@ -7003,15 +7022,12 @@ var CAMPAIGNS = {
 			"6926",
 			"6927"
 		],
-		"name": "Classic Lightning Remi",
-		"side_mission": "1"
+		"name": "Classic Lightning Remi"
 	},
 	"4008": {
 		"id": "4008",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6940",
 			"6941",
@@ -7020,15 +7036,12 @@ var CAMPAIGNS = {
 			"6944",
 			"6945"
 		],
-		"name": "Classic Lightning Darkassan",
-		"side_mission": "1"
+		"name": "Classic Lightning Darkassan"
 	},
 	"4009": {
 		"id": "4009",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6961",
 			"6962",
@@ -7037,15 +7050,12 @@ var CAMPAIGNS = {
 			"6965",
 			"6966"
 		],
-		"name": "Classic Lightning Lerna",
-		"side_mission": "1"
+		"name": "Classic Lightning Lerna"
 	},
 	"4010": {
 		"id": "4010",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"6984",
 			"6985",
@@ -7054,15 +7064,12 @@ var CAMPAIGNS = {
 			"6988",
 			"6989"
 		],
-		"name": "Classic Lightning Krampus",
-		"side_mission": "1"
+		"name": "Classic Lightning Krampus"
 	},
 	"4011": {
 		"id": "4011",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7002",
 			"7003",
@@ -7071,15 +7078,12 @@ var CAMPAIGNS = {
 			"7006",
 			"7007"
 		],
-		"name": "Classic Lightning Allies",
-		"side_mission": "1"
+		"name": "Classic Lightning Allies"
 	},
 	"4012": {
 		"id": "4012",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7020",
 			"7021",
@@ -7088,15 +7092,12 @@ var CAMPAIGNS = {
 			"7024",
 			"7025"
 		],
-		"name": "Classic Lightning Nophora's Return",
-		"side_mission": "1"
+		"name": "Classic Lightning Nophora's Return"
 	},
 	"4013": {
 		"id": "4013",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7038",
 			"7039",
@@ -7105,15 +7106,12 @@ var CAMPAIGNS = {
 			"7042",
 			"7043"
 		],
-		"name": "Classic Lightning Vulcanos' Payback",
-		"side_mission": "1"
+		"name": "Classic Lightning Vulcanos' Payback"
 	},
 	"4014": {
 		"id": "4014",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7056",
 			"7057",
@@ -7122,15 +7120,12 @@ var CAMPAIGNS = {
 			"7060",
 			"7061"
 		],
-		"name": "Classic Lightning Caesar's Return",
-		"side_mission": "1"
+		"name": "Classic Lightning Caesar's Return"
 	},
 	"4015": {
 		"id": "4015",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7074",
 			"7075",
@@ -7139,15 +7134,12 @@ var CAMPAIGNS = {
 			"7078",
 			"7079"
 		],
-		"name": "Classic Lightning Ashanti's Trial",
-		"side_mission": "1"
+		"name": "Classic Lightning Ashanti's Trial"
 	},
 	"4016": {
 		"id": "4016",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7092",
 			"7093",
@@ -7156,15 +7148,12 @@ var CAMPAIGNS = {
 			"7096",
 			"7097"
 		],
-		"name": "Classic Lightning Llorona's Rebirth",
-		"side_mission": "1"
+		"name": "Classic Lightning Llorona's Rebirth"
 	},
 	"4017": {
 		"id": "4017",
-		"items": {
-			"2515": 0.04
-		},
-		"location_id": "6",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"7110",
 			"7111",
@@ -7173,8 +7162,7 @@ var CAMPAIGNS = {
 			"7114",
 			"7115"
 		],
-		"name": "Classic Lightning Darkassan's Trial",
-		"side_mission": "1"
+		"name": "Classic Lightning Darkassan's Trial"
 	},
 	"4018": {
 		"id": "4018",
@@ -7398,10 +7386,8 @@ var CAMPAIGNS = {
 	},
 	"5015": {
 		"id": "5015",
-		"items": {
-			"3131": 0.5
-		},
-		"location_id": "36",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"2092",
 			"2093",
@@ -7415,21 +7401,8 @@ var CAMPAIGNS = {
 	},
 	"5016": {
 		"id": "5016",
-		"items": {
-			"3131": 0.5,
-			"28170": 0.001,
-			"28180": 0.001,
-			"28190": 0.001,
-			"28200": 0.001,
-			"28220": 0.001,
-			"28230": 0.001,
-			"28240": 0.001,
-			"28250": 0.001,
-			"28260": 0.001,
-			"28270": 0.001,
-			"28290": 0.001
-		},
-		"location_id": "36",
+		"items": {},
+		"location_id": "99",
 		"missions": [
 			"2099",
 			"2100",
@@ -7440,6 +7413,19 @@ var CAMPAIGNS = {
 			"2105"
 		],
 		"name": "Trick or Tantrum?"
+	},
+	"10124": {
+		"battleground_id": "2124",
+		"id": "10124",
+		"items": {
+			"3128": 1,
+			"104500": 0.01
+		},
+		"location_id": "34",
+		"missions": [
+			"10124"
+		],
+		"name": "Alyel Back in Time"
 	}
 };
 var MISSIONS = {
@@ -36749,5 +36735,59 @@ var MISSIONS = {
 		],
 		"id": "7349",
 		"name": "Time to Reset"
+	},
+	"10124": {
+		"commander": {
+			"id": "399"
+		},
+		"deck": [
+			{
+				"id": "2143"
+			},
+			{
+				"id": "2143"
+			},
+			{
+				"id": "2143"
+			},
+			{
+				"id": "4003"
+			},
+			{
+				"id": "4036"
+			},
+			{
+				"id": "4064"
+			},
+			{
+				"id": "4074"
+			},
+			{
+				"id": "5162"
+			},
+			{
+				"id": "5602"
+			},
+			{
+				"id": "5615"
+			},
+			{
+				"id": "5636"
+			},
+			{
+				"id": "5637"
+			},
+			{
+				"id": "6241"
+			},
+			{
+				"id": "6625"
+			},
+			{
+				"id": "7305"
+			}
+		],
+		"id": "10124",
+		"name": "Conflux Convergence"
 	}
 };

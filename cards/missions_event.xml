@@ -18171,4 +18171,45 @@
       <!-- Ravaging Dragon -->
     </deck>
   </mission>
+  <!-- Event 124: ComDev Mecha - Conflux Convergence -->
+  <mission>
+    <id>10124</id>
+    <name>Conflux Convergence</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Element Souls in the Power Gemstones to power up your cards. Scorch damage is unaffected by Shroud.</desc>
+    <commander id="399" />
+    <!-- Viracocha, Titan Aspirer -->
+    <deck>
+      <card id="2143" />
+      <!-- Lightning Stomper -->
+      <card id="2143" />
+      <!-- Lightning Stomper -->
+      <card id="2143" />
+      <!-- Lightning Stomper -->
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4036" />
+      <!-- Leroux, the Macabre -->
+      <card id="4064" />
+      <!-- Darkassan, the Creeper -->
+      <card id="4074" />
+      <!-- Sivun, the Blind Commander -->
+      <card id="5162" />
+      <!-- Aloier, Dragon Sentinel -->
+      <card id="5602" />
+      <!-- TZ-530, the Impassable -->
+      <card id="5615" />
+      <!-- Sword Saint Katto -->
+      <card id="5636" />
+      <!-- Almet, the Ferromancer -->
+      <card id="5637" />
+      <!-- Moby, the Righteous -->
+      <card id="6241" />
+      <!-- Grimkite Model -->
+      <card id="6625" />
+      <!-- R3-M1, the Channeler -->
+      <card id="7305" />
+      <!-- Assistance Droid -->
+    </deck>
+  </mission>
 </root>

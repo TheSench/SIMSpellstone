@@ -1784,19 +1784,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are protected by Barrier 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 1
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
 						"desc": "All of your creatures are protected by Barrier 2 each turn.",
 						"effect": [
 							{
@@ -1813,24 +1800,11 @@ var MAP_BATTLEGROUNDS = {
 						"desc": "All of your creatures are protected by Barrier 3 each turn.",
 						"effect": [
 							{
-								"all": "3",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 3
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 4 each turn.",
-						"effect": [
-							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
 								"id": "protect",
-								"x": 4
+								"x": 3
 							}
 						],
 						"name": "Aether Gemstone"
@@ -1860,6 +1834,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 8
+							}
+						],
+						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 9
+							}
+						],
+						"name": "Aether Gemstone"
 					}
 				]
 			},
@@ -1870,19 +1870,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Wyld Gemstone"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -1906,19 +1893,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Wyld Gemstone"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Wyld Gemstone"
@@ -1948,6 +1922,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Wyld Gemstone"
 					}
 				]
 			},
@@ -1960,20 +1960,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -1983,20 +1969,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Chaos Gemstone"
@@ -2039,6 +2011,34 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 8
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
 							}
 						],
 						"name": "Chaos Gemstone"
@@ -6908,19 +6908,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are protected by Barrier 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 1
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
 						"desc": "All of your creatures are protected by Barrier 2 each turn.",
 						"effect": [
 							{
@@ -6937,24 +6924,11 @@ var MAP_BATTLEGROUNDS = {
 						"desc": "All of your creatures are protected by Barrier 3 each turn.",
 						"effect": [
 							{
-								"all": "3",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 3
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 4 each turn.",
-						"effect": [
-							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
 								"id": "protect",
-								"x": 4
+								"x": 3
 							}
 						],
 						"name": "Aether Gemstone"
@@ -6984,6 +6958,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 8
+							}
+						],
+						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 9
+							}
+						],
+						"name": "Aether Gemstone"
 					}
 				]
 			},
@@ -6994,19 +6994,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Wyld Gemstone"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -7030,19 +7017,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Wyld Gemstone"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Wyld Gemstone"
@@ -7072,6 +7046,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Wyld Gemstone"
 					}
 				]
 			},
@@ -7084,20 +7084,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -7107,20 +7093,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Chaos Gemstone"
@@ -7163,6 +7135,34 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 8
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
 							}
 						],
 						"name": "Chaos Gemstone"
@@ -8050,19 +8050,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are protected by Barrier 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 1
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
 						"desc": "All of your creatures are protected by Barrier 2 each turn.",
 						"effect": [
 							{
@@ -8079,24 +8066,11 @@ var MAP_BATTLEGROUNDS = {
 						"desc": "All of your creatures are protected by Barrier 3 each turn.",
 						"effect": [
 							{
-								"all": "3",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 3
-							}
-						],
-						"name": "Aether Gemstone"
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 4 each turn.",
-						"effect": [
-							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
 								"id": "protect",
-								"x": 4
+								"x": 3
 							}
 						],
 						"name": "Aether Gemstone"
@@ -8126,6 +8100,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 8
+							}
+						],
+						"name": "Aether Gemstone"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 9
+							}
+						],
+						"name": "Aether Gemstone"
 					}
 				]
 			},
@@ -8136,19 +8136,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Wyld Gemstone"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -8172,19 +8159,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Wyld Gemstone"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Wyld Gemstone"
@@ -8214,6 +8188,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Wyld Gemstone"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Wyld Gemstone"
 					}
 				]
 			},
@@ -8226,20 +8226,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -8249,20 +8235,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Chaos Gemstone"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Chaos Gemstone"
@@ -8305,6 +8277,34 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 8
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Chaos Gemstone"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
 							}
 						],
 						"name": "Chaos Gemstone"
