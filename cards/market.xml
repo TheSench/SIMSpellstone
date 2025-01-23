@@ -2205,135 +2205,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 123: ComDev Beast - Red Feather Valley -->
-  <store_item>
-    <id>5419</id>
-    <name>Nayaara Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFNayaara, the Airlight^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_076_bravelongma</asset_prefab>
-    <background_prefab>event_076_banner_bravelongma</background_prefab>
-    <bundle>219</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105621" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5420</id>
-    <name>Tylong Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFTylong, Old Warrior^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_069_tigerlung</asset_prefab>
-    <background_prefab>event_069_banner_tigerlung</background_prefab>
-    <bundle>203</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107614" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5421</id>
-    <name>Caccia Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFCaccia, the Lunatic^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_072_moonmask</asset_prefab>
-    <background_prefab>event_072_banner_moonmask</background_prefab>
-    <bundle>210</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107618" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5422</id>
-    <name>Dunstan Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFDunstan, the Untamed^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_83_mechabeasmaster_championpack</asset_prefab>
-    <background_prefab>event_83_mechabeastmaster_banner</background_prefab>
-    <bundle>233</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107623" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5423</id>
-    <name>Holiday Appetite Deal</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <desc>Gives one copy of a Quad Fused ^cE7FFImmortal Appetite^cFFFF! One purchase only! Happy Holidays from Spellstone!</desc>
-    <show_desc>1</show_desc>
-    <priority>1200</priority>
-    <hc_cost>150</hc_cost>
-    <background_prefab>legendary_card_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>icon_blue_crystal</icon>
-    <no_drop_rate>1</no_drop_rate>
-    <cards>
-      <card min_level="1" max_level="1" unit_id="27124" display_card_id="27124" />
-    </cards>
-  </store_item>
-  <store_item>
-    <id>5424</id>
-    <name>Boxing Day Mystery Box</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>1250</priority>
-    <desc>Happy Holidays from Spellstone!</desc>
-    <background_prefab>christmas_store_banner</background_prefab>
-    <bundle>35</bundle>
-    <icon>package_60</icon>
-    <icon_bundle>17</icon_bundle>
-    <sc_cost>1</sc_cost>
-    <show_list>1</show_list>
-    <item id="531" quantity="1" />
-  </store_item>
-  <store_item>
-    <id>5425</id>
-    <name>New Year's Day Chance Flasks</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>1250</priority>
-    <desc>Contains 100 of a random Premium Flask containing a choice of 4 Stones from the Premium Champion set!</desc>
-    <asset_prefab>flask_pack_aether_1</asset_prefab>
-    <!-- Small Aether Flasks Icon -->
-    <background_prefab>aether_flask_banner</background_prefab>
-    <!-- Aether Flask Banner -->
-    <bundle>35</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>60</hc_cost>
-    <show_list>1</show_list>
-    <pack>3101</pack>
-  </store_item>
   <!-- Event 124: ComDev Mecha - Conflux Convergence -->
   <store_item>
     <id>5426</id>
@@ -2406,5 +2277,78 @@
     <hc_cost>150</hc_cost>
     <show_list>1</show_list>
     <item id="105625" quantity="125" />
+  </store_item>
+  <!-- Event 125: ComDev Dragon - Skyhaven Assault -->
+  <store_item>
+    <id>5430</id>
+    <name>Asim Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFAsim, the Lorekeeper^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_88_lorekeepergod_championpack</asset_prefab>
+    <background_prefab>event_88_lorekeepergod_banner</background_prefab>
+    <bundle>243</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105630" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5431</id>
+    <name>Jormun Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFJormun, the Ravager^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_87_whirlpoolserpent_championpack</asset_prefab>
+    <background_prefab>event_87_whirlpoolserpent_banner</background_prefab>
+    <bundle>241</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="106618" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5432</id>
+    <name>Trafyr Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFTrafyr, the Rose Warden^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_062_rosewyrm</asset_prefab>
+    <background_prefab>event_062_banner_rosewyrm</background_prefab>
+    <bundle>186</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107610" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5433</id>
+    <name>Dragon Family Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFThe Dragon Family^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_96_dragonfamily_championpack</asset_prefab>
+    <background_prefab>event_96_dragonfamily_banner</background_prefab>
+    <bundle>259</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="105638" quantity="125" />
   </store_item>
 </root>

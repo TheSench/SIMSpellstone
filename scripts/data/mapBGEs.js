@@ -2334,20 +2334,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -2357,20 +2343,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -2390,20 +2362,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Firebolt"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -2413,6 +2371,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -2426,20 +2426,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Tome of Shielding"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -2470,7 +2456,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Shielding"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -2478,7 +2464,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Tome of Shielding"
@@ -2507,6 +2493,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "armored",
 								"x": 8
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
 							}
 						],
 						"name": "Tome of Shielding"
@@ -6618,20 +6618,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -6641,20 +6627,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -6674,20 +6646,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Firebolt"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -6697,6 +6655,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -6710,20 +6710,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Tome of Shielding"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -6754,7 +6740,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Shielding"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6762,7 +6748,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Tome of Shielding"
@@ -6791,6 +6777,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "armored",
 								"x": 8
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
 							}
 						],
 						"name": "Tome of Shielding"
@@ -7760,20 +7760,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -7783,20 +7769,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -7816,20 +7788,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Firebolt"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Tome of Firebolt"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -7839,6 +7797,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Tome of Firebolt"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Tome of Firebolt"
@@ -7852,20 +7852,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Tome of Shielding"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -7896,7 +7882,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Tome of Shielding"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -7904,7 +7890,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Tome of Shielding"
@@ -7933,6 +7919,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "armored",
 								"x": 8
+							}
+						],
+						"name": "Tome of Shielding"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
 							}
 						],
 						"name": "Tome of Shielding"

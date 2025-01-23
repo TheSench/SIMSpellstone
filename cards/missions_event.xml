@@ -5261,6 +5261,712 @@
       </line>
     </speech>
   </mission>
+  <!-- Valentine's Special Event 2025 -->
+  <mission>
+    <id>2106</id>
+    <name>Warming to Spring</name>
+    <energy>4</energy>
+    <desc>February, the soppiest month. Snow still blanketed most of Elaria, but Daknak's heart was melting. Practice battles with his posse were no distraction.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="2163" />
+      <!-- Steelwing Fulminator -->
+      <card id="2254" />
+      <!-- Crash Bug -->
+      <card id="2127" />
+      <!-- RT-87 Neutralizer -->
+      <card id="2163" />
+      <!-- Steelwing Fulminator -->
+      <card id="2254" />
+      <!-- Crash Bug -->
+      <card id="2127" />
+      <!-- RT-87 Neutralizer -->
+      <card id="2163" />
+      <!-- Steelwing Fulminator -->
+      <card id="2254" />
+      <!-- Crash Bug -->
+      <card id="2127" />
+      <!-- RT-87 Neutralizer -->
+      <card id="2163" mastery_level="2" />
+      <!-- Steelwing Fulminator -->
+      <card id="2254" mastery_level="3" />
+      <!-- Crash Bug -->
+      <card id="2127" mastery_level="4" />
+      <!-- RT-87 Neutralizer -->
+      <card id="2163" mastery_level="5" />
+      <!-- Steelwing Fulminator -->
+      <card id="2254" mastery_level="6" />
+      <!-- Crash Bug -->
+      <card id="2127" mastery_level="7" />
+      <!-- RT-87 Neutralizer -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Daknak strong, but lonely.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2107</id>
+    <name>The Love Quest Begins</name>
+    <energy>4</energy>
+    <desc>Daknak set off with his troops to seek advice from Great Leader Groc, who must have known something of love matters, having 37 stony-faced wives. The road to Luminis was overrun with the usual assortment of brigands.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2240" />
+      <!-- Void Summoner -->
+      <card id="1345" />
+      <!-- Owltron Belcher -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2240" />
+      <!-- Void Summoner -->
+      <card id="1345" />
+      <!-- Owltron Belcher -->
+      <card id="1333" />
+      <!-- Sabercat Mechanist -->
+      <card id="2240" />
+      <!-- Void Summoner -->
+      <card id="1345" />
+      <!-- Owltron Belcher -->
+      <card id="1333" mastery_level="2" />
+      <!-- Sabercat Mechanist -->
+      <card id="2240" mastery_level="3" />
+      <!-- Void Summoner -->
+      <card id="1345" mastery_level="4" />
+      <!-- Owltron Belcher -->
+      <card id="1333" mastery_level="5" />
+      <!-- Sabercat Mechanist -->
+      <card id="2240" mastery_level="6" />
+      <!-- Void Summoner -->
+      <card id="1345" mastery_level="7" />
+      <!-- Owltron Belcher -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2108</id>
+    <name>Groc Gets a Visitor</name>
+    <energy>4</energy>
+    <desc>General Groc's Winter Citadel, recently purchased from Solaron, loomed over an excellent view of the valley of Luminis. Daknak had little trouble with the security.</desc>
+    <commander id="239" />
+    <!-- Groc, Vault Ancient -->
+    <deck>
+      <card id="1037" />
+      <!-- Steambelly Foreman -->
+      <card id="6247" />
+      <!-- Sentrypod Vanguard -->
+      <card id="6248" />
+      <!-- Cybot Primus -->
+      <card id="1037" />
+      <!-- Steambelly Foreman -->
+      <card id="6247" />
+      <!-- Sentrypod Vanguard -->
+      <card id="6248" />
+      <!-- Cybot Primus -->
+      <card id="1037" />
+      <!-- Steambelly Foreman -->
+      <card id="6247" />
+      <!-- Sentrypod Vanguard -->
+      <card id="6248" />
+      <!-- Cybot Primus -->
+      <card id="1037" mastery_level="2" />
+      <!-- Steambelly Foreman -->
+      <card id="6247" mastery_level="3" />
+      <!-- Sentrypod Vanguard -->
+      <card id="6248" mastery_level="4" />
+      <!-- Cybot Primus -->
+      <card id="1037" mastery_level="5" />
+      <!-- Steambelly Foreman -->
+      <card id="6247" mastery_level="6" />
+      <!-- Sentrypod Vanguard -->
+      <card id="6248" mastery_level="7" />
+      <!-- Cybot Primus -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2109</id>
+    <name>Hospitality, Short But Sweet</name>
+    <energy>4</energy>
+    <desc>Groc was startled awake by the faint odor of sweaty goblin. Daknak whispered, ''No worry, Daknak friend come to ask wise rock man important question... what is love?''</desc>
+    <commander id="239" />
+    <!-- Groc, Vault Ancient -->
+    <deck>
+      <card id="2002" />
+      <!-- Lumin Guardian -->
+      <card id="5009" />
+      <!-- High Guardian -->
+      <card id="6279" />
+      <!-- Autobattler Claymore -->
+      <card id="2002" />
+      <!-- Lumin Guardian -->
+      <card id="5009" />
+      <!-- High Guardian -->
+      <card id="6279" />
+      <!-- Autobattler Claymore -->
+      <card id="2002" />
+      <!-- Lumin Guardian -->
+      <card id="5009" />
+      <!-- High Guardian -->
+      <card id="6279" />
+      <!-- Autobattler Claymore -->
+      <card id="2002" mastery_level="2" />
+      <!-- Lumin Guardian -->
+      <card id="5009" mastery_level="3" />
+      <!-- High Guardian -->
+      <card id="6279" mastery_level="4" />
+      <!-- Autobattler Claymore -->
+      <card id="2002" mastery_level="5" />
+      <!-- Lumin Guardian -->
+      <card id="5009" mastery_level="6" />
+      <!-- High Guardian -->
+      <card id="6279" mastery_level="7" />
+      <!-- Autobattler Claymore -->
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Love is a firm foundation, upon which friendship is built, then more. Guards!</text>
+      </line>
+      <line>
+        <commander>Portrait_Daknak</commander>
+        <enemy>1</enemy>
+        <text>Uh-oh. Bye, now!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2110</id>
+    <name>Love Quest Equals Lost Quest</name>
+    <energy>4</energy>
+    <desc>For nearly a week Daknak and his increasingly smaller circle of companions wandered here and there, bumping into strangers, each of whom Daknak asked the same question: ''what is love?''</desc>
+    <commander id="212" />
+    <!-- Caverns of Crossing -->
+    <deck>
+      <card id="5025" />
+      <!-- Silverskin Dragon -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="5245" />
+      <!-- Gemcore Mauler -->
+      <card id="5025" />
+      <!-- Silverskin Dragon -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="5245" />
+      <!-- Gemcore Mauler -->
+      <card id="5025" />
+      <!-- Silverskin Dragon -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="5245" />
+      <!-- Gemcore Mauler -->
+      <card id="5025" mastery_level="2" />
+      <!-- Silverskin Dragon -->
+      <card id="1348" mastery_level="3" />
+      <!-- Flailpod -->
+      <card id="5245" mastery_level="4" />
+      <!-- Gemcore Mauler -->
+      <card id="5025" mastery_level="5" />
+      <!-- Silverskin Dragon -->
+      <card id="1348" mastery_level="6" />
+      <!-- Flailpod -->
+      <card id="5245" mastery_level="7" />
+      <!-- Gemcore Mauler -->
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Love is chaos!</text>
+      </line>
+      <line>
+        <commander>Goblinch_Portrait</commander>
+        <enemy>1</enemy>
+        <text>Love is having someone to look after, and punish when they do wrong!</text>
+      </line>
+      <line>
+        <commander>cavernsofcrossings</commander>
+        <enemy>1</enemy>
+        <text>Nothing to see here. Move along!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2111</id>
+    <name>A Warm Local Reception</name>
+    <energy>4</energy>
+    <desc>Eventually it occurred to Daknak that love must be a little bit different for everyone. Then, just as he was contemplating WHERE he might find love, there came a surprise attack by steaming mechas!</desc>
+    <commander id="401" />
+    <!-- Mining Cydroid -->
+    <deck>
+      <card id="2109" />
+      <!-- Moltenfist Avenger -->
+      <card id="6178" />
+      <!-- Bitumen Scorcher -->
+      <card id="2111" />
+      <!-- Spiral Drillbot -->
+      <card id="2109" />
+      <!-- Moltenfist Avenger -->
+      <card id="6178" />
+      <!-- Bitumen Scorcher -->
+      <card id="2111" />
+      <!-- Spiral Drillbot -->
+      <card id="2109" />
+      <!-- Moltenfist Avenger -->
+      <card id="6178" />
+      <!-- Bitumen Scorcher -->
+      <card id="2111" />
+      <!-- Spiral Drillbot -->
+      <card id="2109" mastery_level="2" />
+      <!-- Moltenfist Avenger -->
+      <card id="6178" mastery_level="3" />
+      <!-- Bitumen Scorcher -->
+      <card id="2111" mastery_level="4" />
+      <!-- Spiral Drillbot -->
+      <card id="2109" mastery_level="5" />
+      <!-- Moltenfist Avenger -->
+      <card id="6178" mastery_level="6" />
+      <!-- Bitumen Scorcher -->
+      <card id="2111" mastery_level="7" />
+      <!-- Spiral Drillbot -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_001</commander>
+        <enemy>0</enemy>
+        <text>I hear rumbling</text>
+      </line>
+      <line>
+        <commander>Portraits_Miner_Droid</commander>
+        <enemy>1</enemy>
+        <text>CHARGE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2112</id>
+    <name>Saved by a Glitter of Generals</name>
+    <energy>4</energy>
+    <desc>A passing company of commanders took pity on the little goblin backed against a cliff. A smoking mess was made of the mechas, and Daknak received a gracious invitation to a Valentine's Day gathering at Seastone Citadel.</desc>
+    <commander id="401" />
+    <!-- Mining Cydroid -->
+    <deck>
+      <card id="1338" />
+      <!-- Trashling Salvager -->
+      <card id="5248" />
+      <!-- Exalted Ophanim -->
+      <card id="6194" />
+      <!-- Caldera Pathfinder -->
+      <card id="1338" />
+      <!-- Trashling Salvager -->
+      <card id="5248" />
+      <!-- Exalted Ophanim -->
+      <card id="6194" />
+      <!-- Caldera Pathfinder -->
+      <card id="1338" />
+      <!-- Trashling Salvager -->
+      <card id="5248" />
+      <!-- Exalted Ophanim -->
+      <card id="6194" />
+      <!-- Caldera Pathfinder -->
+      <card id="1338" mastery_level="2" />
+      <!-- Trashling Salvager -->
+      <card id="5248" mastery_level="3" />
+      <!-- Exalted Ophanim -->
+      <card id="6194" mastery_level="4" />
+      <!-- Caldera Pathfinder -->
+      <card id="1338" mastery_level="5" />
+      <!-- Trashling Salvager -->
+      <card id="5248" mastery_level="6" />
+      <!-- Exalted Ophanim -->
+      <card id="6194" mastery_level="7" />
+      <!-- Caldera Pathfinder -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Miner_Droid</commander>
+        <enemy>1</enemy>
+        <text>RECHARGE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2113</id>
+    <name>Seastone Citadel at Last!</name>
+    <energy>4</energy>
+    <desc>The air felt summery, due to warm currents peculiar to this coast. Everyone you would want to meet (and wouldn't!) was here, but security was tight.</desc>
+    <commander id="403" />
+    <!-- Fireshard's Giant -->
+    <deck>
+      <card id="5161" />
+      <!-- Bulwark Bot -->
+      <card id="7249" />
+      <!-- Banhammer -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="5161" />
+      <!-- Bulwark Bot -->
+      <card id="7249" />
+      <!-- Banhammer -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="5161" />
+      <!-- Bulwark Bot -->
+      <card id="7249" />
+      <!-- Banhammer -->
+      <card id="6218" />
+      <!-- Gliding Firemage -->
+      <card id="5161" mastery_level="2" />
+      <!-- Bulwark Bot -->
+      <card id="7249" mastery_level="3" />
+      <!-- Banhammer -->
+      <card id="6218" mastery_level="4" />
+      <!-- Gliding Firemage -->
+      <card id="5161" mastery_level="5" />
+      <!-- Bulwark Bot -->
+      <card id="7249" mastery_level="6" />
+      <!-- Banhammer -->
+      <card id="6218" mastery_level="7" />
+      <!-- Gliding Firemage -->
+    </deck>
+    <speech>
+      <line>
+        <commander>giantMechaBoss</commander>
+        <enemy>1</enemy>
+        <text>You don't belong here, BLEEP!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2114</id>
+    <name>Let the Revels Begin!</name>
+    <energy>4</energy>
+    <desc>After proving their mettle against the metal sentries, Daknak and his new friends received a beetroot pink stamp of admittance. An Archers'  Tournie was in progress, so some of them signed up.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="2209" />
+      <!-- Sinister Hand -->
+      <card id="5187" />
+      <!-- Star Shooter -->
+      <card id="5219" />
+      <!-- Null Marksmech -->
+      <card id="2209" />
+      <!-- Sinister Hand -->
+      <card id="5187" />
+      <!-- Star Shooter -->
+      <card id="5219" />
+      <!-- Null Marksmech -->
+      <card id="2209" />
+      <!-- Sinister Hand -->
+      <card id="5187" />
+      <!-- Star Shooter -->
+      <card id="5219" />
+      <!-- Null Marksmech -->
+      <card id="2209" mastery_level="2" />
+      <!-- Sinister Hand -->
+      <card id="5187" mastery_level="3" />
+      <!-- Star Shooter -->
+      <card id="5219" mastery_level="4" />
+      <!-- Null Marksmech -->
+      <card id="2209" mastery_level="5" />
+      <!-- Sinister Hand -->
+      <card id="5187" mastery_level="6" />
+      <!-- Star Shooter -->
+      <card id="5219" mastery_level="7" />
+      <!-- Null Marksmech -->
+    </deck>
+  </mission>
+  <mission>
+    <id>2115</id>
+    <name>Daknak Still Targets Love</name>
+    <energy>4</energy>
+    <desc>Ursurio dragged Samael, Tarian, and Daknak off to the concession stand because they were looking thin. Over kabobs and hot spiced mead, Daknak mused about what he might do if a lady caught his eye.</desc>
+    <commander id="3" />
+    <!-- Samael -->
+    <deck>
+      <card id="6095" />
+      <!-- Gearchromed Dragon -->
+      <card id="6288" />
+      <!-- Pyre Cavalier -->
+      <card id="5246" />
+      <!-- Brightcore Defender -->
+      <card id="6095" />
+      <!-- Gearchromed Dragon -->
+      <card id="6288" />
+      <!-- Pyre Cavalier -->
+      <card id="5246" />
+      <!-- Brightcore Defender -->
+      <card id="6095" />
+      <!-- Gearchromed Dragon -->
+      <card id="6288" />
+      <!-- Pyre Cavalier -->
+      <card id="5246" />
+      <!-- Brightcore Defender -->
+      <card id="6095" mastery_level="2" />
+      <!-- Gearchromed Dragon -->
+      <card id="6288" mastery_level="3" />
+      <!-- Pyre Cavalier -->
+      <card id="5246" mastery_level="4" />
+      <!-- Brightcore Defender -->
+      <card id="6095" mastery_level="5" />
+      <!-- Gearchromed Dragon -->
+      <card id="6288" mastery_level="6" />
+      <!-- Pyre Cavalier -->
+      <card id="5246" mastery_level="7" />
+      <!-- Brightcore Defender -->
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Stand there with your shirt off. She will come to you!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2116</id>
+    <name>More Tournies, More Fun!</name>
+    <energy>4</energy>
+    <desc>Verus overheard Samael's advice, and offered a different idea to the tipsy goblin: ''When you see someone you like, you must do your love dance!'' Daknak replied, ''Daknak can dance, but only to rock music.''</desc>
+    <commander id="412" />
+    <!-- Boldur, the Bravest -->
+    <deck>
+      <card id="6268" />
+      <!-- Wyrmdance Dragon -->
+      <card id="7008" />
+      <!-- Mountain Dragon -->
+      <card id="7269" />
+      <!-- Wyrmdance Revelers -->
+      <card id="6268" />
+      <!-- Wyrmdance Dragon -->
+      <card id="7008" />
+      <!-- Mountain Dragon -->
+      <card id="7269" />
+      <!-- Wyrmdance Revelers -->
+      <card id="6268" />
+      <!-- Wyrmdance Dragon -->
+      <card id="7008" />
+      <!-- Mountain Dragon -->
+      <card id="7269" />
+      <!-- Wyrmdance Revelers -->
+      <card id="6268" mastery_level="2" />
+      <!-- Wyrmdance Dragon -->
+      <card id="7008" mastery_level="3" />
+      <!-- Mountain Dragon -->
+      <card id="7269" mastery_level="4" />
+      <!-- Wyrmdance Revelers -->
+      <card id="6268" mastery_level="5" />
+      <!-- Wyrmdance Dragon -->
+      <card id="7008" mastery_level="6" />
+      <!-- Mountain Dragon -->
+      <card id="7269" mastery_level="7" />
+      <!-- Wyrmdance Revelers -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Boldur</commander>
+        <enemy>0</enemy>
+        <text>No problem! Catch this beat!</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*Snap, snap!*</text>
+      </line>
+      <line>
+        <commander>Portrait_Mythic_Avian</commander>
+        <enemy>0</enemy>
+        <text>Dance like this!</text>
+      </line>
+      <line>
+        <commander>dawnglowmonster</commander>
+        <enemy>1</enemy>
+        <text>Like this?</text>
+      </line>
+      <line>
+        <commander>dawnglowbabies</commander>
+        <enemy>1</enemy>
+        <text>You still got it, Daddy!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2117</id>
+    <name>Scylla Pops Up</name>
+    <energy>4</energy>
+    <desc>Suddenly, about 8 yards out from the beach, the hostess of the event appeared.</desc>
+    <commander id="360" />
+    <!-- Scylla -->
+    <deck>
+      <card id="7262" />
+      <!-- Gala-Gala Paradise -->
+      <card id="6305" />
+      <!-- Laolong, the Ancient -->
+      <card id="5095" />
+      <!-- Overseer Silurigon -->
+      <card id="7262" />
+      <!-- Gala-Gala Paradise -->
+      <card id="6305" />
+      <!-- Laolong, the Ancient -->
+      <card id="5095" />
+      <!-- Overseer Silurigon -->
+      <card id="7262" />
+      <!-- Gala-Gala Paradise -->
+      <card id="6305" />
+      <!-- Laolong, the Ancient -->
+      <card id="5095" />
+      <!-- Overseer Silurigon -->
+      <card id="7262" mastery_level="2" />
+      <!-- Gala-Gala Paradise -->
+      <card id="6305" mastery_level="3" />
+      <!-- Laolong, the Ancient -->
+      <card id="5095" mastery_level="4" />
+      <!-- Overseer Silurigon -->
+      <card id="7262" mastery_level="5" />
+      <!-- Gala-Gala Paradise -->
+      <card id="6305" mastery_level="6" />
+      <!-- Laolong, the Ancient -->
+      <card id="5095" mastery_level="7" />
+      <!-- Overseer Silurigon -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Mythic_Seafolk</commander>
+        <enemy>0</enemy>
+        <text>Look at me! I can dance with a ship on my belly!</text>
+      </line>
+      <line>
+        <commander>octopusmonster</commander>
+        <enemy>1</enemy>
+        <text>Wow!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Good show!</text>
+      </line>
+      <line>
+        <commander>Portraits_Goblin_Diver</commander>
+        <enemy>1</enemy>
+        <text>Daknak can do that... with small ship.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2118</id>
+    <name>Daknak is Noticed by Ladies</name>
+    <energy>4</energy>
+    <desc>It was getting late. The tournaments were wrapping up with spectacular bolt shows from the mages. Dancing continued under the strobe lights.</desc>
+    <commander id="480" />
+    <!-- Leyla -->
+    <deck>
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6023" />
+      <!-- Vicious Broodmother -->
+      <card id="6198" />
+      <!-- Rattleclank Empress -->
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6023" />
+      <!-- Vicious Broodmother -->
+      <card id="6198" />
+      <!-- Rattleclank Empress -->
+      <card id="6270" />
+      <!-- Malbrand Tattoo -->
+      <card id="6023" />
+      <!-- Vicious Broodmother -->
+      <card id="6198" />
+      <!-- Rattleclank Empress -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+    <speech>
+      <line>
+        <commander>Leyla_Portrait</commander>
+        <enemy>0</enemy>
+        <text>Can you cancan, Daknak?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Ha ha ha! I don't think that's Daknak's style!</text>
+      </line>
+      <line>
+        <commander>Portrait_Angel_Demon_Samurai</commander>
+        <enemy>0</enemy>
+        <text>Where I come from, we dance with our swords out!</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>I'd like to see Daknak try that!</text>
+      </line>
+      <line>
+        <commander>Portraits_Crimson_Winged_Angel</commander>
+        <enemy>0</enemy>
+        <text>As would I!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2119</id>
+    <name>In the Arms of Pensithea</name>
+    <energy>4</energy>
+    <desc>But little Daknak missed his opportunity. He dozed off after all the battling, swimming and quaffing of mead. Ursurio tucked him into bed and joined the mead-fueled brawl, the usual Grand Finale of Scylla's parties.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="5268" />
+      <!-- Mirrorwing Dragon -->
+      <card id="6207" />
+      <!-- Sandlair Dragon -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="5268" />
+      <!-- Mirrorwing Dragon -->
+      <card id="6207" />
+      <!-- Sandlair Dragon -->
+      <card id="2205" />
+      <!-- Herald of Judgement -->
+      <card id="5268" />
+      <!-- Mirrorwing Dragon -->
+      <card id="6207" />
+      <!-- Sandlair Dragon -->
+      <card id="4002" mastery_level="2" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="3" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="4" />
+      <!-- Remi, the Banished -->
+      <card id="4002" mastery_level="5" />
+      <!-- Razi the Fallen Light -->
+      <card id="4016" mastery_level="6" />
+      <!-- Daknak Darkblade -->
+      <card id="5635" mastery_level="7" />
+      <!-- Remi, the Banished -->
+    </deck>
+  </mission>
   <!-- Event 105: Insects ComDev -->
   <mission>
     <id>7116</id>
@@ -18210,6 +18916,47 @@
       <!-- R3-M1, the Channeler -->
       <card id="7305" />
       <!-- Assistance Droid -->
+    </deck>
+  </mission>
+  <!-- Event 125: ComDev Dragon - Skyhaven Assault -->
+  <mission>
+    <id>10125</id>
+    <name>Skyhaven Assault</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Angel Plumes in the Tome Defense System to power up your cards. Imbue, Heal, Empower, Barrier can all be Nullified.</desc>
+    <commander id="253" />
+    <!-- Frostbite -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="2039" />
+      <!-- Narix, Dragonlord -->
+      <card id="5616" />
+      <!-- Satchmo, Pipe Tail -->
+      <card id="5630" />
+      <!-- Asim, the Lorekeeper -->
+      <card id="7630" />
+      <!-- Tiendroantun, the Protector -->
+      <card id="4038" />
+      <!-- Kalyt, the Last Word -->
+      <card id="4022" />
+      <!-- Bluefire, Void Incarnate -->
+      <card id="4045" />
+      <!-- Korg, the Last Touch -->
+      <card id="4031" />
+      <!-- Sparky, the Royal Pet -->
+      <card id="1040" />
+      <!-- Stormcleaver Dragon -->
+      <card id="7269" />
+      <!-- Wyrmdance Revelers -->
+      <card id="6289" />
+      <!-- Scalixir Smuggler -->
+      <card id="6207" />
+      <!-- Sandlair Betrayer -->
+      <card id="5188" />
+      <!-- Movra, Dragon King -->
+      <card id="5282" />
+      <!-- Guardian of the Weak -->
     </deck>
   </mission>
 </root>

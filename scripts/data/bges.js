@@ -3353,6 +3353,43 @@ var BATTLEGROUNDS = {
 		"id": "188",
 		"name": "Winter Engine's Warmth"
 	},
+	"189": {
+		"desc": "All 0-3 Delay Dragons gain 6 Emberhide and all 3-4 Delay Dragons gain Invisibility equal to their Delay.",
+		"effect": [
+			{
+				"delay": [
+					0,
+					1,
+					2,
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 6,
+				"y": "9"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 3,
+				"y": "9"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 4,
+				"y": "9"
+			}
+		],
+		"id": "189",
+		"name": "Invisible Embers"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -5575,6 +5612,49 @@ var BATTLEGROUNDS = {
 		"id": "571",
 		"name": "The Burning Hell"
 	},
+	"572": {
+		"desc": "All cards gain Emberhide thrice their delay.",
+		"effect": [
+			{
+				"all": "1",
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 9
+			},
+			{
+				"all": "1",
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"x": 12
+			}
+		],
+		"id": "572",
+		"name": "The Burning Self"
+	},
 	"573": {
 		"desc": "The first enemy card played in battle has one additional Delay.",
 		"effect": [
@@ -5629,6 +5709,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.25,
 				"s": "rally"
 			}
@@ -5643,6 +5724,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.25,
 				"s": "legion"
 			}
@@ -5657,6 +5739,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.25,
 				"s": "berserk"
 			}
@@ -6104,6 +6187,68 @@ var BATTLEGROUNDS = {
 		"id": "582",
 		"isTower": true,
 		"name": "Redoubtable Tusker"
+	},
+	"583": {
+		"desc": "Heal, Siphon, Backlash, and Vengeance are 50% more effective.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.5,
+				"s": "heal"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.5,
+				"s": "leech"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.5,
+				"s": "backlash"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.5,
+				"s": "counter"
+			}
+		],
+		"id": "583",
+		"name": "Is Love a Tender Thing"
+	},
+	"584": {
+		"desc": "Hex and Backlash skills are doubled.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 1,
+				"s": "enfeeble"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 1,
+				"s": "backlash"
+			}
+		],
+		"id": "584",
+		"name": "New Paradox"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",

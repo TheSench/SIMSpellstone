@@ -1886,6 +1886,17 @@
       <add_skill id="burn" mult="0.1" base="health" y="16" />
     </effect>
   </battleground>
+  <battleground>
+    <id>189</id>
+    <name>Invisible Embers</name>
+    <desc>All 0-3 Delay Dragons gain 6 Emberhide and all 3-4 Delay Dragons gain Invisibility equal to their Delay.</desc>
+    <icon>filter_dragon_64</icon>
+    <effect>
+      <add_skill id="counterburn" x="6" y="9" delay="0,1,2,3" />
+      <add_skill id="evade" x="3" y="9" delay="3" />
+      <add_skill id="evade" x="4" y="9" delay="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -2984,9 +2995,19 @@
       <add_skill id="scorchbreath" x="12" all="1" delay="4" />
     </effect>
   </battleground>
-  <!-- <battleground> -->
-  <!-- <id>572</id> -->
-  <!-- </battleground> -->
+  <battleground>
+    <id>572</id>
+    <name>The Burning Self</name>
+    <desc>All cards gain Emberhide thrice their delay.</desc>
+    <icon>Emberhide_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <add_skill id="counterburn" x="3" all="1" delay="1" />
+      <add_skill id="counterburn" x="6" all="1" delay="2" />
+      <add_skill id="counterburn" x="9" all="1" delay="3" />
+      <add_skill id="counterburn" x="12" all="1" delay="4" />
+    </effect>
+  </battleground>
   <battleground>
     <id>573</id>
     <name>Enemy Delay</name>
@@ -3018,7 +3039,7 @@
     <icon>empower_BGE_64</icon>
     <icon_bundle>96</icon_bundle>
     <effect>
-      <skill id="enhance" s="rally" mult="0.25" all="1" />
+      <skill id="enhance" s="rally" mult="0.25" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -3028,7 +3049,7 @@
     <icon>Legion_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="legion" mult="0.25" all="1" />
+      <skill id="enhance" s="legion" mult="0.25" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -3038,7 +3059,7 @@
     <icon>Berserk_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="berserk" mult="0.25" all="1" />
+      <skill id="enhance" s="berserk" mult="0.25" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -3149,6 +3170,30 @@
       <starting_card id="20619" level="4" pvp_rank="16" />
       <starting_card id="20619" level="5" pvp_rank="17" />
       <starting_card id="20619" level="6" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>583</id>
+    <name>Is Love a Tender Thing</name>
+    <desc>Heal, Siphon, Backlash, and Vengeance are 50% more effective.</desc>
+    <icon>Heal_BGE_64</icon>
+    <icon_bundle>110</icon_bundle>
+    <effect>
+      <skill id="enhance" s="heal" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="leech" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="backlash" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" mult="0.5" all="1" ignore_nullify="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>584</id>
+    <name>New Paradox</name>
+    <desc>Hex and Backlash skills are doubled.</desc>
+    <icon>Hex_BGE_64</icon>
+    <icon_bundle>82</icon_bundle>
+    <effect>
+      <skill id="enhance" s="enfeeble" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="backlash" mult="1" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <!-- ============================= -->
