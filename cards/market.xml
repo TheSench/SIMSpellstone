@@ -2145,13 +2145,13 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Beat out the competition in Expedition with ten ^cCC1FEnergy Potion +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
+    <desc>Beat out the competition in Expedition with twelve ^cCC1FEnergy Potion +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
     <asset_prefab>event_012_energyChest</asset_prefab>
     <bundle>62</bundle>
     <icon>energy_refill_10</icon>
     <hc_cost>35</hc_cost>
     <!-- Stuff to give -->
-    <item id="1003" quantity="10" />
+    <item id="1003" quantity="12" />
   </store_item>
   <store_item>
     <id>5002</id>
@@ -2162,13 +2162,13 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <show_desc>1</show_desc>
-    <desc>Beat out the competition in Brawl with two ^cCC1FBounty Refill +10 ^cFFFFfor a limited time only! No purchase limit!</desc>
+    <desc>Beat out the competition in Brawl with five ^cCC1FBounty Refill +5 ^cFFFFfor a limited time only! No purchase limit!</desc>
     <asset_prefab>bounty_pack_4</asset_prefab>
     <bundle>15</bundle>
     <icon>bounty_refill_10</icon>
     <hc_cost>45</hc_cost>
     <!-- Stuff to give -->
-    <item id="1024" quantity="2" />
+    <item id="1023" quantity="5" />
   </store_item>
   <store_item>
     <id>5003</id>
