@@ -892,65 +892,6 @@
     <find_item id="2515" drop_per_energy="0.04" />
   </campaign>
   <!-- END Seaside Campaigns -->
-  <campaign>
-    <id>9134</id>
-    <name>Conflux Convergence</name>
-    <campaign_req id="24" level="1" />
-    <locked_start_time>1738256400</locked_start_time>
-    <!-- Thursday, 30 January 2025 -->
-    <location_id>34</location_id>
-    <x>530</x>
-    <y>370</y>
-    <combatBG>CombatBGVoid</combatBG>
-    <missions>
-      <mission_id>6583</mission_id>
-      <mission_id>6584</mission_id>
-      <mission_id>6585</mission_id>
-      <mission_id>6586</mission_id>
-      <mission_id>6587</mission_id>
-      <mission_id>6588</mission_id>
-      <mission_id>6589</mission_id>
-      <mission_id>6590</mission_id>
-      <mission_id>6591</mission_id>
-      <mission_id>6592</mission_id>
-      <mission_id>6593</mission_id>
-      <mission_id>6594</mission_id>
-      <mission_id>6595</mission_id>
-      <mission_id>6596</mission_id>
-      <mission_id>6597</mission_id>
-      <mission_id>6598</mission_id>
-      <mission_id>6599</mission_id>
-      <mission_id>6600</mission_id>
-      <mission_id>6601</mission_id>
-      <mission_id>6602</mission_id>
-      <mission_id>6603</mission_id>
-      <mission_id>6604</mission_id>
-      <mission_id>6605</mission_id>
-      <mission_id>6606</mission_id>
-      <mission_id>6607</mission_id>
-      <mission_id>6608</mission_id>
-      <mission_id>6609</mission_id>
-      <mission_id>6610</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" number="100" />
-      <!-- Gold -->
-      <item level="2" id="545" number="2" />
-      <!-- Tribe 1 Epic Packs -->
-      <item level="3" id="556" number="2" />
-      <!-- Tribe 2 Epic Packs -->
-      <card level="4" id="2208" />
-      <!-- Map Legendary -->
-      <card level="5" id="2208" />
-      <!-- Map Legendary -->
-      <card level="6" id="12208" />
-      <!-- Dual Map Legendary -->
-      <item level="7" id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </rewards>
-    <find_item id="3128" drop_per_energy="0.5" />
-    <find_item id="2527" drop_per_energy="0.01" />
-  </campaign>
   <!-- ====================================== -->
   <!-- = START (1000-) Original Event Nodes = -->
   <!-- ====================================== -->
@@ -12601,6 +12542,65 @@
   <!-- ============================================ -->
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
+  <campaign>
+    <id>9134</id>
+    <name>Conflux Convergence</name>
+    <campaign_req id="24" level="1" />
+    <locked_start_time>1738256400</locked_start_time>
+    <!-- Thursday, 30 January 2025 -->
+    <location_id>34</location_id>
+    <x>530</x>
+    <y>370</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6583</mission_id>
+      <mission_id>6584</mission_id>
+      <mission_id>6585</mission_id>
+      <mission_id>6586</mission_id>
+      <mission_id>6587</mission_id>
+      <mission_id>6588</mission_id>
+      <mission_id>6589</mission_id>
+      <mission_id>6590</mission_id>
+      <mission_id>6591</mission_id>
+      <mission_id>6592</mission_id>
+      <mission_id>6593</mission_id>
+      <mission_id>6594</mission_id>
+      <mission_id>6595</mission_id>
+      <mission_id>6596</mission_id>
+      <mission_id>6597</mission_id>
+      <mission_id>6598</mission_id>
+      <mission_id>6599</mission_id>
+      <mission_id>6600</mission_id>
+      <mission_id>6601</mission_id>
+      <mission_id>6602</mission_id>
+      <mission_id>6603</mission_id>
+      <mission_id>6604</mission_id>
+      <mission_id>6605</mission_id>
+      <mission_id>6606</mission_id>
+      <mission_id>6607</mission_id>
+      <mission_id>6608</mission_id>
+      <mission_id>6609</mission_id>
+      <mission_id>6610</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="545" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="556" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2208" />
+      <!-- Map Legendary -->
+      <card level="5" id="2208" />
+      <!-- Map Legendary -->
+      <card level="6" id="12208" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3128" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
   <!-- ============================================ -->
   <!-- 10001+: START Post Consolidation Event Nodes -->
   <!-- ============================================ -->
@@ -12608,14 +12608,12 @@
   <campaign>
     <id>10124</id>
     <name>Alyel Back in Time</name>
-    <event_only>1</event_only>
     <hidden>1</hidden>
     <icon id="energy_refill" bundle="30" />
     <battleground_id>2124</battleground_id>
     <location_id>34</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
-    <type>2</type>
     <x>260</x>
     <y>320</y>
     <combatBG>CombatBGVoid</combatBG>
@@ -12645,14 +12643,12 @@
   <campaign>
     <id>10125</id>
     <name>Alyel Back in Time</name>
-    <event_only>1</event_only>
     <hidden>1</hidden>
     <icon id="energy_refill" bundle="30" />
     <battleground_id>2124</battleground_id>
     <location_id>33</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
-    <type>2</type>
     <x>140</x>
     <y>350</y>
     <combatBG>CombatBGVoid</combatBG>
