@@ -12643,12 +12643,14 @@
   <campaign>
     <id>10125</id>
     <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
     <hidden>1</hidden>
     <icon id="energy_refill" bundle="30" />
     <battleground_id>2124</battleground_id>
     <location_id>33</location_id>
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
+    <type>2</type>
     <x>140</x>
     <y>350</y>
     <combatBG>CombatBGVoid</combatBG>
