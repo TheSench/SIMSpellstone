@@ -113,6 +113,10 @@ var LOCATIONS = {
 		"id": "34",
 		"name": "Conflux Convergence"
 	},
+	"36": {
+		"id": "36",
+		"name": "Red Feather Valley"
+	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
