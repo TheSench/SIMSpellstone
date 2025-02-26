@@ -113,10 +113,6 @@ var LOCATIONS = {
 		"id": "34",
 		"name": "Conflux Convergence"
 	},
-	"36": {
-		"id": "36",
-		"name": "Red Feather Valley"
-	},
 	"100": {
 		"id": "100",
 		"name": "Salt Wastes"
@@ -7459,6 +7455,19 @@ var CAMPAIGNS = {
 		"location_id": "33",
 		"missions": [
 			"10125"
+		],
+		"name": "Alyel Back in Time"
+	},
+	"10126": {
+		"battleground_id": "2124",
+		"id": "10126",
+		"items": {
+			"3122": 1,
+			"104502": 0.01
+		},
+		"location_id": "32",
+		"missions": [
+			"10126"
 		],
 		"name": "Alyel Back in Time"
 	}
@@ -37718,5 +37727,59 @@ var MISSIONS = {
 		],
 		"id": "10125",
 		"name": "Skyhaven Assault"
+	},
+	"10126": {
+		"commander": {
+			"id": "470"
+		},
+		"deck": [
+			{
+				"id": "4003"
+			},
+			{
+				"id": "2092"
+			},
+			{
+				"id": "7621"
+			},
+			{
+				"id": "6630"
+			},
+			{
+				"id": "5643"
+			},
+			{
+				"id": "4505"
+			},
+			{
+				"id": "4502"
+			},
+			{
+				"id": "4048"
+			},
+			{
+				"id": "4040"
+			},
+			{
+				"id": "5273"
+			},
+			{
+				"id": "5174"
+			},
+			{
+				"id": "5243"
+			},
+			{
+				"id": "2187"
+			},
+			{
+				"id": "2068"
+			},
+			{
+				"id": "1345"
+			}
+		],
+		"id": "10126",
+		"name": "Gladius Scriptorium"
 	}
 };

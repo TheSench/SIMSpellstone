@@ -3390,6 +3390,27 @@ var BATTLEGROUNDS = {
 		"id": "189",
 		"name": "Invisible Embers"
 	},
+	"190": {
+		"desc": "All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.1,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.1,
+				"y": "10"
+			}
+		],
+		"id": "190",
+		"name": "Ravenous Raptors"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

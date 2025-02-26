@@ -370,20 +370,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Duskwillow Aegis"
-					},
-					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
 						"effect": [
 							{
@@ -412,7 +398,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Duskwillow Aegis"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -420,7 +406,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Duskwillow Aegis"
@@ -452,6 +438,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Duskwillow Aegis"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Duskwillow Aegis"
 					}
 				]
 			},
@@ -464,20 +464,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Blazing Dyrnwyn"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -487,20 +473,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Blazing Dyrnwyn"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Blazing Dyrnwyn"
@@ -546,6 +518,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Blazing Dyrnwyn"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Blazing Dyrnwyn"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
+							}
+						],
+						"name": "Blazing Dyrnwyn"
 					}
 				]
 			},
@@ -556,19 +556,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Life Water"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -597,19 +584,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Life Water"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Life Water"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -631,6 +605,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Life Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Life Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Life Water"
@@ -1014,19 +1014,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Seastone Staff"
-					},
-					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
 						"effect": [
 							{
@@ -1048,19 +1035,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Seastone Staff"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Seastone Staff"
@@ -1090,6 +1064,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Seastone Staff"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Seastone Staff"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Seastone Staff"
 					}
 				]
 			},
@@ -1100,20 +1100,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Berserk 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 1
-							}
-						],
-						"name": "Heart of Blue Fire"
 					},
 					{
 						"desc": "All of your creatures gain Berserk 2 each turn.",
@@ -1139,20 +1125,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "berserk",
 								"x": 3
-							}
-						],
-						"name": "Heart of Blue Fire"
-					},
-					{
-						"desc": "All of your creatures gain Berserk 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 4
 							}
 						],
 						"name": "Heart of Blue Fire"
@@ -1184,6 +1156,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Heart of Blue Fire"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 8
+							}
+						],
+						"name": "Heart of Blue Fire"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 9
+							}
+						],
+						"name": "Heart of Blue Fire"
 					}
 				]
 			}
@@ -1202,20 +1202,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Earth Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -1246,7 +1232,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Earth Spiritling"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -1254,7 +1240,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Earth Spiritling"
@@ -1286,6 +1272,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Earth Spiritling"
 					}
 				]
 			},
@@ -1296,20 +1296,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Siphon 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 1
-							}
-						],
-						"name": "Wind Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Siphon 2 each turn.",
@@ -1335,20 +1321,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "leech",
 								"x": 3
-							}
-						],
-						"name": "Wind Spiritling"
-					},
-					{
-						"desc": "All of your creatures gain Siphon 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 4
 							}
 						],
 						"name": "Wind Spiritling"
@@ -1380,6 +1352,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 8
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 9
+							}
+						],
+						"name": "Wind Spiritling"
 					}
 				]
 			},
@@ -1390,20 +1390,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Berserk 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 1
-							}
-						],
-						"name": "Fire Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Berserk 2 each turn.",
@@ -1429,20 +1415,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "berserk",
 								"x": 3
-							}
-						],
-						"name": "Fire Spiritling"
-					},
-					{
-						"desc": "All of your creatures gain Berserk 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 4
 							}
 						],
 						"name": "Fire Spiritling"
@@ -1474,6 +1446,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 8
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 9
+							}
+						],
+						"name": "Fire Spiritling"
 					}
 				]
 			}
@@ -1494,20 +1494,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Hermit Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -1517,20 +1503,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Hermit Cannon"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Hermit Cannon"
@@ -1550,20 +1522,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Hermit Cannon"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Hermit Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -1573,6 +1531,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Hermit Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Hermit Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Hermit Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Hermit Cannon"
@@ -1682,20 +1682,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Vengeance 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "counter",
-								"x": 1
-							}
-						],
-						"name": "Sea Urchin Wall"
-					},
-					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
 						"effect": [
 							{
@@ -1761,6 +1747,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "counter",
 								"x": 10
+							}
+						],
+						"name": "Sea Urchin Wall"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 12
 							}
 						],
 						"name": "Sea Urchin Wall"
@@ -2062,19 +2062,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Petal Orb"
-					},
-					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
 						"effect": [
 							{
@@ -2101,19 +2088,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Petal Orb"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Petal Orb"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -2135,6 +2109,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Petal Orb"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Petal Orb"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Petal Orb"
@@ -2238,19 +2238,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are protected by Barrier 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 1
-							}
-						],
-						"name": "Basin Orb"
-					},
-					{
 						"desc": "All of your creatures are protected by Barrier 2 each turn.",
 						"effect": [
 							{
@@ -2267,24 +2254,11 @@ var MAP_BATTLEGROUNDS = {
 						"desc": "All of your creatures are protected by Barrier 3 each turn.",
 						"effect": [
 							{
-								"all": "3",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 3
-							}
-						],
-						"name": "Basin Orb"
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 4 each turn.",
-						"effect": [
-							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
 								"id": "protect",
-								"x": 4
+								"x": 3
 							}
 						],
 						"name": "Basin Orb"
@@ -2311,6 +2285,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "protect",
 								"x": 6
+							}
+						],
+						"name": "Basin Orb"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 8
+							}
+						],
+						"name": "Basin Orb"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 9
 							}
 						],
 						"name": "Basin Orb"
@@ -2624,20 +2624,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Overprotective Dragonling"
-					},
-					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
 						"effect": [
 							{
@@ -2666,7 +2652,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Overprotective Dragonling"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -2674,7 +2660,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Overprotective Dragonling"
@@ -2703,6 +2689,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "absorb",
 								"x": 8
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
 							}
 						],
 						"name": "Overprotective Dragonling"
@@ -2812,20 +2812,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Siphon 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 1
-							}
-						],
-						"name": "Gusty Dragonling"
-					},
-					{
 						"desc": "All of your creatures gain Siphon 2 each turn.",
 						"effect": [
 							{
@@ -2854,20 +2840,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Gusty Dragonling"
 					},
 					{
-						"desc": "All of your creatures gain Siphon 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 4
-							}
-						],
-						"name": "Gusty Dragonling"
-					},
-					{
 						"desc": "All of your creatures gain Siphon 5 each turn.",
 						"effect": [
 							{
@@ -2891,6 +2863,34 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "leech",
 								"x": 6
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 8
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 9
 							}
 						],
 						"name": "Gusty Dragonling"
@@ -3008,19 +3008,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Spriggan Seer"
-					},
-					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
 						"effect": [
 							{
@@ -3047,19 +3034,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Spriggan Seer"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Spriggan Seer"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -3081,6 +3055,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Spriggan Seer"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Spriggan Seer"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Spriggan Seer"
@@ -3198,19 +3198,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Airship Support"
-					},
-					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
 						"effect": [
 							{
@@ -3232,19 +3219,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Airship Support"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Airship Support"
@@ -3274,6 +3248,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Airship Support"
 					}
 				]
 			},
@@ -3284,20 +3284,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Vengeance 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "counter",
-								"x": 1
-							}
-						],
-						"name": "Airship Countermeasures"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
@@ -3368,6 +3354,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 12
+							}
+						],
+						"name": "Airship Countermeasures"
 					}
 				]
 			},
@@ -3380,20 +3380,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -3403,20 +3389,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Airship Cannon"
@@ -3436,20 +3408,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Airship Cannon"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -3459,6 +3417,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Airship Cannon"
@@ -3482,19 +3482,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Healing Glyph"
-					},
-					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
 						"effect": [
 							{
@@ -3516,19 +3503,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Healing Glyph"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Healing Glyph"
@@ -3558,6 +3532,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Healing Glyph"
 					}
 				]
 			},
@@ -3568,20 +3568,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Shielding Glyph"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -3612,7 +3598,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Shielding Glyph"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -3620,7 +3606,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Shielding Glyph"
@@ -3652,6 +3638,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Shielding Glyph"
 					}
 				]
 			},
@@ -3664,20 +3664,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Scorching Glyph"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -3687,20 +3673,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Scorching Glyph"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Scorching Glyph"
@@ -3746,6 +3718,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
+							}
+						],
+						"name": "Scorching Glyph"
 					}
 				]
 			}
@@ -3764,20 +3764,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Ward Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
@@ -3808,7 +3794,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Ward Fossil"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -3816,7 +3802,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Ward Fossil"
@@ -3848,6 +3834,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
+							}
+						],
+						"name": "Ward Fossil"
 					}
 				]
 			},
@@ -3858,20 +3858,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Vengeance 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "counter",
-								"x": 1
-							}
-						],
-						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
@@ -3942,6 +3928,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 12
+							}
+						],
+						"name": "Vengeful Fossil"
 					}
 				]
 			},
@@ -3954,20 +3954,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -3977,20 +3963,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Spitfire Fossil"
@@ -4010,20 +3982,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Spitfire Fossil"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -4033,6 +3991,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Spitfire Fossil"
@@ -4056,20 +4056,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Samael"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -4079,20 +4065,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Samael"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Samael"
@@ -4138,6 +4110,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Samael"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
+							}
+						],
+						"name": "Samael"
 					}
 				]
 			},
@@ -4148,19 +4148,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 1
-							}
-						],
-						"name": "Yuriel"
 					},
 					{
 						"desc": "All of your creatures are protected by Barrier 2 each turn.",
@@ -4179,24 +4166,11 @@ var MAP_BATTLEGROUNDS = {
 						"desc": "All of your creatures are protected by Barrier 3 each turn.",
 						"effect": [
 							{
-								"all": "3",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "protect",
-								"x": 3
-							}
-						],
-						"name": "Yuriel"
-					},
-					{
-						"desc": "All of your creatures are protected by Barrier 4 each turn.",
-						"effect": [
-							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
 								"id": "protect",
-								"x": 4
+								"x": 3
 							}
 						],
 						"name": "Yuriel"
@@ -4226,6 +4200,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 8
+							}
+						],
+						"name": "Yuriel"
+					},
+					{
+						"desc": "All of your creatures are protected by Barrier 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "protect",
+								"x": 9
+							}
+						],
+						"name": "Yuriel"
 					}
 				]
 			},
@@ -4236,20 +4236,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Arena Equipment"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -4280,7 +4266,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Arena Equipment"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -4288,7 +4274,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Arena Equipment"
@@ -4320,6 +4306,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Arena Equipment"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Arena Equipment"
 					}
 				]
 			}
@@ -4338,20 +4338,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Overprotective Dragonling"
 					},
 					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
@@ -4382,7 +4368,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Overprotective Dragonling"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -4390,7 +4376,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Overprotective Dragonling"
@@ -4419,6 +4405,20 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "absorb",
 								"x": 8
+							}
+						],
+						"name": "Overprotective Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
 							}
 						],
 						"name": "Overprotective Dragonling"
@@ -4528,20 +4528,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Siphon 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 1
-							}
-						],
-						"name": "Gusty Dragonling"
-					},
-					{
 						"desc": "All of your creatures gain Siphon 2 each turn.",
 						"effect": [
 							{
@@ -4565,20 +4551,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "leech",
 								"x": 3
-							}
-						],
-						"name": "Gusty Dragonling"
-					},
-					{
-						"desc": "All of your creatures gain Siphon 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 4
 							}
 						],
 						"name": "Gusty Dragonling"
@@ -4610,6 +4582,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 8
+							}
+						],
+						"name": "Gusty Dragonling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 9
+							}
+						],
+						"name": "Gusty Dragonling"
 					}
 				]
 			}
@@ -4628,20 +4628,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Earth Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -4672,7 +4658,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Earth Spiritling"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -4680,7 +4666,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Earth Spiritling"
@@ -4712,6 +4698,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Earth Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Earth Spiritling"
 					}
 				]
 			},
@@ -4722,20 +4722,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Siphon 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 1
-							}
-						],
-						"name": "Wind Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Siphon 2 each turn.",
@@ -4761,20 +4747,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "leech",
 								"x": 3
-							}
-						],
-						"name": "Wind Spiritling"
-					},
-					{
-						"desc": "All of your creatures gain Siphon 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "leech",
-								"x": 4
 							}
 						],
 						"name": "Wind Spiritling"
@@ -4806,6 +4778,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 8
+							}
+						],
+						"name": "Wind Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Siphon 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "leech",
+								"x": 9
+							}
+						],
+						"name": "Wind Spiritling"
 					}
 				]
 			},
@@ -4816,20 +4816,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Berserk 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 1
-							}
-						],
-						"name": "Fire Spiritling"
 					},
 					{
 						"desc": "All of your creatures gain Berserk 2 each turn.",
@@ -4855,20 +4841,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "berserk",
 								"x": 3
-							}
-						],
-						"name": "Fire Spiritling"
-					},
-					{
-						"desc": "All of your creatures gain Berserk 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 4
 							}
 						],
 						"name": "Fire Spiritling"
@@ -4900,6 +4872,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 8
+							}
+						],
+						"name": "Fire Spiritling"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 9
+							}
+						],
+						"name": "Fire Spiritling"
 					}
 				]
 			}
@@ -4918,19 +4918,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Healing Glyph"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -4954,19 +4941,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Healing Glyph"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Healing Glyph"
@@ -4996,6 +4970,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Healing Glyph"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Healing Glyph"
 					}
 				]
 			},
@@ -5006,20 +5006,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Shielding Glyph"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -5050,7 +5036,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Shielding Glyph"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -5058,7 +5044,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Shielding Glyph"
@@ -5090,6 +5076,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Shielding Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Shielding Glyph"
 					}
 				]
 			},
@@ -5102,20 +5102,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Scorching Glyph"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -5125,20 +5111,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Scorching Glyph"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Scorching Glyph"
@@ -5184,6 +5156,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Scorching Glyph"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
+							}
+						],
+						"name": "Scorching Glyph"
 					}
 				]
 			}
@@ -5202,19 +5202,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Memory of Wyld"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -5243,19 +5230,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Memory of Wyld"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Memory of Wyld"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -5277,6 +5251,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Memory of Wyld"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Memory of Wyld"
@@ -5380,20 +5380,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Memory of Aether"
-					},
-					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
 						"effect": [
 							{
@@ -5422,7 +5408,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Memory of Aether"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -5430,7 +5416,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Memory of Aether"
@@ -5462,6 +5448,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Memory of Aether"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
+							}
+						],
+						"name": "Memory of Aether"
 					}
 				]
 			}
@@ -5480,19 +5480,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Sea Guardian Bones"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -5516,19 +5503,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Sea Guardian Bones"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Sea Guardian Bones"
@@ -5558,6 +5532,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Sea Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Sea Guardian Bones"
 					}
 				]
 			},
@@ -5568,20 +5568,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Armor 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "armored",
-								"x": 1
-							}
-						],
-						"name": "Land Guardian Bones"
 					},
 					{
 						"desc": "All of your creatures gain Armor 2 each turn.",
@@ -5612,7 +5598,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Land Guardian Bones"
 					},
 					{
-						"desc": "All of your creatures gain Armor 4 each turn.",
+						"desc": "All of your creatures gain Armor 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -5620,7 +5606,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "armored",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Land Guardian Bones"
@@ -5652,6 +5638,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Land Guardian Bones"
+					},
+					{
+						"desc": "All of your creatures gain Armor 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "armored",
+								"x": 9
+							}
+						],
+						"name": "Land Guardian Bones"
 					}
 				]
 			},
@@ -5664,20 +5664,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Sky Guardian Bones"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -5687,20 +5673,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Sky Guardian Bones"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Sky Guardian Bones"
@@ -5720,20 +5692,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Sky Guardian Bones"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Sky Guardian Bones"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -5743,6 +5701,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Sky Guardian Bones"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Sky Guardian Bones"
@@ -5766,20 +5766,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Scorch 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 1
-							}
-						],
-						"name": "Flame Maker"
-					},
-					{
 						"desc": "All of your creatures gain Scorch 2 each turn.",
 						"effect": [
 							{
@@ -5789,20 +5775,6 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "burn",
 								"x": 2
-							}
-						],
-						"name": "Flame Maker"
-					},
-					{
-						"desc": "All of your creatures gain Scorch 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "burn",
-								"x": 3
 							}
 						],
 						"name": "Flame Maker"
@@ -5848,6 +5820,34 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 10
+							}
+						],
+						"name": "Flame Maker"
+					},
+					{
+						"desc": "All of your creatures gain Scorch 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "burn",
+								"x": 12
+							}
+						],
+						"name": "Flame Maker"
 					}
 				]
 			},
@@ -5858,19 +5858,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Holy Water"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -5894,19 +5881,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Holy Water"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Holy Water"
@@ -5936,6 +5910,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Holy Water"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Holy Water"
 					}
 				]
 			},
@@ -5946,20 +5946,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Treebark Shield"
 					},
 					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
@@ -5990,7 +5976,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Treebark Shield"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -5998,7 +5984,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Treebark Shield"
@@ -6030,6 +6016,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Treebark Shield"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
+							}
+						],
+						"name": "Treebark Shield"
 					}
 				]
 			}
@@ -6048,19 +6048,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Airship Support"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -6084,19 +6071,6 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 3
-							}
-						],
-						"name": "Airship Support"
-					},
-					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
 							}
 						],
 						"name": "Airship Support"
@@ -6126,6 +6100,32 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Airship Support"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
+							}
+						],
+						"name": "Airship Support"
 					}
 				]
 			},
@@ -6136,20 +6136,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Vengeance 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "counter",
-								"x": 1
-							}
-						],
-						"name": "Airship Countermeasures"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
@@ -6220,6 +6206,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Airship Countermeasures"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 12
+							}
+						],
+						"name": "Airship Countermeasures"
 					}
 				]
 			},
@@ -6232,20 +6232,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -6255,20 +6241,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Airship Cannon"
@@ -6288,20 +6260,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Airship Cannon"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Airship Cannon"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -6311,6 +6269,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Airship Cannon"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Airship Cannon"
@@ -6332,19 +6332,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Healing Turret"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -6373,19 +6360,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Healing Turret"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Healing Turret"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -6407,6 +6381,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Healing Turret"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Healing Turret"
@@ -6516,20 +6516,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Berserk 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 1
-							}
-						],
-						"name": "Dawnglow Guardian"
-					},
-					{
 						"desc": "All of your creatures gain Berserk 2 each turn.",
 						"effect": [
 							{
@@ -6558,20 +6544,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Dawnglow Guardian"
 					},
 					{
-						"desc": "All of your creatures gain Berserk 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "berserk",
-								"x": 4
-							}
-						],
-						"name": "Dawnglow Guardian"
-					},
-					{
 						"desc": "All of your creatures gain Berserk 5 each turn.",
 						"effect": [
 							{
@@ -6595,6 +6567,34 @@ var MAP_BATTLEGROUNDS = {
 								"id": "imbue",
 								"s": "berserk",
 								"x": 6
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 8
+							}
+						],
+						"name": "Dawnglow Guardian"
+					},
+					{
+						"desc": "All of your creatures gain Berserk 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "berserk",
+								"x": 9
 							}
 						],
 						"name": "Dawnglow Guardian"
@@ -7186,20 +7186,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Ward Fossil"
-					},
-					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
 						"effect": [
 							{
@@ -7228,7 +7214,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Ward Fossil"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -7236,7 +7222,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Ward Fossil"
@@ -7268,6 +7254,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Ward Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
+							}
+						],
+						"name": "Ward Fossil"
 					}
 				]
 			},
@@ -7278,20 +7278,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Vengeance 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "counter",
-								"x": 1
-							}
-						],
-						"name": "Vengeful Fossil"
 					},
 					{
 						"desc": "All of your creatures gain Vengeance 2 each turn.",
@@ -7362,6 +7348,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Vengeful Fossil"
+					},
+					{
+						"desc": "All of your creatures gain Vengeance 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "counter",
+								"x": 12
+							}
+						],
+						"name": "Vengeful Fossil"
 					}
 				]
 			},
@@ -7374,20 +7374,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -7397,20 +7383,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Spitfire Fossil"
@@ -7430,20 +7402,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Spitfire Fossil"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Spitfire Fossil"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -7453,6 +7411,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Spitfire Fossil"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Spitfire Fossil"
@@ -7474,20 +7474,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures gain Ward 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "imbue",
-								"s": "absorb",
-								"x": 1
-							}
-						],
-						"name": "Batara, Commander"
 					},
 					{
 						"desc": "All of your creatures gain Ward 2 each turn.",
@@ -7518,7 +7504,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Batara, Commander"
 					},
 					{
-						"desc": "All of your creatures gain Ward 4 each turn.",
+						"desc": "All of your creatures gain Ward 5 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -7526,7 +7512,7 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "imbue",
 								"s": "absorb",
-								"x": 4
+								"x": 5
 							}
 						],
 						"name": "Batara, Commander"
@@ -7558,6 +7544,20 @@ var MAP_BATTLEGROUNDS = {
 							}
 						],
 						"name": "Batara, Commander"
+					},
+					{
+						"desc": "All of your creatures gain Ward 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "absorb",
+								"x": 9
+							}
+						],
+						"name": "Batara, Commander"
 					}
 				]
 			},
@@ -7570,20 +7570,6 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 1
-							}
-						],
-						"name": "Razi, Historian"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 2 each turn.",
 						"effect": [
 							{
@@ -7593,20 +7579,6 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 2
-							}
-						],
-						"name": "Razi, Historian"
-					},
-					{
-						"desc": "All enemy creatures are hit with Bolt 3 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 3
 							}
 						],
 						"name": "Razi, Historian"
@@ -7626,20 +7598,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Razi, Historian"
 					},
 					{
-						"desc": "All enemy creatures are hit with Bolt 5 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_turn": "1",
-								"effect_type": "skill",
-								"enemy_only": "1",
-								"id": "strike",
-								"x": 5
-							}
-						],
-						"name": "Razi, Historian"
-					},
-					{
 						"desc": "All enemy creatures are hit with Bolt 6 each turn.",
 						"effect": [
 							{
@@ -7649,6 +7607,48 @@ var MAP_BATTLEGROUNDS = {
 								"enemy_only": "1",
 								"id": "strike",
 								"x": 6
+							}
+						],
+						"name": "Razi, Historian"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 8
+							}
+						],
+						"name": "Razi, Historian"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 10 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 10
+							}
+						],
+						"name": "Razi, Historian"
+					},
+					{
+						"desc": "All enemy creatures are hit with Bolt 12 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_turn": "1",
+								"effect_type": "skill",
+								"enemy_only": "1",
+								"id": "strike",
+								"x": 12
 							}
 						],
 						"name": "Razi, Historian"
@@ -7662,19 +7662,6 @@ var MAP_BATTLEGROUNDS = {
 					{
 						"desc": "",
 						"effect": []
-					},
-					{
-						"desc": "All of your creatures are Healed for 1 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 1
-							}
-						],
-						"name": "Kachina, Reincarnation"
 					},
 					{
 						"desc": "All of your creatures are Healed for 2 each turn.",
@@ -7703,19 +7690,6 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Kachina, Reincarnation"
 					},
 					{
-						"desc": "All of your creatures are Healed for 4 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 4
-							}
-						],
-						"name": "Kachina, Reincarnation"
-					},
-					{
 						"desc": "All of your creatures are Healed for 5 each turn.",
 						"effect": [
 							{
@@ -7737,6 +7711,32 @@ var MAP_BATTLEGROUNDS = {
 								"effect_type": "skill",
 								"id": "heal",
 								"x": 6
+							}
+						],
+						"name": "Kachina, Reincarnation"
+					},
+					{
+						"desc": "All of your creatures are Healed for 8 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 8
+							}
+						],
+						"name": "Kachina, Reincarnation"
+					},
+					{
+						"desc": "All of your creatures are Healed for 9 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "heal",
+								"x": 9
 							}
 						],
 						"name": "Kachina, Reincarnation"

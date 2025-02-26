@@ -18959,4 +18959,45 @@
       <!-- Guardian of the Weak -->
     </deck>
   </mission>
+  <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
+  <mission>
+    <id>10126</id>
+    <name>Gladius Scriptorium</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Gladius Currency in the Crimsonwing Spirits to power up your cards. Ward counters Vampirism and Vengeance.</desc>
+    <commander id="470" />
+    <!-- Aviary Feral Wing -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="2092" />
+      <!-- Verus, Arena Champion -->
+      <card id="7621" />
+      <!-- Saucy, Lady of the Cauldron -->
+      <card id="6630" />
+      <!-- Gaerriel, Flying Nightmare -->
+      <card id="5643" />
+      <!-- Austra, The Ice Mage -->
+      <card id="4505" />
+      <!-- The Last Dodo -->
+      <card id="4502" />
+      <!-- Mawu, the Moon Spirit -->
+      <card id="4048" />
+      <!-- Sgt. Clockoo -->
+      <card id="4040" />
+      <!-- Iphelia, Voice of Pain -->
+      <card id="5273" />
+      <!-- Ondori Clan Daimyo -->
+      <card id="5174" />
+      <!-- Cloudbreak Elites -->
+      <card id="5243" />
+      <!-- Condor Ally -->
+      <card id="2187" />
+      <!-- Bloodmist Harpy -->
+      <card id="2068" />
+      <!-- Whitesail Wyvern -->
+      <card id="1345" />
+      <!-- Owltron -->
+    </deck>
+  </mission>
 </root>

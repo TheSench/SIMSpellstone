@@ -899,6 +899,8 @@
       <item id="104089" quantity="500" weight="1" />
       <item id="104090" quantity="500" weight="1" />
       <item id="104091" quantity="500" weight="1" />
+      <item id="104092" quantity="500" weight="1" />
+      <item id="104093" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1679,6 +1681,8 @@
       <item id="104089" />
       <item id="104090" />
       <item id="104091" />
+      <item id="104092" />
+      <item id="104093" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1887,6 +1891,8 @@
       <item id="104089" number="10" purchase1="5" scalar="5" />
       <item id="104090" number="10" purchase1="5" scalar="5" />
       <item id="104091" number="10" purchase1="5" scalar="5" />
+      <item id="104092" number="10" purchase1="5" scalar="5" />
+      <item id="104093" number="10" purchase1="5" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2205,79 +2211,6 @@
     <item id="1035" quantity="3" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 124: ComDev Mecha - Conflux Convergence -->
-  <store_item>
-    <id>5426</id>
-    <name>R3-M1 Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFR3-M1, the Channeler^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_95_voidchanneler_championpack</asset_prefab>
-    <background_prefab>event_95_voidchanneler_banner</background_prefab>
-    <bundle>257</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="106625" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5427</id>
-    <name>Katto Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFSword Saint Katto^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_067_kensei</asset_prefab>
-    <background_prefab>event_067_banner_kensei</background_prefab>
-    <bundle>199</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105615" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5428</id>
-    <name>Nano Swarm Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFNano Swarm^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_104_spiritualswarm_championpack</asset_prefab>
-    <background_prefab>event_104_spiritualswarm_banner</background_prefab>
-    <bundle>275</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105645" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5429</id>
-    <name>Aeronwen Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFAeronwen, the Glider^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_83_nitrogenglider_championpack</asset_prefab>
-    <background_prefab>event_83_nitrogenglider_banner</background_prefab>
-    <bundle>233</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="105625" quantity="125" />
-  </store_item>
   <!-- Event 125: ComDev Dragon - Skyhaven Assault -->
   <store_item>
     <id>5430</id>
@@ -2350,5 +2283,78 @@
     <hc_cost>150</hc_cost>
     <show_list>1</show_list>
     <item id="105638" quantity="125" />
+  </store_item>
+  <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
+  <store_item>
+    <id>5434</id>
+    <name>Lechuza Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFLechuza, the Skybinder^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_071_gravitywizard</asset_prefab>
+    <background_prefab>event_071_banner_gravitywizard</background_prefab>
+    <bundle>208</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107616" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5435</id>
+    <name>Saucy Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFSaucy, Lady of the Cauldron^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_079_turkeywitch_championpack</asset_prefab>
+    <background_prefab>event_079_turkeywitch_banner</background_prefab>
+    <bundle>225</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107621" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5436</id>
+    <name>Rago Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFRago, Crimson Vicar^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_054_avianpriest</asset_prefab>
+    <background_prefab>event_054_banner_avianpriest</background_prefab>
+    <bundle>167</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107605" quantity="125" />
+  </store_item>
+  <store_item>
+    <id>5437</id>
+    <name>Tzopilotl Stone Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 125 Champion Stones for ^cE7FFTzopilotl, the Beyonder^cFFFF! May be purchased 12 times.</desc>
+    <asset_prefab>event_066_mummycondor</asset_prefab>
+    <background_prefab>event_066_banner_mummycondor</background_prefab>
+    <bundle>197</bundle>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <hc_cost>150</hc_cost>
+    <show_list>1</show_list>
+    <item id="107612" quantity="125" />
   </store_item>
 </root>

@@ -10691,6 +10691,7 @@
     <id>1369</id>
     <name>Heart of Gale</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>150</x>
@@ -10728,6 +10729,7 @@
     <id>1370</id>
     <name>A New Order</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>270</x>
@@ -10766,6 +10768,7 @@
     <id>1371</id>
     <name>Artificial Reality</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>390</x>
@@ -10803,6 +10806,7 @@
     <id>1372</id>
     <name>Creeping Doubts</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>510</x>
@@ -10841,6 +10845,7 @@
     <id>1373</id>
     <name>Where Did You Come From?</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>630</x>
@@ -10878,6 +10883,7 @@
     <id>1374</id>
     <name>Already Seen</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>750</x>
@@ -10916,6 +10922,7 @@
     <id>1375</id>
     <name>Bear's First Time</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>870</x>
@@ -10953,6 +10960,7 @@
     <id>1376</id>
     <name>Called Out</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>870</x>
@@ -10991,6 +10999,7 @@
     <id>1377</id>
     <name>False God</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>750</x>
@@ -11028,6 +11037,7 @@
     <id>1378</id>
     <name>Begin Again</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>630</x>
@@ -11066,6 +11076,7 @@
     <id>1379</id>
     <name>Reconstruction</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>510</x>
@@ -11103,6 +11114,7 @@
     <id>1380</id>
     <name>Watch Out</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>390</x>
@@ -11141,6 +11153,7 @@
     <id>1381</id>
     <name>Xerkahn's Air Assault</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>270</x>
@@ -11178,6 +11191,7 @@
     <id>1382</id>
     <name>Flask of Evidence</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>150</x>
@@ -11216,6 +11230,7 @@
     <id>1383</id>
     <name>Knowledge is Power</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>150</x>
@@ -11253,6 +11268,7 @@
     <id>1384</id>
     <name>Secret Potion</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>270</x>
@@ -11291,6 +11307,7 @@
     <id>1385</id>
     <name>News Travels Fast</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>390</x>
@@ -11328,6 +11345,7 @@
     <id>1386</id>
     <name>An Unmissable Offer</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>510</x>
@@ -11366,6 +11384,7 @@
     <id>1387</id>
     <name>Act in Haste</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>630</x>
@@ -11403,6 +11422,7 @@
     <id>1388</id>
     <name>Repent in Leisure</name>
     <icon id="machine_parts_200" bundle="17" />
+    <hidden>1</hidden>
     <battleground_id>2123</battleground_id>
     <location_id>36</location_id>
     <x>750</x>
@@ -12196,7 +12216,6 @@
   <!-- Event 105: Insects ComDev Lightning Node-->
   <campaign>
     <id>4018</id>
-    <event_only>1</event_only>
     <hidden>1</hidden>
     <name>Classic Lightning Nophora's Counterblast</name>
     <location_id>99</location_id>
@@ -12675,5 +12694,42 @@
     </rewards>
     <find_item id="3125" drop_per_energy="1" />
     <find_item id="104501" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
+  <campaign>
+    <id>10126</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>32</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>140</x>
+    <y>540</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10126</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104095" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3122" drop_per_energy="1" />
+    <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>
