@@ -105,17 +105,9 @@ var LOCATIONS = {
 		"id": "32",
 		"name": "Gladius Scriptorium"
 	},
-	"33": {
-		"id": "33",
-		"name": "Skyhaven Assault"
-	},
 	"34": {
 		"id": "34",
 		"name": "Conflux Convergence"
-	},
-	"36": {
-		"id": "36",
-		"name": "Red Feather Valley"
 	},
 	"100": {
 		"id": "100",
