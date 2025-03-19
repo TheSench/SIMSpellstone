@@ -7161,8 +7161,7 @@
   <campaign>
     <id>1267</id>
     <name>Beneath Skyhaven</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="24" level="1" />
+    <hidden>1</hidden>
     <location_id>32</location_id>
     <x>80</x>
     <y>360</y>
@@ -7196,8 +7195,7 @@
   <campaign>
     <id>1268</id>
     <name>Search for Dyrnwyn</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1267" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2107</battleground_id>
     <location_id>32</location_id>
     <x>290</x>
@@ -7235,8 +7233,7 @@
     <name>Arena Rematch</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1267" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2108</battleground_id>
     <location_id>32</location_id>
     <show_level>1</show_level>
@@ -7269,8 +7266,7 @@
   <campaign>
     <id>1270</id>
     <name>Solaron's Domain</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1268" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2109</battleground_id>
     <location_id>32</location_id>
     <x>615</x>
@@ -7305,8 +7301,7 @@
   <campaign>
     <id>1271</id>
     <name>Aether Imbalance</name>
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1270" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2110</battleground_id>
     <location_id>32</location_id>
     <x>840</x>
@@ -9785,8 +9780,7 @@
     <id>1345</id>
     <name>Looking for Glory</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="36" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2119</battleground_id>
     <location_id>32</location_id>
     <x>290</x>
@@ -9822,8 +9816,7 @@
     <id>1346</id>
     <name>The Betrayal</name>
     <icon id="node_gem_yellow" bundle="15" />
-    <!-- <hidden>1</hidden> -->
-    <campaign_req id="1345" level="1" />
+    <hidden>1</hidden>
     <battleground_id>2119</battleground_id>
     <location_id>32</location_id>
     <x>615</x>
@@ -12516,14 +12509,10 @@
   <campaign>
     <id>5017</id>
     <name>Daknak's Love Quest</name>
-    <event_only>1</event_only>
     <hidden>1</hidden>
-    <icon id="heal_128" />
-    <battleground_id>583</battleground_id>
-    <location_id>33</location_id>
-    <x>630</x>
-    <y>550</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <location_id>99</location_id>
+    <x>0</x>
+    <y>0</y>
     <missions>
       <mission_id>2106</mission_id>
       <mission_id>2107</mission_id>
@@ -12540,33 +12529,114 @@
       <mission_id>2118</mission_id>
       <mission_id>2119</mission_id>
     </missions>
+  </campaign>
+  <!-- April Fool's Special Event 2025 -->
+  <campaign>
+    <id>5018</id>
+    <name>Knight Knight, Spellstone</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="KnightNode" bundle="123" />
+    <location_id>31</location_id>
+    <x>450</x>
+    <y>550</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>2120</mission_id>
+      <mission_id>2121</mission_id>
+      <mission_id>2122</mission_id>
+      <mission_id>2123</mission_id>
+      <mission_id>2124</mission_id>
+      <mission_id>2125</mission_id>
+      <mission_id>2126</mission_id>
+      <mission_id>2127</mission_id>
+      <mission_id>2128</mission_id>
+      <mission_id>2129</mission_id>
+      <mission_id>2130</mission_id>
+      <mission_id>2131</mission_id>
+    </missions>
     <rewards>
-      <item level="1" id="518" number="1" />
-      <!-- Thank You Crate -->
-      <item level="2" id="5043" number="1" />
-      <!-- Legendary Heal Rune -->
-      <item level="3" id="104094" number="100" />
-      <!-- Champion Stones -->
-      <item level="4" id="5045" number="1" />
-      <!-- Legendary Heal All Rune -->
-      <item level="5" id="1045" number="1" />
-      <!-- Dungeon Refill +20 -->
-      <item level="6" id="5013" number="1" />
-      <!-- Legendary Health Rune -->
+      <card level="1" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="2" id="2152" />
+      <!-- Bomblet -->
+      <card level="3" id="2153" />
+      <!-- Angry Chicken -->
+      <card level="4" id="2152" />
+      <!-- Bomblet -->
+      <card level="5" id="12153" />
+      <!-- Angry Chicken -->
+      <card level="6" id="12152" />
+      <!-- Bomblet -->
       <item level="7" id="531" number="1" />
       <!-- Special Event Mystery Package -->
     </rewards>
-    <find_item id="3125" drop_per_energy="0.5" />
+    <find_item id="3119" drop_per_energy="0.5" />
   </campaign>
   <!-- ============================================ -->
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9133</id>
+    <name>Skyhaven Assault</name>
+    <campaign_req id="24" level="1" />
+    <location_id>33</location_id>
+    <x>520</x>
+    <y>370</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6550</mission_id>
+      <mission_id>6551</mission_id>
+      <mission_id>6552</mission_id>
+      <mission_id>6553</mission_id>
+      <mission_id>6554</mission_id>
+      <mission_id>6555</mission_id>
+      <mission_id>6556</mission_id>
+      <mission_id>6557</mission_id>
+      <mission_id>6558</mission_id>
+      <mission_id>6559</mission_id>
+      <mission_id>6560</mission_id>
+      <mission_id>6561</mission_id>
+      <mission_id>6567</mission_id>
+      <mission_id>6568</mission_id>
+      <mission_id>6569</mission_id>
+      <mission_id>6570</mission_id>
+      <mission_id>6571</mission_id>
+      <mission_id>6572</mission_id>
+      <mission_id>6573</mission_id>
+      <mission_id>6574</mission_id>
+      <mission_id>6575</mission_id>
+      <mission_id>6576</mission_id>
+      <mission_id>6577</mission_id>
+      <mission_id>6578</mission_id>
+      <mission_id>6579</mission_id>
+      <mission_id>6580</mission_id>
+      <mission_id>6581</mission_id>
+      <mission_id>6582</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="546" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="544" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2205" />
+      <!-- Map Legendary -->
+      <card level="5" id="2205" />
+      <!-- Map Legendary -->
+      <card level="6" id="12205" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3125" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9134</id>
     <name>Conflux Convergence</name>
     <campaign_req id="24" level="1" />
-    <locked_start_time>1738256400</locked_start_time>
-    <!-- Thursday, 30 January 2025 -->
     <location_id>34</location_id>
     <x>530</x>
     <y>370</y>
@@ -12731,5 +12801,42 @@
     </rewards>
     <find_item id="3122" drop_per_energy="1" />
     <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 127: ComDev Undead - Return to Tarragon Peak -->
+  <campaign>
+    <id>10127</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>31</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>480</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10127</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104096" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3119" drop_per_energy="1" />
+    <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

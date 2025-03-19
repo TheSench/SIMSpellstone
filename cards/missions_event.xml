@@ -5967,6 +5967,394 @@
       <!-- Remi, the Banished -->
     </deck>
   </mission>
+  <!-- April Fool's Special Event 2025 -->
+  <mission>
+    <id>2120</id>
+    <name>Knights Unite!</name>
+    <energy>1</energy>
+    <desc>STRIKE! After years of physical and mental abuse, The Knights of Arcantica have decided to band together with one goal in mind: survival... and perhaps a pension plan.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8117" />
+      <card id="8117" />
+      <card id="8117" mastery_level="2" />
+      <card id="8117" mastery_level="3" />
+      <card id="8112" mastery_level="4" />
+      <card id="8109" mastery_level="5" />
+      <card id="8109" mastery_level="6" />
+      <card id="8112" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_002</commander>
+        <enemy>1</enemy>
+        <text>What do we want? Safe working conditions and resonable compenstation! When do want it? NOW!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2121</id>
+    <name>Knightmare Story</name>
+    <energy>1</energy>
+    <desc>NOW HIRING: Seeking young, able-bodied heroes with a thirst for adventure. Tasks may include heavy manual and skilled work including hacking, slashing, and beast slaying. No experience required.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8108" mastery_level="2" />
+      <card id="8112" mastery_level="3" />
+      <card id="8108" mastery_level="4" />
+      <card id="8112" mastery_level="5" />
+      <card id="8112" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_002</commander>
+        <enemy>1</enemy>
+        <text>Replace us? REPLACE US?! Why don't you replace my missing limbs, you bunch of dragon licking gold sticklers!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2122</id>
+    <name>Knight Life</name>
+    <energy>1</energy>
+    <desc>HELP WANTED: Love exotic animals? Want to travel Arcantica? Have an itch to save the world? Apply within! Must maintain immune response to exposure to infectious and parasitic diseases. Health benefits not included.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8116" />
+      <card id="8116" />
+      <card id="8116" />
+      <card id="8108" mastery_level="2" />
+      <card id="8112" mastery_level="3" />
+      <card id="8116" mastery_level="4" />
+      <card id="8117" mastery_level="5" />
+      <card id="8117" mastery_level="6" />
+      <card id="8116" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_001</commander>
+        <enemy>1</enemy>
+        <text>It's turning green. I don't... I don't think it should be turning green. You think I should get it checked?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2123</id>
+    <name>Friday Knight Lights</name>
+    <energy>1</energy>
+    <desc>SUMMER INTERNSHIP: Gain exposure, real world experience, and a life-time of bragging rights. Must be available to work all necessary hours, including weekends, holidays, special events and all shifts. Unpaid.</desc>
+    <commander id="410" />
+    <deck>
+      <card id="8112" />
+      <card id="8112" />
+      <card id="8108" />
+      <card id="8108" />
+      <card id="8117" />
+      <card id="8117" />
+      <card id="8109" />
+      <card id="8109" />
+      <card id="8116" />
+      <card id="8116" mastery_level="2" />
+      <card id="8117" mastery_level="3" />
+      <card id="8109" mastery_level="4" />
+      <card id="8108" mastery_level="5" />
+      <card id="8117" mastery_level="6" />
+      <card id="8112" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>1</enemy>
+        <text>THIS WAS SUPPOSED TO BE FOR COLLEGE CREDIT!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2124</id>
+    <name>Toknight We Fight!</name>
+    <energy>1</energy>
+    <desc>There once was a knight named Toknight. Who had dreams of daring, and might. With his parents to blame, for his prophetic name, he sought out to claim his birthright.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8115" mastery_level="2" />
+      <card id="8115" mastery_level="3" />
+      <card id="8110" mastery_level="4" />
+      <card id="8118" mastery_level="5" />
+      <card id="8110" mastery_level="6" />
+      <card id="8118" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>TAP TAP- Is this thing on? Can ev'body hear me? Yo! WHAT'S UP SKYHAAAAAVEN?!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>Yo! I got a special tale for ya' tonight- it's a tale so tall it will fill you with fright!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>Prepare yourself, for the story of Toknight the knight... tonight.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2125</id>
+    <name>Toknight We Dine in Heck!</name>
+    <energy>1</energy>
+    <desc>He traveled the land far and wide, seeking adventure to assuage his pride. He sought to slay beasts and to perform many feats, but only found himself terrified.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8110" mastery_level="2" />
+      <card id="8110" mastery_level="3" />
+      <card id="8115" mastery_level="4" />
+      <card id="8118" mastery_level="5" />
+      <card id="8115" mastery_level="6" />
+      <card id="8118" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>(Listen. Feats and Beasts is close enough, okay? Limericking ain't easy.)</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2126</id>
+    <name>Hot Date, Toknight</name>
+    <energy>1</energy>
+    <desc>So many fangs! So many scales! So many claws! Beasts with talons, tenticles, and paws! Some had eight eyes, and horrifying cries, to expose Toknight's fears and his flaws.</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8118" mastery_level="2" />
+      <card id="8118" mastery_level="3" />
+      <card id="8110" mastery_level="4" />
+      <card id="8115" mastery_level="5" />
+      <card id="8110" mastery_level="6" />
+      <card id="8115" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_001</commander>
+        <enemy>1</enemy>
+        <text>(Before you ask, no, there are no translations for this. You are welcome to try.)</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2127</id>
+    <name>No Sleep Toknight!</name>
+    <energy>1</energy>
+    <desc>No true knight, not even a squire, would quake in fear as I pose and spit fire. With pure rhythm and rhyme, and sick beats in set time. I'm Arcantica's Greatest, Fury Mecha Scyer!</desc>
+    <commander id="409" />
+    <deck>
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8118" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8110" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8115" />
+      <card id="8108" mastery_level="2" />
+      <card id="8109" mastery_level="3" />
+      <card id="8117" mastery_level="4" />
+      <card id="8116" mastery_level="5" />
+      <card id="8108" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>1</enemy>
+        <text>You can catch my latest single on my website!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2128</id>
+    <name>A Good Knight to Die</name>
+    <energy>1</energy>
+    <desc>RAAAAAAAAAAAAAAAAWR. Rwar raw rawr raaaaaaa ra rwar! RAWR RAWR!</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8111" mastery_level="2" />
+      <card id="8111" mastery_level="3" />
+      <card id="8113" mastery_level="4" />
+      <card id="8114" mastery_level="5" />
+      <card id="8113" mastery_level="6" />
+      <card id="8114" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Haven't had enough, eh? COME ON THEN!</text>
+      </line>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Ye don't have any Dragons over there, do ye? I hate Dragons...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2129</id>
+    <name>All Knighter</name>
+    <energy>1</energy>
+    <desc>Raw raaaaar rawr ra? Rawr. Ra ra rawr. Rarawr, rawr raaaaawr raa rwar rawr.</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8113" mastery_level="2" />
+      <card id="8113" mastery_level="3" />
+      <card id="8111" mastery_level="4" />
+      <card id="8114" mastery_level="5" />
+      <card id="8111" mastery_level="6" />
+      <card id="8114" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>Take this! And this! And... this! YEAH! AND THE LITTLE ONE TOO!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2130</id>
+    <name>A Knight to Remember</name>
+    <energy>1</energy>
+    <desc>RAWR! RA RAW RAAAAAWR!</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8117" />
+      <card id="8108" />
+      <card id="8112" />
+      <card id="8109" />
+      <card id="8114" mastery_level="2" />
+      <card id="8114" mastery_level="3" />
+      <card id="8113" mastery_level="4" />
+      <card id="8111" mastery_level="5" />
+      <card id="8113" mastery_level="6" />
+      <card id="8111" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>KICK IT! KICK IT AGAIN!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>2131</id>
+    <name>Good Knight and Good Luck</name>
+    <energy>1</energy>
+    <desc>Raaaaaaawr. :'(</desc>
+    <commander id="411" />
+    <deck>
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8111" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8113" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8114" />
+      <card id="8108" mastery_level="2" />
+      <card id="8109" mastery_level="3" />
+      <card id="8117" mastery_level="4" />
+      <card id="8116" mastery_level="5" />
+      <card id="8108" mastery_level="6" />
+      <card id="8109" mastery_level="7" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Knight_003</commander>
+        <enemy>1</enemy>
+        <text>... Wait... are we the bad guys?</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Event 105: Insects ComDev -->
   <mission>
     <id>7116</id>
@@ -18998,6 +19386,47 @@
       <!-- Whitesail Wyvern -->
       <card id="1345" />
       <!-- Owltron -->
+    </deck>
+  </mission>
+  <!-- Event 127: ComDev Undead - Return to Tarragon Peak -->
+  <mission>
+    <id>10127</id>
+    <name>Return to Tarragon Peak</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Dragon Talons in the Dragon Spirits to power up your cards.</desc>
+    <commander id="339" />
+    <!-- Marrowsworn the Tyrant -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="2158" />
+      <!-- Mortagan, Grave General -->
+      <card id="4049" />
+      <!-- Morty Ahab, Seaturned -->
+      <card id="4035" />
+      <!-- Vasile, the Night Duke -->
+      <card id="4064" />
+      <!-- Darkassan, the Creeper -->
+      <card id="4084" />
+      <!-- Milax, Guardian of the Shade -->
+      <card id="4500" />
+      <!-- Sneggle, the Insatiable -->
+      <card id="4503" />
+      <!-- Acheron, the Retaliator -->
+      <card id="7622" />
+      <!-- Gravy, the Ravenlyte -->
+      <card id="5083" />
+      <!-- Honor Bound -->
+      <card id="5222" />
+      <!-- Automaburner -->
+      <card id="6168" />
+      <!-- Chainwhip Spirit -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="1342" />
+      <!-- Ronin -->
+      <card id="1644" />
+      <!-- Blackfin -->
     </deck>
   </mission>
 </root>

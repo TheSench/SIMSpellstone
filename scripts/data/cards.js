@@ -82840,13 +82840,201 @@ var CARDS = {
 		}
 	},
 	"4096": {
+		"attack": 4,
+		"card_type": "2",
+		"cost": 2,
+		"health": 31,
+		"hidden_until": "1743094800000",
+		"id": "4096",
+		"maxLevel": 10,
+		"name": "Briareus, the Overgrowth",
+		"picture": "Undead_Multi-Headed_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "regenerate",
+				"x": 8
+			},
+			{
+				"id": "valor",
+				"x": 9
+			},
+			{
+				"id": "leech",
+				"x": 12
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 8
+					},
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"id": "leech",
+						"x": 13
+					}
+				]
+			},
+			"3": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "leech",
+						"x": 13
+					}
+				]
+			},
+			"4": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"id": "leech",
+						"x": 14
+					}
+				]
+			},
+			"5": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"id": "leech",
+						"x": 14
+					}
+				]
+			},
+			"6": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"id": "valor",
+						"x": 12
+					},
+					{
+						"id": "leech",
+						"x": 15
+					}
+				]
+			},
+			"7": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"id": "valor",
+						"x": 12
+					},
+					{
+						"id": "leech",
+						"x": 15
+					}
+				]
+			},
+			"8": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"id": "valor",
+						"x": 13
+					},
+					{
+						"id": "leech",
+						"x": 16
+					}
+				]
+			},
+			"9": {
+				"health": 35,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"id": "valor",
+						"x": 13
+					},
+					{
+						"id": "leech",
+						"x": 16
+					}
+				]
+			},
+			"10": {
+				"attack": 4,
+				"health": 36,
+				"skill": [
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"id": "valor",
+						"x": 14
+					},
+					{
+						"id": "leech",
+						"x": 17
+					}
+				]
+			}
+		}
+	},
+	"4097": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1743094800000",
-		"id": "4096",
+		"hidden_until": "1745514000000",
+		"id": "4097",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -82855,7 +83043,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"7"
+			"5"
 		],
 		"type": "0",
 		"upgrades": {
@@ -121864,7 +122052,7 @@ var CARDS = {
 		"attack": 9,
 		"card_type": "2",
 		"cost": 2,
-		"health": 27,
+		"health": 28,
 		"id": "5644",
 		"maxLevel": 10,
 		"name": "Katerina, Snowfang",
@@ -121895,12 +122083,12 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 10,
-				"health": 28,
+				"health": 29,
 				"skill": []
 			},
 			"3": {
 				"attack": 11,
-				"health": 29,
+				"health": 30,
 				"skill": []
 			},
 			"4": {
@@ -121923,7 +122111,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 30,
+				"health": 31,
 				"skill": [
 					{
 						"id": "armored",
@@ -121943,7 +122131,7 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 13,
-				"health": 31,
+				"health": 32,
 				"skill": [
 					{
 						"id": "armored",
@@ -121981,7 +122169,7 @@ var CARDS = {
 				]
 			},
 			"8": {
-				"health": 32,
+				"health": 33,
 				"skill": [
 					{
 						"id": "armored",
@@ -122001,12 +122189,12 @@ var CARDS = {
 			},
 			"9": {
 				"attack": 15,
-				"health": 33,
+				"health": 34,
 				"skill": []
 			},
 			"10": {
 				"attack": 15,
-				"health": 34,
+				"health": 35,
 				"skill": [
 					{
 						"id": "armored",
@@ -151977,7 +152165,7 @@ var CARDS = {
 		}
 	},
 	"6605": {
-		"attack": 5,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 1,
 		"health": 20,
@@ -152146,7 +152334,7 @@ var CARDS = {
 				]
 			},
 			"10": {
-				"attack": 5,
+				"attack": 12,
 				"health": 26,
 				"skill": [
 					{
@@ -153637,7 +153825,7 @@ var CARDS = {
 		"attack": 11,
 		"card_type": "2",
 		"cost": 3,
-		"health": 40,
+		"health": 44,
 		"hidden_until": "1629392400000",
 		"id": "6614",
 		"maxLevel": 10,
@@ -153649,7 +153837,7 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "stasis",
-				"x": 5
+				"x": 6
 			},
 			{
 				"id": "counterburn",
@@ -153668,11 +153856,11 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"health": 41,
+				"health": 45,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "counterburn",
@@ -153691,7 +153879,7 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "counterburn",
@@ -153706,11 +153894,11 @@ var CARDS = {
 				]
 			},
 			"4": {
-				"health": 42,
+				"health": 46,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "counterburn",
@@ -153726,11 +153914,11 @@ var CARDS = {
 			},
 			"5": {
 				"attack": 13,
-				"health": 43,
+				"health": 47,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 6
+						"x": 7
 					},
 					{
 						"id": "counterburn",
@@ -153746,14 +153934,14 @@ var CARDS = {
 			},
 			"6": {
 				"attack": 14,
-				"health": 44,
+				"health": 48,
 				"skill": []
 			},
 			"7": {
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "counterburn",
@@ -153768,11 +153956,11 @@ var CARDS = {
 				]
 			},
 			"8": {
-				"health": 45,
+				"health": 49,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "counterburn",
@@ -153787,11 +153975,11 @@ var CARDS = {
 				]
 			},
 			"9": {
-				"health": 46,
+				"health": 50,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "counterburn",
@@ -153807,11 +153995,11 @@ var CARDS = {
 			},
 			"10": {
 				"attack": 15,
-				"health": 46,
+				"health": 50,
 				"skill": [
 					{
 						"id": "stasis",
-						"x": 7
+						"x": 8
 					},
 					{
 						"id": "counterburn",
@@ -154027,7 +154215,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"6"
+			"6",
+			"7"
 		],
 		"type": "2",
 		"upgrades": {

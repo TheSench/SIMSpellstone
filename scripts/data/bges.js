@@ -3411,6 +3411,43 @@ var BATTLEGROUNDS = {
 		"id": "190",
 		"name": "Ravenous Raptors"
 	},
+	"191": {
+		"desc": "All Undead gain 10% Siphon. Also, 0-2D Undead gain 20% Poison and 3-4D Undead gain 15% Poisonhide. All values based on Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.1,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "poison",
+				"mult": 0.2,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "poisonhide",
+				"mult": 0.15,
+				"y": "7"
+			}
+		],
+		"id": "191",
+		"name": "Rot and Decay"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
