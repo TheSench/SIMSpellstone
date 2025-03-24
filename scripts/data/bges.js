@@ -3440,7 +3440,7 @@ var BATTLEGROUNDS = {
 					4
 				],
 				"effect_type": "add_skill",
-				"id": "poisonhide",
+				"id": "counterpoison",
 				"mult": 0.15,
 				"y": "7"
 			}

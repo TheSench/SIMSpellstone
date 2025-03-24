@@ -1915,7 +1915,7 @@
     <effect>
       <add_skill id="leech" mult="0.1" base="health" y="7" />
       <add_skill id="poison" mult="0.2" base="health" y="7" delay="0,1,2" />
-      <add_skill id="poisonhide" mult="0.15" base="health" y="7" delay="3,4" />
+      <add_skill id="counterpoison" mult="0.15" base="health" y="7" delay="3,4" />
     </effect>
   </battleground>
   <!-- ================================= -->
