@@ -105,10 +105,6 @@ var LOCATIONS = {
 		"id": "31",
 		"name": "Return to Tarragon Peak"
 	},
-	"32": {
-		"id": "32",
-		"name": "Gladius Scriptorium"
-	},
 	"33": {
 		"id": "33",
 		"name": "Skyhaven Assault"
