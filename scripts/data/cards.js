@@ -83028,13 +83028,229 @@ var CARDS = {
 		}
 	},
 	"4097": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 31,
+		"hidden_until": "1745514000000",
+		"id": "4097",
+		"maxLevel": 10,
+		"name": "Yorick, the Unseen",
+		"picture": "Victorian_Card_Ghost_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "poisonstrike",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 11,
+				"health": 31,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"health": 32,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"attack": 12,
+				"health": 32,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"attack": 13,
+				"health": 33,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"health": 34,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"attack": 14,
+				"health": 34,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 4
+					}
+				]
+			},
+			"8": {
+				"attack": 14,
+				"health": 35,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 4
+					}
+				]
+			},
+			"9": {
+				"attack": 15,
+				"health": 35,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 5
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 36,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"4098": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1745514000000",
-		"id": "4097",
+		"hidden_until": "1747933200000",
+		"id": "4098",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -83043,7 +83259,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"5"
+			"4"
 		],
 		"type": "0",
 		"upgrades": {

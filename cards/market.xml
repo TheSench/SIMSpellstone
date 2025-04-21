@@ -1666,6 +1666,7 @@
       <item id="104092" />
       <item id="104093" />
       <item id="104094" />
+      <item id="104095" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1875,6 +1876,7 @@
       <item id="104092" number="50" purchase1="25" scalar="5" />
       <item id="104093" number="50" purchase1="25" scalar="5" />
       <item id="104094" number="50" purchase1="25" scalar="5" />
+      <item id="104095" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2370,77 +2372,4 @@
     <item id="1023" quantity="5" />
   </store_item>
   <!-- 5005- : Old events removed. See old versions for archive. -->
-  <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
-  <store_item>
-    <id>5434</id>
-    <name>Lechuza Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFLechuza, the Skybinder^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_071_gravitywizard</asset_prefab>
-    <background_prefab>event_071_banner_gravitywizard</background_prefab>
-    <bundle>208</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107616" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5435</id>
-    <name>Saucy Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFSaucy, Lady of the Cauldron^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_079_turkeywitch_championpack</asset_prefab>
-    <background_prefab>event_079_turkeywitch_banner</background_prefab>
-    <bundle>225</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107621" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5436</id>
-    <name>Rago Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFRago, Crimson Vicar^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_054_avianpriest</asset_prefab>
-    <background_prefab>event_054_banner_avianpriest</background_prefab>
-    <bundle>167</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107605" quantity="125" />
-  </store_item>
-  <store_item>
-    <id>5437</id>
-    <name>Tzopilotl Stone Stockpile</name>
-    <banner>1</banner>
-    <category>1</category>
-    <hidden>1</hidden>
-    <event_only>1</event_only>
-    <priority>300</priority>
-    <desc>Gives 125 Champion Stones for ^cE7FFTzopilotl, the Beyonder^cFFFF! May be purchased 12 times.</desc>
-    <asset_prefab>event_066_mummycondor</asset_prefab>
-    <background_prefab>event_066_banner_mummycondor</background_prefab>
-    <bundle>197</bundle>
-    <icon>championStone_epic</icon>
-    <icon_bundle>58</icon_bundle>
-    <hc_cost>150</hc_cost>
-    <show_list>1</show_list>
-    <item id="107612" quantity="125" />
-  </store_item>
 </root>

@@ -7782,16 +7782,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2603" number="25" />
-      <!-- Dragon Flasks -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2210" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2123" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2603" number="75" />
-      <!-- Dragon Flasks -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
@@ -7818,16 +7818,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2603" number="25" />
-      <!-- Dragon Flasks -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2164" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2124" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2603" number="75" />
-      <!-- Dragon Flasks -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
@@ -7855,16 +7855,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2604" number="25" />
-      <!-- Insect Flasks -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2212" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2099" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2604" number="75" />
-      <!-- Insect Flasks -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
@@ -7891,16 +7891,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2604" number="25" />
-      <!-- Insect Flasks -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2131" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2157" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2604" number="75" />
-      <!-- Insect Flasks -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2211" />
       <!-- Map Legendary -->
     </rewards>
@@ -7928,16 +7928,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2605" number="25" />
-      <!-- Goblin Flasks -->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2213" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2194" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2605" number="75" />
-      <!-- Goblin Flasks -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
@@ -7964,16 +7964,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2605" number="25" />
-      <!-- Goblin Flasks -->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2171" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2125" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2605" number="75" />
-      <!-- Goblin Flasks -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
@@ -8001,16 +8001,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2606" number="25" />
-      <!-- Celestial Flasks -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2215" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2166" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2606" number="75" />
-      <!-- Celestial Flasks -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
@@ -8037,16 +8037,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2606" number="25" />
-      <!-- Celestial Flasks -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2202" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2119" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2606" number="75" />
-      <!-- Celestial Flasks -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2214" />
       <!-- Map Legendary -->
     </rewards>
@@ -8074,16 +8074,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2613" number="25" />
-      <!-- Red Valley Flasks -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2216" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2059" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2613" number="75" />
-      <!-- Red Valley Flasks -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
@@ -8110,16 +8110,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2613" number="25" />
-      <!-- Red Valley Flaskss -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2191" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2140" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2613" number="75" />
-      <!-- Red Valley Flasks -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
@@ -8147,16 +8147,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2614" number="25" />
-      <!-- Pharos Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2218" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2148" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2614" number="75" />
-      <!-- Pharos Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
@@ -8183,16 +8183,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2614" number="25" />
-      <!-- Pharos Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2077" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2078" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2614" number="75" />
-      <!-- Pharos Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2217" />
       <!-- Map Legendary -->
     </rewards>
@@ -8238,16 +8238,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2624" number="25" />
-      <!-- Skyhaven Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2219" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2030" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2624" number="75" />
-      <!-- Skyhaven Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
@@ -8274,16 +8274,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2624" number="25" />
-      <!-- Skyhaven Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2204" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2141" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2624" number="75" />
-      <!-- Skyhaven Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
@@ -8311,16 +8311,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2625" number="25" />
-      <!-- Fireshard Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2221" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2144" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2625" number="75" />
-      <!-- Fireshard Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
@@ -8347,16 +8347,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2625" number="25" />
-      <!-- Fireshard Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2168" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2193" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2625" number="75" />
-      <!-- Fireshard Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2220" />
       <!-- Map Legendary -->
     </rewards>
@@ -8398,16 +8398,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2626" number="25" />
-      <!-- Healed Dawnglow Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2222" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2216" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2626" number="75" />
-      <!-- Healed Dawnglow Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
@@ -8434,16 +8434,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2626" number="25" />
-      <!-- Healed Dawnglow Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2107" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2182" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2626" number="75" />
-      <!-- Healed Dawnglow Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
@@ -8487,16 +8487,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2633" number="25" />
-      <!-- World's Center Flask -->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2224" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2062" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2633" number="75" />
-      <!-- World's Center Flask -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
@@ -8523,16 +8523,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2633" number="25" />
-      <!-- World's Center Flask -->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2053" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2102" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2633" number="75" />
-      <!-- World's Center Flask -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2223" />
       <!-- Map Legendary -->
     </rewards>
@@ -8560,16 +8560,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2634" number="25" />
-      <!-- The Abyss Flask -->
+      <item level="2" id="28180" number="25" />
+      <!-- Elemental Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2226" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2138" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2634" number="75" />
-      <!-- The Abyss Flask -->
+      <item level="6" id="28180" number="75" />
+      <!-- Elemental Super Flask -->
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
@@ -8596,16 +8596,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2634" number="25" />
-      <!-- The Abyss Flask -->
+      <item level="2" id="28180" number="25" />
+      <!-- Elemental Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2137" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2056" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2634" number="75" />
-      <!-- The Abyss Flask -->
+      <item level="6" id="28180" number="75" />
+      <!-- Elemental Super Flask -->
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
@@ -8633,16 +8633,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2635" number="25" />
-      <!-- Stormy Seastone Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2227" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2130" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2635" number="75" />
-      <!-- Stormy Seastone Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
@@ -8669,16 +8669,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2635" number="25" />
-      <!-- Stormy Seastone Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2176" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2129" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2635" number="75" />
-      <!-- Stormy Seastone Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2225" />
       <!-- Map Legendary -->
     </rewards>
@@ -8706,16 +8706,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2639" number="25" />
-      <!-- Tarragon Traverse Flask -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2228" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2197" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2639" number="75" />
-      <!-- Tarragon Traverse Flask -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
@@ -8742,16 +8742,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2639" number="25" />
-      <!-- Tarragon Traverse Flask -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2123" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2141" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2639" number="75" />
-      <!-- Tarragon Traverse Flask -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
@@ -8797,16 +8797,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2640" number="25" />
-      <!-- Elaria Holy Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2230" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2177" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2640" number="75" />
-      <!-- Elaria Holy Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
@@ -8833,16 +8833,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2640" number="25" />
-      <!-- Elaria Holy Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2219" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2052" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2640" number="75" />
-      <!-- Elaria Holy Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2229" />
       <!-- Map Legendary -->
     </rewards>
@@ -8870,16 +8870,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2641" number="25" />
-      <!-- Frigore Flask -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2231" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2041" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2641" number="75" />
-      <!-- Frigore Flask -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2232" />
       <!-- Map Legendary -->
     </rewards>
@@ -8906,16 +8906,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2641" number="25" />
-      <!-- Frigore Flask -->
+      <item level="2" id="28230" number="25" />
+      <!-- Avian Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2081" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2125" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2641" number="75" />
-      <!-- Frigore Flask -->
+      <item level="6" id="28230" number="75" />
+      <!-- Avian Super Flask -->
       <card level="7" id="2232" />
       <!-- Map Legendary -->
     </rewards>
@@ -8943,16 +8943,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2642" number="25" />
-      <!-- Forgotten Flask -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2234" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2179" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2642" number="75" />
-      <!-- Forgotten Flask -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2232" />
       <!-- Map Legendary -->
     </rewards>
@@ -8979,16 +8979,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2642" number="25" />
-      <!-- Forgotten Flask -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2156" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2050" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2642" number="75" />
-      <!-- Forgotten Flask -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2232" />
       <!-- Map Legendary -->
     </rewards>
@@ -9016,16 +9016,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2655" number="25" />
-      <!-- Duskwillow Rebuilt Flask -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2235" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2024" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2655" number="75" />
-      <!-- Duskwillow Rebuilt Flask -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2236" />
       <!-- Map Legendary -->
     </rewards>
@@ -9052,16 +9052,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2655" number="25" />
-      <!-- Duskwillow Rebuilt Flask -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2159" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2140" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2655" number="75" />
-      <!-- Duskwillow Rebuilt Flask -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2236" />
       <!-- Map Legendary -->
     </rewards>
@@ -9162,16 +9162,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2663" number="25" />
-      <!-- Void Plane Flask -->
+      <item level="2" id="28180" number="25" />
+      <!-- Elemental Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2238" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2168" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2663" number="75" />
-      <!-- Void Plane Flask -->
+      <item level="6" id="28180" number="75" />
+      <!-- Elemental Super Flask -->
       <card level="7" id="2239" />
       <!-- Map Legendary -->
     </rewards>
@@ -9198,16 +9198,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2663" number="25" />
-      <!-- Void Plane Flask -->
+      <item level="2" id="28180" number="25" />
+      <!-- Elemental Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2058" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2095" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2663" number="75" />
-      <!-- Void Plane Flask -->
+      <item level="6" id="28180" number="75" />
+      <!-- Elemental Super Flask -->
       <card level="7" id="2239" />
       <!-- Map Legendary -->
     </rewards>
@@ -9254,16 +9254,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2664" number="25" />
-      <!-- Salt Wastes Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2240" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2127" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2664" number="75" />
-      <!-- Salt Wastes Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2239" />
       <!-- Map Legendary -->
     </rewards>
@@ -9290,16 +9290,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2664" number="25" />
-      <!-- Salt Wastes Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2163" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2221" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2664" number="75" />
-      <!-- Salt Wastes Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2239" />
       <!-- Map Legendary -->
     </rewards>
@@ -9341,16 +9341,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2665" number="25" />
-      <!-- Duskwillow Wastes Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2242" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2132" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2665" number="75" />
-      <!-- Duskwillow Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2241" />
       <!-- Map Legendary -->
     </rewards>
@@ -9378,16 +9378,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2665" number="25" />
-      <!-- Duskwillow Flask -->
+      <item level="2" id="28250" number="25" />
+      <!-- Seafolk Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2151" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2150" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2665" number="75" />
-      <!-- Duskwillow Flask -->
+      <item level="6" id="28250" number="75" />
+      <!-- Seafolk Super Flask -->
       <card level="7" id="2241" />
       <!-- Map Legendary -->
     </rewards>
@@ -9416,16 +9416,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2672" number="25" />
-      <!-- Golden Flask test-->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2243" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2213" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2672" number="75" />
-      <!-- Golden Flask -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2244" />
       <!-- Map Legendary -->
     </rewards>
@@ -9452,16 +9452,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2672" number="25" />
-      <!-- Golden Flask -->
+      <item level="2" id="28240" number="25" />
+      <!-- Goblin Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2125" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2148" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2672" number="75" />
-      <!-- Golden Flask -->
+      <item level="6" id="28240" number="75" />
+      <!-- Goblin Super Flask -->
       <card level="7" id="2244" />
       <!-- Map Legendary -->
     </rewards>
@@ -9505,16 +9505,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2673" number="25" />
-      <!-- Void Invasion Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2245" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2204" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2673" number="75" />
-      <!-- Void Invasion Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2244" />
       <!-- Map Legendary -->
     </rewards>
@@ -9541,16 +9541,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2673" number="25" />
-      <!-- Void Invasion Flask -->
+      <item level="2" id="28190" number="25" />
+      <!-- Angel Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2203" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2219" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2673" number="75" />
-      <!-- Void invasion Flask -->
+      <item level="6" id="28190" number="75" />
+      <!-- Angel Super Flask -->
       <card level="7" id="2244" />
       <!-- Map Legendary -->
     </rewards>
@@ -9578,16 +9578,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2604" number="25" />
-      <!-- Insect Flasks -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2246" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2179" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2604" number="75" />
-      <!-- Insect Flasks -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
@@ -9614,16 +9614,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2604" number="25" />
-      <!-- Insect Flasks -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2246" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2157" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2604" number="75" />
-      <!-- Insect Flasks -->
+      <item level="6" id="28260" number="75" />
+      <!-- Insect Super Flask -->
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
@@ -9651,16 +9651,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2603" number="25" />
-      <!-- Dragon Flasks -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2248" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2004" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2603" number="75" />
-      <!-- Dragon Flasks -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
@@ -9687,16 +9687,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2603" number="25" />
-      <!-- Dragon Flasks -->
+      <item level="2" id="28220" number="25" />
+      <!-- Dragon Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2066" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2046" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2603" number="75" />
-      <!-- Dragon Flasks -->
+      <item level="6" id="28220" number="75" />
+      <!-- Dragon Super Flask -->
       <card level="7" id="2247" />
       <!-- Map Legendary -->
     </rewards>
@@ -9724,16 +9724,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2664" number="25" />
-      <!-- Salt Wastes Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2249" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2183" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2664" number="75" />
-      <!-- Salt Wastes Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
@@ -9760,16 +9760,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2664" number="25" />
-      <!-- Salt Wastes Flask -->
+      <item level="2" id="28170" number="25" />
+      <!-- Frog Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2014" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2184" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2664" number="75" />
-      <!-- Salt Wastes Flask -->
+      <item level="6" id="28170" number="75" />
+      <!-- Frog Super Flask -->
       <card level="7" id="2250" />
       <!-- Map Legendary -->
     </rewards>
@@ -9870,16 +9870,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2681" number="25" />
-      <!-- Stormy Seastone Flask -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2252" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2023" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2681" number="75" />
-      <!-- Stormy Seastone Flask -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2253" />
       <!-- Map Legendary -->
     </rewards>
@@ -9906,16 +9906,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2681" number="25" />
-      <!-- Stormy Seastone Flask -->
+      <item level="2" id="28200" number="25" />
+      <!-- Undead Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2174" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2060" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2681" number="75" />
-      <!-- Stormy Seastone Flask -->
+      <item level="6" id="28200" number="75" />
+      <!-- Undead Super Flask -->
       <card level="7" id="2253" />
       <!-- Map Legendary -->
     </rewards>
@@ -9943,16 +9943,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2682" number="25" />
-      <!-- Return to Luminis Ultimate Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2254" />
       <!-- Epic Reward A (New) -->
       <card level="5" id="2144" />
       <!-- Epic Reward B (Old) -->
-      <item level="6" id="2682" number="75" />
-      <!-- Return to Luminis Ultimate Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2253" />
       <!-- Map Legendary -->
     </rewards>
@@ -9979,16 +9979,16 @@
     <rewards>
       <card level="1" id="511" />
       <!-- Arcane Ore -->
-      <item level="2" id="2682" number="25" />
-      <!-- Return to Luminis Ultimate Flask -->
+      <item level="2" id="28290" number="25" />
+      <!-- Mecha Super Flask -->
       <card level="3" id="511" />
       <!-- Arcane Ore -->
       <card level="4" id="2221" />
       <!-- Epic Reward C (Old) -->
       <card level="5" id="2192" />
       <!-- Epic Reward D (Old) -->
-      <item level="6" id="2682" number="75" />
-      <!-- Return to Luminis Ultimate Flask -->
+      <item level="6" id="28290" number="75" />
+      <!-- Mecha Super Flask -->
       <card level="7" id="2253" />
       <!-- Map Legendary -->
     </rewards>
@@ -10024,18 +10024,18 @@
     <rewards>
       <card level="1" id="2255" />
       <!-- New Reward Epic -->
-      <item level="2" id="2683" number="25" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="2255" />
       <!-- New Reward Epic -->
       <card level="4" id="2256" />
       <!-- New Reward Legendary -->
-      <item level="5" id="2683" number="50" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="5" id="28260" number="50" />
+      <!-- Insect Super Flask -->
       <card level="6" id="2256" />
       <!-- New Reward Legendary -->
-      <item level="7" id="2683" number="125" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="7" id="28260" number="125" />
+      <!-- Insect Super Flask -->
     </rewards>
     <find_item id="3092" drop_per_energy="0.5" />
   </campaign>
@@ -10062,18 +10062,18 @@
     <rewards>
       <card level="1" id="2255" />
       <!-- New Reward Epic -->
-      <item level="2" id="2683" number="25" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="2" id="28260" number="25" />
+      <!-- Insect Super Flask -->
       <card level="3" id="2255" />
       <!-- New Reward Epic -->
       <card level="4" id="2256" />
       <!-- New Reward Legendary -->
-      <item level="5" id="2683" number="50" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="5" id="28260" number="50" />
+      <!-- Insect Super Flask -->
       <card level="6" id="2256" />
       <!-- New Reward Legendary -->
-      <item level="7" id="2683" number="125" />
-      <!-- New Distorted Beetleton Flask -->
+      <item level="7" id="28260" number="125" />
+      <!-- Insect Super Flask -->
     </rewards>
     <find_item id="3092" drop_per_energy="0.5" />
   </campaign>
@@ -10101,8 +10101,8 @@
       <mission_id>7139</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2700" number="50" />
-      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <item level="1" id="28240" number="50" />
+      <!-- Goblin Super Flask -->
       <card level="2" id="512" />
       <!-- Arcane Deposit -->
       <card level="3" id="511" />
@@ -10113,8 +10113,8 @@
       <!-- Kheptronos Reward Legendary -->
       <card level="6" id="511" />
       <!-- Arcane Ore -->
-      <item level="7" id="2700" number="150" />
-      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <item level="7" id="28240" number="150" />
+      <!-- Goblin Super Flask -->
     </rewards>
     <find_item id="3116" drop_per_energy="0.5" />
   </campaign>
@@ -10141,8 +10141,8 @@
       <mission_id>7145</mission_id>
     </missions>
     <rewards>
-      <item level="1" id="2700" number="50" />
-      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <item level="1" id="28240" number="50" />
+      <!-- Goblin Super Flask -->
       <card level="2" id="512" />
       <!-- Arcane Deposit -->
       <card level="3" id="2100" />
@@ -10153,8 +10153,8 @@
       <!-- Kheptronos Reward Legendary -->
       <card level="6" id="2100" />
       <!-- Kheptronos Reward Legendary -->
-      <item level="7" id="2700" number="150" />
-      <!-- New Return to Karthos Flask in items_dsvn3j.xml -->
+      <item level="7" id="28240" number="150" />
+      <!-- Goblin Super Flask -->
     </rewards>
     <find_item id="3116" drop_per_energy="0.5" />
   </campaign>
@@ -12577,6 +12577,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9132</id>
+    <name>Gladius Scriptorium</name>
+    <campaign_req id="24" level="1" />
+    <location_id>32</location_id>
+    <x>450</x>
+    <y>240</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6522</mission_id>
+      <mission_id>6523</mission_id>
+      <mission_id>6524</mission_id>
+      <mission_id>6525</mission_id>
+      <mission_id>6526</mission_id>
+      <mission_id>6527</mission_id>
+      <mission_id>6528</mission_id>
+      <mission_id>6529</mission_id>
+      <mission_id>6530</mission_id>
+      <mission_id>6531</mission_id>
+      <mission_id>6532</mission_id>
+      <mission_id>6533</mission_id>
+      <mission_id>6534</mission_id>
+      <mission_id>6535</mission_id>
+      <mission_id>6536</mission_id>
+      <mission_id>6537</mission_id>
+      <mission_id>6538</mission_id>
+      <mission_id>6539</mission_id>
+      <mission_id>6540</mission_id>
+      <mission_id>6541</mission_id>
+      <mission_id>6542</mission_id>
+      <mission_id>6543</mission_id>
+      <mission_id>6544</mission_id>
+      <mission_id>6545</mission_id>
+      <mission_id>6546</mission_id>
+      <mission_id>6547</mission_id>
+      <mission_id>6548</mission_id>
+      <mission_id>6549</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="552" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="550" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2200" />
+      <!-- Map Legendary -->
+      <card level="5" id="2200" />
+      <!-- Map Legendary -->
+      <card level="6" id="12200" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3122" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9133</id>
     <name>Skyhaven Assault</name>
     <campaign_req id="24" level="1" />
@@ -12838,5 +12895,42 @@
     </rewards>
     <find_item id="3119" drop_per_energy="1" />
     <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 128: ComDev Elemental - Return to Karthos -->
+  <campaign>
+    <id>10128</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>30</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>140</x>
+    <y>360</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10128</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28180" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28180" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104097" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3116" drop_per_energy="1" />
+    <find_item id="104504" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

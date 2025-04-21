@@ -1918,6 +1918,18 @@
       <add_skill id="counterpoison" mult="0.15" base="health" y="7" delay="3,4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>192</id>
+    <name>Elemental Tempest</name>
+    <desc>Aether Elementals gain 20% Mark. Chaos Elementals gain 20% Barrage. Wyld Elementals gain 15% Venom. Void Elementals gain 10% Backlash. All values are based on base Health.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="mark" mult="0.2" base="health" yy="1,5" />
+      <add_skill id="barrage" mult="0.2" base="health" yy="2,5" />
+      <add_skill id="venom" mult="0.15" base="health" yy="3,5" />
+      <add_skill id="backlash" mult="0.1" base="health" yy="8,5" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

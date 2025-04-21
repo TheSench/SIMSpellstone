@@ -3448,6 +3448,41 @@ var BATTLEGROUNDS = {
 		"id": "191",
 		"name": "Rot and Decay"
 	},
+	"192": {
+		"desc": "Aether Elementals gain 20% Mark. Chaos Elementals gain 20% Barrage. Wyld Elementals gain 15% Venom. Void Elementals gain 10% Backlash. All values are based on base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "mark",
+				"mult": 0.2,
+				"y": "1,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.2,
+				"y": "2,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "venom",
+				"mult": 0.15,
+				"y": "3,5"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "backlash",
+				"mult": 0.1,
+				"y": "8,5"
+			}
+		],
+		"id": "192",
+		"name": "Elemental Tempest"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

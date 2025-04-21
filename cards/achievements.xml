@@ -12735,282 +12735,8 @@
   </achievement>
   <!-- Halloween Dragon 2020 -->
   <!-- Campaign Event 26 weeks 1-4 -->
-  <achievement>
-    <id>3629</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 1.</desc>
-    <mission_req>6527</mission_req>
-    <locked_start_time>1605200400</locked_start_time>
-    <!-- Thursday, 12 November 2020 17:00:00 -->
-    <req>
-      <campaign>1267</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3122" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7066" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3630</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1605200400</locked_start_time>
-    <!-- Thursday, 12 November 2020 17:00:00 -->
-    <achievement_req>3629</achievement_req>
-    <req>
-      <campaign>1267</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3631</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1605200400</locked_start_time>
-    <!-- Thursday, 12 November 2020 17:00:00 -->
-    <achievement_req>3630</achievement_req>
-    <req>
-      <campaign>1267</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3632</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Beneath Skyhaven' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1605200400</locked_start_time>
-    <!-- Thursday, 12 November 2020 17:00:00 -->
-    <achievement_req>3631</achievement_req>
-    <req>
-      <campaign>1267</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3633</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 2.</desc>
-    <mission_req>6533</mission_req>
-    <locked_start_time>1606410000</locked_start_time>
-    <!-- Thursday, 26 November 2020 17:00:00 -->
-    <req>
-      <campaign>1268</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3634</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1606410000</locked_start_time>
-    <!-- Thursday, 26 November 2020 17:00:00 -->
-    <achievement_req>3633</achievement_req>
-    <req>
-      <campaign>1268</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3635</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Search for Dyrnwyn' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1606410000</locked_start_time>
-    <!-- Thursday, 26 November 2020 17:00:00 -->
-    <achievement_req>3634</achievement_req>
-    <req>
-      <campaign>1268</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Noble Swordfish Spellstone -->
-  <achievement>
-    <id>3636</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Arena Rematch' campaign on Mastery Level 1.</desc>
-    <mission_req>6534</mission_req>
-    <locked_start_time>1606410000</locked_start_time>
-    <!--  Thursday, 26 November 2020 17:00:00 -->
-    <req>
-      <campaign>1269</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8027" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 26 weeks 5-8 -->
-  <achievement>
-    <id>3637</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 1.</desc>
-    <mission_req>6543</mission_req>
-    <locked_start_time>1607619600</locked_start_time>
-    <!--  Thursday, 10 December 2020 17:00:00 -->
-    <req>
-      <campaign>1270</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3122" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7067" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3638</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1607619600</locked_start_time>
-    <!--  Thursday, 10 December 2020 17:00:00 -->
-    <achievement_req>3637</achievement_req>
-    <req>
-      <campaign>1270</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3639</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1607619600</locked_start_time>
-    <!--  Thursday, 10 December 2020 17:00:00 -->
-    <achievement_req>3638</achievement_req>
-    <req>
-      <campaign>1270</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3640</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Solaron's Domain' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1607619600</locked_start_time>
-    <!--  Thursday, 10 December 2020 17:00:00 -->
-    <achievement_req>3639</achievement_req>
-    <req>
-      <campaign>1270</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3641</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 2.</desc>
-    <mission_req>6549</mission_req>
-    <locked_start_time>1608829200</locked_start_time>
-    <!--  Thursday, 24 December 2020 17:00:00 -->
-    <req>
-      <campaign>1271</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3642</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1608829200</locked_start_time>
-    <!--  Thursday, 24 December 2020 17:00:00 -->
-    <achievement_req>3641</achievement_req>
-    <req>
-      <campaign>1271</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3643</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Aether Imbalance' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1608829200</locked_start_time>
-    <!--  Thursday, 24 December 2020 17:00:00 -->
-    <achievement_req>3642</achievement_req>
-    <req>
-      <campaign>1271</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 27 weeks 1-4 -->
   <!-- Christmas 2020 Achievements -->
   <!-- Herald of Judgment's Spellstone -->
@@ -16765,155 +16491,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 102 - Avian - Node 1 -->
-  <achievement>
-    <id>3872</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Looking for Glory' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7067</mission_req>
-    <locked_start_time>1682614800</locked_start_time>
-    <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <req>
-      <campaign>1345</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3122" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7098" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3873</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Looking for Glory' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1682614800</locked_start_time>
-    <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3872</achievement_req>
-    <!-- Dont forget requirement  -->
-    <req>
-      <campaign>1345</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3874</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Looking for Glory' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1682614800</locked_start_time>
-    <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3873</achievement_req>
-    <req>
-      <campaign>1345</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3875</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'Looking for Glory' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1682614800</locked_start_time>
-    <!-- Thursday, April 27, 2023 at 17:00:00	 -->
-    <achievement_req>3874</achievement_req>
-    <req>
-      <campaign>1345</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 102 - Avian - Node 2 -->
-  <achievement>
-    <id>3876</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'The Betrayal' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7073</mission_req>
-    <locked_start_time>1683824400</locked_start_time>
-    <!-- Thursday, 11 May 2023 17:00:00 -->
-    <req>
-      <campaign>1346</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3877</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'The Betrayal' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1683824400</locked_start_time>
-    <!-- Thursday, 11 May 2023 17:00:00 -->
-    <achievement_req>3876</achievement_req>
-    <req>
-      <campaign>1346</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3878</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the 'The Betrayal' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1683824400</locked_start_time>
-    <!-- Thursday, 11 May 2023 17:00:00 -->
-    <achievement_req>3877</achievement_req>
-    <req>
-      <campaign>1346</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 103 - Undead - Node 1 -->
   <achievement>
     <id>3879</id>
@@ -18654,33 +18232,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Gladius Scriptorium -->
-    <id>4027</id>
-    <type>2</type>
-    <order>656</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Gladius Scriptorium</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Scriptorium.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6522</mission_req>
-    <req>
-      <campaign>1267</campaign>
-      <!-- 1st node -->
-      <campaign>1268</campaign>
-      <!-- 2nd node -->
-      <campaign>1269</campaign>
-      <!-- Boss node -->
-      <campaign>1270</campaign>
-      <!-- 3rd node -->
-      <campaign>1271</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -19320,31 +18871,6 @@
       <campaign>1330</campaign>
       <campaign>1343</campaign>
       <campaign>1344</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Gladius Scriptorium -->
-    <id>4056</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Gladius Scriptorium</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Gladius Scriptorium.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7062</mission_req>
-    <achievement_req>4027</achievement_req>
-    <req>
-      <campaign>1267</campaign>
-      <campaign>1268</campaign>
-      <campaign>1269</campaign>
-      <campaign>1270</campaign>
-      <campaign>1271</campaign>
-      <campaign>1345</campaign>
-      <campaign>1346</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -19999,25 +19525,6 @@
   <!-- Event 124: ComDev Mecha - Conflux Convergence -->
   <!-- Event 125: ComDev Dragon - Skyhaven Assault -->
   <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
-  <achievement>
-    <id>10126</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Gladius Scriptorium</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10126</mission_req>
-    <req>
-      <campaign>10126</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 127: ComDev Undead - Return to Tarragon Peak -->
   <achievement>
     <id>10127</id>
@@ -20032,6 +19539,26 @@
     <mission_req>10127</mission_req>
     <req>
       <campaign>10127</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 128: ComDev Elemental - Return to Karthos -->
+  <achievement>
+    <id>10128</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Return to Karthos</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10128</mission_req>
+    <req>
+      <campaign>10128</campaign>
       <level>7</level>
     </req>
     <reward>

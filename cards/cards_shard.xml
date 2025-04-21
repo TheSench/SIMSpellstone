@@ -8358,20 +8358,117 @@
   <unit>
     <id>4097</id>
     <card_type>2</card_type>
+    <name>Yorick, the Unseen</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Victorian_Card_Ghost_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1745514000</hidden_until_time>
+    <item_name>Yorick Stone</item_name>
+    <item_desc>Collect Yorick Stones to upgrade Yorick, the Unseen!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <attack>11</attack>
+    <health>31</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="weaken" all="1" x="2" />
+    <skill id="poisonstrike" all="1" x="1" />
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>31</health>
+      <skill id="evade" x="2" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="poisonstrike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="evade" x="2" />
+      <skill id="weaken" all="1" x="3" />
+      <skill id="poisonstrike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>12</attack>
+      <health>32</health>
+      <skill id="evade" x="2" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="poisonstrike" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>13</attack>
+      <health>33</health>
+      <skill id="evade" x="3" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="poisonstrike" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>13</attack>
+      <health>34</health>
+      <skill id="evade" x="3" />
+      <skill id="weaken" all="1" x="4" />
+      <skill id="poisonstrike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>14</attack>
+      <health>34</health>
+      <skill id="evade" x="3" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="poisonstrike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>14</attack>
+      <health>35</health>
+      <skill id="evade" x="4" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="poisonstrike" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>15</attack>
+      <health>35</health>
+      <skill id="evade" x="4" />
+      <skill id="weaken" all="1" x="5" />
+      <skill id="poisonstrike" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>15</attack>
+      <health>36</health>
+      <skill id="evade" x="4" />
+      <skill id="weaken" all="1" x="6" />
+      <skill id="poisonstrike" all="1" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4098</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1745514000</hidden_until_time>
+    <hidden_until_time>1747933200</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>5</sub_type>
+    <sub_type>4</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -8408,9 +8505,9 @@
     <desc>Placeholder for next champion.</desc>
   </unit>
   <!-- Reward End -->
-  <!-- =============================== -->
+  <!-- ================================ -->
   <!-- === COMDEV ENDGAME CHAMPIONS === -->
-  <!-- =============================== -->
+  <!-- ================================ -->
   <unit>
     <id>4500</id>
     <card_type>2</card_type>

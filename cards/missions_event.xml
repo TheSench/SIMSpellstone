@@ -19429,4 +19429,45 @@
       <!-- Blackfin -->
     </deck>
   </mission>
+  <!-- Event 128: ComDev Elemental - Return to Karthos -->
+  <mission>
+    <id>10128</id>
+    <name>Return to Karthos</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Karthos Embers in the Karthos Crystals to power up your cards.</desc>
+    <commander id="463" />
+    <!-- Desire for Apathy -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="2017" />
+      <!-- Solaron, the Origin  -->
+      <card id="2075" />
+      <!-- Arcane Snowmenace -->
+      <card id="2225" />
+      <!-- Uncontrolled Trinomaly -->
+      <card id="4043" />
+      <!-- Allfather, the Shaper -->
+      <card id="4060" />
+      <!-- Yaritza -->
+      <card id="4075" />
+      <!-- K'luum, the Unbound Void -->
+      <card id="4076" />
+      <!-- Tethys, the Watershaper -->
+      <card id="4503" />
+      <!-- Acheron, the Retaliator -->
+      <card id="5032" />
+      <!-- Frostshard Hurler -->
+      <card id="5249" />
+      <!-- Seraph of the Paradox -->
+      <card id="5257" />
+      <!-- Heartsong Melodist -->
+      <card id="5288" />
+      <!-- Saint of Golden Tears -->
+      <card id="5243" />
+      <!-- Condor Familiar -->
+      <card id="8007" />
+      <!-- Solaron's Cyclone -->
+    </deck>
+  </mission>
 </root>
