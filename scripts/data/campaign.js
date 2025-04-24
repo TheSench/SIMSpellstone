@@ -105,10 +105,6 @@ var LOCATIONS = {
 		"id": "30",
 		"name": "Return to Karthos"
 	},
-	"31": {
-		"id": "31",
-		"name": "Return to Tarragon Peak"
-	},
 	"32": {
 		"id": "32",
 		"name": "Gladius Scriptorium"
