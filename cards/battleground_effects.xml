@@ -1928,6 +1928,20 @@
       <add_skill id="barrage" mult="0.2" base="health" yy="2,5" />
       <add_skill id="venom" mult="0.15" base="health" yy="3,5" />
       <add_skill id="backlash" mult="0.1" base="health" yy="8,5" />
+      <skill id="displayEffect" trigger="onSkill" yy="1,5" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
     </effect>
   </battleground>
   <!-- ================================= -->
