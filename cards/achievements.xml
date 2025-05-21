@@ -12456,283 +12456,9 @@
     </reward>
   </achievement>
   <!-- Campaign Event 25 weeks 1-4 -->
-  <achievement>
-    <id>3606</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 1.</desc>
-    <mission_req>6491</mission_req>
-    <locked_start_time>1600362000</locked_start_time>
-    <!-- Thursday, 17 September 2020 17:00:00 -->
-    <req>
-      <campaign>1260</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3119" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7064" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3607</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1600362000</locked_start_time>
-    <!-- Thursday, 17 September 2020 17:00:00 -->
-    <achievement_req>3606</achievement_req>
-    <req>
-      <campaign>1260</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3608</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1600362000</locked_start_time>
-    <!-- Thursday, 17 September 2020 17:00:00 -->
-    <achievement_req>3607</achievement_req>
-    <req>
-      <campaign>1260</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3609</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Return to Tarragon Peak' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1600362000</locked_start_time>
-    <!-- Thursday, 17 September 2020 17:00:00 -->
-    <achievement_req>3608</achievement_req>
-    <req>
-      <campaign>1260</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3610</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 2.</desc>
-    <mission_req>6497</mission_req>
-    <locked_start_time>1601571600</locked_start_time>
-    <!-- Thursday, 1 October 2020 17:00:00 -->
-    <req>
-      <campaign>1261</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3611</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1601571600</locked_start_time>
-    <!-- Thursday, 1 October 2020 17:00:00 -->
-    <achievement_req>3610</achievement_req>
-    <req>
-      <campaign>1261</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3612</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'First Order Remnants' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1601571600</locked_start_time>
-    <!-- Thursday, 1 October 2020 17:00:00 -->
-    <achievement_req>3611</achievement_req>
-    <req>
-      <campaign>1261</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- 5th Anniversary -->
   <!-- Siren's recipe -->
-  <achievement>
-    <id>3617</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Daknak Fight!' campaign on Mastery Level 1.</desc>
-    <mission_req>6503</mission_req>
-    <locked_start_time>1601571600</locked_start_time>
-    <!--  Thursday, 1 October 2020 17:00:00 -->
-    <req>
-      <campaign>1263</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8026" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 25 weeks 5-8 -->
-  <achievement>
-    <id>3618</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 1.</desc>
-    <mission_req>6512</mission_req>
-    <locked_start_time>1602781200</locked_start_time>
-    <!--  Thursday, 15 October 2020 17:00:00 -->
-    <req>
-      <campaign>1264</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3119" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7065" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3619</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1602781200</locked_start_time>
-    <!--  Thursday, 15 October 2020 17:00:00 -->
-    <achievement_req>3618</achievement_req>
-    <req>
-      <campaign>1264</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3620</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1602781200</locked_start_time>
-    <!--  Thursday, 15 October 2020 17:00:00 -->
-    <achievement_req>3619</achievement_req>
-    <req>
-      <campaign>1264</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3621</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Seastone Staff Secrets' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1602781200</locked_start_time>
-    <!--  Thursday, 15 October 2020 17:00:00 -->
-    <achievement_req>3620</achievement_req>
-    <req>
-      <campaign>1264</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3622</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 2.</desc>
-    <mission_req>6518</mission_req>
-    <locked_start_time>1603990800</locked_start_time>
-    <!--  Thursday, 29 October 2020 17:00:00 -->
-    <req>
-      <campaign>1265</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3623</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1603990800</locked_start_time>
-    <!--  Thursday, 29 October 2020 17:00:00 -->
-    <achievement_req>3622</achievement_req>
-    <req>
-      <campaign>1265</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3624</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Missing Spiritual Strength' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1603990800</locked_start_time>
-    <!--  Thursday, 29 October 2020 17:00:00 -->
-    <achievement_req>3623</achievement_req>
-    <req>
-      <campaign>1265</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Halloween Dragon 2020 -->
   <!-- Campaign Event 26 weeks 1-4 -->
   <!-- Noble Swordfish Spellstone -->
@@ -14547,154 +14273,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 88 - Dragon - Node 1 -->
-  <achievement>
-    <id>3774</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Taking a Break' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6800</mission_req>
-    <locked_start_time>1648746000</locked_start_time>
-    <!-- Thursday, 31 March 2022 17:00:00 -->
-    <req>
-      <campaign>1313</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3107" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7085" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3775</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Taking a Break' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1648746000</locked_start_time>
-    <!-- Thursday, 31 March 2022 17:00:00 -->
-    <achievement_req>3774</achievement_req>
-    <req>
-      <campaign>1313</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3776</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Taking a Break' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1648746000</locked_start_time>
-    <!-- Thursday, 31 March 2022 17:00:00 -->
-    <achievement_req>3775</achievement_req>
-    <req>
-      <campaign>1313</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3777</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Taking a Break' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1648746000</locked_start_time>
-    <!-- Thursday, 31 March 2022 17:00:00 -->
-    <achievement_req>3776</achievement_req>
-    <req>
-      <campaign>1313</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 88 - Dragon - Node 2 -->
-  <achievement>
-    <id>3778</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Exploring Tarragon Peak' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6806</mission_req>
-    <locked_start_time>1649955600</locked_start_time>
-    <!-- Thursday, 14 April 2022 17:00:00 -->
-    <req>
-      <campaign>1314</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3779</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Exploring Tarragon Peak' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1649955600</locked_start_time>
-    <!-- Thursday, 14 April 2022 17:00:00 -->
-    <achievement_req>3778</achievement_req>
-    <req>
-      <campaign>1314</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3780</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the 'Exploring Tarragon Peak' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1649955600</locked_start_time>
-    <!-- Thursday, 14 April 2022 17:00:00 -->
-    <achievement_req>3779</achievement_req>
-    <req>
-      <campaign>1314</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 89 - Angel - Node 1 -->
   <achievement>
     <id>3781</id>
@@ -17418,211 +16997,6 @@
   </achievement>
   <!-- Christmas Special Event 2023 -->
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
-  <!-- E111 Node 1: Runes in the Ruins -->
-  <achievement>
-    <id>3961</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Runes in the Ruins campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7194</mission_req>
-    <locked_start_time>1704387600</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3119" number="100" />
-      <event_points id="7107" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3962</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Runes in the Ruins campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3961</achievement_req>
-    <locked_start_time>1704387600</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3963</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Runes in the Ruins campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3962</achievement_req>
-    <locked_start_time>1704387600</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3964</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Runes in the Ruins campaign on Mastery Level 5.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3963</achievement_req>
-    <locked_start_time>1704387600</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <level>5</level>
-    </req>
-    <reward>
-      <pack>45</pack>
-      <!-- Reward Pack -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3965</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Runes in the Ruins campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3964</achievement_req>
-    <locked_start_time>1704387600</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
-  <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
-  <!-- E111 Node 2: A Forgotten Hero -->
-  <achievement>
-    <id>3966</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the A Forgotten Hero campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7200</mission_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1364</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3119" number="100" />
-      <event_points id="7107" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3967</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the A Forgotten Hero campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3966</achievement_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1364</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3968</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the A Forgotten Hero campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3967</achievement_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1364</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3969</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the A Forgotten Hero campaign on Mastery Level 5.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3968</achievement_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1364</campaign>
-      <level>5</level>
-    </req>
-    <reward>
-      <pack>45</pack>
-      <!-- Reward Pack -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3970</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the A Forgotten Hero campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3969</achievement_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1364</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Valentine's Special Event 2024 -->
   <!-- April Fool's Special Event 2024 -->
   <!-- ComDev Anniversary Special Event 2024 -->
@@ -18205,33 +17579,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Return to Tarragon Peak -->
-    <id>4026</id>
-    <type>2</type>
-    <order>655</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Return to Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6486</mission_req>
-    <req>
-      <campaign>1260</campaign>
-      <!-- 1st node -->
-      <campaign>1261</campaign>
-      <!-- 2nd node -->
-      <campaign>1263</campaign>
-      <!-- Boss node -->
-      <campaign>1264</campaign>
-      <!-- 3rd node -->
-      <campaign>1265</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -18531,31 +17878,6 @@
       <campaign>1227</campaign>
       <campaign>1311</campaign>
       <campaign>1312</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Return to Tarragon Peak Revisited -->
-    <id>4042</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Return to Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Return to Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6795</mission_req>
-    <achievement_req>4026</achievement_req>
-    <req>
-      <campaign>1260</campaign>
-      <campaign>1261</campaign>
-      <campaign>1263</campaign>
-      <campaign>1264</campaign>
-      <campaign>1265</campaign>
-      <campaign>1313</campaign>
-      <campaign>1314</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -19030,26 +18352,6 @@
     </reward>
   </achievement>
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
-  <achievement>
-    <id>4065</id>
-    <type>2</type>
-    <order>661</order>
-    <event_only>1</event_only>
-    <name>Commander of Return to Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Return to Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7205</mission_req>
-    <locked_start_time>1705597200</locked_start_time>
-    <req>
-      <campaign>1363</campaign>
-      <campaign>1364</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
   <!-- Event 112: ComDev Beast - Gladius Arena -->
   <achievement>
     <id>4066</id>
@@ -19526,26 +18828,6 @@
   <!-- Event 125: ComDev Dragon - Skyhaven Assault -->
   <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
   <!-- Event 127: ComDev Undead - Return to Tarragon Peak -->
-  <achievement>
-    <id>10127</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <event_only>1</event_only>
-    <name>Return to Tarragon Peak</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10127</mission_req>
-    <req>
-      <campaign>10127</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 128: ComDev Elemental - Return to Karthos -->
   <achievement>
     <id>10128</id>
@@ -19559,6 +18841,26 @@
     <mission_req>10128</mission_req>
     <req>
       <campaign>10128</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 129: ComDev Frog - Return to Luminis -->
+  <achievement>
+    <id>10129</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Return to Luminis</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10129</mission_req>
+    <req>
+      <campaign>10129</campaign>
       <level>7</level>
     </req>
     <reward>

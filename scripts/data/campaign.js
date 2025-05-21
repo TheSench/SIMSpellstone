@@ -105,6 +105,10 @@ var LOCATIONS = {
 		"id": "30",
 		"name": "Return to Karthos"
 	},
+	"31": {
+		"id": "31",
+		"name": "Return to Tarragon Peak"
+	},
 	"32": {
 		"id": "32",
 		"name": "Gladius Scriptorium"
@@ -1919,7 +1923,7 @@ var CAMPAIGNS = {
 		"id": "1108",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.1
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -1932,7 +1936,7 @@ var CAMPAIGNS = {
 		"id": "1109",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.2
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -1956,7 +1960,7 @@ var CAMPAIGNS = {
 		"id": "1110",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.4
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -1994,7 +1998,7 @@ var CAMPAIGNS = {
 		"id": "1112",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.6
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -2019,7 +2023,7 @@ var CAMPAIGNS = {
 		"id": "1113",
 		"items": {
 			"2522": 0.04,
-			"3048": 0.8
+			"3048": 0.5
 		},
 		"location_id": "7",
 		"missions": [
@@ -2041,7 +2045,7 @@ var CAMPAIGNS = {
 	"1114": {
 		"id": "1114",
 		"items": {
-			"3049": 0.1
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2053,7 +2057,7 @@ var CAMPAIGNS = {
 	"1115": {
 		"id": "1115",
 		"items": {
-			"3049": 0.2
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2076,7 +2080,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2005",
 		"id": "1116",
 		"items": {
-			"3049": 0.4
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2099,7 +2103,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2006",
 		"id": "1117",
 		"items": {
-			"3049": 0.4
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2114,7 +2118,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2007",
 		"id": "1118",
 		"items": {
-			"3049": 0.6
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2138,7 +2142,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2008",
 		"id": "1119",
 		"items": {
-			"3049": 0.8
+			"3049": 0.5
 		},
 		"location_id": "8",
 		"missions": [
@@ -2207,7 +2211,7 @@ var CAMPAIGNS = {
 	"1124": {
 		"id": "1124",
 		"items": {
-			"3053": 0.1
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2219,7 +2223,7 @@ var CAMPAIGNS = {
 	"1125": {
 		"id": "1125",
 		"items": {
-			"3053": 0.2
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2242,7 +2246,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2010",
 		"id": "1126",
 		"items": {
-			"3053": 0.4
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2265,7 +2269,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2011",
 		"id": "1127",
 		"items": {
-			"3053": 0.4
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2280,7 +2284,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2012",
 		"id": "1128",
 		"items": {
-			"3053": 0.6
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2304,7 +2308,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2013",
 		"id": "1129",
 		"items": {
-			"3053": 0.8
+			"3053": 0.5
 		},
 		"location_id": "9",
 		"missions": [
@@ -2326,7 +2330,7 @@ var CAMPAIGNS = {
 	"1130": {
 		"id": "1130",
 		"items": {
-			"3056": 0.1
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2338,7 +2342,7 @@ var CAMPAIGNS = {
 	"1131": {
 		"id": "1131",
 		"items": {
-			"3056": 0.2
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2361,7 +2365,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2014",
 		"id": "1132",
 		"items": {
-			"3056": 0.4
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2384,7 +2388,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2016",
 		"id": "1133",
 		"items": {
-			"3056": 0.4
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2399,7 +2403,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2017",
 		"id": "1134",
 		"items": {
-			"3056": 0.6
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2423,7 +2427,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2018",
 		"id": "1135",
 		"items": {
-			"3056": 0.8
+			"3056": 0.5
 		},
 		"location_id": "10",
 		"missions": [
@@ -2445,7 +2449,7 @@ var CAMPAIGNS = {
 	"1136": {
 		"id": "1136",
 		"items": {
-			"3059": 0.1
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2457,7 +2461,7 @@ var CAMPAIGNS = {
 	"1137": {
 		"id": "1137",
 		"items": {
-			"3059": 0.2
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2480,7 +2484,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2019",
 		"id": "1138",
 		"items": {
-			"3059": 0.4
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2503,7 +2507,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2020",
 		"id": "1139",
 		"items": {
-			"3059": 0.4
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2518,7 +2522,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2021",
 		"id": "1140",
 		"items": {
-			"3059": 0.6
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2542,7 +2546,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2022",
 		"id": "1141",
 		"items": {
-			"3059": 0.8
+			"3059": 0.5
 		},
 		"location_id": "11",
 		"missions": [
@@ -2564,7 +2568,7 @@ var CAMPAIGNS = {
 	"1142": {
 		"id": "1142",
 		"items": {
-			"3062": 0.1
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2576,7 +2580,7 @@ var CAMPAIGNS = {
 	"1143": {
 		"id": "1143",
 		"items": {
-			"3062": 0.2
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2599,7 +2603,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2023",
 		"id": "1144",
 		"items": {
-			"3062": 0.4
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2633,7 +2637,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2024",
 		"id": "1146",
 		"items": {
-			"3062": 0.4
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2648,7 +2652,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2025",
 		"id": "1147",
 		"items": {
-			"3062": 0.6
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2672,7 +2676,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2026",
 		"id": "1148",
 		"items": {
-			"3062": 0.8
+			"3062": 0.5
 		},
 		"location_id": "12",
 		"missions": [
@@ -2694,7 +2698,7 @@ var CAMPAIGNS = {
 	"1149": {
 		"id": "1149",
 		"items": {
-			"3065": 0.1
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2706,7 +2710,7 @@ var CAMPAIGNS = {
 	"1150": {
 		"id": "1150",
 		"items": {
-			"3065": 0.2
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2729,7 +2733,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2028",
 		"id": "1151",
 		"items": {
-			"3065": 0.4
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2765,7 +2769,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2029",
 		"id": "1153",
 		"items": {
-			"3065": 0.4
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2780,7 +2784,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2030",
 		"id": "1154",
 		"items": {
-			"3065": 0.6
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2804,7 +2808,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2031",
 		"id": "1155",
 		"items": {
-			"3065": 0.8
+			"3065": 0.5
 		},
 		"location_id": "13",
 		"missions": [
@@ -2826,7 +2830,7 @@ var CAMPAIGNS = {
 	"1156": {
 		"id": "1156",
 		"items": {
-			"3068": 0.1
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2838,7 +2842,7 @@ var CAMPAIGNS = {
 	"1157": {
 		"id": "1157",
 		"items": {
-			"3068": 0.2
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2861,7 +2865,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2032",
 		"id": "1158",
 		"items": {
-			"3068": 0.4
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2884,7 +2888,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2033",
 		"id": "1159",
 		"items": {
-			"3068": 0.4
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2899,7 +2903,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2034",
 		"id": "1160",
 		"items": {
-			"3068": 0.6
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2923,7 +2927,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2035",
 		"id": "1161",
 		"items": {
-			"3068": 0.8
+			"3068": 0.5
 		},
 		"location_id": "14",
 		"missions": [
@@ -2945,7 +2949,7 @@ var CAMPAIGNS = {
 	"1162": {
 		"id": "1162",
 		"items": {
-			"3071": 0.1
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -2957,7 +2961,7 @@ var CAMPAIGNS = {
 	"1163": {
 		"id": "1163",
 		"items": {
-			"3071": 0.2
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -2980,7 +2984,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2036",
 		"id": "1164",
 		"items": {
-			"3071": 0.4
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -3039,7 +3043,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2037",
 		"id": "1168",
 		"items": {
-			"3071": 0.4
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -3054,7 +3058,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2038",
 		"id": "1169",
 		"items": {
-			"3071": 0.6
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -3078,7 +3082,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2039",
 		"id": "1170",
 		"items": {
-			"3071": 0.8
+			"3071": 0.5
 		},
 		"location_id": "15",
 		"missions": [
@@ -3100,7 +3104,7 @@ var CAMPAIGNS = {
 	"1171": {
 		"id": "1171",
 		"items": {
-			"3074": 0.1
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3112,7 +3116,7 @@ var CAMPAIGNS = {
 	"1172": {
 		"id": "1172",
 		"items": {
-			"3074": 0.2
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3135,7 +3139,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2040",
 		"id": "1173",
 		"items": {
-			"3074": 0.4
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3158,7 +3162,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2041",
 		"id": "1174",
 		"items": {
-			"3074": 0.4
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3173,7 +3177,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2042",
 		"id": "1175",
 		"items": {
-			"3074": 0.6
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3197,7 +3201,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2043",
 		"id": "1176",
 		"items": {
-			"3074": 0.8
+			"3074": 0.5
 		},
 		"location_id": "16",
 		"missions": [
@@ -3219,7 +3223,7 @@ var CAMPAIGNS = {
 	"1177": {
 		"id": "1177",
 		"items": {
-			"3077": 0.1
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3231,7 +3235,7 @@ var CAMPAIGNS = {
 	"1178": {
 		"id": "1178",
 		"items": {
-			"3077": 0.2
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3254,7 +3258,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2044",
 		"id": "1179",
 		"items": {
-			"3077": 0.4
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3277,7 +3281,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2045",
 		"id": "1180",
 		"items": {
-			"3077": 0.4
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3292,7 +3296,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2046",
 		"id": "1181",
 		"items": {
-			"3077": 0.6
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3316,7 +3320,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2047",
 		"id": "1182",
 		"items": {
-			"3077": 0.8
+			"3077": 0.5
 		},
 		"location_id": "17",
 		"missions": [
@@ -3338,7 +3342,7 @@ var CAMPAIGNS = {
 	"1183": {
 		"id": "1183",
 		"items": {
-			"3080": 0.2
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -3355,7 +3359,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2048",
 		"id": "1184",
 		"items": {
-			"3080": 0.4
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -3372,7 +3376,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2050",
 		"id": "1185",
 		"items": {
-			"3080": 0.4
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -3387,7 +3391,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2051",
 		"id": "1186",
 		"items": {
-			"3080": 0.6
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -3404,7 +3408,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2052",
 		"id": "1187",
 		"items": {
-			"3080": 0.8
+			"3080": 0.5
 		},
 		"location_id": "18",
 		"missions": [
@@ -3431,7 +3435,7 @@ var CAMPAIGNS = {
 	"1189": {
 		"id": "1189",
 		"items": {
-			"3083": 0.2
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -3448,7 +3452,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2053",
 		"id": "1190",
 		"items": {
-			"3083": 0.4
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -3465,7 +3469,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2054",
 		"id": "1191",
 		"items": {
-			"3083": 0.4
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -3480,7 +3484,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2055",
 		"id": "1192",
 		"items": {
-			"3083": 0.6
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -3497,7 +3501,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2056",
 		"id": "1193",
 		"items": {
-			"3083": 0.8
+			"3083": 0.5
 		},
 		"location_id": "19",
 		"missions": [
@@ -3526,7 +3530,7 @@ var CAMPAIGNS = {
 	"1195": {
 		"id": "1195",
 		"items": {
-			"3086": 0.2
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -3543,7 +3547,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2057",
 		"id": "1196",
 		"items": {
-			"3086": 0.4
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -3560,7 +3564,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2058",
 		"id": "1197",
 		"items": {
-			"3086": 0.4
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -3575,7 +3579,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2059",
 		"id": "1198",
 		"items": {
-			"3086": 0.6
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -3592,7 +3596,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2060",
 		"id": "1199",
 		"items": {
-			"3086": 0.8
+			"3086": 0.5
 		},
 		"location_id": "20",
 		"missions": [
@@ -3608,7 +3612,7 @@ var CAMPAIGNS = {
 	"1200": {
 		"id": "1200",
 		"items": {
-			"3089": 0.2
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -3625,7 +3629,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2061",
 		"id": "1201",
 		"items": {
-			"3089": 0.4
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -3642,7 +3646,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2062",
 		"id": "1202",
 		"items": {
-			"3089": 0.4
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -3685,7 +3689,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2063",
 		"id": "1205",
 		"items": {
-			"3089": 0.6
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -3702,7 +3706,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2064",
 		"id": "1206",
 		"items": {
-			"3089": 0.8
+			"3089": 0.5
 		},
 		"location_id": "21",
 		"missions": [
@@ -3718,7 +3722,7 @@ var CAMPAIGNS = {
 	"1207": {
 		"id": "1207",
 		"items": {
-			"3092": 0.2
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -3735,7 +3739,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2065",
 		"id": "1208",
 		"items": {
-			"3092": 0.4
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -3752,7 +3756,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2066",
 		"id": "1209",
 		"items": {
-			"3092": 0.4
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -3767,7 +3771,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2069",
 		"id": "1210",
 		"items": {
-			"3092": 0.6
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -3784,7 +3788,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2070",
 		"id": "1211",
 		"items": {
-			"3092": 0.8
+			"3092": 0.5
 		},
 		"location_id": "22",
 		"missions": [
@@ -3800,7 +3804,7 @@ var CAMPAIGNS = {
 	"1212": {
 		"id": "1212",
 		"items": {
-			"3095": 0.2
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -3817,7 +3821,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2071",
 		"id": "1213",
 		"items": {
-			"3095": 0.4
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -3834,7 +3838,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2072",
 		"id": "1214",
 		"items": {
-			"3095": 0.4
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -3849,7 +3853,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2073",
 		"id": "1215",
 		"items": {
-			"3095": 0.6
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -3866,7 +3870,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2074",
 		"id": "1216",
 		"items": {
-			"3095": 0.8
+			"3095": 0.5
 		},
 		"location_id": "23",
 		"missions": [
@@ -3882,7 +3886,7 @@ var CAMPAIGNS = {
 	"1217": {
 		"id": "1217",
 		"items": {
-			"3098": 0.2
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -3899,7 +3903,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2075",
 		"id": "1218",
 		"items": {
-			"3098": 0.4
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -3916,7 +3920,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2076",
 		"id": "1219",
 		"items": {
-			"3098": 0.4
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -3931,7 +3935,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2077",
 		"id": "1220",
 		"items": {
-			"3098": 0.6
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -3948,7 +3952,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2078",
 		"id": "1221",
 		"items": {
-			"3098": 0.8
+			"3098": 0.5
 		},
 		"location_id": "24",
 		"missions": [
@@ -3964,7 +3968,7 @@ var CAMPAIGNS = {
 	"1222": {
 		"id": "1222",
 		"items": {
-			"3101": 0.2
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -3981,7 +3985,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2079",
 		"id": "1223",
 		"items": {
-			"3101": 0.4
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -3998,7 +4002,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2080",
 		"id": "1224",
 		"items": {
-			"3101": 0.4
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -4024,7 +4028,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2081",
 		"id": "1226",
 		"items": {
-			"3101": 0.6
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -4041,7 +4045,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2082",
 		"id": "1227",
 		"items": {
-			"3101": 0.8
+			"3101": 0.5
 		},
 		"location_id": "25",
 		"missions": [
@@ -4057,7 +4061,7 @@ var CAMPAIGNS = {
 	"1228": {
 		"id": "1228",
 		"items": {
-			"3104": 0.2
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -4074,7 +4078,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2083",
 		"id": "1229",
 		"items": {
-			"3104": 0.4
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -4104,7 +4108,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2084",
 		"id": "1231",
 		"items": {
-			"3104": 0.4
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -4119,7 +4123,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2084",
 		"id": "1232",
 		"items": {
-			"3104": 0.6
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -4136,7 +4140,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2085",
 		"id": "1233",
 		"items": {
-			"3104": 0.8
+			"3104": 0.5
 		},
 		"location_id": "26",
 		"missions": [
@@ -4152,7 +4156,7 @@ var CAMPAIGNS = {
 	"1234": {
 		"id": "1234",
 		"items": {
-			"3107": 0.2
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -4169,7 +4173,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2087",
 		"id": "1235",
 		"items": {
-			"3107": 0.4
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -4186,7 +4190,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2088",
 		"id": "1236",
 		"items": {
-			"3107": 0.4
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -4201,7 +4205,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2089",
 		"id": "1237",
 		"items": {
-			"3107": 0.6
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -4218,7 +4222,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2090",
 		"id": "1238",
 		"items": {
-			"3107": 0.8
+			"3107": 0.5
 		},
 		"location_id": "27",
 		"missions": [
@@ -4234,7 +4238,7 @@ var CAMPAIGNS = {
 	"1239": {
 		"id": "1239",
 		"items": {
-			"3110": 0.2
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -4251,7 +4255,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2091",
 		"id": "1240",
 		"items": {
-			"3110": 0.4
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -4310,7 +4314,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2092",
 		"id": "1247",
 		"items": {
-			"3110": 0.4
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -4325,7 +4329,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2093",
 		"id": "1248",
 		"items": {
-			"3110": 0.6
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -4342,7 +4346,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2094",
 		"id": "1249",
 		"items": {
-			"3110": 0.8
+			"3110": 0.5
 		},
 		"location_id": "28",
 		"missions": [
@@ -4358,7 +4362,7 @@ var CAMPAIGNS = {
 	"1250": {
 		"id": "1250",
 		"items": {
-			"3113": 0.2
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -4375,7 +4379,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2095",
 		"id": "1251",
 		"items": {
-			"3113": 0.4
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -4392,7 +4396,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2096",
 		"id": "1252",
 		"items": {
-			"3113": 0.4
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -4407,7 +4411,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2097",
 		"id": "1253",
 		"items": {
-			"3113": 0.6
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -4424,7 +4428,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2098",
 		"id": "1254",
 		"items": {
-			"3113": 0.8
+			"3113": 0.5
 		},
 		"location_id": "29",
 		"missions": [
@@ -4440,7 +4444,7 @@ var CAMPAIGNS = {
 	"1255": {
 		"id": "1255",
 		"items": {
-			"3116": 0.2
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -4457,7 +4461,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2099",
 		"id": "1256",
 		"items": {
-			"3116": 0.4
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -4474,7 +4478,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2100",
 		"id": "1257",
 		"items": {
-			"3116": 0.4
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -4489,7 +4493,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2101",
 		"id": "1258",
 		"items": {
-			"3116": 0.6
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -4506,7 +4510,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2102",
 		"id": "1259",
 		"items": {
-			"3116": 0.8
+			"3116": 0.5
 		},
 		"location_id": "30",
 		"missions": [
@@ -4522,7 +4526,7 @@ var CAMPAIGNS = {
 	"1260": {
 		"id": "1260",
 		"items": {
-			"3119": 0.2
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -4539,7 +4543,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2103",
 		"id": "1261",
 		"items": {
-			"3119": 0.4
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -4569,7 +4573,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2104",
 		"id": "1263",
 		"items": {
-			"3119": 0.4
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -4584,7 +4588,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2105",
 		"id": "1264",
 		"items": {
-			"3119": 0.6
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -4601,7 +4605,7 @@ var CAMPAIGNS = {
 		"battleground_id": "2106",
 		"id": "1265",
 		"items": {
-			"3119": 0.8
+			"3119": 0.5
 		},
 		"location_id": "31",
 		"missions": [
@@ -7416,6 +7420,45 @@ var CAMPAIGNS = {
 		],
 		"name": "Knight Knight, Spellstone"
 	},
+	"9131": {
+		"id": "9131",
+		"items": {
+			"2527": 0.01,
+			"3119": 0.5
+		},
+		"location_id": "31",
+		"missions": [
+			"6486",
+			"6487",
+			"6488",
+			"6489",
+			"6490",
+			"6491",
+			"6492",
+			"6493",
+			"6494",
+			"6495",
+			"6496",
+			"6497",
+			"6503",
+			"6504",
+			"6505",
+			"6506",
+			"6507",
+			"6508",
+			"6509",
+			"6510",
+			"6511",
+			"6512",
+			"6513",
+			"6514",
+			"6515",
+			"6516",
+			"6517",
+			"6518"
+		],
+		"name": "Return to Tarragon Peak"
+	},
 	"9132": {
 		"id": "9132",
 		"items": {
@@ -7595,6 +7638,19 @@ var CAMPAIGNS = {
 		"location_id": "30",
 		"missions": [
 			"10128"
+		],
+		"name": "Alyel Back in Time"
+	},
+	"10129": {
+		"battleground_id": "2124",
+		"id": "10129",
+		"items": {
+			"3113": 1,
+			"104505": 0.01
+		},
+		"location_id": "29",
+		"missions": [
+			"10129"
 		],
 		"name": "Alyel Back in Time"
 	}
@@ -38736,5 +38792,59 @@ var MISSIONS = {
 		],
 		"id": "10128",
 		"name": "Return to Karthos"
+	},
+	"10129": {
+		"commander": {
+			"id": "474"
+		},
+		"deck": [
+			{
+				"id": "4003"
+			},
+			{
+				"id": "4501"
+			},
+			{
+				"id": "4053"
+			},
+			{
+				"id": "4069"
+			},
+			{
+				"id": "4032"
+			},
+			{
+				"id": "4085"
+			},
+			{
+				"id": "4021"
+			},
+			{
+				"id": "4062"
+			},
+			{
+				"id": "5608"
+			},
+			{
+				"id": "5634"
+			},
+			{
+				"id": "5626"
+			},
+			{
+				"id": "7159"
+			},
+			{
+				"id": "7204"
+			},
+			{
+				"id": "2223"
+			},
+			{
+				"id": "6104"
+			}
+		],
+		"id": "10129",
+		"name": "Return to Luminis"
 	}
 };

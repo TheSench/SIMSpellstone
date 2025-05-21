@@ -19470,4 +19470,45 @@
       <!-- Solaron's Cyclone -->
     </deck>
   </mission>
+  <!-- Event 129: ComDev Frog - Return to Luminis -->
+  <mission>
+    <id>10129</id>
+    <name>Return to Luminis</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Wisp Fragments in Yuriel's Mystic Tomes to power up your cards.</desc>
+    <commander id="474" />
+    <!-- Caesar -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="4501" />
+      <!-- Rasako, Ninja of the Swamp -->
+      <card id="4053" />
+      <!-- Cellia, Heir of War -->
+      <card id="4069" />
+      <!-- Atlatl, Forest Hunter -->
+      <card id="4032" />
+      <!-- Froggit, the Puppeteer -->
+      <card id="4085" />
+      <!-- Ecyxigua, the Tongue Twister -->
+      <card id="4021" />
+      <!-- Plyn Poisontrek -->
+      <card id="4062" />
+      <!-- Caesar, the Commander -->
+      <card id="5608" />
+      <!-- Windsage Gama -->
+      <card id="5634" />
+      <!-- Eira, the Electrokinetic -->
+      <card id="5626" />
+      <!-- Gendra, the Blacksmith -->
+      <card id="7159" />
+      <!-- Blind Luck Frog -->
+      <card id="7204" />
+      <!-- Gold Crown Matriarch -->
+      <card id="2223" />
+      <!-- Killer Hextongue -->
+      <card id="6104" />
+      <!-- Gloom Lurker -->
+    </deck>
+  </mission>
 </root>

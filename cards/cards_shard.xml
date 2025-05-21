@@ -8455,55 +8455,144 @@
   <unit>
     <id>4098</id>
     <card_type>2</card_type>
-    <name>Placeholder Champion</name>
+    <name>Bheki, Trick of the Light</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
-    <picture>Dust_Mite</picture>
-    <asset_bundle>1</asset_bundle>
+    <picture>Frog_Acrobat_Thief_B</picture>
+    <asset_bundle>213</asset_bundle>
     <hidden_until_time>1747933200</hidden_until_time>
-    <item_name>Placeholder Stone</item_name>
-    <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
+    <item_name>Bheki Stone</item_name>
+    <item_desc>Collect Bheki Stones to upgrade Bheki, Trick of the Light!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
-    <type>0</type>
+    <type>2</type>
     <sub_type>4</sub_type>
-    <attack>1</attack>
-    <health>1</health>
-    <cost>1</cost>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>0</cost>
     <rarity>4</rarity>
+    <skill id="weaken" all="1" x="1" />
+    <skill id="nullify" x="2" />
+    <skill id="daze" x="7" />
     <upgrade>
       <level>2</level>
+      <attack>7</attack>
+      <skill id="weaken" all="1" x="1" />
+      <skill id="nullify" x="2" />
+      <skill id="daze" x="8" />
     </upgrade>
     <upgrade>
       <level>3</level>
+      <skill id="weaken" all="1" x="1" />
+      <skill id="nullify" x="3" />
+      <skill id="daze" x="9" />
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>19</health>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="nullify" x="3" />
+      <skill id="daze" x="9" />
     </upgrade>
     <upgrade>
       <level>5</level>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="nullify" x="4" />
+      <skill id="daze" x="10" />
     </upgrade>
     <upgrade>
       <level>6</level>
+      <attack>8</attack>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="nullify" x="4" />
+      <skill id="daze" x="11" />
     </upgrade>
     <upgrade>
       <level>7</level>
+      <health>20</health>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="nullify" x="4" />
+      <skill id="daze" x="12" />
     </upgrade>
     <upgrade>
       <level>8</level>
+      <attack>9</attack>
+      <skill id="weaken" all="1" x="3" />
+      <skill id="nullify" x="4" />
+      <skill id="daze" x="12" />
     </upgrade>
     <upgrade>
       <level>9</level>
+      <health>21</health>
+      <skill id="weaken" all="1" x="3" />
+      <skill id="nullify" x="4" />
+      <skill id="daze" x="13" />
     </upgrade>
     <upgrade>
       <level>10</level>
-      <attack>1</attack>
-      <health>1</health>
+      <attack>10</attack>
+      <health>22</health>
+      <skill id="weaken" all="1" x="3" />
+      <skill id="nullify" x="5" />
+      <skill id="daze" x="13" />
     </upgrade>
-    <desc>Placeholder for next champion.</desc>
   </unit>
+  <!--
+	<unit>
+		<id>4099</id>
+		<card_type>2</card_type>
+		<name>Placeholder Champion</name>
+		<set>5000</set>
+		<shard_card>1</shard_card>
+		<cannot_salvage>1</cannot_salvage>
+		<picture>Dust_Mite</picture>
+		<asset_bundle>1</asset_bundle>
+		<hidden_until_time>1750352400</hidden_until_time>
+		<item_name>Placeholder Stone</item_name>
+		<item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
+		<item_icon>championStone_epic</item_icon>
+		<item_bundle_id>58</item_bundle_id>
+		<item_overflow_item_id>104003</item_overflow_item_id>
+		<type>0</type>
+		<sub_type>13</sub_type>
+		<attack>1</attack>
+		<health>1</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<upgrade>
+			<level>2</level>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+		</upgrade>
+		<upgrade>
+			<level>7</level>
+		</upgrade>
+		<upgrade>
+			<level>8</level>
+		</upgrade>
+		<upgrade>
+			<level>9</level>
+		</upgrade>
+		<upgrade>
+			<level>10</level>
+			<attack>1</attack>
+			<health>1</health>
+		</upgrade>
+		<desc>Placeholder for next champion.</desc>
+	</unit>
+-->
   <!-- Reward End -->
   <!-- ================================ -->
   <!-- === COMDEV ENDGAME CHAMPIONS === -->

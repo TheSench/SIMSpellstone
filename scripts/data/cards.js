@@ -83244,53 +83244,198 @@ var CARDS = {
 		}
 	},
 	"4098": {
-		"attack": 1,
+		"attack": 6,
 		"card_type": "2",
-		"cost": 1,
-		"desc": "Placeholder for next champion.",
-		"health": 1,
+		"cost": 0,
+		"health": 18,
 		"hidden_until": "1747933200000",
 		"id": "4098",
 		"maxLevel": 10,
-		"name": "Placeholder Champion",
-		"picture": "Dust_Mite",
+		"name": "Bheki, Trick of the Light",
+		"picture": "Frog_Acrobat_Thief_B",
 		"rarity": 4,
 		"set": "5000",
 		"shard_card": 1,
-		"skill": [],
+		"skill": [
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 1
+			},
+			{
+				"id": "nullify",
+				"x": 2
+			},
+			{
+				"id": "daze",
+				"x": 7
+			}
+		],
 		"sub_type": [
 			"4"
 		],
-		"type": "0",
+		"type": "2",
 		"upgrades": {
 			"2": {
-				"skill": []
+				"attack": 7,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "nullify",
+						"x": 2
+					},
+					{
+						"id": "daze",
+						"x": 8
+					}
+				]
 			},
 			"3": {
-				"skill": []
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 1
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 9
+					}
+				]
 			},
 			"4": {
-				"skill": []
+				"health": 19,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 3
+					},
+					{
+						"id": "daze",
+						"x": 9
+					}
+				]
 			},
 			"5": {
-				"skill": []
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 10
+					}
+				]
 			},
 			"6": {
-				"skill": []
+				"attack": 8,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 11
+					}
+				]
 			},
 			"7": {
-				"skill": []
+				"health": 20,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
 			},
 			"8": {
-				"skill": []
+				"attack": 9,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 12
+					}
+				]
 			},
 			"9": {
-				"skill": []
+				"health": 21,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					},
+					{
+						"id": "daze",
+						"x": 13
+					}
+				]
 			},
 			"10": {
-				"attack": 1,
-				"health": 1,
-				"skill": []
+				"attack": 10,
+				"health": 22,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					},
+					{
+						"id": "nullify",
+						"x": 5
+					},
+					{
+						"id": "daze",
+						"x": 13
+					}
+				]
 			}
 		}
 	},

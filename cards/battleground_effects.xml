@@ -1944,6 +1944,19 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>193</id>
+    <name>Frogs&apos; Devitalizing Touch</name>
+    <desc>0-2D Frogs gain 20% Daze and Weaken. 3-4D Frogs get 15% Ward and Regenerate. All values are based on base Health. All cards are inflicted Weaken 1 every turn.</desc>
+    <icon>filter_frog_64</icon>
+    <effect>
+      <add_skill id="daze" mult="0.2" base="health" y="4" delay="0,1,2" />
+      <add_skill id="weakenbge" mult="0.2" base="health" y="4" delay="0,1,2" />
+      <add_skill id="absorb" mult="0.15" base="health" y="4" delay="3,4" />
+      <add_skill id="regenerate" mult="0.15" base="health" y="4" delay="3,4" />
+      <skill id="weaken" x="1" all="1" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

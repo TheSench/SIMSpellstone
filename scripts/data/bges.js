@@ -3483,6 +3483,65 @@ var BATTLEGROUNDS = {
 		"id": "192",
 		"name": "Elemental Tempest"
 	},
+	"193": {
+		"desc": "0-2D Frogs gain 20% Daze and Weaken. 3-4D Frogs get 15% Ward and Regenerate. All values are based on base Health. All cards are inflicted Weaken 1 every turn.",
+		"effect": [
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "daze",
+				"mult": 0.2,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "weakenbge",
+				"mult": 0.2,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"mult": 0.15,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "4"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "weaken",
+				"x": 1
+			}
+		],
+		"id": "193",
+		"name": "Frogs' Devitalizing Touch"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
