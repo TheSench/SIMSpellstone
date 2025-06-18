@@ -19511,4 +19511,45 @@
       <!-- Gloom Lurker -->
     </deck>
   </mission>
+  <!-- Event 130: ComDev Insect - Healed Dawnglow -->
+  <mission>
+    <id>10130</id>
+    <name>Healed Dawnglow</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Void Remnants in Dawnglow Defenses to power up your cards.</desc>
+    <commander id="435" />
+    <!-- Ebonclaw, Silencer -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Forgotten Hero -->
+      <card id="4503" />
+      <!-- Acheron, the Retaliator -->
+      <card id="4500" />
+      <!-- Sneggle, the Insatiable -->
+      <card id="4046" />
+      <!-- Agatha, Myth Warden -->
+      <card id="4019" />
+      <!-- Formos Ebonclaw -->
+      <card id="4085" />
+      <!-- Ecyxigua, the Tongue Twister -->
+      <card id="5646" />
+      <!-- Frazzil, Glacial Guardian -->
+      <card id="5606" />
+      <!-- Volvel, Golden Pride -->
+      <card id="5611" />
+      <!-- Zhu-Lath, the Hermit -->
+      <card id="7629" />
+      <!-- Tilly, the Love Keeper -->
+      <card id="5143" />
+      <!-- Cedric's Rocketsnail -->
+      <card id="6232" />
+      <!-- Firetouch Deathmoth -->
+      <card id="2112" />
+      <!-- Warrior Karna -->
+      <card id="2233" />
+      <!-- Aikido Initiate -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+    </deck>
+  </mission>
 </root>

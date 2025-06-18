@@ -12577,6 +12577,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9130</id>
+    <name>Return to Karthos</name>
+    <campaign_req id="24" level="1" />
+    <location_id>30</location_id>
+    <x>300</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6458</mission_id>
+      <mission_id>6459</mission_id>
+      <mission_id>6460</mission_id>
+      <mission_id>6461</mission_id>
+      <mission_id>6462</mission_id>
+      <mission_id>6463</mission_id>
+      <mission_id>6464</mission_id>
+      <mission_id>6465</mission_id>
+      <mission_id>6466</mission_id>
+      <mission_id>6467</mission_id>
+      <mission_id>6468</mission_id>
+      <mission_id>6469</mission_id>
+      <mission_id>6470</mission_id>
+      <mission_id>6471</mission_id>
+      <mission_id>6472</mission_id>
+      <mission_id>6473</mission_id>
+      <mission_id>6474</mission_id>
+      <mission_id>6475</mission_id>
+      <mission_id>6476</mission_id>
+      <mission_id>6477</mission_id>
+      <mission_id>6478</mission_id>
+      <mission_id>6479</mission_id>
+      <mission_id>6480</mission_id>
+      <mission_id>6481</mission_id>
+      <mission_id>6482</mission_id>
+      <mission_id>6483</mission_id>
+      <mission_id>6484</mission_id>
+      <mission_id>6485</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="547" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="556" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2089" />
+      <!-- Map Legendary -->
+      <card level="5" id="2089" />
+      <!-- Map Legendary -->
+      <card level="6" id="12089" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3116" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9131</id>
     <name>Return to Tarragon Peak</name>
     <campaign_req id="24" level="1" />
@@ -13026,5 +13083,42 @@
     </rewards>
     <find_item id="3113" drop_per_energy="1" />
     <find_item id="104505" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 130: ComDev Insect - Healed Dawnglow -->
+  <campaign>
+    <id>10130</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>28</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>610</x>
+    <y>350</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10130</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28260" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28260" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104099" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3110" drop_per_energy="1" />
+    <find_item id="104500" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

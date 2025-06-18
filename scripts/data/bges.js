@@ -3542,6 +3542,78 @@ var BATTLEGROUNDS = {
 		"id": "193",
 		"name": "Frogs' Devitalizing Touch"
 	},
+	"194": {
+		"desc": "All Insects gain 30% bonus Attack and 10% Vengeance. 0-2D Insects gain 30% Pierce and Siphon, and 15% Scorch Self. 3-4D Insects gain 10% Armor. All values scale with base Health. All cards with Dualstrike have it evolved to Confuse (with the same count).",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_attack",
+				"mult": 0.3,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counter",
+				"mult": 0.1,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.3,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.3,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "burnself",
+				"mult": 0.15,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "13"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "flurry",
+				"s": "confuse"
+			}
+		],
+		"id": "194",
+		"name": "Like Moths to a Flame"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

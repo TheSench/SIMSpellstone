@@ -12179,282 +12179,7 @@
     </reward>
   </achievement>
   <!-- Campaign Event 24 weeks 1-4 -->
-  <achievement>
-    <id>3591</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 1.</desc>
-    <mission_req>6463</mission_req>
-    <locked_start_time>1595523600</locked_start_time>
-    <!--  Thursday, 23 July 2020 17:00:00 -->
-    <req>
-      <campaign>1255</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3116" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7062" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3592</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1595523600</locked_start_time>
-    <!--  Thursday, 23 July 2020 17:00:00 -->
-    <achievement_req>3591</achievement_req>
-    <req>
-      <campaign>1255</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3593</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1595523600</locked_start_time>
-    <!--  Thursday, 23 July 2020 17:00:00 -->
-    <achievement_req>3592</achievement_req>
-    <req>
-      <campaign>1255</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3594</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Return to Karthos' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1595523600</locked_start_time>
-    <!--  Thursday, 23 July 2020 17:00:00 -->
-    <achievement_req>3593</achievement_req>
-    <req>
-      <campaign>1255</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3595</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 2.</desc>
-    <mission_req>6469</mission_req>
-    <locked_start_time>1596733200</locked_start_time>
-    <!--  Thursday, 6 August 2020 17:00:00 -->
-    <req>
-      <campaign>1256</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3596</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1596733200</locked_start_time>
-    <!--  Thursday, 6 August 2020 17:00:00 -->
-    <achievement_req>3595</achievement_req>
-    <req>
-      <campaign>1256</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3597</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Power Coil' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1596733200</locked_start_time>
-    <!--  Thursday, 6 August 2020 17:00:00 -->
-    <achievement_req>3596</achievement_req>
-    <req>
-      <campaign>1256</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <!-- Slagspirit's recipe -->
-  <achievement>
-    <id>3598</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Constructing Chaos' campaign on Mastery Level 1.</desc>
-    <mission_req>6470</mission_req>
-    <locked_start_time>1596733200</locked_start_time>
-    <!--  Thursday, 6 August 2020 17:00:00 -->
-    <req>
-      <campaign>1257</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8025" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 24 weeks 5-8 -->
-  <achievement>
-    <id>3599</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 1.</desc>
-    <mission_req>6479</mission_req>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 20 August 2020 17:00:00 -->
-    <req>
-      <campaign>1258</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3116" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7063" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3600</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 20 August 2020 17:00:00 -->
-    <achievement_req>3599</achievement_req>
-    <req>
-      <campaign>1258</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3601</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 20 August 2020 17:00:00 -->
-    <achievement_req>3600</achievement_req>
-    <req>
-      <campaign>1258</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3602</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Chaos Allegiance' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 20 August 2020 17:00:00 -->
-    <achievement_req>3601</achievement_req>
-    <req>
-      <campaign>1258</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3603</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 2.</desc>
-    <mission_req>6485</mission_req>
-    <locked_start_time>1599152400</locked_start_time>
-    <!--  Thursday, 3 September 2020 17:00:00 -->
-    <req>
-      <campaign>1259</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3604</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1599152400</locked_start_time>
-    <!--  Thursday, 3 September 2020 17:00:00 -->
-    <achievement_req>3603</achievement_req>
-    <req>
-      <campaign>1259</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3605</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Past Trickery Reveal' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1599152400</locked_start_time>
-    <!--  Thursday, 3 September 2020 17:00:00 -->
-    <achievement_req>3604</achievement_req>
-    <req>
-      <campaign>1259</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 25 weeks 1-4 -->
   <!-- 5th Anniversary -->
   <!-- Siren's recipe -->
@@ -16515,146 +16240,7 @@
   </achievement>
   <!-- Event 106: ComDev Goblin - Return to Karthos -->
   <!-- E106 Node 1: The Return of a King -->
-  <achievement>
-    <id>3900</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'The Return of a King' campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7134</mission_req>
-    <locked_start_time>1692291600</locked_start_time>
-    <req>
-      <campaign>1353</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3116" number="50" />
-      <event_points id="7102" number="50" />
-      <!-- Expediton Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3901</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'The Return of a King' campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1692291600</locked_start_time>
-    <achievement_req>3900</achievement_req>
-    <req>
-      <campaign>1353</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3902</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'The Return of a King' campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1692291600</locked_start_time>
-    <achievement_req>3901</achievement_req>
-    <req>
-      <campaign>1353</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3903</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'The Return of a King' campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1692291600</locked_start_time>
-    <achievement_req>3902</achievement_req>
-    <req>
-      <campaign>1353</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- E106 Node 2: Warring Factions -->
-  <achievement>
-    <id>3904</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Warring Factions' campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7145</mission_req>
-    <locked_start_time>1693501200</locked_start_time>
-    <req>
-      <campaign>1354</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3905</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Warring Factions' campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1693501200</locked_start_time>
-    <achievement_req>3904</achievement_req>
-    <req>
-      <campaign>1354</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3906</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the 'Warring Factions' campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1693501200</locked_start_time>
-    <achievement_req>3905</achievement_req>
-    <req>
-      <campaign>1354</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Event 107: ComDev Elementals - Conflux Convergence -->
   <!-- E107 Node 1: The Goblins' Conflux -->
   <!-- E107 Node 2: Furious Clouds -->
@@ -17552,33 +17138,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Return to Karthos -->
-    <id>4025</id>
-    <type>2</type>
-    <order>654</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Return to Karthos</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Karthos.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6458</mission_req>
-    <req>
-      <campaign>1255</campaign>
-      <!-- 1st node -->
-      <campaign>1256</campaign>
-      <!-- 2nd node -->
-      <campaign>1257</campaign>
-      <!-- Boss node -->
-      <campaign>1258</campaign>
-      <!-- 3rd node -->
-      <campaign>1259</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -18281,32 +17840,6 @@
     </reward>
   </achievement>
   <!-- Event 106: ComDev Goblin - Return to Karthos -->
-  <achievement>
-    <id>4060</id>
-    <type>2</type>
-    <order>661</order>
-    <event_only>1</event_only>
-    <name>Commander of Return to Karthos</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Return to Karthos.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7145</mission_req>
-    <achievement_req>4025</achievement_req>
-    <req>
-      <campaign>1255</campaign>
-      <campaign>1256</campaign>
-      <campaign>1257</campaign>
-      <campaign>1258</campaign>
-      <campaign>1259</campaign>
-      <campaign>1353</campaign>
-      <campaign>1354</campaign>
-      <level>7</level>
-      <!-- Mastery Level 7 -->
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory expansion -->
-    </reward>
-  </achievement>
   <!-- Event 107: ComDev Elementals - Conflux Convergence -->
   <!-- Event 108: ComDev Seafolk - Pharos Temple -->
   <achievement>
@@ -18861,6 +18394,26 @@
     <mission_req>10129</mission_req>
     <req>
       <campaign>10129</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 130: ComDev Insect - Healed Dawnglow -->
+  <achievement>
+    <id>10130</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Healed Dawnglow</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10130</mission_req>
+    <req>
+      <campaign>10130</campaign>
       <level>7</level>
     </req>
     <reward>

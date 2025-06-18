@@ -8539,60 +8539,141 @@
       <skill id="daze" x="13" />
     </upgrade>
   </unit>
-  <!--
-	<unit>
-		<id>4099</id>
-		<card_type>2</card_type>
-		<name>Placeholder Champion</name>
-		<set>5000</set>
-		<shard_card>1</shard_card>
-		<cannot_salvage>1</cannot_salvage>
-		<picture>Dust_Mite</picture>
-		<asset_bundle>1</asset_bundle>
-		<hidden_until_time>1750352400</hidden_until_time>
-		<item_name>Placeholder Stone</item_name>
-		<item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
-		<item_icon>championStone_epic</item_icon>
-		<item_bundle_id>58</item_bundle_id>
-		<item_overflow_item_id>104003</item_overflow_item_id>
-		<type>0</type>
-		<sub_type>13</sub_type>
-		<attack>1</attack>
-		<health>1</health>
-		<cost>1</cost>
-		<rarity>4</rarity>
-		<upgrade>
-			<level>2</level>
-		</upgrade>
-		<upgrade>
-			<level>3</level>
-		</upgrade>
-		<upgrade>
-			<level>4</level>
-		</upgrade>
-		<upgrade>
-			<level>5</level>
-		</upgrade>
-		<upgrade>
-			<level>6</level>
-		</upgrade>
-		<upgrade>
-			<level>7</level>
-		</upgrade>
-		<upgrade>
-			<level>8</level>
-		</upgrade>
-		<upgrade>
-			<level>9</level>
-		</upgrade>
-		<upgrade>
-			<level>10</level>
-			<attack>1</attack>
-			<health>1</health>
-		</upgrade>
-		<desc>Placeholder for next champion.</desc>
-	</unit>
--->
+  <unit>
+    <id>4099</id>
+    <card_type>2</card_type>
+    <name>Aculeatus, the Night Terror</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Spiky_Bug_B</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1750352400</hidden_until_time>
+    <item_name>Aculeatus Stone</item_name>
+    <item_desc>Collect Aculeatus Stones to upgrade Aculeatus, the Night Terror!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <attack>14</attack>
+    <health>57</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="8" />
+    <skill id="counter" x="8" />
+    <skill id="counterpoison" x="10" />
+    <upgrade>
+      <level>2</level>
+      <health>58</health>
+      <skill id="armored" x="8" />
+      <skill id="counter" x="8" />
+      <skill id="counterpoison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="9" />
+      <skill id="counter" x="9" />
+      <skill id="counterpoison" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>15</attack>
+      <health>59</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="9" />
+      <skill id="counter" x="10" />
+      <skill id="counterpoison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="armored" x="10" />
+      <skill id="counter" x="11" />
+      <skill id="counterpoison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>16</attack>
+      <health>61</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>62</health>
+      <skill id="armored" x="11" />
+      <skill id="counter" x="11" />
+      <skill id="counterpoison" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>17</attack>
+      <skill id="armored" x="11" />
+      <skill id="counter" x="12" />
+      <skill id="counterpoison" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>17</attack>
+      <health>63</health>
+      <skill id="armored" x="12" />
+      <skill id="counter" x="12" />
+      <skill id="counterpoison" x="14" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4100</id>
+    <card_type>2</card_type>
+    <name>Placeholder Champion</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Dust_Mite</picture>
+    <asset_bundle>1</asset_bundle>
+    <hidden_until_time>1752771600</hidden_until_time>
+    <item_name>Placeholder Stone</item_name>
+    <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>0</type>
+    <sub_type>6</sub_type>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <upgrade>
+      <level>2</level>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>1</attack>
+      <health>1</health>
+    </upgrade>
+    <desc>Placeholder for next champion.</desc>
+  </unit>
   <!-- Reward End -->
   <!-- ================================ -->
   <!-- === COMDEV ENDGAME CHAMPIONS === -->
@@ -12609,19 +12690,19 @@
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="strike" all="1" x="1" />
-    <skill id="pierce" x="10" />
-    <skill id="venom" x="2" />
+    <skill id="pierce" x="11" />
+    <skill id="venom" x="3" />
     <upgrade>
       <level>2</level>
       <health>21</health>
       <skill id="strike" all="1" x="1" />
-      <skill id="pierce" x="11" />
+      <skill id="pierce" x="12" />
       <skill id="venom" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>10</attack>
-      <skill id="strike" all="1" x="1" />
+      <skill id="strike" all="1" x="2" />
       <skill id="pierce" x="12" />
       <skill id="venom" x="3" />
     </upgrade>
@@ -12629,25 +12710,25 @@
       <level>4</level>
       <skill id="strike" all="1" x="2" />
       <skill id="pierce" x="13" />
-      <skill id="venom" x="3" />
+      <skill id="venom" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>22</health>
-      <skill id="strike" all="1" x="2" />
+      <skill id="strike" all="1" x="3" />
       <skill id="pierce" x="14" />
       <skill id="venom" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>11</attack>
       <health>23</health>
-      <skill id="strike" all="1" x="2" />
+      <skill id="strike" all="1" x="3" />
       <skill id="pierce" x="15" />
-      <skill id="venom" x="4" />
+      <skill id="venom" x="5" />
     </upgrade>
     <upgrade>
       <level>7</level>
+      <attack>11</attack>
       <skill id="strike" all="1" x="3" />
       <skill id="pierce" x="16" />
       <skill id="venom" x="5" />

@@ -83439,6 +83439,219 @@ var CARDS = {
 			}
 		}
 	},
+	"4099": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 4,
+		"health": 57,
+		"hidden_until": "1750352400000",
+		"id": "4099",
+		"maxLevel": 10,
+		"name": "Aculeatus, the Night Terror",
+		"picture": "Spiky_Bug_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 8
+			},
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"id": "counterpoison",
+				"x": 10
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 58,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "counterpoison",
+						"x": 11
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "counterpoison",
+						"x": 11
+					}
+				]
+			},
+			"4": {
+				"attack": 15,
+				"health": 59,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"id": "counterpoison",
+						"x": 12
+					}
+				]
+			},
+			"6": {
+				"health": 60,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "counter",
+						"x": 11
+					},
+					{
+						"id": "counterpoison",
+						"x": 12
+					}
+				]
+			},
+			"7": {
+				"attack": 16,
+				"health": 61,
+				"skill": []
+			},
+			"8": {
+				"health": 62,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "counter",
+						"x": 11
+					},
+					{
+						"id": "counterpoison",
+						"x": 13
+					}
+				]
+			},
+			"9": {
+				"attack": 17,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "counter",
+						"x": 12
+					},
+					{
+						"id": "counterpoison",
+						"x": 13
+					}
+				]
+			},
+			"10": {
+				"attack": 17,
+				"health": 63,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 12
+					},
+					{
+						"id": "counter",
+						"x": 12
+					},
+					{
+						"id": "counterpoison",
+						"x": 14
+					}
+				]
+			}
+		}
+	},
+	"4100": {
+		"attack": 1,
+		"card_type": "2",
+		"cost": 1,
+		"desc": "Placeholder for next champion.",
+		"health": 1,
+		"hidden_until": "1752771600000",
+		"id": "4100",
+		"maxLevel": 10,
+		"name": "Placeholder Champion",
+		"picture": "Dust_Mite",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [],
+		"sub_type": [
+			"6"
+		],
+		"type": "0",
+		"upgrades": {
+			"2": {
+				"skill": []
+			},
+			"3": {
+				"skill": []
+			},
+			"4": {
+				"skill": []
+			},
+			"5": {
+				"skill": []
+			},
+			"6": {
+				"skill": []
+			},
+			"7": {
+				"skill": []
+			},
+			"8": {
+				"skill": []
+			},
+			"9": {
+				"skill": []
+			},
+			"10": {
+				"attack": 1,
+				"health": 1,
+				"skill": []
+			}
+		}
+	},
 	"4500": {
 		"attack": 4,
 		"card_type": "2",
@@ -121695,11 +121908,11 @@ var CARDS = {
 			},
 			{
 				"id": "pierce",
-				"x": 10
+				"x": 11
 			},
 			{
 				"id": "venom",
-				"x": 2
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -121717,7 +121930,7 @@ var CARDS = {
 					},
 					{
 						"id": "pierce",
-						"x": 11
+						"x": 12
 					},
 					{
 						"id": "venom",
@@ -121731,7 +121944,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 1
+						"x": 2
 					},
 					{
 						"id": "pierce",
@@ -121756,7 +121969,7 @@ var CARDS = {
 					},
 					{
 						"id": "venom",
-						"x": 3
+						"x": 4
 					}
 				]
 			},
@@ -121766,7 +121979,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "pierce",
@@ -121779,13 +121992,12 @@ var CARDS = {
 				]
 			},
 			"6": {
-				"attack": 11,
 				"health": 23,
 				"skill": [
 					{
 						"all": "1",
 						"id": "strike",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "pierce",
@@ -121793,11 +122005,12 @@ var CARDS = {
 					},
 					{
 						"id": "venom",
-						"x": 4
+						"x": 5
 					}
 				]
 			},
 			"7": {
+				"attack": 11,
 				"skill": [
 					{
 						"all": "1",
