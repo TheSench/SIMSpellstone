@@ -101,9 +101,9 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"29": {
-		"id": "29",
-		"name": "Return to Luminis"
+	"28": {
+		"id": "28",
+		"name": "Healed Dawnglow"
 	},
 	"30": {
 		"id": "30",
