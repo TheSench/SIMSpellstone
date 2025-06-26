@@ -6327,89 +6327,95 @@ var MAP_BATTLEGROUNDS = {
 		"effects": [
 			{
 				"id": "56",
-				"name": "Healing Turret",
+				"name": "Magical Turret",
 				"upgrades": [
 					{
 						"desc": "",
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures are Healed for 2 each turn.",
+						"desc": "All of your creatures gain Invisibility 1 each turn.",
 						"effect": [
 							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
-								"id": "heal",
+								"id": "imbue",
+								"s": "evade",
+								"x": 1
+							}
+						],
+						"name": "Magical Turret"
+					},
+					{
+						"desc": "All of your creatures gain Invisibility 2 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "evade",
 								"x": 2
 							}
 						],
-						"name": "Healing Turret"
+						"name": "Magical Turret"
 					},
 					{
-						"desc": "All of your creatures are Healed for 3 each turn.",
+						"desc": "All of your creatures gain Invisibility 3 each turn.",
 						"effect": [
 							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
-								"id": "heal",
+								"id": "imbue",
+								"s": "evade",
 								"x": 3
 							}
 						],
-						"name": "Healing Turret"
+						"name": "Magical Turret"
 					},
 					{
-						"desc": "All of your creatures are Healed for 5 each turn.",
+						"desc": "All of your creatures gain Invisibility 4 each turn.",
 						"effect": [
 							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
-								"id": "heal",
+								"id": "imbue",
+								"s": "evade",
+								"x": 4
+							}
+						],
+						"name": "Magical Turret"
+					},
+					{
+						"desc": "All of your creatures gain Invisibility 5 each turn.",
+						"effect": [
+							{
+								"all": "1",
+								"ally_only": "1",
+								"effect_type": "skill",
+								"id": "imbue",
+								"s": "evade",
 								"x": 5
 							}
 						],
-						"name": "Healing Turret"
+						"name": "Magical Turret"
 					},
 					{
-						"desc": "All of your creatures are Healed for 6 each turn.",
+						"desc": "All of your creatures gain Invisibility 6 each turn.",
 						"effect": [
 							{
 								"all": "1",
 								"ally_only": "1",
 								"effect_type": "skill",
-								"id": "heal",
+								"id": "imbue",
+								"s": "evade",
 								"x": 6
 							}
 						],
-						"name": "Healing Turret"
-					},
-					{
-						"desc": "All of your creatures are Healed for 8 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 8
-							}
-						],
-						"name": "Healing Turret"
-					},
-					{
-						"desc": "All of your creatures are Healed for 9 each turn.",
-						"effect": [
-							{
-								"all": "1",
-								"ally_only": "1",
-								"effect_type": "skill",
-								"id": "heal",
-								"x": 9
-							}
-						],
-						"name": "Healing Turret"
+						"name": "Magical Turret"
 					}
 				]
 			},
@@ -6422,7 +6428,7 @@ var MAP_BATTLEGROUNDS = {
 						"effect": []
 					},
 					{
-						"desc": "All of your creatures gain Pierce 2.",
+						"desc": "All of your creatures gain Pierce 2 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6436,7 +6442,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Automaton Driller"
 					},
 					{
-						"desc": "All of your creatures gain Pierce 4.",
+						"desc": "All of your creatures gain Pierce 4 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6450,7 +6456,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Automaton Driller"
 					},
 					{
-						"desc": "All of your creatures gain Pierce 6.",
+						"desc": "All of your creatures gain Pierce 6 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6464,7 +6470,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Automaton Driller"
 					},
 					{
-						"desc": "All of your creatures gain Pierce 8.",
+						"desc": "All of your creatures gain Pierce 8 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6478,7 +6484,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Automaton Driller"
 					},
 					{
-						"desc": "All of your creatures gain Pierce 10.",
+						"desc": "All of your creatures gain Pierce 10 each turn.",
 						"effect": [
 							{
 								"all": "1",
@@ -6492,7 +6498,7 @@ var MAP_BATTLEGROUNDS = {
 						"name": "Automaton Driller"
 					},
 					{
-						"desc": "All of your creatures gain Pierce 15.",
+						"desc": "All of your creatures gain Pierce 15 each turn.",
 						"effect": [
 							{
 								"all": "1",

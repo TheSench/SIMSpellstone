@@ -4299,13 +4299,13 @@
       <card id="4044" />
       <!-- Viracocha -->
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="4044" mastery_level="3" />
       <!-- Viracocha -->
       <card id="4003" mastery_level="5" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="4003" mastery_level="7" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
     </deck>
     <speech>
       <line>
@@ -19316,7 +19316,7 @@
     <!-- Frostbite -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="2039" />
       <!-- Narix, Dragonlord -->
       <card id="5616" />
@@ -19357,7 +19357,7 @@
     <!-- Aviary Feral Wing -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="2092" />
       <!-- Verus, Arena Champion -->
       <card id="7621" />
@@ -19398,7 +19398,7 @@
     <!-- Marrowsworn the Tyrant -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="2158" />
       <!-- Mortagan, Grave General -->
       <card id="4049" />
@@ -19439,7 +19439,7 @@
     <!-- Desire for Apathy -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="2017" />
       <!-- Solaron, the Origin  -->
       <card id="2075" />
@@ -19480,7 +19480,7 @@
     <!-- Caesar -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
+      <!-- Lev, Celebrated Hero -->
       <card id="4501" />
       <!-- Rasako, Ninja of the Swamp -->
       <card id="4053" />
@@ -19517,13 +19517,13 @@
     <name>Healed Dawnglow</name>
     <energy>60</energy>
     <desc>Tip: Invest Void Remnants in Dawnglow Defenses to power up your cards.</desc>
-    <commander id="435" />
-    <!-- Ebonclaw, Silencer -->
+    <commander id="472" />
+    <!-- Nophora -->
     <deck>
       <card id="4003" />
-      <!-- Lev, Forgotten Hero -->
-      <card id="4503" />
-      <!-- Acheron, the Retaliator -->
+      <!-- Lev, Celebrated Hero -->
+      <card id="4099" />
+      <!-- Aculeatus, the Night Terror -->
       <card id="4500" />
       <!-- Sneggle, the Insatiable -->
       <card id="4046" />
@@ -19543,13 +19543,13 @@
       <card id="5143" />
       <!-- Cedric's Rocketsnail -->
       <card id="6232" />
-      <!-- Firetouch Deathmoth -->
-      <card id="2112" />
-      <!-- Warrior Karna -->
+      <!-- Viofire Deathmoth -->
+      <card id="2211" />
+      <!-- Firelight Legion -->
       <card id="2233" />
-      <!-- Aikido Initiate -->
+      <!-- Aikido Master -->
       <card id="1645" />
-      <!-- Sundermarr -->
+      <!-- Colossal Sundermarr -->
     </deck>
   </mission>
 </root>

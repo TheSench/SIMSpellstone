@@ -1963,7 +1963,7 @@
     <desc>All Insects gain 30% bonus Attack and 10% Vengeance. 0-2D Insects gain 30% Pierce and Siphon, and 15% Scorch Self. 3-4D Insects gain 10% Armor. All values scale with base Health. All cards with Dualstrike have it evolved to Confuse (with the same count).</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
-      <scale_attack mult="0.3" base="health" yy="13" />
+      <add_skill id="bash" mult="0.3" base="health" y="13" />
       <add_skill id="counter" mult="0.1" base="health" y="13" />
       <add_skill id="pierce" mult="0.3" base="health" y="13" delay="0,1,2" />
       <add_skill id="leech" mult="0.3" base="health" y="13" delay="0,1,2" />
