@@ -83602,13 +83602,417 @@ var CARDS = {
 		}
 	},
 	"4100": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 45,
+		"hidden_until": "1752771600000",
+		"id": "4100",
+		"maxLevel": 10,
+		"name": "Rafael, Dawn Rescuer",
+		"picture": "Angel_Winged_Saviour_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 7
+			},
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 7
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"4": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"health": 47,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"7": {
+				"attack": 15,
+				"health": 48,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"9": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"10": {
+				"attack": 16,
+				"health": 50,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"4101": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 2,
+		"health": 31,
+		"hidden_until": "1755190800000",
+		"id": "4101",
+		"maxLevel": 10,
+		"name": "Raija, Mountain Legend",
+		"picture": "Angel_Snowtiger_B.psd",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"6",
+			"14"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 32,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 12,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"5": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"8": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"9": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"10": {
+				"attack": 14,
+				"health": 35,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					}
+				]
+			}
+		}
+	},
+	"4102": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1752771600000",
-		"id": "4100",
+		"hidden_until": "1757610000000",
+		"id": "4102",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -83617,7 +84021,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"6"
+			"11"
 		],
 		"type": "0",
 		"upgrades": {
@@ -157632,10 +158036,10 @@ var CARDS = {
 		}
 	},
 	"6631": {
-		"attack": 10,
+		"attack": 12,
 		"card_type": "2",
 		"cost": 2,
-		"health": 29,
+		"health": 31,
 		"hidden_until": "1685034000000",
 		"id": "6631",
 		"maxLevel": 10,
@@ -157665,17 +158069,7 @@ var CARDS = {
 		"type": "2",
 		"upgrades": {
 			"2": {
-				"attack": 11,
-				"health": 30,
-				"skill": []
-			},
-			"3": {
-				"attack": 12,
-				"health": 31,
-				"skill": []
-			},
-			"4": {
-				"attack": 13,
+				"health": 32,
 				"skill": [
 					{
 						"id": "frost",
@@ -157691,9 +158085,7 @@ var CARDS = {
 					}
 				]
 			},
-			"5": {
-				"attack": 14,
-				"health": 32,
+			"3": {
 				"skill": [
 					{
 						"id": "frost",
@@ -157709,7 +158101,25 @@ var CARDS = {
 					}
 				]
 			},
-			"6": {
+			"4": {
+				"attack": 13,
+				"skill": [
+					{
+						"id": "frost",
+						"x": 5
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 33,
 				"skill": [
 					{
 						"id": "frost",
@@ -157725,25 +158135,24 @@ var CARDS = {
 					}
 				]
 			},
-			"7": {
-				"health": 33,
+			"6": {
+				"attack": 14,
 				"skill": [
 					{
 						"id": "frost",
-						"x": 5
+						"x": 6
 					},
 					{
 						"id": "burn",
-						"x": 7
+						"x": 6
 					},
 					{
-						"c": 2,
+						"c": 3,
 						"id": "flurry"
 					}
 				]
 			},
-			"8": {
-				"attack": 15,
+			"7": {
 				"skill": [
 					{
 						"id": "frost",
@@ -157759,8 +158168,13 @@ var CARDS = {
 					}
 				]
 			},
-			"9": {
+			"8": {
+				"attack": 15,
 				"health": 34,
+				"skill": []
+			},
+			"9": {
+				"health": 35,
 				"skill": [
 					{
 						"id": "frost",

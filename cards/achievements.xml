@@ -3703,6 +3703,231 @@
       <!-- 120 Shards -->
     </reward>
   </achievement>
+  <achievement>
+    <id>1212</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXI</name>
+    <desc>Collect 72,000 Bounties.</desc>
+    <achievement_collected_req>1211</achievement_collected_req>
+    <req>
+      <pvp_wins>72000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1213</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXII</name>
+    <desc>Collect 74,000 Bounties.</desc>
+    <achievement_collected_req>1212</achievement_collected_req>
+    <req>
+      <pvp_wins>74000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1214</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXIII</name>
+    <desc>Collect 76,000 Bounties.</desc>
+    <achievement_collected_req>1213</achievement_collected_req>
+    <req>
+      <pvp_wins>76000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1215</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXIV</name>
+    <desc>Collect 78,000 Bounties.</desc>
+    <achievement_collected_req>1214</achievement_collected_req>
+    <req>
+      <pvp_wins>78000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1216</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXV</name>
+    <desc>Collect 80,000 Bounties.</desc>
+    <achievement_collected_req>1215</achievement_collected_req>
+    <req>
+      <pvp_wins>80000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1217</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXVI</name>
+    <desc>Collect 82,000 Bounties.</desc>
+    <achievement_collected_req>1216</achievement_collected_req>
+    <req>
+      <pvp_wins>82000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1218</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXVII</name>
+    <desc>Collect 84,000 Bounties.</desc>
+    <achievement_collected_req>1217</achievement_collected_req>
+    <req>
+      <pvp_wins>84000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1219</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXVIII</name>
+    <desc>Collect 86,000 Bounties.</desc>
+    <achievement_collected_req>1218</achievement_collected_req>
+    <req>
+      <pvp_wins>86000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1220</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXIX</name>
+    <desc>Collect 88,000 Bounties.</desc>
+    <achievement_collected_req>1219</achievement_collected_req>
+    <req>
+      <pvp_wins>88000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1221</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXX</name>
+    <desc>Collect 90,000 Bounties.</desc>
+    <achievement_collected_req>1220</achievement_collected_req>
+    <req>
+      <pvp_wins>90000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1222</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXXI</name>
+    <desc>Collect 92,000 Bounties.</desc>
+    <achievement_collected_req>1221</achievement_collected_req>
+    <req>
+      <pvp_wins>92000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1223</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXXII</name>
+    <desc>Collect 94,000 Bounties.</desc>
+    <achievement_collected_req>1222</achievement_collected_req>
+    <req>
+      <pvp_wins>94000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1224</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXXIII</name>
+    <desc>Collect 96,000 Bounties.</desc>
+    <achievement_collected_req>1223</achievement_collected_req>
+    <req>
+      <pvp_wins>96000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1225</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXXIV</name>
+    <desc>Collect 98,000 Bounties.</desc>
+    <achievement_collected_req>1224</achievement_collected_req>
+    <req>
+      <pvp_wins>98000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1226</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter CXXV</name>
+    <desc>Collect 100,000 Bounties.</desc>
+    <achievement_collected_req>1225</achievement_collected_req>
+    <req>
+      <pvp_wins>100000</pvp_wins>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- 120 Shards -->
+    </reward>
+  </achievement>
   <!-- END Bounty Part 2 Quests  -->
   <!-- 1300: Runes Quests START -->
   <achievement>
@@ -11625,559 +11850,11 @@
     </reward>
   </achievement>
   <!-- Campaign Event 22 weeks 1-4 -->
-  <achievement>
-    <id>3561</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 1.</desc>
-    <mission_req>6389</mission_req>
-    <locked_start_time>1585846800</locked_start_time>
-    <!--  Thursday, 2 April 2020 17:00:00 -->
-    <req>
-      <campaign>1239</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3110" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7058" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3562</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1585846800</locked_start_time>
-    <!--  Thursday, 2 April 2020 17:00:00 -->
-    <achievement_req>3546</achievement_req>
-    <req>
-      <campaign>1239</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3563</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1585846800</locked_start_time>
-    <!--  Thursday, 2 April 2020 17:00:00 -->
-    <achievement_req>3547</achievement_req>
-    <req>
-      <campaign>1239</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3564</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Healed Dawnglow' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1585846800</locked_start_time>
-    <!--  Thursday, 2 April 2020 17:00:00 -->
-    <achievement_req>3548</achievement_req>
-    <req>
-      <campaign>1239</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3565</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 2.</desc>
-    <mission_req>6395</mission_req>
-    <locked_start_time>1587056400</locked_start_time>
-    <!--  Thursday, 16 April 2020 17:00:00 -->
-    <req>
-      <campaign>1240</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3566</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1587056400</locked_start_time>
-    <!--  Thursday, 16 April 2020 17:00:00 -->
-    <achievement_req>3550</achievement_req>
-    <req>
-      <campaign>1240</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3567</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Mechanical Titan' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1587056400</locked_start_time>
-    <!--  Thursday, 16 April 2020 17:00:00 -->
-    <achievement_req>3551</achievement_req>
-    <req>
-      <campaign>1240</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Conjured Dragon's recipe -->
-  <achievement>
-    <id>3568</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Empty Titan' campaign on Mastery Level 1.</desc>
-    <mission_req>6414</mission_req>
-    <locked_start_time>1587056400</locked_start_time>
-    <!--  Thursday, 16 April 2020 17:00:00 -->
-    <req>
-      <campaign>1247</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8023" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 22 weeks 5-8 -->
-  <achievement>
-    <id>3569</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 1.</desc>
-    <mission_req>6423</mission_req>
-    <locked_start_time>1588266000</locked_start_time>
-    <!--  Thursday, 30 April 2020 17:00:00 -->
-    <req>
-      <campaign>1248</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3110" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7058" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3570</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1588266000</locked_start_time>
-    <!--  Thursday, 30 April 2020 17:00:00 -->
-    <achievement_req>3569</achievement_req>
-    <req>
-      <campaign>1248</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3571</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1588266000</locked_start_time>
-    <!--  Thursday, 30 April 2020 17:00:00 -->
-    <achievement_req>3570</achievement_req>
-    <req>
-      <campaign>1248</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3572</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Manufactured Freedom' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1588266000</locked_start_time>
-    <!--  Thursday, 30 April 2020 17:00:00 -->
-    <achievement_req>3571</achievement_req>
-    <req>
-      <campaign>1248</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3573</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 2.</desc>
-    <mission_req>6429</mission_req>
-    <locked_start_time>1589475600</locked_start_time>
-    <!--  Thursday, 14 May 2020 17:00:00 -->
-    <req>
-      <campaign>1249</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3574</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1589475600</locked_start_time>
-    <!--  Thursday, 14 May 2020 17:00:00 -->
-    <achievement_req>3573</achievement_req>
-    <req>
-      <campaign>1249</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3575</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Royal Interruption' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1589475600</locked_start_time>
-    <!--  Thursday, 14 May 2020 17:00:00 -->
-    <achievement_req>3574</achievement_req>
-    <req>
-      <campaign>1249</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 23 weeks 1-4 -->
-  <achievement>
-    <id>3576</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 1.</desc>
-    <mission_req>6435</mission_req>
-    <locked_start_time>1590685200</locked_start_time>
-    <!--  Thursday, 28 May 2020 17:00:00 -->
-    <req>
-      <campaign>1250</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3113" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7060" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3577</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1590685200</locked_start_time>
-    <!--  Thursday, 28 May 2020 17:00:00 -->
-    <achievement_req>3576</achievement_req>
-    <req>
-      <campaign>1250</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3578</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1590685200</locked_start_time>
-    <!--  Thursday, 28 May 2020 17:00:00 -->
-    <achievement_req>3577</achievement_req>
-    <req>
-      <campaign>1250</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3579</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Return to Luminis' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1590685200</locked_start_time>
-    <!--  Thursday, 28 May 2020 17:00:00 -->
-    <achievement_req>3578</achievement_req>
-    <req>
-      <campaign>1250</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3580</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Civil War' campaign on Mastery Level 2.</desc>
-    <mission_req>6441</mission_req>
-    <locked_start_time>1591894800</locked_start_time>
-    <!--  Thursday, 11 June 2020 17:00:00 -->
-    <req>
-      <campaign>1251</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3581</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Civil War' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1591894800</locked_start_time>
-    <!--  Thursday, 11 June 2020 17:00:00 -->
-    <achievement_req>3580</achievement_req>
-    <req>
-      <campaign>1251</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3582</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Civil War' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1591894800</locked_start_time>
-    <!--  Thursday, 11 June 2020 17:00:00 -->
-    <achievement_req>3581</achievement_req>
-    <req>
-      <campaign>1251</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Bloodmist Harpy's recipe -->
-  <achievement>
-    <id>3583</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Constructing Aether' campaign on Mastery Level 1.</desc>
-    <mission_req>6442</mission_req>
-    <locked_start_time>1591894800</locked_start_time>
-    <!--  Thursday, 11 June 2020 17:00:00 -->
-    <req>
-      <campaign>1252</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8024" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 23 weeks 5-8 -->
-  <achievement>
-    <id>3584</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'The Power Coil' campaign on Mastery Level 1.</desc>
-    <mission_req>6451</mission_req>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 25 June 2020 17:00:00 -->
-    <req>
-      <campaign>1253</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3113" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7061" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3585</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'The Power Coil' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 25 June 2020 17:00:00 -->
-    <achievement_req>3584</achievement_req>
-    <req>
-      <campaign>1253</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3586</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'The Power Coil' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 25 June 2020 17:00:00 -->
-    <achievement_req>3585</achievement_req>
-    <req>
-      <campaign>1253</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3587</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'The Power Coil' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1593104400</locked_start_time>
-    <!--  Thursday, 25 June 2020 17:00:00 -->
-    <achievement_req>3586</achievement_req>
-    <req>
-      <campaign>1253</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3588</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 2.</desc>
-    <mission_req>6457</mission_req>
-    <locked_start_time>1594314000</locked_start_time>
-    <!--  Thursday, 9 July 2020 17:00:00 -->
-    <req>
-      <campaign>1254</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3589</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1594314000</locked_start_time>
-    <!--  Thursday, 9 July 2020 17:00:00 -->
-    <achievement_req>3588</achievement_req>
-    <req>
-      <campaign>1254</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3590</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Aether Attunement' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1594314000</locked_start_time>
-    <!--  Thursday, 9 July 2020 17:00:00 -->
-    <achievement_req>3589</achievement_req>
-    <req>
-      <campaign>1254</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 24 weeks 1-4 -->
   <!-- Campaign Event 24 weeks 5-8 -->
   <!-- Campaign Event 25 weeks 1-4 -->
@@ -13401,154 +13078,7 @@
   </achievement>
   <!-- Halloween Fireshard Mine 2021 -->
   <!-- Wizard Event 84 - Frogs - Node 1 -->
-  <achievement>
-    <id>3744</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Frog Society' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6741</mission_req>
-    <locked_start_time>1639069200</locked_start_time>
-    <!-- Thursday, December 9, 2021 at 17:00:00 -->
-    <req>
-      <campaign>1304</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3110" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7080" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3745</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Frog Society' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1639069200</locked_start_time>
-    <!-- Thursday, December 9, 2021 at 17:00:00 -->
-    <achievement_req>3744</achievement_req>
-    <req>
-      <campaign>1304</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3746</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Frog Society' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1639069200</locked_start_time>
-    <!-- Thursday, December 9, 2021 at 17:00:00 -->
-    <achievement_req>3745</achievement_req>
-    <req>
-      <campaign>1304</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3747</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Frog Society' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1639069200</locked_start_time>
-    <!-- Thursday, December 9, 2021 at 17:00:00 -->
-    <achievement_req>3746</achievement_req>
-    <req>
-      <campaign>1304</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 84 - Frogs - Node 2 -->
-  <achievement>
-    <id>3748</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Froggsters' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6747</mission_req>
-    <locked_start_time>1640278800</locked_start_time>
-    <!--  Thursday, December 23, 2021 17:00:00 -->
-    <req>
-      <campaign>1305</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3749</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Froggsters' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1640278800</locked_start_time>
-    <!-- Thursday, December 23, 2021 17:00:00 -->
-    <achievement_req>3748</achievement_req>
-    <req>
-      <campaign>1305</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3750</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
-    <desc>Complete the 'Froggsters' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1640278800</locked_start_time>
-    <!-- Thursday, December 23, 2021 17:00:00 -->
-    <achievement_req>3749</achievement_req>
-    <req>
-      <campaign>1305</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Christmas 2021 Achievements -->
   <!-- Wizard Event 85 - Goblins - Node 1 -->
   <achievement>
@@ -15947,155 +15477,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 104 - Mecha - Node 1 -->
-  <achievement>
-    <id>3886</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Dark Side of the Science' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7103</mission_req>
-    <locked_start_time>1687453200</locked_start_time>
-    <!-- Thursday, June 22, 2023 17:00:00	 -->
-    <req>
-      <campaign>1349</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3113" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7100" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3887</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Dark Side of the Science' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1687453200</locked_start_time>
-    <!-- Thursday, June 22, 2023 17:00:00	 -->
-    <achievement_req>3886</achievement_req>
-    <!-- Dont forget requirement  -->
-    <req>
-      <campaign>1349</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3888</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Dark Side of the Science' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1687453200</locked_start_time>
-    <!-- Thursday, June 22, 2023 17:00:00	 -->
-    <achievement_req>3887</achievement_req>
-    <req>
-      <campaign>1349</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3889</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'Dark Side of the Science' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1687453200</locked_start_time>
-    <!-- Thursday, June 22, 2023 17:00:00	 -->
-    <achievement_req>3888</achievement_req>
-    <req>
-      <campaign>1349</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 104 - Mecha - Node 2 -->
-  <achievement>
-    <id>3890</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7109</mission_req>
-    <locked_start_time>1688662800</locked_start_time>
-    <!-- Thursday, 6 July 2023 17:00:00 -->
-    <req>
-      <campaign>1350</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3891</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1688662800</locked_start_time>
-    <!-- Thursday, 6 July 2023 17:00:00 -->
-    <achievement_req>3890</achievement_req>
-    <req>
-      <campaign>1350</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3892</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Return to Luminis</name>
-    <desc>Complete the 'When An Experiment Goes Wrong...' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1688662800</locked_start_time>
-    <!-- Thursday, 6 July 2023 17:00:00 -->
-    <achievement_req>3891</achievement_req>
-    <req>
-      <campaign>1350</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- START ComDev Quests -->
   <!-- Wizard Event 105 - Insects BGE - Node 1 -->
   <achievement>
@@ -17084,60 +16466,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Healed Dawnglow -->
-    <id>4023</id>
-    <type>2</type>
-    <order>652</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Healed Dawnglow</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Healed Dawnglow.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6384</mission_req>
-    <req>
-      <campaign>1239</campaign>
-      <!-- 1st node -->
-      <campaign>1240</campaign>
-      <!-- 2nd node -->
-      <campaign>1247</campaign>
-      <!-- Boss node -->
-      <campaign>1248</campaign>
-      <!-- 3rd node -->
-      <campaign>1249</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Return to Luminis -->
-    <id>4024</id>
-    <type>2</type>
-    <order>653</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Return to Luminis</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Return to Luminis.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6430</mission_req>
-    <req>
-      <campaign>1250</campaign>
-      <!-- 1st node -->
-      <campaign>1251</campaign>
-      <!-- 2nd node -->
-      <campaign>1252</campaign>
-      <!-- Boss node -->
-      <campaign>1253</campaign>
-      <!-- 3rd node -->
-      <campaign>1254</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -17337,31 +16665,6 @@
       <campaign>1148</campaign>
       <campaign>1301</campaign>
       <campaign>1302</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Healed Dawnglow Revisited -->
-    <id>4038</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Healed Dawnglow</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Healed Dawnglow.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6736</mission_req>
-    <achievement_req>4023</achievement_req>
-    <req>
-      <campaign>1239</campaign>
-      <campaign>1240</campaign>
-      <campaign>1247</campaign>
-      <campaign>1248</campaign>
-      <campaign>1249</campaign>
-      <campaign>1304</campaign>
-      <campaign>1305</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -17779,31 +17082,6 @@
       <campaign>1312</campaign>
       <campaign>1347</campaign>
       <campaign>1348</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Return to Luminis -->
-    <id>4058</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Return to Luminis</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Return to Luminis.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7098</mission_req>
-    <achievement_req>4024</achievement_req>
-    <req>
-      <campaign>1250</campaign>
-      <campaign>1251</campaign>
-      <campaign>1252</campaign>
-      <campaign>1253</campaign>
-      <campaign>1254</campaign>
-      <campaign>1349</campaign>
-      <campaign>1350</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -18362,58 +17640,41 @@
   <!-- Event 126: ComDev Avian - Gladius Scriptorium -->
   <!-- Event 127: ComDev Undead - Return to Tarragon Peak -->
   <!-- Event 128: ComDev Elemental - Return to Karthos -->
-  <achievement>
-    <id>10128</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Return to Karthos</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10128</mission_req>
-    <req>
-      <campaign>10128</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 129: ComDev Frog - Return to Luminis -->
+  <!-- Event 130: ComDev Insect - Healed Dawnglow -->
+  <!-- Event 131: ComDev Angel - Return to Elaria -->
   <achievement>
-    <id>10129</id>
+    <id>10131</id>
     <type>2</type>
     <order>604</order>
     <event_only>1</event_only>
-    <name>Return to Luminis</name>
+    <name>Return to Elaria</name>
     <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
     <icon>energy_refill</icon>
     <icon_bundle>30</icon_bundle>
-    <mission_req>10129</mission_req>
+    <mission_req>10131</mission_req>
     <req>
-      <campaign>10129</campaign>
+      <campaign>10131</campaign>
       <level>7</level>
     </req>
     <reward>
-      <wb>120</wb>
+      <wb>240</wb>
       <!-- Shards -->
     </reward>
   </achievement>
-  <!-- Event 130: ComDev Insect - Healed Dawnglow -->
+  <!-- Event 132: ComDev Beast - World's Center -->
   <achievement>
-    <id>10130</id>
+    <id>10132</id>
     <type>2</type>
     <order>604</order>
     <event_only>1</event_only>
-    <name>Healed Dawnglow</name>
+    <name>World's Center</name>
     <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
     <icon>energy_refill</icon>
     <icon_bundle>30</icon_bundle>
-    <mission_req>10130</mission_req>
+    <mission_req>10132</mission_req>
     <req>
-      <campaign>10130</campaign>
+      <campaign>10132</campaign>
       <level>7</level>
     </req>
     <reward>

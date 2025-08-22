@@ -3615,6 +3615,56 @@ var BATTLEGROUNDS = {
 		"id": "194",
 		"name": "Like Moths to a Flame"
 	},
+	"195": {
+		"desc": "All Angels gain Frostbreath equal to 50% of their base Attack, along with 10% Corrosive and 15% Barrier scaling with base Health.",
+		"effect": [
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.5,
+				"y": "6"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"mult": 0.1,
+				"y": "6"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"x": 0,
+				"y": "6"
+			}
+		],
+		"id": "195",
+		"name": "Heaven's Unbreakable Ice"
+	},
+	"196": {
+		"desc": "All Beasts gain Invisibility 2 and extra Health equal to 20% of their base Health.",
+		"effect": [
+			{
+				"effect_type": "add_skill",
+				"id": "evade",
+				"x": 2,
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.2,
+				"y": "14"
+			}
+		],
+		"id": "196",
+		"name": "Hidden Beasts"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

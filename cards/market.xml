@@ -276,6 +276,25 @@
     </cards>
   </store_item>
   <store_item>
+    <id>49</id>
+    <name>Gold Premium Card</name>
+    <banner>1</banner>
+    <category>2</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives one copy of a ^cE7FFVoid Fighter^cFFFF! May be purchased unlimited times.</desc>
+    <show_desc>1</show_desc>
+    <priority>51</priority>
+    <sc_cost>100000</sc_cost>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <no_drop_rate>1</no_drop_rate>
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6303" display_card_id="6303" />
+    </cards>
+  </store_item>
+  <store_item>
     <id>50</id>
     <feature_lock_req>salvage</feature_lock_req>
     <name>Dust Satchel</name>
@@ -883,6 +902,11 @@
       <item id="104092" quantity="500" weight="1" />
       <item id="104093" quantity="500" weight="1" />
       <item id="104094" quantity="500" weight="1" />
+      <item id="104095" quantity="500" weight="1" />
+      <item id="104096" quantity="500" weight="1" />
+      <item id="104097" quantity="500" weight="1" />
+      <item id="104098" quantity="500" weight="1" />
+      <item id="104099" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1028,48 +1052,21 @@
   <!-- ======= SPECIAL MARKET ======== -->
   <!-- =============================== -->
   <!-- 3001- : Old events removed. See old versions for archive. -->
-  <!-- Random Premium Flask Pack -->
+  <!-- Special Event Mystery Package -->
   <store_item>
     <id>3101</id>
-    <name>Random Premium Flasks</name>
-    <category>0</category>
+    <name>Special Event Mystery Package</name>
+    <banner>1</banner>
+    <category>1</category>
     <hidden>1</hidden>
-    <desc>Contains 100 of a random Premium Flask containing a choice of 4 Stones from the Premium Champion set.</desc>
-    <priority>1</priority>
+    <event_only>1</event_only>
+    <priority>1250</priority>
+    <desc>Celebrate two years of ComDev at Spellstone with an (almost) free gift from us!</desc>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
-    <hc_cost>60</hc_cost>
-    <item_pack>
-      <pulls>1</pulls>
-      <item id="2578" quantity="100" weight="1" />
-      <item id="2579" quantity="100" weight="1" />
-      <item id="2580" quantity="100" weight="1" />
-      <item id="2595" quantity="100" weight="1" />
-      <item id="2596" quantity="100" weight="1" />
-      <item id="2597" quantity="100" weight="1" />
-      <item id="2598" quantity="100" weight="1" />
-      <item id="2599" quantity="100" weight="1" />
-      <item id="2600" quantity="100" weight="1" />
-      <item id="2615" quantity="100" weight="1" />
-      <item id="2616" quantity="100" weight="1" />
-      <item id="2617" quantity="100" weight="1" />
-      <item id="2636" quantity="100" weight="1" />
-      <item id="2637" quantity="100" weight="1" />
-      <item id="2638" quantity="100" weight="1" />
-      <item id="2684" quantity="100" weight="1" />
-      <item id="2685" quantity="100" weight="1" />
-      <item id="2686" quantity="100" weight="1" />
-      <item id="2687" quantity="100" weight="1" />
-      <item id="2688" quantity="100" weight="1" />
-      <item id="2689" quantity="100" weight="1" />
-      <item id="2690" quantity="100" weight="1" />
-      <item id="2691" quantity="100" weight="1" />
-      <item id="2692" quantity="100" weight="1" />
-      <item id="2693" quantity="100" weight="1" />
-      <item id="2817" quantity="100" weight="1" />
-      <item id="2818" quantity="100" weight="1" />
-      <item id="2819" quantity="100" weight="1" />
-    </item_pack>
+    <sc_cost>1</sc_cost>
+    <show_desc>1</show_desc>
+    <item id="531" quantity="1" />
   </store_item>
   <!-- Dual Tribe Premium Legendary for Dual Shard Bundles -->
   <store_item>
@@ -1667,6 +1664,10 @@
       <item id="104093" />
       <item id="104094" />
       <item id="104095" />
+      <item id="104096" />
+      <item id="104097" />
+      <item id="104098" />
+      <item id="104099" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1877,6 +1878,10 @@
       <item id="104093" number="50" purchase1="25" scalar="5" />
       <item id="104094" number="50" purchase1="25" scalar="5" />
       <item id="104095" number="50" purchase1="25" scalar="5" />
+      <item id="104096" number="50" purchase1="25" scalar="5" />
+      <item id="104097" number="50" purchase1="25" scalar="5" />
+      <item id="104098" number="50" purchase1="25" scalar="5" />
+      <item id="104099" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>

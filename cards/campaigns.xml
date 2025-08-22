@@ -2872,7 +2872,6 @@
       <mission_id>5556</mission_id>
       <mission_id>5557</mission_id>
     </missions>
-    <location_id>99</location_id>
     <x>0</x>
     <y>0</y>
   </campaign>
@@ -12577,6 +12576,120 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9128</id>
+    <name>Healed Dawnglow</name>
+    <campaign_req id="24" level="1" />
+    <location_id>28</location_id>
+    <x>500</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6384</mission_id>
+      <mission_id>6385</mission_id>
+      <mission_id>6386</mission_id>
+      <mission_id>6387</mission_id>
+      <mission_id>6388</mission_id>
+      <mission_id>6389</mission_id>
+      <mission_id>6390</mission_id>
+      <mission_id>6391</mission_id>
+      <mission_id>6392</mission_id>
+      <mission_id>6393</mission_id>
+      <mission_id>6394</mission_id>
+      <mission_id>6395</mission_id>
+      <mission_id>6414</mission_id>
+      <mission_id>6415</mission_id>
+      <mission_id>6416</mission_id>
+      <mission_id>6417</mission_id>
+      <mission_id>6418</mission_id>
+      <mission_id>6419</mission_id>
+      <mission_id>6420</mission_id>
+      <mission_id>6421</mission_id>
+      <mission_id>6422</mission_id>
+      <mission_id>6423</mission_id>
+      <mission_id>6424</mission_id>
+      <mission_id>6425</mission_id>
+      <mission_id>6426</mission_id>
+      <mission_id>6427</mission_id>
+      <mission_id>6428</mission_id>
+      <mission_id>6429</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="549" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="544" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2047" />
+      <!-- Map Legendary -->
+      <card level="5" id="2047" />
+      <!-- Map Legendary -->
+      <card level="6" id="12047" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3110" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
+    <id>9129</id>
+    <name>Return to Luminis</name>
+    <campaign_req id="24" level="1" />
+    <location_id>29</location_id>
+    <x>50</x>
+    <y>380</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6430</mission_id>
+      <mission_id>6431</mission_id>
+      <mission_id>6432</mission_id>
+      <mission_id>6433</mission_id>
+      <mission_id>6434</mission_id>
+      <mission_id>6435</mission_id>
+      <mission_id>6436</mission_id>
+      <mission_id>6437</mission_id>
+      <mission_id>6438</mission_id>
+      <mission_id>6439</mission_id>
+      <mission_id>6440</mission_id>
+      <mission_id>6441</mission_id>
+      <mission_id>6442</mission_id>
+      <mission_id>6443</mission_id>
+      <mission_id>6444</mission_id>
+      <mission_id>6445</mission_id>
+      <mission_id>6446</mission_id>
+      <mission_id>6447</mission_id>
+      <mission_id>6448</mission_id>
+      <mission_id>6449</mission_id>
+      <mission_id>6450</mission_id>
+      <mission_id>6451</mission_id>
+      <mission_id>6452</mission_id>
+      <mission_id>6453</mission_id>
+      <mission_id>6454</mission_id>
+      <mission_id>6455</mission_id>
+      <mission_id>6456</mission_id>
+      <mission_id>6457</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="550" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="545" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2187" />
+      <!-- Map Legendary -->
+      <card level="5" id="2187" />
+      <!-- Map Legendary -->
+      <card level="6" id="12187" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3113" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9130</id>
     <name>Return to Karthos</name>
     <campaign_req id="24" level="1" />
@@ -13120,5 +13233,79 @@
     </rewards>
     <find_item id="3110" drop_per_energy="1" />
     <find_item id="104500" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 131: ComDev Angel - Return to Elaria -->
+  <campaign>
+    <id>10131</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>27</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>225</x>
+    <y>625</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10131</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="518" number="2" />
+      <!-- Thank You Crate -->
+      <item level="2" id="4013" number="6" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28190" number="900" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="9" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="6" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104100" number="150" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3107" drop_per_energy="1" />
+    <find_item id="104501" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 132: ComDev Beast - World's Center -->
+  <campaign>
+    <id>10132</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>26</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>620</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10132</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104101" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3104" drop_per_energy="1" />
+    <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

@@ -19552,4 +19552,86 @@
       <!-- Colossal Sundermarr -->
     </deck>
   </mission>
+  <!-- Event 131: ComDev Angel - Return to Elaria -->
+  <mission>
+    <id>10131</id>
+    <name>Return to Elaria</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Wyld Leaves in your Airship Defenses to power up your cards.</desc>
+    <commander id="408" />
+    <!-- Razi, Whisper Worshipper -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4502" />
+      <!-- Mawu, the Moon Spirit -->
+      <card id="4067" />
+      <!-- Uncommon Allies -->
+      <card id="4051" />
+      <!-- Freya, the Landbinder -->
+      <card id="4041" />
+      <!-- Leyla, Queen of Skyhaven -->
+      <card id="8242" />
+      <!-- Alyel, Before ComDev -->
+      <card id="5631" />
+      <!-- Saint Galahad -->
+      <card id="5606" />
+      <!-- Volvel, Golden Pride -->
+      <card id="5639" />
+      <!-- Zakum, the Destroyer -->
+      <card id="7618" />
+      <!-- Caccia, the Lunatic -->
+      <card id="6180" />
+      <!-- Cloaked Revenapod -->
+      <card id="5078" />
+      <!-- Asariel -->
+      <card id="2257" />
+      <!-- Pyra -->
+      <card id="2028" />
+      <!-- Infinity -->
+      <card id="1041" />
+      <!-- Avenging Angel -->
+    </deck>
+  </mission>
+  <!-- Event 132: ComDev Beast - World's Center -->
+  <mission>
+    <id>10132</id>
+    <name>World's Center</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Void Essences in Malchior's Defenses to power up your cards.</desc>
+    <commander id="421" />
+    <!-- Agonized Amarok -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="7627" />
+      <!-- Crash and Zink, the Riders -->
+      <card id="7623" />
+      <!-- Dunstan, the Untamed -->
+      <card id="7614" />
+      <!-- Tylong, Old Warrior -->
+      <card id="4090" />
+      <!-- Mike -->
+      <card id="4083" />
+      <!-- Scrap, the Acorn Seeker -->
+      <card id="4081" />
+      <!-- General Karlson -->
+      <card id="4080" />
+      <!-- Arezzo, the Chimera -->
+      <card id="4014" />
+      <!-- Ralgan Ironpaw -->
+      <card id="4011" />
+      <!-- Emerald Amarok -->
+      <card id="7314" />
+      <!-- Wendigo -->
+      <card id="7264" />
+      <!-- Apricot Qilin -->
+      <card id="5036" />
+      <!-- Winter Tail -->
+      <card id="2220" />
+      <!-- Frozenbolt Adept -->
+      <card id="1641" />
+      <!-- Rhythm of the Wyld -->
+    </deck>
+  </mission>
 </root>
