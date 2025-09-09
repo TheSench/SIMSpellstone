@@ -84006,13 +84006,198 @@ var CARDS = {
 		}
 	},
 	"4102": {
+		"attack": 18,
+		"card_type": "2",
+		"cost": 4,
+		"health": 63,
+		"hidden_until": "1757610000000",
+		"id": "4102",
+		"maxLevel": 10,
+		"name": "Drallaf, the Valiant Lumberjack",
+		"picture": "Elemental_Glaistig_Warrior_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 6
+			},
+			{
+				"id": "backlash",
+				"x": 4
+			},
+			{
+				"id": "valor",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"11",
+			"14"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 64,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "valor",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "valor",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 66,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 7
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 7
+					}
+				]
+			},
+			"8": {
+				"health": 67,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "valor",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 9
+					},
+					{
+						"id": "backlash",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 18,
+				"health": 68,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 10
+					},
+					{
+						"id": "backlash",
+						"x": 7
+					},
+					{
+						"id": "valor",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"4103": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1757610000000",
-		"id": "4102",
+		"hidden_until": "1760029200000",
+		"id": "4103",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84021,7 +84206,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"11"
+			"16"
 		],
 		"type": "0",
 		"upgrades": {
@@ -115553,17 +115738,17 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [
 			{
-				"id": "backlash",
-				"x": 4
-			},
-			{
 				"all": "1",
 				"id": "weaken",
-				"x": 1
+				"x": 2
 			},
 			{
 				"id": "pierce",
 				"x": 12
+			},
+			{
+				"id": "nullify",
+				"x": 3
 			}
 		],
 		"sub_type": [
@@ -115575,17 +115760,17 @@ var CARDS = {
 				"health": 22,
 				"skill": [
 					{
-						"id": "backlash",
-						"x": 4
-					},
-					{
 						"all": "1",
 						"id": "weaken",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "pierce",
 						"x": 12
+					},
+					{
+						"id": "nullify",
+						"x": 3
 					}
 				]
 			},
@@ -115593,17 +115778,17 @@ var CARDS = {
 				"attack": 13,
 				"skill": [
 					{
-						"id": "backlash",
-						"x": 4
-					},
-					{
 						"all": "1",
 						"id": "weaken",
-						"x": 2
+						"x": 3
 					},
 					{
 						"id": "pierce",
 						"x": 13
+					},
+					{
+						"id": "nullify",
+						"x": 3
 					}
 				]
 			},
@@ -115611,28 +115796,6 @@ var CARDS = {
 				"health": 23,
 				"skill": [
 					{
-						"id": "backlash",
-						"x": 5
-					},
-					{
-						"all": "1",
-						"id": "weaken",
-						"x": 2
-					},
-					{
-						"id": "pierce",
-						"x": 13
-					}
-				]
-			},
-			"5": {
-				"health": 24,
-				"skill": [
-					{
-						"id": "backlash",
-						"x": 5
-					},
-					{
 						"all": "1",
 						"id": "weaken",
 						"x": 3
@@ -115640,16 +115803,17 @@ var CARDS = {
 					{
 						"id": "pierce",
 						"x": 13
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					}
 				]
 			},
-			"6": {
+			"5": {
 				"attack": 14,
+				"health": 24,
 				"skill": [
-					{
-						"id": "backlash",
-						"x": 5
-					},
 					{
 						"all": "1",
 						"id": "weaken",
@@ -115658,16 +115822,15 @@ var CARDS = {
 					{
 						"id": "pierce",
 						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 4
 					}
 				]
 			},
-			"7": {
-				"health": 25,
+			"6": {
 				"skill": [
-					{
-						"id": "backlash",
-						"x": 5
-					},
 					{
 						"all": "1",
 						"id": "weaken",
@@ -115676,16 +115839,34 @@ var CARDS = {
 					{
 						"id": "pierce",
 						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 4
+					}
+				]
+			},
+			"7": {
+				"health": 25,
+				"skill": [
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					},
+					{
+						"id": "pierce",
+						"x": 14
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			},
 			"8": {
 				"attack": 15,
 				"skill": [
-					{
-						"id": "backlash",
-						"x": 6
-					},
 					{
 						"all": "1",
 						"id": "weaken",
@@ -115694,24 +115875,27 @@ var CARDS = {
 					{
 						"id": "pierce",
 						"x": 15
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			},
 			"9": {
-				"attack": 16,
 				"skill": [
-					{
-						"id": "backlash",
-						"x": 6
-					},
 					{
 						"all": "1",
 						"id": "weaken",
-						"x": 4
+						"x": 5
 					},
 					{
 						"id": "pierce",
-						"x": 16
+						"x": 15
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			},
@@ -115720,10 +115904,6 @@ var CARDS = {
 				"health": 26,
 				"skill": [
 					{
-						"id": "backlash",
-						"x": 7
-					},
-					{
 						"all": "1",
 						"id": "weaken",
 						"x": 5
@@ -115731,6 +115911,10 @@ var CARDS = {
 					{
 						"id": "pierce",
 						"x": 16
+					},
+					{
+						"id": "nullify",
+						"x": 5
 					}
 				]
 			}
@@ -190801,7 +190985,7 @@ var CARDS = {
 			{
 				"id": "fervor",
 				"x": 3,
-				"y": "13"
+				"y": "3"
 			}
 		],
 		"sub_type": [
@@ -190829,7 +191013,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 3,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190847,7 +191031,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 4,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190866,7 +191050,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 4,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190884,7 +191068,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 5,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190903,7 +191087,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 5,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190922,7 +191106,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 6,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190941,7 +191125,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 7,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			},
@@ -190961,7 +191145,7 @@ var CARDS = {
 					{
 						"id": "fervor",
 						"x": 8,
-						"y": "13"
+						"y": "3"
 					}
 				]
 			}

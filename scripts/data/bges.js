@@ -3665,6 +3665,31 @@ var BATTLEGROUNDS = {
 		"id": "196",
 		"name": "Hidden Beasts"
 	},
+	"197": {
+		"desc": "All Goblins gain Barrage equal to 20% of their base Health. Additionally, all cards gain Shroud 1. Freeze targets allied creatures instead of enemies.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.2,
+				"y": "11"
+			},
+			{
+				"all": "1",
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"x": 1
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "jam",
+				"s": "jamself"
+			}
+		],
+		"id": "197",
+		"name": "Chilly Boom Brigade"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

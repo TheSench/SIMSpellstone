@@ -12576,6 +12576,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9127</id>
+    <name>Return to Elaria</name>
+    <campaign_req id="24" level="1" />
+    <location_id>27</location_id>
+    <x>530</x>
+    <y>410</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6356</mission_id>
+      <mission_id>6357</mission_id>
+      <mission_id>6358</mission_id>
+      <mission_id>6359</mission_id>
+      <mission_id>6360</mission_id>
+      <mission_id>6361</mission_id>
+      <mission_id>6362</mission_id>
+      <mission_id>6363</mission_id>
+      <mission_id>6364</mission_id>
+      <mission_id>6365</mission_id>
+      <mission_id>6366</mission_id>
+      <mission_id>6367</mission_id>
+      <mission_id>6368</mission_id>
+      <mission_id>6369</mission_id>
+      <mission_id>6370</mission_id>
+      <mission_id>6371</mission_id>
+      <mission_id>6372</mission_id>
+      <mission_id>6373</mission_id>
+      <mission_id>6374</mission_id>
+      <mission_id>6375</mission_id>
+      <mission_id>6376</mission_id>
+      <mission_id>6377</mission_id>
+      <mission_id>6378</mission_id>
+      <mission_id>6379</mission_id>
+      <mission_id>6380</mission_id>
+      <mission_id>6381</mission_id>
+      <mission_id>6382</mission_id>
+      <mission_id>6383</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="546" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="553" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2055" />
+      <!-- Map Legendary -->
+      <card level="5" id="2055" />
+      <!-- Map Legendary -->
+      <card level="6" id="12055" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3107" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9128</id>
     <name>Healed Dawnglow</name>
     <campaign_req id="24" level="1" />
@@ -13307,5 +13364,42 @@
     </rewards>
     <find_item id="3104" drop_per_energy="1" />
     <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
+  <campaign>
+    <id>10133</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>25</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>720</x>
+    <y>550</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10133</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28240" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28240" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104102" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3101" drop_per_energy="1" />
+    <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

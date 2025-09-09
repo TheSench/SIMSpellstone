@@ -19634,4 +19634,45 @@
       <!-- Rhythm of the Wyld -->
     </deck>
   </mission>
+  <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
+  <mission>
+    <id>10133</id>
+    <name>Stormy Seastone Citadel</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Souls of Silver in First Order Defenses to power up your cards.</desc>
+    <commander id="454" />
+    <!-- Daknak Darkblade -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4102" />
+      <!-- Latest Champion -->
+      <card id="7627" />
+      <!-- Crash and Zink, the Riders -->
+      <card id="7624" />
+      <!-- Sigblin, the Trollskin -->
+      <card id="7613" />
+      <!-- Tarkar, the Unturned -->
+      <card id="5635" />
+      <!-- Remi, the Banished -->
+      <card id="4016" />
+      <!-- Daknak Darkblade -->
+      <card id="7255" />
+      <!-- Hooflin Ranger -->
+      <card id="7217" />
+      <!-- Amrita, Drake Healer -->
+      <card id="7143" />
+      <!-- Hog Bronco -->
+      <card id="6303" />
+      <!-- Void Fighter -->
+      <card id="5225" />
+      <!-- Centurion Steelarm -->
+      <card id="2061" />
+      <!-- Reks, the Forlorn -->
+      <card id="1045" />
+      <!-- Cloudwhale Rider -->
+      <card id="2125" />
+      <!-- Fowl Page Bezoar -->
+    </deck>
+  </mission>
 </root>
