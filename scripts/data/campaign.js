@@ -101,9 +101,9 @@ var LOCATIONS = {
 		"id": "24",
 		"name": "The Abyss"
 	},
-	"26": {
-		"id": "26",
-		"name": "World's Center"
+	"25": {
+		"id": "25",
+		"name": "Stormy Seastone Citadel"
 	},
 	"27": {
 		"id": "27",
