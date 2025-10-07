@@ -907,6 +907,9 @@
       <item id="104097" quantity="500" weight="1" />
       <item id="104098" quantity="500" weight="1" />
       <item id="104099" quantity="500" weight="1" />
+      <item id="104100" quantity="500" weight="1" />
+      <item id="104101" quantity="500" weight="1" />
+      <item id="104102" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1061,7 +1064,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>1250</priority>
-    <desc>Celebrate ten years of Spellstone with an (almost) free gift from us!</desc>
+    <desc>Happy Halloween! Have an (almost) free gift from us!</desc>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
     <sc_cost>1</sc_cost>
@@ -1668,6 +1671,9 @@
       <item id="104097" />
       <item id="104098" />
       <item id="104099" />
+      <item id="104100" />
+      <item id="104101" />
+      <item id="104102" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1882,6 +1888,9 @@
       <item id="104097" number="50" purchase1="25" scalar="5" />
       <item id="104098" number="50" purchase1="25" scalar="5" />
       <item id="104099" number="50" purchase1="25" scalar="5" />
+      <item id="104100" number="50" purchase1="25" scalar="5" />
+      <item id="104101" number="50" purchase1="25" scalar="5" />
+      <item id="104102" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>

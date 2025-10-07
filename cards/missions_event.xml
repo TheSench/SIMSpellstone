@@ -19675,4 +19675,45 @@
       <!-- Fowl Page Bezoar -->
     </deck>
   </mission>
+  <!-- Event 134: ComDev Mecha - The Abyss -->
+  <mission>
+    <id>10134</id>
+    <name>The Abyss</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Pillar Souls in Three Titans to power up your cards.</desc>
+    <commander id="476" />
+    <!-- Darkassan -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4103" />
+      <!-- Latest Champion -->
+      <card id="6600" />
+      <!-- Sigix the Charcannon -->
+      <card id="5625" />
+      <!-- Aeronwen, the Glider -->
+      <card id="6625" />
+      <!-- R3-M1, the Channeler -->
+      <card id="4064" />
+      <!-- Darkassan, the Creeper -->
+      <card id="4044" />
+      <!-- Viracocha -->
+      <card id="4089" />
+      <!-- Oiram, the Clanker -->
+      <card id="6088" />
+      <!-- Doxum's Construct -->
+      <card id="6187" />
+      <!-- Xerkahn's Warship -->
+      <card id="6254" />
+      <!-- Newfeet Grenadier -->
+      <card id="6241" />
+      <!-- Grimkite Model -->
+      <card id="2113" />
+      <!-- Vali, the Thunderer -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+      <card id="1333" />
+      <!-- Steelcat Mechanist -->
+    </deck>
+  </mission>
 </root>

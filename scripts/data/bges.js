@@ -3666,20 +3666,14 @@ var BATTLEGROUNDS = {
 		"name": "Hidden Beasts"
 	},
 	"197": {
-		"desc": "All Goblins gain Barrage equal to 20% of their base Health. Additionally, all cards gain Shroud 1. Freeze targets allied creatures instead of enemies.",
+		"desc": "All Goblins gain Barrage equal to 30% of their base Health. Freeze targets allied creatures instead of enemies.",
 		"effect": [
 			{
 				"base": "health",
 				"effect_type": "add_skill",
 				"id": "barrage",
-				"mult": 0.2,
+				"mult": 0.3,
 				"y": "11"
-			},
-			{
-				"all": "1",
-				"effect_type": "add_skill",
-				"id": "stasis",
-				"x": 1
 			},
 			{
 				"effect_type": "evolve_skill",
@@ -3689,6 +3683,65 @@ var BATTLEGROUNDS = {
 		],
 		"id": "197",
 		"name": "Chilly Boom Brigade"
+	},
+	"198": {
+		"desc": "All Mechas gain Ward equal to their Delay + 5, and Scorch equal to 10% of their base Health.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 5,
+				"y": "16"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "16"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "16"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 8,
+				"y": "16"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 9,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.1,
+				"y": "16"
+			}
+		],
+		"id": "198",
+		"name": "Mecha Meltdown"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

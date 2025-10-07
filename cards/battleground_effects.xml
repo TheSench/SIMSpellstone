@@ -1996,12 +1996,25 @@
   <battleground>
     <id>197</id>
     <name>Chilly Boom Brigade</name>
-    <desc>All Goblins gain Barrage equal to 20% of their base Health. Additionally, all cards gain Shroud 1. Freeze targets allied creatures instead of enemies.</desc>
+    <desc>All Goblins gain Barrage equal to 30% of their base Health. Freeze targets allied creatures instead of enemies.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
-      <add_skill id="barrage" mult="0.2" base="health" y="11" />
-      <add_skill id="stasis" x="1" all="1" />
+      <add_skill id="barrage" mult="0.3" base="health" y="11" />
       <evolve_skill id="jam" s="jamself" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>198</id>
+    <name>Mecha Meltdown</name>
+    <desc>All Mechas gain Ward equal to their Delay + 5, and Scorch equal to 10% of their base Health.</desc>
+    <icon>filter_mech_64</icon>
+    <effect>
+      <add_skill id="absorb" x="5" y="16" delay="0" />
+      <add_skill id="absorb" x="6" y="16" delay="1" />
+      <add_skill id="absorb" x="7" y="16" delay="2" />
+      <add_skill id="absorb" x="8" y="16" delay="3" />
+      <add_skill id="absorb" x="9" y="16" delay="4" />
+      <add_skill id="burn" mult="0.1" base="health" y="16" />
     </effect>
   </battleground>
   <!-- ================================= -->

@@ -11295,283 +11295,9 @@
     </reward>
   </achievement>
   <!-- Campaign Event 20 weeks 1-4 -->
-  <achievement>
-    <id>3529</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'World's Center' campaign on Mastery Level 1.</desc>
-    <mission_req>6328</mission_req>
-    <locked_start_time>1576170000</locked_start_time>
-    <!--  Thursday, 12 December 2019 17:00:00 -->
-    <req>
-      <campaign>1228</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3104" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7054" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3530</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'World's Center' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1576170000</locked_start_time>
-    <!--  Thursday, 12 December 2019 17:00:00 -->
-    <achievement_req>3529</achievement_req>
-    <req>
-      <campaign>1228</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3531</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'World's Center' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1576170000</locked_start_time>
-    <!--  Thursday, 12 December 2019 17:00:00 -->
-    <achievement_req>3530</achievement_req>
-    <req>
-      <campaign>1228</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3532</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'World's Center' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1576170000</locked_start_time>
-    <!--  Thursday, 12 December 2019 17:00:00 -->
-    <achievement_req>3531</achievement_req>
-    <req>
-      <campaign>1228</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3533</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 2.</desc>
-    <mission_req>6334</mission_req>
-    <locked_start_time>1577379600</locked_start_time>
-    <!--  Thursday, 26 December 2019 17:00:00 -->
-    <req>
-      <campaign>1229</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3534</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1577379600</locked_start_time>
-    <!--  Thursday, 26 December 2019 17:00:00 -->
-    <achievement_req>3533</achievement_req>
-    <req>
-      <campaign>1229</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3535</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Shack of Mysteries' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1577379600</locked_start_time>
-    <!--  Thursday, 26 December 2019 17:00:00 -->
-    <achievement_req>3534</achievement_req>
-    <req>
-      <campaign>1229</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Christmas 2019 Achievements -->
   <!-- Reks recipe -->
-  <achievement>
-    <id>3538</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Scyer the Haywire' campaign on Mastery Level 1.</desc>
-    <mission_req>6340</mission_req>
-    <locked_start_time>1577379600</locked_start_time>
-    <!--  Thursday, 26 December 2019 17:00:00 -->
-    <req>
-      <campaign>1231</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8021" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 20 weeks 5-8 -->
-  <achievement>
-    <id>3539</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Silent Night' campaign on Mastery Level 1.</desc>
-    <mission_req>6349</mission_req>
-    <locked_start_time>1578589200</locked_start_time>
-    <!--  Thursday, 9 January 2020 17:00:00 -->
-    <req>
-      <campaign>1232</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3104" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7054" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3540</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Silent Night' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1578589200</locked_start_time>
-    <!--  Thursday, 9 January 2020 17:00:00 -->
-    <achievement_req>3539</achievement_req>
-    <req>
-      <campaign>1232</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3541</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Silent Night' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1578589200</locked_start_time>
-    <!--  Thursday, 9 January 2020 17:00:00 -->
-    <achievement_req>3540</achievement_req>
-    <req>
-      <campaign>1232</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3542</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Silent Night' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1578589200</locked_start_time>
-    <!--  Thursday, 9 January 2020 17:00:00 -->
-    <achievement_req>3541</achievement_req>
-    <req>
-      <campaign>1232</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3543</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 2.</desc>
-    <mission_req>6355</mission_req>
-    <locked_start_time>1579798800</locked_start_time>
-    <!--  Thursday, 23 January 2020 17:00:00 -->
-    <req>
-      <campaign>1233</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3544</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1579798800</locked_start_time>
-    <!--  Thursday, 23 January 2020 17:00:00 -->
-    <achievement_req>3543</achievement_req>
-    <req>
-      <campaign>1233</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3545</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Vulcanos's Warning' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1579798800</locked_start_time>
-    <!--  Thursday, 23 January 2020 17:00:00 -->
-    <achievement_req>3544</achievement_req>
-    <req>
-      <campaign>1233</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 21 weeks 1-4 -->
   <!-- Wrath recipe -->
   <!-- Campaign Event 21 weeks 5-8 -->
@@ -12809,154 +12535,7 @@
   <!-- Wizard Event 84 - Frogs - Node 2 -->
   <!-- Christmas 2021 Achievements -->
   <!-- Wizard Event 85 - Goblins - Node 1 -->
-  <achievement>
-    <id>3753</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Goblinball' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6758</mission_req>
-    <locked_start_time>1641488400</locked_start_time>
-    <!-- Thursday, 6 January 2022 17:00:00 -->
-    <req>
-      <campaign>1307</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3104" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7081" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3754</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Goblinball' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1641488400</locked_start_time>
-    <!-- Thursday, 6 January 2022 17:00:00 -->
-    <achievement_req>3753</achievement_req>
-    <req>
-      <campaign>1307</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3755</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Goblinball' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1641488400</locked_start_time>
-    <!-- Thursday, 6 January 2022 17:00:00 -->
-    <achievement_req>3754</achievement_req>
-    <req>
-      <campaign>1307</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3756</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Goblinball' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1641488400</locked_start_time>
-    <!-- Thursday, 6 January 2022 17:00:00 -->
-    <achievement_req>3755</achievement_req>
-    <req>
-      <campaign>1307</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 85 - Goblins - Node 2 -->
-  <achievement>
-    <id>3757</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Why Can't We Be Friends?' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6764</mission_req>
-    <locked_start_time>1642698000</locked_start_time>
-    <!-- Thursday, 20 January 2022 17:00:00 -->
-    <req>
-      <campaign>1308</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3758</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Why Can't We Be Friends?' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1642698000</locked_start_time>
-    <!-- Thursday, 20 January 2022 17:00:00 -->
-    <achievement_req>3757</achievement_req>
-    <req>
-      <campaign>1308</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3759</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the 'Why Can't We Be Friends?' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1642698000</locked_start_time>
-    <!-- Thursday, 20 January 2022 17:00:00 -->
-    <achievement_req>3758</achievement_req>
-    <req>
-      <campaign>1308</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 86 - Elemental - Node 1 -->
   <achievement>
     <id>3760</id>
@@ -15993,33 +15572,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- World's Center -->
-    <id>4021</id>
-    <type>2</type>
-    <order>650</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of World's Center</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in World's Center.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6323</mission_req>
-    <req>
-      <campaign>1228</campaign>
-      <!-- 1st node -->
-      <campaign>1229</campaign>
-      <!-- 2nd node -->
-      <campaign>1231</campaign>
-      <!-- Boss node -->
-      <campaign>1232</campaign>
-      <!-- 3rd node -->
-      <campaign>1233</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -16219,31 +15771,6 @@
       <campaign>1148</campaign>
       <campaign>1301</campaign>
       <campaign>1302</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- World's Center Revisited -->
-    <id>4039</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of World's Center</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in World's Center.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6753</mission_req>
-    <achievement_req>4021</achievement_req>
-    <req>
-      <campaign>1228</campaign>
-      <campaign>1229</campaign>
-      <campaign>1231</campaign>
-      <campaign>1232</campaign>
-      <campaign>1233</campaign>
-      <campaign>1307</campaign>
-      <campaign>1308</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -16948,25 +16475,6 @@
   <!-- Event 130: ComDev Insect - Healed Dawnglow -->
   <!-- Event 131: ComDev Angel - Return to Elaria -->
   <!-- Event 132: ComDev Beast - World's Center -->
-  <achievement>
-    <id>10132</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>World's Center</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10132</mission_req>
-    <req>
-      <campaign>10132</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
   <achievement>
     <id>10133</id>
@@ -16992,5 +16500,25 @@
         <text>Happy 10th Anniversary to Spellstone! Enjoy these extra shards! SQUAWK!</text>
       </line>
     </speech_complete>
+  </achievement>
+  <!-- Event 134: ComDev Mecha - The Abyss -->
+  <achievement>
+    <id>10134</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>The Abyss</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10134</mission_req>
+    <req>
+      <campaign>10134</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
   </achievement>
 </root>

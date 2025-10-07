@@ -73853,7 +73853,8 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"11"
+			"11",
+			"14"
 		],
 		"type": "2",
 		"upgrades": {
@@ -84191,13 +84192,186 @@ var CARDS = {
 		}
 	},
 	"4103": {
+		"attack": 11,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1760029200000",
+		"id": "4103",
+		"maxLevel": 10,
+		"name": "Tectoble, Undercover Agent",
+		"picture": "Mecha_Skin_Changer_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "legion",
+				"x": 3
+			},
+			{
+				"c": 5,
+				"id": "confuse"
+			}
+		],
+		"sub_type": [
+			"16"
+		],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"attack": 12,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"c": 5,
+						"id": "confuse"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"c": 5,
+						"id": "confuse"
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"c": 4,
+						"id": "confuse"
+					}
+				]
+			},
+			"5": {
+				"attack": 13,
+				"health": 21,
+				"skill": []
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 4,
+						"id": "confuse"
+					}
+				]
+			},
+			"7": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 4,
+						"id": "confuse"
+					}
+				]
+			},
+			"8": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "confuse"
+					}
+				]
+			},
+			"9": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "confuse"
+					}
+				]
+			},
+			"10": {
+				"attack": 15,
+				"health": 24,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "legion",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "confuse"
+					}
+				]
+			}
+		}
+	},
+	"4104": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1760029200000",
-		"id": "4103",
+		"hidden_until": "1762448400000",
+		"id": "4104",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84206,7 +84380,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"16"
+			"12"
 		],
 		"type": "0",
 		"upgrades": {
