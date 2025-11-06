@@ -84365,13 +84365,183 @@ var CARDS = {
 		}
 	},
 	"4104": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 3,
+		"health": 45,
+		"hidden_until": "1762448400000",
+		"id": "4104",
+		"maxLevel": 10,
+		"name": "Zorvak, the Tidebreaker",
+		"picture": "Beach_Warrior_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 8
+			},
+			{
+				"id": "regenerate",
+				"x": 9
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 7
+					}
+				]
+			},
+			"3": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"attack": 17,
+				"health": 47,
+				"skill": []
+			},
+			"6": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 9
+					}
+				]
+			},
+			"8": {
+				"attack": 18,
+				"health": 49,
+				"skill": []
+			},
+			"9": {
+				"health": 50,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 13
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 19,
+				"health": 51,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "regenerate",
+						"x": 13
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4105": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1762448400000",
-		"id": "4104",
+		"hidden_until": "1764867600000",
+		"id": "4105",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84380,7 +84550,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"12"
+			"9"
 		],
 		"type": "0",
 		"upgrades": {

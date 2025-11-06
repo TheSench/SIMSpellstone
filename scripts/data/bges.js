@@ -3743,6 +3743,50 @@ var BATTLEGROUNDS = {
 		"id": "198",
 		"name": "Mecha Meltdown"
 	},
+	"199": {
+		"desc": "All Seafolk gain Poisonhide and Regenerate equal to 15% of their base Health. 0-2D Seafolk also gain Siphon equal to 20% of their base Health. All cards with Empower have it changed to Enrage with the same value.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counterpoison",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "12"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 0.2,
+				"y": "12"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "rally",
+				"s": "enrage"
+			},
+			{
+				"all": "1",
+				"effect_type": "evolve_skill",
+				"id": "rally",
+				"s": "enrage"
+			}
+		],
+		"id": "199",
+		"name": "Toxic Waves"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

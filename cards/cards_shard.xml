@@ -8972,20 +8972,103 @@
   <unit>
     <id>4104</id>
     <card_type>2</card_type>
+    <name>Zorvak, the Tidebreaker</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Beach_Warrior_A</picture>
+    <asset_bundle>280</asset_bundle>
+    <hidden_until_time>1762448400</hidden_until_time>
+    <item_name>Zorvak Stone</item_name>
+    <item_desc>Collect Zorvak Stones to upgrade Zorvak, the Tidebreaker!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <attack>15</attack>
+    <health>45</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="8" />
+    <skill id="regenerate" x="9" />
+    <skill id="enrage" all="1" x="6" />
+    <upgrade>
+      <level>2</level>
+      <health>46</health>
+      <skill id="armored" x="9" />
+      <skill id="regenerate" x="9" />
+      <skill id="enrage" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>16</attack>
+      <skill id="armored" x="9" />
+      <skill id="regenerate" x="10" />
+      <skill id="enrage" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="10" />
+      <skill id="regenerate" x="10" />
+      <skill id="enrage" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>17</attack>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>48</health>
+      <skill id="armored" x="10" />
+      <skill id="regenerate" x="11" />
+      <skill id="enrage" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="armored" x="10" />
+      <skill id="regenerate" x="12" />
+      <skill id="enrage" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>18</attack>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>50</health>
+      <skill id="armored" x="10" />
+      <skill id="regenerate" x="13" />
+      <skill id="enrage" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>19</attack>
+      <health>51</health>
+      <skill id="armored" x="11" />
+      <skill id="regenerate" x="13" />
+      <skill id="enrage" all="1" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4105</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1762448400</hidden_until_time>
+    <hidden_until_time>1764867600</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>12</sub_type>
+    <sub_type>9</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -9039,7 +9122,7 @@
     <item_desc>Collect Sneggle Stones to upgrade Sneggle the Insatiable!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>2</type>
     <sub_type>13</sub_type>
     <sub_type>7</sub_type>
@@ -9130,7 +9213,7 @@
     <item_desc>Collect Rasako Stones to upgrade Rasako, Ninja of the Swamp!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>1</type>
     <sub_type>4</sub_type>
     <sub_type>12</sub_type>
@@ -9216,7 +9299,7 @@
     <item_desc>Collect Mawu Stones to upgrade Mawu, the Moon Spirit!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>3</type>
     <sub_type>10</sub_type>
     <sub_type>6</sub_type>
@@ -9305,7 +9388,7 @@
     <item_desc>Collect Acheron Stones to upgrade Acheron, the Retaliator!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>1</type>
     <sub_type>7</sub_type>
     <sub_type>13</sub_type>
@@ -9395,7 +9478,7 @@
     <item_desc>Collect Maglheqet Stones to upgrade Maglheqet, God of Warriors!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>3</type>
     <sub_type>4</sub_type>
     <sub_type>11</sub_type>
@@ -9490,7 +9573,7 @@
     <item_desc>Collect Dodo Stones to upgrade The Last Dodo!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
-    <item_overflow_item_id>104003</item_overflow_item_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
     <type>3</type>
     <sub_type>10</sub_type>
     <attack>12</attack>

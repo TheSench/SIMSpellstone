@@ -11017,283 +11017,9 @@
     </reward>
   </achievement>
   <!-- Campaign Event 19 weeks 1-4 -->
-  <achievement>
-    <id>3510</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 1.</desc>
-    <mission_req>6297</mission_req>
-    <locked_start_time>1571331600</locked_start_time>
-    <!--  Thursday, 17 October 2019 17:00:00 -->
-    <req>
-      <campaign>1222</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3101" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7052" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3511</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1571331600</locked_start_time>
-    <!--  Thursday, 17 October 2019 17:00:00 -->
-    <achievement_req>3510</achievement_req>
-    <req>
-      <campaign>1222</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3512</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1571331600</locked_start_time>
-    <!--  Thursday, 17 October 2019 17:00:00 -->
-    <achievement_req>3511</achievement_req>
-    <req>
-      <campaign>1222</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3513</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Return to Seastone Citadel' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1571331600</locked_start_time>
-    <!--  Thursday, 17 October 2019 17:00:00 -->
-    <achievement_req>3512</achievement_req>
-    <req>
-      <campaign>1222</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3514</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 2.</desc>
-    <mission_req>6303</mission_req>
-    <locked_start_time>1572541200</locked_start_time>
-    <!--  Thursday, 31 October 2019 17:00:00 -->
-    <req>
-      <campaign>1223</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3515</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1572541200</locked_start_time>
-    <!--  Thursday, 31 October 2019 17:00:00 -->
-    <achievement_req>3514</achievement_req>
-    <req>
-      <campaign>1223</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3516</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Seastone Staff's Fate' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1572541200</locked_start_time>
-    <!--  Thursday, 31 October 2019 17:00:00 -->
-    <achievement_req>3515</achievement_req>
-    <req>
-      <campaign>1223</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Avalanche Equine recipe -->
-  <achievement>
-    <id>3517</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Solaron's Chosen' campaign on Mastery Level 1.</desc>
-    <mission_req>6304</mission_req>
-    <locked_start_time>1572541200</locked_start_time>
-    <!--  Thursday, 31 October 2019 17:00:00 -->
-    <req>
-      <campaign>1224</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8020" number="1" />
-    </reward>
-  </achievement>
   <!-- Halloween Elemental 2019 -->
   <!-- Campaign Event 19 weeks 5-8 -->
-  <achievement>
-    <id>3522</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'False Ideals' campaign on Mastery Level 1.</desc>
-    <mission_req>6316</mission_req>
-    <locked_start_time>1573750800</locked_start_time>
-    <!--  Thursday, 14 November 2019 17:00:00 -->
-    <req>
-      <campaign>1226</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3101" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7052" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3523</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'False Ideals' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1573750800</locked_start_time>
-    <!--  Thursday, 14 November 2019 17:00:00 -->
-    <achievement_req>3522</achievement_req>
-    <req>
-      <campaign>1226</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3524</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'False Ideals' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1573750800</locked_start_time>
-    <!--  Thursday, 14 November 2019 17:00:00 -->
-    <achievement_req>3523</achievement_req>
-    <req>
-      <campaign>1226</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3525</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'False Ideals' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1573750800</locked_start_time>
-    <!--  Thursday, 14 November 2019 17:00:00 -->
-    <achievement_req>3524</achievement_req>
-    <req>
-      <campaign>1226</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3526</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 2.</desc>
-    <mission_req>6322</mission_req>
-    <locked_start_time>1574960400</locked_start_time>
-    <!--  Thursday, 28 November 2019 17:00:00 -->
-    <req>
-      <campaign>1227</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3527</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1574960400</locked_start_time>
-    <!--  Thursday, 28 November 2019 17:00:00 -->
-    <achievement_req>3526</achievement_req>
-    <req>
-      <campaign>1227</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3528</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Descent of Madness' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1574960400</locked_start_time>
-    <!--  Thursday, 28 November 2019 17:00:00 -->
-    <achievement_req>3527</achievement_req>
-    <req>
-      <campaign>1227</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 20 weeks 1-4 -->
   <!-- Christmas 2019 Achievements -->
   <!-- Reks recipe -->
@@ -12686,154 +12412,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 87 - Seafolk - Node 1 -->
-  <achievement>
-    <id>3767</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Shipwreck' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6782</mission_req>
-    <locked_start_time>1646326800</locked_start_time>
-    <!-- Thursday, 3 March 2022 17:00:00 -->
-    <req>
-      <campaign>1311</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3101" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7083" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3768</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Shipwreck' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1646326800</locked_start_time>
-    <!-- Thursday, 3 March 2022 17:00:00 -->
-    <achievement_req>3767</achievement_req>
-    <req>
-      <campaign>1311</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3769</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Shipwreck' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1646326800</locked_start_time>
-    <!-- Thursday, 3 March 2022 17:00:00 -->
-    <achievement_req>3768</achievement_req>
-    <req>
-      <campaign>1311</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3770</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Shipwreck' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1646326800</locked_start_time>
-    <!-- Thursday, 3 March 2022 17:00:00 -->
-    <achievement_req>3769</achievement_req>
-    <req>
-      <campaign>1311</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 87 - Seafolk - Node 2 -->
-  <achievement>
-    <id>3771</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'One Shell of a Place' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6788</mission_req>
-    <locked_start_time>1647536400</locked_start_time>
-    <!-- Thursday, 17 March 2022 17:00:00 -->
-    <req>
-      <campaign>1312</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3772</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'One Shell of a Place' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1647536400</locked_start_time>
-    <!-- Thursday, 17 March 2022 17:00:00 -->
-    <achievement_req>3771</achievement_req>
-    <req>
-      <campaign>1312</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3773</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'One Shell of a Place' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1647536400</locked_start_time>
-    <!-- Thursday, 17 March 2022 17:00:00 -->
-    <achievement_req>3772</achievement_req>
-    <req>
-      <campaign>1312</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 88 - Dragon - Node 1 -->
   <!-- Wizard Event 88 - Dragon - Node 2 -->
   <!-- Wizard Event 89 - Angel - Node 1 -->
@@ -14487,155 +14066,7 @@
   <!-- Wizard Event 102 - Avian - Node 1 -->
   <!-- Wizard Event 102 - Avian - Node 2 -->
   <!-- Wizard Event 103 - Undead - Node 1 -->
-  <achievement>
-    <id>3879</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Into the Chaos' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7085</mission_req>
-    <locked_start_time>1685034000</locked_start_time>
-    <!-- Thursday, May 25, 2023 17:00:00	 -->
-    <req>
-      <campaign>1347</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3101" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7099" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3880</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Into the Chaos' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1685034000</locked_start_time>
-    <!-- Thursday, May 25, 2023 17:00:00	 -->
-    <achievement_req>3879</achievement_req>
-    <!-- Dont forget requirement  -->
-    <req>
-      <campaign>1347</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3881</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Into the Chaos' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1685034000</locked_start_time>
-    <!-- Thursday, May 25, 2023 17:00:00	 -->
-    <achievement_req>3880</achievement_req>
-    <req>
-      <campaign>1347</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3882</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Into the Chaos' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1685034000</locked_start_time>
-    <!-- Thursday, May 25, 2023 17:00:00	 -->
-    <achievement_req>3881</achievement_req>
-    <req>
-      <campaign>1347</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 103 - Undead - Node 2 -->
-  <achievement>
-    <id>3883</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Crazy Chainsaws' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7091</mission_req>
-    <locked_start_time>1686243600</locked_start_time>
-    <!-- Thursday, 8 June 2023 17:00:00 -->
-    <req>
-      <campaign>1348</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3884</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Crazy Chainsaws' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1686243600</locked_start_time>
-    <!-- Thursday, 8 June 2023 17:00:00 -->
-    <achievement_req>3883</achievement_req>
-    <req>
-      <campaign>1348</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3885</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the 'Crazy Chainsaws' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1686243600</locked_start_time>
-    <!-- Thursday, 8 June 2023 17:00:00 -->
-    <achievement_req>3884</achievement_req>
-    <req>
-      <campaign>1348</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 104 - Mecha - Node 1 -->
   <!-- Wizard Event 104 - Mecha - Node 2 -->
   <!-- START ComDev Quests -->
@@ -15545,33 +14976,6 @@
   </achievement>
   <!-- ID 4019 was Removed doe to an Error. DO NOT USE -->
   <achievement>
-    <!-- Stormy Seastone -->
-    <id>4020</id>
-    <type>2</type>
-    <order>649</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Stormy Seastone Citadel</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Stormy Seastone Citadel.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6292</mission_req>
-    <req>
-      <campaign>1222</campaign>
-      <!-- 1st node -->
-      <campaign>1223</campaign>
-      <!-- 2nd node -->
-      <campaign>1224</campaign>
-      <!-- Boss node -->
-      <campaign>1226</campaign>
-      <!-- 3rd node -->
-      <campaign>1227</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -15796,31 +15200,6 @@
       <campaign>1221</campaign>
       <campaign>1309</campaign>
       <campaign>1310</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Stormy Seastone Revisited -->
-    <id>4041</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Stormy Seastone Citadel</name>
-    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in Stormy Seastone Citadel.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6777</mission_req>
-    <achievement_req>4020</achievement_req>
-    <req>
-      <campaign>1222</campaign>
-      <campaign>1223</campaign>
-      <campaign>1224</campaign>
-      <campaign>1226</campaign>
-      <campaign>1227</campaign>
-      <campaign>1311</campaign>
-      <campaign>1312</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -16117,33 +15496,6 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
-  <achievement>
-    <!-- Stormy Seastone Citadel -->
-    <id>4057</id>
-    <type>2</type>
-    <order>660</order>
-    <event_only>1</event_only>
-    <name>Master of Stormy Seastone Citadel</name>
-    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in Stormy Seastone Citadel.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7080</mission_req>
-    <achievement_req>4041</achievement_req>
-    <req>
-      <campaign>1222</campaign>
-      <campaign>1223</campaign>
-      <campaign>1224</campaign>
-      <campaign>1226</campaign>
-      <campaign>1227</campaign>
-      <campaign>1311</campaign>
-      <campaign>1312</campaign>
-      <campaign>1347</campaign>
-      <campaign>1348</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
   <!-- Non-Core Maps Meta END -->
   <!-- START Mastery level 7 Achievements on ComDev nodes -->
   <!-- E105: Distorted Beetleton -->
@@ -16221,27 +15573,7 @@
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
   <!-- Event 112: ComDev Beast - Gladius Arena -->
   <!-- Event 113: ComDev Beast - Return to Elaria -->
-  <achievement>
-    <id>4068</id>
-    <type>2</type>
-    <order>661</order>
-    <event_only>1</event_only>
-    <name>Commander of Return to Elaria</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Return to Elaria.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7229</mission_req>
-    <locked_start_time>1710435600</locked_start_time>
-    <req>
-      <campaign>1367</campaign>
-      <campaign>1368</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
-  <!-- END Mastery level 7 Achievements on ComDev nodes -->
+  <!-- END (4068) Mastery level 7 Achievements on ComDev nodes -->
   <!-- ======================================== -->
   <!-- 4501+: Non-Core Map Quests Part II START -->
   <!-- ======================================== -->
@@ -16476,31 +15808,6 @@
   <!-- Event 131: ComDev Angel - Return to Elaria -->
   <!-- Event 132: ComDev Beast - World's Center -->
   <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
-  <achievement>
-    <id>10133</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Stormy Seastone Citadel</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10133</mission_req>
-    <req>
-      <campaign>10133</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>1000</wb>
-      <!-- Shards -->
-    </reward>
-    <speech_complete>
-      <line>
-        <commander>raven</commander>
-        <text>Happy 10th Anniversary to Spellstone! Enjoy these extra shards! SQUAWK!</text>
-      </line>
-    </speech_complete>
-  </achievement>
   <!-- Event 134: ComDev Mecha - The Abyss -->
   <achievement>
     <id>10134</id>
@@ -16514,6 +15821,26 @@
     <mission_req>10134</mission_req>
     <req>
       <campaign>10134</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 135: ComDev Seafolk - Salt Wastes -->
+  <achievement>
+    <id>10135</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Salt Wastes</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10135</mission_req>
+    <req>
+      <campaign>10135</campaign>
       <level>7</level>
     </req>
     <reward>

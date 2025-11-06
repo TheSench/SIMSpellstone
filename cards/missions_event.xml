@@ -19716,4 +19716,45 @@
       <!-- Steelcat Mechanist -->
     </deck>
   </mission>
+  <!-- Event 135: ComDev Seafolk - Salt Wastes -->
+  <mission>
+    <id>10135</id>
+    <name>Salt Wastes</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Enchanted Iron in the Temple Glyphs to power up your cards.</desc>
+    <commander id="360" />
+    <!-- Scylla -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4104" />
+      <!-- Latest Champion -->
+      <card id="2072" />
+      <!-- Scylla, Deep Queen -->
+      <card id="5637" />
+      <!-- Moby, the Righteous -->
+      <card id="6615" />
+      <!-- Stern, the Gladthorn -->
+      <card id="5604" />
+      <!-- Mirrormage Ghessela -->
+      <card id="4065" />
+      <!-- Lerna, the Mutated -->
+      <card id="4028" />
+      <!-- Pirate Hunter Eichiro -->
+      <card id="4007" />
+      <!-- Typhoeus, Storm Father -->
+      <card id="5257" />
+      <!-- Heartsong Harper -->
+      <card id="5106" />
+      <!-- Acuro, Sea Captain -->
+      <card id="6107" />
+      <!-- Great Lava Crab -->
+      <card id="2106" />
+      <!-- Pharite Snapjaw -->
+      <card id="1644" />
+      <!-- Blackfin -->
+      <card id="1630" />
+      <!-- Giant Squid -->
+    </deck>
+  </mission>
 </root>
