@@ -1,4 +1,4 @@
 "use strict"
 
 var text_version = 'v2.0';
-var current_bges = [198,199];
+var current_bges = [199];
