@@ -19757,4 +19757,45 @@
       <!-- Giant Squid -->
     </deck>
   </mission>
+  <!-- Event 136: ComDev Dragon - Distorted Beetleton -->
+  <mission>
+    <id>10136</id>
+    <name>Distorted Beetleton</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Dark Honey in the Elemental Spiritlings to power up your cards.</desc>
+    <commander id="357" />
+    <!-- Frostbite, Winter's End -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4105" />
+      <!-- Latest Champion -->
+      <card id="2036" />
+      <!-- Narix, Dragon Whelp -->
+      <card id="7614" />
+      <!-- Tylong, Old Warrior -->
+      <card id="5641" />
+      <!-- Howaito and Kuroilong -->
+      <card id="4079" />
+      <!-- Yanlong, the Matron -->
+      <card id="7262" />
+      <!-- Gala-Gala Retreat -->
+      <card id="6305" />
+      <!-- Laolong, the Ancient -->
+      <card id="7309" />
+      <!-- Dulong, the Fierce -->
+      <card id="6185" />
+      <!-- Heilong -->
+      <card id="6106" />
+      <!-- Bailong -->
+      <card id="2006" />
+      <!-- Zhulong -->
+      <card id="2047" />
+      <!-- Conjured Dragon -->
+      <card id="1640" />
+      <!-- Life Dragon -->
+      <card id="1040" />
+      <!-- Storm Dragon -->
+    </deck>
+  </mission>
 </root>

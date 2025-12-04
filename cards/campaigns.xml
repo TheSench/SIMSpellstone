@@ -12576,6 +12576,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9124</id>
+    <name>The Abyss</name>
+    <campaign_req id="24" level="1" />
+    <location_id>24</location_id>
+    <x>700</x>
+    <y>340</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6263</mission_id>
+      <mission_id>6264</mission_id>
+      <mission_id>6265</mission_id>
+      <mission_id>6266</mission_id>
+      <mission_id>6267</mission_id>
+      <mission_id>6268</mission_id>
+      <mission_id>6269</mission_id>
+      <mission_id>6270</mission_id>
+      <mission_id>6271</mission_id>
+      <mission_id>6272</mission_id>
+      <mission_id>6273</mission_id>
+      <mission_id>6274</mission_id>
+      <mission_id>6275</mission_id>
+      <mission_id>6276</mission_id>
+      <mission_id>6277</mission_id>
+      <mission_id>6278</mission_id>
+      <mission_id>6279</mission_id>
+      <mission_id>6280</mission_id>
+      <mission_id>6281</mission_id>
+      <mission_id>6282</mission_id>
+      <mission_id>6283</mission_id>
+      <mission_id>6284</mission_id>
+      <mission_id>6285</mission_id>
+      <mission_id>6286</mission_id>
+      <mission_id>6287</mission_id>
+      <mission_id>6288</mission_id>
+      <mission_id>6289</mission_id>
+      <mission_id>6290</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="550" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="556" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2068" />
+      <!-- Map Legendary -->
+      <card level="5" id="2068" />
+      <!-- Map Legendary -->
+      <card level="6" id="12068" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3098" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9125</id>
     <name>Stormy Seastone Citadel</name>
     <campaign_req id="24" level="1" />
@@ -13589,5 +13646,42 @@
     </rewards>
     <find_item id="3095" drop_per_energy="1" />
     <find_item id="104505" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 136: ComDev Dragon - Distorted Beetleton -->
+  <campaign>
+    <id>10136</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>22</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>390</x>
+    <y>500</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10136</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28220" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28220" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104105" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3092" drop_per_energy="1" />
+    <find_item id="104500" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

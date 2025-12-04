@@ -9055,20 +9055,110 @@
   <unit>
     <id>4105</id>
     <card_type>2</card_type>
+    <name>Frostbite, Winter's End</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Frost_Bite_B</picture>
+    <asset_bundle>33</asset_bundle>
+    <hidden_until_time>1764867600</hidden_until_time>
+    <item_name>Frostbite Stone</item_name>
+    <item_desc>Collect Frostbite Stones to upgrade Frostbite, Winter's End!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <sub_type>14</sub_type>
+    <attack>16</attack>
+    <health>65</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="8" />
+    <skill id="frost" x="6" />
+    <skill id="jam" c="3" />
+    <upgrade>
+      <level>2</level>
+      <health>66</health>
+      <skill id="armored" x="9" />
+      <skill id="frost" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>17</attack>
+      <skill id="armored" x="9" />
+      <skill id="frost" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>67</health>
+      <skill id="armored" x="10" />
+      <skill id="frost" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>18</attack>
+      <skill id="armored" x="10" />
+      <skill id="frost" x="8" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>68</health>
+      <skill id="armored" x="11" />
+      <skill id="frost" x="8" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>19</attack>
+      <skill id="armored" x="11" />
+      <skill id="frost" x="9" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>69</health>
+      <skill id="armored" x="12" />
+      <skill id="frost" x="9" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>20</attack>
+      <skill id="armored" x="13" />
+      <skill id="frost" x="10" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>20</attack>
+      <health>70</health>
+      <skill id="armored" x="13" />
+      <skill id="frost" x="10" />
+      <skill id="jam" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4106</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1764867600</hidden_until_time>
+    <hidden_until_time>1767286800</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>9</sub_type>
+    <sub_type>7</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>

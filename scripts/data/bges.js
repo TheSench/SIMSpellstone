@@ -1716,7 +1716,7 @@ var BATTLEGROUNDS = {
 		"name": "Counterblast Swarm"
 	},
 	"155": {
-		"desc": "All undeads receive Vampirism to 5% + 3. 0-2 delay also gain armor equal to 10%. All values based on Health",
+		"desc": "All Undead gain Vampirism equal to 3 + 5%. 0-2 Delay also gain Armor equal to 10%. All values based on Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -3786,6 +3786,33 @@ var BATTLEGROUNDS = {
 		],
 		"id": "199",
 		"name": "Toxic Waves"
+	},
+	"200": {
+		"desc": "All Dragons have their Health increased by 15%. They also gain Emberhide equal to 10% of their base Health and Valor equal to 30% of their base Attack.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.15,
+				"y": "9"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "counterburn",
+				"mult": 0.1,
+				"y": "9"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "valor",
+				"mult": 0.3,
+				"y": "9"
+			}
+		],
+		"id": "200",
+		"name": "Royal Scales"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",

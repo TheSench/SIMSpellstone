@@ -84535,13 +84535,201 @@ var CARDS = {
 		}
 	},
 	"4105": {
+		"attack": 16,
+		"card_type": "2",
+		"cost": 4,
+		"health": 65,
+		"hidden_until": "1764867600000",
+		"id": "4105",
+		"maxLevel": 10,
+		"name": "Frostbite, Winter's End",
+		"picture": "Frost_Bite_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 8
+			},
+			{
+				"id": "frost",
+				"x": 6
+			},
+			{
+				"c": 3,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"9",
+			"14"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 66,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"attack": 17,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"id": "frost",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 67,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "frost",
+						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"attack": 18,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "frost",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 68,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "frost",
+						"x": 8
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"attack": 19,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "frost",
+						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"8": {
+				"health": 69,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 12
+					},
+					{
+						"id": "frost",
+						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"9": {
+				"attack": 20,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 13
+					},
+					{
+						"id": "frost",
+						"x": 10
+					},
+					{
+						"c": 2,
+						"id": "jam"
+					}
+				]
+			},
+			"10": {
+				"attack": 20,
+				"health": 70,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 13
+					},
+					{
+						"id": "frost",
+						"x": 10
+					},
+					{
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"4106": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1764867600000",
-		"id": "4105",
+		"hidden_until": "1767286800000",
+		"id": "4106",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84550,7 +84738,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"9"
+			"7"
 		],
 		"type": "0",
 		"upgrades": {

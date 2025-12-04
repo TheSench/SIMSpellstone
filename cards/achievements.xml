@@ -10726,296 +10726,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 18 weeks 1-4 -->
-  <achievement>
-    <id>3495</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 1.</desc>
-    <mission_req>6268</mission_req>
-    <locked_start_time>1566493200</locked_start_time>
-    <!-- Thu, 22 August 2019 17:00:00 -->
-    <req>
-      <campaign>1217</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3098" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7050" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3496</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1566493200</locked_start_time>
-    <!-- Thu, 22 August 2019 17:00:00 -->
-    <achievement_req>3495</achievement_req>
-    <req>
-      <campaign>1217</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3497</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1566493200</locked_start_time>
-    <!-- Thu, 22 August 2019 17:00:00 -->
-    <achievement_req>3496</achievement_req>
-    <req>
-      <campaign>1217</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3498</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Return to the Abyss' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1566493200</locked_start_time>
-    <!-- Thu, 22 August 2019 17:00:00 -->
-    <achievement_req>3497</achievement_req>
-    <req>
-      <campaign>1217</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3499</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 2.</desc>
-    <mission_req>6274</mission_req>
-    <locked_start_time>1567702800</locked_start_time>
-    <!--  Thu, September 5 2019 17:00:00 -->
-    <req>
-      <campaign>1218</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3500</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1567702800</locked_start_time>
-    <!--  Thu, September 5 2019 17:00:00 -->
-    <achievement_req>3499</achievement_req>
-    <req>
-      <campaign>1218</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3501</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The Forgotten Hero' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1567702800</locked_start_time>
-    <!--  Thu, September 5 2019 17:00:00 -->
-    <achievement_req>3500</achievement_req>
-    <req>
-      <campaign>1218</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Whitesail Wyvern recipe -->
-  <achievement>
-    <id>3502</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Releasing the Elements' campaign on Mastery Level 1.</desc>
-    <mission_req>6287</mission_req>
-    <locked_start_time>1567702800</locked_start_time>
-    <!--  Thursday, 5 September 2019 17:00:00 -->
-    <req>
-      <campaign>1219</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8019" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 18 weeks 5-8 -->
-  <achievement>
-    <id>3503</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 1.</desc>
-    <mission_req>6280</mission_req>
-    <!-- Invisible until this Mission is completed -->
-    <locked_start_time>1568912400</locked_start_time>
-    <!--  Thursday, 19 September 2019 17:00:00 -->
-    <req>
-      <campaign>1220</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3098" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7051" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3504</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1568912400</locked_start_time>
-    <!--  Thursday, 19 September 2019 17:00:00 -->
-    <achievement_req>3503</achievement_req>
-    <!-- Achievement required to be obtained in order to see this achievement -->
-    <req>
-      <campaign>1220</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3505</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1568912400</locked_start_time>
-    <!--  Thursday, 19 September 2019 17:00:00 -->
-    <achievement_req>3504</achievement_req>
-    <!-- Achievement required to be obtained in order to see this achievement -->
-    <req>
-      <campaign>1220</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3506</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Hero's Goal' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1568912400</locked_start_time>
-    <!--  Thursday, 19 September 2019 17:00:00 -->
-    <achievement_req>3505</achievement_req>
-    <!-- Achievement required to be obtained in order to see this achievement -->
-    <req>
-      <campaign>1220</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3507</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The End of an Era' campaign on Mastery Level 2.</desc>
-    <mission_req>6286</mission_req>
-    <!-- Invisible until this Mission is completed -->
-    <locked_start_time>1570122000</locked_start_time>
-    <!--  Thursday, 3 October 2019 17:00:00 -->
-    <req>
-      <campaign>1221</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3508</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The End of an Era' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1570122000</locked_start_time>
-    <!--  Thursday, 3 October 2019 17:00:00 -->
-    <achievement_req>3507</achievement_req>
-    <!-- Achievement required to be obtained in order to see this achievement -->
-    <req>
-      <campaign>1221</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3509</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'The End of an Era' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1570122000</locked_start_time>
-    <!--  Thursday, 3 October 2019 17:00:00 -->
-    <achievement_req>3508</achievement_req>
-    <!-- Achievement required to be obtained in order to see this achievement -->
-    <req>
-      <campaign>1221</campaign>
-      <!-- Campaign to be completed in order to get this achievement -->
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 19 weeks 1-4 -->
   <!-- Avalanche Equine recipe -->
   <!-- Halloween Elemental 2019 -->
@@ -12263,154 +11975,7 @@
   <!-- Wizard Event 85 - Goblins - Node 1 -->
   <!-- Wizard Event 85 - Goblins - Node 2 -->
   <!-- Wizard Event 86 - Elemental - Node 1 -->
-  <achievement>
-    <id>3760</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'I Hate Portals' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6770</mission_req>
-    <locked_start_time>1643907600</locked_start_time>
-    <!-- Thursday, 3 February 2022 17:00:00 -->
-    <req>
-      <campaign>1309</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3098" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7082" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3761</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'I Hate Portals' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1643907600</locked_start_time>
-    <!-- Thursday, 3 February 2022 17:00:00 -->
-    <achievement_req>3760</achievement_req>
-    <req>
-      <campaign>1309</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3762</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'I Hate Portals' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1643907600</locked_start_time>
-    <!-- Thursday, 3 February 2022 17:00:00 -->
-    <achievement_req>3761</achievement_req>
-    <req>
-      <campaign>1309</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3763</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'I Hate Portals' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1643907600</locked_start_time>
-    <!-- Thursday, 3 February 2022 17:00:00 -->
-    <achievement_req>3762</achievement_req>
-    <req>
-      <campaign>1309</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 86 - Elemental - Node 2 -->
-  <achievement>
-    <id>3764</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6776</mission_req>
-    <locked_start_time>1645117200</locked_start_time>
-    <!-- Thursday, 17 February 2022 17:00:00 -->
-    <req>
-      <campaign>1310</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3765</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1645117200</locked_start_time>
-    <!-- Thursday, 17 February 2022 17:00:00 -->
-    <achievement_req>3764</achievement_req>
-    <req>
-      <campaign>1310</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3766</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the 'Elemental Enemies' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1645117200</locked_start_time>
-    <!-- Thursday, 17 February 2022 17:00:00 -->
-    <achievement_req>3765</achievement_req>
-    <req>
-      <campaign>1310</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 87 - Seafolk - Node 1 -->
   <!-- Wizard Event 87 - Seafolk - Node 2 -->
   <!-- Wizard Event 88 - Dragon - Node 1 -->
@@ -14948,34 +14513,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- The Abyss -->
-    <id>4018</id>
-    <type>2</type>
-    <order>648</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of The Abyss</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in The Abyss.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6263</mission_req>
-    <req>
-      <campaign>1217</campaign>
-      <!-- 1st node -->
-      <campaign>1218</campaign>
-      <!-- 2nd node -->
-      <campaign>1219</campaign>
-      <!-- Boss node -->
-      <campaign>1220</campaign>
-      <!-- 3rd node -->
-      <campaign>1221</campaign>
-      <!-- 4th node -->
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <!-- ID 4019 was Removed doe to an Error. DO NOT USE -->
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -15175,31 +14712,6 @@
       <campaign>1148</campaign>
       <campaign>1301</campaign>
       <campaign>1302</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- The Abyss Revisited -->
-    <id>4040</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of The Abyss</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in The Abyss.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6765</mission_req>
-    <achievement_req>4018</achievement_req>
-    <req>
-      <campaign>1217</campaign>
-      <campaign>1218</campaign>
-      <campaign>1219</campaign>
-      <campaign>1220</campaign>
-      <campaign>1221</campaign>
-      <campaign>1309</campaign>
-      <campaign>1310</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -15809,25 +15321,6 @@
   <!-- Event 132: ComDev Beast - World's Center -->
   <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
   <!-- Event 134: ComDev Mecha - The Abyss -->
-  <achievement>
-    <id>10134</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>The Abyss</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10134</mission_req>
-    <req>
-      <campaign>10134</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 135: ComDev Seafolk - Salt Wastes -->
   <achievement>
     <id>10135</id>
@@ -15841,6 +15334,26 @@
     <mission_req>10135</mission_req>
     <req>
       <campaign>10135</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 136: ComDev Dragon - Distorted Beetleton -->
+  <achievement>
+    <id>10136</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Distorted Beetleton</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10136</mission_req>
+    <req>
+      <campaign>10136</campaign>
       <level>7</level>
     </req>
     <reward>
