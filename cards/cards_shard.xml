@@ -9145,20 +9145,108 @@
   <unit>
     <id>4106</id>
     <card_type>2</card_type>
+    <name>Valzombi, the Same Bug</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Undedad_Insect_Zombie_Stinkbug_B</picture>
+    <asset_bundle>222</asset_bundle>
+    <hidden_until_time>1767286800</hidden_until_time>
+    <item_name>Valzombi Stone</item_name>
+    <item_desc>Collect Valzombi Stones to upgrade Valzombi, the Same Bug!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>13</sub_type>
+    <attack>0</attack>
+    <health>36</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="7" />
+    <skill id="regenerate" x="10" />
+    <skill id="weaken" all="1" x="3" />
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="11" />
+      <skill id="weaken" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="12" />
+      <skill id="weaken" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="corrosive" x="7" />
+      <skill id="regenerate" x="12" />
+      <skill id="weaken" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="8" />
+      <skill id="regenerate" x="12" />
+      <skill id="weaken" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>40</health>
+      <skill id="corrosive" x="9" />
+      <skill id="regenerate" x="12" />
+      <skill id="weaken" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="corrosive" x="10" />
+      <skill id="regenerate" x="12" />
+      <skill id="weaken" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>41</health>
+      <skill id="corrosive" x="10" />
+      <skill id="regenerate" x="13" />
+      <skill id="weaken" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>42</health>
+      <skill id="corrosive" x="11" />
+      <skill id="regenerate" x="14" />
+      <skill id="weaken" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>0</attack>
+      <health>43</health>
+      <skill id="corrosive" x="12" />
+      <skill id="regenerate" x="14" />
+      <skill id="weaken" all="1" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4107</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1767286800</hidden_until_time>
+    <hidden_until_time>1769706000</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>7</sub_type>
+    <sub_type>4</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>

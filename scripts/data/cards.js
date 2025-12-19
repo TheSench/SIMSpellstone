@@ -84723,13 +84723,210 @@ var CARDS = {
 		}
 	},
 	"4106": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 2,
+		"health": 36,
+		"hidden_until": "1767286800000",
+		"id": "4106",
+		"maxLevel": 10,
+		"name": "Valzombi, the Same Bug",
+		"picture": "Undedad_Insect_Zombie_Stinkbug_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "corrosive",
+				"x": 7
+			},
+			{
+				"id": "regenerate",
+				"x": 10
+			},
+			{
+				"all": "1",
+				"id": "weaken",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"7",
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 37,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"health": 38,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 39,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 40,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 5
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"health": 41,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 13
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"health": 42,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 11
+					},
+					{
+						"id": "regenerate",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 6
+					}
+				]
+			},
+			"10": {
+				"attack": 0,
+				"health": 43,
+				"skill": [
+					{
+						"id": "corrosive",
+						"x": 12
+					},
+					{
+						"id": "regenerate",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "weaken",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"4107": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1767286800000",
-		"id": "4106",
+		"hidden_until": "1769706000000",
+		"id": "4107",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84738,7 +84935,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"7"
+			"4"
 		],
 		"type": "0",
 		"upgrades": {

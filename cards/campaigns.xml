@@ -12576,6 +12576,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9123</id>
+    <name>Salt Wastes</name>
+    <campaign_req id="24" level="1" />
+    <location_id>23</location_id>
+    <x>330</x>
+    <y>340</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6235</mission_id>
+      <mission_id>6236</mission_id>
+      <mission_id>6237</mission_id>
+      <mission_id>6238</mission_id>
+      <mission_id>6239</mission_id>
+      <mission_id>6240</mission_id>
+      <mission_id>6241</mission_id>
+      <mission_id>6242</mission_id>
+      <mission_id>6243</mission_id>
+      <mission_id>6244</mission_id>
+      <mission_id>6245</mission_id>
+      <mission_id>6246</mission_id>
+      <mission_id>6247</mission_id>
+      <mission_id>6248</mission_id>
+      <mission_id>6249</mission_id>
+      <mission_id>6250</mission_id>
+      <mission_id>6251</mission_id>
+      <mission_id>6252</mission_id>
+      <mission_id>6253</mission_id>
+      <mission_id>6254</mission_id>
+      <mission_id>6255</mission_id>
+      <mission_id>6256</mission_id>
+      <mission_id>6257</mission_id>
+      <mission_id>6258</mission_id>
+      <mission_id>6259</mission_id>
+      <mission_id>6260</mission_id>
+      <mission_id>6261</mission_id>
+      <mission_id>6262</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="544" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="549" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2071" />
+      <!-- Map Legendary -->
+      <card level="5" id="2071" />
+      <!-- Map Legendary -->
+      <card level="6" id="12071" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3095" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9124</id>
     <name>The Abyss</name>
     <campaign_req id="24" level="1" />
@@ -13683,5 +13740,42 @@
     </rewards>
     <find_item id="3092" drop_per_energy="1" />
     <find_item id="104500" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 137: ComDev Undead - Duskwillow Rebuilt -->
+  <campaign>
+    <id>10137</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>21</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>190</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10137</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28200" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104106" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3089" drop_per_energy="1" />
+    <find_item id="104501" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

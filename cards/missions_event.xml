@@ -19798,4 +19798,45 @@
       <!-- Storm Dragon -->
     </deck>
   </mission>
+  <!-- Event 137: ComDev Undead - Duskwillow Rebuilt -->
+  <mission>
+    <id>10137</id>
+    <name>Duskwillow Rebuilt</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Corroded Mist Pearls in Fiona's Dragonlings to power up your cards.</desc>
+    <commander id="339" />
+    <!-- Marrowsworn the Tyrant -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4106" />
+      <!-- Latest Champion -->
+      <card id="2158" />
+      <!-- Mortagan, Grave General -->
+      <card id="6624" />
+      <!-- Osseus, the Skeleball -->
+      <card id="5644" />
+      <!-- Katerina, Snowfang -->
+      <card id="4079" />
+      <!-- Yanlong, the Matron -->
+      <card id="4071" />
+      <!-- Naglar Chainsawpaw -->
+      <card id="7033" />
+      <!-- Treebond Skull -->
+      <card id="5171" />
+      <!-- Dross Collector -->
+      <card id="7124" />
+      <!-- Enduring Appetite -->
+      <card id="6301" />
+      <!-- Vlad -->
+      <card id="7131" />
+      <!-- Xovrus, Death's End -->
+      <card id="2047" />
+      <!-- Conjured Dragon -->
+      <card id="2217" />
+      <!-- Virtuoso Mystic -->
+      <card id="1644" />
+      <!-- Blackfin -->
+    </deck>
+  </mission>
 </root>
