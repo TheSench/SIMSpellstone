@@ -1545,6 +1545,188 @@ var CARDS = {
 			}
 		}
 	},
+	"20": {
+		"card_type": "1",
+		"desc": "Everything he touches turns to gold. The market has not recovered.",
+		"health": 66,
+		"id": "20",
+		"maxLevel": 7,
+		"name": "Midas Ultima",
+		"picture": "portrait_mythic_mecha",
+		"rarity": 5,
+		"set": "7000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "armored",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 72,
+				"skill": []
+			},
+			"3": {
+				"health": 78,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 84,
+				"skill": []
+			},
+			"5": {
+				"health": 90,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 96,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 2
+					}
+				]
+			},
+			"7": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "armored",
+						"x": 3
+					}
+				]
+			}
+		}
+	},
+	"21": {
+		"card_type": "1",
+		"desc": "A cursed relic of immense dark power, whispered about in forbidden circles. Nobody remembers who wrote it, but everyone agrees it was a bad idea.",
+		"health": 66,
+		"id": "21",
+		"maxLevel": 7,
+		"name": "Tome of Darkness",
+		"picture": "portrait_pbge_tome_darkness",
+		"rarity": 5,
+		"set": "7000",
+		"skill": [
+			{
+				"all": "1",
+				"id": "imbue",
+				"s": "backlash",
+				"x": 1
+			}
+		],
+		"sub_type": [],
+		"type": "8",
+		"upgrades": {
+			"2": {
+				"health": 72,
+				"skill": []
+			},
+			"3": {
+				"health": 78,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "backlash",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 1
+					}
+				]
+			},
+			"4": {
+				"health": 84,
+				"skill": []
+			},
+			"5": {
+				"health": 90,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "backlash",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 2
+					}
+				]
+			},
+			"6": {
+				"health": 96,
+				"skill": []
+			},
+			"7": {
+				"health": 99,
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "backlash",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "poisonstrike",
+						"x": 2
+					}
+				]
+			}
+		}
+	},
 	"200": {
 		"card_type": "1",
 		"desc": "A horde of risen creatures and skeletons, mindlessly attacking anything within reach.",
@@ -29452,13 +29634,13 @@ var CARDS = {
 		"skill": [
 			{
 				"all": "1",
-				"id": "protect",
+				"id": "imbue",
+				"s": "burn",
 				"x": 1
 			},
 			{
 				"all": "1",
-				"id": "imbue",
-				"s": "burn",
+				"id": "protect",
 				"x": 1
 			},
 			{
@@ -29474,13 +29656,13 @@ var CARDS = {
 				"skill": [
 					{
 						"all": "1",
-						"id": "protect",
-						"x": 3
+						"id": "imbue",
+						"s": "burn",
+						"x": 2
 					},
 					{
 						"all": "1",
-						"id": "imbue",
-						"s": "burn",
+						"id": "protect",
 						"x": 2
 					},
 					{
@@ -29494,13 +29676,13 @@ var CARDS = {
 				"skill": [
 					{
 						"all": "1",
-						"id": "protect",
-						"x": 5
+						"id": "imbue",
+						"s": "burn",
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "imbue",
-						"s": "burn",
+						"id": "protect",
 						"x": 3
 					},
 					{
@@ -29514,13 +29696,13 @@ var CARDS = {
 				"skill": [
 					{
 						"all": "1",
-						"id": "protect",
-						"x": 8
+						"id": "imbue",
+						"s": "burn",
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "imbue",
-						"s": "burn",
+						"id": "protect",
 						"x": 3
 					},
 					{
@@ -29534,13 +29716,13 @@ var CARDS = {
 				"skill": [
 					{
 						"all": "1",
-						"id": "protect",
-						"x": 9
+						"id": "imbue",
+						"s": "burn",
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "imbue",
-						"s": "burn",
+						"id": "protect",
 						"x": 4
 					},
 					{
@@ -29554,13 +29736,13 @@ var CARDS = {
 				"skill": [
 					{
 						"all": "1",
-						"id": "protect",
-						"x": 13
+						"id": "imbue",
+						"s": "burn",
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "imbue",
-						"s": "burn",
+						"id": "protect",
 						"x": 4
 					},
 					{
@@ -84920,13 +85102,210 @@ var CARDS = {
 		}
 	},
 	"4107": {
+		"attack": 5,
+		"card_type": "2",
+		"cost": 1,
+		"health": 19,
+		"hidden_until": "1769706000000",
+		"id": "4107",
+		"maxLevel": 10,
+		"name": "Ivan, the Incendiary",
+		"picture": "Brimstone_Priest_Frog_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "fervor",
+				"x": 2,
+				"y": "4"
+			},
+			{
+				"id": "burn",
+				"x": 3
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"attack": 6,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"7": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 5
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"8": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"9": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"10": {
+				"attack": 8,
+				"health": 24,
+				"skill": [
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "4"
+					},
+					{
+						"id": "burn",
+						"x": 7
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"4108": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1769706000000",
-		"id": "4107",
+		"hidden_until": "1772125200000",
+		"id": "4108",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -84935,7 +85314,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"4"
+			"10"
 		],
 		"type": "0",
 		"upgrades": {

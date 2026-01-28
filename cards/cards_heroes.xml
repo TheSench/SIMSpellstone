@@ -734,6 +734,96 @@
       <skill id="enrage" all="1" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>20</id>
+    <card_type>1</card_type>
+    <name>Midas Ultima</name>
+    <portrait>Portrait_mythic_mecha</portrait>
+    <desc>Everything he touches turns to gold. The market has not recovered.</desc>
+    <asset_bundle>160</asset_bundle>
+    <attack>0</attack>
+    <health>66</health>
+    <skill id="imbue" s="armored" all="1" x="1" />
+    <rarity>5</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>72</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>78</health>
+      <skill id="imbue" s="valor" all="1" x="1" />
+      <skill id="imbue" s="armored" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>84</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+      <skill id="imbue" s="valor" all="1" x="1" />
+      <skill id="imbue" s="armored" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>96</health>
+      <skill id="imbue" s="valor" all="1" x="2" />
+      <skill id="imbue" s="armored" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>99</health>
+      <skill id="imbue" s="valor" all="1" x="2" />
+      <skill id="imbue" s="armored" all="1" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>21</id>
+    <card_type>1</card_type>
+    <name>Tome of Darkness</name>
+    <portrait>Portrait_PBGE_Tome_Darkness</portrait>
+    <desc>A cursed relic of immense dark power, whispered about in forbidden circles. Nobody remembers who wrote it, but everyone agrees it was a bad idea.</desc>
+    <asset_bundle>109</asset_bundle>
+    <attack>0</attack>
+    <health>66</health>
+    <skill id="imbue" s="backlash" all="1" x="1" />
+    <rarity>5</rarity>
+    <type>8</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>72</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>78</health>
+      <skill id="imbue" s="backlash" all="1" x="1" />
+      <skill id="poisonstrike" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>84</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+      <skill id="imbue" s="backlash" all="1" x="1" />
+      <skill id="poisonstrike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>96</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>99</health>
+      <skill id="imbue" s="backlash" all="1" x="2" />
+      <skill id="poisonstrike" all="1" x="2" />
+    </upgrade>
+  </unit>
   <!-- ====================== -->
   <!-- == STORY COMMANDERS == -->
   <!-- ====================== -->
@@ -12375,8 +12465,8 @@
     <name>Caesar</name>
     <portrait>Mini_Menace_Portrait1</portrait>
     <health>75</health>
-    <skill id="protect" all="1" x="1" />
     <skill id="imbue" s="burn" all="1" x="1" />
+    <skill id="protect" all="1" x="1" />
     <skill id="confuse" c="6" />
     <rarity>4</rarity>
     <type>2</type>
@@ -12384,36 +12474,36 @@
     <upgrade>
       <level>2</level>
       <health>80</health>
-      <skill id="protect" all="1" x="3" />
       <skill id="imbue" s="burn" all="1" x="2" />
+      <skill id="protect" all="1" x="2" />
       <skill id="confuse" c="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>85</health>
-      <skill id="protect" all="1" x="5" />
       <skill id="imbue" s="burn" all="1" x="3" />
+      <skill id="protect" all="1" x="3" />
       <skill id="confuse" c="6" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>90</health>
-      <skill id="protect" all="1" x="8" />
       <skill id="imbue" s="burn" all="1" x="3" />
+      <skill id="protect" all="1" x="3" />
       <skill id="confuse" c="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>95</health>
-      <skill id="protect" all="1" x="9" />
       <skill id="imbue" s="burn" all="1" x="4" />
+      <skill id="protect" all="1" x="4" />
       <skill id="confuse" c="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="protect" all="1" x="13" />
       <skill id="imbue" s="burn" all="1" x="4" />
+      <skill id="protect" all="1" x="4" />
       <skill id="confuse" c="3" />
     </upgrade>
   </unit>

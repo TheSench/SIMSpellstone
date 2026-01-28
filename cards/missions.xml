@@ -4581,7 +4581,8 @@
     <name>Sleeping on the Job</name>
     <energy>3</energy>
     <desc>Oda and Elyse enter the Citadel. It's dark, only lit by natural light. There is a main entrance hall and giant doors in the back. A single monk can be seen sleeping in the center of the hall.</desc>
-    <commander id="299" />
+    <!-- <commander id="299"/> -->
+    <commander id="20" />
     <deck>
       <card id="8232" name="Water Conjuration" />
       <card id="7012" name="Life Drake" />
@@ -4603,7 +4604,8 @@
     <name>Up and At'Em</name>
     <energy>3</energy>
     <desc>The monk is awakened by their arrival. Startled, he sits up quickly and grabs his staff. Magic swirls around him...</desc>
-    <commander id="302" />
+    <!-- <commander id="302"/> -->
+    <commander id="20" />
     <deck>
       <card id="8217" name="Skeletal Hound" />
       <card id="8216" name="Lavafrog" />
@@ -4632,7 +4634,8 @@
     <name>Sign of a Friend</name>
     <energy>3</energy>
     <desc>The monk recognizes the beads around Oda's neck. They are common in their Order. His face turns red as he quickly lays down his staff, bowing in apology. Elyse can start to see a resemblence between the two.</desc>
-    <commander id="298" />
+    <!-- <commander id="298"/> -->
+    <commander id="21" />
     <deck>
       <card id="8211" name="Static Drake" />
       <card id="8208" name="Oracle" />
@@ -4671,7 +4674,8 @@
     <name>Hidden Treasures</name>
     <energy>3</energy>
     <desc>The monk looks surprised they know of the artifact. Even within the Order, it was a secret item.</desc>
-    <commander id="301" />
+    <!-- <commander id="301"/> -->
+    <commander id="21" />
     <deck>
       <card id="8204" name="Cherub" />
       <card id="2027" name="Halo Mage" />

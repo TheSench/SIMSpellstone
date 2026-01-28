@@ -19839,4 +19839,45 @@
       <!-- Blackfin -->
     </deck>
   </mission>
+  <!-- Event 138: ComDev Frog - Gladius Arena -->
+  <mission>
+    <id>10138</id>
+    <name>Gladius Arena</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Gladius Coins in Fighting Spirits to power up your cards.</desc>
+    <commander id="474" />
+    <!-- Caesar -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4107" />
+      <!-- Latest Champion -->
+      <card id="5612" />
+      <!-- Genen, the Icebreaker -->
+      <card id="5618" />
+      <!-- Raju, the Unyielding -->
+      <card id="7602" />
+      <!-- Leafsinger -->
+      <card id="7626" />
+      <!-- Fritz, the Fiddler -->
+      <card id="4032" />
+      <!-- Froggit, the Puppeteer -->
+      <card id="4035" />
+      <!-- Vasile, the Night Duke -->
+      <card id="4061" />
+      <!-- Veric, the Undying -->
+      <card id="7259" />
+      <!-- Ranamuerta Bard -->
+      <card id="5297" />
+      <!-- Runecrafter Initiate -->
+      <card id="6302" />
+      <!-- Frog Ballista -->
+      <card id="7310" />
+      <!-- Warlfrog -->
+      <card id="2258" />
+      <!-- Painter van Frogh -->
+      <card id="1643" />
+      <!-- Nimble Leaper -->
+    </deck>
+  </mission>
 </root>

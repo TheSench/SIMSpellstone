@@ -12576,6 +12576,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9122</id>
+    <name>Distorted Beetleton</name>
+    <campaign_req id="24" level="1" />
+    <location_id>22</location_id>
+    <x>460</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6203</mission_id>
+      <mission_id>6204</mission_id>
+      <mission_id>6205</mission_id>
+      <mission_id>6206</mission_id>
+      <mission_id>6207</mission_id>
+      <mission_id>6208</mission_id>
+      <mission_id>6209</mission_id>
+      <mission_id>6210</mission_id>
+      <mission_id>6211</mission_id>
+      <mission_id>6212</mission_id>
+      <mission_id>6213</mission_id>
+      <mission_id>6214</mission_id>
+      <mission_id>6215</mission_id>
+      <mission_id>6216</mission_id>
+      <mission_id>6217</mission_id>
+      <mission_id>6218</mission_id>
+      <mission_id>6223</mission_id>
+      <mission_id>6224</mission_id>
+      <mission_id>6225</mission_id>
+      <mission_id>6226</mission_id>
+      <mission_id>6227</mission_id>
+      <mission_id>6228</mission_id>
+      <mission_id>6229</mission_id>
+      <mission_id>6230</mission_id>
+      <mission_id>6231</mission_id>
+      <mission_id>6232</mission_id>
+      <mission_id>6233</mission_id>
+      <mission_id>6234</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="553" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="547" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2112" />
+      <!-- Map Legendary -->
+      <card level="5" id="2112" />
+      <!-- Map Legendary -->
+      <card level="6" id="12112" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3092" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9123</id>
     <name>Salt Wastes</name>
     <campaign_req id="24" level="1" />
@@ -13777,5 +13834,42 @@
     </rewards>
     <find_item id="3089" drop_per_energy="1" />
     <find_item id="104501" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 138: ComDev Frog - Gladius Arena -->
+  <campaign>
+    <id>10138</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>20</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>800</x>
+    <y>480</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10138</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28170" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28170" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104107" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3086" drop_per_energy="1" />
+    <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

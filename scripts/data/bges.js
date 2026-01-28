@@ -3814,6 +3814,27 @@ var BATTLEGROUNDS = {
 		"id": "200",
 		"name": "Royal Scales"
 	},
+	"201": {
+		"desc": "Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Siphon equal to their base Attack.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.25,
+				"y": "4"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "leech",
+				"mult": 1,
+				"y": "4"
+			}
+		],
+		"id": "201",
+		"name": "Lily & Vampiric Mace Formation"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

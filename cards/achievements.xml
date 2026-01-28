@@ -10176,280 +10176,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 16 weeks 1-4 -->
-  <achievement>
-    <id>3465</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Return to Beetleton' campaign on Mastery Level 1.</desc>
-    <mission_req>6208</mission_req>
-    <locked_start_time>1556816400</locked_start_time>
-    <!-- Thu, May 02 2019 17:00:00 -->
-    <req>
-      <campaign>1207</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3092" number="50" />
-      <event_points id="7046" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3466</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Return to Beetleton' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1556816400</locked_start_time>
-    <achievement_req>3465</achievement_req>
-    <!-- Thu, May 02 2019 17:00:00 -->
-    <req>
-      <campaign>1207</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3467</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Return to Beetleton' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1556816400</locked_start_time>
-    <!-- Thu, May 02 2019 17:00:00 -->
-    <achievement_req>3466</achievement_req>
-    <req>
-      <campaign>1207</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3468</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Return to Beetleton' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1556816400</locked_start_time>
-    <!-- Thu, May 02 2019 17:00:00 -->
-    <achievement_req>3467</achievement_req>
-    <req>
-      <campaign>1207</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3469</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Sage's Path' campaign on Mastery Level 2.</desc>
-    <mission_req>6214</mission_req>
-    <locked_start_time>1558026000</locked_start_time>
-    <!-- Thursday, May 16, 2019 17:00:00 -->
-    <req>
-      <campaign>1208</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3470</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Sage's Path' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1558026000</locked_start_time>
-    <!-- Thursday, May 16, 2019 17:00:00 -->
-    <achievement_req>3469</achievement_req>
-    <req>
-      <campaign>1208</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3471</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Sage's Path' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1558026000</locked_start_time>
-    <!-- Thursday, May 16, 2019 17:00:00 -->
-    <achievement_req>3470</achievement_req>
-    <req>
-      <campaign>1208</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Warrior Karna recipe -->
-  <achievement>
-    <id>3472</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Memories Best Left Forgotten' campaign on Mastery Level 1.</desc>
-    <mission_req>6215</mission_req>
-    <locked_start_time>1558026000</locked_start_time>
-    <!-- Thursday, May 16, 2019 17:00:00 -->
-    <req>
-      <campaign>1209</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8016" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 16 weeks 5-8 -->
-  <achievement>
-    <id>3473</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Priority Differences' campaign on Mastery Level 1.</desc>
-    <mission_req>6228</mission_req>
-    <locked_start_time>1559235600</locked_start_time>
-    <!-- Thursday, May 30, 2019  -->
-    <req>
-      <campaign>1210</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3092" number="50" />
-      <event_points id="7047" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3474</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Priority Differences' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1559235600</locked_start_time>
-    <!-- Thursday, May 30, 2019  -->
-    <achievement_req>3473</achievement_req>
-    <req>
-      <campaign>1210</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3475</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Priority Differences' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1559235600</locked_start_time>
-    <!-- Thursday, May 30, 2019  -->
-    <achievement_req>3474</achievement_req>
-    <req>
-      <campaign>1210</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3476</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'Priority Differences' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1559235600</locked_start_time>
-    <!-- Thursday, May 30, 2019  -->
-    <achievement_req>3475</achievement_req>
-    <req>
-      <campaign>1210</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3477</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Dream's Rebirth' campaign on Mastery Level 2.</desc>
-    <mission_req>6234</mission_req>
-    <locked_start_time>1560445200</locked_start_time>
-    <!-- Thursday, June 13, 2019  -->
-    <req>
-      <campaign>1211</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3478</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Dream's Rebirth' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1560445200</locked_start_time>
-    <!-- Thursday, June 13, 2019  -->
-    <achievement_req>3477</achievement_req>
-    <req>
-      <campaign>1211</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3479</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Dream's Rebirth' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1560445200</locked_start_time>
-    <!-- Thursday, June 13, 2019  -->
-    <achievement_req>3478</achievement_req>
-    <req>
-      <campaign>1211</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 17 weeks 1-4 -->
   <!-- Campaign Event 17 weeks 5-8 -->
   <!-- Sproutfrog recipe -->
@@ -13069,146 +12797,7 @@
   <!-- Wizard Event 104 - Mecha - Node 2 -->
   <!-- START ComDev Quests -->
   <!-- Wizard Event 105 - Insects BGE - Node 1 -->
-  <achievement>
-    <id>3893</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7116</mission_req>
-    <locked_start_time>1689872400</locked_start_time>
-    <req>
-      <campaign>1351</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3092" number="50" />
-      <!-- Expedition Items -->
-      <event_points id="7101" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3894</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1689872400</locked_start_time>
-    <achievement_req>3893</achievement_req>
-    <req>
-      <campaign>1351</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3895</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1689872400</locked_start_time>
-    <achievement_req>3894</achievement_req>
-    <req>
-      <campaign>1351</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3896</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'A Flight in the Dark' campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1689872400</locked_start_time>
-    <achievement_req>3895</achievement_req>
-    <req>
-      <campaign>1351</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 105 - Insects BGE - Node 2 -->
-  <achievement>
-    <id>3897</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7127</mission_req>
-    <locked_start_time>1691082000</locked_start_time>
-    <req>
-      <campaign>1352</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3898</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1691082000</locked_start_time>
-    <achievement_req>3897</achievement_req>
-    <req>
-      <campaign>1352</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3899</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the 'The Healer's Prison' campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <locked_start_time>1691082000</locked_start_time>
-    <achievement_req>3898</achievement_req>
-    <req>
-      <campaign>1352</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Event 106: ComDev Goblin - Return to Karthos -->
   <!-- E106 Node 1: The Return of a King -->
   <!-- E106 Node 2: Warring Factions -->
@@ -13902,28 +13491,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Distorted Beetleton -->
-    <id>4016</id>
-    <type>2</type>
-    <order>646</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Distorted Beetleton</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Distorted Beetleton.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6234</mission_req>
-    <req>
-      <campaign>1207</campaign>
-      <campaign>1208</campaign>
-      <campaign>1209</campaign>
-      <campaign>1210</campaign>
-      <campaign>1211</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -14370,32 +13937,6 @@
   <!-- Non-Core Maps Meta END -->
   <!-- START Mastery level 7 Achievements on ComDev nodes -->
   <!-- E105: Distorted Beetleton -->
-  <achievement>
-    <id>4059</id>
-    <type>2</type>
-    <order>661</order>
-    <event_only>1</event_only>
-    <name>Commander of Distorted Beetleton</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Distorted Beetleton.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7127</mission_req>
-    <achievement_req>4016</achievement_req>
-    <req>
-      <campaign>1207</campaign>
-      <campaign>1208</campaign>
-      <campaign>1209</campaign>
-      <campaign>1210</campaign>
-      <campaign>1211</campaign>
-      <campaign>1351</campaign>
-      <campaign>1352</campaign>
-      <level>7</level>
-      <!-- Mastery level 7 -->
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
   <!-- Event 106: ComDev Goblin - Return to Karthos -->
   <!-- Event 107: ComDev Elementals - Conflux Convergence -->
   <!-- Event 108: ComDev Seafolk - Pharos Temple -->
@@ -14443,6 +13984,25 @@
   </achievement>
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
   <!-- Event 112: ComDev Beast - Gladius Arena -->
+  <achievement>
+    <id>4066</id>
+    <type>2</type>
+    <order>661</order>
+    <name>Commander of Gladius Arena</name>
+    <desc>Complete Mastery Level 7 on all blue campaigns in Gladius Arena.</desc>
+    <icon>mapNavGlobe</icon>
+    <mission_req>7217</mission_req>
+    <locked_start_time>1708016400</locked_start_time>
+    <req>
+      <campaign>1365</campaign>
+      <campaign>1366</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </reward>
+  </achievement>
   <!-- Event 113: ComDev Beast - Return to Elaria -->
   <!-- END (4068) Mastery level 7 Achievements on ComDev nodes -->
   <!-- ======================================== -->
@@ -14733,6 +14293,26 @@
     <mission_req>10137</mission_req>
     <req>
       <campaign>10137</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 138: ComDev Frog - Gladius Arena -->
+  <achievement>
+    <id>10138</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Gladius Arena</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10138</mission_req>
+    <req>
+      <campaign>10138</campaign>
       <level>7</level>
     </req>
     <reward>
