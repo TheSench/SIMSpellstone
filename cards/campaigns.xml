@@ -820,6 +820,8 @@
     <id>34</id>
     <name>Brother from Another Mother</name>
     <campaign_req id="33" level="1" />
+    <battleground_id>585</battleground_id>
+    <!-- test BGE, remove later -->
     <location_id>6</location_id>
     <x>695</x>
     <y>317</y>
@@ -12576,6 +12578,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9121</id>
+    <name>Duskwillow Rebuilt</name>
+    <campaign_req id="24" level="1" />
+    <location_id>21</location_id>
+    <x>220</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6159</mission_id>
+      <mission_id>6160</mission_id>
+      <mission_id>6161</mission_id>
+      <mission_id>6162</mission_id>
+      <mission_id>6163</mission_id>
+      <mission_id>6164</mission_id>
+      <mission_id>6165</mission_id>
+      <mission_id>6166</mission_id>
+      <mission_id>6167</mission_id>
+      <mission_id>6168</mission_id>
+      <mission_id>6169</mission_id>
+      <mission_id>6170</mission_id>
+      <mission_id>6171</mission_id>
+      <mission_id>6172</mission_id>
+      <mission_id>6173</mission_id>
+      <mission_id>6174</mission_id>
+      <mission_id>6179</mission_id>
+      <mission_id>6180</mission_id>
+      <mission_id>6181</mission_id>
+      <mission_id>6182</mission_id>
+      <mission_id>6183</mission_id>
+      <mission_id>6184</mission_id>
+      <mission_id>6185</mission_id>
+      <mission_id>6186</mission_id>
+      <mission_id>6187</mission_id>
+      <mission_id>6188</mission_id>
+      <mission_id>6189</mission_id>
+      <mission_id>6190</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="552" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="545" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2116" />
+      <!-- Map Legendary -->
+      <card level="5" id="2116" />
+      <!-- Map Legendary -->
+      <card level="6" id="12116" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3089" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9122</id>
     <name>Distorted Beetleton</name>
     <campaign_req id="24" level="1" />
@@ -13871,5 +13930,42 @@
     </rewards>
     <find_item id="3086" drop_per_energy="1" />
     <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 139: ComDev Avian - Tarragon Peak -->
+  <campaign>
+    <id>10139</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>19</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>300</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10139</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28230" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104108" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3083" drop_per_energy="1" />
+    <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

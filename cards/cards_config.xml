@@ -455,7 +455,7 @@
     <id>confuse</id>
     <order>300</order>
     <icon>confuse</icon>
-    <name>Confusion</name>
+    <name>Confuse</name>
     <desc>Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally. On-hit effects also apply.</desc>
     <desc_all>Every {c} turns, inflicts Confuse on all enemy creatures, forcing them to Attack an adjacent ally. On-hit effects also apply.</desc_all>
     <status_flag>confused</status_flag>
@@ -472,7 +472,7 @@
 		<desc>Every {c} turns, remove the negative states of itself or an ally.</desc>
 		<desc_all>Every {c} turns, remove the negative states (Poison, Hex, Burn, Freeze, Venom, Weaken, Silence and Confuse) of itself or an ally.</desc_all>
 		<status_flag>cleanse_countdown</status_flag>
-		<attributes x='0' y='0' all='1' c='1' s='0' />
+		<attributes x="0" y="0" all="1" c="1" s="0"/>
 		<balance_points>10</balance_points>
 		<upkeep>1</upkeep>
 	</skillType> -->
@@ -481,12 +481,12 @@
   <skillType>
     <id>protect_ice</id>
     <order>500</order>
-    <icon>mystic_barrier</icon>
+    <icon>iceshatter</icon>
     <name>Iceshatter Barrier</name>
-    <desc>Reduces the next damage dealt to a random allied creature</desc>
-    <desc_all>Reduces the next damage dealt to all allied creatures</desc_all>
-    <desc_faction>Reduces the next damage dealt to a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the next damage dealt to all allied {y} creatures</desc_all_faction>
+    <desc>Reduces the next damage dealt to a random allied creature.</desc>
+    <desc_all>Reduces the next damage dealt to all allied creatures.</desc_all>
+    <desc_faction>Reduces the next damage dealt to a random allied {y} creature.</desc_faction>
+    <desc_all_faction>Reduces the next damage dealt to all allied {y} creatures.</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
     <hidden>1</hidden>
@@ -496,10 +496,10 @@
     <order>500</order>
     <icon>poison_bolt</icon>
     <name>Poisonbolt</name>
-    <desc>Deals bolt damage to a random enemy creature and leaves poison.</desc>
-    <desc_all>Deals bolt damage to all enemy creatures and leaves poison.</desc_all>
-    <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison.</desc_faction>
-    <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison.</desc_all_faction>
+    <desc>Deals bolt damage to a random enemy creature and leaves Poison.</desc>
+    <desc_all>Deals bolt damage to all enemy creatures and leaves Poison.</desc_all>
+    <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves Poison.</desc_faction>
+    <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves Poison.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
   </skillType>
   <skillType>
@@ -532,22 +532,22 @@
   </skillType>
   <skillType>
     <id>mark</id>
-    <order>500</order>
-    <icon>hex</icon>
+    <order>155</order>
+    <icon>bind</icon>
     <name>Mark</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
+    <desc>Marks a random target with Hex upon first activation. Chooses a new mark when the current mark dies. Ignores Invisibility.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>unearth</id>
     <order>500</order>
-    <!-- <icon>hex</icon> -->
+    <icon>reanimate</icon>
     <name>Unearth</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>When a non token creature dies, it spawns a Token creature with stats based on its own stats</desc>
+    <desc>When a non token creature dies, it spawns a Token creature with stats based on its own stats.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -565,7 +565,7 @@
     <order>90</order>
     <icon>mystic_barrier</icon>
     <name>Energy Shield</name>
-    <desc>When this creature deals Attack damage they gain a Barrier</desc>
+    <desc>When this creature deals Attack damage, they gain Barrier.</desc>
     <status_flag>protect</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
@@ -575,7 +575,7 @@
     <order>1</order>
     <icon>infect</icon>
     <name>Swarm</name>
-    <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature.</desc>
+    <desc>After dealing Attack damage, permanently increases the Attack of the lowest Attack active ally creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
     <hidden>1</hidden>
@@ -638,10 +638,10 @@
     <order>500</order>
     <icon>hinder</icon>
     <name>Weaken Ally</name>
-    <desc>Reduces Attack of a random allied creature</desc>
-    <desc_all>Reduces the Attack of all ally creatures</desc_all>
-    <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
-    <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
+    <desc>Reduces Attack of a random allied creature.</desc>
+    <desc_all>Reduces the Attack of all ally creatures.</desc_all>
+    <desc_faction>Reduces the Attack of a random allied {y} creature.</desc_faction>
+    <desc_all_faction>Reduces the attack of all ally {y} creatures.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
@@ -699,7 +699,7 @@
     <icon>mystic_barrier</icon>
     <name>Mystic Barrier</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
+    <desc>Grants Barrier and Invisibility to a random ally creature.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -726,7 +726,7 @@
     <id>radiance</id>
     <order>145</order>
     <icon>radiance</icon>
-    <name>radiance</name>
+    <name>Radiance</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <hidden>1</hidden>
@@ -740,7 +740,7 @@
     <id>devour</id>
     <order>285</order>
     <icon>devour</icon>
-    <name>devour</name>
+    <name>Devour</name>
     <hidden>1</hidden>
     <desc>After dealing Attack damage, permanently increases Attack and heals self.</desc>
     <desc_faction>Berserk and heal.</desc_faction>
@@ -751,7 +751,7 @@
     <id>invigorate</id>
     <order>125</order>
     <icon>invigorate</icon>
-    <name>invigorate</name>
+    <name>Invigorate</name>
     <hidden>1</hidden>
     <desc>Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc>
     <desc_faction>Heals a random {y} ally and grants Invigorate, permanently increasing max health. Invigorate does not stack.</desc_faction>
@@ -764,7 +764,7 @@
     <id>wingward</id>
     <order>1</order>
     <icon>avian_barrier</icon>
-    <name>Wing Guard</name>
+    <name>Wing Ward</name>
     <hidden>1</hidden>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and half as much Invisibility to self and leftmost ally creature.</desc>
@@ -773,11 +773,11 @@
   <skillType>
     <id>magicfield</id>
     <order>1</order>
-    <icon>avian_barrier</icon>
+    <icon>antimagicfield</icon>
     <name>Anti-Magic Field</name>
     <hidden>1</hidden>
     <attributes x="0" y="0" all="0" c="0" s="0" />
-    <desc>This card is immune to debuffs. Opposing card is immune to any positve effects.</desc>
+    <desc>This creature is immune to debuffs. Opposing creature is immune to any positive effects.</desc>
   </skillType>
   <!-- TEST SKILLS -->
   <skillType>
@@ -813,7 +813,7 @@
   <skillType>
     <id>resurrect</id>
     <order>505</order>
-    <icon>frostbreath</icon>
+    <icon>reanimate</icon>
     <name>Resurrect</name>
     <desc>Resurrects creatures when they die.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
@@ -823,9 +823,9 @@
   <skillType>
     <id>enlarge</id>
     <order>500</order>
-    <icon>enlarge</icon>
+    <icon>empower</icon>
     <name>Enlarge</name>
-    <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
+    <desc>Permanently increases the Attack of a creature when played, while this creature is active.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
@@ -922,16 +922,16 @@
   </unitType>
   <unitType>
     <id>14</id>
-    <tribe>1</tribe>
     <name>Beast</name>
+    <tribe>1</tribe>
     <icon>filter_frostbite_32</icon>
     <picture>filter_frostbite_32</picture>
     <picture_bundle>26</picture_bundle>
   </unitType>
   <unitType>
     <id>15</id>
-    <tribe>1</tribe>
     <name>Token</name>
+    <tribe>1</tribe>
     <icon />
     <hidden>1</hidden>
   </unitType>

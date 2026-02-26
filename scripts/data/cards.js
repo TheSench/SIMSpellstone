@@ -1559,6 +1559,12 @@ var CARDS = {
 			{
 				"all": "1",
 				"id": "imbue",
+				"s": "valor",
+				"x": 1
+			},
+			{
+				"all": "1",
+				"id": "enhance",
 				"s": "armored",
 				"x": 1
 			}
@@ -1568,7 +1574,20 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"health": 72,
-				"skill": []
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 1
+					},
+					{
+						"all": "1",
+						"id": "enhance",
+						"s": "armored",
+						"x": 2
+					}
+				]
 			},
 			"3": {
 				"health": 78,
@@ -1577,19 +1596,32 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "valor",
-						"x": 1
+						"x": 2
 					},
 					{
 						"all": "1",
-						"id": "imbue",
+						"id": "enhance",
 						"s": "armored",
-						"x": 1
+						"x": 2
 					}
 				]
 			},
 			"4": {
 				"health": 84,
-				"skill": []
+				"skill": [
+					{
+						"all": "1",
+						"id": "imbue",
+						"s": "valor",
+						"x": 2
+					},
+					{
+						"all": "1",
+						"id": "enhance",
+						"s": "armored",
+						"x": 3
+					}
+				]
 			},
 			"5": {
 				"health": 90,
@@ -1598,13 +1630,13 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "valor",
-						"x": 1
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "imbue",
+						"id": "enhance",
 						"s": "armored",
-						"x": 2
+						"x": 3
 					}
 				]
 			},
@@ -1615,13 +1647,13 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "valor",
-						"x": 2
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "imbue",
+						"id": "enhance",
 						"s": "armored",
-						"x": 2
+						"x": 4
 					}
 				]
 			},
@@ -1632,13 +1664,13 @@ var CARDS = {
 						"all": "1",
 						"id": "imbue",
 						"s": "valor",
-						"x": 2
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "imbue",
+						"id": "enhance",
 						"s": "armored",
-						"x": 3
+						"x": 4
 					}
 				]
 			}
@@ -85299,13 +85331,211 @@ var CARDS = {
 		}
 	},
 	"4108": {
+		"attack": 7,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1772125200000",
+		"id": "4108",
+		"maxLevel": 10,
+		"name": "Rolo, the Fixated",
+		"picture": "Rolling_Cardinals_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 7
+			},
+			{
+				"id": "mark",
+				"x": 3
+			},
+			{
+				"all": "1",
+				"id": "strike",
+				"x": 2
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 7
+					},
+					{
+						"id": "mark",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 8,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "mark",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"4": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "mark",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 2
+					}
+				]
+			},
+			"5": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 8
+					},
+					{
+						"id": "mark",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"6": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "mark",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"7": {
+				"attack": 10,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "mark",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 3
+					}
+				]
+			},
+			"8": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "mark",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"9": {
+				"attack": 11,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "mark",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			},
+			"10": {
+				"attack": 11,
+				"health": 25,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "mark",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "strike",
+						"x": 4
+					}
+				]
+			}
+		}
+	},
+	"4109": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1772125200000",
-		"id": "4108",
+		"hidden_until": "1774544400000",
+		"id": "4109",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -85314,7 +85544,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"10"
+			"5"
 		],
 		"type": "0",
 		"upgrades": {

@@ -64,7 +64,7 @@ var SKILL_DATA = {
 	"confuse": {
 		"desc": "Every {c} turns, inflicts Confuse on a random enemy creature, forcing it to Attack an adjacent ally. On-hit effects also apply.",
 		"icon": "confuse",
-		"name": "Confusion",
+		"name": "Confuse",
 		"type": "activation"
 	},
 	"corrosive": {
@@ -100,7 +100,7 @@ var SKILL_DATA = {
 	"devour": {
 		"desc": "After dealing Attack damage, permanently increases Attack and heals self.",
 		"icon": "devour",
-		"name": "devour",
+		"name": "Devour",
 		"type": "onAttack"
 	},
 	"enfeeble": {
@@ -122,7 +122,7 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"enlarge": {
-		"desc": "Permanently increases the Attack of a creature when played, while this creature is active",
+		"desc": "Permanently increases the Attack of a creature when played, while this creature is active.",
 		"icon": "empower",
 		"name": "Enlarge",
 		"type": "earlyActivation"
@@ -140,7 +140,7 @@ var SKILL_DATA = {
 		"type": "turnStart"
 	},
 	"evadebarrier": {
-		"desc": "Grants Barrier and half as much Invisibility to self and leftmost ally creature.",
+		"desc": "Grants Barrier and Invisibility to a random ally creature.",
 		"icon": "mystic_barrier",
 		"name": "Mystic Barrier",
 		"type": "activation"
@@ -208,7 +208,7 @@ var SKILL_DATA = {
 	"invigorate": {
 		"desc": "Heals a random ally creature and grants Invigorate, permanently increasing max health. Invigorate does not stack.",
 		"icon": "invigorate",
-		"name": "invigorate",
+		"name": "Invigorate",
 		"type": "activation"
 	},
 	"jam": {
@@ -236,13 +236,13 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"magicfield": {
-		"desc": "This card is immune to debuffs. Opposing card is immune to any positve effects.",
+		"desc": "This creature is immune to debuffs. Opposing creature is immune to any positive effects.",
 		"icon": "antimagicfield",
 		"name": "Anti-Magic Field",
 		"type": "activation"
 	},
 	"mark": {
-		"desc": "Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility.",
+		"desc": "Marks a random target with Hex upon first activation. Chooses a new mark when the current mark dies. Ignores Invisibility.",
 		"icon": "eagle_eye",
 		"name": "Mark",
 		"type": "earlyActivation"
@@ -266,7 +266,7 @@ var SKILL_DATA = {
 		"type": "onAttack"
 	},
 	"poisonstrike": {
-		"desc": "Deals bolt damage to a random enemy creature and leaves poison.",
+		"desc": "Deals bolt damage to a random enemy creature and leaves Poison.",
 		"icon": "poison_bolt",
 		"name": "Poisonbolt",
 		"type": "activation"
@@ -278,7 +278,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"protect_ice": {
-		"desc": "Reduces the next damage dealt to a random allied creature",
+		"desc": "Reduces the next damage dealt to a random allied creature.",
 		"icon": "iceshatter",
 		"name": "Iceshatter Barrier",
 		"type": "activation"
@@ -292,7 +292,7 @@ var SKILL_DATA = {
 	"radiance": {
 		"desc": "At start of turn, grant adjacent allies Legion and half as much Barrier.",
 		"icon": "radiance",
-		"name": "radiance",
+		"name": "Radiance",
 		"type": "earlyActivation"
 	},
 	"rally": {
@@ -314,14 +314,14 @@ var SKILL_DATA = {
 		"type": "turnEnd"
 	},
 	"reinforce": {
-		"desc": "When this creature deals Attack damage they gain a Barrier",
+		"desc": "When this creature deals Attack damage, they gain Barrier.",
 		"icon": "reinforce",
 		"name": "Energy Shield",
 		"type": "onAttack"
 	},
 	"resurrect": {
 		"desc": "Resurrects creatures when they die.",
-		"icon": "frostbreath",
+		"icon": "reanimate",
 		"name": "Resurrect",
 		"type": "activation"
 	},
@@ -356,7 +356,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"swarm": {
-		"desc": "After dealing Attack damage, permanently increases Attack of the lowest Attack active ally creature.",
+		"desc": "After dealing Attack damage, permanently increases the Attack of the lowest Attack active ally creature.",
 		"icon": "infect",
 		"name": "Swarm",
 		"type": "onAttack"
@@ -368,7 +368,7 @@ var SKILL_DATA = {
 		"type": "toggle"
 	},
 	"unearth": {
-		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats",
+		"desc": "When a non token creature dies, it spawns a Token creature with stats based on its own stats.",
 		"icon": "reanimate",
 		"name": "Unearth",
 		"type": "onDeath"
@@ -404,7 +404,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"weakenself": {
-		"desc": "Reduces Attack of a random allied creature",
+		"desc": "Reduces Attack of a random allied creature.",
 		"icon": "hinder",
 		"name": "Weaken Ally",
 		"type": "activation"
@@ -412,7 +412,7 @@ var SKILL_DATA = {
 	"wingward": {
 		"desc": "Grants Barrier and half as much Invisibility to self and leftmost ally creature.",
 		"icon": "avian_barrier",
-		"name": "Wing Guard",
+		"name": "Wing Ward",
 		"type": "activation"
 	}
 };

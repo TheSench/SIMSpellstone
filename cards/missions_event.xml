@@ -19880,4 +19880,45 @@
       <!-- Nimble Leaper -->
     </deck>
   </mission>
+  <!-- Event 139: ComDev Avian - Tarragon Peak -->
+  <mission>
+    <id>10139</id>
+    <name>Tarragon Peak</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Dragon Claws in Ancestor Dragons to power up your cards.</desc>
+    <commander id="497" />
+    <!-- Verus -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4108" />
+      <!-- Latest Champion -->
+      <card id="2094" />
+      <!-- Verus, the Galeheart -->
+      <card id="7621" />
+      <!-- Saucy, Lady of the Cauldron -->
+      <card id="7616" />
+      <!-- Lechuza, the Skybinder -->
+      <card id="7605" />
+      <!-- Rago, Crimson Vicar -->
+      <card id="6630" />
+      <!-- Gaerriel, Flying Nightmare -->
+      <card id="5632" />
+      <!-- Auron, the Icewall -->
+      <card id="4505" />
+      <!-- The Last Dodo -->
+      <card id="4095" />
+      <!-- Izbushka, the Warmaster -->
+      <card id="7207" />
+      <!-- Batrachia Spear -->
+      <card id="7101" />
+      <!-- Shriekers -->
+      <card id="5203" />
+      <!-- Skymar Cavalier -->
+      <card id="2232" />
+      <!-- Aerial Fellow -->
+      <card id="1044" />
+      <!-- Blackhawk Cavalier -->
+    </deck>
+  </mission>
 </root>

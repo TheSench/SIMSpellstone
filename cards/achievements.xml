@@ -9899,282 +9899,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 15 weeks 1-4 -->
-  <achievement>
-    <id>3450</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Notorious Reputation' campaign on Mastery Level 1.</desc>
-    <mission_req>6164</mission_req>
-    <locked_start_time>1551978000</locked_start_time>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <req>
-      <campaign>1200</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3089" number="50" />
-      <event_points id="7044" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3451</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Notorious Reputation' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1551978000</locked_start_time>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <achievement_req>3450</achievement_req>
-    <req>
-      <campaign>1200</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3452</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Notorious Reputation' campaign on Mastery Level 4.</desc>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <locked_start_time>1549558800</locked_start_time>
-    <achievement_req>3451</achievement_req>
-    <req>
-      <campaign>1200</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3453</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Notorious Reputation' campaign on Mastery Level 6.</desc>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <locked_start_time>1549558800</locked_start_time>
-    <achievement_req>3452</achievement_req>
-    <req>
-      <campaign>1200</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3454</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Bridge Builder' campaign on Mastery Level 2.</desc>
-    <mission_req>6170</mission_req>
-    <locked_start_time>1553187600</locked_start_time>
-    <!-- Thursday, March 21, 2019  -->
-    <req>
-      <campaign>1201</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3455</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Bridge Builder' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1553187600</locked_start_time>
-    <!-- Thursday, March 21, 2019  -->
-    <achievement_req>3454</achievement_req>
-    <req>
-      <campaign>1201</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3456</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Bridge Builder' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1553187600</locked_start_time>
-    <!-- Thursday, March 21, 2019  -->
-    <achievement_req>3455</achievement_req>
-    <req>
-      <campaign>1201</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Messina recipe -->
-  <achievement>
-    <id>3457</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'A Brighter Future' campaign on Mastery Level 1.</desc>
-    <mission_req>6171</mission_req>
-    <locked_start_time>1553187600</locked_start_time>
-    <!-- Thursday, March 21, 2019  -->
-    <req>
-      <campaign>1202</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8015" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 15 weeks 5-8 -->
-  <achievement>
-    <id>3458</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Old Alliances Die Hard' campaign on Mastery Level 1.</desc>
-    <mission_req>6184</mission_req>
-    <locked_start_time>1554397200</locked_start_time>
-    <!-- Thu, April 04 2019 17:00:00 -->
-    <req>
-      <campaign>1205</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3089" number="50" />
-      <event_points id="7045" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3459</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Old Alliances Die Hard' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1554397200</locked_start_time>
-    <!-- Thu, April 04 2019 17:00:00 -->
-    <achievement_req>3458</achievement_req>
-    <req>
-      <campaign>1205</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3460</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Old Alliances Die Hard' campaign on Mastery Level 4.</desc>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <locked_start_time>1554397200</locked_start_time>
-    <!-- Thu, April 04 2019 17:00:00 -->
-    <achievement_req>3459</achievement_req>
-    <req>
-      <campaign>1205</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3461</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Old Alliances Die Hard' campaign on Mastery Level 6.</desc>
-    <!-- Thu, March 07 2019 17:00:00 -->
-    <locked_start_time>1554397200</locked_start_time>
-    <!-- Thu, April 04 2019 17:00:00 -->
-    <achievement_req>3460</achievement_req>
-    <req>
-      <campaign>1205</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3462</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Goblins' Future' campaign on Mastery Level 2.</desc>
-    <mission_req>6190</mission_req>
-    <locked_start_time>1555606800</locked_start_time>
-    <!-- Thursday, April 18 2019 17:00:00  -->
-    <req>
-      <campaign>1206</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3463</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Goblins' Future' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1555606800</locked_start_time>
-    <!-- Thursday, April 18 2019 17:00:00  -->
-    <achievement_req>3462</achievement_req>
-    <req>
-      <campaign>1206</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3464</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Goblins' Future' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1555606800</locked_start_time>
-    <!-- Thursday, April 18 2019 17:00:00  -->
-    <achievement_req>3463</achievement_req>
-    <req>
-      <campaign>1206</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 16 weeks 1-4 -->
   <!-- Warrior Karna recipe -->
   <!-- Campaign Event 16 weeks 5-8 -->
@@ -11737,154 +11463,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 92 - Undead - Node 1 -->
-  <achievement>
-    <id>3802</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Search Mission' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6872</mission_req>
-    <locked_start_time>1658422800</locked_start_time>
-    <!-- Thursday, July 21, 2022 17:00:00  -->
-    <req>
-      <campaign>1322</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3089" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7088" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3803</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Search Mission' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1658422800</locked_start_time>
-    <!-- Thursday, July 21, 2022 17:00:00  -->
-    <achievement_req>3801</achievement_req>
-    <req>
-      <campaign>1322</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3804</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Search Mission' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1658422800</locked_start_time>
-    <!-- Thursday, July 21, 2022 17:00:00  -->
-    <achievement_req>3803</achievement_req>
-    <req>
-      <campaign>1322</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3805</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'Search Mission' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1658422800</locked_start_time>
-    <!-- Thursday, July 21, 2022 17:00:00  -->
-    <achievement_req>3804</achievement_req>
-    <req>
-      <campaign>1322</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 92 - Undead - Node 2 -->
-  <achievement>
-    <id>3806</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'A Helping Hand' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6878</mission_req>
-    <locked_start_time>1659632400</locked_start_time>
-    <!-- Thursday, 4 August 2022 17:00:00 -->
-    <req>
-      <campaign>1323</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3807</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'A Helping Hand' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1659632400</locked_start_time>
-    <!-- Thursday, 4 August 2022 17:00:00 -->
-    <achievement_req>3806</achievement_req>
-    <req>
-      <campaign>1323</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3808</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the 'A Helping Hand' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1659632400</locked_start_time>
-    <!-- Thursday, 4 August 2022 17:00:00 -->
-    <achievement_req>3807</achievement_req>
-    <req>
-      <campaign>1323</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 93 - Frog - Node 1 -->
   <!-- Wizard Event 93 - Frog - Node 2 -->
   <!-- Wizard Event 94 - Elemental - Node 1 -->
@@ -13469,28 +13048,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Duskwillow Rebuilt -->
-    <id>4015</id>
-    <type>2</type>
-    <order>645</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Duskwillow Rebuilt</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Duskwillow Rebuilt.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6190</mission_req>
-    <req>
-      <campaign>1200</campaign>
-      <campaign>1201</campaign>
-      <campaign>1202</campaign>
-      <campaign>1205</campaign>
-      <campaign>1206</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -13742,31 +13299,6 @@
       <campaign>1176</campaign>
       <campaign>1320</campaign>
       <campaign>1321</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Duskwillow Rebuilt Revisited -->
-    <id>4046</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Duskwillow Rebuilt</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Duskwillow Rebuilt.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6867</mission_req>
-    <achievement_req>4015</achievement_req>
-    <req>
-      <campaign>1200</campaign>
-      <campaign>1201</campaign>
-      <campaign>1202</campaign>
-      <campaign>1205</campaign>
-      <campaign>1206</campaign>
-      <campaign>1322</campaign>
-      <campaign>1323</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -14313,6 +13845,26 @@
     <mission_req>10138</mission_req>
     <req>
       <campaign>10138</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 139: ComDev Avian - Tarragon Peak -->
+  <achievement>
+    <id>10139</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Tarragon Peak</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10139</mission_req>
+    <req>
+      <campaign>10139</campaign>
       <level>7</level>
     </req>
     <reward>

@@ -3835,6 +3835,99 @@ var BATTLEGROUNDS = {
 		"id": "201",
 		"name": "Lily & Vampiric Mace Formation"
 	},
+	"202": {
+		"desc": "All Avians gain 15% extra Health and Vengeance equal to 14 minus twice their Delay. 0-2D Avians also gain Berserk and Pierce equal to 20%, while 3-4D gain Shroud equal to 10% base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.15,
+				"y": "10"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 14,
+				"y": "10"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 12,
+				"y": "10"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 10,
+				"y": "10"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 8,
+				"y": "10"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "counter",
+				"x": 6,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "berserk",
+				"mult": 0.2,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "pierce",
+				"mult": 0.2,
+				"y": "10"
+			},
+			{
+				"base": "health",
+				"delay": [
+					3,
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "stasis",
+				"mult": 0.1,
+				"y": "10"
+			}
+		],
+		"id": "202",
+		"name": "Barbed Wings"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -6694,6 +6787,39 @@ var BATTLEGROUNDS = {
 		],
 		"id": "584",
 		"name": "New Paradox"
+	},
+	"585": {
+		"desc": "Non-Chaos cards are hit by barrage and bolt each turn.",
+		"effect": [
+			{
+				"effect_type": "skill",
+				"id": "barrage",
+				"x": 5,
+				"y": "1"
+			},
+			{
+				"effect_type": "skill",
+				"id": "barrage",
+				"x": 5,
+				"y": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "strike",
+				"x": 2,
+				"y": "1"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "strike",
+				"x": 2,
+				"y": "3"
+			}
+		],
+		"id": "585",
+		"name": "Chaos Triumph 3.0"
 	},
 	"1001": {
 		"desc": "Your creatures get healed for 2 every turn in battle.",
