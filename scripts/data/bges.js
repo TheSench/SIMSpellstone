@@ -181,6 +181,7 @@ var BATTLEGROUNDS = {
 				"base": "health",
 				"effect_type": "skill",
 				"id": "protect_seafolk",
+				"ignore_nullify": "1",
 				"mult": 0.3,
 				"y": "12"
 			}
@@ -2841,7 +2842,7 @@ var BATTLEGROUNDS = {
 		"name": "Invisible Mark"
 	},
 	"179": {
-		"desc": "All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on base Health. These effects cannot be Nullified.",
+		"desc": "All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on Health. These effects cannot be Nullified.",
 		"effect": [
 			{
 				"base": "health",
@@ -3213,7 +3214,7 @@ var BATTLEGROUNDS = {
 		"name": "Lily & Spear Regenerated"
 	},
 	"187": {
-		"desc": "All Beasts gain 20% bonus Health, and bonus Berserk and Armor equal to 20% minus twice their delay. All % values based on base Health.",
+		"desc": "All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values based on Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -3928,6 +3929,30 @@ var BATTLEGROUNDS = {
 		"id": "202",
 		"name": "Barbed Wings"
 	},
+	"203": {
+		"desc": "All Elementals gain passive Barrier equal to 3 + 15% of their base Health, along with Frostbreath equal to 30% of their base Attack.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect",
+				"ignore_nullify": "1",
+				"mult": 0.15,
+				"x": 3,
+				"y": "5"
+			},
+			{
+				"base": "attack",
+				"effect_type": "add_skill",
+				"id": "frost",
+				"mult": 0.3,
+				"y": "5"
+			}
+		],
+		"id": "203",
+		"name": "Unbreakable Ice"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -4247,6 +4272,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "strike"
 			}
@@ -4360,6 +4386,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "protect"
 			}
@@ -4450,6 +4477,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "burn"
 			}
@@ -4495,6 +4523,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "enfeeble"
 			}
@@ -4509,6 +4538,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "armored"
 			}
@@ -4546,6 +4576,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "corrosive"
 			}
@@ -4560,6 +4591,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "frost"
 			}
@@ -4591,6 +4623,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "rally"
 			}
@@ -4605,6 +4638,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "counter"
 			}
@@ -4619,6 +4653,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "berserk"
 			}
@@ -4723,8 +4758,10 @@ var BATTLEGROUNDS = {
 		"effect": [
 			{
 				"all": "1",
+				"base": "health",
 				"effect_type": "skill",
 				"id": "enrage",
+				"ignore_nullify": "1",
 				"mult": 0.2
 			}
 		],
@@ -4801,6 +4838,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "counterburn"
 			}
@@ -4815,6 +4853,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "scorchbreath"
 			}
@@ -4829,6 +4868,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "legion"
 			}
@@ -4843,6 +4883,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "weaken"
 			}
@@ -4857,6 +4898,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "poison"
 			},
@@ -4864,6 +4906,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "counterpoison"
 			},
@@ -4871,6 +4914,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "poisonstrike"
 			}
@@ -4885,6 +4929,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "pierce"
 			}
@@ -4899,6 +4944,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "heal"
 			}
@@ -4913,6 +4959,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "regenerate"
 			}
@@ -4927,6 +4974,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "leech"
 			}
@@ -4948,6 +4996,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "armored",
 				"z": "1"
@@ -4956,6 +5005,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "counter",
 				"z": "1"
@@ -4964,6 +5014,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "evade",
 				"z": "1"
@@ -4972,6 +5023,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "leech",
 				"z": "1"
@@ -4980,6 +5032,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "pierce",
 				"z": "1"
@@ -4988,6 +5041,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "burn",
 				"z": "1"
@@ -4996,6 +5050,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "poison",
 				"z": "1"
@@ -5004,6 +5059,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "heal",
 				"z": "1"
@@ -5012,6 +5068,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "strike",
 				"z": "1"
@@ -5020,6 +5077,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "weaken",
 				"z": "1"
@@ -5028,6 +5086,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "protect",
 				"z": "1"
@@ -5036,6 +5095,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "rally",
 				"z": "1"
@@ -5044,6 +5104,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "berserk",
 				"z": "1"
@@ -5052,6 +5113,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "absorb",
 				"z": "1"
@@ -5060,6 +5122,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "counterburn",
 				"z": "1"
@@ -5095,6 +5158,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "armored",
 				"z": "1"
@@ -5103,6 +5167,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "counter",
 				"z": "1"
@@ -5111,6 +5176,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "evade",
 				"z": "1"
@@ -5119,6 +5185,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "leech",
 				"z": "1"
@@ -5127,6 +5194,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "pierce",
 				"z": "1"
@@ -5135,6 +5203,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "burn",
 				"z": "1"
@@ -5143,6 +5212,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "poison",
 				"z": "1"
@@ -5151,6 +5221,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "heal",
 				"z": "1"
@@ -5159,6 +5230,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "strike",
 				"z": "1"
@@ -5167,6 +5239,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "weaken",
 				"z": "1"
@@ -5175,6 +5248,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "protect",
 				"z": "1"
@@ -5183,6 +5257,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "rally",
 				"z": "1"
@@ -5191,6 +5266,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "berserk",
 				"z": "1"
@@ -5199,6 +5275,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "absorb",
 				"z": "1"
@@ -5207,6 +5284,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 5,
 				"s": "counterburn",
 				"z": "1"
@@ -5349,6 +5427,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "backlash"
 			},
@@ -5356,6 +5435,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "counterburn"
 			},
@@ -5363,6 +5443,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 0.5,
 				"s": "counter"
 			}
@@ -5400,6 +5481,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "strike"
 			},
@@ -5407,6 +5489,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "frost"
 			},
@@ -5414,6 +5497,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "enfeeble"
 			},
@@ -5434,6 +5518,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "burn"
 			},
@@ -5441,6 +5526,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "scorchbreath"
 			},
@@ -5448,6 +5534,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "poison"
 			},
@@ -5455,6 +5542,7 @@ var BATTLEGROUNDS = {
 				"all": "1",
 				"effect_type": "skill",
 				"id": "enhance",
+				"ignore_nullify": "1",
 				"mult": 1,
 				"s": "counterburn"
 			},
@@ -6789,36 +6877,82 @@ var BATTLEGROUNDS = {
 		"name": "New Paradox"
 	},
 	"585": {
-		"desc": "Non-Chaos cards are hit by barrage and bolt each turn.",
+		"desc": "All cards are Hexed by 2. Angels are also Hexed by 3.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enfeeble",
+				"x": 3,
+				"y": "6"
+			}
+		],
+		"id": "585",
+		"name": "Test BGE"
+	},
+	"586": {
+		"desc": "Non-Chaos cards are killed by barrage and bolt.",
 		"effect": [
 			{
 				"effect_type": "skill",
 				"id": "barrage",
-				"x": 5,
+				"x": 10,
+				"y": "0"
+			},
+			{
+				"effect_type": "skill",
+				"id": "barrage",
+				"x": 10,
 				"y": "1"
 			},
 			{
 				"effect_type": "skill",
 				"id": "barrage",
-				"x": 5,
+				"x": 10,
 				"y": "3"
+			},
+			{
+				"effect_type": "skill",
+				"id": "barrage",
+				"x": 10,
+				"y": "8"
 			},
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "strike",
-				"x": 2,
+				"x": 99,
+				"y": "0"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "strike",
+				"x": 99,
 				"y": "1"
 			},
 			{
 				"all": "1",
 				"effect_type": "skill",
 				"id": "strike",
-				"x": 2,
+				"x": 99,
 				"y": "3"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "strike",
+				"x": 99,
+				"y": "8"
 			}
 		],
-		"id": "585",
+		"id": "586",
 		"name": "Chaos Triumph 3.0"
 	},
 	"1001": {

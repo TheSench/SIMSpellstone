@@ -19921,4 +19921,45 @@
       <!-- Blackhawk Cavalier -->
     </deck>
   </mission>
+  <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
+  <mission>
+    <id>10140</id>
+    <name>Desolate Red Valley</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Black Blossoms in Ancient Glyphs to power up your cards.</desc>
+    <commander id="257" />
+    <!-- Golden Lava Lord -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4109" />
+      <!-- Latest Champion -->
+      <card id="2016" />
+      <!-- Atlas, the Ancient -->
+      <card id="4011" />
+      <!-- Emerald Amarok -->
+      <card id="4025" />
+      <!-- Quageye, the Masher -->
+      <card id="4084" />
+      <!-- Milax, Guardian of the Shade -->
+      <card id="4097" />
+      <!-- Yorick, the Unseen -->
+      <card id="7611" />
+      <!-- Vsov, Blizzard Djinn -->
+      <card id="7625" />
+      <!-- Quad, the Gatherer -->
+      <card id="7252" />
+      <!-- Glaistig Warden -->
+      <card id="7028" />
+      <!-- Frozen Tide -->
+      <card id="7110" />
+      <!-- Toxin Glider -->
+      <card id="2022" />
+      <!-- Avalanche Equine -->
+      <card id="2047" />
+      <!-- Conjured Dragon -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+    </deck>
+  </mission>
 </root>

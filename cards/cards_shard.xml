@@ -9410,20 +9410,101 @@
   <unit>
     <id>4109</id>
     <card_type>2</card_type>
+    <name>Lumis, 130 Spirits</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Luminis_Woods_A</picture>
+    <asset_bundle>7</asset_bundle>
+    <hidden_until_time>1774544400</hidden_until_time>
+    <item_name>Lumis Stone</item_name>
+    <item_desc>Collect Lumis Stones to upgrade Lumis, 130 Spirits!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <attack>2</attack>
+    <health>17</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="heal" all="1" x="1" />
+    <skill id="heal" x="4" />
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="heal" all="1" x="1" />
+      <skill id="heal" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <skill id="heal" all="1" x="1" />
+      <skill id="heal" x="5" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="heal" all="1" x="1" />
+      <skill id="heal" x="6" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" all="1" x="2" />
+      <skill id="heal" x="7" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>4</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="heal" all="1" x="2" />
+      <skill id="heal" x="8" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>5</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="heal" all="1" x="2" />
+      <skill id="heal" x="9" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>5</attack>
+      <health>22</health>
+      <skill id="heal" all="1" x="3" />
+      <skill id="heal" x="10" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <desc>All 130 spirits came to aid the wounded. The artist arrived later.</desc>
+  </unit>
+  <unit>
+    <id>4110</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1774544400</hidden_until_time>
+    <hidden_until_time>1776963600</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>5</sub_type>
+    <sub_type>14</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>

@@ -162,7 +162,7 @@
     <id>109</id>
     <name>Airborne Mastery</name>
     <desc>The first time Avians activate, they permanently double their base Attack if the opposing card has more Attack.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="valor" mult="1" base="attack" y="10" />
     </effect>
@@ -171,7 +171,7 @@
     <id>110</id>
     <name>Hardened Carapace</name>
     <desc>Insects gain a hardened carapace, gaining Armored value equal to 10% of their base Health, rounded up.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="armored" mult="0.1" base="health" y="13" />
       <skill id="displayEffect" trigger="onSkill" y="13" s="armored">
@@ -236,7 +236,7 @@
     <desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <skill id="protect_seafolk" mult="0.3" base="health" all="1" y="12" />
+      <skill id="protect_seafolk" ignore_nullify="1" mult="0.3" base="health" all="1" y="12" />
       <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
         <target_effect>
           <prefab>submerge_fadecloth_delay</prefab>
@@ -287,7 +287,7 @@
     <id>114</id>
     <name>Eyes in the Sky</name>
     <desc>Each Avian marks a random target upon first activation, Hexing them for 15% of their base Health. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
       <add_skill id="mark" mult="0.15" base="health" y="10" />
@@ -312,7 +312,7 @@
     <id>115</id>
     <name>Undead Unearthed</name>
     <desc>When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.</desc>
-    <icon>filter_undead_64.png</icon>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="unearth" mult="0.5" rarity="1" y="7" card="607" level="3" />
       <add_skill id="unearth" mult="0.5" rarity="2" y="7" card="608" level="4" />
@@ -357,7 +357,7 @@
     <id>117</id>
     <name>Venom</name>
     <desc>Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="venom" mult="0.1" base="health" y="13" />
     </effect>
@@ -438,7 +438,7 @@
     <id>120</id>
     <name>Dragonfire</name>
     <desc>Dragons gain Scorch equal to 20% of their base Health.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="burn" mult="0.2" base="health" y="9" />
     </effect>
@@ -542,7 +542,7 @@
     <id>127</id>
     <name>Insectile Venom</name>
     <desc>Insects gain Venom equal to 1 plus 15% of their base Health. Creatures affected by Venom take damage at the end of the turn, and take additional damage from attacks and skills.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="venom" mult="0.15" base="health" x="1" y="13" />
     </effect>
@@ -569,7 +569,7 @@
     <id>129</id>
     <name>Insect Swarm</name>
     <desc>After dealing Attack damage, permanently increases Attack of the lowest Attack active non-tower ally creature by 20% of the Attacker's base Health.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="swarm" mult="0.2" base="health" y="13" />
     </effect>
@@ -578,7 +578,7 @@
     <id>130</id>
     <name>Undead Vampirism</name>
     <desc>Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.</desc>
-    <icon>filter_undead_64.png</icon>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
     </effect>
@@ -587,7 +587,7 @@
     <id>131</id>
     <name>Lily &amp; Spear Formation</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health and gain Pierce equal to their base Attack.</desc>
-    <icon>filter_frog_64.png</icon>
+    <icon>filter_frog_64</icon>
     <effect>
       <add_skill id="bash" mult="0.25" base="health" y="4" />
       <add_skill id="pierce" mult="1" base="attack" y="4" />
@@ -606,7 +606,7 @@
     <id>132</id>
     <name>Day of Dragons</name>
     <desc>Dragons of 0-2 Delay gain Scorch equal to 20% of their base Health. Dragons of 3-4 Delay gain Regenerate equal to 10% of their base Health plus 4.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="burn" mult="0.2" base="health" y="9" delay="0,1,2" />
       <add_skill id="regenerate" mult="0.1" x="4" base="health" y="9" delay="3,4" />
@@ -669,7 +669,7 @@
     <id>134</id>
     <name>Regenerating Carapace</name>
     <desc>Insects gain Armor equal to 10% of their base Health, and Regenerate equal to 10% of their base Health.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.1" base="health" y="13" />
       <add_skill id="armored" mult="0.1" base="health" y="13" />
@@ -821,7 +821,7 @@
     <id>136</id>
     <name>Skydiving Assault</name>
     <desc>Avian of 0-2 delay deal extra damage on their first attack each turn equal to 40% of their base Attack. Avians of 3-4 delay gain Shroud equal to 10% +2 of their base Health.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="bash" mult="0.40" base="attack" y="10" delay="0,1,2" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
@@ -850,7 +850,7 @@
     <id>138</id>
     <name>Fear Aura</name>
     <desc>Dragons of 0-2 delay gain Hex equal to 20% of their base Health. Dragons of 3-4 delay gain Weaken equal to 30% of their base Health, and gain Vengeance 8.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="enfeeblebge" mult="0.20" base="health" y="9" delay="0,1,2" />
       <add_skill id="weakenbge" mult="0.30" base="health" y="9" delay="3,4" />
@@ -928,7 +928,7 @@
     <id>141</id>
     <name>Dawn of Dragons</name>
     <desc>Dragons gain skills based on their Delay (D)! 0D gain Scorch 4, 1D gain Scorch 5, 2D gain Scorch 6, 3D gain Regenerate 8, and 4D gain Regenerate 9.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="burn" x="4" y="9" delay="0" />
       <add_skill id="burn" x="5" y="9" delay="1" />
@@ -941,7 +941,7 @@
     <id>142</id>
     <name>Beetleton Mutations</name>
     <desc>Insects gain skills based on their Delay (D)! 0D gain Berserk 3, 1D Berserk 4, 2D Berserk 5, 3D Armor 5, 4D Armor 6.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="berserk" x="3" y="13" delay="0" />
       <add_skill id="berserk" x="4" y="13" delay="1" />
@@ -1049,7 +1049,7 @@
     <id>146</id>
     <name>Lily &amp; Vampiric Spear Formation</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce and Siphon equal to their base Attack.</desc>
-    <icon>filter_frog_64.png</icon>
+    <icon>filter_frog_64</icon>
     <effect>
       <add_skill id="bash" mult="0.25" base="health" y="4" />
       <add_skill id="pierce" mult="1" base="attack" y="4" />
@@ -1107,7 +1107,7 @@
     <id>149</id>
     <name>Zenith of Dragons</name>
     <desc>Dragons of 0-2 Delay gain Scorch equal to 25% of their base Health. Dragons of 3-4 Delay gain Regenerate equal to 15% of their base Health plus 4.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="burn" mult="0.25" base="health" y="9" delay="0,1,2" />
       <add_skill id="regenerate" mult="0.15" x="4" base="health" y="9" delay="3,4" />
@@ -1143,7 +1143,7 @@
     <id>151</id>
     <name>Evil Eye</name>
     <desc>All avians mark a random target upon activation, ignoring invisibility and hexing them for 15%. 0-2D will Weaken random targets equal to 15%. 3-4D gain Shroud equal to 10%. Values are base HP based</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <!-- <add_skill id='mark' mult='0.3' base='attack' y='10' /> -->
       <add_skill id="mark" mult="0.15" base="health" y="10" />
@@ -1181,7 +1181,7 @@
     <id>153</id>
     <name>Unstoppable Swarm</name>
     <desc>Insects gain Invisibility 3 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 20% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="swarm" mult="0.2" base="health" y="13" />
       <add_skill id="evade" mult="0.2" base="health" y="13" />
@@ -1192,7 +1192,7 @@
     <id>154</id>
     <name>Counterblast Swarm</name>
     <desc>Insects gain Backlash 2 and Swarm: After damaging, permanently increase attack of the weakest active ally creature by 15% of Attacker's base HP. Delay 3-4 get Poisonhide equal to 20% of base HP.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="swarm" mult="0.15" base="health" y="13" />
       <add_skill id="backlash" x="2" y="13" />
@@ -1203,7 +1203,7 @@
     <id>155</id>
     <name>Reinforced Undead Vampirism</name>
     <desc>All Undead gain Vampirism equal to 3 + 5%. 0-2 Delay also gain Armor equal to 10%. All values based on Health.</desc>
-    <icon>filter_undead_64.png</icon>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
       <add_skill id="armored" mult="0.10" base="health" y="7" delay="0,1,2" />
@@ -1451,7 +1451,7 @@
     <id>162</id>
     <name>Deadly Sting</name>
     <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="venom" mult="0.10" x="2" base="health" y="13" delay="0,1,2" />
       <add_skill id="pierce" mult="0.20" x="3" base="health" y="13" delay="0,1,2" />
@@ -1463,7 +1463,7 @@
     <id>163</id>
     <name>Flaming Scales</name>
     <desc>All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.</desc>
-    <icon>filter_dragon_64.png</icon>
+    <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="evade" x="3" y="9" />
       <add_skill id="burn" x="2" mult="0.1" base="health" y="9" delay="0,1,2" />
@@ -1474,7 +1474,7 @@
     <id>164</id>
     <name>Lily &amp; Vampiric Spear Formation Reinforced</name>
     <desc>Frogs deal extra damage on their first attack each turn equal to 25% of their base Health, while also gaining Pierce equal to their base Attack and Siphon as 3 plus their Attack.</desc>
-    <icon>filter_frog_64.png</icon>
+    <icon>filter_frog_64</icon>
     <effect>
       <add_skill id="bash" mult="0.25" base="health" y="4" />
       <add_skill id="pierce" mult="1" base="attack" y="4" />
@@ -1494,7 +1494,7 @@
     <id>165</id>
     <name>Sky Destruction</name>
     <desc>All Avians gain 2+delay Vengeance. Avian of 0-2 delay deal extra damage on their first attack each turn equal to 40% of their base Attack. Avians of 3-4 delay gain Shroud equal to 10% +2 of their base Health.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="counter" x="2" y="10" delay="0" />
       <add_skill id="counter" x="3" y="10" delay="1" />
@@ -1542,7 +1542,7 @@
     <id>167</id>
     <name>Thriving Swarm</name>
     <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <scale_health base="health" mult="0.10" yy="13" />
       <add_skill id="swarm" mult="0.15" base="health" y="13" />
@@ -1724,7 +1724,7 @@
     <id>178</id>
     <name>Invisible Mark</name>
     <desc>All Avians gain Mark equal to 15% base health. 2-4D Avians also gain Invisibility equal to Delay minus 1.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="mark" mult="0.15" base="health" y="10" />
       <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
@@ -1749,23 +1749,28 @@
   <battleground>
     <id>179</id>
     <name>Titanium Ward</name>
-    <desc>All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on base Health. These effects cannot be Nullified.</desc>
+    <desc>All Mecha gain 10% Ward. Also, Aether Mecha gain 15% Barrier, Chaos Mecha are Empowered by 15%, and Wyld Mecha are Healed by 15%. Viracocha receives all three. Values are based on Health. These effects cannot be Nullified.</desc>
     <icon>filter_mech_64</icon>
     <effect>
       <add_skill id="absorb" mult="0.10" base="health" y="16" />
       <skill id="protect" ignore_nullify="1" mult="0.15" x="0" base="health" all="1" yy="1,16" />
+      <!-- use x="0" to avoid MK/2023 bug -->
       <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="2,16" />
       <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="3,16" />
+      <!-- actually uses runed/invigorated Health as base -->
+      <!-- for Viracocha (only Factionless Mecha) -->
       <skill id="protect" ignore_nullify="1" mult="0.15" x="0" base="health" all="1" yy="0,16" />
+      <!-- use x="0" to avoid MK/2023 bug -->
       <skill id="rally" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
       <skill id="heal" ignore_nullify="1" mult="0.15" base="health" all="1" yy="0,16" />
+      <!-- actually uses runed/invigorated Health as base -->
     </effect>
   </battleground>
   <battleground>
     <id>180</id>
     <name>Blazing Undead Vampirism</name>
     <desc>All Undead gain Vampirism equal to 10% of their base Health. 0-2D Undead also gain Siphon equal to 20% of their base Health. 3-4D Undead also gain Emberhide equal to 10% of their base Health.</desc>
-    <icon>filter_undead_64.png</icon>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.1" base="health" y="7" />
       <add_skill id="leech" mult="0.2" base="health" y="7" delay="0,1,2" />
@@ -1776,7 +1781,7 @@
     <id>181</id>
     <name>Universal Toxic Swarm</name>
     <desc>All Insects gain extra Pierce and Swarm equal to 50% of their base Attack, and also gain 15% extra Health. Also, all Poison/Poisonbolt skills for all tribes deal 30% more damage.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <scale_health base="health" mult="0.15" yy="13" />
       <add_skill id="swarm" mult="0.5" base="attack" y="13" />
@@ -1859,7 +1864,7 @@
   <battleground>
     <id>187</id>
     <name>Beast Quake</name>
-    <desc>All Beasts gain 20% bonus Health, and bonus Berserk and Armor equal to 20% minus twice their delay. All % values based on base Health.</desc>
+    <desc>All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values based on Health.</desc>
     <icon>filter_frostbite_64</icon>
     <effect>
       <scale_health base="health" mult="0.20" yy="14" />
@@ -1901,7 +1906,7 @@
     <id>190</id>
     <name>Ravenous Raptors</name>
     <desc>All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base health.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.1" base="health" y="10" />
       <add_skill id="bash" mult="0.1" base="health" y="10" />
@@ -1961,7 +1966,7 @@
     <id>194</id>
     <name>Like Moths to a Flame</name>
     <desc>All Insects gain 30% bonus Attack and 10% Vengeance. 0-2D Insects gain 30% Pierce and Siphon, and 15% Scorch Self. 3-4D Insects gain 10% Armor. All values scale with base Health. All cards with Dualstrike have it evolved to Confuse (with the same count).</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="bash" mult="0.3" base="health" y="13" />
       <add_skill id="counter" mult="0.1" base="health" y="13" />
@@ -1981,6 +1986,7 @@
       <add_skill id="frost" mult="0.5" base="attack" y="6" />
       <add_skill id="corrosive" mult="0.1" base="health" y="6" />
       <skill id="protect" ignore_nullify="1" mult="0.15" x="0" base="health" all="1" y="6" />
+      <!-- use x="0" to avoid MK/2023 bug -->
     </effect>
   </battleground>
   <battleground>
@@ -2090,6 +2096,17 @@
           <duration>3</duration>
         </actor_effect>
       </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>203</id>
+    <name>Unbreakable Ice</name>
+    <desc>All Elementals gain passive Barrier equal to 3 + 15% of their base Health, along with Frostbreath equal to 30% of their base Attack.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <skill id="protect" ignore_nullify="1" mult="0.15" x="3" base="health" all="1" y="5" />
+      <!-- use x (even x="0") to avoid MK/2023 bug -->
+      <add_skill id="frost" mult="0.3" base="attack" y="5" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -2271,7 +2288,7 @@
     <icon>thunderbolt_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
-      <skill id="enhance" s="strike" mult="0.5" all="1" />
+      <skill id="enhance" s="strike" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2323,7 +2340,7 @@
     <icon>Barrier_BGE_64</icon>
     <icon_bundle>69</icon_bundle>
     <effect>
-      <skill id="enhance" s="protect" mult="0.5" all="1" />
+      <skill id="enhance" s="protect" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2359,14 +2376,14 @@
     <icon>firestarter_64</icon>
     <icon_bundle>75</icon_bundle>
     <effect>
-      <skill id="enhance" s="burn" mult="0.5" all="1" />
+      <skill id="enhance" s="burn" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
     <id>514</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play first_play="1" attacker="1">
@@ -2392,7 +2409,7 @@
     <icon>Hex_BGE_64</icon>
     <icon_bundle>82</icon_bundle>
     <effect>
-      <skill id="enhance" s="enfeeble" mult="0.5" all="1" />
+      <skill id="enhance" s="enfeeble" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2402,7 +2419,7 @@
     <icon>armor_BGE_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
-      <skill id="enhance" s="armored" mult="0.5" all="1" />
+      <skill id="enhance" s="armored" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2428,7 +2445,7 @@
     <icon>corrosive_BGE_64</icon>
     <icon_bundle>103</icon_bundle>
     <effect>
-      <skill id="enhance" s="corrosive" mult="0.5" all="1" />
+      <skill id="enhance" s="corrosive" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2438,14 +2455,14 @@
     <icon>frostbreath_BGE_64</icon>
     <icon_bundle>103</icon_bundle>
     <effect>
-      <skill id="enhance" s="frost" mult="0.5" all="1" />
+      <skill id="enhance" s="frost" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
     <id>521</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play first_play="1" attacker="1">
@@ -2460,7 +2477,7 @@
     <icon>empower_BGE_64</icon>
     <icon_bundle>96</icon_bundle>
     <effect>
-      <skill id="enhance" s="rally" mult="0.5" all="1" />
+      <skill id="enhance" s="rally" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2470,7 +2487,7 @@
     <icon>Vengence_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="counter" mult="0.5" all="1" />
+      <skill id="enhance" s="counter" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2480,7 +2497,7 @@
     <icon>Berserk_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="berserk" mult="0.5" all="1" />
+      <skill id="enhance" s="berserk" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2561,7 +2578,7 @@
     <!-- actually _64 -->
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enrage" mult="0.2" all="1" />
+      <skill id="enrage" ignore_nullify="1" mult="0.2" all="1" base="health" />
     </effect>
   </battleground>
   <battleground>
@@ -2656,7 +2673,7 @@
     <icon>Emberhide_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="counterburn" mult="0.5" all="1" />
+      <skill id="enhance" s="counterburn" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2666,7 +2683,7 @@
     <icon>Scorchbreath_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="scorchbreath" mult="0.5" all="1" />
+      <skill id="enhance" s="scorchbreath" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2676,7 +2693,7 @@
     <icon>Legion_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="legion" mult="0.5" all="1" />
+      <skill id="enhance" s="legion" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2686,7 +2703,7 @@
     <icon>Weaken_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="weaken" mult="0.5" all="1" />
+      <skill id="enhance" s="weaken" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2696,9 +2713,9 @@
     <icon>Poison_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="poison" mult="0.5" all="1" />
-      <skill id="enhance" s="counterpoison" mult="0.5" all="1" />
-      <skill id="enhance" s="poisonstrike" mult="0.5" all="1" />
+      <skill id="enhance" s="poison" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterpoison" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poisonstrike" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2708,7 +2725,7 @@
     <icon>Pierce_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="pierce" mult="0.5" all="1" />
+      <skill id="enhance" s="pierce" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2718,7 +2735,7 @@
     <icon>Heal_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="heal" mult="0.5" all="1" />
+      <skill id="enhance" s="heal" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2728,7 +2745,7 @@
     <icon>Regenerate_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="regenerate" mult="0.5" all="1" />
+      <skill id="enhance" s="regenerate" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2738,7 +2755,7 @@
     <icon>Siphon_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="leech" mult="0.5" all="1" />
+      <skill id="enhance" s="leech" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2751,21 +2768,21 @@
       <skill id="enlarge" mult="5" all="1" z="1" />
       <!-- mult is based on attack -->
       <scale_health base="health" mult="5" rarity="1" />
-      <skill id="enhance" s="armored" z="1" mult="5" all="1" />
-      <skill id="enhance" s="counter" z="1" mult="5" all="1" />
-      <skill id="enhance" s="evade" z="1" mult="5" all="1" />
-      <skill id="enhance" s="leech" z="1" mult="5" all="1" />
-      <skill id="enhance" s="pierce" z="1" mult="5" all="1" />
-      <skill id="enhance" s="burn" z="1" mult="5" all="1" />
-      <skill id="enhance" s="poison" z="1" mult="5" all="1" />
-      <skill id="enhance" s="heal" z="1" mult="5" all="1" />
-      <skill id="enhance" s="strike" z="1" mult="5" all="1" />
-      <skill id="enhance" s="weaken" z="1" mult="5" all="1" />
-      <skill id="enhance" s="protect" z="1" mult="5" all="1" />
-      <skill id="enhance" s="rally" z="1" mult="5" all="1" />
-      <skill id="enhance" s="berserk" z="1" mult="5" all="1" />
-      <skill id="enhance" s="absorb" z="1" mult="5" all="1" />
-      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" />
+      <skill id="enhance" s="armored" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="evade" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="leech" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="pierce" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="burn" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poison" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="heal" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="strike" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="weaken" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="protect" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="rally" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="berserk" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="absorb" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
@@ -2778,21 +2795,21 @@
       <add_skill id="barrage" mult="5" base="attack" all="1" rarity="1" />
       <!-- mult is based on attack -->
       <scale_health base="health" mult="5" rarity="1" />
-      <skill id="enhance" s="armored" z="1" mult="5" all="1" />
-      <skill id="enhance" s="counter" z="1" mult="5" all="1" />
-      <skill id="enhance" s="evade" z="1" mult="5" all="1" />
-      <skill id="enhance" s="leech" z="1" mult="5" all="1" />
-      <skill id="enhance" s="pierce" z="1" mult="5" all="1" />
-      <skill id="enhance" s="burn" z="1" mult="5" all="1" />
-      <skill id="enhance" s="poison" z="1" mult="5" all="1" />
-      <skill id="enhance" s="heal" z="1" mult="5" all="1" />
-      <skill id="enhance" s="strike" z="1" mult="5" all="1" />
-      <skill id="enhance" s="weaken" z="1" mult="5" all="1" />
-      <skill id="enhance" s="protect" z="1" mult="5" all="1" />
-      <skill id="enhance" s="rally" z="1" mult="5" all="1" />
-      <skill id="enhance" s="berserk" z="1" mult="5" all="1" />
-      <skill id="enhance" s="absorb" z="1" mult="5" all="1" />
-      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" />
+      <skill id="enhance" s="armored" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="evade" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="leech" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="pierce" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="burn" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poison" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="heal" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="strike" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="weaken" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="protect" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="rally" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="berserk" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="absorb" z="1" mult="5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" z="1" mult="5" all="1" ignore_nullify="1" />
       <skill id="displayEffect" trigger="onSkill" s="barrage">
         <projectile_effect>
           <prefab>Firework_Projectile</prefab>
@@ -2820,24 +2837,25 @@
     <!-- actually _64 -->
     <icon_bundle>110</icon_bundle>
     <effect>
-      <scale_attack base="attack" mult="1" y="0" />
-      <scale_attack base="attack" mult="1" y="1" />
-      <scale_attack base="attack" mult="1" y="2" />
-      <scale_attack base="attack" mult="1" y="3" />
-      <scale_attack base="attack" mult="1" y="8" />
-      <scale_health base="health" mult="1" y="0" />
-      <scale_health base="health" mult="1" y="1" />
-      <scale_health base="health" mult="1" y="2" />
-      <scale_health base="health" mult="1" y="3" />
-      <scale_health base="health" mult="1" y="8" />
+      <!-- Only one scaling works per BGE (doesn't work without yy) -->
+      <!-- also use "enlarge" instead of scale_attack to avoid a separate BGE -->
+      <scale_attack base="attack" mult="1" yy="0" />
+      <scale_attack base="attack" mult="1" yy="1" />
+      <scale_attack base="attack" mult="1" yy="2" />
+      <scale_attack base="attack" mult="1" yy="3" />
+      <scale_attack base="attack" mult="1" yy="8" />
+      <scale_health base="health" mult="1" yy="0" />
+      <scale_health base="health" mult="1" yy="1" />
+      <scale_health base="health" mult="1" yy="2" />
+      <scale_health base="health" mult="1" yy="3" />
+      <scale_health base="health" mult="1" yy="8" />
     </effect>
   </battleground>
   <battleground>
-    <!--CHECK EVERYTHING -->
     <id>549</id>
     <name>Unlife Clash</name>
     <desc>When a card dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the unit that died. The token has Invisibility and Berserk values based on its rarity.</desc>
-    <icon>filter_undead_64.png</icon>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="unearth" mult="0.5" rarity="1" card="607" level="3" />
       <add_skill id="unearth" mult="0.5" rarity="2" card="608" level="4" />
@@ -2860,9 +2878,7 @@
     <name>Sanctuary Clash</name>
     <desc>All cards gain Shroud 99.</desc>
     <icon>blue_pearl_bge_64</icon>
-    <!-- REVISAR -->
     <icon_bundle>82</icon_bundle>
-    <!-- REVISAR -->
     <effect>
       <add_skill id="stasis" x="99" all="1" />
     </effect>
@@ -2872,26 +2888,23 @@
     <name>Revenge Clash</name>
     <desc>Vengeance, Emberhide and Backlash skills are 50% more effective.</desc>
     <icon>Vengence_BGE_64</icon>
-    <!-- REVISAR -->
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="backlash" mult="0.5" all="1" />
-      <skill id="enhance" s="counterburn" mult="0.5" all="1" />
-      <skill id="enhance" s="counter" mult="0.5" all="1" />
+      <skill id="enhance" s="backlash" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" mult="0.5" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" mult="0.5" all="1" ignore_nullify="1" />
     </effect>
   </battleground>
   <battleground>
     <id>552</id>
     <name>Crushing Wave Clash</name>
     <desc>Frogs and Seafolk deal extra damage on their first attack each turn equal to 25% of their base Health.</desc>
-    <icon>filter_frog_64.png</icon>
-    <!-- REVISAR -->
+    <icon>filter_frog_64</icon>
     <effect>
       <add_skill id="bash" mult="0.25" base="health" y="4" all="1" />
       <add_skill id="bash" mult="0.25" base="health" y="12" all="1" />
       <skill id="displayEffect" trigger="onSkill" s="bash">
         <target_effect>
-          <!-- REVISAR -->
           <prefab>frogbge_Target</prefab>
           <bundle_id>96</bundle_id>
           <duration>1</duration>
@@ -2911,9 +2924,9 @@
     <icon>thunderbolt_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
-      <skill id="enhance" s="strike" mult="1" all="1" />
-      <skill id="enhance" s="frost" mult="1" all="1" />
-      <skill id="enhance" s="enfeeble" mult="1" all="1" />
+      <skill id="enhance" s="strike" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="frost" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="enfeeble" mult="1" all="1" ignore_nullify="1" />
       <scale_health base="health" mult="0.5" all="1" />
     </effect>
   </battleground>
@@ -2924,10 +2937,10 @@
     <icon>Poison_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
-      <skill id="enhance" s="burn" mult="1" all="1" />
-      <skill id="enhance" s="scorchbreath" mult="1" all="1" />
-      <skill id="enhance" s="poison" mult="1" all="1" />
-      <skill id="enhance" s="counterburn" mult="1" all="1" />
+      <skill id="enhance" s="burn" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="scorchbreath" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poison" mult="1" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" mult="1" all="1" ignore_nullify="1" />
       <scale_health base="health" mult="1" all="1" />
     </effect>
   </battleground>
@@ -3393,19 +3406,39 @@
   </battleground>
   <battleground>
     <id>585</id>
+    <name>Test BGE</name>
+    <desc>All cards are Hexed by 2. Angels are also Hexed by 3.</desc>
+    <icon>devtools_128</icon>
+    <icon_bundle>52</icon_bundle>
+    <effect>
+      <skill id="enfeeble" x="2" all="1" />
+      <!-- Hex All -->
+      <skill id="enfeeble" x="3" y="6" all="1" />
+      <!-- Hex All Angel -->
+    </effect>
+  </battleground>
+  <battleground>
+    <id>586</id>
     <name>Chaos Triumph 3.0</name>
-    <desc>Non-Chaos cards are hit by barrage and bolt each turn.</desc>
+    <desc>Non-Chaos cards are killed by barrage and bolt.</desc>
     <icon>filter_chaos_64</icon>
     <effect>
-      <skill id="barrage" x="5" y="1" />
+      <skill id="barrage" x="10" y="0" />
+      <!-- Barrage Factionless -->
+      <skill id="barrage" x="10" y="1" />
       <!-- Barrage Aether -->
-      <skill id="barrage" x="5" y="3" />
+      <skill id="barrage" x="10" y="3" />
       <!-- Barrage Wyld -->
-      <skill id="strike" x="2" y="1" all="1" />
+      <skill id="barrage" x="10" y="8" />
+      <!-- Barrage Void -->
+      <skill id="strike" x="99" y="0" all="1" />
+      <!-- Bolt All Factionless -->
+      <skill id="strike" x="99" y="1" all="1" />
       <!-- Bolt All Aether -->
-      <skill id="strike" x="2" y="3" all="1" />
+      <skill id="strike" x="99" y="3" all="1" />
       <!-- Bolt All Wyld -->
-      <!-- if it works, increase values and add Void + Factionless -->
+      <skill id="strike" x="99" y="8" all="1" />
+      <!-- Bolt All Void -->
     </effect>
   </battleground>
   <!-- ============================= -->
@@ -3651,7 +3684,7 @@
     <id>2014</id>
     <name>Six-Stanza Sonata</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3684,7 +3717,7 @@
     <id>2016</id>
     <name>Buzzsaw Aphidsong</name>
     <desc>The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3699,7 +3732,7 @@
     <id>2017</id>
     <name>Six-Stanza Sonata</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3877,7 +3910,7 @@
     <id>2028</id>
     <name>Crimsonwing Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3894,7 +3927,7 @@
     <id>2029</id>
     <name>Crimsondrip Lullaby</name>
     <desc>Hero's Blessed, Yakov fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3909,7 +3942,7 @@
     <id>2030</id>
     <name>Crimsonwing Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -3925,7 +3958,7 @@
     <id>2031</id>
     <name>Crimsonwing Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4225,7 +4258,7 @@
     <id>2049</id>
     <name>Harmonious Crimson Litany</name>
     <desc>Tanit, First Dreamer fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4487,7 +4520,7 @@
     <id>2065</id>
     <name>Rift's Chorus</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4504,7 +4537,7 @@
     <id>2066</id>
     <name>Rift's Choir</name>
     <desc>Agatha, Forgettable Elder fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4535,7 +4568,7 @@
     <id>2068</id>
     <name>Harmonious Crimson Litany</name>
     <desc>Ebonclaw, Silencer fights harder with each passing Mastery level, increasing cards' stats!</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4550,7 +4583,7 @@
     <id>2069</id>
     <name>Rift's Chorus</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4566,7 +4599,7 @@
     <id>2070</id>
     <name>Rift's Chorus</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4666,7 +4699,7 @@
     <id>2076</id>
     <name>Powerful Foe Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4681,7 +4714,7 @@
     <id>2077</id>
     <name>Enemy Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4697,7 +4730,7 @@
     <id>2078</id>
     <name>Enemy Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4882,7 +4915,7 @@
     <id>2089</id>
     <name>Enemy Requiem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4898,7 +4931,7 @@
     <id>2090</id>
     <name>Enemy Requiem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>filter_insect_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4982,7 +5015,7 @@
     <id>2095</id>
     <name>Enemy Anthem</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -4999,7 +5032,7 @@
     <id>2096</id>
     <name>Powerful Foe Hymn</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -5216,7 +5249,7 @@
     <id>2109</id>
     <name>Chorus of Air</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <icon_bundle>87</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -5233,7 +5266,7 @@
     <id>2110</id>
     <name>Chorus of Air</name>
     <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
-    <icon>filter_avian_64.png</icon>
+    <icon>filter_avian_64</icon>
     <icon_bundle>87</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -5482,7 +5515,7 @@
     <id>5001</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play first_play="1" attacker="1">
@@ -5494,7 +5527,7 @@
     <id>5002</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first two cards they play in a battle.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play index="1" attacker="1">
@@ -5509,7 +5542,7 @@
     <id>5003</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has one Delay added to the first card they play and the player who goes second has one Delay removed from the first card they play.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play first_play="1" attacker="1">
@@ -5524,7 +5557,7 @@
     <id>5004</id>
     <name>The Arena</name>
     <desc>In Arena Battles, the player who goes first has two Delay added to the first card they play and the player who goes second has one Delay added to the first card they play.</desc>
-    <icon>arenaBGE_64.png</icon>
+    <icon>arenaBGE_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
       <on_play first_play="1" attacker="1">

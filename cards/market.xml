@@ -409,6 +409,25 @@
     <event_type_req>8</event_type_req>
   </store_item>
   <store_item>
+    <id>73</id>
+    <name>Runecrafter's Pouch</name>
+    <category>2</category>
+    <mission_req>244</mission_req>
+    <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
+    <show_desc>1</show_desc>
+    <priority>52</priority>
+    <!-- <sc_cost>500</sc_cost> -->
+    <cost_type>3</cost_type>
+    <!-- Items -->
+    <cost item="21" />
+    <!-- Endgame Seals -->
+    <asset_prefab>rune_bag</asset_prefab>
+    <bundle>15</bundle>
+    <item id="514" quantity="1" />
+    <!-- filler reward (pouch) -->
+    <limited_buy index="1" cost="1" />
+  </store_item>
+  <store_item>
     <id>80</id>
     <name>Random Tribe Health Rune</name>
     <category>0</category>
@@ -1064,7 +1083,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>1250</priority>
-    <desc>Happy Valentine's Day! Have an (almost) free gift from us!</desc>
+    <desc>April Fool's! Have an (almost) free gift from us!</desc>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
     <sc_cost>1</sc_cost>

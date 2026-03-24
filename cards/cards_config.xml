@@ -228,8 +228,8 @@
     <order>120</order>
     <icon>heal</icon>
     <name>Heal</name>
-    <desc>Heals a random ally creature.</desc>
     <desc_all>Heals all ally creatures.</desc_all>
+    <desc>Heals a random ally creature.</desc>
     <desc_faction>Heals a random {y} ally.</desc_faction>
     <desc_all_faction>Heals all {y} allies.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
@@ -539,7 +539,6 @@
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Marks a random target with Hex upon first activation. Chooses a new mark when the current mark dies. Ignores Invisibility.</desc>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>unearth</id>
@@ -594,7 +593,7 @@
     <order>1</order>
     <icon>empower</icon>
     <name>Bash</name>
-    <desc>Increases damage dealt by the first attack each turn.</desc>
+    <desc>Increases damage dealt by the first Attack each turn.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
     <hidden>1</hidden>
@@ -638,10 +637,10 @@
     <order>500</order>
     <icon>hinder</icon>
     <name>Weaken Ally</name>
-    <desc>Reduces Attack of a random allied creature.</desc>
+    <desc>Reduces the Attack of a random allied creature.</desc>
     <desc_all>Reduces the Attack of all ally creatures.</desc_all>
     <desc_faction>Reduces the Attack of a random allied {y} creature.</desc_faction>
-    <desc_all_faction>Reduces the attack of all ally {y} creatures.</desc_all_faction>
+    <desc_all_faction>Reduces the Attack of all ally {y} creatures.</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>

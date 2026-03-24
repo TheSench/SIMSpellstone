@@ -12578,6 +12578,63 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9120</id>
+    <name>Duskwillow Rebuilt</name>
+    <campaign_req id="24" level="1" />
+    <location_id>20</location_id>
+    <x>430</x>
+    <y>230</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6131</mission_id>
+      <mission_id>6132</mission_id>
+      <mission_id>6133</mission_id>
+      <mission_id>6134</mission_id>
+      <mission_id>6135</mission_id>
+      <mission_id>6136</mission_id>
+      <mission_id>6137</mission_id>
+      <mission_id>6138</mission_id>
+      <mission_id>6139</mission_id>
+      <mission_id>6140</mission_id>
+      <mission_id>6141</mission_id>
+      <mission_id>6142</mission_id>
+      <mission_id>6143</mission_id>
+      <mission_id>6144</mission_id>
+      <mission_id>6145</mission_id>
+      <mission_id>6146</mission_id>
+      <mission_id>6147</mission_id>
+      <mission_id>6148</mission_id>
+      <mission_id>6149</mission_id>
+      <mission_id>6150</mission_id>
+      <mission_id>6151</mission_id>
+      <mission_id>6152</mission_id>
+      <mission_id>6153</mission_id>
+      <mission_id>6154</mission_id>
+      <mission_id>6155</mission_id>
+      <mission_id>6156</mission_id>
+      <mission_id>6157</mission_id>
+      <mission_id>6158</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="546" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="551" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2083" />
+      <!-- Map Legendary -->
+      <card level="5" id="2083" />
+      <!-- Map Legendary -->
+      <card level="6" id="12083" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3086" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9121</id>
     <name>Duskwillow Rebuilt</name>
     <campaign_req id="24" level="1" />
@@ -13967,5 +14024,42 @@
     </rewards>
     <find_item id="3083" drop_per_energy="1" />
     <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
+  <campaign>
+    <id>10140</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>18</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>120</x>
+    <y>320</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10140</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28180" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28180" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104109" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3080" drop_per_energy="1" />
+    <find_item id="104504" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

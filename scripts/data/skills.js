@@ -26,7 +26,7 @@ var SKILL_DATA = {
 		"type": "earlyActivation"
 	},
 	"bash": {
-		"desc": "Increases damage dealt by the first attack each turn.",
+		"desc": "Increases damage dealt by the first Attack each turn.",
 		"icon": "empower",
 		"name": "Bash",
 		"type": "passive"
@@ -404,7 +404,7 @@ var SKILL_DATA = {
 		"type": "activation"
 	},
 	"weakenself": {
-		"desc": "Reduces Attack of a random allied creature.",
+		"desc": "Reduces the Attack of a random allied creature.",
 		"icon": "hinder",
 		"name": "Weaken Ally",
 		"type": "activation"

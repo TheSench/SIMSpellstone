@@ -164,6 +164,22 @@
       <gold>30</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>103</id>
+    <type>1</type>
+    <order>10</order>
+    <name>Endgame Player</name>
+    <icon>letter_blue_seal</icon>
+    <icon_bundle>17</icon_bundle>
+    <desc>Spend Endgame Seals in the store.</desc>
+    <mission_req>13</mission_req>
+    <req>
+      <store_item id="73" number="1" />
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
   <!-- END Store Quests -->
   <!-- 200: Campaign Quests START -->
   <achievement>
@@ -9627,277 +9643,8 @@
   </achievement>
   <!-- Christmas 2018 Achievements -->
   <!-- Campaign Event 14 weeks 1-4 -->
-  <achievement>
-    <id>3435</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Purity and Corruption' campaign on Mastery Level 1.</desc>
-    <mission_req>6136</mission_req>
-    <locked_start_time>1547139600</locked_start_time>
-    <!-- Thu, Jan 10 2019 17:00:00 -->
-    <req>
-      <campaign>1195</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3086" number="50" />
-      <event_points id="7042" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3436</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Purity and Corruption' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1547139600</locked_start_time>
-    <!-- Thu, Jan 10 2019 17:00:00 -->
-    <achievement_req>3435</achievement_req>
-    <req>
-      <campaign>1195</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3437</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Purity and Corruption' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1547139600</locked_start_time>
-    <!-- Thu, Jan 10 2019 17:00:00 -->
-    <achievement_req>3436</achievement_req>
-    <req>
-      <campaign>1195</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3438</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Purity and Corruption' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1547139600</locked_start_time>
-    <!-- Thu, Jan 10 2019 17:00:00 -->
-    <achievement_req>3437</achievement_req>
-    <req>
-      <campaign>1195</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3439</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Warrior's Path' campaign on Mastery Level 2.</desc>
-    <mission_req>6142</mission_req>
-    <locked_start_time>1548349200</locked_start_time>
-    <!-- Thu, Jan 24 2019 17:00:00 -->
-    <req>
-      <campaign>1196</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3440</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Warrior's Path' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1548349200</locked_start_time>
-    <!-- Thu, Jan 24 2019 17:00:00 -->
-    <achievement_req>3439</achievement_req>
-    <req>
-      <campaign>1196</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3441</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Warrior's Path' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1548349200</locked_start_time>
-    <!-- Thu, Jan 24 2019 17:00:00 -->
-    <achievement_req>3440</achievement_req>
-    <req>
-      <campaign>1196</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 14 weeks 5-8 -->
-  <achievement>
-    <id>3443</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Shades of the Past' campaign on Mastery Level 1.</desc>
-    <mission_req>6152</mission_req>
-    <locked_start_time>1549558800</locked_start_time>
-    <!-- Thu, Feb 07 2019 17:00:00 -->
-    <req>
-      <campaign>1198</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3086" number="50" />
-      <event_points id="7043" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3444</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Shades of the Past' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1549558800</locked_start_time>
-    <achievement_req>3443</achievement_req>
-    <req>
-      <campaign>1198</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3445</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Shades of the Past' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1549558800</locked_start_time>
-    <achievement_req>3444</achievement_req>
-    <req>
-      <campaign>1198</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3446</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Shades of the Past' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1549558800</locked_start_time>
-    <achievement_req>3445</achievement_req>
-    <req>
-      <campaign>1198</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3447</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Crimsonwing Foundation' campaign on Mastery Level 2.</desc>
-    <mission_req>6158</mission_req>
-    <locked_start_time>1550768400</locked_start_time>
-    <!-- Thursday, February 21, 2019  -->
-    <req>
-      <campaign>1199</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3448</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Crimsonwing Foundation' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1550768400</locked_start_time>
-    <!-- Thursday, February 21, 2019  -->
-    <achievement_req>3447</achievement_req>
-    <req>
-      <campaign>1199</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3449</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Crimsonwing Foundation' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1550768400</locked_start_time>
-    <!-- Thursday, February 21, 2019  -->
-    <achievement_req>3448</achievement_req>
-    <req>
-      <campaign>1199</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Habrok recipe -->
-  <achievement>
-    <id>3442</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the 'Schism' campaign on Mastery Level 1.</desc>
-    <mission_req>6143</mission_req>
-    <locked_start_time>1548349200</locked_start_time>
-    <!-- Thu, Jan 24 2019 17:00:00 -->
-    <req>
-      <campaign>1197</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8014" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 15 weeks 1-4 -->
   <!-- Messina recipe -->
   <!-- Campaign Event 15 weeks 5-8 -->
@@ -13026,28 +12773,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Gladius Arena -->
-    <id>4014</id>
-    <type>2</type>
-    <order>644</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Gladius Arena</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Gladius Arena.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6146</mission_req>
-    <req>
-      <campaign>1195</campaign>
-      <campaign>1196</campaign>
-      <campaign>1197</campaign>
-      <campaign>1198</campaign>
-      <campaign>1199</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Tarragon Peak Revisited -->
     <id>4030</id>
     <type>2</type>
@@ -13516,25 +13241,6 @@
   </achievement>
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
   <!-- Event 112: ComDev Beast - Gladius Arena -->
-  <achievement>
-    <id>4066</id>
-    <type>2</type>
-    <order>661</order>
-    <name>Commander of Gladius Arena</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Gladius Arena.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7217</mission_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <campaign>1366</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
   <!-- Event 113: ComDev Beast - Return to Elaria -->
   <!-- END (4068) Mastery level 7 Achievements on ComDev nodes -->
   <!-- ======================================== -->
@@ -13542,210 +13248,8 @@
   <!-- ======================================== -->
   <!-- Event 112: ComDev Beast - Gladius Arena -->
   <!-- E112 Node 1: The Memory Palace -->
-  <achievement>
-    <id>4501</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the The Memory Palace campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7211</mission_req>
-    <locked_start_time>1706806800</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3086" number="100" />
-      <event_points id="7108" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4502</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the The Memory Palace campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4501</achievement_req>
-    <locked_start_time>1706806800</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4503</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the The Memory Palace campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4502</achievement_req>
-    <locked_start_time>1706806800</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4504</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the The Memory Palace campaign on Mastery Level 5.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4503</achievement_req>
-    <locked_start_time>1706806800</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <level>5</level>
-    </req>
-    <reward>
-      <pack>45</pack>
-      <!-- Reward Pack -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4505</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the The Memory Palace campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4504</achievement_req>
-    <locked_start_time>1706806800</locked_start_time>
-    <req>
-      <campaign>1365</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 112: ComDev Beast - Gladius Arena -->
   <!-- E112 Node 2: Power, Growth, Order -->
-  <achievement>
-    <id>4506</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Power, Growth, Order campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7217</mission_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1366</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3086" number="100" />
-      <event_points id="7108" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4507</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Power, Growth, Order campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4506</achievement_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1366</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4508</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Power, Growth, Order campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4507</achievement_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1366</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4509</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Power, Growth, Order campaign on Mastery Level 5.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4508</achievement_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1366</campaign>
-      <level>5</level>
-    </req>
-    <reward>
-      <pack>45</pack>
-      <!-- Reward Pack -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>4510</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Power, Growth, Order campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>4509</achievement_req>
-    <locked_start_time>1708016400</locked_start_time>
-    <req>
-      <campaign>1366</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 113: ComDev Beast - Return to Elaria -->
   <!-- Event 114: ComDev Avian - Red Feather Valley -->
   <!-- Event 115: ComDev Mecha - Red Feather Valley -->
@@ -13865,6 +13369,26 @@
     <mission_req>10139</mission_req>
     <req>
       <campaign>10139</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
+  <achievement>
+    <id>10140</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Desolate Red Valley</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10140</mission_req>
+    <req>
+      <campaign>10140</campaign>
       <level>7</level>
     </req>
     <reward>

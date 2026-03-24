@@ -1559,12 +1559,12 @@ var CARDS = {
 			{
 				"all": "1",
 				"id": "imbue",
-				"s": "valor",
+				"s": "daze",
 				"x": 1
 			},
 			{
 				"all": "1",
-				"id": "enhance",
+				"id": "imbue",
 				"s": "armored",
 				"x": 1
 			}
@@ -1578,14 +1578,14 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
-						"x": 1
+						"s": "daze",
+						"x": 2
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
-						"x": 2
+						"x": 1
 					}
 				]
 			},
@@ -1595,12 +1595,12 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
+						"s": "daze",
 						"x": 2
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
 						"x": 2
 					}
@@ -1612,14 +1612,14 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
-						"x": 2
+						"s": "daze",
+						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
-						"x": 3
+						"x": 2
 					}
 				]
 			},
@@ -1629,12 +1629,12 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
+						"s": "daze",
 						"x": 3
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
 						"x": 3
 					}
@@ -1646,14 +1646,14 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
-						"x": 3
+						"s": "daze",
+						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
-						"x": 4
+						"x": 3
 					}
 				]
 			},
@@ -1663,12 +1663,12 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "imbue",
-						"s": "valor",
+						"s": "daze",
 						"x": 4
 					},
 					{
 						"all": "1",
-						"id": "enhance",
+						"id": "imbue",
 						"s": "armored",
 						"x": 4
 					}
@@ -85529,13 +85529,175 @@ var CARDS = {
 		}
 	},
 	"4109": {
+		"attack": 2,
+		"card_type": "2",
+		"cost": 0,
+		"desc": "All 130 spirits came to aid the wounded. The artist arrived later.",
+		"health": 17,
+		"hidden_until": "1774544400000",
+		"id": "4109",
+		"maxLevel": 10,
+		"name": "Lumis, 130 Spirits",
+		"picture": "Luminis_Woods_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 1
+			},
+			{
+				"id": "heal",
+				"x": 4
+			}
+		],
+		"sub_type": [
+			"5"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 18,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "heal",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"attack": 3,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"health": 19,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 1
+					},
+					{
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"c": 5,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 4,
+				"health": 20,
+				"skill": []
+			},
+			"7": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"8": {
+				"attack": 5,
+				"health": 21,
+				"skill": []
+			},
+			"9": {
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 2
+					},
+					{
+						"id": "heal",
+						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"10": {
+				"attack": 5,
+				"health": 22,
+				"skill": [
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "heal",
+						"x": 10
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"4110": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1774544400000",
-		"id": "4109",
+		"hidden_until": "1776963600000",
+		"id": "4110",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -85544,7 +85706,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"5"
+			"14"
 		],
 		"type": "0",
 		"upgrades": {
