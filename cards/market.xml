@@ -419,13 +419,14 @@
     <!-- <sc_cost>500</sc_cost> -->
     <cost_type>3</cost_type>
     <!-- Items -->
-    <cost item="21" />
+    <cost item="21" num="5" />
     <!-- Endgame Seals -->
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>19</hidden_card_req>
     <asset_prefab>rune_bag</asset_prefab>
     <bundle>15</bundle>
     <item id="514" quantity="1" />
     <!-- filler reward (pouch) -->
-    <limited_buy index="1" cost="1" />
   </store_item>
   <store_item>
     <id>80</id>
