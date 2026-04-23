@@ -2109,6 +2109,46 @@
       <add_skill id="frost" mult="0.3" base="attack" y="5" />
     </effect>
   </battleground>
+  <battleground>
+    <id>204</id>
+    <name>Beast Supremacy</name>
+    <desc>All Beasts have their Attack and Health increased by 20%! Beasts also have Skills increased by 40%: Armor, Barrier, Berserk, Bolt, Corrosive, Daze, Emberhide, Enrage, Frostbreath, Heal, Hex, Legion, Pierce, Poison, Regenerate, Scorch, Shroud, Siphon, Vengeance, Ward, and Weaken.</desc>
+    <icon>filter_frostbite_64</icon>
+    <effect>
+      <skill id="enlarge" mult="0.2" all="1" y="14" />
+      <!-- mult is based on attack -->
+      <skill id="displayEffect" trigger="onSkill" s="enlarge">
+        <target_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <delay>0.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <scale_health base="health" mult="0.2" yy="14" />
+      <skill id="enhance" s="armored" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="protect" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="berserk" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="strike" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="corrosive" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="daze" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counterburn" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="enrage" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="frost" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="heal" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="enfeeble" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="legion" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="pierce" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="poison" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="regenerate" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="burn" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="stasis" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="leech" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="counter" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="absorb" y="14" mult="0.4" all="1" ignore_nullify="1" />
+      <skill id="enhance" s="weaken" y="14" mult="0.4" all="1" ignore_nullify="1" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -3408,7 +3448,7 @@
     <id>585</id>
     <name>Test BGE</name>
     <desc>All cards are Hexed by 2. Angels are also Hexed by 3.</desc>
-    <icon>devtools_128</icon>
+    <icon>devtools_64</icon>
     <icon_bundle>52</icon_bundle>
     <effect>
       <skill id="enfeeble" x="2" all="1" />

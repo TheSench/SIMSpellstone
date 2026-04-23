@@ -141,7 +141,7 @@ var SKILL_DATA = {
 	},
 	"evadebarrier": {
 		"desc": "Grants Barrier and Invisibility to a random ally creature.",
-		"icon": "mystic_barrier",
+		"icon": "antimagicfield",
 		"name": "Mystic Barrier",
 		"type": "activation"
 	},

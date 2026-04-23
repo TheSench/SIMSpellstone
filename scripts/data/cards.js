@@ -1559,12 +1559,6 @@ var CARDS = {
 			{
 				"all": "1",
 				"id": "imbue",
-				"s": "daze",
-				"x": 1
-			},
-			{
-				"all": "1",
-				"id": "imbue",
 				"s": "armored",
 				"x": 1
 			}
@@ -1576,10 +1570,8 @@ var CARDS = {
 				"health": 72,
 				"skill": [
 					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 2
+						"id": "evadebarrier",
+						"x": 1
 					},
 					{
 						"all": "1",
@@ -1593,10 +1585,8 @@ var CARDS = {
 				"health": 78,
 				"skill": [
 					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 2
+						"id": "evadebarrier",
+						"x": 1
 					},
 					{
 						"all": "1",
@@ -1608,29 +1598,14 @@ var CARDS = {
 			},
 			"4": {
 				"health": 84,
-				"skill": [
-					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 3
-					},
-					{
-						"all": "1",
-						"id": "imbue",
-						"s": "armored",
-						"x": 2
-					}
-				]
+				"skill": []
 			},
 			"5": {
 				"health": 90,
 				"skill": [
 					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 3
+						"id": "evadebarrier",
+						"x": 1
 					},
 					{
 						"all": "1",
@@ -1644,10 +1619,8 @@ var CARDS = {
 				"health": 96,
 				"skill": [
 					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 4
+						"id": "evadebarrier",
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -1661,10 +1634,8 @@ var CARDS = {
 				"health": 99,
 				"skill": [
 					{
-						"all": "1",
-						"id": "imbue",
-						"s": "daze",
-						"x": 4
+						"id": "evadebarrier",
+						"x": 2
 					},
 					{
 						"all": "1",
@@ -18910,9 +18881,7 @@ var CARDS = {
 				"x": 1
 			}
 		],
-		"sub_type": [
-			"11"
-		],
+		"sub_type": [],
 		"type": "2",
 		"upgrades": {
 			"2": {
@@ -20839,7 +20808,7 @@ var CARDS = {
 			}
 		],
 		"sub_type": [
-			"7"
+			"11"
 		],
 		"type": "2",
 		"upgrades": {
@@ -81011,16 +80980,16 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [
 			{
+				"id": "poisonstrike",
+				"x": 4
+			},
+			{
 				"id": "swarm",
 				"x": 2
 			},
 			{
 				"c": 4,
 				"id": "flurry"
-			},
-			{
-				"id": "poisonstrike",
-				"x": 4
 			}
 		],
 		"sub_type": [
@@ -81033,16 +81002,16 @@ var CARDS = {
 				"attack": 8,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 4
+					},
+					{
 						"id": "swarm",
 						"x": 3
 					},
 					{
 						"c": 4,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 4
 					}
 				]
 			},
@@ -81050,16 +81019,16 @@ var CARDS = {
 				"health": 21,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 5
+					},
+					{
 						"id": "swarm",
 						"x": 3
 					},
 					{
 						"c": 4,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 5
 					}
 				]
 			},
@@ -81067,16 +81036,16 @@ var CARDS = {
 				"health": 22,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 5
+					},
+					{
 						"id": "swarm",
 						"x": 4
 					},
 					{
 						"c": 4,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 5
 					}
 				]
 			},
@@ -81084,16 +81053,16 @@ var CARDS = {
 				"attack": 9,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 5
+					},
+					{
 						"id": "swarm",
 						"x": 4
 					},
 					{
 						"c": 3,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 5
 					}
 				]
 			},
@@ -81105,16 +81074,16 @@ var CARDS = {
 				"health": 24,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 6
+					},
+					{
 						"id": "swarm",
 						"x": 4
 					},
 					{
 						"c": 3,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 6
 					}
 				]
 			},
@@ -81122,16 +81091,16 @@ var CARDS = {
 				"attack": 10,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 6
+					},
+					{
 						"id": "swarm",
 						"x": 5
 					},
 					{
 						"c": 3,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 6
 					}
 				]
 			},
@@ -81139,16 +81108,16 @@ var CARDS = {
 				"health": 25,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 7
+					},
+					{
 						"id": "swarm",
 						"x": 5
 					},
 					{
 						"c": 3,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 7
 					}
 				]
 			},
@@ -81157,16 +81126,16 @@ var CARDS = {
 				"health": 25,
 				"skill": [
 					{
+						"id": "poisonstrike",
+						"x": 7
+					},
+					{
 						"id": "swarm",
 						"x": 6
 					},
 					{
 						"c": 2,
 						"id": "flurry"
-					},
-					{
-						"id": "poisonstrike",
-						"x": 7
 					}
 				]
 			}
@@ -85691,13 +85660,150 @@ var CARDS = {
 		}
 	},
 	"4110": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 44,
+		"hidden_until": "1776963600000",
+		"id": "4110",
+		"maxLevel": 10,
+		"name": "Umbra, the Midnight Stalker",
+		"picture": "Wyldwood_A",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 2
+			},
+			{
+				"id": "backlash",
+				"x": 3
+			},
+			{
+				"id": "venom",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"14"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 13,
+				"health": 45,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "backlash",
+						"x": 4
+					},
+					{
+						"id": "venom",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"attack": 14,
+				"health": 46,
+				"skill": []
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 5
+					},
+					{
+						"id": "venom",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 47,
+				"skill": []
+			},
+			"7": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "venom",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"attack": 17,
+				"health": 48,
+				"skill": []
+			},
+			"9": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 6
+					},
+					{
+						"id": "venom",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 17,
+				"health": 49,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "backlash",
+						"x": 7
+					},
+					{
+						"id": "venom",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4111": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1776963600000",
-		"id": "4110",
+		"hidden_until": "1779382800000",
+		"id": "4111",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -85706,7 +85812,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"14"
+			"13"
 		],
 		"type": "0",
 		"upgrades": {
@@ -157260,12 +157366,12 @@ var CARDS = {
 				"x": 5
 			},
 			{
-				"c": 4,
-				"id": "flurry"
-			},
-			{
 				"id": "poisonstrike",
 				"x": 4
+			},
+			{
+				"c": 4,
+				"id": "flurry"
 			}
 		],
 		"sub_type": [
@@ -157282,12 +157388,12 @@ var CARDS = {
 						"x": 5
 					},
 					{
-						"c": 4,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 5
+					},
+					{
+						"c": 4,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157298,12 +157404,12 @@ var CARDS = {
 						"x": 6
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 5
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157315,12 +157421,12 @@ var CARDS = {
 						"x": 6
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 6
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157336,12 +157442,12 @@ var CARDS = {
 						"x": 7
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 7
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157353,12 +157459,12 @@ var CARDS = {
 						"x": 7
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 8
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157370,12 +157476,12 @@ var CARDS = {
 						"x": 7
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157387,12 +157493,12 @@ var CARDS = {
 						"x": 8
 					},
 					{
-						"c": 3,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 9
+					},
+					{
+						"c": 3,
+						"id": "flurry"
 					}
 				]
 			},
@@ -157405,12 +157511,12 @@ var CARDS = {
 						"x": 8
 					},
 					{
-						"c": 2,
-						"id": "flurry"
-					},
-					{
 						"id": "poisonstrike",
 						"x": 9
+					},
+					{
+						"c": 2,
+						"id": "flurry"
 					}
 				]
 			}

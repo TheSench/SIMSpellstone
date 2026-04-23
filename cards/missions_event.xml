@@ -19962,4 +19962,45 @@
       <!-- Icestone Beast -->
     </deck>
   </mission>
+  <!-- Event 141: ComDev Beast - Golden Crown Village -->
+  <mission>
+    <id>10141</id>
+    <name>Golden Crown Village</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Golden Leaves in Airship Upgrades to power up your cards.</desc>
+    <commander id="286" />
+    <!-- Corruptrex -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4110" />
+      <!-- Latest Champion -->
+      <card id="4080" />
+      <!-- Arezzo, the Chimera -->
+      <card id="4001" />
+      <!-- Foxfire -->
+      <card id="4011" />
+      <!-- Emerald Amarok -->
+      <card id="4025" />
+      <!-- Quageye, the Masher -->
+      <card id="4063" />
+      <!-- Viir, the Subjugator -->
+      <card id="7614" />
+      <!-- Tylong, Old Warrior -->
+      <card id="7079" />
+      <!-- Carina -->
+      <card id="7206" />
+      <!-- Twigform Mystic -->
+      <card id="7209" />
+      <!-- Blossom Mare -->
+      <card id="7278" />
+      <!-- Petroleum Elemental -->
+      <card id="2022" />
+      <!-- Avalanche Equine -->
+      <card id="1343" />
+      <!-- Firehorn -->
+      <card id="1642" />
+      <!-- Icestone Beast -->
+    </deck>
+  </mission>
 </root>

@@ -743,7 +743,6 @@
     <asset_bundle>160</asset_bundle>
     <attack>0</attack>
     <health>66</health>
-    <skill id="imbue" s="daze" all="1" x="1" />
     <skill id="imbue" s="armored" all="1" x="1" />
     <rarity>5</rarity>
     <type>1</type>
@@ -751,37 +750,35 @@
     <upgrade>
       <level>2</level>
       <health>72</health>
-      <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>78</health>
-      <skill id="imbue" s="daze" all="1" x="2" />
+      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>84</health>
-      <skill id="imbue" s="daze" all="1" x="3" />
-      <skill id="imbue" s="armored" all="1" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="imbue" s="daze" all="1" x="3" />
+      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>96</health>
-      <skill id="imbue" s="daze" all="1" x="4" />
+      <skill id="evadebarrier" x="2" />
       <skill id="imbue" s="armored" all="1" x="3" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>99</health>
-      <skill id="imbue" s="daze" all="1" x="4" />
+      <skill id="evadebarrier" x="2" />
       <skill id="imbue" s="armored" all="1" x="4" />
     </upgrade>
   </unit>
@@ -8089,7 +8086,6 @@
     <skill id="enfeeble" all="1" x="1" />
     <rarity>2</rarity>
     <type>2</type>
-    <sub_type>11</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -8873,7 +8869,7 @@
     <skill id="enrage" all="1" x="1" y="11" />
     <rarity>5</rarity>
     <type>2</type>
-    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>

@@ -164,22 +164,6 @@
       <gold>30</gold>
     </reward>
   </achievement>
-  <achievement>
-    <id>103</id>
-    <type>1</type>
-    <order>10</order>
-    <name>Endgame Player</name>
-    <icon>letter_blue_seal</icon>
-    <icon_bundle>17</icon_bundle>
-    <desc>Spend Endgame Seals in the store.</desc>
-    <mission_req>13</mission_req>
-    <req>
-      <store_item id="73" number="1" />
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
   <!-- END Store Quests -->
   <!-- 200: Campaign Quests START -->
   <achievement>
@@ -9372,275 +9356,8 @@
   </achievement>
   <!-- Halloween Undead 2018 -->
   <!-- Campaign Event 13 -->
-  <achievement>
-    <id>3418</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Home of Dragons' campaign on Mastery Level 1.</desc>
-    <mission_req>6103</mission_req>
-    <locked_start_time>1542301200</locked_start_time>
-    <!-- Thu, Nov 15 2018 17:00:00 -->
-    <req>
-      <campaign>1189</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3083" number="50" />
-      <event_points id="7040" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3419</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Home of Dragons' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1542301200</locked_start_time>
-    <!-- Thu, Nov 15 2018 17:00:00 -->
-    <achievement_req>3418</achievement_req>
-    <req>
-      <campaign>1189</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3420</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Home of Dragons' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1542301200</locked_start_time>
-    <!-- Thu, Nov 15 2018 17:00:00 -->
-    <achievement_req>3419</achievement_req>
-    <req>
-      <campaign>1189</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3421</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Home of Dragons' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1542301200</locked_start_time>
-    <!-- Thu, Nov 15 2018 17:00:00 -->
-    <achievement_req>3420</achievement_req>
-    <req>
-      <campaign>1189</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3422</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Dragon Fossils' campaign on Mastery Level 2.</desc>
-    <mission_req>6109</mission_req>
-    <locked_start_time>1543510800</locked_start_time>
-    <!-- Thu, Nov 29 2018 17:00:00 -->
-    <req>
-      <campaign>1190</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3423</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Dragon Fossils' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1543510800</locked_start_time>
-    <!-- Thu, Nov 29 2018 17:00:00 -->
-    <achievement_req>3422</achievement_req>
-    <req>
-      <campaign>1190</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3424</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Dragon Fossils' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1543510800</locked_start_time>
-    <!-- Thu, Nov 29 2018 17:00:00 -->
-    <achievement_req>3423</achievement_req>
-    <req>
-      <campaign>1190</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 13 weeks 5-8 -->
-  <achievement>
-    <id>3426</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Living Fossil' campaign on Mastery Level 1.</desc>
-    <mission_req>6119</mission_req>
-    <locked_start_time>1544720400</locked_start_time>
-    <!-- Thu, Dec 13 2018 17:00:00 -->
-    <req>
-      <campaign>1192</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3083" number="50" />
-      <event_points id="7041" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3427</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Living Fossil' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1544720400</locked_start_time>
-    <achievement_req>3426</achievement_req>
-    <req>
-      <campaign>1192</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3428</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Living Fossil' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1544720400</locked_start_time>
-    <achievement_req>3427</achievement_req>
-    <req>
-      <campaign>1192</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3429</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Living Fossil' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1544720400</locked_start_time>
-    <achievement_req>3428</achievement_req>
-    <req>
-      <campaign>1192</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3430</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Unknown Tribe' campaign on Mastery Level 2.</desc>
-    <mission_req>6125</mission_req>
-    <locked_start_time>1545930000</locked_start_time>
-    <!-- Thu, Dec 27 2018 17:00:00 -->
-    <req>
-      <campaign>1193</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3431</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Unknown Tribe' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1545930000</locked_start_time>
-    <achievement_req>3430</achievement_req>
-    <req>
-      <campaign>1193</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3432</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Unknown Tribe' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1545930000</locked_start_time>
-    <achievement_req>3431</achievement_req>
-    <req>
-      <campaign>1193</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Ignus recipe -->
-  <achievement>
-    <id>3425</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'A Promise Left Behind' campaign on Mastery Level 1.</desc>
-    <mission_req>6110</mission_req>
-    <locked_start_time>1543510800</locked_start_time>
-    <!-- Thu, Nov 29 2018 17:00:00 -->
-    <req>
-      <campaign>1191</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8013" number="1" />
-    </reward>
-  </achievement>
   <!-- Christmas 2018 Achievements -->
   <!-- Campaign Event 14 weeks 1-4 -->
   <!-- Campaign Event 14 weeks 5-8 -->
@@ -9700,153 +9417,6 @@
   <!-- New map content end -->
   <!-- Revisited map content begins -->
   <!-- Wizard Event 76 - Dragons -->
-  <achievement>
-    <id>3676</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6635</mission_req>
-    <locked_start_time>1619715600</locked_start_time>
-    <!-- Thursday, 29 April 2021 17:00:00 -->
-    <req>
-      <campaign>1286</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3083" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7072" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3677</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1619715600</locked_start_time>
-    <!-- Thursday, 29 April 2021 17:00:00 -->
-    <achievement_req>3676</achievement_req>
-    <req>
-      <campaign>1286</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3678</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1619715600</locked_start_time>
-    <!-- Thursday, 29 April 2021 17:00:00 -->
-    <achievement_req>3677</achievement_req>
-    <req>
-      <campaign>1286</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3679</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'A Trip to Tarragon Peak' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1619715600</locked_start_time>
-    <!-- Thursday, 29 April 2021 17:00:00 -->
-    <achievement_req>3678</achievement_req>
-    <req>
-      <campaign>1286</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3680</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6641</mission_req>
-    <locked_start_time>1620925200</locked_start_time>
-    <!-- Thursday, 13 May 2021 17:00:00 -->
-    <req>
-      <campaign>1287</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3681</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1620925200</locked_start_time>
-    <!-- Thursday, 13 May 2021 17:00:00 -->
-    <achievement_req>3680</achievement_req>
-    <req>
-      <campaign>1287</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3682</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Relaxation by Incineration' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1620925200</locked_start_time>
-    <!-- Thursday, 13 May 2021 17:00:00 -->
-    <achievement_req>3681</achievement_req>
-    <req>
-      <campaign>1287</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Titan Conflux achievement FIX  -->
   <!-- Titan Conflux achievement FIX END  -->
   <!-- Wizard Event 77 - Insect - Node 1 -->
@@ -11964,155 +11534,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 100 - Dragon - Node 1 -->
-  <achievement>
-    <id>3858</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Just Rumors?' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7031</mission_req>
-    <locked_start_time>1677776400</locked_start_time>
-    <!-- Thursday, 2 March 2023 17:00:00	 -->
-    <req>
-      <campaign>1341</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3083" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7096" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3859</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Just Rumors?' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1677776400</locked_start_time>
-    <!-- Thursday, 2 March 2023 17:00:00	 -->
-    <achievement_req>3858</achievement_req>
-    <!-- Dont forget requirement  -->
-    <req>
-      <campaign>1341</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3860</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Just Rumors?' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1677776400</locked_start_time>
-    <!-- Thursday, 2 March 2023 17:00:00	 -->
-    <achievement_req>3859</achievement_req>
-    <req>
-      <campaign>1341</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3861</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Just Rumors?' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1677776400</locked_start_time>
-    <!-- Thursday, 2 March 2023 17:00:00	 -->
-    <achievement_req>3860</achievement_req>
-    <req>
-      <campaign>1341</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 100 - Dragon - Node 2 -->
-  <achievement>
-    <id>3862</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>7037</mission_req>
-    <locked_start_time>1678986000</locked_start_time>
-    <!-- Thursday, 16 March 2023 17:00:00 -->
-    <req>
-      <campaign>1342</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3863</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1678986000</locked_start_time>
-    <!-- Thursday, 16 March 2023 17:00:00 -->
-    <achievement_req>3862</achievement_req>
-    <req>
-      <campaign>1342</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3864</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the 'Fire Fruits' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1678986000</locked_start_time>
-    <!-- Thursday, 16 March 2023 17:00:00 -->
-    <achievement_req>3863</achievement_req>
-    <req>
-      <campaign>1342</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 101 - Frog - Node 1 -->
   <!-- Wizard Event 101 - Frog - Node 2 -->
   <!-- Wizard Event 102 - Avian - Node 1 -->
@@ -12751,53 +12173,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Tarragon Peak -->
-    <id>4013</id>
-    <type>2</type>
-    <order>643</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6113</mission_req>
-    <req>
-      <campaign>1189</campaign>
-      <campaign>1190</campaign>
-      <campaign>1191</campaign>
-      <campaign>1192</campaign>
-      <campaign>1193</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Tarragon Peak Revisited -->
-    <id>4030</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on the first pair of gold campaigns in Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6630</mission_req>
-    <achievement_req>4013</achievement_req>
-    <req>
-      <campaign>1189</campaign>
-      <campaign>1190</campaign>
-      <campaign>1191</campaign>
-      <campaign>1192</campaign>
-      <campaign>1193</campaign>
-      <campaign>1286</campaign>
-      <campaign>1287</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
@@ -13164,33 +12539,6 @@
       <item id="2531" number="1" />
     </reward>
   </achievement>
-  <achievement>
-    <!-- Tarragon Peak Revisited -->
-    <id>4054</id>
-    <type>2</type>
-    <order>660</order>
-    <event_only>1</event_only>
-    <name>Master of Tarragon Peak</name>
-    <desc>Complete Mastery Level 7 on the second pair of gold campaigns in Tarragon Peak.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7026</mission_req>
-    <achievement_req>4030</achievement_req>
-    <req>
-      <campaign>1189</campaign>
-      <campaign>1190</campaign>
-      <campaign>1191</campaign>
-      <campaign>1192</campaign>
-      <campaign>1193</campaign>
-      <campaign>1286</campaign>
-      <campaign>1287</campaign>
-      <campaign>1341</campaign>
-      <campaign>1342</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
   <!-- Non-Core Maps Meta END -->
   <!-- START Mastery level 7 Achievements on ComDev nodes -->
   <!-- E105: Distorted Beetleton -->
@@ -13277,105 +12625,10 @@
   <!-- Event 133: ComDev Goblin - Stormy Seastone Citadel -->
   <!-- Event 134: ComDev Mecha - The Abyss -->
   <!-- Event 135: ComDev Seafolk - Salt Wastes -->
-  <achievement>
-    <id>10135</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Salt Wastes</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10135</mission_req>
-    <req>
-      <campaign>10135</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 136: ComDev Dragon - Distorted Beetleton -->
-  <achievement>
-    <id>10136</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Distorted Beetleton</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10136</mission_req>
-    <req>
-      <campaign>10136</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 137: ComDev Undead - Duskwillow Rebuilt -->
-  <achievement>
-    <id>10137</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Duskwillow Rebuilt</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10137</mission_req>
-    <req>
-      <campaign>10137</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 138: ComDev Frog - Gladius Arena -->
-  <achievement>
-    <id>10138</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Gladius Arena</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10138</mission_req>
-    <req>
-      <campaign>10138</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 139: ComDev Avian - Tarragon Peak -->
-  <achievement>
-    <id>10139</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Tarragon Peak</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10139</mission_req>
-    <req>
-      <campaign>10139</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
   <achievement>
     <id>10140</id>
@@ -13389,6 +12642,26 @@
     <mission_req>10140</mission_req>
     <req>
       <campaign>10140</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 141: ComDev Beast - Golden Crown Village -->
+  <achievement>
+    <id>10141</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Golden Crown Village</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10141</mission_req>
+    <req>
+      <campaign>10141</campaign>
       <level>7</level>
     </req>
     <reward>

@@ -12578,8 +12578,65 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9119</id>
+    <name>Tarragon Peak</name>
+    <campaign_req id="24" level="1" />
+    <location_id>19</location_id>
+    <x>160</x>
+    <y>330</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6098</mission_id>
+      <mission_id>6099</mission_id>
+      <mission_id>6100</mission_id>
+      <mission_id>6101</mission_id>
+      <mission_id>6102</mission_id>
+      <mission_id>6103</mission_id>
+      <mission_id>6104</mission_id>
+      <mission_id>6105</mission_id>
+      <mission_id>6106</mission_id>
+      <mission_id>6107</mission_id>
+      <mission_id>6108</mission_id>
+      <mission_id>6109</mission_id>
+      <mission_id>6110</mission_id>
+      <mission_id>6111</mission_id>
+      <mission_id>6112</mission_id>
+      <mission_id>6113</mission_id>
+      <mission_id>6114</mission_id>
+      <mission_id>6115</mission_id>
+      <mission_id>6116</mission_id>
+      <mission_id>6117</mission_id>
+      <mission_id>6118</mission_id>
+      <mission_id>6119</mission_id>
+      <mission_id>6120</mission_id>
+      <mission_id>6121</mission_id>
+      <mission_id>6122</mission_id>
+      <mission_id>6123</mission_id>
+      <mission_id>6124</mission_id>
+      <mission_id>6125</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="549" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="556" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2091" />
+      <!-- Map Legendary -->
+      <card level="5" id="2091" />
+      <!-- Map Legendary -->
+      <card level="6" id="12091" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3083" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9120</id>
-    <name>Duskwillow Rebuilt</name>
+    <name>Gladius Arena</name>
     <campaign_req id="24" level="1" />
     <location_id>20</location_id>
     <x>430</x>
@@ -13964,7 +14021,7 @@
     <show_ranking>1</show_ranking>
     <type>2</type>
     <x>800</x>
-    <y>480</y>
+    <y>460</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>10138</mission_id>
@@ -14061,5 +14118,42 @@
     </rewards>
     <find_item id="3080" drop_per_energy="1" />
     <find_item id="104504" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 141: ComDev Beast - Golden Crown Village -->
+  <campaign>
+    <id>10141</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>17</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>80</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10141</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28270" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104110" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3077" drop_per_energy="1" />
+    <find_item id="104505" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

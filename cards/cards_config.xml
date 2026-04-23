@@ -228,8 +228,8 @@
     <order>120</order>
     <icon>heal</icon>
     <name>Heal</name>
-    <desc_all>Heals all ally creatures.</desc_all>
     <desc>Heals a random ally creature.</desc>
+    <desc_all>Heals all ally creatures.</desc_all>
     <desc_faction>Heals a random {y} ally.</desc_faction>
     <desc_all_faction>Heals all {y} allies.</desc_all_faction>
     <attributes x="1" y="1" all="1" c="0" s="0" />
@@ -463,7 +463,7 @@
     <attributes x="0" y="0" all="1" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
-  <!-- old cleanse-->
+  <!-- old cleanse -->
   <!-- <skillType>
 		<id>cleanse</id>
 		<order>310</order>
@@ -476,7 +476,7 @@
 		<balance_points>10</balance_points>
 		<upkeep>1</upkeep>
 	</skillType> -->
-  <!-- old cleanse-->
+  <!-- old cleanse -->
   <!-- Special -->
   <skillType>
     <id>protect_ice</id>
@@ -493,7 +493,7 @@
   </skillType>
   <skillType>
     <id>poisonstrike</id>
-    <order>500</order>
+    <order>215</order>
     <icon>poison_bolt</icon>
     <name>Poisonbolt</name>
     <desc>Deals bolt damage to a random enemy creature and leaves Poison.</desc>
@@ -571,13 +571,13 @@
   </skillType>
   <skillType>
     <id>swarm</id>
-    <order>1</order>
+    <order>285</order>
+    <!-- after Berserk -->
     <icon>infect</icon>
     <name>Swarm</name>
     <desc>After dealing Attack damage, permanently increases the Attack of the lowest Attack active ally creature.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>vampirism</id>
@@ -694,8 +694,8 @@
   </skillType>
   <skillType>
     <id>evadebarrier</id>
-    <order>1</order>
-    <icon>mystic_barrier</icon>
+    <order>115</order>
+    <icon>antimagicfield</icon>
     <name>Mystic Barrier</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and Invisibility to a random ally creature.</desc>

@@ -3953,6 +3953,215 @@ var BATTLEGROUNDS = {
 		"id": "203",
 		"name": "Unbreakable Ice"
 	},
+	"204": {
+		"desc": "All Beasts have their Attack and Health increased by 20%! Beasts also have Skills increased by 40%: Armor, Barrier, Berserk, Bolt, Corrosive, Daze, Emberhide, Enrage, Frostbreath, Heal, Hex, Legion, Pierce, Poison, Regenerate, Scorch, Shroud, Siphon, Vengeance, Ward, and Weaken.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enlarge",
+				"mult": 0.2,
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "armored",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "protect",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "berserk",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "strike",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "corrosive",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "daze",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "counterburn",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "enrage",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "frost",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "heal",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "enfeeble",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "legion",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "pierce",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "poison",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "regenerate",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "burn",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "stasis",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "leech",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "counter",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "absorb",
+				"y": "14"
+			},
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enhance",
+				"ignore_nullify": "1",
+				"mult": 0.4,
+				"s": "weaken",
+				"y": "14"
+			},
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.2,
+				"y": "14"
+			}
+		],
+		"id": "204",
+		"name": "Beast Supremacy"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
