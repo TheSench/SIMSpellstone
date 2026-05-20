@@ -410,14 +410,18 @@
   </store_item>
   <store_item>
     <id>73</id>
-    <name>Runecrafter's Pouch</name>
+    <name>Runecrafter's Pouch (Market Test)</name>
     <category>2</category>
     <mission_req>244</mission_req>
     <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
     <show_desc>1</show_desc>
     <priority>36</priority>
-    <item_type>2</item_type>
-    <!-- Render as Box -->
+    <!-- 3 parameters required to avoid the visual price bug (it still works without them) -->
+    <cycle>1</cycle>
+    <cycle_length>315619200</cycle_length>
+    <!-- 10 years -->
+    <start_time>1779210000</start_time>
+    <!-- 19 May 2026 -->
     <cost item="21" num="1" />
     <!-- Endgame Seals -->
     <!-- Remove from store if player has this card -->
@@ -931,6 +935,7 @@
       <item id="104101" quantity="500" weight="1" />
       <item id="104102" quantity="500" weight="1" />
       <item id="104103" quantity="500" weight="1" />
+      <item id="104104" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1085,7 +1090,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>1250</priority>
-    <desc>April Fool's! Have an (almost) free gift from us!</desc>
+    <desc>Celebrate three years of ComDev at Spellstone with an (almost) free gift from us!</desc>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
     <sc_cost>1</sc_cost>
@@ -1696,6 +1701,7 @@
       <item id="104101" />
       <item id="104102" />
       <item id="104103" />
+      <item id="104104" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1914,6 +1920,7 @@
       <item id="104101" number="50" purchase1="25" scalar="5" />
       <item id="104102" number="50" purchase1="25" scalar="5" />
       <item id="104103" number="50" purchase1="25" scalar="5" />
+      <item id="104104" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>

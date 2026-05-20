@@ -2,7 +2,7 @@
 
 var BATTLEGROUNDS = {
 	"101": {
-		"desc": "All Dragons are bestowed with extraordinary vitality, regenerating each turn by 25% of their base health.",
+		"desc": "All Dragons are bestowed with extraordinary vitality, regenerating each turn by 25% of their base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -104,7 +104,7 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Surge"
 	},
 	"108": {
-		"desc": "Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base attack!",
+		"desc": "Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base Attack!",
 		"effect": [
 			{
 				"base": "attack",
@@ -555,7 +555,7 @@ var BATTLEGROUNDS = {
 		"name": "Day of Dragons"
 	},
 	"133": {
-		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health.",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base Health.",
 		"effect": [
 			{
 				"all": "1",
@@ -1295,7 +1295,7 @@ var BATTLEGROUNDS = {
 		"name": "Beetleton Mutations"
 	},
 	"143": {
-		"desc": "All Seafolk gain barrier equal to 20% of their base health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base health and pierce equal to their base attack.",
+		"desc": "All Seafolk gain barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and pierce equal to their base Attack.",
 		"effect": [
 			{
 				"all": "1",
@@ -1340,7 +1340,7 @@ var BATTLEGROUNDS = {
 		"name": "Conflicted Ocean"
 	},
 	"144": {
-		"desc": "All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base health, while D3 and 4 gain Emberhide 4 and 6 respectively.",
+		"desc": "All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base Health, while D3 and 4 gain Emberhide 4 and 6 respectively.",
 		"effect": [
 			{
 				"base": "health",
@@ -1383,7 +1383,7 @@ var BATTLEGROUNDS = {
 		"name": "Blinding Radiance"
 	},
 	"145": {
-		"desc": "Mechas gain base Regenerate and Ward equal to 15% of their base health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.",
+		"desc": "Mechas gain base Regenerate and Ward equal to 15% of their base Health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.",
 		"effect": [
 			{
 				"base": "health",
@@ -1486,7 +1486,7 @@ var BATTLEGROUNDS = {
 		"name": "Lily & Vampiric Spear Formation"
 	},
 	"147": {
-		"desc": "Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also regenerate 15% of their base health.",
+		"desc": "Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also regenerate 15% of their base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -1507,7 +1507,7 @@ var BATTLEGROUNDS = {
 		"name": "Goblin Battle Kit"
 	},
 	"148": {
-		"desc": "Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Ward and Armor 10%, while Frostbreath is 15%.",
+		"desc": "Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base Health! Ward and Armor 10%, while Frostbreath is 15%.",
 		"effect": [
 			{
 				"base": "health",
@@ -1575,7 +1575,7 @@ var BATTLEGROUNDS = {
 		"name": "Zenith of Dragons"
 	},
 	"150": {
-		"desc": "Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base health!",
+		"desc": "Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base Health!",
 		"effect": [
 			{
 				"base": "health",
@@ -1633,7 +1633,7 @@ var BATTLEGROUNDS = {
 		"name": "Evil Eye"
 	},
 	"152": {
-		"desc": "The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base health",
+		"desc": "The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base Health",
 		"effect": [
 			{
 				"base": "health",
@@ -1744,7 +1744,7 @@ var BATTLEGROUNDS = {
 		"name": "Reinforced Undead Vampirism"
 	},
 	"156": {
-		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gets 20% regeneration. All % are based on base health.",
+		"desc": "Aether gains Barrier 4+15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gets 20% regeneration. All % are based on base Health.",
 		"effect": [
 			{
 				"all": "1",
@@ -1784,7 +1784,7 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Disruption"
 	},
 	"157": {
-		"desc": "Mechas gain Ward equal to 15% of their base health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.",
+		"desc": "Mechas gain Ward equal to 15% of their base Health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.",
 		"effect": [
 			{
 				"base": "health",
@@ -1852,7 +1852,7 @@ var BATTLEGROUNDS = {
 		"name": "Radioactive Steel"
 	},
 	"158": {
-		"desc": "Seafolk gain Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armor. Values gained on each skill are equal to 10% of base health!",
+		"desc": "Seafolk gain Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armor. Values gained on each skill are equal to 10% of base Health!",
 		"effect": [
 			{
 				"base": "health",
@@ -1889,7 +1889,7 @@ var BATTLEGROUNDS = {
 		"name": "Revitalizing Waves"
 	},
 	"159": {
-		"desc": "All goblins gain barrage equal to their base attack, 0-2 Delay goblins gain 15% siphon and 3-4 delay goblins gain 15% ward. Values gained on each skill are based on base health.",
+		"desc": "All goblins gain barrage equal to their base Attack, 0-2 Delay goblins gain 15% siphon and 3-4 delay goblins gain 15% ward. Values gained on each skill are based on base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -1991,7 +1991,7 @@ var BATTLEGROUNDS = {
 		"name": "Celestial Voidness"
 	},
 	"161": {
-		"desc": "All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.",
+		"desc": "All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base Health!.",
 		"effect": [
 			{
 				"all": "1",
@@ -2031,7 +2031,7 @@ var BATTLEGROUNDS = {
 		"name": "Celestial Raid"
 	},
 	"162": {
-		"desc": "0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!.",
+		"desc": "0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base Health!.",
 		"effect": [
 			{
 				"base": "health",
@@ -2088,7 +2088,7 @@ var BATTLEGROUNDS = {
 		"name": "Deadly Sting"
 	},
 	"163": {
-		"desc": "All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.",
+		"desc": "All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base Health.",
 		"effect": [
 			{
 				"effect_type": "add_skill",
@@ -2293,7 +2293,7 @@ var BATTLEGROUNDS = {
 		"name": "Steel's Edge V2.0"
 	},
 	"167": {
-		"desc": "All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
+		"desc": "All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
 		"effect": [
 			{
 				"base": "health",
@@ -2313,7 +2313,7 @@ var BATTLEGROUNDS = {
 		"name": "Thriving Swarm"
 	},
 	"168": {
-		"desc": "All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 20% + Delay Barrage, Wyld gain 10% + delay Venom, Void gain Siphon equal to base Attack. Values are based on base health.",
+		"desc": "All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 20% + Delay Barrage, Wyld gain 10% + delay Venom, Void gain Siphon equal to base Attack. Values are based on base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -2496,7 +2496,7 @@ var BATTLEGROUNDS = {
 		"name": "Goblin Civil War"
 	},
 	"169": {
-		"desc": "All Elementals are Enraged for 7% health. 0-2D Elementals gain Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Shroud and Vengeance for 10% base health.",
+		"desc": "All Elementals are Enraged for 7% Health. 0-2D Elementals gain Weaken and Pierce equal to 15% base Health. 3-4D Elementals gain Shroud and Vengeance for 10% base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -2558,7 +2558,7 @@ var BATTLEGROUNDS = {
 		"name": "Elemental Meltdown"
 	},
 	"170": {
-		"desc": "All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health.",
+		"desc": "All Seafolk gain Mark equal to 15% base Health. 3-4D Seafolk also gain Regenerate for 15% base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -2801,7 +2801,7 @@ var BATTLEGROUNDS = {
 		"name": "Order of Aether"
 	},
 	"178": {
-		"desc": "All Avians gain Mark equal to 15% base health. 2-4D Avians also gain Invisibility equal to Delay minus 1.",
+		"desc": "All Avians gain Mark equal to 15% base Health. 2-4D Avians also gain Invisibility equal to Delay minus 1.",
 		"effect": [
 			{
 				"base": "health",
@@ -3392,7 +3392,7 @@ var BATTLEGROUNDS = {
 		"name": "Invisible Embers"
 	},
 	"190": {
-		"desc": "All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base health.",
+		"desc": "All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -4161,6 +4161,27 @@ var BATTLEGROUNDS = {
 		],
 		"id": "204",
 		"name": "Beast Supremacy"
+	},
+	"205": {
+		"desc": "All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "swarm",
+				"mult": 0.15,
+				"y": "13"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "regenerate",
+				"mult": 0.15,
+				"y": "13"
+			}
+		],
+		"id": "205",
+		"name": "Adaptive Swarm"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -7123,7 +7144,7 @@ var BATTLEGROUNDS = {
 			{
 				"effect_type": "skill",
 				"id": "barrage",
-				"x": 10,
+				"x": 15,
 				"y": "3"
 			},
 			{

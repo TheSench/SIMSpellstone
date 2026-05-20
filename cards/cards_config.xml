@@ -694,7 +694,7 @@
   </skillType>
   <skillType>
     <id>evadebarrier</id>
-    <order>115</order>
+    <order>1</order>
     <icon>antimagicfield</icon>
     <name>Mystic Barrier</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />

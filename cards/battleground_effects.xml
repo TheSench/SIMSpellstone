@@ -54,7 +54,7 @@
   <battleground>
     <id>101</id>
     <name>Age of Dragons</name>
-    <desc>All Dragons are bestowed with extraordinary vitality, regenerating each turn by 25% of their base health.</desc>
+    <desc>All Dragons are bestowed with extraordinary vitality, regenerating each turn by 25% of their base Health.</desc>
     <web_picture>filter_dragon_64.png</web_picture>
     <icon>filter_dragon_64</icon>
     <effect>
@@ -151,7 +151,7 @@
   <battleground>
     <id>108</id>
     <name>Poisonbolt Evolution</name>
-    <desc>Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base attack!</desc>
+    <desc>Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base Attack!</desc>
     <web_picture>filter_frog_64.png</web_picture>
     <icon>filter_frog_64</icon>
     <effect>
@@ -615,7 +615,7 @@
   <battleground>
     <id>133</id>
     <name>Elemental Discordance</name>
-    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base health.</desc>
+    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20% and Wyld deal extra damage on their first attack each turn equal to 30%. Void gets a fixed 4 of Venom, 9 Siphon. All % are based on base Health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -953,7 +953,7 @@
   <battleground>
     <id>143</id>
     <name>Conflicted Ocean</name>
-    <desc>All Seafolk gain barrier equal to 20% of their base health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base health and pierce equal to their base attack.</desc>
+    <desc>All Seafolk gain barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and pierce equal to their base Attack.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect" ignore_nullify="1" mult="0.2" all="1" base="health" y="12" delay="3,4" />
@@ -1003,7 +1003,7 @@
   <battleground>
     <id>144</id>
     <name>Blinding Radiance</name>
-    <desc>All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base health, while D3 and 4 gain Emberhide 4 and 6 respectively.</desc>
+    <desc>All Angels gain Invisibility 2. D 0-2 Angels gain Legion Equal to 15% of their base Health, while D3 and 4 gain Emberhide 4 and 6 respectively.</desc>
     <icon>filter_angel2_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
@@ -1031,7 +1031,7 @@
   <battleground>
     <id>145</id>
     <name>Radioactive Biosteel</name>
-    <desc>Mechas gain base Regenerate and Ward equal to 15% of their base health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.</desc>
+    <desc>Mechas gain base Regenerate and Ward equal to 15% of their base Health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.</desc>
     <icon>filter_mech_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.15" base="health" y="16" />
@@ -1068,7 +1068,7 @@
   <battleground>
     <id>147</id>
     <name>Goblin Battle Kit</name>
-    <desc>Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also regenerate 15% of their base health.</desc>
+    <desc>Active goblins throw bombs equal to their base Attack at the start of each turn. Each bomb deals 1 damage and does not benefit from Hex or Venom. They also regenerate 15% of their base Health.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.15" base="health" y="11" />
@@ -1095,7 +1095,7 @@
   <battleground>
     <id>148</id>
     <name>Unbreakable Waves</name>
-    <desc>Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base health! Ward and Armor 10%, while Frostbreath is 15%.</desc>
+    <desc>Seafolk gain base Ward and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armored. Values gained on each skill are based on base Health! Ward and Armor 10%, while Frostbreath is 15%.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <add_skill id="absorb" mult="0.10" base="health" y="12" />
@@ -1116,7 +1116,7 @@
   <battleground>
     <id>150</id>
     <name>Exalted Warfare</name>
-    <desc>Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base health!</desc>
+    <desc>Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base Health!</desc>
     <icon>filter_angel2_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
@@ -1169,7 +1169,7 @@
   <battleground>
     <id>152</id>
     <name>Void Alignment</name>
-    <desc>The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base health</desc>
+    <desc>The Void is here once again. Void cards gain Regen and Nullify equal to 20% of their base Health</desc>
     <icon>event_53_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>
@@ -1212,7 +1212,7 @@
   <!--<battleground>
 		<id>156</id>
 		<name>Elemental Disruption</name>
-		<desc>Aether gains Vengeance 15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gains Regenerate %15. All % are based on base health.</desc>
+		<desc>Aether gains Vengeance 15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gains Regenerate %15. All % are based on base Health.</desc>
 		<web_picture>filter_elementals_64.png</web_picture>
 		<icon>filter_elementals_64</icon>
 		<effect>
@@ -1229,7 +1229,7 @@
   <battleground>
     <id>156</id>
     <name>Elemental Disruption</name>
-    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gets 20% regeneration. All % are based on base health.</desc>
+    <desc>Aether gains Barrier 4+15%, Chaos gains Scorch 20%, Wyld deal extra damage on their first attack each turn equal to 30% and Void gets 20% regeneration. All % are based on base Health.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
@@ -1281,7 +1281,7 @@
   <battleground>
     <id>157</id>
     <name>Radioactive Steel</name>
-    <desc>Mechas gain Ward equal to 15% of their base health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.</desc>
+    <desc>Mechas gain Ward equal to 15% of their base Health and other abilities based on Delay! D0-2 gains Venom 3+Delay, while D3 and 4 get Poisonhide 7 and 9. Viracocha gains both bonuses.</desc>
     <icon>filter_mech_64</icon>
     <effect>
       <add_skill id="absorb" mult="0.15" base="health" y="16" />
@@ -1297,7 +1297,7 @@
   <battleground>
     <id>158</id>
     <name>Revitalizing Waves</name>
-    <desc>Seafolk gain Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armor. Values gained on each skill are equal to 10% of base health!</desc>
+    <desc>Seafolk gain Regenerate and other skills based on Delay! D0-2 gain Frostbreath and D3-4 Armor. Values gained on each skill are equal to 10% of base Health!</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.10" base="health" y="12" />
@@ -1308,7 +1308,7 @@
   <battleground>
     <id>159</id>
     <name>Enhanced Battle Kit</name>
-    <desc>All goblins gain barrage equal to their base attack, 0-2 Delay goblins gain 15% siphon and 3-4 delay goblins gain 15% ward. Values gained on each skill are based on base health.</desc>
+    <desc>All goblins gain barrage equal to their base Attack, 0-2 Delay goblins gain 15% siphon and 3-4 delay goblins gain 15% ward. Values gained on each skill are based on base Health.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
       <add_skill id="leech" mult="0.15" base="health" y="11" delay="0,1,2" />
@@ -1394,7 +1394,7 @@
   <battleground>
     <id>161</id>
     <name>Celestial Raid</name>
-    <desc>All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base health!.</desc>
+    <desc>All Angels gain barrier 2+15%, 0-2 Delay angel 10% legion and 3-4 delay angel 10% weaken. Values gained on each skill are based on base Health!.</desc>
     <icon>filter_angel_64</icon>
     <effect>
       <skill id="protect" ignore_nullify="1" mult="0.15" x="2" all="1" base="health" yy="6" />
@@ -1450,7 +1450,7 @@
   <battleground>
     <id>162</id>
     <name>Deadly Sting</name>
-    <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base health!.</desc>
+    <desc>0-2 Delay Insects gain 2+10% venom and 3+20% Pierce and 3-4 delay Insect gain 2+10% corrosive and 2+7% vengeance. Values gained on each skill are based on base Health!.</desc>
     <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="venom" mult="0.10" x="2" base="health" y="13" delay="0,1,2" />
@@ -1462,7 +1462,7 @@
   <battleground>
     <id>163</id>
     <name>Flaming Scales</name>
-    <desc>All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base health.</desc>
+    <desc>All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base Health.</desc>
     <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="evade" x="3" y="9" />
@@ -1541,7 +1541,7 @@
   <battleground>
     <id>167</id>
     <name>Thriving Swarm</name>
-    <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
+    <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
     <icon>filter_insect_64</icon>
     <effect>
       <scale_health base="health" mult="0.10" yy="13" />
@@ -1551,7 +1551,7 @@
   <battleground>
     <id>168</id>
     <name>Goblin Civil War</name>
-    <desc>All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 20% + Delay Barrage, Wyld gain 10% + delay Venom, Void gain Siphon equal to base Attack. Values are based on base health.</desc>
+    <desc>All Goblins gain 10% Armor. Aether gain 7% + Delay Frostbreath, Chaos gain 20% + Delay Barrage, Wyld gain 10% + delay Venom, Void gain Siphon equal to base Attack. Values are based on base Health.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
       <add_skill id="armored" mult="0.1" base="health" y="11" />
@@ -1593,7 +1593,7 @@
   <battleground>
     <id>169</id>
     <name>Elemental Meltdown</name>
-    <desc>All Elementals are Enraged for 7% health. 0-2D Elementals gain Weaken and Pierce equal to 15% base health. 3-4D Elementals gain Shroud and Vengeance for 10% base health.</desc>
+    <desc>All Elementals are Enraged for 7% Health. 0-2D Elementals gain Weaken and Pierce equal to 15% base Health. 3-4D Elementals gain Shroud and Vengeance for 10% base Health.</desc>
     <icon>filter_elementals_64</icon>
     <effect>
       <add_skill id="weakenbge" mult="0.15" base="health" y="5" delay="0,1,2" />
@@ -1606,7 +1606,7 @@
   <battleground>
     <id>170</id>
     <name>Eye of the Maelstrom</name>
-    <desc>All Seafolk gain Mark equal to 15% base health. 3-4D Seafolk also gain Regenerate for 15% base health.</desc>
+    <desc>All Seafolk gain Mark equal to 15% base Health. 3-4D Seafolk also gain Regenerate for 15% base Health.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <add_skill id="regenerate" mult="0.15" base="health" y="12" delay="3,4" />
@@ -1723,7 +1723,7 @@
   <battleground>
     <id>178</id>
     <name>Invisible Mark</name>
-    <desc>All Avians gain Mark equal to 15% base health. 2-4D Avians also gain Invisibility equal to Delay minus 1.</desc>
+    <desc>All Avians gain Mark equal to 15% base Health. 2-4D Avians also gain Invisibility equal to Delay minus 1.</desc>
     <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="mark" mult="0.15" base="health" y="10" />
@@ -1905,7 +1905,7 @@
   <battleground>
     <id>190</id>
     <name>Ravenous Raptors</name>
-    <desc>All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base health.</desc>
+    <desc>All Avians gain Vampirism and deal extra damage on their first attack each turn equal to 10% of their base Health.</desc>
     <icon>filter_avian_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.1" base="health" y="10" />
@@ -2117,14 +2117,15 @@
     <effect>
       <skill id="enlarge" mult="0.2" all="1" y="14" />
       <!-- mult is based on attack -->
-      <skill id="displayEffect" trigger="onSkill" s="enlarge">
-        <target_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <delay>0.5</delay>
-          <duration>1</duration>
-          <shake>true</shake>
-        </target_effect>
-      </skill>
+      <!-- Elemental storm cloud animation -->
+      <!-- <skill id="displayEffect" trigger="onSkill" s="enlarge">
+				<target_effect>
+					<prefab>Empower_Target_Elemental</prefab>
+					<delay>0.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill> -->
       <scale_health base="health" mult="0.2" yy="14" />
       <skill id="enhance" s="armored" y="14" mult="0.4" all="1" ignore_nullify="1" />
       <skill id="enhance" s="protect" y="14" mult="0.4" all="1" ignore_nullify="1" />
@@ -2147,6 +2148,16 @@
       <skill id="enhance" s="counter" y="14" mult="0.4" all="1" ignore_nullify="1" />
       <skill id="enhance" s="absorb" y="14" mult="0.4" all="1" ignore_nullify="1" />
       <skill id="enhance" s="weaken" y="14" mult="0.4" all="1" ignore_nullify="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>205</id>
+    <name>Adaptive Swarm</name>
+    <desc>All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
+    <icon>filter_insect_64</icon>
+    <effect>
+      <add_skill id="swarm" mult="0.15" base="health" y="13" />
+      <add_skill id="regenerate" mult="0.15" base="health" y="13" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -3467,7 +3478,7 @@
       <!-- Barrage Factionless -->
       <skill id="barrage" x="10" y="1" />
       <!-- Barrage Aether -->
-      <skill id="barrage" x="10" y="3" />
+      <skill id="barrage" x="15" y="3" />
       <!-- Barrage Wyld -->
       <skill id="barrage" x="10" y="8" />
       <!-- Barrage Void -->

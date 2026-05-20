@@ -9081,279 +9081,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 12 Elemental -->
-  <achievement>
-    <id>3401</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 1.</desc>
-    <mission_req>6068</mission_req>
-    <locked_start_time>1537462800</locked_start_time>
-    <!-- Thu, Sept 20 2018 17:00:00 -->
-    <req>
-      <campaign>1183</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3080" number="50" />
-      <event_points id="7038" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3402</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1537462800</locked_start_time>
-    <!-- Thu, Sept 20 2018 17:00:00 -->
-    <achievement_req>3401</achievement_req>
-    <req>
-      <campaign>1183</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3403</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1537462800</locked_start_time>
-    <!-- Thu, Sept 20 2018 17:00:00 -->
-    <achievement_req>3402</achievement_req>
-    <req>
-      <campaign>1183</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3404</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Mysterious Light' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1537462800</locked_start_time>
-    <achievement_req>3403</achievement_req>
-    <req>
-      <campaign>1183</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3405</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 2.</desc>
-    <mission_req>6074</mission_req>
-    <locked_start_time>1538672400</locked_start_time>
-    <!-- Thu, Oct 4 2018 17:00:00 -->
-    <req>
-      <campaign>1184</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3406</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1538672400</locked_start_time>
-    <!-- Thu, Oct 4 2018 17:00:00 -->
-    <achievement_req>3405</achievement_req>
-    <req>
-      <campaign>1184</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3407</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Inside the Barrier' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1537462800</locked_start_time>
-    <!-- Thu, Oct 4 2018 17:00:00 -->
-    <achievement_req>3406</achievement_req>
-    <req>
-      <campaign>1184</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Gem Harvester recipe -->
-  <achievement>
-    <id>3408</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Rift Howl' campaign on Mastery Level 1.</desc>
-    <mission_req>6079</mission_req>
-    <locked_start_time>1538672400</locked_start_time>
-    <!-- Thu, Oct 04 2018 17:00:00 -->
-    <req>
-      <campaign>1185</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8012" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 12 weeks 5-8 -->
-  <achievement>
-    <id>3409</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 1.</desc>
-    <mission_req>6088</mission_req>
-    <locked_start_time>1539882000</locked_start_time>
-    <!-- Thu, Oct 18 2018 17:00:00 -->
-    <req>
-      <campaign>1186</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3080" number="50" />
-      <event_points id="7039" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3410</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 2.</desc>
-    <locked_start_time>1539882000</locked_start_time>
-    <!-- Thu, Oct 18 2018 17:00:00 -->
-    <achievement_req>3409</achievement_req>
-    <req>
-      <campaign>1186</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3411</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1539882000</locked_start_time>
-    <!-- Thu, Oct 18 2018 17:00:00 -->
-    <achievement_req>3410</achievement_req>
-    <req>
-      <campaign>1186</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3412</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Barrier Destruction' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1539882000</locked_start_time>
-    <!-- Thu, Oct 18 2018 17:00:00 -->
-    <achievement_req>3411</achievement_req>
-    <req>
-      <campaign>1186</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3413</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 2.</desc>
-    <mission_req>6094</mission_req>
-    <locked_start_time>1541091600</locked_start_time>
-    <!-- Thu, Nov 1 2018 17:00:00 -->
-    <req>
-      <campaign>1187</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3414</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1541091600</locked_start_time>
-    <!-- Thu, Nov 1 2018 17:00:00 -->
-    <achievement_req>3413</achievement_req>
-    <req>
-      <campaign>1187</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>1000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3415</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'The Spirit Between Planes' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1541091600</locked_start_time>
-    <!-- Thu, Nov 1 2018 17:00:00 -->
-    <achievement_req>3414</achievement_req>
-    <req>
-      <campaign>1187</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>1200</gold>
-    </reward>
-  </achievement>
   <!-- Halloween Undead 2018 -->
   <!-- Campaign Event 13 -->
   <!-- Campaign Event 13 weeks 5-8 -->
@@ -9870,154 +9599,7 @@
   </achievement>
   <!-- Wizard Event 79 - Avian END -->
   <!-- Wizard Event 80 - Undead - Node 1 -->
-  <achievement>
-    <id>3708</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6683</mission_req>
-    <locked_start_time>1629392400</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
-    <req>
-      <campaign>1294</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3080" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7076" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3709</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1629392400</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
-    <achievement_req>3708</achievement_req>
-    <req>
-      <campaign>1294</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3710</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1629392400</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
-    <achievement_req>3709</achievement_req>
-    <req>
-      <campaign>1294</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3711</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Questing for Rest and Peace' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1629392400</locked_start_time>
-    <!-- Thursday, 19 August 2021 17:00:00 -->
-    <achievement_req>3710</achievement_req>
-    <req>
-      <campaign>1294</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 80 - Undead - Node 2 -->
-  <achievement>
-    <id>3712</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6689</mission_req>
-    <locked_start_time>1630602000</locked_start_time>
-    <!-- Thursday, 2 September 2021 17:00:00 -->
-    <req>
-      <campaign>1295</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3713</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1630602000</locked_start_time>
-    <!-- Thursday, 2 September 2021 17:00:00 -->
-    <achievement_req>3712</achievement_req>
-    <req>
-      <campaign>1295</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3714</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the 'Undying Conflicts' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1630602000</locked_start_time>
-    <!-- Thursday, 2 September 2021 17:00:00 -->
-    <achievement_req>3713</achievement_req>
-    <req>
-      <campaign>1295</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 80 - Undead END -->
   <!-- Wizard Event 81 - Seafolk - Node 1 -->
   <achievement>
@@ -12151,28 +11733,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Desolate Red Valley -->
-    <id>4012</id>
-    <type>2</type>
-    <order>642</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Desolate Red Valley</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Desolate Red Valley.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6082</mission_req>
-    <req>
-      <campaign>1183</campaign>
-      <campaign>1184</campaign>
-      <campaign>1185</campaign>
-      <campaign>1186</campaign>
-      <campaign>1187</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
@@ -12244,31 +11804,6 @@
       <campaign>1155</campaign>
       <campaign>1292</campaign>
       <campaign>1293</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Desolate Red Valley Revisited -->
-    <id>4034</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Desolate Red Valley</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Desolate Red Valley.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6678</mission_req>
-    <achievement_req>4012</achievement_req>
-    <req>
-      <campaign>1183</campaign>
-      <campaign>1184</campaign>
-      <campaign>1185</campaign>
-      <campaign>1186</campaign>
-      <campaign>1187</campaign>
-      <campaign>1294</campaign>
-      <campaign>1295</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -12630,25 +12165,6 @@
   <!-- Event 138: ComDev Frog - Gladius Arena -->
   <!-- Event 139: ComDev Avian - Tarragon Peak -->
   <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
-  <achievement>
-    <id>10140</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Desolate Red Valley</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10140</mission_req>
-    <req>
-      <campaign>10140</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 141: ComDev Beast - Golden Crown Village -->
   <achievement>
     <id>10141</id>
@@ -12662,6 +12178,26 @@
     <mission_req>10141</mission_req>
     <req>
       <campaign>10141</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 142: ComDev Insect - Forgotten Island -->
+  <achievement>
+    <id>10142</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Forgotten Island</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10142</mission_req>
+    <req>
+      <campaign>10142</campaign>
       <level>7</level>
     </req>
     <reward>

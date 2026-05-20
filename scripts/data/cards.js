@@ -85797,13 +85797,205 @@ var CARDS = {
 		}
 	},
 	"4111": {
+		"attack": 12,
+		"card_type": "2",
+		"cost": 3,
+		"health": 45,
+		"hidden_until": "1779382800000",
+		"id": "4111",
+		"maxLevel": 10,
+		"name": "Cicada, the Resonant",
+		"picture": "Cicada_Crier_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 9
+			},
+			{
+				"id": "corrosive",
+				"x": 7
+			},
+			{
+				"id": "swarm",
+				"x": 7
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "swarm",
+						"x": 8
+					}
+				]
+			},
+			"3": {
+				"health": 47,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "swarm",
+						"x": 8
+					}
+				]
+			},
+			"4": {
+				"attack": 13,
+				"health": 48,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "swarm",
+						"x": 8
+					}
+				]
+			},
+			"5": {
+				"attack": 14,
+				"health": 49,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"id": "swarm",
+						"x": 9
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 50,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"id": "swarm",
+						"x": 9
+					}
+				]
+			},
+			"7": {
+				"health": 51,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"id": "swarm",
+						"x": 10
+					}
+				]
+			},
+			"8": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 13
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"id": "swarm",
+						"x": 10
+					}
+				]
+			},
+			"9": {
+				"attack": 17,
+				"health": 52,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 13
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"id": "swarm",
+						"x": 11
+					}
+				]
+			},
+			"10": {
+				"attack": 18,
+				"health": 52,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 14
+					},
+					{
+						"id": "corrosive",
+						"x": 11
+					},
+					{
+						"id": "swarm",
+						"x": 11
+					}
+				]
+			}
+		}
+	},
+	"4112": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1779382800000",
-		"id": "4111",
+		"hidden_until": "1781802000000",
+		"id": "4112",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -85812,7 +86004,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"13"
+			"12"
 		],
 		"type": "0",
 		"upgrades": {
@@ -192566,10 +192758,10 @@ var CARDS = {
 		}
 	},
 	"7609": {
-		"attack": 5,
+		"attack": 12,
 		"card_type": "2",
-		"cost": 2,
-		"health": 29,
+		"cost": 1,
+		"health": 19,
 		"hidden_until": "1584032400000",
 		"id": "7609",
 		"maxLevel": 10,
@@ -192581,16 +192773,16 @@ var CARDS = {
 		"skill": [
 			{
 				"id": "valor",
-				"x": 8
+				"x": 6
 			},
 			{
 				"all": "1",
 				"id": "heal",
-				"x": 4
+				"x": 2
 			},
 			{
 				"id": "fervor",
-				"x": 3,
+				"x": 2,
 				"y": "3"
 			}
 		],
@@ -192601,24 +192793,24 @@ var CARDS = {
 		"type": "3",
 		"upgrades": {
 			"2": {
-				"health": 30,
+				"health": 20,
 				"skill": []
 			},
 			"3": {
-				"health": 31,
+				"health": 21,
 				"skill": [
 					{
 						"id": "valor",
-						"x": 8
+						"x": 6
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 5
+						"x": 3
 					},
 					{
 						"id": "fervor",
-						"x": 3,
+						"x": 2,
 						"y": "3"
 					}
 				]
@@ -192627,12 +192819,49 @@ var CARDS = {
 				"skill": [
 					{
 						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "3"
+					}
+				]
+			},
+			"5": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 3
+					},
+					{
+						"id": "fervor",
+						"x": 3,
+						"y": "3"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "valor",
 						"x": 9
 					},
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 5
+						"x": 3
 					},
 					{
 						"id": "fervor",
@@ -192641,8 +192870,8 @@ var CARDS = {
 					}
 				]
 			},
-			"5": {
-				"health": 32,
+			"7": {
+				"health": 23,
 				"skill": [
 					{
 						"id": "valor",
@@ -192651,7 +192880,7 @@ var CARDS = {
 					{
 						"all": "1",
 						"id": "heal",
-						"x": 5
+						"x": 4
 					},
 					{
 						"id": "fervor",
@@ -192660,7 +192889,47 @@ var CARDS = {
 					}
 				]
 			},
-			"6": {
+			"8": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "3"
+					}
+				]
+			},
+			"9": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "3"
+					}
+				]
+			},
+			"10": {
+				"attack": 12,
+				"health": 26,
 				"skill": [
 					{
 						"id": "valor",
@@ -192673,84 +192942,7 @@ var CARDS = {
 					},
 					{
 						"id": "fervor",
-						"x": 5,
-						"y": "3"
-					}
-				]
-			},
-			"7": {
-				"health": 33,
-				"skill": [
-					{
-						"id": "valor",
-						"x": 12
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 6
-					},
-					{
-						"id": "fervor",
-						"x": 5,
-						"y": "3"
-					}
-				]
-			},
-			"8": {
-				"health": 34,
-				"skill": [
-					{
-						"id": "valor",
-						"x": 12
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 6
-					},
-					{
-						"id": "fervor",
-						"x": 6,
-						"y": "3"
-					}
-				]
-			},
-			"9": {
-				"health": 35,
-				"skill": [
-					{
-						"id": "valor",
-						"x": 13
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 6
-					},
-					{
-						"id": "fervor",
 						"x": 7,
-						"y": "3"
-					}
-				]
-			},
-			"10": {
-				"attack": 5,
-				"health": 36,
-				"skill": [
-					{
-						"id": "valor",
-						"x": 13
-					},
-					{
-						"all": "1",
-						"id": "heal",
-						"x": 7
-					},
-					{
-						"id": "fervor",
-						"x": 8,
 						"y": "3"
 					}
 				]
@@ -208501,12 +208693,12 @@ var CARDS = {
 				"x": 2
 			},
 			{
-				"id": "frost",
-				"x": 5
-			},
-			{
 				"id": "evadebarrier",
 				"x": 2
+			},
+			{
+				"id": "frost",
+				"x": 5
 			}
 		],
 		"sub_type": [
@@ -208524,12 +208716,12 @@ var CARDS = {
 						"x": 3
 					},
 					{
-						"id": "frost",
-						"x": 5
-					},
-					{
 						"id": "evadebarrier",
 						"x": 3
+					},
+					{
+						"id": "frost",
+						"x": 5
 					}
 				]
 			},
@@ -208542,12 +208734,12 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "frost",
-						"x": 5
-					},
-					{
 						"id": "evadebarrier",
 						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 5
 					}
 				]
 			},
@@ -208560,12 +208752,12 @@ var CARDS = {
 						"x": 4
 					},
 					{
-						"id": "frost",
-						"x": 6
-					},
-					{
 						"id": "evadebarrier",
 						"x": 4
+					},
+					{
+						"id": "frost",
+						"x": 6
 					}
 				]
 			},
@@ -208578,12 +208770,12 @@ var CARDS = {
 						"x": 5
 					},
 					{
-						"id": "frost",
-						"x": 6
-					},
-					{
 						"id": "evadebarrier",
 						"x": 5
+					},
+					{
+						"id": "frost",
+						"x": 6
 					}
 				]
 			},
@@ -208596,12 +208788,12 @@ var CARDS = {
 						"x": 6
 					},
 					{
-						"id": "frost",
-						"x": 7
-					},
-					{
 						"id": "evadebarrier",
 						"x": 6
+					},
+					{
+						"id": "frost",
+						"x": 7
 					}
 				]
 			}
@@ -216789,6 +216981,118 @@ var CARDS = {
 					{
 						"id": "strike",
 						"x": 8
+					}
+				]
+			}
+		}
+	},
+	"8246": {
+		"attack": 0,
+		"card_type": "2",
+		"cost": 0,
+		"health": 19,
+		"id": "8246",
+		"maxLevel": 6,
+		"name": "Young Fali",
+		"picture": "Undedad_Insect_Zombie_Stinkbug_A",
+		"rarity": 4,
+		"set": "9999",
+		"skill": [
+			{
+				"id": "counterpoison",
+				"x": 6
+			},
+			{
+				"id": "regenerate",
+				"x": 94
+			},
+			{
+				"id": "jamself"
+			}
+		],
+		"sub_type": [
+			"13"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 20,
+				"skill": [
+					{
+						"id": "counterpoison",
+						"x": 7
+					},
+					{
+						"id": "regenerate",
+						"x": 95
+					},
+					{
+						"id": "jamself"
+					}
+				]
+			},
+			"3": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "counterpoison",
+						"x": 8
+					},
+					{
+						"id": "regenerate",
+						"x": 96
+					},
+					{
+						"id": "jamself"
+					}
+				]
+			},
+			"4": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "counterpoison",
+						"x": 9
+					},
+					{
+						"id": "regenerate",
+						"x": 97
+					},
+					{
+						"id": "jamself"
+					}
+				]
+			},
+			"5": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "counterpoison",
+						"x": 10
+					},
+					{
+						"id": "regenerate",
+						"x": 98
+					},
+					{
+						"id": "jamself"
+					}
+				]
+			},
+			"6": {
+				"attack": 0,
+				"health": 24,
+				"skill": [
+					{
+						"id": "counterpoison",
+						"x": 11
+					},
+					{
+						"id": "regenerate",
+						"x": 99
+					},
+					{
+						"id": "jamself"
 					}
 				]
 			}

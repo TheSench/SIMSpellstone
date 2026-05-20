@@ -6127,8 +6127,8 @@
     <attack>8</attack>
     <health>35</health>
     <skill id="evadebarrier" x="2" />
-    <skill id="frost" x="5" />
     <skill id="evadebarrier" x="2" />
+    <skill id="frost" x="5" />
     <rarity>4</rarity>
     <type>1</type>
     <sub_type>7</sub_type>
@@ -6139,40 +6139,40 @@
       <attack>9</attack>
       <health>36</health>
       <skill id="evadebarrier" x="3" />
-      <skill id="frost" x="5" />
       <skill id="evadebarrier" x="3" />
+      <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>10</attack>
       <health>37</health>
       <skill id="evadebarrier" x="4" />
-      <skill id="frost" x="5" />
       <skill id="evadebarrier" x="4" />
+      <skill id="frost" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <attack>11</attack>
       <health>38</health>
       <skill id="evadebarrier" x="4" />
-      <skill id="frost" x="6" />
       <skill id="evadebarrier" x="4" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <attack>12</attack>
       <health>39</health>
       <skill id="evadebarrier" x="5" />
-      <skill id="frost" x="6" />
       <skill id="evadebarrier" x="5" />
+      <skill id="frost" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>12</attack>
       <health>40</health>
       <skill id="evadebarrier" x="6" />
-      <skill id="frost" x="7" />
       <skill id="evadebarrier" x="6" />
+      <skill id="frost" x="7" />
     </upgrade>
   </unit>
   <!-- Campaign Event 6 -->
@@ -10223,6 +10223,61 @@
       <skill id="barrage" x="7" />
       <skill id="strike" x="8" />
       <skill id="strike" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8246</id>
+    <card_type>2</card_type>
+    <name>Young Fali</name>
+    <picture>Undedad_Insect_Zombie_Stinkbug_A</picture>
+    <asset_bundle>222</asset_bundle>
+    <attack>0</attack>
+    <health>19</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="counterpoison" x="6" />
+    <skill id="regenerate" x="94" />
+    <skill id="jamself" />
+    <type>3</type>
+    <!-- Wyld -->
+    <sub_type>13</sub_type>
+    <!-- Insect -->
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="counterpoison" x="7" />
+      <skill id="regenerate" x="95" />
+      <skill id="jamself" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <skill id="counterpoison" x="8" />
+      <skill id="regenerate" x="96" />
+      <skill id="jamself" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="counterpoison" x="9" />
+      <skill id="regenerate" x="97" />
+      <skill id="jamself" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="counterpoison" x="10" />
+      <skill id="regenerate" x="98" />
+      <skill id="jamself" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>0</attack>
+      <health>24</health>
+      <skill id="counterpoison" x="11" />
+      <skill id="regenerate" x="99" />
+      <skill id="jamself" />
     </upgrade>
   </unit>
 </root>

@@ -20003,4 +20003,45 @@
       <!-- Icestone Beast -->
     </deck>
   </mission>
+  <!-- Event 142: ComDev Insect - Forgotten Island -->
+  <mission>
+    <id>10142</id>
+    <name>Forgotten Island</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Tropical Coconuts in Island Seers to power up your cards.</desc>
+    <commander id="434" />
+    <!-- Forgettable Elder Agatha -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4111" />
+      <!-- Latest Champion -->
+      <card id="6632" />
+      <!-- Nuri & Nera, Twin Assailants -->
+      <card id="5646" />
+      <!-- Frazzil, Glacial Guardian -->
+      <card id="4500" />
+      <!-- Sneggle, the Insatiable -->
+      <card id="4085" />
+      <!-- Ecyxigua, the Tongue Twister -->
+      <card id="4046" />
+      <!-- Agatha, Myth Warden -->
+      <card id="4019" />
+      <!-- Formos Ebonclaw -->
+      <card id="6141" />
+      <!-- Swarmrider Zabzod -->
+      <card id="6008" />
+      <!-- Thousand Arm Demon -->
+      <card id="5266" />
+      <!-- Formiant Squad -->
+      <card id="5231" />
+      <!-- Snow Crystal Crawler -->
+      <card id="5200" />
+      <!-- Clyx, Advance Guard -->
+      <card id="2233" />
+      <!-- Aikido Initiate -->
+      <card id="2100" />
+      <!-- Kheptronos -->
+    </deck>
+  </mission>
 </root>
