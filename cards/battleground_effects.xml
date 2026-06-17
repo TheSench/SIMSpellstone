@@ -233,7 +233,7 @@
   <battleground>
     <id>113</id>
     <name>Underwater Shelter</name>
-    <desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.</desc>
+    <desc>All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect_seafolk" ignore_nullify="1" mult="0.3" base="health" all="1" y="12" />
@@ -365,7 +365,7 @@
   <battleground>
     <id>118</id>
     <name>Energy Shield</name>
-    <desc>All Mechas have upgraded their protective protocols, gaining a Barrier equal to their base Attack each time they deal Attack damage.</desc>
+    <desc>All Mechas have upgraded their protective protocols, gaining Barrier equal to their base Attack each time they deal Attack damage.</desc>
     <icon>filter_mech_64</icon>
     <effect>
       <add_skill id="reinforce" mult="1" base="attack" all="1" y="16" />
@@ -577,7 +577,7 @@
   <battleground>
     <id>130</id>
     <name>Undead Vampirism</name>
-    <desc>Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.</desc>
+    <desc>Deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.</desc>
     <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="vampirism" mult="0.05" base="health" x="3" y="7" />
@@ -953,7 +953,7 @@
   <battleground>
     <id>143</id>
     <name>Conflicted Ocean</name>
-    <desc>All Seafolk gain barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and pierce equal to their base Attack.</desc>
+    <desc>All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and Pierce equal to their base Attack.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect" ignore_nullify="1" mult="0.2" all="1" base="health" y="12" delay="3,4" />
@@ -1541,7 +1541,7 @@
   <battleground>
     <id>167</id>
     <name>Thriving Swarm</name>
-    <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
+    <desc>All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest active ally creature.</desc>
     <icon>filter_insect_64</icon>
     <effect>
       <scale_health base="health" mult="0.10" yy="13" />
@@ -2153,11 +2153,65 @@
   <battleground>
     <id>205</id>
     <name>Adaptive Swarm</name>
-    <desc>All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.</desc>
+    <desc>All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest active ally creature.</desc>
     <icon>filter_insect_64</icon>
     <effect>
       <add_skill id="swarm" mult="0.15" base="health" y="13" />
       <add_skill id="regenerate" mult="0.15" base="health" y="13" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>206</id>
+    <name>Deep Water Shelter</name>
+    <desc>All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage in their first attack equal to 20% of their base Health.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <skill id="protect_seafolk" ignore_nullify="1" mult="0.3" base="health" all="1" y="12" />
+      <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
+        <target_effect>
+          <prefab>submerge_fadecloth_delay</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkill" s="protect_seafolk">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>0.5</delay>
+          <duration>0.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect_seafolk">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect_seafolk">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
+      <add_skill id="bash" mult="0.2" all="1" base="health" y="12" delay="0,1,2" />
     </effect>
   </battleground>
   <!-- ================================= -->
@@ -3245,7 +3299,7 @@
   <battleground>
     <id>571</id>
     <name>The Burning Hell</name>
-    <desc>All cards gain Scorchbreath thrice their delay.</desc>
+    <desc>All cards gain Scorchbreath thrice their Delay.</desc>
     <icon>filter_chaos_64</icon>
     <effect>
       <add_skill id="scorchbreath" x="3" all="1" delay="1" />
@@ -3257,7 +3311,7 @@
   <battleground>
     <id>572</id>
     <name>The Burning Self</name>
-    <desc>All cards gain Emberhide thrice their delay.</desc>
+    <desc>All cards gain Emberhide thrice their Delay.</desc>
     <icon>Emberhide_BGE_64</icon>
     <icon_bundle>110</icon_bundle>
     <effect>

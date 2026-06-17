@@ -20017,7 +20017,7 @@
       <card id="4111" />
       <!-- Latest Champion -->
       <card id="6632" />
-      <!-- Nuri & Nera, Twin Assailants -->
+      <!-- Nuri &amp; Nera, Twin Assailants -->
       <card id="5646" />
       <!-- Frazzil, Glacial Guardian -->
       <card id="4500" />
@@ -20042,6 +20042,47 @@
       <!-- Aikido Initiate -->
       <card id="2100" />
       <!-- Kheptronos -->
+    </deck>
+  </mission>
+  <!-- Event 143: ComDev Seafolk - Goblin Rise Stronghold -->
+  <mission>
+    <id>10143</id>
+    <name>Goblin Rise Stronghold</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Bonbon Sparklers in Fiona's Dragonlings to power up your cards.</desc>
+    <commander id="396" />
+    <!-- King Proteus -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4112" />
+      <!-- Latest Champion -->
+      <card id="6618" />
+      <!-- Jormun, the Ravager -->
+      <card id="5611" />
+      <!-- Zhu-Lath, the Hermit -->
+      <card id="4017" />
+      <!-- King Proteus -->
+      <card id="6293" />
+      <!-- Emberay -->
+      <card id="6198" />
+      <!-- Rattleclank Courtesan -->
+      <card id="6151" />
+      <!-- Cetus -->
+      <card id="6135" />
+      <!-- Burnshell -->
+      <card id="6107" />
+      <!-- Great Lava Crab -->
+      <card id="6106" />
+      <!-- Bailong -->
+      <card id="7233" />
+      <!-- Arsenite Pest -->
+      <card id="2103" />
+      <!-- Siren -->
+      <card id="2218" />
+      <!-- Spineworm Delver -->
+      <card id="2132" />
+      <!-- Seaweevil -->
     </deck>
   </mission>
 </root>

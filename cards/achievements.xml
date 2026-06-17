@@ -8744,342 +8744,9 @@
     </reward>
   </achievement>
   <!-- Campaign Event 11 -->
-  <achievement>
-    <id>3382</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Golden Leaves' campaign on Mastery Level 4.</desc>
-    <mission_req>6009</mission_req>
-    <locked_start_time>1532624400</locked_start_time>
-    <req>
-      <campaign>1177</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <item id="3077" number="50" />
-      <event_points id="7036" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3383</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Golden Leaves' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1532624400</locked_start_time>
-    <achievement_req>3382</achievement_req>
-    <req>
-      <campaign>1177</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 11 weeks 1-4 -->
-  <achievement>
-    <id>3384</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Crash Site' campaign on Mastery Level 2.</desc>
-    <mission_req>6021</mission_req>
-    <locked_start_time>1532624400</locked_start_time>
-    <req>
-      <campaign>1178</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3385</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Crash Site' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1532624400</locked_start_time>
-    <achievement_req>3384</achievement_req>
-    <req>
-      <campaign>1178</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3386</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Crash Site' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1532624400</locked_start_time>
-    <achievement_req>3385</achievement_req>
-    <req>
-      <campaign>1178</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3387</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Crash Site' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1532624400</locked_start_time>
-    <achievement_req>3386</achievement_req>
-    <req>
-      <campaign>1178</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3388</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Center' campaign on Mastery Level 2.</desc>
-    <mission_req>6033</mission_req>
-    <locked_start_time>1533834000</locked_start_time>
-    <req>
-      <campaign>1179</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3389</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Center' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1533834000</locked_start_time>
-    <achievement_req>3388</achievement_req>
-    <req>
-      <campaign>1179</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3390</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Center' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1533834000</locked_start_time>
-    <achievement_req>3389</achievement_req>
-    <req>
-      <campaign>1179</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3391</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Center' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1533834000</locked_start_time>
-    <achievement_req>3390</achievement_req>
-    <req>
-      <campaign>1179</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Stoneclad Toad -->
-  <achievement>
-    <id>3392</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Dream Awakened' campaign on Mastery Level 1.</desc>
-    <mission_req>6034</mission_req>
-    <locked_start_time>1533834000</locked_start_time>
-    <!-- Thu, Aug 09 2018 17:00:00 -->
-    <req>
-      <campaign>1180</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8011" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 11 weeks 5-8 -->
-  <achievement>
-    <id>3393</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 2.</desc>
-    <mission_req>6050</mission_req>
-    <locked_start_time>1535043600</locked_start_time>
-    <!-- Thu, Aug 23 2018 17:00:00 -->
-    <req>
-      <campaign>1181</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3394</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1535043600</locked_start_time>
-    <!-- Thu, Aug 23 2018 17:00:00 -->
-    <achievement_req>3393</achievement_req>
-    <req>
-      <campaign>1181</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3395</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1535043600</locked_start_time>
-    <achievement_req>3394</achievement_req>
-    <!-- Thu, Aug 23 2018 17:00:00 -->
-    <req>
-      <campaign>1181</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3396</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Village Outskirts' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1535043600</locked_start_time>
-    <!-- Thu, Aug 23 2018 17:00:00 -->
-    <achievement_req>3395</achievement_req>
-    <req>
-      <campaign>1181</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3397</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 2.</desc>
-    <mission_req>6062</mission_req>
-    <locked_start_time>1536253200</locked_start_time>
-    <!-- Thu, Sept 06 2018 17:00:00 -->
-    <req>
-      <campaign>1182</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3398</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1536253200</locked_start_time>
-    <!-- Thu, Sept 06 2018 17:00:00 -->
-    <achievement_req>3397</achievement_req>
-    <req>
-      <campaign>1182</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3399</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1536253200</locked_start_time>
-    <!-- Thu, Sept 06 2018 17:00:00 -->
-    <achievement_req>3398</achievement_req>
-    <req>
-      <campaign>1182</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3400</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Dream's Depths' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1536253200</locked_start_time>
-    <!-- Thu, Sept 06 2018 17:00:00 -->
-    <achievement_req>3399</achievement_req>
-    <req>
-      <campaign>1182</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 12 Elemental -->
   <!-- Gem Harvester recipe -->
   <!-- Campaign Event 12 weeks 5-8 -->
@@ -10666,155 +10333,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 97 - Goblin - Node 1 -->
-  <achievement>
-    <id>3837</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Void Activity' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6972</mission_req>
-    <locked_start_time>1670518800</locked_start_time>
-    <!-- Thursday, 8 December 2022 17:00:00	 -->
-    <req>
-      <campaign>1334</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3077" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7093" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3838</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Void Activity' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1670518800</locked_start_time>
-    <!-- Thursday, 8 December 2022 17:00:00		  -->
-    <achievement_req>3837</achievement_req>
-    <!-- Dont forget requirement  -->
-    <req>
-      <campaign>1334</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3839</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Void Activity' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1670518800</locked_start_time>
-    <!-- Thursday, 8 December 2022 17:00:00		  -->
-    <achievement_req>3838</achievement_req>
-    <req>
-      <campaign>1334</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3840</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'Void Activity' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1670518800</locked_start_time>
-    <!-- Thursday, 8 December 2022 17:00:00		  -->
-    <achievement_req>3839</achievement_req>
-    <req>
-      <campaign>1334</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 97 - Goblin - Node 2 -->
-  <achievement>
-    <id>3841</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Teleporter' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6978</mission_req>
-    <locked_start_time>1671728400</locked_start_time>
-    <!-- Thursday, 22 December 2022 17:00:00  -->
-    <req>
-      <campaign>1335</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3842</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Teleporter' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1671728400</locked_start_time>
-    <!-- Thursday, 22 December 2022 17:00:00  -->
-    <achievement_req>3841</achievement_req>
-    <req>
-      <campaign>1335</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3843</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the 'The Teleporter' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1671728400</locked_start_time>
-    <!-- Thursday, 22 December 2022 17:00:00  -->
-    <achievement_req>3842</achievement_req>
-    <req>
-      <campaign>1335</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 98 - Angel Void - Node 1 -->
   <achievement>
     <id>3844</id>
@@ -11307,170 +10826,8 @@
   <!-- E109 Node 2: Upon Righteous Wings -->
   <!-- Event 110: ComDev Frog - Golden Crown Village -->
   <!-- E110 Node 1: A Void Sickness -->
-  <achievement>
-    <id>3951</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the A Void Sickness campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7182</mission_req>
-    <locked_start_time>1701968400</locked_start_time>
-    <req>
-      <campaign>1361</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3077" number="100" />
-      <event_points id="7106" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3952</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the A Void Sickness campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3951</achievement_req>
-    <locked_start_time>1701968400</locked_start_time>
-    <req>
-      <campaign>1361</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3953</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the A Void Sickness campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3952</achievement_req>
-    <locked_start_time>1701968400</locked_start_time>
-    <req>
-      <campaign>1361</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3954</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the A Void Sickness campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3953</achievement_req>
-    <locked_start_time>1701968400</locked_start_time>
-    <req>
-      <campaign>1361</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 110: ComDev Frog - Golden Crown Village -->
   <!-- E110 Node 2: Leapfrogging the Cure -->
-  <achievement>
-    <id>3955</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the Leapfrogging the Cure campaign on Mastery Level 1.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <mission_req>7188</mission_req>
-    <locked_start_time>1703178000</locked_start_time>
-    <req>
-      <campaign>1362</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3077" number="100" />
-      <event_points id="7106" number="100" />
-      <!-- Expedition Items -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3956</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the Leapfrogging the Cure campaign on Mastery Level 2.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3955</achievement_req>
-    <locked_start_time>1703178000</locked_start_time>
-    <req>
-      <campaign>1362</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-      <!-- Gold -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3957</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the Leapfrogging the Cure campaign on Mastery Level 4.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3956</achievement_req>
-    <locked_start_time>1703178000</locked_start_time>
-    <req>
-      <campaign>1362</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>500</sp>
-      <!-- Dust -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3958</id>
-    <type>2</type>
-    <order>603</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the Leapfrogging the Cure campaign on Mastery Level 6.</desc>
-    <icon>machine_parts_200</icon>
-    <icon_bundle>17</icon_bundle>
-    <achievement_req>3957</achievement_req>
-    <locked_start_time>1703178000</locked_start_time>
-    <req>
-      <campaign>1362</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <wb>60</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Christmas Special Event 2023 -->
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
   <!-- Valentine's Special Event 2024 -->
@@ -11703,29 +11060,6 @@
       <campaign>1174</campaign>
       <campaign>1175</campaign>
       <campaign>1176</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Golden Crown Village -->
-    <id>4011</id>
-    <type>2</type>
-    <order>641</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Golden Crown Village</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Golden Crown Village.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6037</mission_req>
-    <req>
-      <campaign>1177</campaign>
-      <campaign>1178</campaign>
-      <campaign>1179</campaign>
-      <campaign>1180</campaign>
-      <campaign>1181</campaign>
-      <campaign>1182</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -11993,32 +11327,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Golden Crown Village -->
-    <id>4051</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Golden Crown Village</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Golden Crown Village.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6967</mission_req>
-    <achievement_req>4011</achievement_req>
-    <req>
-      <campaign>1177</campaign>
-      <campaign>1178</campaign>
-      <campaign>1179</campaign>
-      <campaign>1180</campaign>
-      <campaign>1181</campaign>
-      <campaign>1182</campaign>
-      <campaign>1334</campaign>
-      <campaign>1335</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- The Void Plane -->
     <id>4052</id>
     <type>2</type>
@@ -12102,26 +11410,6 @@
   </achievement>
   <!-- Event 109: ComDev Angel - Skyhaven Assault -->
   <!-- Event 110: ComDev Frog - Golden Crown Village -->
-  <achievement>
-    <id>4064</id>
-    <type>2</type>
-    <order>661</order>
-    <event_only>1</event_only>
-    <name>Commander of Golden Crown Village</name>
-    <desc>Complete Mastery Level 7 on all blue campaigns in Golden Crown Village.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>7193</mission_req>
-    <locked_start_time>1703178000</locked_start_time>
-    <req>
-      <campaign>1361</campaign>
-      <campaign>1362</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-      <!-- Inventory Expansion -->
-    </reward>
-  </achievement>
   <!-- Event 111: ComDev Dragon - Return to Tarragon Peak -->
   <!-- Event 112: ComDev Beast - Gladius Arena -->
   <!-- Event 113: ComDev Beast - Return to Elaria -->
@@ -12166,25 +11454,6 @@
   <!-- Event 139: ComDev Avian - Tarragon Peak -->
   <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
   <!-- Event 141: ComDev Beast - Golden Crown Village -->
-  <achievement>
-    <id>10141</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Golden Crown Village</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10141</mission_req>
-    <req>
-      <campaign>10141</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 142: ComDev Insect - Forgotten Island -->
   <achievement>
     <id>10142</id>
@@ -12198,6 +11467,26 @@
     <mission_req>10142</mission_req>
     <req>
       <campaign>10142</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 143: ComDev Seafolk - Goblin Rise Stronghold -->
+  <achievement>
+    <id>10143</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Goblin Rise Stronghold</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10143</mission_req>
+    <req>
+      <campaign>10143</campaign>
       <level>7</level>
     </req>
     <reward>

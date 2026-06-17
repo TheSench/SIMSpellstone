@@ -85989,13 +85989,208 @@ var CARDS = {
 		}
 	},
 	"4112": {
+		"attack": 10,
+		"card_type": "2",
+		"cost": 1,
+		"health": 20,
+		"hidden_until": "1781802000000",
+		"id": "4112",
+		"maxLevel": 10,
+		"name": "Eriel, the Endgame Seal",
+		"picture": "Manamaid",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "valor",
+				"x": 5
+			},
+			{
+				"all": "1",
+				"id": "rally",
+				"x": 1
+			},
+			{
+				"c": 5,
+				"id": "jam"
+			}
+		],
+		"sub_type": [
+			"12"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			},
+			"3": {
+				"health": 21,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			},
+			"4": {
+				"health": 22,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 5,
+						"id": "jam"
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"6": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 2
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"7": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"c": 4,
+						"id": "jam"
+					}
+				]
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "valor",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"9": {
+				"health": 25,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 3
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			},
+			"10": {
+				"attack": 10,
+				"health": 26,
+				"skill": [
+					{
+						"id": "valor",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "rally",
+						"x": 4
+					},
+					{
+						"c": 3,
+						"id": "jam"
+					}
+				]
+			}
+		}
+	},
+	"4113": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1781802000000",
-		"id": "4112",
+		"hidden_until": "1784221200000",
+		"id": "4113",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86004,7 +86199,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"12"
+			"7"
 		],
 		"type": "0",
 		"upgrades": {

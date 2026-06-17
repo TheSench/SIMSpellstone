@@ -174,7 +174,7 @@ var BATTLEGROUNDS = {
 		"name": "Goblin Barrage"
 	},
 	"113": {
-		"desc": "All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 30% of their base Health while on delay.",
+		"desc": "All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay.",
 		"effect": [
 			{
 				"all": "1",
@@ -284,7 +284,7 @@ var BATTLEGROUNDS = {
 		"name": "Venom"
 	},
 	"118": {
-		"desc": "All Mechas have upgraded their protective protocols, gaining a Barrier equal to their base Attack each time they deal Attack damage.",
+		"desc": "All Mechas have upgraded their protective protocols, gaining Barrier equal to their base Attack each time they deal Attack damage.",
 		"effect": [
 			{
 				"all": "1",
@@ -488,7 +488,7 @@ var BATTLEGROUNDS = {
 		"name": "Insect Swarm"
 	},
 	"130": {
-		"desc": "Deals damage to opposing creatures and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.",
+		"desc": "Deals damage to opposing creature and then heals self, even while on delay. Damage and heal are equal to 3 + 5% of the card's base Health. This damage cannot be increased.",
 		"effect": [
 			{
 				"base": "health",
@@ -1295,7 +1295,7 @@ var BATTLEGROUNDS = {
 		"name": "Beetleton Mutations"
 	},
 	"143": {
-		"desc": "All Seafolk gain barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and pierce equal to their base Attack.",
+		"desc": "All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and Pierce equal to their base Attack.",
 		"effect": [
 			{
 				"all": "1",
@@ -2293,7 +2293,7 @@ var BATTLEGROUNDS = {
 		"name": "Steel's Edge V2.0"
 	},
 	"167": {
-		"desc": "All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
+		"desc": "All Insects gain extra Health equal to 10% of their base Health and Swarm equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest active ally creature.",
 		"effect": [
 			{
 				"base": "health",
@@ -4163,7 +4163,7 @@ var BATTLEGROUNDS = {
 		"name": "Beast Supremacy"
 	},
 	"205": {
-		"desc": "All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest ally.",
+		"desc": "All Insects gain Swarm and Regenerate equal to 15% of their base Health. After dealing Attack damage, Swarm permanently increases the Attack of the weakest active ally creature.",
 		"effect": [
 			{
 				"base": "health",
@@ -4182,6 +4182,35 @@ var BATTLEGROUNDS = {
 		],
 		"id": "205",
 		"name": "Adaptive Swarm"
+	},
+	"206": {
+		"desc": "All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage in their first attack equal to 20% of their base Health.",
+		"effect": [
+			{
+				"all": "1",
+				"base": "health",
+				"effect_type": "skill",
+				"id": "protect_seafolk",
+				"ignore_nullify": "1",
+				"mult": 0.3,
+				"y": "12"
+			},
+			{
+				"all": "1",
+				"base": "health",
+				"delay": [
+					0,
+					1,
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "bash",
+				"mult": 0.2,
+				"y": "12"
+			}
+		],
+		"id": "206",
+		"name": "Deep Water Shelter"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
@@ -6426,7 +6455,7 @@ var BATTLEGROUNDS = {
 		"name": "Darkassan's Prophecy"
 	},
 	"571": {
-		"desc": "All cards gain Scorchbreath thrice their delay.",
+		"desc": "All cards gain Scorchbreath thrice their Delay.",
 		"effect": [
 			{
 				"all": "1",
@@ -6469,7 +6498,7 @@ var BATTLEGROUNDS = {
 		"name": "The Burning Hell"
 	},
 	"572": {
-		"desc": "All cards gain Emberhide thrice their delay.",
+		"desc": "All cards gain Emberhide thrice their Delay.",
 		"effect": [
 			{
 				"all": "1",

@@ -408,30 +408,25 @@
     <bundle>31</bundle>
     <event_type_req>8</event_type_req>
   </store_item>
-  <store_item>
-    <id>73</id>
-    <name>Runecrafter's Pouch (Market Test)</name>
-    <category>2</category>
-    <mission_req>244</mission_req>
-    <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
-    <show_desc>1</show_desc>
-    <priority>36</priority>
-    <!-- 3 parameters required to avoid the visual price bug (it still works without them) -->
-    <cycle>1</cycle>
-    <cycle_length>315619200</cycle_length>
-    <!-- 10 years -->
-    <start_time>1779210000</start_time>
-    <!-- 19 May 2026 -->
-    <cost item="21" num="1" />
-    <!-- Endgame Seals -->
-    <!-- Remove from store if player has this card -->
-    <!-- <hidden_card_req>19</hidden_card_req> -->
-    <!-- Scyer -->
-    <asset_prefab>rune_bag</asset_prefab>
-    <bundle>15</bundle>
-    <item id="514" quantity="1" />
-    <!-- filler reward (pouch) -->
-  </store_item>
+  <!-- <store_item>
+		<id>73</id>
+		<name>Runecrafter's Pouch (Market Test)</name>
+		<category>2</category>
+		<mission_req>244</mission_req>
+		<desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
+		<show_desc>1</show_desc>
+		<priority>36</priority>
+		<!- 3 parameters required to avoid the visual price bug (it still works without them) ->
+		<cycle>1</cycle>
+		<cycle_length>315619200</cycle_length> <!- 10 years ->
+		<start_time>1779210000</start_time> <!- 19 May 2026 ->
+		<cost item="21" num="1"/> <!- Endgame Seals ->
+		<!- Remove from store if player has this card ->
+		<!- <hidden_card_req>19</hidden_card_req> -> <!- Scyer ->
+		<asset_prefab>rune_bag</asset_prefab>
+		<bundle>15</bundle>
+		<item id="514" quantity="1"/> <!- filler reward (pouch) ->
+	</store_item> -->
   <store_item>
     <id>80</id>
     <name>Random Tribe Health Rune</name>
@@ -936,6 +931,7 @@
       <item id="104102" quantity="500" weight="1" />
       <item id="104103" quantity="500" weight="1" />
       <item id="104104" quantity="500" weight="1" />
+      <item id="104105" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1702,6 +1698,7 @@
       <item id="104102" />
       <item id="104103" />
       <item id="104104" />
+      <item id="104105" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1921,6 +1918,7 @@
       <item id="104102" number="50" purchase1="25" scalar="5" />
       <item id="104103" number="50" purchase1="25" scalar="5" />
       <item id="104104" number="50" purchase1="25" scalar="5" />
+      <item id="104105" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
@@ -2092,6 +2090,136 @@
     <icon>championStone_epic</icon>
     <icon_bundle>58</icon_bundle>
     <scale_prices>1</scale_prices>
+    <tied_id>4019</tied_id>
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <costed_items>
+      <item id="105600" number="100" purchase1="100" scalar="10" />
+      <item id="105601" number="100" purchase1="100" scalar="10" />
+      <item id="105602" number="100" purchase1="100" scalar="10" />
+      <item id="105603" number="100" purchase1="100" scalar="10" />
+      <item id="105604" number="100" purchase1="100" scalar="10" />
+      <item id="105605" number="100" purchase1="100" scalar="10" />
+      <item id="105606" number="100" purchase1="100" scalar="10" />
+      <item id="105607" number="100" purchase1="100" scalar="10" />
+      <item id="105608" number="100" purchase1="100" scalar="10" />
+      <item id="105609" number="100" purchase1="100" scalar="10" />
+      <item id="105610" number="100" purchase1="100" scalar="10" />
+      <item id="105611" number="100" purchase1="100" scalar="10" />
+      <item id="105612" number="100" purchase1="100" scalar="10" />
+      <item id="105613" number="100" purchase1="100" scalar="10" />
+      <item id="105614" number="100" purchase1="100" scalar="10" />
+      <item id="105615" number="100" purchase1="100" scalar="10" />
+      <item id="105616" number="100" purchase1="100" scalar="10" />
+      <item id="105617" number="100" purchase1="100" scalar="10" />
+      <item id="105618" number="100" purchase1="100" scalar="10" />
+      <item id="105619" number="100" purchase1="100" scalar="10" />
+      <item id="105620" number="100" purchase1="100" scalar="10" />
+      <item id="105621" number="100" purchase1="100" scalar="10" />
+      <item id="105622" number="100" purchase1="100" scalar="10" />
+      <item id="105623" number="100" purchase1="100" scalar="10" />
+      <item id="105624" number="100" purchase1="100" scalar="10" />
+      <item id="105625" number="100" purchase1="100" scalar="10" />
+      <item id="105626" number="100" purchase1="100" scalar="10" />
+      <item id="105627" number="100" purchase1="100" scalar="10" />
+      <item id="105628" number="100" purchase1="100" scalar="10" />
+      <item id="105629" number="100" purchase1="100" scalar="10" />
+      <item id="105630" number="100" purchase1="100" scalar="10" />
+      <item id="105631" number="100" purchase1="100" scalar="10" />
+      <item id="105632" number="100" purchase1="100" scalar="10" />
+      <item id="105633" number="100" purchase1="100" scalar="10" />
+      <item id="105634" number="100" purchase1="100" scalar="10" />
+      <item id="105635" number="100" purchase1="100" scalar="10" />
+      <item id="105636" number="100" purchase1="100" scalar="10" />
+      <item id="105637" number="100" purchase1="100" scalar="10" />
+      <item id="105638" number="100" purchase1="100" scalar="10" />
+      <item id="105639" number="100" purchase1="100" scalar="10" />
+      <item id="105641" number="100" purchase1="100" scalar="10" />
+      <item id="105642" number="100" purchase1="100" scalar="10" />
+      <item id="105643" number="100" purchase1="100" scalar="10" />
+      <item id="105644" number="100" purchase1="100" scalar="10" />
+      <item id="105645" number="100" purchase1="100" scalar="10" />
+      <item id="105646" number="100" purchase1="100" scalar="10" />
+      <item id="106600" number="100" purchase1="100" scalar="10" />
+      <item id="106601" number="100" purchase1="100" scalar="10" />
+      <item id="106602" number="100" purchase1="100" scalar="10" />
+      <item id="106603" number="100" purchase1="100" scalar="10" />
+      <item id="106604" number="100" purchase1="100" scalar="10" />
+      <item id="106605" number="100" purchase1="100" scalar="10" />
+      <item id="106606" number="100" purchase1="100" scalar="10" />
+      <item id="106607" number="100" purchase1="100" scalar="10" />
+      <item id="106608" number="100" purchase1="100" scalar="10" />
+      <item id="106609" number="100" purchase1="100" scalar="10" />
+      <item id="106610" number="100" purchase1="100" scalar="10" />
+      <item id="106611" number="100" purchase1="100" scalar="10" />
+      <item id="106612" number="100" purchase1="100" scalar="10" />
+      <item id="106613" number="100" purchase1="100" scalar="10" />
+      <item id="106614" number="100" purchase1="100" scalar="10" />
+      <item id="106615" number="100" purchase1="100" scalar="10" />
+      <item id="106616" number="100" purchase1="100" scalar="10" />
+      <item id="106617" number="100" purchase1="100" scalar="10" />
+      <item id="106618" number="100" purchase1="100" scalar="10" />
+      <item id="106619" number="100" purchase1="100" scalar="10" />
+      <item id="106620" number="100" purchase1="100" scalar="10" />
+      <item id="106621" number="100" purchase1="100" scalar="10" />
+      <item id="106622" number="100" purchase1="100" scalar="10" />
+      <item id="106623" number="100" purchase1="100" scalar="10" />
+      <item id="106624" number="100" purchase1="100" scalar="10" />
+      <item id="106625" number="100" purchase1="100" scalar="10" />
+      <item id="106626" number="100" purchase1="100" scalar="10" />
+      <item id="106627" number="100" purchase1="100" scalar="10" />
+      <item id="106628" number="100" purchase1="100" scalar="10" />
+      <item id="106629" number="100" purchase1="100" scalar="10" />
+      <item id="106630" number="100" purchase1="100" scalar="10" />
+      <item id="106631" number="100" purchase1="100" scalar="10" />
+      <item id="106632" number="100" purchase1="100" scalar="10" />
+      <item id="107600" number="100" purchase1="100" scalar="10" />
+      <item id="107601" number="100" purchase1="100" scalar="10" />
+      <item id="107602" number="100" purchase1="100" scalar="10" />
+      <item id="107603" number="100" purchase1="100" scalar="10" />
+      <item id="107604" number="100" purchase1="100" scalar="10" />
+      <item id="107605" number="100" purchase1="100" scalar="10" />
+      <item id="107606" number="100" purchase1="100" scalar="10" />
+      <item id="107607" number="100" purchase1="100" scalar="10" />
+      <item id="107608" number="100" purchase1="100" scalar="10" />
+      <item id="107609" number="100" purchase1="100" scalar="10" />
+      <item id="107610" number="100" purchase1="100" scalar="10" />
+      <item id="107611" number="100" purchase1="100" scalar="10" />
+      <item id="107612" number="100" purchase1="100" scalar="10" />
+      <item id="107613" number="100" purchase1="100" scalar="10" />
+      <item id="107614" number="100" purchase1="100" scalar="10" />
+      <item id="107615" number="100" purchase1="100" scalar="10" />
+      <item id="107616" number="100" purchase1="100" scalar="10" />
+      <item id="107617" number="100" purchase1="100" scalar="10" />
+      <item id="107618" number="100" purchase1="100" scalar="10" />
+      <item id="107619" number="100" purchase1="100" scalar="10" />
+      <item id="107620" number="100" purchase1="100" scalar="10" />
+      <item id="107621" number="100" purchase1="100" scalar="10" />
+      <item id="107622" number="100" purchase1="100" scalar="10" />
+      <item id="107623" number="100" purchase1="100" scalar="10" />
+      <item id="107624" number="100" purchase1="100" scalar="10" />
+      <item id="107625" number="100" purchase1="100" scalar="10" />
+      <item id="107626" number="100" purchase1="100" scalar="10" />
+      <item id="107627" number="100" purchase1="100" scalar="10" />
+      <item id="107628" number="100" purchase1="100" scalar="10" />
+      <item id="107629" number="100" purchase1="100" scalar="10" />
+      <item id="107630" number="100" purchase1="100" scalar="10" />
+      <item id="107631" number="100" purchase1="100" scalar="10" />
+    </costed_items>
+  </store_item>
+  <store_item>
+    <id>4019</id>
+    <name>Cycling Premium Stones x100 II</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives 100 stones of the displayed Premium Champion card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks stones for a random Premium Champion that can be purchased with shards and cycles every 24 hours!</preview_desc>
+    <priority>56</priority>
+    <icon>championStone_epic</icon>
+    <icon_bundle>58</icon_bundle>
+    <scale_prices>1</scale_prices>
+    <tied_id>4018</tied_id>
     <cycle_cards>1</cycle_cards>
     <cycle_length>86400</cycle_length>
     <start_offset>61200</start_offset>

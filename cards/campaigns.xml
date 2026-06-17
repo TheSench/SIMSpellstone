@@ -12578,6 +12578,90 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9117</id>
+    <name>Golden Crown Village</name>
+    <campaign_req id="24" level="1" />
+    <location_id>17</location_id>
+    <x>540</x>
+    <y>240</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>6008</mission_id>
+      <mission_id>6009</mission_id>
+      <mission_id>6010</mission_id>
+      <mission_id>6011</mission_id>
+      <mission_id>6012</mission_id>
+      <mission_id>6013</mission_id>
+      <mission_id>6014</mission_id>
+      <mission_id>6015</mission_id>
+      <mission_id>6016</mission_id>
+      <mission_id>6017</mission_id>
+      <mission_id>6018</mission_id>
+      <mission_id>6019</mission_id>
+      <mission_id>6020</mission_id>
+      <mission_id>6021</mission_id>
+      <mission_id>6022</mission_id>
+      <mission_id>6023</mission_id>
+      <mission_id>6024</mission_id>
+      <mission_id>6025</mission_id>
+      <mission_id>6026</mission_id>
+      <mission_id>6027</mission_id>
+      <mission_id>6028</mission_id>
+      <mission_id>6029</mission_id>
+      <mission_id>6030</mission_id>
+      <mission_id>6031</mission_id>
+      <mission_id>6032</mission_id>
+      <mission_id>6033</mission_id>
+      <mission_id>6034</mission_id>
+      <mission_id>6035</mission_id>
+      <mission_id>6036</mission_id>
+      <mission_id>6037</mission_id>
+      <mission_id>6038</mission_id>
+      <mission_id>6039</mission_id>
+      <mission_id>6040</mission_id>
+      <mission_id>6041</mission_id>
+      <mission_id>6042</mission_id>
+      <mission_id>6043</mission_id>
+      <mission_id>6044</mission_id>
+      <mission_id>6045</mission_id>
+      <mission_id>6046</mission_id>
+      <mission_id>6047</mission_id>
+      <mission_id>6048</mission_id>
+      <mission_id>6049</mission_id>
+      <mission_id>6050</mission_id>
+      <mission_id>6051</mission_id>
+      <mission_id>6052</mission_id>
+      <mission_id>6053</mission_id>
+      <mission_id>6054</mission_id>
+      <mission_id>6055</mission_id>
+      <mission_id>6056</mission_id>
+      <mission_id>6057</mission_id>
+      <mission_id>6058</mission_id>
+      <mission_id>6059</mission_id>
+      <mission_id>6060</mission_id>
+      <mission_id>6061</mission_id>
+      <mission_id>6062</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="544" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="550" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2013" />
+      <!-- Map Legendary -->
+      <card level="5" id="2013" />
+      <!-- Map Legendary -->
+      <card level="6" id="12013" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3077" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9118</id>
     <name>Desolate Red Valley</name>
     <campaign_req id="24" level="1" />
@@ -14188,8 +14272,8 @@
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
     <type>2</type>
-    <x>80</x>
-    <y>400</y>
+    <x>110</x>
+    <y>250</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>10141</mission_id>
@@ -14225,8 +14309,8 @@
     <show_level>1</show_level>
     <show_ranking>1</show_ranking>
     <type>2</type>
-    <x>540</x>
-    <y>590</y>
+    <x>680</x>
+    <y>350</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>10142</mission_id>
@@ -14249,5 +14333,42 @@
     </rewards>
     <find_item id="3074" drop_per_energy="1" />
     <find_item id="104500" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 143: ComDev Seafolk - Goblin Rise Stronghold -->
+  <campaign>
+    <id>10143</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>15</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>540</x>
+    <y>230</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10143</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28250" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28250" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104112" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3071" drop_per_energy="1" />
+    <find_item id="104501" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>
