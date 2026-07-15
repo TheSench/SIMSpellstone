@@ -20085,4 +20085,45 @@
       <!-- Seaweevil -->
     </deck>
   </mission>
+  <!-- Event 144: ComDev Undead - Skyhaven -->
+  <mission>
+    <id>10144</id>
+    <name>Skyhaven</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Word Eaters in Yuriel's Mystic Tomes to power up your cards.</desc>
+    <commander id="377" />
+    <!-- Well-Dressed Skeleton -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4113" />
+      <!-- Latest Champion -->
+      <card id="2158" />
+      <!-- Mortagan, Grave General -->
+      <card id="6626" />
+      <!-- The Undead Armada -->
+      <card id="5644" />
+      <!-- Katerina, Snowfang -->
+      <card id="6614" />
+      <!-- Blaze, the Unvoker -->
+      <card id="4049" />
+      <!-- Morty Ahab, Seaturned -->
+      <card id="4012" />
+      <!-- Cordelia the Twinblade -->
+      <card id="4096" />
+      <!-- Briareus, the Overgrowth -->
+      <card id="7083" />
+      <!-- Sludge Spine -->
+      <card id="6261" />
+      <!-- Darkwater Beguiler -->
+      <card id="6127" />
+      <!-- Hexapus -->
+      <card id="5237" />
+      <!-- Lanternbulb Hunter -->
+      <card id="2116" />
+      <!-- Messina's Choice -->
+      <card id="1644" />
+      <!-- Blackfin -->
+    </deck>
+  </mission>
 </root>

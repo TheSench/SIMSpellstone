@@ -8406,343 +8406,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 10 -->
-  <achievement>
-    <id>3363</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Castaway Cove' campaign on Mastery Level 4.</desc>
-    <mission_req>5954</mission_req>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <req>
-      <campaign>1171</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <item id="3074" number="50" />
-      <event_points id="7034" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3364</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Castaway Cove' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <achievement_req>3363</achievement_req>
-    <req>
-      <campaign>1171</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3365</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 2.</desc>
-    <mission_req>5966</mission_req>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <req>
-      <campaign>1172</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3366</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <achievement_req>3365</achievement_req>
-    <req>
-      <campaign>1172</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3367</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <achievement_req>3366</achievement_req>
-    <req>
-      <campaign>1172</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3368</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Island of Secrets' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1527786000</locked_start_time>
-    <!-- Thu, May 31 2018 17:00:00 -->
-    <achievement_req>3367</achievement_req>
-    <req>
-      <campaign>1172</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3369</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost History' campaign on Mastery Level 2.</desc>
-    <mission_req>5978</mission_req>
-    <locked_start_time>1528995600</locked_start_time>
-    <!-- Thu, June 14 2018 17:00:00 -->
-    <req>
-      <campaign>1173</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3370</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost History' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1528995600</locked_start_time>
-    <!-- Thu, June 14 2018 17:00:00 -->
-    <achievement_req>3369</achievement_req>
-    <req>
-      <campaign>1173</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3371</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost History' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1528995600</locked_start_time>
-    <!-- Thu, June 14 2018 17:00:00 -->
-    <achievement_req>3370</achievement_req>
-    <req>
-      <campaign>1173</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3372</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost History' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1528995600</locked_start_time>
-    <!-- Thu, June 14 2018 17:00:00 -->
-    <achievement_req>3371</achievement_req>
-    <req>
-      <campaign>1173</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Hunter Zind -->
-  <achievement>
-    <id>3373</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Storm Lord Father' campaign on Mastery Level 1.</desc>
-    <mission_req>5979</mission_req>
-    <locked_start_time>1528995600</locked_start_time>
-    <!-- Thu, June 14 2018 17:00:00 -->
-    <req>
-      <campaign>1174</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8010" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 10 weeks 5-8 -->
-  <achievement>
-    <id>3374</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 2.</desc>
-    <mission_req>5995</mission_req>
-    <locked_start_time>1530205200</locked_start_time>
-    <req>
-      <campaign>1175</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3375</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1530205200</locked_start_time>
-    <achievement_req>3374</achievement_req>
-    <req>
-      <campaign>1175</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3376</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1530205200</locked_start_time>
-    <achievement_req>3375</achievement_req>
-    <req>
-      <campaign>1175</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3377</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Lost Civilization' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1530205200</locked_start_time>
-    <achievement_req>3376</achievement_req>
-    <req>
-      <campaign>1175</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3378</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 2.</desc>
-    <mission_req>6007</mission_req>
-    <locked_start_time>1531414800</locked_start_time>
-    <req>
-      <campaign>1176</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3379</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1531414800</locked_start_time>
-    <achievement_req>3378</achievement_req>
-    <req>
-      <campaign>1176</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3380</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1531414800</locked_start_time>
-    <achievement_req>3379</achievement_req>
-    <req>
-      <campaign>1176</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3381</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Storm Incarnate' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1531414800</locked_start_time>
-    <achievement_req>3380</achievement_req>
-    <req>
-      <campaign>1176</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 11 -->
   <!-- Campaign Event 11 weeks 1-4 -->
   <!-- Stoneclad Toad -->
@@ -9880,154 +9545,7 @@
     </reward>
   </achievement>
   <!-- Wizard Event 91 - Insect - Node 1 -->
-  <achievement>
-    <id>3795</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Call to Adventure' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6854</mission_req>
-    <locked_start_time>1656003600</locked_start_time>
-    <!-- Thursday, June 23, 2022 17:00:00  -->
-    <req>
-      <campaign>1320</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3074" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7087" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3796</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Call to Adventure' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1656003600</locked_start_time>
-    <!-- Thursday, June 23, 2022 17:00:00  -->
-    <achievement_req>3795</achievement_req>
-    <req>
-      <campaign>1320</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3797</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Call to Adventure' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1656003600</locked_start_time>
-    <!-- Thursday, June 23, 2022 17:00:00  -->
-    <achievement_req>3796</achievement_req>
-    <req>
-      <campaign>1320</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3798</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'Call to Adventure' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1656003600</locked_start_time>
-    <!-- Thursday, June 23, 2022 17:00:00  -->
-    <achievement_req>3797</achievement_req>
-    <req>
-      <campaign>1320</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 91 - Insect - Node 2 -->
-  <achievement>
-    <id>3799</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'In Deep Danger' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6860</mission_req>
-    <locked_start_time>1657213200</locked_start_time>
-    <!-- Thursday, 7 July 2022 17:00:00 -->
-    <req>
-      <campaign>1321</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3800</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'In Deep Danger' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1657213200</locked_start_time>
-    <!-- Thursday, 7 July 2022 17:00:00 -->
-    <achievement_req>3799</achievement_req>
-    <req>
-      <campaign>1321</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3801</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the 'In Deep Danger' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1657213200</locked_start_time>
-    <!-- Thursday, 7 July 2022 17:00:00 -->
-    <achievement_req>3800</achievement_req>
-    <req>
-      <campaign>1321</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 92 - Undead - Node 1 -->
   <!-- Wizard Event 92 - Undead - Node 2 -->
   <!-- Wizard Event 93 - Frog - Node 1 -->
@@ -11044,29 +10562,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Forgotten Island -->
-    <id>4010</id>
-    <type>2</type>
-    <order>640</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Forgotten Island</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Forgotten Island.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>5982</mission_req>
-    <req>
-      <campaign>1171</campaign>
-      <campaign>1172</campaign>
-      <campaign>1173</campaign>
-      <campaign>1174</campaign>
-      <campaign>1175</campaign>
-      <campaign>1176</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
@@ -11242,32 +10737,6 @@
       <campaign>1119</campaign>
       <campaign>1318</campaign>
       <campaign>1319</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Forgotten Island Revisited -->
-    <id>4045</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Forgotten Island</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Forgotten Island.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6849</mission_req>
-    <achievement_req>4010</achievement_req>
-    <req>
-      <campaign>1171</campaign>
-      <campaign>1172</campaign>
-      <campaign>1173</campaign>
-      <campaign>1174</campaign>
-      <campaign>1175</campaign>
-      <campaign>1176</campaign>
-      <campaign>1320</campaign>
-      <campaign>1321</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -11455,25 +10924,6 @@
   <!-- Event 140: ComDev Elemental - Desolate Red Valley -->
   <!-- Event 141: ComDev Beast - Golden Crown Village -->
   <!-- Event 142: ComDev Insect - Forgotten Island -->
-  <achievement>
-    <id>10142</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Forgotten Island</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10142</mission_req>
-    <req>
-      <campaign>10142</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 143: ComDev Seafolk - Goblin Rise Stronghold -->
   <achievement>
     <id>10143</id>
@@ -11487,6 +10937,26 @@
     <mission_req>10143</mission_req>
     <req>
       <campaign>10143</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 144: ComDev Undead - Skyhaven -->
+  <achievement>
+    <id>10144</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Skyhaven</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10144</mission_req>
+    <req>
+      <campaign>10144</campaign>
       <level>7</level>
     </req>
     <reward>

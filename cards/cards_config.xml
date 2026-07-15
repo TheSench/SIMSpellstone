@@ -694,11 +694,9 @@
   </skillType>
   <skillType>
     <id>evadebarrier</id>
-    <order>1</order>
+    <order>115</order>
     <icon>antimagicfield</icon>
     <name>Mystic Barrier</name>
-    <upkeep>1</upkeep>
-    <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Grants Barrier and Invisibility to a random ally creature.</desc>
     <hidden>1</hidden>

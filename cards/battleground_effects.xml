@@ -953,7 +953,7 @@
   <battleground>
     <id>143</id>
     <name>Conflicted Ocean</name>
-    <desc>All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and Pierce equal to their base Attack.</desc>
+    <desc>All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage on their first attack each turn equal to 10% of their base Health and Pierce equal to their base Attack.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect" ignore_nullify="1" mult="0.2" all="1" base="health" y="12" delay="3,4" />
@@ -1116,7 +1116,7 @@
   <battleground>
     <id>150</id>
     <name>Exalted Warfare</name>
-    <desc>Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base Health!</desc>
+    <desc>Angels are ready for war, gaining Legion and unrestricted Fervor equal to 10% of their base Health.</desc>
     <icon>filter_angel2_64</icon>
     <icon_bundle>87</icon_bundle>
     <effect>
@@ -1462,7 +1462,7 @@
   <battleground>
     <id>163</id>
     <name>Flaming Scales</name>
-    <desc>All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base Health.</desc>
+    <desc>All Dragons gain Invisibility 3. 0-2D Dragons also gain 2 + 10% Scorch and 3-4D Dragons gain 15% Emberhide. % values gained on each skill are based on base Health.</desc>
     <icon>filter_dragon_64</icon>
     <effect>
       <add_skill id="evade" x="3" y="9" />
@@ -1864,7 +1864,7 @@
   <battleground>
     <id>187</id>
     <name>Beast Quake</name>
-    <desc>All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values based on Health.</desc>
+    <desc>All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values are based on Health.</desc>
     <icon>filter_frostbite_64</icon>
     <effect>
       <scale_health base="health" mult="0.20" yy="14" />
@@ -2163,7 +2163,7 @@
   <battleground>
     <id>206</id>
     <name>Deep Water Shelter</name>
-    <desc>All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage in their first attack equal to 20% of their base Health.</desc>
+    <desc>All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage on their first attack each turn equal to 20% of their base Health.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect_seafolk" ignore_nullify="1" mult="0.3" base="health" all="1" y="12" />
@@ -2212,6 +2212,29 @@
         </actor_effect>
       </skill>
       <add_skill id="bash" mult="0.2" all="1" base="health" y="12" delay="0,1,2" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>207</id>
+    <name>Crematory Comfort</name>
+    <desc>All Undead gain Ward equal to their Delay + 5, and Scorch equal to 10% of their base Health.</desc>
+    <icon>filter_undead_64</icon>
+    <effect>
+      <add_skill id="absorb_mecha" x="5" y="7" delay="0" />
+      <add_skill id="absorb_mecha" x="6" y="7" delay="1" />
+      <add_skill id="absorb_mecha" x="7" y="7" delay="2" />
+      <add_skill id="absorb_mecha" x="8" y="7" delay="3" />
+      <add_skill id="absorb_mecha" x="9" y="7" delay="4" />
+      <skill id="displayEffect" trigger="onSkill" s="absorb_mecha">
+        <target_effect>
+          <prefab>ReinforceActive</prefab>
+          <bundle_id>107</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+      </skill>
+      <add_skill id="burn" mult="0.1" base="health" y="7" />
     </effect>
   </battleground>
   <!-- ================================= -->

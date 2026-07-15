@@ -1570,13 +1570,13 @@ var CARDS = {
 				"health": 72,
 				"skill": [
 					{
-						"id": "evadebarrier",
-						"x": 1
-					},
-					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
+						"x": 1
+					},
+					{
+						"id": "evadebarrier",
 						"x": 1
 					}
 				]
@@ -1585,14 +1585,14 @@ var CARDS = {
 				"health": 78,
 				"skill": [
 					{
-						"id": "evadebarrier",
-						"x": 1
-					},
-					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
 						"x": 2
+					},
+					{
+						"id": "evadebarrier",
+						"x": 1
 					}
 				]
 			},
@@ -1604,14 +1604,14 @@ var CARDS = {
 				"health": 90,
 				"skill": [
 					{
-						"id": "evadebarrier",
-						"x": 1
-					},
-					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
 						"x": 3
+					},
+					{
+						"id": "evadebarrier",
+						"x": 1
 					}
 				]
 			},
@@ -1619,14 +1619,14 @@ var CARDS = {
 				"health": 96,
 				"skill": [
 					{
-						"id": "evadebarrier",
-						"x": 2
-					},
-					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
 						"x": 3
+					},
+					{
+						"id": "evadebarrier",
+						"x": 2
 					}
 				]
 			},
@@ -1634,14 +1634,14 @@ var CARDS = {
 				"health": 99,
 				"skill": [
 					{
-						"id": "evadebarrier",
-						"x": 2
-					},
-					{
 						"all": "1",
 						"id": "imbue",
 						"s": "armored",
 						"x": 4
+					},
+					{
+						"id": "evadebarrier",
+						"x": 2
 					}
 				]
 			}
@@ -86184,13 +86184,190 @@ var CARDS = {
 		}
 	},
 	"4113": {
+		"attack": 16,
+		"card_type": "2",
+		"cost": 4,
+		"health": 57,
+		"hidden_until": "1784221200000",
+		"id": "4113",
+		"maxLevel": 10,
+		"name": "Skarn, the Unburied",
+		"picture": "Unburied_Crawler",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 10
+			},
+			{
+				"id": "armored",
+				"x": 9
+			},
+			{
+				"id": "counterburn",
+				"x": 6
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"attack": 17,
+				"health": 58,
+				"skill": []
+			},
+			"3": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "counterburn",
+						"x": 7
+					}
+				]
+			},
+			"4": {
+				"health": 59,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "counterburn",
+						"x": 7
+					}
+				]
+			},
+			"5": {
+				"attack": 18,
+				"health": 60,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 13
+					},
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"id": "counterburn",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 13
+					},
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "counterburn",
+						"x": 8
+					}
+				]
+			},
+			"7": {
+				"attack": 19,
+				"health": 61,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 14
+					},
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "counterburn",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"health": 62,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 15
+					},
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"id": "counterburn",
+						"x": 9
+					}
+				]
+			},
+			"9": {
+				"attack": 20,
+				"health": 63,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 15
+					},
+					{
+						"id": "armored",
+						"x": 12
+					},
+					{
+						"id": "counterburn",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 20,
+				"health": 64,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 16
+					},
+					{
+						"id": "armored",
+						"x": 12
+					},
+					{
+						"id": "counterburn",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4114": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1784221200000",
-		"id": "4113",
+		"hidden_until": "1786640400000",
+		"id": "4114",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86199,7 +86376,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"7"
+			"6"
 		],
 		"type": "0",
 		"upgrades": {

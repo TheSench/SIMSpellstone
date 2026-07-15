@@ -750,14 +750,14 @@
     <upgrade>
       <level>2</level>
       <health>72</health>
-      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="1" />
+      <skill id="evadebarrier" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>78</health>
-      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="2" />
+      <skill id="evadebarrier" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -766,20 +766,20 @@
     <upgrade>
       <level>5</level>
       <health>90</health>
-      <skill id="evadebarrier" x="1" />
       <skill id="imbue" s="armored" all="1" x="3" />
+      <skill id="evadebarrier" x="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>96</health>
-      <skill id="evadebarrier" x="2" />
       <skill id="imbue" s="armored" all="1" x="3" />
+      <skill id="evadebarrier" x="2" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>99</health>
-      <skill id="evadebarrier" x="2" />
       <skill id="imbue" s="armored" all="1" x="4" />
+      <skill id="evadebarrier" x="2" />
     </upgrade>
   </unit>
   <unit>

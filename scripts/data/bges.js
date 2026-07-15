@@ -1295,7 +1295,7 @@ var BATTLEGROUNDS = {
 		"name": "Beetleton Mutations"
 	},
 	"143": {
-		"desc": "All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage in their first attack equal to 10% of their base Health and Pierce equal to their base Attack.",
+		"desc": "All Seafolk gain Barrier equal to 20% of their base Health. Delay 0-2 Seafolk also deal bonus damage on their first attack each turn equal to 10% of their base Health and Pierce equal to their base Attack.",
 		"effect": [
 			{
 				"all": "1",
@@ -1575,7 +1575,7 @@ var BATTLEGROUNDS = {
 		"name": "Zenith of Dragons"
 	},
 	"150": {
-		"desc": "Angels are ready for war, gaining Legion 10% and Unrestricted Fervor 10%. Values gained on each skill are based on base Health!",
+		"desc": "Angels are ready for war, gaining Legion and unrestricted Fervor equal to 10% of their base Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -2088,7 +2088,7 @@ var BATTLEGROUNDS = {
 		"name": "Deadly Sting"
 	},
 	"163": {
-		"desc": "All Dragons gain invisibility equal to 3, 0-2 Delay Dragons gain 2 plus 10% scorch and 3-4 delay Dragons gain 15% Emberhide. Values gained on each skill are based on base Health.",
+		"desc": "All Dragons gain Invisibility 3. 0-2D Dragons also gain 2 + 10% Scorch and 3-4D Dragons gain 15% Emberhide. % values gained on each skill are based on base Health.",
 		"effect": [
 			{
 				"effect_type": "add_skill",
@@ -3214,7 +3214,7 @@ var BATTLEGROUNDS = {
 		"name": "Lily & Spear Regenerated"
 	},
 	"187": {
-		"desc": "All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values based on Health.",
+		"desc": "All Beasts gain 20% extra Health, and bonus Berserk and Armor equal to 20% minus twice their Delay. All % values are based on Health.",
 		"effect": [
 			{
 				"base": "health",
@@ -4184,7 +4184,7 @@ var BATTLEGROUNDS = {
 		"name": "Adaptive Swarm"
 	},
 	"206": {
-		"desc": "All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage in their first attack equal to 20% of their base Health.",
+		"desc": "All Seafolk dive beneath the waves, gaining Barrier each turn equal to 30% of their base Health while on Delay. 0-2D Seafolk also deal extra damage on their first attack each turn equal to 20% of their base Health.",
 		"effect": [
 			{
 				"all": "1",
@@ -4211,6 +4211,65 @@ var BATTLEGROUNDS = {
 		],
 		"id": "206",
 		"name": "Deep Water Shelter"
+	},
+	"207": {
+		"desc": "All Undead gain Ward equal to their Delay + 5, and Scorch equal to 10% of their base Health.",
+		"effect": [
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 5,
+				"y": "7"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 6,
+				"y": "7"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "7"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 8,
+				"y": "7"
+			},
+			{
+				"delay": [
+					4
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 9,
+				"y": "7"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "burn",
+				"mult": 0.1,
+				"y": "7"
+			}
+		],
+		"id": "207",
+		"name": "Crematory Comfort"
 	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
