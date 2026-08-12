@@ -12578,6 +12578,90 @@
   <!-- = START (9000-) Consolidated Classic Nodes = -->
   <!-- ============================================ -->
   <campaign>
+    <id>9115</id>
+    <name>Goblin Rise Stronghold</name>
+    <campaign_req id="24" level="1" />
+    <location_id>15</location_id>
+    <x>240</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5886</mission_id>
+      <mission_id>5887</mission_id>
+      <mission_id>5888</mission_id>
+      <mission_id>5889</mission_id>
+      <mission_id>5890</mission_id>
+      <mission_id>5891</mission_id>
+      <mission_id>5892</mission_id>
+      <mission_id>5893</mission_id>
+      <mission_id>5894</mission_id>
+      <mission_id>5895</mission_id>
+      <mission_id>5896</mission_id>
+      <mission_id>5897</mission_id>
+      <mission_id>5898</mission_id>
+      <mission_id>5899</mission_id>
+      <mission_id>5900</mission_id>
+      <mission_id>5901</mission_id>
+      <mission_id>5902</mission_id>
+      <mission_id>5903</mission_id>
+      <mission_id>5904</mission_id>
+      <mission_id>5905</mission_id>
+      <mission_id>5906</mission_id>
+      <mission_id>5907</mission_id>
+      <mission_id>5908</mission_id>
+      <mission_id>5909</mission_id>
+      <mission_id>5910</mission_id>
+      <mission_id>5911</mission_id>
+      <mission_id>5924</mission_id>
+      <mission_id>5925</mission_id>
+      <mission_id>5926</mission_id>
+      <mission_id>5927</mission_id>
+      <mission_id>5928</mission_id>
+      <mission_id>5929</mission_id>
+      <mission_id>5930</mission_id>
+      <mission_id>5931</mission_id>
+      <mission_id>5932</mission_id>
+      <mission_id>5933</mission_id>
+      <mission_id>5934</mission_id>
+      <mission_id>5935</mission_id>
+      <mission_id>5936</mission_id>
+      <mission_id>5937</mission_id>
+      <mission_id>5938</mission_id>
+      <mission_id>5939</mission_id>
+      <mission_id>5940</mission_id>
+      <mission_id>5941</mission_id>
+      <mission_id>5942</mission_id>
+      <mission_id>5943</mission_id>
+      <mission_id>5944</mission_id>
+      <mission_id>5945</mission_id>
+      <mission_id>5946</mission_id>
+      <mission_id>5947</mission_id>
+      <mission_id>5948</mission_id>
+      <mission_id>5949</mission_id>
+      <mission_id>5950</mission_id>
+      <mission_id>5951</mission_id>
+      <mission_id>5952</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" number="100" />
+      <!-- Gold -->
+      <item level="2" id="551" number="2" />
+      <!-- Tribe 1 Epic Packs -->
+      <item level="3" id="556" number="2" />
+      <!-- Tribe 2 Epic Packs -->
+      <card level="4" id="2065" />
+      <!-- Map Legendary -->
+      <card level="5" id="2065" />
+      <!-- Map Legendary -->
+      <card level="6" id="12065" />
+      <!-- Dual Map Legendary -->
+      <item level="7" id="2531" number="1" />
+      <!-- Inventory Expansion -->
+    </rewards>
+    <find_item id="3071" drop_per_energy="0.5" />
+    <find_item id="2527" drop_per_energy="0.01" />
+  </campaign>
+  <campaign>
     <id>9116</id>
     <name>Forgotten Island</name>
     <campaign_req id="24" level="1" />
@@ -14491,5 +14575,42 @@
     </rewards>
     <find_item id="3068" drop_per_energy="1" />
     <find_item id="104502" drop_per_energy="0.01" min="1" max="4" />
+  </campaign>
+  <!-- Event 145: ComDev Angel - The Celestial Vault -->
+  <campaign>
+    <id>10145</id>
+    <name>Alyel Back in Time</name>
+    <event_only>1</event_only>
+    <hidden>1</hidden>
+    <icon id="energy_refill" bundle="30" />
+    <battleground_id>2124</battleground_id>
+    <location_id>13</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <type>2</type>
+    <x>730</x>
+    <y>460</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>10145</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="28190" number="300" />
+      <!-- Super Flask -->
+      <item level="2" id="4013" number="4" />
+      <!-- Legendary Rune Sliver -->
+      <card level="3" id="20513" />
+      <!-- Arcane Motherlode -->
+      <item level="4" id="28190" number="300" />
+      <!-- Super Flask -->
+      <item level="5" id="20" number="6" />
+      <!-- Arena Trophy -->
+      <item level="6" id="529" number="4" />
+      <!-- Massive Runecrafter Chest -->
+      <item level="7" id="104114" number="100" />
+      <!-- New Reward Champion -->
+    </rewards>
+    <find_item id="3065" drop_per_energy="1" />
+    <find_item id="104503" drop_per_energy="0.01" min="1" max="4" />
   </campaign>
 </root>

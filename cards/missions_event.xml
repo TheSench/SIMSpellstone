@@ -20126,4 +20126,45 @@
       <!-- Blackfin -->
     </deck>
   </mission>
+  <!-- Event 145: ComDev Angel - The Celestial Vault -->
+  <mission>
+    <id>10145</id>
+    <name>The Celestial Vault</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Breezy Wind in Celestial Orbs to power up your cards.</desc>
+    <commander id="364" />
+    <!-- Dyrnwyn's Spirit -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4114" />
+      <!-- Latest Champion -->
+      <card id="5639" />
+      <!-- Zakum, the Destroyer -->
+      <card id="5631" />
+      <!-- Saint Galahad -->
+      <card id="5603" />
+      <!-- Dina the Iridescent -->
+      <card id="4088" />
+      <!-- Triangelis, the Eidolon -->
+      <card id="4077" />
+      <!-- Archangel Melkira -->
+      <card id="4041" />
+      <!-- Leyla, Queen of Skyhaven -->
+      <card id="4002" />
+      <!-- Razi the Fallen Light -->
+      <card id="5078" />
+      <!-- Asariel -->
+      <card id="2086" />
+      <!-- Rimelight Crusader -->
+      <card id="2083" />
+      <!-- Habrok, the Lance -->
+      <card id="2028" />
+      <!-- Infinity -->
+      <card id="1042" />
+      <!-- Archgeneral -->
+      <card id="1041" />
+      <!-- Avenging Angel -->
+    </deck>
+  </mission>
 </root>

@@ -86361,13 +86361,213 @@ var CARDS = {
 		}
 	},
 	"4114": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 58,
+		"hidden_until": "1786640400000",
+		"id": "4114",
+		"maxLevel": 10,
+		"name": "Ragna, the Reckoner",
+		"picture": "SS_AngelCard",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "counter",
+				"x": 8
+			},
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "enrage",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"attack": 14,
+				"health": 59,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 8
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 5
+					}
+				]
+			},
+			"3": {
+				"health": 60,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 9
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"health": 61,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 10
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 6
+					}
+				]
+			},
+			"5": {
+				"attack": 15,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 7
+					}
+				]
+			},
+			"6": {
+				"health": 62,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 7
+					}
+				]
+			},
+			"7": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 11
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 8
+					}
+				]
+			},
+			"8": {
+				"health": 63,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 12
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 9
+					}
+				]
+			},
+			"9": {
+				"attack": 17,
+				"health": 64,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 12
+					},
+					{
+						"id": "corrosive",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 17,
+				"health": 65,
+				"skill": [
+					{
+						"id": "counter",
+						"x": 13
+					},
+					{
+						"id": "corrosive",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "enrage",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4115": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1786640400000",
-		"id": "4114",
+		"hidden_until": "1789059600000",
+		"id": "4115",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86376,7 +86576,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"6"
+			"16"
 		],
 		"type": "0",
 		"upgrades": {
@@ -87536,6 +87736,549 @@ var CARDS = {
 						"all": "1",
 						"id": "rally",
 						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4506": {
+		"attack": 6,
+		"card_type": "2",
+		"cost": 1,
+		"health": 22,
+		"hidden_until": "1786640400000",
+		"id": "4506",
+		"maxLevel": 10,
+		"name": "Samael, Leader of Aether",
+		"picture": "Seraph_B",
+		"rarity": 5,
+		"set": "5200",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "legion",
+				"x": 3
+			},
+			{
+				"id": "fervor",
+				"x": 3,
+				"y": "1"
+			},
+			{
+				"c": 4,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"6"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"attack": 7,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 4
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"health": 23,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 4,
+						"y": "1"
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 24,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"attack": 8,
+				"health": 25,
+				"skill": []
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "legion",
+						"x": 5
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"8": {
+				"attack": 9,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 5,
+						"y": "1"
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"9": {
+				"health": 26,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 6,
+						"y": "1"
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"10": {
+				"attack": 9,
+				"health": 26,
+				"skill": [
+					{
+						"id": "legion",
+						"x": 6
+					},
+					{
+						"id": "fervor",
+						"x": 6
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"4507": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 2,
+		"health": 32,
+		"hidden_until": "1786640400000",
+		"id": "4507",
+		"maxLevel": 10,
+		"name": "Yuriel, the Manashifter",
+		"picture": "Owl_Mystic_A",
+		"rarity": 5,
+		"set": "5200",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "absorb",
+				"x": 8
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			},
+			{
+				"id": "mark",
+				"x": 1
+			}
+		],
+		"sub_type": [
+			"10"
+		],
+		"type": "1",
+		"upgrades": {
+			"2": {
+				"health": 33,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "mark",
+						"x": 2
+					}
+				]
+			},
+			"3": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "mark",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 34,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					},
+					{
+						"id": "mark",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"id": "mark",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 35,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					},
+					{
+						"id": "mark",
+						"x": 6
+					}
+				]
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"id": "mark",
+						"x": 7
+					}
+				]
+			},
+			"8": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 13
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"id": "mark",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"health": 36,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					},
+					{
+						"id": "mark",
+						"x": 9
+					}
+				]
+			},
+			"10": {
+				"attack": 16,
+				"health": 36,
+				"skill": [
+					{
+						"id": "absorb",
+						"x": 14
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					},
+					{
+						"id": "mark",
+						"x": 10
+					}
+				]
+			}
+		}
+	},
+	"4508": {
+		"attack": 15,
+		"card_type": "2",
+		"cost": 4,
+		"health": 60,
+		"hidden_until": "1786640400000",
+		"id": "4508",
+		"maxLevel": 10,
+		"name": "Tarian, the Lich Lord",
+		"picture": "Lich_King_A",
+		"rarity": 5,
+		"set": "5200",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "counterburn",
+				"x": 5
+			},
+			{
+				"id": "vampirism",
+				"x": 5
+			}
+		],
+		"sub_type": [
+			"7"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"health": 61,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 6
+					},
+					{
+						"id": "vampirism",
+						"x": 6
+					}
+				]
+			},
+			"3": {
+				"attack": 16,
+				"health": 62,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 7
+					},
+					{
+						"id": "vampirism",
+						"x": 6
+					}
+				]
+			},
+			"4": {
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 8
+					},
+					{
+						"id": "vampirism",
+						"x": 6
+					},
+					{
+						"id": "silence",
+						"x": 1
+					}
+				]
+			},
+			"5": {
+				"health": 63,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 8
+					},
+					{
+						"id": "vampirism",
+						"x": 7
+					},
+					{
+						"id": "silence",
+						"x": 1
+					}
+				]
+			},
+			"6": {
+				"attack": 17,
+				"health": 64,
+				"skill": []
+			},
+			"7": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 9
+					},
+					{
+						"id": "vampirism",
+						"x": 7
+					},
+					{
+						"id": "silence",
+						"x": 1
+					}
+				]
+			},
+			"8": {
+				"attack": 18,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 9
+					},
+					{
+						"id": "vampirism",
+						"x": 8
+					},
+					{
+						"id": "silence",
+						"x": 1
+					}
+				]
+			},
+			"9": {
+				"health": 66,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 10
+					},
+					{
+						"id": "vampirism",
+						"x": 8
+					},
+					{
+						"id": "silence",
+						"x": 1
+					}
+				]
+			},
+			"10": {
+				"attack": 18,
+				"health": 66,
+				"skill": [
+					{
+						"id": "counterburn",
+						"x": 10
+					},
+					{
+						"id": "vampirism",
+						"x": 9
+					},
+					{
+						"id": "silence",
+						"x": 2
 					}
 				]
 			}

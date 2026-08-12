@@ -164,6 +164,38 @@
       <gold>30</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>104</id>
+    <type>1</type>
+    <order>999</order>
+    <name>Mythic Hero Midas</name>
+    <icon>book_home</icon>
+    <desc>Purchase Midas Ultima from the store using Endgame Seals.</desc>
+    <mission_req>6610</mission_req>
+    <!-- Adventure's End -->
+    <req>
+      <store_item id="74" number="1" />
+    </req>
+    <reward>
+      <wb>600</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>105</id>
+    <type>1</type>
+    <order>999</order>
+    <name>Mythic Void Hero</name>
+    <icon>book_home</icon>
+    <desc>Purchase Tome of Darkness from the store using Endgame Seals.</desc>
+    <mission_req>6610</mission_req>
+    <!-- Adventure's End -->
+    <req>
+      <store_item id="75" number="1" />
+    </req>
+    <reward>
+      <wb>600</wb>
+    </reward>
+  </achievement>
   <!-- END Store Quests -->
   <!-- 200: Campaign Quests START -->
   <achievement>
@@ -8073,338 +8105,9 @@
     </reward>
   </achievement>
   <!-- Campaign Event 9 -->
-  <achievement>
-    <id>3344</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'For the Love of Dragons' campaign on Mastery Level 4.</desc>
-    <mission_req>5887</mission_req>
-    <locked_start_time>1522947600</locked_start_time>
-    <req>
-      <campaign>1162</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <item id="3071" number="50" />
-      <event_points id="7032" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3345</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'For the Love of Dragons' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1522947600</locked_start_time>
-    <achievement_req>3344</achievement_req>
-    <req>
-      <campaign>1162</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 9 weeks 1-4 -->
-  <achievement>
-    <id>3346</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 2.</desc>
-    <mission_req>5899</mission_req>
-    <locked_start_time>1522947600</locked_start_time>
-    <req>
-      <campaign>1163</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3347</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1522947600</locked_start_time>
-    <achievement_req>3346</achievement_req>
-    <req>
-      <campaign>1163</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3348</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1522947600</locked_start_time>
-    <achievement_req>3347</achievement_req>
-    <req>
-      <campaign>1163</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3349</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Best Laid Plans' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1522947600</locked_start_time>
-    <achievement_req>3348</achievement_req>
-    <req>
-      <campaign>1163</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3350</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 2.</desc>
-    <mission_req>5911</mission_req>
-    <locked_start_time>1524157200</locked_start_time>
-    <req>
-      <campaign>1164</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3351</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1524157200</locked_start_time>
-    <achievement_req>3350</achievement_req>
-    <req>
-      <campaign>1164</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3352</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1524157200</locked_start_time>
-    <achievement_req>3351</achievement_req>
-    <req>
-      <campaign>1164</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3353</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'The Missing Pyrokinetic' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1524157200</locked_start_time>
-    <achievement_req>3352</achievement_req>
-    <req>
-      <campaign>1164</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Pinpin, Dragon Handler recipe -->
-  <achievement>
-    <id>3354</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'A Test of Might' campaign on Mastery Level 1.</desc>
-    <mission_req>5924</mission_req>
-    <locked_start_time>1524157200</locked_start_time>
-    <!-- Thu, 19 April 2018 17:00:00 -->
-    <req>
-      <campaign>1168</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8008" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 9 weeks 5-8 -->
-  <achievement>
-    <id>3355</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 2.</desc>
-    <mission_req>5940</mission_req>
-    <locked_start_time>1525366800</locked_start_time>
-    <!-- Thu, 03 May 2018 17:00:00 -->
-    <req>
-      <campaign>1169</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3356</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1525366800</locked_start_time>
-    <!-- Thu, 03 May 2018 17:00:00 -->
-    <achievement_req>3355</achievement_req>
-    <req>
-      <campaign>1169</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3357</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1525366800</locked_start_time>
-    <!-- Thu, 03 May 2018 17:00:00 -->
-    <achievement_req>3356</achievement_req>
-    <req>
-      <campaign>1169</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3358</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Prisoner Escape' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1525366800</locked_start_time>
-    <!-- Thu, 03 May 2018 17:00:00 -->
-    <achievement_req>3357</achievement_req>
-    <req>
-      <campaign>1169</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3359</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 2.</desc>
-    <mission_req>5952</mission_req>
-    <locked_start_time>1526576400</locked_start_time>
-    <req>
-      <campaign>1170</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3360</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1526576400</locked_start_time>
-    <achievement_req>3359</achievement_req>
-    <req>
-      <campaign>1170</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3361</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1526576400</locked_start_time>
-    <achievement_req>3360</achievement_req>
-    <req>
-      <campaign>1170</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3362</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Direct Encounter' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1526576400</locked_start_time>
-    <achievement_req>3361</achievement_req>
-    <req>
-      <campaign>1170</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 10 -->
   <!-- Hunter Zind -->
   <!-- Campaign Event 10 weeks 5-8 -->
@@ -8631,154 +8334,7 @@
   </achievement>
   <!-- Wizard Event 77 - Insect END -->
   <!-- Wizard Event 78 - Goblin - Node 1 -->
-  <achievement>
-    <id>3694</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6659</mission_req>
-    <locked_start_time>1624554000</locked_start_time>
-    <!-- Thursday, 24 June 2021 17:00:00 -->
-    <req>
-      <campaign>1290</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3071" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7074" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3695</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1624554000</locked_start_time>
-    <!-- Thursday, 24 June 2021 17:00:00 -->
-    <achievement_req>3694</achievement_req>
-    <req>
-      <campaign>1290</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3696</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1624554000</locked_start_time>
-    <!-- Thursday, 24 June 2021 17:00:00 -->
-    <achievement_req>3695</achievement_req>
-    <req>
-      <campaign>1290</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3697</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Surprise Goblin Plot' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1624554000</locked_start_time>
-    <!-- Thursday, 24 June 2021 17:00:00 -->
-    <achievement_req>3696</achievement_req>
-    <req>
-      <campaign>1290</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 78 - Goblin - Node 2 -->
-  <achievement>
-    <id>3698</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Ain't Nobody Wants to Thwart This' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6665</mission_req>
-    <locked_start_time>1625763600</locked_start_time>
-    <!-- Thursday, 8 July 2021 17:00:00 -->
-    <req>
-      <campaign>1291</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3699</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Ain't Nobody Wants to Thwart This' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1625763600</locked_start_time>
-    <!-- Thursday, 8 July 2021 17:00:00 -->
-    <achievement_req>3698</achievement_req>
-    <req>
-      <campaign>1291</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3700</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the 'Ain't Nobody Wants to Thwart This' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1625763600</locked_start_time>
-    <!-- Thursday, 8 July 2021 17:00:00 -->
-    <achievement_req>3699</achievement_req>
-    <req>
-      <campaign>1291</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 78 - Goblin END -->
   <!-- Wizard Event 79 - Avian - Node 1 -->
   <achievement>
@@ -10539,29 +10095,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Goblin Rise Stronghold -->
-    <id>4009</id>
-    <type>2</type>
-    <order>639</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Goblin Rise Stronghold</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Goblin Rise Stronghold.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>5927</mission_req>
-    <req>
-      <campaign>1162</campaign>
-      <campaign>1163</campaign>
-      <campaign>1164</campaign>
-      <campaign>1168</campaign>
-      <campaign>1169</campaign>
-      <campaign>1170</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
@@ -10581,32 +10114,6 @@
       <campaign>1135</campaign>
       <campaign>1288</campaign>
       <campaign>1289</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Goblin Rise Stronghold Revisited -->
-    <id>4032</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Goblin Rise Stronghold</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Goblin Rise Stronghold.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6654</mission_req>
-    <achievement_req>4009</achievement_req>
-    <req>
-      <campaign>1162</campaign>
-      <campaign>1163</campaign>
-      <campaign>1164</campaign>
-      <campaign>1168</campaign>
-      <campaign>1169</campaign>
-      <campaign>1170</campaign>
-      <campaign>1290</campaign>
-      <campaign>1291</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -10957,6 +10464,26 @@
     <mission_req>10144</mission_req>
     <req>
       <campaign>10144</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 145: ComDev Angel - The Celestial Vault -->
+  <achievement>
+    <id>10145</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>The Celestial Vault</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10145</mission_req>
+    <req>
+      <campaign>10145</campaign>
       <level>7</level>
     </req>
     <reward>

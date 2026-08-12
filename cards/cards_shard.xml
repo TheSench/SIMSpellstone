@@ -9836,20 +9836,111 @@
   <unit>
     <id>4114</id>
     <card_type>2</card_type>
+    <name>Ragna, the Reckoner</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>SS_AngelCard</picture>
+    <asset_bundle>283</asset_bundle>
+    <hidden_until_time>1786640400</hidden_until_time>
+    <item_name>Ragna Stone</item_name>
+    <item_desc>Collect Ragna Stones to upgrade Ragna, the Reckoner!</item_desc>
+    <item_icon>championStone_epic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>104003</item_overflow_item_id>
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <attack>13</attack>
+    <health>58</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="8" />
+    <skill id="corrosive" x="6" />
+    <skill id="enrage" all="1" x="5" />
+    <upgrade>
+      <level>2</level>
+      <attack>14</attack>
+      <health>59</health>
+      <skill id="counter" x="8" />
+      <skill id="corrosive" x="7" />
+      <skill id="enrage" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>60</health>
+      <skill id="counter" x="9" />
+      <skill id="corrosive" x="7" />
+      <skill id="enrage" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>61</health>
+      <skill id="counter" x="10" />
+      <skill id="corrosive" x="8" />
+      <skill id="enrage" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>15</attack>
+      <skill id="counter" x="11" />
+      <skill id="corrosive" x="8" />
+      <skill id="enrage" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="counter" x="11" />
+      <skill id="corrosive" x="9" />
+      <skill id="enrage" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>16</attack>
+      <skill id="counter" x="11" />
+      <skill id="corrosive" x="10" />
+      <skill id="enrage" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>63</health>
+      <skill id="counter" x="12" />
+      <skill id="corrosive" x="10" />
+      <skill id="enrage" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <attack>17</attack>
+      <health>64</health>
+      <skill id="counter" x="12" />
+      <skill id="corrosive" x="11" />
+      <skill id="enrage" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>17</attack>
+      <health>65</health>
+      <skill id="counter" x="13" />
+      <skill id="corrosive" x="11" />
+      <skill id="enrage" all="1" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4115</id>
+    <card_type>2</card_type>
     <name>Placeholder Champion</name>
     <set>5000</set>
     <shard_card>1</shard_card>
     <cannot_salvage>1</cannot_salvage>
     <picture>Dust_Mite</picture>
     <asset_bundle>1</asset_bundle>
-    <hidden_until_time>1786640400</hidden_until_time>
+    <hidden_until_time>1789059600</hidden_until_time>
     <item_name>Placeholder Stone</item_name>
     <item_desc>Collect Placeholder Stones to upgrade Placeholder Champion!</item_desc>
     <item_icon>championStone_epic</item_icon>
     <item_bundle_id>58</item_bundle_id>
     <item_overflow_item_id>104003</item_overflow_item_id>
     <type>0</type>
-    <sub_type>6</sub_type>
+    <sub_type>16</sub_type>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -10436,6 +10527,267 @@
     </upgrade>
   </unit>
   <!-- Endgame Champions End -->
+  <!-- =================================== -->
+  <!-- === COMDEV PRIMORDIAL CHAMPIONS === -->
+  <!-- =================================== -->
+  <unit>
+    <id>4506</id>
+    <card_type>2</card_type>
+    <name>Samael, Leader of Aether</name>
+    <set>5200</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Seraph_B</picture>
+    <asset_bundle>2</asset_bundle>
+    <hidden_until_time>1786640400</hidden_until_time>
+    <item_name>Samael Stone</item_name>
+    <item_desc>Collect Samael Stones to upgrade Samael, Leader of Aether!</item_desc>
+    <item_icon>championStone_mythic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>1</cost>
+    <rarity>5</rarity>
+    <skill id="legion" x="3" />
+    <skill id="fervor" x="3" y="1" />
+    <skill id="flurry" c="4" />
+    <upgrade>
+      <level>2</level>
+      <skill id="legion" x="4" />
+      <skill id="fervor" x="4" y="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <skill id="legion" x="4" />
+      <skill id="fervor" x="4" y="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="legion" x="5" />
+      <skill id="fervor" x="4" y="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+      <skill id="legion" x="5" />
+      <skill id="fervor" x="5" y="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="legion" x="5" />
+      <skill id="fervor" x="5" y="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>9</attack>
+      <skill id="legion" x="6" />
+      <skill id="fervor" x="5" y="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>26</health>
+      <skill id="legion" x="6" />
+      <skill id="fervor" x="6" y="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>9</attack>
+      <health>26</health>
+      <skill id="legion" x="6" />
+      <skill id="fervor" x="6" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4507</id>
+    <card_type>2</card_type>
+    <name>Yuriel, the Manashifter</name>
+    <set>5200</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Owl_Mystic_A</picture>
+    <asset_bundle>2</asset_bundle>
+    <hidden_until_time>1786640400</hidden_until_time>
+    <item_name>Yuriel Stone</item_name>
+    <item_desc>Collect Yuriel Stones to upgrade Yuriel, the Manashifter!</item_desc>
+    <item_icon>championStone_mythic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <attack>13</attack>
+    <health>32</health>
+    <cost>2</cost>
+    <rarity>5</rarity>
+    <skill id="absorb" x="8" />
+    <skill id="protect" all="1" x="3" />
+    <skill id="mark" x="1" />
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="absorb" x="9" />
+      <skill id="protect" all="1" x="4" />
+      <skill id="mark" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>14</attack>
+      <skill id="absorb" x="10" />
+      <skill id="protect" all="1" x="4" />
+      <skill id="mark" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="absorb" x="11" />
+      <skill id="protect" all="1" x="4" />
+      <skill id="mark" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="absorb" x="12" />
+      <skill id="protect" all="1" x="5" />
+      <skill id="mark" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+      <health>35</health>
+      <skill id="absorb" x="12" />
+      <skill id="protect" all="1" x="5" />
+      <skill id="mark" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="absorb" x="12" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="mark" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>16</attack>
+      <skill id="absorb" x="13" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="mark" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>36</health>
+      <skill id="absorb" x="14" />
+      <skill id="protect" all="1" x="6" />
+      <skill id="mark" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>16</attack>
+      <health>36</health>
+      <skill id="absorb" x="14" />
+      <skill id="protect" all="1" x="7" />
+      <skill id="mark" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4508</id>
+    <card_type>2</card_type>
+    <name>Tarian, the Lich Lord</name>
+    <set>5200</set>
+    <shard_card>1</shard_card>
+    <cannot_salvage>1</cannot_salvage>
+    <picture>Lich_King_A</picture>
+    <asset_bundle>10</asset_bundle>
+    <hidden_until_time>1786640400</hidden_until_time>
+    <item_name>Tarian Stone</item_name>
+    <item_desc>Collect Tarian Stones to upgrade Tarian, the Lich Lord!</item_desc>
+    <item_icon>championStone_mythic</item_icon>
+    <item_bundle_id>58</item_bundle_id>
+    <item_overflow_item_id>21</item_overflow_item_id>
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <attack>15</attack>
+    <health>60</health>
+    <cost>4</cost>
+    <rarity>5</rarity>
+    <skill id="counterburn" x="5" />
+    <skill id="vampirism" x="5" />
+    <upgrade>
+      <level>2</level>
+      <health>61</health>
+      <skill id="counterburn" x="6" />
+      <skill id="vampirism" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>16</attack>
+      <health>62</health>
+      <skill id="counterburn" x="7" />
+      <skill id="vampirism" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counterburn" x="8" />
+      <skill id="vampirism" x="6" />
+      <skill id="silence" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>63</health>
+      <skill id="counterburn" x="8" />
+      <skill id="vampirism" x="7" />
+      <skill id="silence" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>17</attack>
+      <health>64</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>65</health>
+      <skill id="counterburn" x="9" />
+      <skill id="vampirism" x="7" />
+      <skill id="silence" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>18</attack>
+      <skill id="counterburn" x="9" />
+      <skill id="vampirism" x="8" />
+      <skill id="silence" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>66</health>
+      <skill id="counterburn" x="10" />
+      <skill id="vampirism" x="8" />
+      <skill id="silence" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>18</attack>
+      <health>66</health>
+      <skill id="counterburn" x="10" />
+      <skill id="vampirism" x="9" />
+      <skill id="silence" x="2" />
+    </upgrade>
+  </unit>
+  <!-- Primordial Champions End -->
   <!-- =============================== -->
   <!-- === AETHER PREMIUM CHAMPION === -->
   <!-- =============================== -->

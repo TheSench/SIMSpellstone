@@ -428,6 +428,54 @@
 		<item id="514" quantity="1"/> <!- filler reward (pouch) ->
 	</store_item> -->
   <store_item>
+    <id>74</id>
+    <name>Midas Ultima</name>
+    <category>2</category>
+    <mission_req>6610</mission_req>
+    <!-- Adventure's End -->
+    <desc>Unlocks ^cF90FMidas Ultima^cFFFF in the Tome of Heroes! Also requires Bounty Rank 18.</desc>
+    <show_desc>1</show_desc>
+    <priority>53</priority>
+    <!-- 3 parameters required to avoid the visual price bug (it still works without them) -->
+    <cycle>1</cycle>
+    <cycle_length>315619200</cycle_length>
+    <!-- 10 years -->
+    <start_time>1779210000</start_time>
+    <!-- 19 May 2026 -->
+    <cost item="21" num="1000" />
+    <!-- Endgame Seals -->
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>20</hidden_card_req>
+    <asset_prefab>event_100_oldtimer_stepbox</asset_prefab>
+    <bundle>267</bundle>
+    <item id="8031" quantity="1" />
+    <!-- receipt item -->
+  </store_item>
+  <store_item>
+    <id>75</id>
+    <name>Tome of Darkness</name>
+    <category>2</category>
+    <mission_req>6610</mission_req>
+    <!-- Adventure's End -->
+    <desc>Unlocks ^cF90FTome of Darkness^cFFFF in the Tome of Heroes! Also requires Bounty Rank 18.</desc>
+    <show_desc>1</show_desc>
+    <priority>52</priority>
+    <!-- 3 parameters required to avoid the visual price bug (it still works without them) -->
+    <cycle>1</cycle>
+    <cycle_length>315619200</cycle_length>
+    <!-- 10 years -->
+    <start_time>1779210000</start_time>
+    <!-- 19 May 2026 -->
+    <cost item="21" num="1000" />
+    <!-- Endgame Seals -->
+    <!-- Remove from store if player has this card -->
+    <hidden_card_req>21</hidden_card_req>
+    <asset_prefab>event_041_box_facelessavian</asset_prefab>
+    <bundle>136</bundle>
+    <item id="8032" quantity="1" />
+    <!-- receipt item -->
+  </store_item>
+  <store_item>
     <id>80</id>
     <name>Random Tribe Health Rune</name>
     <category>0</category>
@@ -932,6 +980,9 @@
       <item id="104103" quantity="500" weight="1" />
       <item id="104104" quantity="500" weight="1" />
       <item id="104105" quantity="500" weight="1" />
+      <item id="104106" quantity="500" weight="1" />
+      <item id="104107" quantity="500" weight="1" />
+      <item id="104108" quantity="500" weight="1" />
     </item_pack>
   </store_item>
   <store_item>
@@ -1086,7 +1137,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>1250</priority>
-    <desc>Celebrate three years of ComDev at Spellstone with an (almost) free gift from us!</desc>
+    <desc>Celebrate 11 years of Spellstone with an (almost) free gift from us!</desc>
     <icon>package_60</icon>
     <icon_bundle>17</icon_bundle>
     <sc_cost>1</sc_cost>
@@ -1699,6 +1750,9 @@
       <item id="104103" />
       <item id="104104" />
       <item id="104105" />
+      <item id="104106" />
+      <item id="104107" />
+      <item id="104108" />
     </costed_items>
   </store_item>
   <store_item>
@@ -1919,6 +1973,9 @@
       <item id="104103" number="50" purchase1="25" scalar="5" />
       <item id="104104" number="50" purchase1="25" scalar="5" />
       <item id="104105" number="50" purchase1="25" scalar="5" />
+      <item id="104106" number="50" purchase1="25" scalar="5" />
+      <item id="104107" number="50" purchase1="25" scalar="5" />
+      <item id="104108" number="50" purchase1="25" scalar="5" />
     </costed_items>
   </store_item>
   <store_item>
