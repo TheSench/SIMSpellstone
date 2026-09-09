@@ -4271,6 +4271,38 @@ var BATTLEGROUNDS = {
 		"id": "207",
 		"name": "Crematory Comfort"
 	},
+	"208": {
+		"desc": "All Mechas gain extra Health, Armor, and Corrosive equal to 10% of their base Health. In addition, all cards with Vengeance have it evolved to Regenerate with the same value.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "scale_health",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "armored",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "corrosive",
+				"mult": 0.1,
+				"y": "16"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "counter",
+				"s": "regenerate"
+			}
+		],
+		"id": "208",
+		"name": "Extended Warranty"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

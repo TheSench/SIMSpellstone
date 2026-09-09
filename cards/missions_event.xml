@@ -20167,4 +20167,45 @@
       <!-- Avenging Angel -->
     </deck>
   </mission>
+  <!-- Event 146: ComDev Mecha - Fireshard Mine -->
+  <mission>
+    <id>10146</id>
+    <name>Fireshard Mine</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Fireshards in Power Gemstones to power up your cards.</desc>
+    <commander id="401" />
+    <!-- Mining Cydroid -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4115" />
+      <!-- Latest Champion -->
+      <card id="5625" />
+      <!-- Aeronwen, the Glider -->
+      <card id="5614" />
+      <!-- Zahira, the Bladedance -->
+      <card id="7305" />
+      <!-- Assistance Droid -->
+      <card id="7218" />
+      <!-- Zuphlas -->
+      <card id="6214" />
+      <!-- Trampling Demon -->
+      <card id="6181" />
+      <!-- Fearlord Xerthis -->
+      <card id="5165" />
+      <!-- Electrumus -->
+      <card id="2256" />
+      <!-- Circuit Burster -->
+      <card id="2241" />
+      <!-- Gargobots -->
+      <card id="2113" />
+      <!-- Vali, the Thunderer -->
+      <card id="1345" />
+      <!-- Owltron -->
+      <card id="1348" />
+      <!-- Flailpod -->
+      <card id="1645" />
+      <!-- Sundermarr -->
+    </deck>
+  </mission>
 </root>

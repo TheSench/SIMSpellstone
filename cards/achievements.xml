@@ -79,6 +79,7 @@
 			   603 = ComDev Node Missions
 			   604 = ComDev Post Consolidation Missions
 			  617+ = Mastery Quests
+			   999 = Endgame Heroes
 
 		ID's
 			101-200 = Store
@@ -7767,343 +7768,8 @@
     </reward>
   </achievement>
   <!-- Campaign Event 8 -->
-  <achievement>
-    <id>3325</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Word Eaters' campaign on Mastery Level 4.</desc>
-    <mission_req>5832</mission_req>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <req>
-      <campaign>1156</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <item id="3068" number="50" />
-      <event_points id="7030" number="50" />
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3326</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Word Eaters' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <achievement_req>3325</achievement_req>
-    <req>
-      <campaign>1156</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3327</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 2.</desc>
-    <mission_req>5844</mission_req>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <req>
-      <campaign>1157</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3328</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <achievement_req>3327</achievement_req>
-    <req>
-      <campaign>1157</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3329</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <achievement_req>3328</achievement_req>
-    <req>
-      <campaign>1157</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3330</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Skyhaven Secret' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1518109200</locked_start_time>
-    <!-- Thu, 08 Feb 2018 17:00:00 -->
-    <achievement_req>3329</achievement_req>
-    <req>
-      <campaign>1157</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3331</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Stone Guide' campaign on Mastery Level 2.</desc>
-    <mission_req>5856</mission_req>
-    <locked_start_time>1519318800</locked_start_time>
-    <!-- Thu, 22 Feb 2018 17:00:00 -->
-    <req>
-      <campaign>1158</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3332</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Stone Guide' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1519318800</locked_start_time>
-    <!-- Thu, 22 Feb 2018 17:00:00 -->
-    <achievement_req>3331</achievement_req>
-    <req>
-      <campaign>1158</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3333</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Stone Guide' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1519318800</locked_start_time>
-    <!-- Thu, 22 Feb 2018 17:00:00 -->
-    <achievement_req>3332</achievement_req>
-    <req>
-      <campaign>1158</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3334</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Stone Guide' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1519318800</locked_start_time>
-    <!-- Thu, 22 Feb 2018 17:00:00 -->
-    <achievement_req>3333</achievement_req>
-    <req>
-      <campaign>1158</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Rimelight Crusader Craft Recipe -->
-  <achievement>
-    <id>3335</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Buried Secrets' campaign on Mastery Level 1.</desc>
-    <mission_req>5857</mission_req>
-    <locked_start_time>1519318800</locked_start_time>
-    <!-- Thu, 22 Feb 2018 17:00:00 -->
-    <req>
-      <campaign>1159</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="8007" number="1" />
-    </reward>
-  </achievement>
   <!-- Campaign Event 8 Weeks 5-8 -->
-  <achievement>
-    <id>3336</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 2.</desc>
-    <mission_req>5873</mission_req>
-    <locked_start_time>1520528400</locked_start_time>
-    <req>
-      <campaign>1160</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3337</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1520528400</locked_start_time>
-    <achievement_req>3336</achievement_req>
-    <req>
-      <campaign>1160</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3338</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1520528400</locked_start_time>
-    <achievement_req>3337</achievement_req>
-    <req>
-      <campaign>1160</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3339</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The Crimson Hero' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1520528400</locked_start_time>
-    <achievement_req>3338</achievement_req>
-    <req>
-      <campaign>1160</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3340</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 2.</desc>
-    <mission_req>5885</mission_req>
-    <locked_start_time>1521738000</locked_start_time>
-    <req>
-      <campaign>1161</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3341</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 4.</desc>
-    <locked_start_time>1521738000</locked_start_time>
-    <achievement_req>3340</achievement_req>
-    <req>
-      <campaign>1161</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3342</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 6.</desc>
-    <locked_start_time>1521738000</locked_start_time>
-    <achievement_req>3341</achievement_req>
-    <req>
-      <campaign>1161</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <gold>400</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3343</id>
-    <type>2</type>
-    <order>601</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Crimsonwing Angels' campaign on Mastery Level 7.</desc>
-    <locked_start_time>1521738000</locked_start_time>
-    <achievement_req>3342</achievement_req>
-    <req>
-      <campaign>1161</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <gold>800</gold>
-    </reward>
-  </achievement>
   <!-- Campaign Event 9 -->
   <!-- Campaign Event 9 weeks 1-4 -->
   <!-- Pinpin, Dragon Handler recipe -->
@@ -8640,154 +8306,6 @@
   </achievement>
   <!-- 6th Anniversary -->
   <!-- Wizard Event 82 - Angel - Node 1 -->
-  <achievement>
-    <id>3726</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The High Journey' campaign on Mastery Level 1.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6713</mission_req>
-    <locked_start_time>1634230800</locked_start_time>
-    <!-- Thursday, 14 October 2021 17:00:00 -->
-    <req>
-      <campaign>1299</campaign>
-      <level>1</level>
-    </req>
-    <reward>
-      <item id="3068" number="50" />
-      <!-- Expediton Item -->
-      <event_points id="7078" number="50" />
-      <!-- Expediton ID -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3727</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The High Journey' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1634230800</locked_start_time>
-    <!-- Thursday, 14 October 2021 17:00:00 -->
-    <achievement_req>3726</achievement_req>
-    <req>
-      <campaign>1299</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3728</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The High Journey' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1634230800</locked_start_time>
-    <!-- Thursday, 14 October 2021 17:00:00 -->
-    <achievement_req>3727</achievement_req>
-    <req>
-      <campaign>1299</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3729</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'The High Journey' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1634230800</locked_start_time>
-    <!-- Thursday, 14 October 2021 17:00:00 -->
-    <achievement_req>3728</achievement_req>
-    <req>
-      <campaign>1299</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <!-- Wizard Event 82 - Angel - Node 2 -->
-  <achievement>
-    <id>3730</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 2.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <mission_req>6719</mission_req>
-    <locked_start_time>1635440400</locked_start_time>
-    <!-- Thursday, 28 October 2021 17:00:00 -->
-    <req>
-      <campaign>1300</campaign>
-      <level>2</level>
-    </req>
-    <reward>
-      <gold>3000</gold>
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3731</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 4.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1635440400</locked_start_time>
-    <!-- Thursday, 28 October 2021 17:00:00 -->
-    <achievement_req>3730</achievement_req>
-    <req>
-      <campaign>1300</campaign>
-      <level>4</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
-  <achievement>
-    <id>3732</id>
-    <type>2</type>
-    <order>602</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the 'Winged Conspiracy' campaign on Mastery Level 6.</desc>
-    <icon>node_gem_yellow</icon>
-    <icon_bundle>15</icon_bundle>
-    <locked_start_time>1635440400</locked_start_time>
-    <!-- Thursday, 28 October 2021 17:00:00 -->
-    <achievement_req>3731</achievement_req>
-    <req>
-      <campaign>1300</campaign>
-      <level>6</level>
-    </req>
-    <reward>
-      <sp>60</sp>
-      <!-- Dust  -->
-    </reward>
-  </achievement>
   <!-- Wizard Event 83 - Mecha - Node 1 -->
   <achievement>
     <id>3733</id>
@@ -10072,29 +9590,6 @@
     </reward>
   </achievement>
   <achievement>
-    <!-- Skyhaven -->
-    <id>4008</id>
-    <type>2</type>
-    <order>638</order>
-    <event_only>1</event_only>
-    <name>Vanquisher of Skyhaven</name>
-    <desc>Complete Mastery Level 7 on all basic campaigns and the boss in Skyhaven.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>5860</mission_req>
-    <req>
-      <campaign>1156</campaign>
-      <campaign>1157</campaign>
-      <campaign>1158</campaign>
-      <campaign>1159</campaign>
-      <campaign>1160</campaign>
-      <campaign>1161</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
     <!-- Beetleton Bunker Revisited -->
     <id>4031</id>
     <type>2</type>
@@ -10166,32 +9661,6 @@
       <campaign>1141</campaign>
       <campaign>1296</campaign>
       <campaign>1297</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <item id="2531" number="1" />
-    </reward>
-  </achievement>
-  <achievement>
-    <!-- Skyhaven revisited -->
-    <id>4036</id>
-    <type>2</type>
-    <order>659</order>
-    <event_only>1</event_only>
-    <name>Champion of Skyhaven</name>
-    <desc>Complete Mastery Level 7 on all gold campaigns in Skyhaven.</desc>
-    <icon>mapNavGlobe</icon>
-    <mission_req>6708</mission_req>
-    <achievement_req>4008</achievement_req>
-    <req>
-      <campaign>1156</campaign>
-      <campaign>1157</campaign>
-      <campaign>1158</campaign>
-      <campaign>1159</campaign>
-      <campaign>1160</campaign>
-      <campaign>1161</campaign>
-      <campaign>1299</campaign>
-      <campaign>1300</campaign>
       <level>7</level>
     </req>
     <reward>
@@ -10432,45 +9901,7 @@
   <!-- Event 141: ComDev Beast - Golden Crown Village -->
   <!-- Event 142: ComDev Insect - Forgotten Island -->
   <!-- Event 143: ComDev Seafolk - Goblin Rise Stronghold -->
-  <achievement>
-    <id>10143</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Goblin Rise Stronghold</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10143</mission_req>
-    <req>
-      <campaign>10143</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 144: ComDev Undead - Skyhaven -->
-  <achievement>
-    <id>10144</id>
-    <type>2</type>
-    <order>604</order>
-    <event_only>1</event_only>
-    <name>Skyhaven</name>
-    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
-    <icon>energy_refill</icon>
-    <icon_bundle>30</icon_bundle>
-    <mission_req>10144</mission_req>
-    <req>
-      <campaign>10144</campaign>
-      <level>7</level>
-    </req>
-    <reward>
-      <wb>120</wb>
-      <!-- Shards -->
-    </reward>
-  </achievement>
   <!-- Event 145: ComDev Angel - The Celestial Vault -->
   <achievement>
     <id>10145</id>
@@ -10484,6 +9915,26 @@
     <mission_req>10145</mission_req>
     <req>
       <campaign>10145</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <wb>120</wb>
+      <!-- Shards -->
+    </reward>
+  </achievement>
+  <!-- Event 146: ComDev Mecha - Fireshard Mine -->
+  <achievement>
+    <id>10146</id>
+    <type>2</type>
+    <order>604</order>
+    <event_only>1</event_only>
+    <name>Fireshard Mine</name>
+    <desc>Complete the Alyel Back in Time campaign on Mastery Level 7.</desc>
+    <icon>energy_refill</icon>
+    <icon_bundle>30</icon_bundle>
+    <mission_req>10146</mission_req>
+    <req>
+      <campaign>10146</campaign>
       <level>7</level>
     </req>
     <reward>

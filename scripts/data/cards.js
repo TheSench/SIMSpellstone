@@ -74922,7 +74922,7 @@ var CARDS = {
 		"attack": 14,
 		"card_type": "2",
 		"cost": 3,
-		"health": 40,
+		"health": 42,
 		"id": "4052",
 		"maxLevel": 10,
 		"name": "Shadomeka",
@@ -74953,7 +74953,7 @@ var CARDS = {
 		"upgrades": {
 			"2": {
 				"attack": 15,
-				"health": 41,
+				"health": 43,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -74973,11 +74973,11 @@ var CARDS = {
 			},
 			"3": {
 				"attack": 16,
-				"health": 42,
+				"health": 44,
 				"skill": []
 			},
 			"4": {
-				"health": 43,
+				"health": 45,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -74996,7 +74996,7 @@ var CARDS = {
 				]
 			},
 			"5": {
-				"health": 44,
+				"health": 46,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -75035,7 +75035,7 @@ var CARDS = {
 			},
 			"7": {
 				"attack": 18,
-				"health": 45,
+				"health": 47,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -75054,7 +75054,7 @@ var CARDS = {
 				]
 			},
 			"8": {
-				"health": 46,
+				"health": 48,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -75074,12 +75074,12 @@ var CARDS = {
 			},
 			"9": {
 				"attack": 19,
-				"health": 47,
+				"health": 49,
 				"skill": []
 			},
 			"10": {
 				"attack": 19,
-				"health": 47,
+				"health": 49,
 				"skill": [
 					{
 						"id": "counterburn",
@@ -86561,13 +86561,222 @@ var CARDS = {
 		}
 	},
 	"4115": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 3,
+		"health": 45,
+		"hidden_until": "1789059600000",
+		"id": "4115",
+		"maxLevel": 10,
+		"name": "Nexa, the Webmaster",
+		"picture": "Insect_Mecha_Wire_Spider_B",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "armored",
+				"x": 7
+			},
+			{
+				"all": "1",
+				"id": "heal",
+				"x": 4
+			},
+			{
+				"all": "1",
+				"id": "enfeeble",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"13",
+			"16"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 46,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 4
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"3": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 3
+					}
+				]
+			},
+			"4": {
+				"health": 47,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 4
+					}
+				]
+			},
+			"5": {
+				"attack": 15,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 5
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"6": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 5
+					}
+				]
+			},
+			"7": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					}
+				]
+			},
+			"8": {
+				"health": 49,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					}
+				]
+			},
+			"9": {
+				"attack": 17,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 6
+					}
+				]
+			},
+			"10": {
+				"attack": 17,
+				"health": 50,
+				"skill": [
+					{
+						"id": "armored",
+						"x": 12
+					},
+					{
+						"all": "1",
+						"id": "heal",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "enfeeble",
+						"x": 7
+					}
+				]
+			}
+		}
+	},
+	"4116": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1789059600000",
-		"id": "4115",
+		"hidden_until": "1791478800000",
+		"id": "4116",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86576,7 +86785,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"16"
+			"4"
 		],
 		"type": "0",
 		"upgrades": {

@@ -2237,6 +2237,18 @@
       <add_skill id="burn" mult="0.1" base="health" y="7" />
     </effect>
   </battleground>
+  <battleground>
+    <id>208</id>
+    <name>Extended Warranty</name>
+    <desc>All Mechas gain extra Health, Armor, and Corrosive equal to 10% of their base Health. In addition, all cards with Vengeance have it evolved to Regenerate with the same value.</desc>
+    <icon>filter_mech_64</icon>
+    <effect>
+      <scale_health base="health" mult="0.1" yy="16" />
+      <add_skill id="armored" mult="0.1" base="health" y="16" />
+      <add_skill id="corrosive" mult="0.1" base="health" y="16" />
+      <evolve_skill id="counter" s="regenerate" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
