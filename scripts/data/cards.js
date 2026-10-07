@@ -86770,13 +86770,196 @@ var CARDS = {
 		}
 	},
 	"4116": {
+		"attack": 13,
+		"card_type": "2",
+		"cost": 4,
+		"health": 61,
+		"hidden_until": "1791478800000",
+		"id": "4116",
+		"maxLevel": 10,
+		"name": "Fredo, the Broodfather",
+		"picture": "Frog_King",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "evade",
+				"x": 1
+			},
+			{
+				"id": "corrosive",
+				"x": 6
+			},
+			{
+				"all": "1",
+				"id": "protect",
+				"x": 3
+			}
+		],
+		"sub_type": [
+			"4"
+		],
+		"type": "3",
+		"upgrades": {
+			"2": {
+				"health": 62,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "corrosive",
+						"x": 6
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"3": {
+				"attack": 14,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 4
+					}
+				]
+			},
+			"4": {
+				"health": 63,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 2
+					},
+					{
+						"id": "corrosive",
+						"x": 7
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 5
+					}
+				]
+			},
+			"5": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 8
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 6
+					}
+				]
+			},
+			"6": {
+				"attack": 15,
+				"health": 64,
+				"skill": []
+			},
+			"7": {
+				"skill": [
+					{
+						"id": "evade",
+						"x": 3
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 7
+					}
+				]
+			},
+			"8": {
+				"health": 65,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 9
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 8
+					}
+				]
+			},
+			"9": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 10
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 8
+					}
+				]
+			},
+			"10": {
+				"attack": 16,
+				"health": 66,
+				"skill": [
+					{
+						"id": "evade",
+						"x": 4
+					},
+					{
+						"id": "corrosive",
+						"x": 11
+					},
+					{
+						"all": "1",
+						"id": "protect",
+						"x": 9
+					}
+				]
+			}
+		}
+	},
+	"4117": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1791478800000",
-		"id": "4116",
+		"hidden_until": "1793898000000",
+		"id": "4117",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86785,7 +86968,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"4"
+			"11"
 		],
 		"type": "0",
 		"upgrades": {

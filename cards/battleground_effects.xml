@@ -2249,6 +2249,16 @@
       <evolve_skill id="counter" s="regenerate" />
     </effect>
   </battleground>
+  <battleground>
+    <id>209</id>
+    <name>Lily &#38; Actual Vampiric Spear</name>
+    <desc>All Frogs gain Vampirism and Heartseeker equal to 10% of their base Health.</desc>
+    <icon>filter_frog_64</icon>
+    <effect>
+      <add_skill id="vampirism" mult="0.1" base="health" y="4" />
+      <add_skill id="heartseeker" mult="0.1" base="health" y="4" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->
@@ -3547,7 +3557,7 @@
   <battleground>
     <id>585</id>
     <name>Test BGE</name>
-    <desc>All cards are Hexed by 2. Angels are also Hexed by 3.</desc>
+    <desc>All cards are Hexed by 2. Angels are also Hexed by 3. In addition, all cards with Backlash have it evolved to Armor with the same value.</desc>
     <icon>devtools_64</icon>
     <icon_bundle>52</icon_bundle>
     <effect>
@@ -3555,6 +3565,7 @@
       <!-- Hex All -->
       <skill id="enfeeble" x="3" y="6" all="1" />
       <!-- Hex All Angel -->
+      <evolve_skill id="backlash" s="armored" />
     </effect>
   </battleground>
   <battleground>

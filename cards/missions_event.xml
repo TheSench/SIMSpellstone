@@ -20208,4 +20208,45 @@
       <!-- Sundermarr -->
     </deck>
   </mission>
+  <!-- Event 147: ComDev Frog - Pharos Temple -->
+  <mission>
+    <id>10147</id>
+    <name>Pharos Temple</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Mini Jellyfish in Temple's Defenses to power up your cards.</desc>
+    <commander id="12" />
+    <!-- Ol' Cedric -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4116" />
+      <!-- Latest Champion -->
+      <card id="5642" />
+      <!-- B4RN4B1, Exo Warkid -->
+      <card id="6617" />
+      <!-- Domhain, the Fomorian -->
+      <card id="5618" />
+      <!-- Raju, the Unyielding -->
+      <card id="4045" />
+      <!-- Korg, the Last Touch -->
+      <card id="4009" />
+      <!-- Kachina, the Dreamer -->
+      <card id="4078" />
+      <!-- Daffdal, the Lamp Keeper -->
+      <card id="4035" />
+      <!-- Vasile, the Night Duke -->
+      <card id="7249" />
+      <!-- Nullhammer -->
+      <card id="7165" />
+      <!-- Raging Irontusk -->
+      <card id="6271" />
+      <!-- Walker Frototype -->
+      <card id="5156" />
+      <!-- Tiltyard Ribbot -->
+      <card id="6153" />
+      <!-- Ribbit Roaster -->
+      <card id="2107" />
+      <!-- Battleborn Toad -->
+    </deck>
+  </mission>
 </root>

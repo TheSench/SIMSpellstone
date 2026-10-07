@@ -4303,6 +4303,27 @@ var BATTLEGROUNDS = {
 		"id": "208",
 		"name": "Extended Warranty"
 	},
+	"209": {
+		"desc": "All Frogs gain Vampirism and Heartseeker equal to 10% of their base Health.",
+		"effect": [
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "vampirism",
+				"mult": 0.1,
+				"y": "4"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "heartseeker",
+				"mult": 0.1,
+				"y": "4"
+			}
+		],
+		"id": "209",
+		"name": "Lily & Actual Vampiric Spear"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {
@@ -7227,7 +7248,7 @@ var BATTLEGROUNDS = {
 		"name": "New Paradox"
 	},
 	"585": {
-		"desc": "All cards are Hexed by 2. Angels are also Hexed by 3.",
+		"desc": "All cards are Hexed by 2. Angels are also Hexed by 3. In addition, all cards with Backlash have it evolved to Armor with the same value.",
 		"effect": [
 			{
 				"all": "1",
@@ -7241,6 +7262,11 @@ var BATTLEGROUNDS = {
 				"id": "enfeeble",
 				"x": 3,
 				"y": "6"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "backlash",
+				"s": "armored"
 			}
 		],
 		"id": "585",
