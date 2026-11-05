@@ -4324,6 +4324,74 @@ var BATTLEGROUNDS = {
 		"id": "209",
 		"name": "Lily & Actual Vampiric Spear"
 	},
+	"210": {
+		"desc": "All cards are Hexed by 2. All Goblins gain Barrage and Daze equal to 15% of their base Health. 0-3D Goblins also gain Ward equal to their Delay + 7. In addition, all cards with Backlash have it evolved to Armor with the same value.",
+		"effect": [
+			{
+				"all": "1",
+				"effect_type": "skill",
+				"id": "enfeeble",
+				"x": 2
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "barrage",
+				"mult": 0.15,
+				"y": "11"
+			},
+			{
+				"base": "health",
+				"effect_type": "add_skill",
+				"id": "daze",
+				"mult": 0.15,
+				"y": "11"
+			},
+			{
+				"delay": [
+					0
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 7,
+				"y": "11"
+			},
+			{
+				"delay": [
+					1
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 8,
+				"y": "11"
+			},
+			{
+				"delay": [
+					2
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 9,
+				"y": "11"
+			},
+			{
+				"delay": [
+					3
+				],
+				"effect_type": "add_skill",
+				"id": "absorb",
+				"x": 10,
+				"y": "11"
+			},
+			{
+				"effect_type": "evolve_skill",
+				"id": "backlash",
+				"s": "armored"
+			}
+		],
+		"id": "210",
+		"name": "Hexbolt Obituary"
+	},
 	"501": {
 		"desc": "All enemies start with a Castle Tower card.",
 		"effect": {

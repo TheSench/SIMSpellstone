@@ -86953,13 +86953,200 @@ var CARDS = {
 		}
 	},
 	"4117": {
+		"attack": 14,
+		"card_type": "2",
+		"cost": 3,
+		"health": 46,
+		"hidden_until": "1793898000000",
+		"id": "4117",
+		"maxLevel": 10,
+		"name": "Higou, the Activist",
+		"picture": "Goblin_Bomber",
+		"rarity": 4,
+		"set": "5000",
+		"shard_card": 1,
+		"skill": [
+			{
+				"id": "stasis",
+				"x": 5
+			},
+			{
+				"id": "barrage",
+				"x": 9
+			},
+			{
+				"c": 5,
+				"id": "flurry"
+			}
+		],
+		"sub_type": [
+			"11"
+		],
+		"type": "2",
+		"upgrades": {
+			"2": {
+				"attack": 15,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 5
+					},
+					{
+						"id": "barrage",
+						"x": 10
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"3": {
+				"health": 47,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "barrage",
+						"x": 11
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"4": {
+				"attack": 16,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "barrage",
+						"x": 12
+					},
+					{
+						"c": 4,
+						"id": "flurry"
+					}
+				]
+			},
+			"5": {
+				"health": 48,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 6
+					},
+					{
+						"id": "barrage",
+						"x": 13
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"6": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "barrage",
+						"x": 14
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"7": {
+				"attack": 17,
+				"health": 49,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 7
+					},
+					{
+						"id": "barrage",
+						"x": 15
+					},
+					{
+						"c": 3,
+						"id": "flurry"
+					}
+				]
+			},
+			"8": {
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "barrage",
+						"x": 16
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"9": {
+				"health": 50,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 8
+					},
+					{
+						"id": "barrage",
+						"x": 17
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			},
+			"10": {
+				"attack": 18,
+				"health": 50,
+				"skill": [
+					{
+						"id": "stasis",
+						"x": 9
+					},
+					{
+						"id": "barrage",
+						"x": 18
+					},
+					{
+						"c": 2,
+						"id": "flurry"
+					}
+				]
+			}
+		}
+	},
+	"4118": {
 		"attack": 1,
 		"card_type": "2",
 		"cost": 1,
 		"desc": "Placeholder for next champion.",
 		"health": 1,
-		"hidden_until": "1793898000000",
-		"id": "4117",
+		"hidden_until": "1796317200000",
+		"id": "4118",
 		"maxLevel": 10,
 		"name": "Placeholder Champion",
 		"picture": "Dust_Mite",
@@ -86968,7 +87155,7 @@ var CARDS = {
 		"shard_card": 1,
 		"skill": [],
 		"sub_type": [
-			"11"
+			"9"
 		],
 		"type": "0",
 		"upgrades": {

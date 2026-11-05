@@ -2259,6 +2259,39 @@
       <add_skill id="heartseeker" mult="0.1" base="health" y="4" />
     </effect>
   </battleground>
+  <battleground>
+    <id>210</id>
+    <name>Hexbolt Obituary</name>
+    <desc>All cards are Hexed by 2. All Goblins gain Barrage and Daze equal to 15% of their base Health. 0-3D Goblins also gain Ward equal to their Delay + 7. In addition, all cards with Backlash have it evolved to Armor with the same value.</desc>
+    <icon>filter_goblin_64</icon>
+    <effect>
+      <skill id="enfeeble" x="2" all="1" />
+      <add_skill id="barrage" mult="0.15" base="health" y="11" />
+      <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>0.75</duration>
+          <translation>0.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+      <add_skill id="daze" mult="0.15" base="health" y="11" />
+      <add_skill id="absorb" x="7" y="11" delay="0" />
+      <add_skill id="absorb" x="8" y="11" delay="1" />
+      <add_skill id="absorb" x="9" y="11" delay="2" />
+      <add_skill id="absorb" x="10" y="11" delay="3" />
+      <evolve_skill id="backlash" s="armored" />
+    </effect>
+  </battleground>
   <!-- ================================= -->
   <!-- ==== 501-1000: Specialty BGE ==== -->
   <!-- ================================= -->

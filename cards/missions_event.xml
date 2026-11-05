@@ -20249,4 +20249,45 @@
       <!-- Battleborn Toad -->
     </deck>
   </mission>
+  <!-- Event 148: ComDev Goblin - Beetleton Bunker -->
+  <mission>
+    <id>10148</id>
+    <name>Beetleton Bunker</name>
+    <energy>60</energy>
+    <desc>Tip: Invest Honeycombs in Elemental Spiritlings to power up your cards.</desc>
+    <commander id="329" />
+    <!-- Reks -->
+    <deck>
+      <card id="4003" />
+      <!-- Lev, Celebrated Hero -->
+      <card id="4117" />
+      <!-- Latest Champion -->
+      <card id="7624" />
+      <!-- Sigblin, the Trollskin -->
+      <card id="5610" />
+      <!-- Ystlin, the Market Boss -->
+      <card id="6612" />
+      <!-- Zolb, Labyrinth King -->
+      <card id="7600" />
+      <!-- Glory Seeker Arran -->
+      <card id="4054" />
+      <!-- Reks, the Dragonslayer -->
+      <card id="4504" />
+      <!-- Maglheqet, God of Warriors -->
+      <card id="5090" />
+      <!-- Reks' Faithful -->
+      <card id="7226" />
+      <!-- Froglin -->
+      <card id="5226" />
+      <!-- Magitech Raider -->
+      <card id="2244" />
+      <!-- Fizbo -->
+      <card id="2061" />
+      <!-- Reks, the Forlorn -->
+      <card id="5146" />
+      <!-- Lullmage Whisperer -->
+      <card id="2134" />
+      <!-- Golden Rise Adventurers -->
+    </deck>
+  </mission>
 </root>
